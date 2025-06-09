@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Itinerario de viaje a Filipinas: 1 mes por libre - Viajar por Filipinas</title>
+	<meta name="description" content="¿Tienes 30 días de vacaciones? Aquí te diseñamos un itinerario de viaje a Filipinas de 1 mes perfecto para sacar el jugo al archipiélago." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Itinerario de viaje a Filipinas: 1 mes por libre - Viajar por Filipinas" />
+	<meta property="og:description" content="¿Tienes 30 días de vacaciones? Aquí te diseñamos un itinerario de viaje a Filipinas de 1 mes perfecto para sacar el jugo al archipiélago." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-12-16T03:59:28+00:00" />
+	<meta property="article:modified_time" content="2024-12-01T14:12:12+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="23 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Itinerario de viaje a Filipinas: 1 mes","datePublished":"2018-12-16T03:59:28+00:00","dateModified":"2024-12-01T14:12:12+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/"},"wordCount":4542,"commentCount":260,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje.jpg","articleSection":["Itinerarios de viaje"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/","url":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/","name":"▷ Itinerario de viaje a Filipinas: 1 mes por libre - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje.jpg","datePublished":"2018-12-16T03:59:28+00:00","dateModified":"2024-12-01T14:12:12+00:00","description":"¿Tienes 30 días de vacaciones? Aquí te diseñamos un itinerario de viaje a Filipinas de 1 mes perfecto para sacar el jugo al archipiélago.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje.jpg","width":1200,"height":630,"caption":"itinerario 30 días Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Itinerario de viaje a Filipinas: 1 mes"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Itinerario de viaje a Filipinas: 1 mes del feed" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/2746" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=2746' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fitinerario-viaje-filipinas-1-mes%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fitinerario-viaje-filipinas-1-mes%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-2746-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2746/et-core-unified-2746.min.css?ver=1745578358" /><link rel="stylesheet" id="et-core-unified-deferred-2746-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2746/et-core-unified-deferred-2746.min.css?ver=1745578358" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-2746 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-2746" class="et_pb_post post-2746 post type-post status-publish format-standard has-post-thumbnail hentry category-itinerarios-de-viaje-2">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Itinerario de viaje a Filipinas: 1 mes</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/itinerarios-de-viaje-2/" rel="category tag">Itinerarios de viaje</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="itinerario 30 días Filipinas" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-1080x630.jpg" alt="itinerario 30 días Filipinas" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-filipinas-30-dias-viaje-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Lo más complicado a la hora de preparar tu <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">viaje a Filipinas</a> es decidir qué lugares visitar. Con más de 7.000 islas que explorar, es normal y a todos nos ha dado la cabeza vueltas más de una vez. Si bien es cierto que la elección del <strong><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/" target="_blank" rel="noopener noreferrer">itinerario de viaje por Filipinas</a></strong> que quieres hacer depende en gran medida de tus gustos y expectativas, queremos hacerte la vida un poco más sencilla diseñando algunos viajes modelo que puedes adaptar un poquitín a lo que buscas. En este caso, hemos preparado un <strong>itinerario de viaje a Filipinas de 1 mes o 30 días</strong> que hará que quieras a este maravilloso país insular tanto como nosotros.</p>
+<p style="text-align: justify;"><strong>30 días son los permitidos para estar en Filipinas sin <a href="https://www.viajarporfilipinas.com/visado-para-filipinas/" target="_blank" rel="noopener noreferrer">visado</a></strong> y, además, consideramos que es un periodo de tiempo genial para hacer un viaje más o menos holgado. Recuerda que, como te contamos en <a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/" target="_blank" rel="noopener noreferrer">Preparativos de Viaje a Filipinas</a>, más o menos, cada vez que te mueves de destino dentro del país pierdes un día por traslados. Si tienes para hacer un viaje a Filipinas de 1 mes, mitigarás mucho más la sensación de estar todo el día en un bus, un avión, un barco, un <em>trycicle</em>…</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-20-dias/" target="_blank" rel="noopener noreferrer">¿Un poco de menos tiempo? Itinerario de 20 días</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-15-dias/" target="_blank" rel="noopener noreferrer">¿Menos tiempo? Itinerario de 15 días</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-10-dias/" target="_blank" rel="noopener noreferrer">¿Aún menos? Itinerario de 10 días</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/ruta-3-semanas-filipinas-viaje/" target="_blank" rel="noopener noreferrer">Ruta 3 semanas por Filipinas</a></p>
+<hr />
+<h2><span style="color: #33cccc;">Características de este itinerario de 30 días por Filipinas</span></h2>
+<p style="text-align: justify;">Este <strong>itinerario de viaje a Filipinas 1 mes</strong> te llevará a conocer algunas de las <a href="https://www.viajarporfilipinas.com/mejores-islas-filipinas/" target="_blank" rel="noopener noreferrer">mejores islas de Filipinas</a> y algunas de las <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejores playas</a>. Estas son algunas de las <strong>características</strong> de esta ruta por Filipinas de 30 días:</p>
+<ul style="text-align: justify;">
+<li>Es un itinerario de viaje a Filipinas de 30 días en el que consideramos que el primer día te da tiempo a trasladarte a Siargao y que el último estás holgado para llegar a tu vuelo de salida desde Manila. Tendrás que cuadrar bien la llegada y salida de tus <strong>vuelos internacionales</strong>.</li>
+<li>Considera que el aeropuerto de Coron (Busuanga) es pequeño y a veces los vuelos se cancelan. <strong>Deja tiempo suficiente</strong> (minimísimo 6 horas o, mejor aún, vuela el día de antes) para no perder tu vuelo internacional.</li>
+<li>Se trata de una ruta por Filipinas de 30 días ideal si piensas <strong>viajar a Filipinas en agosto</strong> o en otros meses de verano como julio o septiembre, puesto que, como te contamos en ¿Cuándo viajar a Filipinas?, en <a href="https://www.viajarporfilipinas.com/guia-de-camiguin/" target="_blank" rel="noopener noreferrer">Camiguin</a> y <a href="https://www.viajarporfilipinas.com/guia-de-siargao/" target="_blank" rel="noopener noreferrer">Siargao</a> es época seca.</li>
+<li>Es un viaje de <strong>intensidad media</strong>. Lo que se traduce en que vas a tener tiempo de sobra para disfrutar esos destinos. Si quieres hacer un poquito más, te contaremos al final algunas alternativas.</li>
+<li>Se trata de un viaje súper completo y <strong>para todo tipo de viajeros</strong> pues, además de ver algunas de las <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejores playas de Filipinas</a>, vas a poder hacer muchas actividades un poco más movidas como surf, recorridos en moto, <em>island hoppings</em> y algún que otro buceo.</li>
+<li>Salimos <strong>desde Manila</strong>, pero este viaje también podría hacerse desde Cebu.</li>
+<li>Es un viaje a Filipinas <strong>barato</strong>. Aunque cogeremos vuelos internos en Filipinas, no suelen ser trayectos (siempre que se reserven con antelación).</li>
+<li>Este itinerario de 30 días también se puede hacer de manera <strong>inversa</strong>. Simplemente, tendrás que comprobar los horarios de barcos y vuelos para ver que te cuadra bien.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Itinerario de viaje a Filipinas: 1 mes</span></h2>
+<p style="text-align: justify;">Día 1: <a href="#manila-siargao"><strong>Cómo ir de Manila a Siargao</strong></a></p>
+<p style="text-align: justify;">Días 2, 3, 4 y 5: <strong><a href="#siargao">Siargao</a></strong></p>
+<p style="text-align: justify;">Día 6: <a href="#siargao-camiguin"><strong>Cómo ir de Siargao a Camiguin</strong></a></p>
+<p style="text-align: justify;">Días 7, 8 y 9: <a href="#camiguin"><strong>Camiguin</strong></a></p>
+<p style="text-align: justify;">Día 10: <a href="#camiguin-bohol"><strong>Cómo ir de Camiguin a Bohol</strong></a></p>
+<p style="text-align: justify;">Días 11 y 12: <strong><a href="#anda">Bohol (Anda)</a></strong></p>
+<p style="text-align: justify;">Días 13, 14 y 15: <a href="#bohol"><strong>Bohol (Panglao y Loboc)</strong></a></p>
+<p style="text-align: justify;">Día 16: <a href="#bohol-siquijor"><strong>Cómo ir de Bohol a Siquijor</strong></a></p>
+<p style="text-align: justify;">Días 17 y 18: <a href="#siquijor"><strong>Siquijor</strong></a></p>
+<p style="text-align: justify;">Día 19: <a href="#siquijor-portbarton"><strong>Cómo ir de Siquijor a Port Barton</strong></a></p>
+<p style="text-align: justify;">Días 20 y 21: <a href="#portbarton"><strong>Port Barton</strong></a></p>
+<p style="text-align: justify;">Día 22: <a href="#portbarton-elnido"><strong>Cómo ir de Port Barton a El Nido</strong></a></p>
+<p style="text-align: justify;">Días 23, 24 y 25: <a href="#elnido"><strong>El Nido</strong></a></p>
+<p style="text-align: justify;">Día 26: <a href="#elnido-coron"><strong>Cómo ir de El Nido a Coron</strong></a></p>
+<p style="text-align: justify;">Días 27, 28 y 29: <a href="#coron"><strong>Coron</strong></a></p>
+<p style="text-align: justify;">Día 30: <a href="#coron-manila"><strong>Cómo ir de Coron a Manila y vuelta a casa</strong></a></p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-6888" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20675'%3E%3C/svg%3E" alt="Mapa del itinerario de 30 días de viaje por Filipinas" width="1000" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa-980x662.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa-480x324.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-6888" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa.jpg" alt="Mapa del itinerario de 30 días de viaje por Filipinas" width="1000" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa-980x662.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinarario-filipinas-30-dias-mapa-480x324.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Itinerario detallado del viaje a Filipinas: 30 días</span></h2>
+<h3 id="manila-siargao"><span style="color: #33cccc;">Día 1: Manila &#8211; Siargao</span></h3>
+<p style="text-align: justify;">Iniciamos este <strong>itinerario de viaje por Filipinas de 30 días</strong> por uno de nuestros rincones favoritos del país y del mundo, Siargao.</p>
+<p style="text-align: justify;">Localizada al sur del país, en Mindanao, empezó a ser conocida hace unas décadas gracias a sus olas, que la pusieron en el punto de mira de los <strong>surfistas</strong>. Aunque en los últimos años se ha popularizado mucho y son cada vez más los turistas que se animan a visitarla, lo cierto es que la magia de Siargao sigue casi intacta. Ya quieras practicar surf o no (te recomendamos que lo pruebes, es uno de los mejores sitios <a title="Dónde hacer surf en Filipinas: las mejores zonas y olas" href="https://www.viajarporfilipinas.com/surf-filipinas/" target="_blank" rel="noopener noreferrer"><strong>donde hacer surf en Filipinas</strong></a>), hay muchísimo <strong><a href="https://www.viajarporfilipinas.com/que-hacer-siargao/" target="_blank" rel="noopener noreferrer">que hacer en Siargao</a></strong>. Se trata de un rincón ideal para hacer <strong>recorridos en moto</strong>, bañarte en piscinas naturales, explorar islas vecinas de infarto, disfrutar de algo de ambiente nocturno… Por ello, no te aconsejamos que pases poco tiempo en ella.</p>
+<p style="text-align: justify;">Para ir de Manila a Siargao podrás ver en <strong><a href="https://www.viajarporfilipinas.com/como-llegar-siargao/" target="_blank" rel="noopener noreferrer">Cómo llegar a Siargao</a></strong> todos los detalles. Ya te adelantamos que es tan sencillo como <strong><a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Fvuelos-a%2Fiao%2Fvuelos-baratos-a-siargao-aeropuerto.html" target="_blank" rel="nofollow noopener noreferrer">reservar un vuelo directo</a></strong>. El viaje dura apenas 2 horas.</p>
+<p style="text-align: justify;">Si tienes la suerte de aterrizar temprano en la isla, no dejes pasar la oportunidad de aprovechar el día. Recorre las playas de General Luna y Malinao y contempla el atardecer en el <em>Boardwalk</em> de Cloud 9. Para cenar, echa un ojo a estos sitios <a href="https://www.viajarporfilipinas.com/donde-comer-siargao/" target="_blank" rel="noopener noreferrer">donde comer en Siargao</a>, la oferta gastronómica de la isla es súper variada.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Siargao:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio:<a href="https://www.booking.com/hotel/ph/villa-pagoda-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer"><strong> Villa Pagoda Resort</strong></a></li>
+<li>Para un lujillo:<a href="https://www.booking.com/hotel/ph/kalinaw-resort.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer"><strong> Kalinaw Resort</strong></a></li>
+<li>Más opciones <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-siargao/" target="_blank" rel="noopener noreferrer">donde dormir en Siargao</a>, <a href="https://www.viajarporfilipinas.com/mejores-hostels-siargao/" target="_blank" rel="noopener">hostels en Siargao</a> y <a href="https://www.viajarporfilipinas.com/mejores-resorts-siargao/" target="_blank" rel="noopener">mejores resorts en Siargao</a></strong></li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-2752" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20650'%3E%3C/svg%3E" alt="Itinerario viaje filipinas 30 días Siargao" width="487" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8-225x300.jpg 225w" data-lazy-sizes="(max-width: 487px) 100vw, 487px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2752" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8.jpg" alt="Itinerario viaje filipinas 30 días Siargao" width="487" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-8-225x300.jpg 225w" sizes="(max-width: 487px) 100vw, 487px" /></noscript></p>
+<h3 id="siargao"><span style="color: #33cccc;">Días 2, 3, 4 y 5: Siargao</span></h3>
+<p style="text-align: justify;">Hemos dedicado <strong>4 días completos a Siargao</strong> en este itinerario de viaje a Filipinas de 30 días. Estos son el tiempo que consideramos mínimo para disfrutar de lo que tiene esta isla, pero, por supuesto, podrías pasar aún mucho más. Si te apetece más tranquilidad o tienes pensado hacer surf, de viajero a viajero, te aconsejamos <strong>ampliar tu estancia </strong>al menos un par de días más.</p>
+<p style="text-align: justify;">En nuestra <strong><a href="https://www.viajarporfilipinas.com/guia-de-siargao/" target="_blank" rel="noopener noreferrer">Guía de Siargao</a></strong> encontrarás muchísima info para tu estancia, pero este puede ser un buen planteamiento de los días dedicados en este viaje:</p>
+<ol style="text-align: justify;">
+<li>Día de tu primer <strong><em>island hopping</em></strong> (recorridos por las islas en barco) por las 3 islas (Daku, Naked y Guyam) + Mam’on. Puedes leer más en <a href="https://www.viajarporfilipinas.com/island-hopping-siargao/" target="_blank" rel="noopener noreferrer"><strong>Island hopping en Siargao</strong></a>.</li>
+<li>Día de recorrido en <strong>moto</strong>: Magpupungko, Alegría, Tak Tak Falls y otras <a href="https://www.viajarporfilipinas.com/playas-siargao/" target="_blank" rel="noopener noreferrer">playas de Siargao</a>.</li>
+<li>Recorrido por <strong>Sugba Lagoon</strong>, Kawhagan y Pamumuan desde Del Carmen.</li>
+<li>Día de <em>island hopping</em> a <strong>Sohoton</strong> o a <strong>Corregidor</strong> Island o día de surf.</li>
+</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-2753" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Itinerario viaje 1 mes Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2753" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10.jpg" alt="Itinerario viaje 1 mes Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-10-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 id="siargao-camiguin"><span style="color: #33cccc;">Día 6: Siargao &#8211; Camiguin</span></h3>
+<p style="text-align: justify;">Hoy te espera un <strong>día largo de traslados</strong> en tu ruta por Filipinas de 30 días: vamos de Siargao a Camiguin. En <a href="https://www.viajarporfilipinas.com/llegar-camiguin-filipinas/#Como_ir_de_Siargao_a_Camiguin" target="_blank" rel="noopener noreferrer">este apartado de Cómo llegar a Camiguin</a> encontrarás toda la info que necesitas, pero, para resumir, cuentas con 2 alternativas:</p>
+<ul style="text-align: justify;">
+<li>Coger un <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fiao%2Fceb%2Fsiargao-a-internacional-de-mactan-cebu.html" target="_blank" rel="nofollow noopener noreferrer">vuelo de Siargao a Cebu</a> y un <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fceb%2Fcgm%2Finternacional-de-mactan-cebu-a-camiguin.html" target="_blank" rel="nofollow noopener noreferrer">vuelo de Cebu a Camiguin</a>.</li>
+<li>Viajar en <strong>transporte público</strong>. Para ello, tendrás que salir muy temprano de Siargao y llegarás a media tarde a Camiguin. Tienes que combinar varios barcos, buses y <em>trycicles</em>. El precio más o menos es de 1.000 pesos.</li>
+</ul>
+<p style="text-align: justify;">Llegarás a tu alojamiento bastante K.O., así que te aconsejamos descansar y recargar pilas para los días siguientes.</p>
+<p style="text-align: justify;">?️ <strong>Alojamientos recomendados en Camiguín:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio: <strong><a href="https://www.booking.com/hotel/ph/hilltop.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Hilltop Bed and Breakfast</a></strong></li>
+<li>Para un lujillo:<strong> <a href="https://www.booking.com/hotel/ph/balai-sa-baibai.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Balai sa Baibai</a></strong></li>
+<li>Más opciones <strong><a href="https://www.viajarporfilipinas.com/donde-alojarse-camiguin-filipinas/" target="_blank" rel="noopener noreferrer">donde dormir en Camiguin</a></strong></li>
+</ul>
+<h3 id="camiguin"><span style="color: #33cccc;">Días 7, 8 y 9: Camiguin</span></h3>
+<p style="text-align: justify;">Camiguin es una de <strong>nuestras islas favoritas de Filipinas</strong> y la aconsejamos a todos aquellos viajeros que les guste la playa, pero que también busquen otro tipo de actividades. La “Isla nacida del fuego” tiene una orografía única, no en vano, es el lugar del mundo con más volcanes por metro cuadrado. En ella podrás disfrutar de preciosos recorridos en moto, piscinas naturales, cascadas, buen esnórquel e islas vecinas con playas espectaculares como White Island.</p>
+<p style="text-align: justify;">En este caso le hemos asignado <strong>3 días completos</strong>, pero podríais añadirle al menos un par de días más sin problemas. Esto es especialmente aconsejable si tienes pensado hacer buceo o senderismo.</p>
+<p style="text-align: justify;">Para este itinerario de 30 días en Filipinas, te recomendamos distribuir los días de la siguiente manera:</p>
+<ol style="text-align: justify;">
+<li>Día de <strong><em>island hopping</em></strong>: White Island + Mantigue Island. Tienes más info en <a href="https://www.viajarporfilipinas.com/island-hopping-camiguin/" target="_blank" rel="noopener noreferrer"><strong>Island hopping en Camiguin</strong></a>.</li>
+<li>Recorrido en <strong>moto</strong>: Katibawasan Falls, The Walkaway Old Volcano, Sunken Cemetery y Ardent Hot Springs.</li>
+<li>Recorrido en <strong>moto</strong>: Tuasan Falls, Bura Soda Water Swimming Pool, Sto. Niño Cold Spring, Blue Lagoon, Moro Tower y Giant Clams Sanctuary.</li>
+</ol>
+<p style="text-align: justify;">En nuestra <strong><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/" target="_blank" rel="noopener noreferrer">Guía de Camiguin</a></strong> podrás encontrar información de estos lugares y también otras actividades adicionales como el <a href="https://www.viajarporfilipinas.com/trekking-hibok-hibok/" target="_blank" rel="noopener noreferrer"><strong>trekking al Hibok-Hibok</strong></a>, uno de los <a title="Volcanes de Filipinas: 6 imprescindibles" href="https://www.viajarporfilipinas.com/volcanes-filipinas/" target="_blank" rel="noopener noreferrer">volcanes de Filipinas</a> más interesantes.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5867" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="camiguin itinerario filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5867" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33.jpg" alt="camiguin itinerario filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-33-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 id="camiguin-bohol"><span style="color: #33cccc;">Día 10: Camiguin &#8211; Anda (Bohol)</span></h3>
+<p style="text-align: justify;">Saltamos hacia la vecina isla de Bohol. Aunque es una de las más turísticas de Filipinas, Bohol es <strong>enorme</strong> y cuenta con muchísimos encantos y rincones que descubrir apenas tocados por los viajeros, que centran sus esfuerzos solo en determinados sitios. Por ello, <strong>para salirte de lo habitual, te aconsejamos pasar un par de días en la zona de Anda</strong>, que, además, queda muy cerca del puerto al que llegan los barcos desde Camiguin, Jagna.</p>
+<p style="text-align: justify;">Para ir de Camiguin a Bohol y continuar con este itinerario de viaje a Filipinas de 1 mes, como te contamos en <strong><a href="https://www.viajarporfilipinas.com/como-llegar-bohol/" target="_blank" rel="noopener noreferrer">Cómo llegar a Bohol</a></strong>, toma el SuperShuttle ferri que sale los lunes, miércoles y viernes a las 8 de la mañana en dirección a Jagna. El viaje dura unas 3 horas. Después, espera a que pase una de las furgonetas que van desde ahí hasta Anda. El recorrido no te debe llevar más de 90 minutos y lo normal es pagar menos de 100 pesos.</p>
+<p style="text-align: justify;">Si llegas con tiempo a Anda, disfruta de la <strong>playa de Quinale</strong>, la playa principal de la zona. Los atardeceres suelen ser mágicos.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Anda:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio: <strong><a href="https://www.booking.com/hotel/ph/zenith-inn-amp-resto-bar.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Zenith Inn &amp; Resto Bar</a></strong></li>
+<li>Para un lujillo:<strong> <a href="https://www.booking.com/hotel/ph/amun-ini-beach-resort-amp-spa.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Amun Ini Beach Resort &amp; Spa</a></strong></li>
+<li>Más opciones <a href="https://www.viajarporfilipinas.com/dormir-bohol-isla-filipinas/" target="_blank" rel="noopener noreferrer"><strong>donde dormir en Bohol</strong></a></li>
+</ul>
+<h3 id="anda"><span style="color: #33cccc;">Días 11 y 12: Anda (Bohol)</span></h3>
+<p style="text-align: justify;">Anda es uno de los <strong>lugares más desconocidos de Bohol</strong>, pero, para nosotros, tiene un encanto especial. Con 2 días tienes de sobra para conocerlo. En el caso de que quieras apurar un poco, con uno debería ser suficiente también.</p>
+<p style="text-align: justify;"><a href="https://www.viajarporfilipinas.com/que-ver-anda-bohol/" target="_blank" rel="noopener noreferrer"><strong>¿Qué hacer en Anda? </strong></a>Aquí van algunas ideas:</p>
+<ol style="text-align: justify;">
+<li>Alquila una moto y dirígete a los <strong>arrozales de Cadapdapan y las cascadas de Can-Umantad</strong> (una de las <a href="https://www.viajarporfilipinas.com/cascadas-bohol/" target="_blank" rel="noopener noreferrer">cascadas de Bohol</a> más bonitas). Si todavía tienes tiempo, puedes ir a las <strong>Binabaje Hills</strong>, en Alicia, Bohol. También puedes ir a las playas vecinas como la de Talisay.</li>
+<li>Conoce el cenote más popular de Bohol, la <strong>Cabagnow Cave Pool</strong>, bañarte en una de las cuevas (como Combento Cave), ir a <strong>Lamanok Island</strong>, hacer snorkel o buceo en busca de tortugas o unas inmersiones de buceo (Anda es un paraíso de <a href="https://www.viajarporfilipinas.com/buceo-panglao/" target="_blank" rel="noopener">buceo en Bohol</a> para los que les guste la vida macro y, como te contamos en <a href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/" target="_blank" rel="noopener noreferrer">snorkel en Bohol</a>, es posible ver tortugas).</li>
+</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-2755" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Itinerario viaje 1 mes Anda Bohol" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2755" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7.jpg" alt="Itinerario viaje 1 mes Anda Bohol" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-7-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 id="bohol"><span style="color: #33cccc;">Días 13, 14 y 15: Otras zonas de Bohol</span></h3>
+<p style="text-align: justify;">Es el momento de conocer otros de los lugares <strong><a href="https://www.viajarporfilipinas.com/que-hacer-bohol/" target="_blank" rel="noopener noreferrer">que ver en Bohol</a></strong>. Para ello, tienes <strong>3 opciones:</strong></p>
+<ul style="text-align: justify;">
+<li>Centrar tus esfuerzos en la zona de <strong>Loboc</strong>, el interior de la isla y menos turístico. Lee más en <a href="https://www.viajarporfilipinas.com/que-hacer-loboc/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Loboc</strong></a>.</li>
+<li>Hacer base en <strong>Panglao</strong>, la isla vecina a Bohol, más turística, pero más cerca de las playas y del santuario marino de Balicasag. Lee más en <a href="https://www.viajarporfilipinas.com/que-hacer-panglao-bohol/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Panglao</strong></a>.</li>
+<li><strong>Combinar ambos lugares</strong> de la siguiente manera: ir de Anda a Loboc y pasar allí una noche. Las dos noches siguientes hacer base en Panglao.</li>
+</ul>
+<p style="text-align: justify;">Estos 3 días en Bohol de tu itinerario de 1 mes por Filipinas te aconsejamos hacer estos <strong>3 planes:</strong></p>
+<ol style="text-align: justify;">
+<li>Recorrido en <strong>moto</strong> por las <a href="https://www.viajarporfilipinas.com/chocolate-hills-bohol-como-llegar/" target="_blank" rel="noopener noreferrer">Chocolate Hills</a>, el puente de bambú, la tirolina, el Man-made Forest, algunas cascadas del interior, el crucero del río Loboc, las luciérnagas…</li>
+<li><a href="https://www.viajarporfilipinas.com/excursion-snorkel-balicasag/" target="_blank" rel="noopener noreferrer">Excursión de snorkel a <strong>Balicasag</strong></a> o, si tienes título, <a title="Buceo en Balicasag: guía y centro español recomendado" href="https://www.viajarporfilipinas.com/buceo-balicasag/" target="_blank" rel="noopener noreferrer">bucear en Balicasag</a>.</li>
+<li>Paseo por las <a href="https://www.viajarporfilipinas.com/mejores-playas-panglao-bohol/"><strong>playas</strong> de Panglao</a> (Dumaluan, Doljo…).</li>
+</ol>
+<p style="text-align: justify;">Para nosotros, en el caso de que no te importe darte un poco de tute con los cambios de alojamiento, <strong>lo ideal</strong> sería lo siguiente:</p>
+<ol style="text-align: justify;">
+<li>Salida a primera hora de Anda hasta la intersección en Loay. Hay furgonetas que hacen este traslado por 100 pesos. Se tarda algo menos de 2 horas. Ahí puedes coger un bus que te deje en <strong>Loboc</strong> (30 pesos). Una vez allí, alquila una moto para disfrutar de esas actividades del recorrido en moto que te hemos dicho. Te aconsejamos ver la puesta de sol por las Chocolate Hills. No te ciñas al mirador más típico, que suele decepcionar. Puedes circular con tu moto por carreteras entre las Chocolate Hills, ¡mola un montón! Ese día puedes ver las luciérnagas también.</li>
+<li><strong>Salida de Loboc a Panglao</strong>. Puedes contratar un transporte privado o hacerlo en transporte público yendo a Tagbilaran en bus y luego de ahí a Panglao en <em>trycicle</em> o <em>jeepney</em>. Una vez allí, alquila otra moto y disfruta de las playas de Panglao.</li>
+<li>Excursión a <strong>Balicasag</strong> y relax.</li>
+</ol>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Bohol:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio en Panglao: <strong><a href="https://www.booking.com/hotel/ph/zen-rooms-hontanosas-road.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">ZEN Rooms Captain’s Lodge</a></strong></li>
+<li>Buena relación calidad-precio en Loboc: <strong><a href="https://www.booking.com/hotel/ph/foxandthe-firefly-cottages.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Fox &amp; The Firefly Cottages</a></strong></li>
+<li>Para un lujillo en Panglao:<strong> <a href="https://www.booking.com/hotel/ph/henann-beach-alona-beach.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Hennan Resort</a></strong></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/dormir-bohol-isla-filipinas/" target="_blank" rel="noopener noreferrer">dormir en Bohol</a>, <a href="https://www.viajarporfilipinas.com/mejores-hostels-bohol/" target="_blank" rel="noopener">hostels en Bohol</a> y <a href="https://www.viajarporfilipinas.com/mejores-resorts-bohol/" target="_blank" rel="noopener">resorts en Bohol</a></strong></li>
+</ul>
+<h3 style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-2756" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Itinerario viaje 30 días Bohol" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2756" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5.jpg" alt="Itinerario viaje 30 días Bohol" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-5-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></h3>
+<h3 id="bohol-siquijor"><span style="color: #33cccc;">Día 16: Bohol &#8211; Siquijor</span></h3>
+<p style="text-align: justify;">Hoy nos ponemos en marcha para conocer otro de los lugares que hemos incluido en este <strong>itinerario de viaje a Filipinas de 30 días</strong>, Siquijor. La isla de las brujas, la isla encantada, la isla mística… La llamen como la llamen, Siquijor es una isla completísima que no suele defraudar a ningún viajero.</p>
+<p style="text-align: justify;">Para llegar, sal temprano para tomar el <a href="https://12go.asia/es/travel/tagbilaran-pier/siquijor/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">barco de Oceanjet desde el puerto de Tagbilaran hacia Siquijor</a>. En <a href="https://www.viajarporfilipinas.com/como-ir-bohol-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Cómo ir de Bohol a Siquijor</strong></a> encontrarás toda la información, pero ya te decimos que no necesitarás más que un par de horas para llegar y poder aprovechar la tarde. Disfruta de las <strong>playas de San Juan</strong> y contempla uno de los mejores <strong>atardeceres</strong> de tu vida.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Siquijor:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio: <strong><a href="https://www.booking.com/hotel/ph/tropical-fun-ta-sea-rentals.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Tropical Fun Ta Sea Rentals</a></strong></li>
+<li>Un lujillo:<strong> <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es&amp;hid=503130" target="_blank" rel="nofollow noopener noreferrer">Coco Grove Beach Resort</a></strong></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/dormir-en-siquijor/" target="_blank" rel="noopener noreferrer">dormir en Siquijor</a></strong></li>
+</ul>
+<h3 id="siquijor"><span style="color: #33cccc;">Días 17 y 18: Siquijor</span></h3>
+<p style="text-align: justify;">Vamos a dedicar este par de días de tu <strong>viaje de 30 días a Filipinas</strong> a descubrir sus secretillos. En <strong><a href="https://www.viajarporfilipinas.com/que-hacer-siquijor/" target="_blank" rel="noopener noreferrer">Qué hacer en Siquijor</a></strong> tienes una lista de actividades que hacer en la isla, pero nuestro consejillo es que distribuyas los días así:</p>
+<ol style="text-align: justify;">
+<li>Alquila la moto y haz un <strong>recorrido circular</strong> por la isla abarcando, por supuesto, las <a title="Cambugahay Falls, el épico salto de agua de Siquijor" href="https://www.viajarporfilipinas.com/cambugahay-falls-siquijor/" target="_blank" rel="noopener noreferrer">Cambugahay Falls</a> y las Lugnason Falls, el Old Balete Tree, Salandong Beach, las playas de Sandugan y la iglesia de Lazi.</li>
+<li>Con una moto, puedes llegar al corazón de la isla, buscar una <strong><em>hilot</em></strong> que te haga relajarte y luego hacer <strong>esnórquel</strong> en el santuario de Tubod o relajarte en las ocultas <strong>playas</strong> de Kagusuan.</li>
+</ol>
+<p style="text-align: justify;">En el caso de que no tuvieras suficiente esnórquel con Balicasag o simplemente te encanta hacerlo, puedes dedicar ese segundo día a hacer la <strong>excursión de Apo Island</strong> desde Siquijor. Esto es especialmente recomendable si te gustan las tortugas, ¡hay muchísimas! En nuestra <strong><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Guía de Siquijor</a> </strong>y <a title="Las mejores playas de Siquijor" href="https://www.viajarporfilipinas.com/mejores-playas-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de Siquijor</strong> </a>puedes saber un poquito más.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2757" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Itinerario viaje 30 días Siquijor" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2757" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9.jpg" alt="Itinerario viaje 30 días Siquijor" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-9-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 id="siquijor-portbarton"><span style="color: #33cccc;">Día 19: Siquijor &#8211; Port Barton</span></h3>
+<p style="text-align: justify;">Un día más de traslados… ¡Avisamos que el de hoy será largo! Para ir de Siquijor a Port Barton tienes varias alternativas:</p>
+<p>&nbsp;</p>
+<ul style="text-align: justify;">
+<li><strong>La más rápida pero cara:</strong> tomar un <a href="https://12go.asia/es/travel/siquijor/dumaguete-port/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">barco de Siquijor a Dumaguete</a> a 1ª hora y luego un <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fdgt%2Fpps%2Fdumaguete-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener noreferrer">vuelo de Dumaguete a Puerto Princesa</a> (con escala en Manila normalmente) y una <a href="https://12go.asia/es/travel/puerto-princesa-airport/port-barton/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">furgoneta de Puerto Princesa a Port Barton</a>.</li>
+<li><strong>Lenta pero barata:</strong> tomar un <a href="https://12go.asia/es/travel/larena-pier/cebu/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">barco de Siquijor a Cebu</a>, <a href="https://www.viajarporfilipinas.com/dormir-en-cebu/" target="_blank" rel="noopener noreferrer">dormir en Cebu</a>, tomar un <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fceb%2Fpps%2Finternacional-de-mactan-cebu-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener noreferrer">vuelo de Cebu a Puerto Princesa</a> al día siguiente y coger una <a href="https://12go.asia/es/travel/puerto-princesa-airport/port-barton/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">furgoneta de Puerto Princesa a Port Barton</a>.</li>
+<li><strong>Lenta y barata pero con la que puedes llegar a Port Barton en el mismo día:</strong> tomar un <a href="https://12go.asia/es/travel/siquijor/dumaguete-port/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">barco de Siquijor a Dumaguete</a> a 1ª hora, ir en <em>jeepney</em> al puerto de Sibulan, tomar el barco a Liloan, un bus a Cebu, <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fceb%2Fpps%2Finternacional-de-mactan-cebu-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener noreferrer">vuelo de Cebu a Puerto Princesa</a> y tomar una <a href="https://12go.asia/es/travel/puerto-princesa-airport/port-barton/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">furgoneta de Puerto Princesa a Port Barton</a>.</li>
+</ul>
+<p style="text-align: justify;"><strong>¿Cuál es la mejor de ellas?</strong> La que mejor se adapte a tu presupuesto. En el caso de que quieras partir el viaje, puedes optar por esta última opción e incluir un día por <a href="https://www.viajarporfilipinas.com/moalboal-filipinas/" target="_blank" rel="noopener noreferrer">Moalboal</a>.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio cerca del aeropuerto de Cebu: <strong><a href="https://www.booking.com/hotel/ph/little-norway-guesthouse.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Little Norway Guesthouse</a></strong></li>
+<li>Buena relación calidad-precio en Port Barton: <strong><a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Ausan Beach Front Cottages</a></strong></li>
+<li>Un lujillo en Port Barton:<strong> <a href="https://www.booking.com/hotel/ph/rubin-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Rubin Resort</a></strong></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/dormir-en-cebu/" target="_blank" rel="noopener noreferrer">dormir en Cebu</a></strong></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/hoteles-port-barton/" target="_blank" rel="noopener noreferrer">dormir en Port Barton</a></strong></li>
+</ul>
+<h3 id="portbarton"><span style="color: #33cccc;">Días 20 y 21: Port Barton</span></h3>
+<p style="text-align: justify;">Si has podido llegar a Port Barton en el mismo día, dispondrás de 2 días completos de relax en uno de nuestros lugares favoritos. Para nosotros, Port Barton es un imprescindible en un itinerario de viaje a Filipinas de 1 mes.</p>
+<p style="text-align: justify;">Mucho menos masificado que otros lugares de la isla, Port Barton tiene un ambiente más mochilero, más relajado. En sus alrededores podrás disfrutar la espectacular White Beach y su <strong><em>island hopping</em> bueno, bonito y barato</strong>. En <strong><a href="https://www.viajarporfilipinas.com/que-hacer-port-barton/" target="_blank" rel="noopener noreferrer">Qué hacer en Port Barton</a></strong> encontrarás toda la información para tus días allí. Te aconsejamos distribuirlos así:</p>
+<ol style="text-align: justify;">
+<li><strong>Excursión</strong> a Coconut Beach, White Beach y/o Pamuayan Waterfall. También puedes explorar otras <a href="https://www.viajarporfilipinas.com/mejores-playas-port-barton/" target="_blank" rel="noopener noreferrer">playas de Port Barton</a>.</li>
+<li>Día de <a title="Island hopping en Port Barton: los mejores tours" href="https://www.viajarporfilipinas.com/island-hopping-port-barton/" target="_blank" rel="noopener noreferrer"><strong><em>island hopping</em></strong> en Port Barton</a> y puesta de sol épica.</li>
+</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-2758" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Itinerario viaje 30 días Port Barton" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2758" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2.jpg" alt="Itinerario viaje 30 días Port Barton" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-2-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 id="portbarton-elnido"><span style="color: #33cccc;">Día 22: Port Barton &#8211; El Nido</span></h3>
+<p style="text-align: justify;">El siguiente paso de esta ruta por Filipinas de 30 días es uno de los lugares turísticos de más renombre en el país: El Nido. En <strong><a href="https://www.viajarporfilipinas.com/el-nido-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer">Cómo llegar a El Nido</a></strong> encontrarás toda la información, pero ya te adelantamos que podrás coger una de las <a href="https://12go.asia/es/travel/port-barton/el-nido/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">furgonetas que van de Port Barton a El Nido</a>. Te aconsejamos hacerlo lo más <strong>temprano</strong> posible para aprovechar el día. El recorrido te llevará unas 3,5-4 horas.</p>
+<p style="text-align: justify;">Al llegar a El Nido y dejar las cosas en el hotel, puedes hacer varias cosas. La más relajada es ir a la <strong>playa de Las Cabañas</strong>, una de las <a title="Las mejores playas de El Nido (sin hacer island hopping)" href="https://www.viajarporfilipinas.com/mejores-playas-el-nido/" target="_blank" rel="noopener noreferrer">mejores playas de El Nido</a>. Allí podrás darte un buen baño y quizás contemplar una de las mejores puestas de sol de Filipinas. En el caso de que hayas llegado bien pronto, quizás este día también puedes ir a Nacpan Beach.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en El Nido:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio: <strong><a href="https://www.booking.com/hotel/ph/bulskamp-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Bulskamp Inn</a></strong></li>
+<li>Para un lujillo: <a href="https://www.booking.com/hotel/ph/frangipani-el-nido.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Frangipani El Nido</strong></a></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">dormir en El Nido</a>, <a href="https://www.viajarporfilipinas.com/mejores-hostels-el-nido/" target="_blank" rel="noopener">hostels en El Nido</a> y <a href="https://www.viajarporfilipinas.com/mejores-resorts-el-nido/" target="_blank" rel="noopener">resorts en El Nido</a></strong></li>
+</ul>
+<h3 id="elnido"><span style="color: #33cccc;">Días 23, 24 y 25: El Nido</span></h3>
+<p style="text-align: justify;">Los próximos días de tu <strong>itinerario de viaje a Filipinas de 1 mes</strong> son para dedicárselos íntegramente a El Nido y el precioso archipiélago de Bacuit. En <a href="https://www.viajarporfilipinas.com/que-hacer-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en El Nido</a> descubrirás los mejores <em>islands hoppings </em>y otras cosas que ver en la zona con muchísimo detalle, pero, para resumir, podrías hacer esta <strong>distribución por días</strong>:</p>
+<ol style="text-align: justify;">
+<li><em>Island hopping A</em></li>
+<li>Recorrido por las playas de Nacpan, Duli, Lío Beach y/o Las Cabañas.</li>
+<li><em>Island hopping</em> C o D, si te apetece más, también puedes hacer una ruta en kayak.</li>
+</ol>
+<p style="text-align: justify;">El orden no tiene por qué ser así, pero te aconsejamos mirar la previsión del tiempo y elegir un día con sol para hacer los tours. Además, ya sabes que somos unos enamorados de los tours privados y te lo recomendamos. En nuestra <strong><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="noopener noreferrer">Guía de El Nido</a></strong> e <a title="Island hopping en El Nido: los mejores tours" href="https://www.viajarporfilipinas.com/island-hopping-el-nido-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Island Hopping en El Nido</strong></a> encontrarás toda la info que precisas.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6625" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Itinerario viaje filipinas 1 mes El Nido" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6625" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55.jpg" alt="Itinerario viaje filipinas 1 mes El Nido" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-55-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 id="elnido-coron"><span style="color: #33cccc;">Día 26: El Nido &#8211; Coron</span></h3>
+<p style="text-align: justify;">Esta será nuestra última isla en esta ruta de viaje por Filipinas en 1 mes, pero, no podía ser menos, es un gran colofón. En Coron te esperan <strong>épicos paisajes de roca caliza e islas deshabitadas</strong>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Coron?</strong> Como te detallamos en <a href="https://www.viajarporfilipinas.com/como-llegar-coron-filipinas/" target="_blank" rel="noopener noreferrer">Cómo llegar a Coron</a>, lo más aconsejable es coger un <a href="https://12go.asia/es/travel/el-nido/coron-pier/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">barco rápido de El Nido a Coron</a>. Ahora también Air Swift ofrece vuelos entre ambos destinos, pero debes saber que no son todos los días.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://12go.asia/es/travel/el-nido/coron-pier/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">Reserva tus billetes de El Nido a Coron aquí</a></p>
+<p style="text-align: justify;">Aunque llegarás algo tarde, puedes <strong>aprovechar ese día</strong>. Así, intenta hacer snorkel en 7 Pecados, subir al Mt. Tapyas o visitar las Maquinit Hot Springs. En nuestra <a href="https://www.viajarporfilipinas.com/guia-de-coron/" target="_blank" rel="noopener noreferrer">Guía de Coron</a> encontrarás muchísimas actividades y cómo realizarlas.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Coron:</strong></p>
+<ul style="text-align: justify;">
+<li>Buena relación calidad-precio: <strong><a href="https://www.booking.com/hotel/ph/acacia-garden-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Acacia Garden Inn</a></strong></li>
+<li>Para un lujillo: <strong><a href="https://www.booking.com/hotel/ph/the-funny-lion-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">The Funny Lion</a></strong></li>
+<li>Más recomendaciones para <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-en-coron-filipinas/" target="_blank" rel="noopener noreferrer">dormir en Coron</a></strong></li>
+</ul>
+<h3 id="coron"><span style="color: #33cccc;">Días 27, 28 y 29: Coron</span></h3>
+<p style="text-align: justify;">Para finalizar este itinerario por Filipinas de 30 días, le hemos dado 3 días enteros para disfrutar de Coron. En <a href="https://www.viajarporfilipinas.com/que-hacer-coron/" target="_blank" rel="noopener noreferrer">Qué ver y qué hacer en Coron</a> e <a href="https://www.viajarporfilipinas.com/island-hopping-coron/" target="_blank" rel="noopener noreferrer">Island hopping en Coron</a> puedes leer muchísima información, pero nuestro consejo es que <strong>distribuyas los días de la siguiente manera</strong>:</p>
+<ol style="text-align: justify;">
+<li><em>Island hopping</em>: <strong>Ultimate Tour</strong>, que te llevará a conocer los puntos más bonitos de Coron Island. Te aconsejamos MUCHO que hagas este tour privado para evitar coincidir con muchos turistas. Puedes dejarnos un comentario y te enviaremos los detalles de contacto de nuestro guía de confianza en Coron.</li>
+<li><em>Island hopping</em>: <strong>Escapade Tour</strong>, que te llevará a descubrir islas como Malcapuya, Banana y Bulog Dos o Waling Waling.</li>
+<li>Aquí puedes hacer <strong>dos cosas</strong>, dependiendo de tus gustos:
+<ul>
+<li>Island hopping por islas recónditas como North Cay, South Cay…</li>
+<li>Día de <strong>buceo</strong> por los barcos hundidos de Coron. No en vano, es uno de <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">los mejores lugares para bucear en Filipinas</a>.</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-2760" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20467%20700'%3E%3C/svg%3E" alt="Itinerario viaje filipinas 1 mes Coron" width="467" height="700" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1.jpg 467w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1-200x300.jpg 200w" data-lazy-sizes="(max-width: 467px) 100vw, 467px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2760" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1.jpg" alt="Itinerario viaje filipinas 1 mes Coron" width="467" height="700" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1.jpg 467w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-1-mes-1-200x300.jpg 200w" sizes="(max-width: 467px) 100vw, 467px" /></noscript></p>
+<h3 id="coron-manila"><span style="color: #33cccc;">Día 30: Coron &#8211; Manila</span></h3>
+<p style="text-align: justify;">La organización de este último día de ruta por Filipinas dependerá de cuándo sea tu <strong>vuelo internacional</strong>. Esto determinará qué <strong><a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fusu%2Fmnlp%2Fbusuanga-a-manila.html" target="_blank" rel="nofollow noopener noreferrer">vuelo comprar de Coron a Manila</a></strong>.</p>
+<p style="text-align: justify;"><strong>Ojo:</strong> ten en cuenta que el aeropuerto de Busuanga (Coron) es muy pequeño y cuenta con unas infraestructuras mínimas. Esto se traduce en retrasos o cancelaciones de vuelo, por lo que te recomendamos dejar tiempo suficiente para tu vuelo internacional o, mejor aún, dejar al menos una noche.</p>
+<p style="text-align: justify;">Si llegas a Manila por la tarde y tienes el vuelo al día siguiente o por la noche, te aconsejamos aprovechar para echar un vistazo a la ciudad. Puedes salir a cenar por el animado barrio de <strong>Poblacion</strong> y brindar por un fabuloso viaje a Filipinas de 1 mes en la terraza del <a href="https://www.booking.com/hotel/ph/i-39-m-and-residences.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">I’m Hotel</a>.</p>
+<p style="text-align: justify;">En el caso de que cuentes con 6 o 7 horas para conocer la capital de Filipinas, puedes hacer la ruta que te proponemos en <strong><a href="https://www.viajarporfilipinas.com/que-hacer-manila-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en Manila</a></strong>.</p>
+<p style="text-align: justify;"><strong>?️ Alojamientos recomendados en Manila:</strong></p>
+<ul style="text-align: justify;">
+<li>Si tienes que hacer noche cerca del aeropuerto de Manila:<a href="https://www.booking.com/hotel/ph/i-39-m-and-residences.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener"><strong> OYO 773 Alicia Apartment</strong></a></li>
+<li>Si tienes una noche y quieres hacer algo chulo:<strong> <a href="https://www.booking.com/hotel/ph/i-39-m-and-residences.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">I’m Hotel</a></strong></li>
+<li>Más opciones <a href="https://www.viajarporfilipinas.com/dormir-manila-filipinas/" target="_blank" rel="noopener noreferrer"><strong>donde dormir en Manila</strong></a> o <a href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/" target="_blank" rel="noopener noreferrer"><strong>cerca del aeropuerto de Manila</strong></a></li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-5869" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="intramuros en manila" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-768x512.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-480x320.jpg 480w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5869" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3.jpg" alt="intramuros en manila" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-768x512.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/itinerario-viaje-filipinas-30-días-3-480x320.jpg 480w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/0/embed?mid=1mXmOz1UNKVYlG6OuhrnjacapjbQCb2OT"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mXmOz1UNKVYlG6OuhrnjacapjbQCb2OT" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Alternativas a este itinerario de viaje a Filipinas de 1 mes</span></h2>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Suprimir Camiguin o Siargao y sustituirlo por Malapascua o Bantayan</span></h3>
+<p style="text-align: justify;">Si primas las <strong>playas</strong> o el <strong>buceo</strong> ante todo y quieres un poquito de relax, podrías suprimir la visita a una de estas dos islas y empezar tu viaje volando a Cebu. Desde ahí podrás <a href="https://www.viajarporfilipinas.com/como-llegar-a-malapascua/" target="_blank" rel="noopener noreferrer">llegar a Malapascua</a> o <a href="https://www.viajarporfilipinas.com/llegar-bantayan-filipinas/" target="_blank" rel="noopener noreferrer">llegar a Bantayan</a>. La primera es más conocida por ser un paraíso para buceadores, pero también tiene unas playas y un ambiente que nos enamora. En <a href="https://www.viajarporfilipinas.com/que-hacer-en-malapascua/" target="_blank" rel="noopener noreferrer">Qué hacer en Malapascua</a> y <a title="Buceo en Malapascua: mejores inmersiones y centro español recomendado" href="https://www.viajarporfilipinas.com/buceo-malapascua/" target="_blank" rel="noopener noreferrer">Buceo en Malapascua</a> podrás saber más.</p>
+<p style="text-align: justify;">Por su lado, <strong>Bantayan</strong> tiene unas playas paradisiacas y son una buena medicina para el jet lag que tendrás el primer día. En <a href="https://www.viajarporfilipinas.com/que-hacer-bantayan-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en Bantayan</a> puedes hacerte una idea de lo que podrás encontrar allí.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Sustituir Coron por Malapascua o Bantayan</span></h3>
+<p style="text-align: justify;">En el caso de que creas que has conocido suficiente Palawan con El Nido y Port Barton, una buena idea puede ser saltar desde Siquijor a Malapascua o Bantayan y acabar tu itinerario de viaje a Filipinas de 30 días en El Nido.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">3. Eliminar la parte de Anda y conocer Moalboal</span></h3>
+<p style="text-align: justify;">Si tienes ganas de hacer <strong>mucho esnórquel</strong>, desde Camiguin puedes ir directamente a Panglao, pasar allí 2-3 días, ir a Siquijor y luego ir a Moalboal antes de ir a Palawan. En <a href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en Moalboal</a> tienes toda la info.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">4. Relax en 30 días en Filipinas</span></h3>
+<p style="text-align: justify;">Si quieres un itinerario aún más relajado, podrías prescindir de algunos destinos. Así, podrías <strong>sustituir Coron</strong> por unos días más en Siargao, por ejemplo. También podrías <strong>prescindir de Anda</strong> y estar más tiempo en Siquijor. Como ves, todo es modulable según los gustos de cada uno.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">5. <em>Off the beaten track!</em></span></h3>
+<p style="text-align: justify;">Si quieres algo distinto, <strong>elimina Palawan de tu viaje</strong> y dedica todos esos días a descubrir la zona de Romblon: <a href="https://www.viajarporfilipinas.com/que-hacer-romblon/" target="_blank" rel="noopener noreferrer">Romblon</a>, <a title="Sibuyan" href="https://www.viajarporfilipinas.com/sibuyan-guia/" target="_blank" rel="noopener noreferrer">Sibuyan</a> y <a href="https://www.youtube.com/watch?v=LKiPEiiw7oc&amp;feature=youtu.be" target="_blank" rel="nofollow noopener noreferrer">Cresta de Gallo</a>. Llegar será complicadillo, pues tendrás que volar desde Cebu a Roxas o hacer una combinación hacia el aeropuerto de Tablas (consulta <a href="https://www.viajarporfilipinas.com/llegar-a-romblon/" target="_blank" rel="noopener noreferrer">Cómo llegar a Romblon</a>), pero será una bonita sorpresa, sobre todo si quieres salirte de lo típico que la gente ve en Filipinas.</p>
+<p style="text-align: justify;">También puedes saltarte la parte de Coron Town e ir directamente a <a href="https://www.viajarporfilipinas.com/que-hacer-concepcion-busuanga/" target="_blank" rel="noopener noreferrer"><strong>Concepción</strong></a>. Esta zona de Busuanga es perfecta para aquellos que quieren explorar zonas diferentes sin sacrificar el maravilloso Ultimate Tour.</p>
+<p style="text-align: justify;">Para hacerte un regalazo, también puedes cuadrar la <a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener noreferrer"><strong>Expedición de Coron a El Nido</strong></a> (o viceversa). Pasarás varias noches entre ambos rincones disfrutando de islas remotas como Linapacan y durmiendo en cabañas en la playa. De verdad, merece la pena.</p>
+<div class='et_post_video'><iframe loading="lazy" title="Cresta de Gallo, una joya de Filipinas" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/LKiPEiiw7oc?feature=oembed"></iframe><noscript><iframe title="Cresta de Gallo, una joya de Filipinas" width="1080" height="608" src="https://www.youtube.com/embed/LKiPEiiw7oc?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript></div>
+<hr />
+<p style="text-align: center;"><em>¿Te ha gustado este itinerario de viaje a Filipinas de 1 mes por libre? ¿Tienes dudas? ¡Cuéntanos en comentarios!</em></p>
+<p style="text-align: center;"><em> </em><strong>Si quieres que diseñemos tu ruta de viaje por Filipinas a medida y te preparemos una guía al dedillo 100% personalizada, </strong>nuestro servicio de <a href="https://www.viajarporfilipinas.com/asesoria-de-viajes-a-filipinas/">ASESORÍA DE VIAJES A FILIPINAS</a> es lo que necesitas ¡Pruébalo!</p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">260 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/comment-page-10/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-54433">
+		<article id="comment-54433" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Antonia</span>				<span class="comment_date">
+					el 18/03/2025 a las 20:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Enhorabuena por el trabajo y con ello la gran ayuda que supone a quienes queremos visitar Filipinas. Os pregunto lo siguiente; vamos a visitar el país durante un mes. No queremos la locura de tantos trayectos.  En principio, Palawan y si tuvierais que elegir, qué otras islas elegirían, reduciendo traslados. Muchas gracias de antemano!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54433' data-commentid="54433" data-postid="2746" data-belowelement="comment-54433" data-respondelement="respond" data-replyto="Responder a Antonia" aria-label='Responder a Antonia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54462">
+		<article id="comment-54462" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/03/2025 a las 01:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Antonia, muchas gracias : ) si nos cuentas un poco mejor qué tipo de viaje queréis hacer, actividades, temporada u otros datos que nos podáis dar, os podremos decir un poco mejor. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-52439">
+		<article id="comment-52439" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Xavi</span>				<span class="comment_date">
+					el 10/02/2025 a las 20:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenas! Enhorabuena por esta pagina web, la verdad que os lo habeis currado mucho.<br />
+Muchas gracias por toda la informacion.<br />
+Planeo ir a Filipinas este Junio y Julio y seguramente empieze en Siargao. Me preguntaba si es un buen sitio para hacer kitesurf. Hay cursos que se puedan hacer ahi? Sabes de alguno? Y precios?<br />
+Muchas gracias de antemano</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52439' data-commentid="52439" data-postid="2746" data-belowelement="comment-52439" data-respondelement="respond" data-replyto="Responder a Xavi" aria-label='Responder a Xavi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52508">
+		<article id="comment-52508" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/02/2025 a las 02:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Xavi. Nos alegra mucho que la web te sea de ayuda. Sinceramente, no nos suena haber visto cursos así en la isla. Y gente haciendo kite solo lo vimos una vez&#8230; Surf el que quieras, pero kite no sabemos. Un abrazo.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-52162">
+		<article id="comment-52162" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Pine Caballero</span>				<span class="comment_date">
+					el 06/02/2025 a las 09:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Estamos valorando hacer nuestra luna de miel en Filipinas un mes entre diciembre y enero.<br />
+En este itinerario pone que es para los meses de verano. Como se podría adaptar para evitar el máximo posible las lluvias y ver las islas menos turísticas? Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52162' data-commentid="52162" data-postid="2746" data-belowelement="comment-52162" data-respondelement="respond" data-replyto="Responder a Pine Caballero" aria-label='Responder a Pine Caballero'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52223">
+		<article id="comment-52223" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/02/2025 a las 02:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Pine, ¡felicidades por la boda! Para evitar las lluvias, solo tienes que quitar Siargao y Camiguin y sustituirlas por otras islas de la zona de Bisayas que te llamen la atención. Échale un ojo a esta lista de <a href="https://www.viajarporfilipinas.com/islas-poco-turisticas-filipinas/" title="11 islas poco turísticas de Filipinas" target="_blank" rel="noopener ugc">islas poco turísticas en Filipinas</a>. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51719">
+		<article id="comment-51719" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alba</span>				<span class="comment_date">
+					el 30/01/2025 a las 12:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo! 🙂 Mi amiga y yo estamos mirando vuelos de Coron a Manila y nos cobran unos precios bastante elevados&#8230; hemos entrado en la página 12Go y hemos visto que hay un ferry de 13h de Coron al Puerto de Manila North Harbor mucho más económico. Sabéis si es factible?<br />
+Muchas gracias por todo, estamos organizando todo el viaje desde vuestra página, es genial!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51719' data-commentid="51719" data-postid="2746" data-belowelement="comment-51719" data-respondelement="respond" data-replyto="Responder a Alba" aria-label='Responder a Alba'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51735">
+		<article id="comment-51735" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/01/2025 a las 15:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alba, gracias a ti por leernos : ) claro que sí, si te lo ofrecen es porque es factible, sin problema. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-51069">
+		<article id="comment-51069" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alba</span>				<span class="comment_date">
+					el 21/01/2025 a las 21:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Claudia y Jairo!<br />
+Estoy preparando mi itinerario de viaje de 30 días (mi amiga y yo nos quedamos 45 días y lo estamos adaptando) y seguimos el que tenéis vosotros aquí. Tenemos un pequeño problema; nos hospedamos en “The broken board” del 6 al 14 de marzo y el último día tenemos que ir a Camiguin. Por lo que he leído hay que coger el ferry desde Dapa a las 6am para ir bien de tiempo, pero del hotel al puerto tenemos unos 40 minutos. Sabéis si podemos ir con unas scooters y dejarlas en el puerto mismo? o si temprano por la mañana podríamos coger algún otro transporte? Otra cosa… tenemos el check-out a partir de las 6am, supongo que los del hotel nos podrían dejar irnos antes… muchas gracias ????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51069' data-commentid="51069" data-postid="2746" data-belowelement="comment-51069" data-respondelement="respond" data-replyto="Responder a Alba" aria-label='Responder a Alba'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51095">
+		<article id="comment-51095" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 22/01/2025 a las 01:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alba, no hay ningún tipo de problema, en Filipinas la vida empieza pronto. Para ese día podéis coger un tricycle y sin problema podréis comunicar que os vais pronto el día de antes y dejar la llave en algún sitio. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-49807">
+		<article id="comment-49807" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Joan</span>				<span class="comment_date">
+					el 31/12/2024 a las 13:18				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días, primero de todo enhorabuena por el blog, ya que es increíble.</p>
+<p>Llegamos el 15 de enero a Manila, y tenemos dudas de si empezar por Bohol/Camiguin o por Palawan. Más o menos queremos hacer el itinerario que tenéis aquí planteado. Eliminamos Siargao ya que hará peor tiempo y quizás añadir Romblon, y podia ser una opción para empezar el viaje y desde ahí moverse a Bohol. En total vamos a estar 36 días.<br />
+Yo tengo el titulo de buceo pero mi pareja no, y leí que para hacerlo en español conocéis una escuela buena en Bohol. Para calcular un poco el tiempo de hacer el curso. </p>
+<p>Ya me decís vuestra opinión. Mil gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-49807' data-commentid="49807" data-postid="2746" data-belowelement="comment-49807" data-respondelement="respond" data-replyto="Responder a Joan" aria-label='Responder a Joan'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-49888">
+		<article id="comment-49888" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 02/01/2025 a las 00:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Joan, ¡muchas gracias! Para el curso de OW necesitas al menos 2,5 días haciendo la teoría online. Si tienes 36 días, puedes hacer la ruta que proponemos menos Siargao, pero considera que Romblon te va a llevar algo más de tiempo, así que no te duermas mucho. Ahora te pasamos la info para el curso. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-52940">
+		<article id="comment-52940" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Liliana Blanco álvarez</span>				<span class="comment_date">
+					el 19/02/2025 a las 19:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos!!!! Me encanta vuestro blog&#8230; Y me está ayudando mucho para organizar mi viaje. Me voy sola en abril y sigo teniendo gran preocupación con el tema de alquilar moto, además en la Embajada hacen mucho imcapié sobre el tema.<br />
+He leído que se necesita carnet tipo A, y lo que no encuentro es un seguro de viaje que te cubra accidentes frente a terceros en Filipinas.<br />
+Qué opciones podría tener para moverme en las islas??<br />
+Muchísimas gracias..</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52957">
+		<article id="comment-52957" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/02/2025 a las 00:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Liliana, como te comentábamos por Facebook, no existen seguros de viaje así. En cualquier caso, para moverte por el país no hace falta que todo el rato cojas una moto, tienes tricycles y habal habal por todos lados ; )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-1-mes/comment-page-10/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/itinerario-viaje-filipinas-1-mes/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='2746' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6eaf441469" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="200"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2746","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

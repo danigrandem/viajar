@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ MEJOR SEGURO DE VIAJE 2025 - Guía definitiva ◁ - Viajar por Filipinas</title>
+	<meta name="description" content="El mejor seguro de viaje es imprescindible para un viaje de 10. Te contamos cuál usamos y consejos para que no te engañen con falsas comparativas." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/mejor-seguro-viaje/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ MEJOR SEGURO DE VIAJE 2025 - Guía definitiva ◁ - Viajar por Filipinas" />
+	<meta property="og:description" content="El mejor seguro de viaje es imprescindible para un viaje de 10. Te contamos cuál usamos y consejos para que no te engañen con falsas comparativas." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/mejor-seguro-viaje/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2019-06-23T10:56:33+00:00" />
+	<meta property="article:modified_time" content="2025-03-06T09:42:14+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="21 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Mejor seguro de viaje 2025 – Guía Definitiva","datePublished":"2019-06-23T10:56:33+00:00","dateModified":"2025-03-06T09:42:14+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/"},"wordCount":4307,"commentCount":12,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg","articleSection":["Info práctica","Seguro de viaje"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/mejor-seguro-viaje/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/","url":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/","name":"▷ MEJOR SEGURO DE VIAJE 2025 - Guía definitiva ◁ - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg","datePublished":"2019-06-23T10:56:33+00:00","dateModified":"2025-03-06T09:42:14+00:00","description":"El mejor seguro de viaje es imprescindible para un viaje de 10. Te contamos cuál usamos y consejos para que no te engañen con falsas comparativas.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/mejor-seguro-viaje/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg","width":1000,"height":667,"caption":"Mejor seguro de viaje"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/mejor-seguro-viaje/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Mejor seguro de viaje 2025 – Guía Definitiva"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/mejor-seguro-viaje/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Mejor seguro de viaje 2025 – Guía Definitiva del feed" href="https://www.viajarporfilipinas.com/mejor-seguro-viaje/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/4115" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=4115' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fmejor-seguro-viaje%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fmejor-seguro-viaje%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-4115-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/4115/et-core-unified-4115.min.css?ver=1745667298" /><link rel="stylesheet" id="et-core-unified-deferred-4115-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/4115/et-core-unified-deferred-4115.min.css?ver=1745667298" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-4115 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-4115" class="et_pb_post post-4115 post type-post status-publish format-standard has-post-thumbnail hentry category-info-practica category-seguro-de-viaje">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Mejor seguro de viaje 2025 – Guía Definitiva</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/info-practica/" rel="category tag">Info práctica</a>, <a href="https://www.viajarporfilipinas.com/category/info-practica/seguro-de-viaje/" rel="category tag">Seguro de viaje</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Mejor seguro de viaje" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-1.jpg" alt="Mejor seguro de viaje" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Contratar el <strong>mejor seguro de viaje</strong> es, a día de hoy, uno de los indispensables a tener en cuenta a la hora de preparar un viaje. Junto a los vuelos y parte del alojamiento, el <strong>seguro médico internacional</strong> es la tercera pata de la mesa sobre la que se construye un viaje. Por ello, es indispensable saber qué se contrata y con quién se hace. La salud es un tema del que no queremos estar pendientes durante un viaje enfocado a disfrutar.</p>
+<p style="text-align: justify;">Nosotros llevamos muchísimos años viajando. De hecho, vivimos viajando. Y nos parece totalmente impensable salir de casa sin estar cubiertos por el <strong>mejor seguro de viajes</strong>. Durante esta larga vida viajera hemos tenido la oportunidad de contratar (y, por desgracia, utilizar) los principales seguros de viaje, pero desde hace ya años viajamos con el que para nosotros es el <strong>mejor seguro de viaje</strong>. En esta guía completa te vamos a contar por qué elegimos <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">IATI</a> como mejor seguro de viajes, cuáles son sus ventajas y qué cosas debes tener en cuenta a la hora de contratarlo.<span id="more-4115"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682589829fe59" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682589829fe59"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Mejor_seguro_de_viaje_que_tener_en_cuenta_a_la_hora_de_contratar" title="Mejor seguro de viaje, qué tener en cuenta a la hora de contratar">Mejor seguro de viaje, qué tener en cuenta a la hora de contratar</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#Franquicia" title="Franquicia">Franquicia</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#Anulacion" title="Anulación">Anulación</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#Atencion_en_tu_idioma_y_gratuita" title="Atención en tu idioma y gratuita">Atención en tu idioma y gratuita</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#Equipajes_vuelos_robos_cancelaciones%E2%80%A6" title="Equipajes, vuelos, robos, cancelaciones…">Equipajes, vuelos, robos, cancelaciones…</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#Coberturas_adaptables" title="Coberturas adaptables">Coberturas adaptables</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#Coberturas_ilimitadas" title="Coberturas ilimitadas">Coberturas ilimitadas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#Responsabilidad_civil" title="Responsabilidad civil">Responsabilidad civil</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#Gastos_odontologicos" title="Gastos odontológicos">Gastos odontológicos</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#Mejor_seguro_de_viaje_para_familias" title="Mejor seguro de viaje para familias">Mejor seguro de viaje para familias</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="#Seguro_de_viaje_con_complementos_unicos" title="Seguro de viaje con complementos únicos">Seguro de viaje con complementos únicos</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#Deportes_de_aventura" title="Deportes de aventura">Deportes de aventura</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#Seguro_de_viaje_para_crucero" title="Seguro de viaje para crucero">Seguro de viaje para crucero</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#Cobertura_especial_de_reclamacion_de_vuelos_cancelados" title="Cobertura especial de reclamación de vuelos cancelados">Cobertura especial de reclamación de vuelos cancelados</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#Aplicacion_para_el_movil" title="Aplicación para el móvil">Aplicación para el móvil</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-16" href="#Experiencias_reales_con_el_mejor_seguro_de_viaje" title="Experiencias reales con el mejor seguro de viaje">Experiencias reales con el mejor seguro de viaje</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-17" href="#Como_contratar_el_mejor_seguro_de_viaje" title="Cómo contratar el mejor seguro de viaje">Cómo contratar el mejor seguro de viaje</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-18" href="#Que_modalidad_del_mejor_seguro_de_viajes_elegir" title="Qué modalidad del mejor seguro de viajes elegir">Qué modalidad del mejor seguro de viajes elegir</a><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-19" href="#IATI_Basico" title="IATI Básico">IATI Básico</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-20" href="#IATI_Estandar" title="IATI Estándar">IATI Estándar</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-21" href="#IATI_Mochilero" title="IATI Mochilero">IATI Mochilero</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-22" href="#IATI_Estrella" title="IATI Estrella">IATI Estrella</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-23" href="#IATI_Familia" title="IATI Familia">IATI Familia</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-24" href="#IATI_Grandes_Viajes" title="IATI Grandes Viajes">IATI Grandes Viajes</a></li></ul></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-25" href="#Seguro_de_viaje_para_Europa_%C2%BFes_necesario" title="Seguro de viaje para Europa, ¿es necesario?">Seguro de viaje para Europa, ¿es necesario?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-26" href="#Comparativa_de_seguros_de_viaje" title="Comparativa de seguros de viaje">Comparativa de seguros de viaje</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-27" href="#%C2%BFCual_es_el_mejor_seguro_de_viaje" title="¿Cuál es el mejor seguro de viaje?">¿Cuál es el mejor seguro de viaje?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-28" href="#El_mejor_seguro_descuento" title="El mejor seguro + descuento">El mejor seguro + descuento</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-29" href="#Como_usar_el_seguro_de_viaje" title="Cómo usar el seguro de viaje">Cómo usar el seguro de viaje</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-30" href="#%C2%BFQue_pasa_si_sufro_una_urgencia_y_voy_al_hospital_sin_llamar_a_mi_seguro_de_viaje" title="¿Qué pasa si sufro una urgencia y voy al hospital sin llamar a mi seguro de viaje?">¿Qué pasa si sufro una urgencia y voy al hospital sin llamar a mi seguro de viaje?</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-31" href="#Trucos_para_ahorrar_al_contratar_tu_seguro_de_viaje" title="Trucos para ahorrar al contratar tu seguro de viaje">Trucos para ahorrar al contratar tu seguro de viaje</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mejor_seguro_de_viaje_que_tener_en_cuenta_a_la_hora_de_contratar"></span><span style="color: #33cccc;">Mejor seguro de viaje, qué tener en cuenta a la hora de contratar</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si es tu primera vez buscando un buen seguro de viajes, puede que estés leyendo las diferentes páginas web de las principales compañías y muchas cosas te suenen a chino. Te entendemos y, por ello, en esta sección vamos a entrar en detalle en las principales características a tener en cuenta a la hora de contratar tu seguro médico internacional.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Franquicia"></span><span style="color: #33cccc;">Franquicia</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Puede que nunca hayas escuchado la palabra franquicia asociada a un seguro de viajes, pero ahora lo vas a entender muy rápido. Un seguro de viaje<strong> sin franquicia es ese que te cubre desde cero</strong> hasta la totalidad de la cobertura contratada. Eso significa que si, por ejemplo, visitas un médico en el extranjero y la factura es de 50€, el seguro de viaje pagará por ti esos 50€. Evidentemente, el <strong>mejor seguro de viaje</strong> debe ser ese que no cuente con franquicia en ninguno de sus productos. <strong>IATI no cuenta con franquicias</strong>.</p>
+<p style="text-align: justify;">Existen otras aseguradoras que tienen franquicia de 75€, 150€, 250€..,. Eso se traduce en que ellos te cubrirán a partir de esa cifra, pero si la franquicia es de 75€ y la factura de tu visita médica asciende hasta 75€, la deberás pagar tú.</p>
+<p style="text-align: justify;">Mondo, una correduría de seguros que está intentando copiar el modelo de negocio de <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">IATI</a>, es un ejemplo de esto. En muchas de las comparativas que circulan por la red puedes ver sus precios ligeramente reducidos, pero sin avisar que están aceptando un franquicia de 75 euros para abaratar costes.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Anulacion"></span><span style="color: #33cccc;">Anulación</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El <strong>mejor seguro de viajes</strong> debe contar entre sus diferentes coberturas con la posibilidad de añadir la cobertura de anulación de viaje. Esta se encarga de <strong>reembolsarte los gastos de tu viaje que ya tengas pagados</strong> en caso que debas cancelarlo por alguna de las más 35 causas que tienen en cuenta. Para que te hagas una idea, si…:</p>
+<ul style="text-align: justify;">
+<li>Tú o un familiar de primer nivel sois hospitalizados o sufrís una grave enfermedad</li>
+<li>Tienes complicaciones en tu embarazo</li>
+<li>Eres convocado a una mesa electoral, tribunal o una citación policial</li>
+<li>Eres despedido de tu trabajo o te incorporas a un nuevo puesto laboral</li>
+<li>Una catástrofe natural afecta a tu viaje</li>
+<li>Sufres un robo de documentación o no concesión inesperada de tu visado</li>
+</ul>
+<p style="text-align: justify;">Si te ves en alguna de estas situaciones, o de las muchas otras que el <strong>mejor seguro de viaje</strong> cubre, estarás cubierto con <strong>hasta 6.000€</strong>.</p>
+<p style="text-align: justify;">Hasta hace poco, una cláusula de este tipo solo se podía contratar hasta máximo 7 días después de la reserva de tu viaje. IATI fue pionera en ofrecer un seguro de cancelación independiente que <strong>se puede contratar en cualquier momento</strong> y que, poco a poco, otras compañías empiezan también a copiar.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Atencion_en_tu_idioma_y_gratuita"></span><span style="color: #33cccc;">Atención en tu idioma y gratuita</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si te ves en la necesidad de hacer uso de tu seguro de viaje, por mucho que controles, lo último que quieres es ponerte hablar en otros idiomas para que por teléfono te asistan y te digan a dónde debes dirigirte. Asimismo, es imprescindible también que a ti no te cueste ni un céntimo. <strong>IATI te atiende en español y es posible contactar con ellos a través de una llamada gratuita</strong> a cobro revertido, desde su <em>app</em> o, si no tienes prisa, por correo electrónico.</p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-4130 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Seguro de viajes a Europa y al mundo" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter wp-image-4130 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje.jpg" alt="Seguro de viajes a Europa y al mundo" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Equipajes_vuelos_robos_cancelaciones%E2%80%A6"></span><span style="color: #33cccc;">Equipajes, vuelos, robos, cancelaciones…</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Cuando pensamos en el mejor seguro de viajes, obviamente, lo primero que nos viene a la cabeza son las coberturas en caso de enfermedad o accidente, nuestro principal miedo. Pero es importante tener en cuenta que van mucho más allá y cubren cosas como <strong>robos/daño de equipaje (hasta 2.500€)</strong>, demora por entrega de equipaje (hasta 300€) o hasta demoras en la salida del medio de transporte que vayamos a tomar (hasta 300€).</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Coberturas_adaptables"></span><span style="color: #33cccc;">Coberturas adaptables</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Porque no es lo mismo irse un fin de semana a Marruecos que dos semanas a Nueva York, es importante que un buen seguro de viaje ofrezca la posibilidad de contratar una póliza que se adapte a las necesidades de cada viajero. <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">IATI </a>ofrece desde <strong>seguros de viaje baratos</strong> con excelentes coberturas hasta seguros de viaje <em>Premium</em> con asistencia médica de <strong>hasta 5.000.000 euros</strong> algo que es muy poco probable que llegues a gastar jamás.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Coberturas_ilimitadas"></span><span style="color: #33cccc;">Coberturas ilimitadas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Las coberturas médicas siempre van ligadas a un cifra. La póliza IATI Estándar cubre con 500.000 euros, IATI Mochilero con 500.000 euros + Deportes de Aventura, IATI Estrella hasta 5.000.000 euros… Pero hay situaciones en las que lo último que querrás es estar pensando en cifras. Por ello, <strong>el mejor seguro de viajes cubre el 100%</strong> en situaciones de repatriación, desplazamiento de un familiar o regreso anticipado por hospitalización entre otras muchas causas.</p>
+<p style="text-align: justify;">En nuestro caso, por ejemplo, cuando uno de nosotros estuvo ingresado 3 semanas en un hospital de Filipinas por una neumonía grave, le pagaron el vuelo y alojamiento a una de nuestras madres para que nos hiciera compañía. <strong>El 100%</strong>, sin rechistar.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Responsabilidad_civil"></span><span style="color: #33cccc;">Responsabilidad civil</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En caso de que seas responsable involuntario de daños a terceros, cosas (por ejemplo, el mobiliario de un hotel) o animales, estarás cubierto <strong>hasta 60.000€ con el mejor seguro de viaje</strong>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Gastos_odontologicos"></span><span style="color: #33cccc;">Gastos odontológicos</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Igual que ocurre también con la sanidad de tu propio país, los problemas con los dientes suelen ir a parte. En este caso, los <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">seguros de viajes de IATI</a> cubren con hasta 500€ este tipo de casos. Muy por encima de los 350€ que ofrece Mondo.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Mejor_seguro_de_viaje_para_familias"></span><span style="color: #33cccc;">Mejor seguro de viaje para familias</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;"><strong>Si viajas en familia te interesa</strong>, pues ofrecen una cobertura especial de asistencia pediátrica telefónica para que a los peques de la casa nunca les falte nada. Además, este caso amplían la responsabilidad civil privada infantil hasta los 70.000€.</p>
+<p style="text-align: justify;"><a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" rel="nofollow"><img decoding="async" class="aligncenter wp-image-4127 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%2091'%3E%3C/svg%3E" alt="descuento en seguro médico internacional" width="700" height="91" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento-300x39.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-4127 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento.jpg" alt="descuento en seguro médico internacional" width="700" height="91" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-descuento-300x39.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Seguro_de_viaje_con_complementos_unicos"></span><span style="color: #33cccc;">Seguro de viaje con complementos únicos</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Siguiendo la línea que anteriormente comentábamos sobre que <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">IATI</a>, para nosotros el <strong>mejor seguro de viaje</strong>, tiene pólizas que se adaptan a cualquier tipo de viaje, no podemos pasar por alto los diferentes complementos que ofrecen. (<em>Como empresa de referencia en el mundo de los seguros de viaje, continuamente lanzan nuevos complementos. Periódicamente actualizamos esta “Guía sobre el mejor seguro de viajes” para que tengas la información al día</em>)</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Deportes_de_aventura"></span><span style="color: #33cccc;">Deportes de aventura</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;"><a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer">IATI</a> fue la primera en ofrecer un <strong>complemento de deportes de aventura</strong>, que, obviamente, poco a poco han ido plagiando otras empresas, para aquellos viajeros amantes del deporte y de la adrenalina. Este complemento cubre <strong>buceo hasta 40 metros de profundidad</strong>, escalada, barranquismo, surf, tirolina y decenas de actividades más. Además, mientras que compañías como Mondo o Intermundial únicamente cubren actividades de montaña hasta los 5.000 metros de altitud, el mejor seguro de viaje cubre <strong>hasta los 5.400 metros</strong> con su complemento de deportes de aventura. Esto se traduce en la posibilidad de llegar respaldado hasta el Campamento Base del Everest o la Montaña de los 7 colores, en Perú.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Seguro_de_viaje_para_crucero"></span><span style="color: #33cccc;">Seguro de viaje para crucero</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si eres un amante de los viajes por alta mar, este complemento te interesa mucho. La asistencia médica en alta mar, además de ser desproporcionadamente cara, no está incluida en los seguros de viaje tradicionales. El complemento de <strong>seguro de viaje para crucero</strong> te asegura estar totalmente cubierto en un viaje de este tipo.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Cobertura_especial_de_reclamacion_de_vuelos_cancelados"></span><span style="color: #33cccc;">Cobertura especial de reclamación de vuelos cancelados</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">IATI AirHelp es una de las últimas novedades del mejor seguro de viaje y es muy interesante. Es un extra que cuesta únicamente 5€ y te protege en casos como cancelación de vuelos, overbooking o retrasos. ¿Conoces esas empresas que (con gran éxito) se dedican en exclusiva a las reclamaciones contra aerolíneas? Estas suelen quedarse un porcentaje de la compensación que mereces, llegando en vuelos largos a los 150 euros. Este suplemento <strong>exclusivo de IATI</strong> se encarga de que cobres lo que te pertenece <strong>sin necesidad de pagar porcentajes a nadie</strong> ,¡todo tuyo!</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Aplicacion_para_el_movil"></span><span style="color: #33cccc;">Aplicación para el móvil</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Otra de las ventajas del seguro de viaje IATI es la posibilidad de instalar en tu móvil <strong>la <em>app</em> “IATI”</strong>. Con ella es muy fácil contactar con asistencia en caso de necesidad, geolocalizarte para ayudar a encontrar el centro médico más cercano o, entre otras cosas, gestionar un reembolso.</p>
+<p style="text-align: justify;">Además, ha sido actualizada en 2025 y (además de ser mucho más vistosa) ahora permite llamar gratis, si tienes internet, para pedir asistencia.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14242" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20468'%3E%3C/svg%3E" alt="App del mejor seguro de viaje" width="1000" height="468" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3-980x459.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3-480x225.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14242" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3.jpg" alt="App del mejor seguro de viaje" width="1000" height="468" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3-980x459.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-app-3-480x225.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Experiencias_reales_con_el_mejor_seguro_de_viaje"></span><span style="color: #33cccc;">Experiencias reales con el mejor seguro de viaje</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">En la web tenemos otro artículo en el que te contamos en detalle <a href="https://www.viajarporfilipinas.com/iati-seguros-opiniones/">nuestras experiencias utilizando el mejor seguro de viajes</a>. Pero, a modo de resumen, estas son las más destacables:</p>
+<ul style="text-align: justify;">
+<li>Febrero de 2019, Filipinas: Tras ver que lo que parecía una gripe pasa a ser una neumonía, <strong>me pagan a un vuelo de Tuguegarao a Manila</strong> para ser tratado en el mejor hospital del país. Ahí paso <strong>ingresado 3 semanas</strong> y me hacen <strong>dos intervenciones</strong> para sacar líquido del pulmón. Le pagan el vuelo de ida y vuelta desde España a mi madre, su alojamiento y los <strong>más de 22.000€</strong> de la factura del hospital. Además, constantemente nos llaman para asegurarse de que estamos bien atendidos, cosa que solo <strong>el mejor seguro</strong> de viaje hace.</li>
+</ul>
+<div id="attachment_4131" style="width: 1034px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-4131" class="wp-image-4131 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20769'%3E%3C/svg%3E" alt="Experiencia seguro de viaje" width="1024" height="769" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2.jpg 1024w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-768x577.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-510x382.jpg 510w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-4131" class="wp-image-4131 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2.jpg" alt="Experiencia seguro de viaje" width="1024" height="769" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2.jpg 1024w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-768x577.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-2-510x382.jpg 510w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript><p id="caption-attachment-4131" class="wp-caption-text">Experiencia con el mejor seguro de viaje</p></div>
+<ul style="text-align: justify;">
+<li>Mayo de 2018, Tokio: Doloroso y grave pinzamiento lumbar que me inmoviliza totalmente en mi hotel. Me llevaron en taxi, <strong>sin coste para mí</strong>, hasta una moderna clínica donde la factura por radiografía y asistencia <strong>superó los 500€</strong>.</li>
+<li>Mayo de 2018, Kioto: Por problemas respiratorios acudo a uno de los mejores hospitales de Kioto. Ahí fui ateniendo <strong>con un traductor simultáneo</strong> y, obviamente, sin pagar nada.</li>
+<li>Marzo de 2018, Romblón: La suma de un mal diagnóstico y un dolor en el pecho hizo que tuviera que dirigirme a la capital de Filipinas para recibir asistencia médica. El seguro médico de viaje <strong>me pagó el vuelo de ida y vuelta y la asistencia</strong>.</li>
+<li>Noviembre de 2017, Malasia: Molestias tras una infección de orina hace que vaya al hospital. El seguro de viaje me proporciona un <strong>chofer y traductor</strong> que me acompaña en todo momento durante mi visita.</li>
+</ul>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_contratar_el_mejor_seguro_de_viaje"></span><span style="color: #33cccc;">Cómo contratar el mejor seguro de viaje</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Contratar tu seguro de viaje es súper sencillo con IATI y te vamos a guiar paso a paso para que lo compruebes.</p>
+<ul style="text-align: justify;">
+<li>El primer paso es hacer clic aquí para acceder a su web con el <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">descuento del 5% en el seguro de viaje por ser nuestro lector</a>.</li>
+</ul>
+<p style="text-align: justify;">Una vez en la web, tendrás que rellenar estos sencillos campos:</p>
+<ul style="text-align: justify;">
+<li>Lugar de residencia: el país en el que vives.</li>
+<li>Destino del viaje: Si vas a visitar más de un país, selecciona la opción MUNDO.</li>
+<li>Fecha de inicio y fin de viaje.</li>
+<li>Número de viajeros: ¡Consejo! Si viajas, por ejemplo, en pareja es mejor coger un seguro para 2 que 2 seguros individuales. De esta forma, si a uno le pasa algo y necesita un traslado, el otro podrá acompañarlo de forma gratuita.</li>
+<li>Tipo de seguro: normalmente aquí escogerás “viajes”, pero también te puede interesar en según qué casos el seguro de anulación que antes te hemos mencionado o el de “multiviajes” si vas pasar un año viajando mucho.</li>
+<li>¿Estás ya viajando?: Aquí deberás marcar si estás viajando ya o no, pues existen pólizas para cada caso.</li>
+<li>Complementos: En este punto puedes elegir sumarle complementos como “Crucero” o “Deportes de aventura”.</li>
+</ul>
+<p>&nbsp;</p>
+<div id="attachment_4126" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-4126" class="size-full wp-image-4126" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20599'%3E%3C/svg%3E" alt="" width="1000" height="599" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3-300x180.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3-768x460.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-4126" class="size-full wp-image-4126" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3.jpg" alt="" width="1000" height="599" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3-300x180.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/06/mejor-seguro-viaje-3-768x460.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript><p id="caption-attachment-4126" class="wp-caption-text">Cómo contratar el mejor seguro de viaje</p></div>
+<p style="text-align: justify;">A continuación, accederás a un menú en el que verás el precio, con el descuento del seguro de viaje ya aplicado, para las diferentes pólizas que IATI ofrece. Será el momento de elegir cuál de ellas se ajusta más a tus necesidades. En el siguiente apartado de esta Guía del Mejor Seguro de Viajes te hablaremos un poco de cada una.</p>
+<p style="text-align: justify;">Tras esto, será el momento de introducir tus datos personales (en este punto puedes incluir también el complemento AirHelp del que ya te hablamos antes) y proceder después al pago. ¡Fácil!</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_modalidad_del_mejor_seguro_de_viajes_elegir"></span><span style="color: #33cccc;">Qué modalidad del mejor seguro de viajes elegir</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como te hemos comentado antes, cada viaje y viajero es un mundo. Por ello, mientras que normalmente nosotros viajamos con el <strong>IATI Mochilero</strong>, puede que tú prefieras ahorrar y hacerte con un IATI Estándar o contar con las máximas coberturas y contratar el mejor seguro de viajes en su modalidad <strong>IATI Estrella</strong>. Vamos a echar un ojo a las diferencias que hay entre ellos.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Basico"></span><span style="color: #33cccc;">IATI Básico</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>Como su propio nombre indica, es el más básico de todos los seguros de viaje que ofrecen. Aun así, su cobertura médica es superior a las mínimas de otras compañías: <strong>50.000€</strong></li>
+<li>Al no contar con anulación, deportes de aventura, deportes de aventura o adelanto de fondos, lo recomendamos únicamente en viajes cortos y a destinos cercanos.</li>
+<li>Dada la poca diferencia de precio que hay con el IATI Estándar y que este otro ofrece mayores coberturas, siempre que alguien quiere hacerse un IATI Básico le solemos recomendar que pase directamente al seguro de viaje IATI Estándar.</li>
+</ul>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Estandar"></span><span style="color: #33cccc;">IATI Estándar</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>El seguro de viaje IATI Estándar es para nosotros el mínimo a tener en cuenta. Sus coberturas se disparan hasta los <strong>500.000€</strong>, lo que está más que bien (mi ingreso de tres semanas + 2 operaciones en el hospital fueron unos 22.000€).</li>
+<li>Tiene un muy buen precio y si no necesitas coberturas como “Deportes de aventura” o “Salvamento” puede ser una opción a tener en cuenta. Eso sí, las siguientes modalidades de seguro de viaje que vienen a continuación vienen acompañadas también de importantes coberturas extras.</li>
+</ul>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Mochilero"></span><span style="color: #33cccc;">IATI Mochilero</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>El mejor seguro de viaje para nuestra forma movernos por el mundo (salvo cuando nos decantamos por un seguro de viaje de larga duración, que veremos más adelante). Tiene una cobertura de gastos de <strong>500.000€</strong>, que no creemos que llegues a gastar jamás.</li>
+<li>Es un seguro ideal para viajes en los que vayas a realizar algún tipo de deporte de aventura, pues cubre <strong>más de 60 tipos y <em>trekking</em> hasta 5.400 metros</strong> con el complemento de aventura (donde no llegan las otras compañías de seguros) ¿Vas a bucear? ¿Hacer <em>trekking</em>? ¿Tirolina o deportes de aventura? ¡Este es tu seguro de viaje mochilero!</li>
+<li>Además, sus otras coberturas dan un gran salto respecto al IATI Estándar, llegando incluso a doblar sus garantías sin disparar el precio.</li>
+</ul>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Estrella"></span><span style="color: #33cccc;">IATI Estrella</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>El IATI Estrella es el mejor seguro de viajes para aquellos que quieren ir con <strong>las máximas coberturas</strong> posibles. Ofrece hasta <strong>5.000.000 euros</strong>.</li>
+<li>Asimismo, todas sus coberturas son altísimas (ilimitadas en muchos casos), con hasta 2.500€ en robo y daños de equipaje, medio millón de euros en deportes de aventura o 6.000€ para gastos de anulación.</li>
+<li>Este es el <strong>seguro de viaje recomendado para destinos caros</strong>, como por ejemplo podrían ser Estados Unidos o Japón.</li>
+</ul>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Familia"></span><span style="color: #33cccc;">IATI Familia</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>El mejor seguro de viajes para los que viajan en familia con menores de edad. Con una amplia cobertura de hasta <strong>300.000€</strong>.</li>
+<li>Su principal característica es un <strong>servicio pediátrico especialmente dedicado</strong> y coberturas enfocadas hacia los peques de la casa.</li>
+</ul>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="IATI_Grandes_Viajes"></span><span style="color: #33cccc;">IATI Grandes Viajes</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li>Enfocado para aquellos que se pasan gran parte del año recorriendo el mundo. Su cobertura es de <strong>300.000€</strong> fuera de Europa y 50.000€ en Europa.</li>
+<li>Además de sus grandes coberturas, <strong>su principal ventaja es su precio</strong>. Pues al tratarse de un periodo largo, han adaptado este seguro de viaje para que pasar largas temporadas fuera de casa no sea una ruina.</li>
+<li>Cuenta con la opción “<strong>Multiviaje</strong>”, que durante un año te cubre cualquier viaje que hagas de máximo 90 días, y la opción “<strong>Larga duración</strong>” para los que planean viajes largos de hasta un año de duración. Para nuestra forma de vida, <strong>el <a title="Seguro de viaje anual: larga estancia [Comparativa]" href="https://www.viajarporfilipinas.com/seguro-viaje-anual-larga-duracion/">mejor seguro de viaje anual</a></strong> actualmente.</li>
+</ul>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Seguro_de_viaje_para_Europa_%C2%BFes_necesario"></span><span style="color: #33cccc;">Seguro de viaje para Europa, ¿es necesario?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">A esta pregunta le dedicaremos también un artículo en exclusiva, pero si no puedes esperar hasta entonces, te lo avanzamos. En caso de que provengas de fuera de Europa y no cuentes con la Tarjeta Sanitaria Europa la respuesta es: obligatoriamente sí, <strong>vas a necesitar un seguro de viaje</strong> para visitar la Zona Schengen.</p>
+<p style="text-align: justify;">Si eres ciudadano europeo, te interesa saber que la Tarjeta Sanitaria Europea lo que hace es darte los mismos derechos que tendría un local del país en el que estés. Por ejemplo, en caso de un accidente en Berlín, irías al centro de atención primaria que iría un alemán. Con un seguro de viaje para Europa se te abren las puertas, de forma gratuita, a los mejores centros privados, sin colas de espera, y coberturas referentes a equipajes, robos, repatriación, traslado hospitalario del paciente o familiar.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Comparativa_de_seguros_de_viaje"></span><span style="color: #33cccc;">Comparativa de seguros de viaje</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Vamos a dedicar un artículo entero a comparar en detalle las diferentes aseguradoras que actualmente ofrecen seguros de viaje. En él, te contaremos también los diferentes trucos que suelen utilizar para intentar postularse como las más económicas y con mejores servicios (porque a veces sinceramente es de vergüenza ajena&#8230;), pero vamos a ver previamente cuánto costaría asegurar un viaje a Estados Unidos de una semana (de lunes a lunes), el destino caro por excelencia, con un seguro de máxima cobertura y 2.0000€ de gastos de anulación. ¡Adelante la <strong>comparativa de seguros de viaje</strong>!</p>
+<table style="border-collapse: collapse; width: 98.4263%; height: 340px;" border="1">
+<tbody>
+<tr style="background-color: #3724e3;">
+<td style="width: 13.877%; height: 22px; background-color: #ffffff; text-align: center;"><span style="color: #0000ff;"><strong>SMART</strong></span></td>
+<td style="width: 26.4724%; text-align: center; height: 22px;"><strong><span style="color: #ffffff;">IATI</span></strong></td>
+<td style="width: 27.6657%; text-align: center; height: 22px;"><strong><span style="color: #ffffff;">MONDO</span></strong></td>
+<td style="width: 30.1567%; text-align: center;"><span style="color: #ffffff;"><strong>INTERMUNDIAL</strong></span></td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 13.877%; height: 22px; background-color: #3724e3; text-align: center;"><span style="color: #ffffff;"><strong>Precio</strong></span></td>
+<td style="width: 26.4724%; text-align: center;"><strong>70&#8217;87 €</strong></td>
+<td style="width: 27.6657%; text-align: center;">142’48 €</td>
+<td style="width: 30.1567%; text-align: center;">72,90 €</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 13.877%; height: 29px; background-color: #3724e3; text-align: center;"><strong><span style="color: #ffffff;">Cobertura</span></strong></td>
+<td style="width: 26.4724%; height: 29px; text-align: center;">4.800.000 €</td>
+<td style="width: 27.6657%; height: 29px; text-align: center;">500.000 €</td>
+<td style="width: 30.1567%; text-align: center;">500.000 €</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 13.877%; height: 22px; background-color: #3724e3; text-align: center;"><strong><span style="color: #ffffff;">Equipaje</span></strong></td>
+<td style="width: 26.4724%; height: 22px; text-align: center;">2.500 €</td>
+<td style="width: 27.6657%; height: 22px; text-align: center;">3.000 €</td>
+<td style="width: 30.1567%; height: 22px; text-align: center;">2.100€</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 13.877%; height: 22px; background-color: #3724e3; text-align: center;"><strong><span style="color: #ffffff;">Deporte de aventura</span></strong></td>
+<td style="width: 26.4724%; height: 22px; text-align: center;"><strong>Incluido</strong></td>
+<td style="width: 27.6657%; height: 22px; text-align: center;">+16 €</td>
+<td style="width: 30.1567%; height: 22px; text-align: center;">+17 €</td>
+</tr>
+<tr style="height: 70px;">
+<td style="width: 13.877%; background-color: #3724e3; text-align: center; height: 70px;"><strong><span style="color: #ffffff;">Modalidad</span></strong></td>
+<td style="width: 26.4724%; text-align: center; height: 70px;">IATI Estrella</td>
+<td style="width: 27.6657%; text-align: center; height: 70px;">Viaje Premium</td>
+<td style="width: 30.1567%; text-align: center; height: 70px;">Total Travel</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">No hace falta darle muchos vueltas para ver rápidamente que <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">IATI </a>es el <strong>mejor seguro de viajes</strong> y con mejor relación calidad precio.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFCual_es_el_mejor_seguro_de_viaje"></span><span style="color: #33cccc;">¿Cuál es el mejor seguro de viaje?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Vivimos viajando y en temas de salud no nos la queremos jugar nunca. Además, cualquiera que nos siga en redes y nos conozca mínimamente sabe que vamos con la verdad por delante y <strong>no recomendamos nada en lo que no creamos</strong>. Hemos viajado con diferentes compañías de seguros y no tenemos ninguna duda al afirmar rotundamente que <strong>IATI es el mejor seguro de viajes</strong> a día de hoy.</p>
+<p style="text-align: justify;">¿Por qué? Para empezar, porque cada año reajustan sus seguros de viaje y amplían sus coberturas, añadiendo nuevas y complementos que cubren cada vez más situaciones. En su último reajuste de junio de 2019 incluso <strong>hubo bajada de precio</strong> alguno de sus seguros.</p>
+<p style="text-align: justify;">Por otro lado, el servicio que nos han prestado ha sido siempre de <strong>excelencia</strong>. Durante mi ingreso en el hospital de Filipinas nos llamaban a diario para ver si estaba todo bien y necesitábamos algo. A mi madre incluso la siguieron llamando cuando tomó el vuelo de vuelta a casa para asegurarse de que todo marchaba en orden. Esto se tradujo en que, ya desde casa, mi madre les hizo llegar un enorme ramo de flores en gratitud con su increíble trato. Sí, pagamos por un servicio, pero <strong>la calidad humana y cercanía</strong> son también de agradecer.</p>
+<p style="text-align: justify;">Además llevan en esto muchos más años que los demás y van siempre <strong>dos pasos por delante</strong>. El seguro de viaje para mochileros, opción de deportes de aventura con <em>trekking</em> hasta 5.400 metros, seguros de viaje de larga duración, aplicación para móviles… Ellos marcan el camino, con <strong>la mejor relación calidad – precio</strong> y, un tiempo después, las demás empresas empiezan a copiar las novedades. ¿Por qué será?</p>
+<p style="text-align: justify;">¿Recomendamos <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener">IATI</a> como el mejor seguro de viaje porque nos pagan? Para nada. Sinceramente, y de forma personal, estoy bastante harto de las vergonzosas maneras que algunos <em>bloggers</em> de viajes utilizan para intentar mostrar a otras compañías como las mejores basándose en mentiras. Para empezar, si te has de basar en criticar otro producto para hablar de lo bueno que es el tuyo es que poco tienes que ofrecer realmente. Por otro lado, también se lee por ahí que IATI ofrece una comisión a los <em>bloggers</em> que ofrecen sus productos desde su web. Como si, por ejemplo, Mondo o Intermundial no lo hicieran. Sí, así como ocurre si usas nuestros enlaces para reservar tu alojamiento o vuelos, si haces tus reservas desde ahí, <strong>nosotros ganamos una pequeña comisión</strong> que nos ayuda a mantener nuestra web y seguir aportando contenido de calidad sin meter publicidad por todas partes.</p>
+<blockquote><p>Como puedes leer en el apartado en el que hablamos de nosotros, solo recomendamos aquello en lo que realmente confiamos, sin engaños.</p></blockquote>
+<p style="text-align: justify;">Podríamos hablar horas de casos concretos de malas prácticas de estas empresas (de como crean cuentas falsas para hacer publicidad encubierta o de cómo iniciaron sus negocios de forma moralmente muy cuestionable), pero creo que basta con contar nuestras experiencias reales y lo que ofrecen. Eso sí, a aquellos que dicen que uno recomienda una cosa u otra por dinero, le invitamos a escribirnos y decírnoslo a la cara.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="El_mejor_seguro_descuento"></span><span style="color: #33cccc;">El mejor seguro + descuento</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Cómo te hemos dicho, si contratas tu seguro de viajes desde nuestros enlaces te beneficiarás al instante de un 5% de descuento. ¡Así de fácil! Puedes ir ya a por él haciendo clic aquí:</p>
+<p style="text-align: justify;"><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter wp-image-3312 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento iati" width="700" height="125" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-3312 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" alt="descuento iati" width="700" height="125" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_usar_el_seguro_de_viaje"></span><span style="color: #33cccc;">Cómo usar el seguro de viaje</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Esperamos que nunca tengas la necesidad de usar tu seguro de viaje, pero, si te ves en la situación de necesitar usarlo, esto es lo que debes hacer:</p>
+<ul style="text-align: justify;">
+<li>Contacta con el servicio de asistencia: Puedes llamarles de forma gratuita a cobro revertido, por mail si no es especialmente urgente o a través de su <em>app</em>.</li>
+<li>Una vez les expliques lo que te ocurre, te dirán a qué centro médico u hospital debes dirigirte.</li>
+<li>El hospital te estará esperando una vez llegues para atenderte. <strong>No deberás pagar ni la visita, ni las pruebas, ni los medicamentos que te den</strong>.</li>
+</ul>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFQue_pasa_si_sufro_una_urgencia_y_voy_al_hospital_sin_llamar_a_mi_seguro_de_viaje"></span><span style="color: #33cccc;">¿Qué pasa si sufro una urgencia y voy al hospital sin llamar a mi seguro de viaje?</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Tanto esta como el resto de aseguradoras contemplan la posibilidad de que vayas al médico sin llamarles. Imagínate que tienes un accidente en moto frente a un hospital y te haces una fractura. Obviamente, no vas a llamar a nadie e irás directamente a urgencias. En ese caso, guarda todos los recibos que pagues para que puedan hacerte luego el reembolso de tus gastos. Eso sí, llama en cuanto puedas al teléfono de asistencia para que te puedan asesorar.</p>
+<p style="text-align: justify;">De la misma forma, como nos ha pasado a nosotros, te puede pasar que necesites ver a un médico estando en un lugar en el que no exista un centro médico que trabaje con aseguradoras. No te preocupes, el procedimiento es el mismo. Llama si puedes, ve al médico y luego pasa las facturas para que te hagan el reembolso.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Trucos_para_ahorrar_al_contratar_tu_seguro_de_viaje"></span><span style="color: #33cccc;">Trucos para ahorrar al contratar tu seguro de viaje</span><span class="ez-toc-section-end"></span></h2>
+<ul style="text-align: justify;">
+<li>El primero está claro, <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=mejor" target="_blank" rel="nofollow noopener">accede a través de nuestro enlace</a> y te beneficiarás al momento de un descuento del 5%.</li>
+<li>Elige y, si es necesario, combina. Un seguro de viaje a Europa es más barato que un seguro de viaje fuera de Europa. Por ello, si por ejemplo quieres un seguro que te cubra una semana en Noruega y otra en Filipinas, te saldrá más económico hacerte con <strong>dos seguros de viaje diferentes</strong> en lugar de coger un seguro para todo tu viaje.</li>
+<li>Siguiendo con el punto anterior, ten en cuenta que IATI cobra “a precio europeo” destinos como: Rusia, Marruecos, Israel, Libia o Túnez. ¡Juega con ello!</li>
+<li>Obtén días de seguro de viaje gratis. Cada compañía de seguros de viaje aplica diferentes tramos a sus precios. Eso se traduce en que puede que te cueste lo mismo un seguro de 30 días que uno de 34. Haz pruebas y juega con tus fechas para hacerte con días extra.</li>
+<li>No te dejes engañar por descuentos del 10% o el 20%, van siempre ligados a precios más altos para hacerte creer que pagarás menos.</li>
+</ul>
+<hr />
+<p style="text-align: justify;"><em>¿Tienes alguna duda sobre qué seguro de viaje contratar? No lo dudes, compártela con nosotros y te ayudaremos para que te aclares.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">12 Comentarios</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-49645">
+		<article id="comment-49645" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alejandra</span>				<span class="comment_date">
+					el 27/12/2024 a las 18:06				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos! estoy maravillada con vuestra web, ¡me han aclarado todo!</p>
+<p>Vamos con mi pareja en febrero y ambos tenemos el PADI Open Water.<br />
+El seguro IATI cubre los buceos hasta 40 mt, ¿pero es válido para los centros de buceo de allá? No vaya a ser que me lo cobren también ellos antes de bucear?<br />
+Osea que con el IATI no debiera pagarle el seguro a los centros de buceo, correcto?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-49645' data-commentid="49645" data-postid="4115" data-belowelement="comment-49645" data-respondelement="respond" data-replyto="Responder a Alejandra" aria-label='Responder a Alejandra'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-49658">
+		<article id="comment-49658" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/12/2024 a las 00:09				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alejandra, ¡muchas gracias! Claro que sí que es válido, nosotros es el seguro que usamos siempre aquí para bucear. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-46823">
+		<article id="comment-46823" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ignasi</span>				<span class="comment_date">
+					el 02/11/2024 a las 00:30				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Muchas gracias por toda la info que dai 🙂</p>
+<p>Vamos a contratar el seguro con IATI 100% usando vuestro enlace, si os ayuda ni que sea un poco. Tan solo avisaros que el enlace con el descuento del 5% no se aplica al precio final, hay algún error?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-46823' data-commentid="46823" data-postid="4115" data-belowelement="comment-46823" data-respondelement="respond" data-replyto="Responder a Ignasi" aria-label='Responder a Ignasi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-46831">
+		<article id="comment-46831" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 02/11/2024 a las 03:44				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ignasi, ¡muchas gracias por tu apoyo! ¿Seguro que no? ¿No te sale un precio tachado en rojo? Ese es el precio sin descuento. Si puedes, mándanos una captura de lo que te sale a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a> y lo vemos, porfa. un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-33231">
+		<article id="comment-33231" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">MaríaJosé</span>				<span class="comment_date">
+					el 26/02/2024 a las 17:32				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos!<br />
+Sabéis si para poder beneficiarse de la anulación de vuelo con IATI, se tiene que contratar el seguro hasta 7 días después de haber comprado el billete?<br />
+Muchas gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-33231' data-commentid="33231" data-postid="4115" data-belowelement="comment-33231" data-respondelement="respond" data-replyto="Responder a MaríaJosé" aria-label='Responder a MaríaJosé'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-33234">
+		<article id="comment-33234" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/02/2024 a las 18:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María José, exactamente. Si ha pasado más tiempo, puedes coger aparte el IATI Anulación Premium. En cualquier caso, comprueba bien las causas por las que podrías recibir la compensación de anulación, que están muy tasadas. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-27923">
+		<article id="comment-27923" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Fran</span>				<span class="comment_date">
+					el 04/11/2023 a las 10:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola , excelente pagina y articulo.<br />
+Una pregunta sobre seguros, ¿es recomendable sacarse un seguro de viajes con IATI si ya tienes un seguro de viaje con la tarjeta N26 You o revolut premium?<br />
+Gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-27923' data-commentid="27923" data-postid="4115" data-belowelement="comment-27923" data-respondelement="respond" data-replyto="Responder a Fran" aria-label='Responder a Fran'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-27989">
+		<article id="comment-27989" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/11/2023 a las 10:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Fran, desde nuestro punto de vista y experiencia, rotundamente sí. Los seguros de viaje tienen muchas más coberturas y más extensas. Nos han ahorrado miles de euros. Un abrazo.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-25230">
+		<article id="comment-25230" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Hector</span>				<span class="comment_date">
+					el 21/08/2023 a las 16:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Saludos,</p>
+<p>Agradezco profundamente la minuciosidad de esta guía.</p>
+<p>Tengo una pregunta, he notado que este seguro actúa como intermediario, siendo «AXA» la aseguradora del contrato estrella y «Arag» la del mochilero. Cuando se utiliza, ¿se establece contacto con IATI?</p>
+<p>¿No sería más conveniente tratar directamente con la aseguradora?</p>
+<p>Atentamente,</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-25230' data-commentid="25230" data-postid="4115" data-belowelement="comment-25230" data-respondelement="respond" data-replyto="Responder a Hector" aria-label='Responder a Hector'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-25248">
+		<article id="comment-25248" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 22/08/2023 a las 08:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Héctor, sí, el contacto es con IATI y funciona a las mil maravillas. Por eso es que nosotros siempre vamos con ellos. ¡Muchas gracias por tu comentario!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-7701">
+		<article id="comment-7701" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Luis Burgoa</span>				<span class="comment_date">
+					el 21/10/2019 a las 21:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas noches,</p>
+<p>A la hora de coger el seguro para un viaje a Filipinas, hay que marcar en destino del viaje «Mundo» o «Filipinas»??? Lo digo porque al hacer escala en DOHA, si pasa algo&#8230;al no ser Filipinas&#8230;</p>
+<p>Tengo la duda&#8230;</p>
+<p>Muchas gracias por la respuesta.</p>
+<p>Un saludo</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-7701' data-commentid="7701" data-postid="4115" data-belowelement="comment-7701" data-respondelement="respond" data-replyto="Responder a Luis Burgoa" aria-label='Responder a Luis Burgoa'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-7702">
+		<article id="comment-7702" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 22/10/2019 a las 00:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Luis,<br />
+Es indiferente, en los dos casos se te marcará la opción MUNDO para que estés cubierto en todo momento.<br />
+Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/mejor-seguro-viaje/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='4115' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8eb8cac538" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="81"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"4115","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Viajar a Filipinas en Navidad, ¿es recomendable? - Viajar por Filipinas</title>
+	<meta name="description" content="Navidad en Filipinas: ¿cómo se celebra? ¿Cómo es viajar por allí en esas fechas? ¿Hay celebraciones de fin de año en Filipinas? Aquí te contamos todo." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/navidad-filipinas/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Viajar a Filipinas en Navidad, ¿es recomendable? - Viajar por Filipinas" />
+	<meta property="og:description" content="Navidad en Filipinas: ¿cómo se celebra? ¿Cómo es viajar por allí en esas fechas? ¿Hay celebraciones de fin de año en Filipinas? Aquí te contamos todo." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/navidad-filipinas/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-05-11T11:07:42+00:00" />
+	<meta property="article:modified_time" content="2023-09-14T14:27:25+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="687" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="13 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Viajar en Navidad a Filipinas, ¿cómo disfrutarla? ¿Es recomendable?","datePublished":"2020-05-11T11:07:42+00:00","dateModified":"2023-09-14T14:27:25+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/"},"wordCount":2697,"commentCount":36,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1.jpg","articleSection":["Info práctica"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/navidad-filipinas/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/navidad-filipinas/","url":"https://www.viajarporfilipinas.com/navidad-filipinas/","name":"▷ Viajar a Filipinas en Navidad, ¿es recomendable? - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1.jpg","datePublished":"2020-05-11T11:07:42+00:00","dateModified":"2023-09-14T14:27:25+00:00","description":"Navidad en Filipinas: ¿cómo se celebra? ¿Cómo es viajar por allí en esas fechas? ¿Hay celebraciones de fin de año en Filipinas? Aquí te contamos todo.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/navidad-filipinas/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1.jpg","width":1000,"height":687,"caption":"Navidad en Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/navidad-filipinas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Viajar en Navidad a Filipinas, ¿cómo disfrutarla? ¿Es recomendable?"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/navidad-filipinas/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Viajar en Navidad a Filipinas, ¿cómo disfrutarla? ¿Es recomendable? del feed" href="https://www.viajarporfilipinas.com/navidad-filipinas/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/6723" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=6723' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fnavidad-filipinas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fnavidad-filipinas%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-6723-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/6723/et-core-unified-6723.min.css?ver=1745578921" /><link rel="stylesheet" id="et-core-unified-deferred-6723-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/6723/et-core-unified-deferred-6723.min.css?ver=1745578921" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-6723 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-6723" class="et_pb_post post-6723 post type-post status-publish format-standard has-post-thumbnail hentry category-info-practica">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Viajar en Navidad a Filipinas, ¿cómo disfrutarla? ¿Es recomendable?</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/info-practica/" rel="category tag">Info práctica</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Navidad en Filipinas" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-980x673.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-480x330.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-1000x675.jpg" alt="Navidad en Filipinas" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-980x673.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-1-480x330.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">¿Estás pensando en <strong>viajar en Navidad a Filipinas</strong> y no sabes qué te vas a encontrar? No te preocupes, aquí te vamos a contar todo sobre esta celebración en nuestro país favorito del Sudeste Asiático. Descubre cómo son las tradiciones aquí, cómo es el clima en este momento del año y, lo más importante, cómo es visitar Filipinas en Navidad de cara a organizar tus próximas vacaciones.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682587fd87151" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682587fd87151"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFComo_se_celebra_la_Navidad_en_Filipinas" title="¿Cómo se celebra la Navidad en Filipinas?">¿Cómo se celebra la Navidad en Filipinas?</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#La_Navidad_en_Filipinas_la_mas_larga_del_mundo" title="La Navidad en Filipinas, la más larga del mundo">La Navidad en Filipinas, la más larga del mundo</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#Tradiciones_de_Navidad_de_Filipinas" title="Tradiciones de Navidad de Filipinas">Tradiciones de Navidad de Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#Comidas_de_Navidad_en_Filipinas" title="Comidas de Navidad en Filipinas">Comidas de Navidad en Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#Sitios_curiosos_en_Filipinas_en_Navidad" title="Sitios curiosos en Filipinas en Navidad">Sitios curiosos en Filipinas en Navidad</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Fin_de_ano_en_Filipinas_%C2%BFcomo_se_celebra" title="Fin de año en Filipinas, ¿cómo se celebra?">Fin de año en Filipinas, ¿cómo se celebra?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#El_tiempo_en_Navidad_en_Filipinas" title="El tiempo en Navidad en Filipinas">El tiempo en Navidad en Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#%C2%BFComo_es_visitar_Filipinas_en_Navidad" title="¿Cómo es visitar Filipinas en Navidad?">¿Cómo es visitar Filipinas en Navidad?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#A_donde_ir_en_Navidad_por_Filipinas" title="A dónde ir en Navidad por Filipinas">A dónde ir en Navidad por Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#Consejos_para_ir_a_Filipinas_en_Navidad" title="Consejos para ir a Filipinas en Navidad">Consejos para ir a Filipinas en Navidad</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_se_celebra_la_Navidad_en_Filipinas"></span><span style="color: #33cccc;">¿Cómo se celebra la Navidad en Filipinas?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si has investigado un poco sobre tu próximo <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">viaje a Filipinas</a>, seguro que ya te imaginas por qué es el país asiático en el que la Navidad se celebra con mayor intensidad. En un país de más de 100 millones de personas, de los cuales <strong>el 92% se declaran cristianos</strong>, el espíritu navideño no te va a faltar si vas a pasar la Navidad en Filipinas.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="La_Navidad_en_Filipinas_la_mas_larga_del_mundo"></span><span style="color: #33cccc;">La Navidad en Filipinas, la más larga del mundo</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Acaba el mes de agosto y los filipinos corren a sacar los adornos de Navidad. Como lees, en cuanto empiezan <strong>los meses acabados en –BER</strong>, siendo <strong><em>september</em></strong> el primero, ya no se te puede hacer raro ver un árbol de Navidad o escuchar villancicos en los centros comerciales, la Navidad en Filipinas ha comenzado oficialmente. Lo habitual es que más o menos <strong>dure hasta la primera semana de enero</strong>, pero no te extrañe ver decoraciones bien entrado el mes (o mucho después), cuando ya empalman con las de San Valentín.</p>
+<p style="text-align: justify;"><strong>¿Pero por qué es tan larga?</strong> Además de porque les encanta todo lo que tenga que ver con una celebración, se trata de algo derivado de los valores de su sociedad. Los filipinos son tremendamente familiares, pero también muchos de ellos residen fuera del país o de sus provincias, por lo que empiezan a preparar la “vuelta a casa por Navidad” con mucha antelación.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Tradiciones_de_Navidad_de_Filipinas"></span><span style="color: #33cccc;">Tradiciones de Navidad de Filipinas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aquí van algunas de las tradiciones de Navidad de Filipinas más populares:</p>
+<ul style="text-align: justify;">
+<li><strong>Misa del Gallo o <em>Simbang Gabi</em>:</strong> las misas que se empieza a celebrar el día 16 de diciembre de madrugada (entre las 3:00 y las 5:00) durante 9 días seguidos (novenas) hasta el día 24.</li>
+<li><strong><em>Panunulúyan</em>: </strong>el día 24 por la noche se recrea el momento en el que se dice que María y José peregrinaban buscando refugio antes del nacimiento del niño Jesús. Tras los rechazos de muchas casas, llegan a la iglesia, donde se quedan y comienza la Misa del Gallo.</li>
+<li><strong><em>Noche Buena</em>:</strong> como en muchos otros países, en Filipinas también se celebra la Nochebuena (en tagalo <em>Noche Buena</em>) la noche del 24 de diciembre. Tras una misa que tiene lugar a medianoche, la familia se reúne para pegarse un festín. Muchos también se entregan regalos en este momento.</li>
+<li><strong>Día de Navidad:</strong> el 25 de diciembre es común que los filipinos visiten a sus familiares, especialmente a sus mayores. Se hace algo muy tradicional en cualquier momento del año, el <em>Págmamáno</em>, una muestra de respeto en la que el más joven pone el reverso de la mano del mayor en su frente mientras dice “<em>mano po</em>”. El mayor normalmente da una bendición y la diferencia en Navidad es que se suele dar un <strong><em>aguinaldo</em></strong>, una cantidad de dinero. También es normal una comida y, a veces, una cena especial seguidas de sesiones de karaoke, charlas y juegos.</li>
+<li><strong>Decoraciones de Navidad en Filipinas: </strong>en muchas casas, comercios y otros edificios como iglesias es habitual ver un <em>paról</em> (de farol). Se trata de una representación colorida de la Estrella de Belén, que suele encenderse por la noche. También es normal encontrar un <em>belén</em> como los que vemos en España.</li>
+<li><strong>Villancicos:</strong> ¿creías que este año te librabas? La Navidad en Filipinas no sería completa sin música y también cantan villancicos. Muchos niños pasan por las casas cantando esperando un aguinaldo. Aquí tienes uno de los más populares:</li>
+</ul>
+<div class='et_post_video'><iframe loading="lazy" title="Noche Buena | Best Filipino Christmas Song | robie317" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/lNFx4cnUgxA?feature=oembed"></iframe><noscript><iframe title="Noche Buena | Best Filipino Christmas Song | robie317" width="1080" height="608" src="https://www.youtube.com/embed/lNFx4cnUgxA?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></noscript></div>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Comidas_de_Navidad_en_Filipinas"></span><span style="color: #33cccc;">Comidas de Navidad en Filipinas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Puesto que gran parte de las tradiciones de Navidad en Filipinas vinieron a raíz de la cristianización que comenzaron los <strong>españoles</strong>, muchos de los platos que se suelen ver en las mesas en esta época del año fueron heredados de ellos. Por ejemplo, en Noche Buena es habitual un <strong>festín</strong> que incluya <em>hamon</em> (jamón de Navidad), <em>quezo de bola</em> (sí, el típico queso de bola), <em>lechon</em>, <em>pancit</em>, <em>chicken galantina</em> o <em>relleno</em> (pollo relleno de otras carnes y huevo), <em>turrones</em>, <em>castanas</em>, <em>fruit salad</em> (ensalada de frutas con leche condensada y nata), <em>ensaimada</em> y pastel de frutas.</p>
+<p style="text-align: justify;">Sin embargo, también se incluyen <strong>platos de época pre-cristiana basados en el arroz</strong>. El más popular es el <strong><em>bibingka</em></strong>, un pastel de arroz y leche de coco que se hace en ollas de barro y cubierto con hojas de plátano. Es muy habitual que se venda a la salida de las iglesias, especialmente tras las novenas de las que te hemos hablado antes. La Navidad en Filipinas no sería lo mismo sin el <strong><em>puto-bumbong</em></strong>, otro dulce de arroz que se cocina en tubos de bambú y que es de un curioso color morado.</p>
+<p style="text-align: justify;">Si tienes curiosidad por la gastronomía, no te pierdas nuestro artículo <a href="https://www.viajarporfilipinas.com/que-comer-filipinas/" target="_blank" rel="noopener noreferrer"><strong>¿Qué comer en Filipinas? 25 platos y bebidas típicas</strong></a>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Sitios_curiosos_en_Filipinas_en_Navidad"></span><span style="color: #33cccc;">Sitios curiosos en Filipinas en Navidad</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Para nosotros, pasar la Navidad en Filipinas significa hacerlo de la manera más tropical posible: estar en una isla bonita, donde podamos gozar de la playa, sentarnos a cenar junto al mar y, al fin y al cabo, disfrutar de lo que un país nos ofrece. Sin embargo, si estás buscando algo más curioso, en el que rezume ese aire navideño que buscas, aquí tienes algunas <strong>ideas</strong>:</p>
+<ul style="text-align: justify;">
+<li><strong>San Fernando, Pampanga:</strong> al norte de Manila está la que se conoce como la “Capital de la Navidad en Filipinas”. Es aquí donde se hacen los <em>paról</em> más bonitos y donde verás las decoraciones más impresionantes. De hecho, cada año se celebra un festival de linternas gigantes o <em>Ligligan Parul</em>. También se hacen procesiones de <em>lubenas</em>, es decir, linternas con forma de figuras bíblicas antes de cada novena.</li>
+<li><strong><a href="https://www.viajarporfilipinas.com/manila-turismo/" target="_blank" rel="noopener noreferrer">Manila</a>:</strong> la ciudad se vuelve un poco más tranquila y las decoraciones navideñas la suavizan. Los rincones más interesantes son Policarpio St. En Mandaluyong, ya que todos los vecinos adornan las casas de manera muy bonita, y los Ayala Triangle Gardens en Makati, que celebran un festival de luces de 18:00 a 22:00 cada 30 minutos. Si quieres comprar regalos o decoraciones típicas, nada como el mercado de Divisoria.</li>
+</ul>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-6730" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Manila fin de año fuegos artificiales" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-6730" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9.jpg" alt="Manila fin de año fuegos artificiales" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-9-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Fin_de_ano_en_Filipinas_%C2%BFcomo_se_celebra"></span><span style="color: #33cccc;">Fin de año en Filipinas, ¿cómo se celebra?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Tienes pensado pasar el Fin de año en Filipinas? Entonces quizás tienes curiosidad por saber cómo se celebra esta noche por aquí.</p>
+<p style="text-align: justify;">La <strong><em>Media Noche</em></strong> también tiene muchas influencias españolas. Por eso, se suele hacer una cena similar a la de <em>Noche Buena</em>, pero incorporando ingredientes que den suerte para el próximo año. Así, en algunos sitios se suele ver un plato con 12 frutas redondas (el círculo no tiene fin, por lo que implica que la riqueza será infinita), <em>noodles</em> (porque alargan la vida) y postres “pegajosos” (porque así la familia permanece unida).</p>
+<p style="text-align: justify;">Aunque no son <strong>tradiciones</strong> tan seguidas como las navideñas, muchos filipinos también acostumbran a vestir ropa con lunares (por la misma razón de los círculos), animan a los niños a saltar a las 00:00 para que crezcan más, lanzan <strong>petardos y fuegos artificiales</strong> para espantar a los malos espíritus y dejan las puertas y ventanas (incluidos armarios y cajones) abiertas para que entren las buenas energías.</p>
+<p style="text-align: justify;">En la gran mayoría de <strong>sitios turísticos</strong> como El Nido, Port Barton, Bohol o Siargao, no es raro encontrar un ambiente muy festivo. Es habitual que haya fuegos artificiales, cenas especiales en muchos restaurantes y hoteles y que la fiesta dure hasta altas horas de la noche.</p>
+<p style="text-align: justify;">Por otro lado, en <strong>Manila</strong> es donde se ven <strong>los fuegos artificiales más espectaculares</strong> y muchos restaurantes o bares ubicados en lo más alto de los rascacielos ofrecen cenas para la ocasión y un sitio para disfrutarlos. En <strong><a href="https://www.booking.com/hotel/ph/okada-manila.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Okada Manila</a></strong> se hace una fastuosa cuenta atrás con espectáculos de fuentes, música en directo y, por supuesto, fuegos artificiales.</p>
+<p style="text-align: justify;">Aun así, nuestro rincón favorito para <strong>pasar Nochevieja en Filipinas</strong> siempre será <strong>Malapascua</strong>. Es aquí donde tenemos grandes amigos y muchos recuerdos y nos gusta su ambiente un poquito más íntimo. Siempre buscamos un sitio chulo para cenar y después no faltamos a la cuenta atrás en la playa de Bounty, donde también suelen verse algunos fuegos artificiales. Después, un ratito por The Other Place y acabamos en la “Disco Party” bailando con todo el pueblo en la cancha de baloncesto.</p>
+<div id="attachment_6727" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-6727" class="size-full wp-image-6727" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20721'%3E%3C/svg%3E" alt="fiesta fin de año Malapascua" width="1000" height="721" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3-980x707.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3-480x346.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-6727" class="size-full wp-image-6727" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3.jpg" alt="fiesta fin de año Malapascua" width="1000" height="721" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3-980x707.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-3-480x346.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-6727" class="wp-caption-text"><em>©Ignacio Izquierdo</em></p></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="El_tiempo_en_Navidad_en_Filipinas"></span><span style="color: #33cccc;">El tiempo en Navidad en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Una de las cosas que más nos gustan de pasar la Navidad en Filipinas es el clima. Nosotros somos muy tropicales, así que eso de pasar estas fechas en pantalón corto y chanclas nos encanta.</p>
+<p style="text-align: justify;">Como te contamos en <strong><a href="https://www.viajarporfilipinas.com/cuando-viajar-filipinas/" target="_blank" rel="noopener noreferrer">Cuándo viajar a Filipinas</a></strong>, diciembre es el inicio de la <strong>temporada seca</strong> en gran parte del país y también es uno de los meses más “fresquitos”. Las temperaturas medias se sitúan en un cómodo rango <strong>entre los 22ºC y 32ºC</strong>, por lo que hace calor, pero se duerme más cómodo. Si tienes pensado ir a la zona de Baguio y Cordillera, en Luzón, ten en cuenta que es el momento más frío del año y, por lo tanto, el mercurio puede bajar por debajo de los 10ºC.</p>
+<p style="text-align: justify;">Ya sabes que el tiempo en Filipinas es impredecible, pero, si quieres asegurarte menos probabilidad de lluvias, <strong>céntrate en cualquier zona del país que no sea el sur</strong>. Por ejemplo, en Siargao es época de lluvias en Navidad.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_es_visitar_Filipinas_en_Navidad"></span><span style="color: #33cccc;">¿Cómo es visitar Filipinas en Navidad?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como has visto, la Navidad en Filipinas <strong>se vive con intensidad y el clima suele acompañar</strong>, por lo que tienes muchas probabilidades de disfrutar mucho de tu viaje y pasar unas vacaciones diferentes a las que estabas acostumbrado.</p>
+<p style="text-align: justify;">Al exotismo de estar fuera de tu país y contemplar paisajes muy diferentes, se le une el poder ver tradiciones típicas de este momento del año y bonitas decoraciones. Además, los filipinos están aún más felices de recibirte y no van a dudar en desearte una <em>maligayang pasko</em> o <em>malipayong/maayong pasko</em>, es decir, una feliz navidad en tagalo y bisaya, respectivamente.</p>
+<p style="text-align: justify;">Ya sea en solitario, en pareja, con amigos o en familia, siempre vas a encontrar algo que hacer y buen ambiente. Tú eliges qué te apetece porque no hay un viaje a Filipinas igual. Puedes decantarte por lugares más conocidos o más remotos, disfrutar de la playa, subir algún volcán, una montaña, darte un chapuzón en una cascada, investigar la <a title="Historia de Filipinas: Breve resumen" href="https://www.viajarporfilipinas.com/historia-filipinas-resumen/" target="_blank" rel="noopener noreferrer">historia de Filipinas</a>, hacer buceo… En <strong><a href="https://www.viajarporfilipinas.com/que-hacer-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en Filipinas</a></strong> puedes hacerte una buena idea de la variedad que te ofrece el archipiélago.</p>
+<blockquote>
+<p style="text-align: justify;">La diferencia fundamental a la hora de viajar por Filipinas en Navidad es que <strong>hay más gente moviéndose que de costumbre</strong>. A los turistas internacionales, se unen los nacionales y, sobre todo, los desplazamientos de los filipinos, que vuelven a casa para visitar a sus familias. Es temporada alta, por lo que <strong>los precios de los alojamientos y vuelos suben</strong> y, en muchos casos, también se acaban las plazas en hoteles, aviones, barcos y buses. Por ello, si planeas visitar Filipinas en Navidad, siempre recomendamos reservar tu alojamientos y desplazamientos con la mayor antelación posible y asegurarte así de no quedarte sin.</p>
+</blockquote>
+<p style="text-align: justify;">Por supuesto, esto no ocurre en las zonas menos visitadas por el turismo y hay que considerar que <strong>Filipinas tiene más de 7.000 islas</strong>, así que siempre hay opciones para hacer un viaje mucho más tranquilo.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-6728" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="decoraciones Navidad en Filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6728" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5.jpg" alt="decoraciones Navidad en Filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-5-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="A_donde_ir_en_Navidad_por_Filipinas"></span><span style="color: #33cccc;">A dónde ir en Navidad por Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ya te hemos dado algunas pistas más arriba, pero todo depende de lo que te apetezca en tus Navidades en Filipinas. Nosotros somos fans de los sitios relajados y no nos gusta mucho agobiarnos con mucho turismo, así que siempre optamos por algo más desconocido o una cosa intermedia como Malapascua.</p>
+<p style="text-align: justify;">En el caso de que quieras un <strong>fiestón</strong>, nosotros escogeríamos El Nido o Boracay. Sitios donde tampoco te va a faltar ambiente son Port Barton, Bohol y Siargao.</p>
+<p style="text-align: justify;">Si lo que quieres es huir de las cogestiones y, sobre todo, de los precios altos en el alojamiento, nada como irse a <a href="https://www.viajarporfilipinas.com/islas-poco-turisticas-filipinas/"><strong>sitios menos turísticos de Filipinas</strong></a> como Romblon, Pagudpud o Caramoan, por poner ejemplos. También funciona mucho <strong>reservar con antelación</strong> en lugares con menos turismo y mejor relación calidad-precio como Siquijor o Camiguin. No van a estar vacíos, pero ofrecen un ambiente navideño más moderado.</p>
+<blockquote><p>Como siempre, lo que nosotros te animamos a hacer es leer mucho sobre los diferentes lugares (¡en nuestra web tienes toneladas de información!) y ver si cuadra con lo que estás buscando.</p></blockquote>
+<p style="text-align: justify;">En términos de <strong>clima</strong>, el tiempo suele acompañar más en Luzon, Bisayas y Palawan y menos en Mindanao. Sin embargo, ya sabes que esto no es una ciencia cierta.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-6732" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20768'%3E%3C/svg%3E" alt="cresta de gallo filipinas" width="576" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10-480x640.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 576px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6732" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10.jpg" alt="cresta de gallo filipinas" width="576" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-10-480x640.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 576px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Consejos_para_ir_a_Filipinas_en_Navidad"></span><span style="color: #33cccc;">Consejos para ir a Filipinas en Navidad</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Aquí va la lista de consejos que nos hubiese gustado tener nosotros para visitar Filipinas en Navidad nuestra primera vez:</p>
+<ul style="text-align: justify;">
+<li>El principal: <strong>reserva transporte y alojamiento con mucha antelación</strong>. De verdad, no es por sonar alarmantes, pero te aconsejamos que lo hagas minimísimo 6 semanas antes. Esto es especialmente importante si tienes pensando celebrar los días grandes en sitios como Coron, El Nido, Boracay, Siargao o Bohol, que son muy turísticos. Puedes arriesgarte a no reservar, pero no te sorprendas si te quedas con lo peor y lo más caro. ¡Luego no valen quejas! Aprende más sobre estos aspectos en <strong><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/" target="_blank" rel="noopener noreferrer">Hoteles en Filipinas</a></strong> y <strong><a href="https://www.viajarporfilipinas.com/aerolineas-filipinas-vuelos-internos/" target="_blank" rel="noopener noreferrer">Vuelos internos en Filipinas</a></strong>.</li>
+<li>Si tienes pensado ir a Coron y El Nido, <strong><a href="https://12go.asia/es/travel/coron/el-nido/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">reserva el barco entre ambos</a></strong> cuanto antes. El precio de hacerlo por internet es el mismo y te vas a ahorrar el berrinche de quedarte sin billete. Puedes encontrar más información en <strong><a href="https://www.viajarporfilipinas.com/como-ir-coron-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Cómo ir de Coron a El Nido</a></strong>.</li>
+<li><strong>Haz</strong> <strong>tours privados</strong>, en especial los island hopping de El Nido y Port Barton. Si ya te los recomendamos en otras épocas, en este momento es cuando te los aconsejamos al 100% porque hay mucho más turismo y no quieres sentir que vas como un borrego. No es imprescindible, pero, si puedes, queda con los barqueros al menos un mes antes (nosotros te podemos dar contactos recomendados en todos estos lugares si nos dejas un comentario). Puedes buscar a más viajeros para compartir en <a href="https://filipinapp.com/calendario-tours-filipinas/" target="_blank" rel="nofollow noopener noreferrer">nuestro calendario</a>.</li>
+<li><strong>Intenta llegar a los aeropuertos y puertos con un poco más de antelación</strong>. Al haber más viajeros, las colas suelen ser más largas.</li>
+<li><strong>Planifica tu <a href="https://www.viajarporfilipinas.com/itinerarios" target="_blank" rel="noopener noreferrer">itinerario de viaje por Filipinas</a> un poco más holgado de lo que lo harías en otros momentos</strong>. Siempre te decimos que puede haber imprevistos, pero en Navidad puede ser que necesites más margen de maniobra, sobre todo si no quieres tenerlo todo reservado.</li>
+</ul>
+<p style="text-align: justify;">Tienes mucha más información en <strong><a href="https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/" target="_blank" rel="noopener noreferrer">Recomendaciones y consejos para viajar a Filipinas</a> y <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">Guía de Filipinas</a></strong>.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-6729" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20585'%3E%3C/svg%3E" alt="playas filipinas navidad" width="1000" height="585" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4-980x573.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4-480x281.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6729" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4.jpg" alt="playas filipinas navidad" width="1000" height="585" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4-980x573.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/05/navidad-filipinas-4-480x281.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<p style="text-align: center;"><em>Esperamos haberte ayudado a entender cómo es la Navidad en Filipinas y preparar tu próxima aventura. Puedes dejarnos cualquier duda en los comentarios y te responderemos lo antes posible.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">36 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/navidad-filipinas/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-49397">
+		<article id="comment-49397" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Silvia</span>				<span class="comment_date">
+					el 21/12/2024 a las 07:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Muy buenas tardes Claudia y Jairo!! Llevamos unos días por Filipinas y estaremos hasta después de Reyes.<br />
+Nochevieja nos cuadra en Camiguin, ¿podríais recomendarnos algún restaurante para esa cena “especial”?<br />
+Muchas gracias de antemano y enhorabuena por el blog, una guía súper útil!! ☺️☺️</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-49397' data-commentid="49397" data-postid="6723" data-belowelement="comment-49397" data-respondelement="respond" data-replyto="Responder a Silvia" aria-label='Responder a Silvia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-49399">
+		<article id="comment-49399" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/12/2024 a las 08:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Silvia, genial : ) pues nosotros preguntaríamos en el Guerrera o en Sappore, a ver si tienen algún menú especial. Hablamos de ellos en <a href="https://www.viajarporfilipinas.com/donde-comer-camiguin/" title="Dónde comer en Camiguin: mejores lugares para comer, cenar y desayunar" target="_blank" rel="noopener ugc">Dónde comer en Camiguin</a>. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-43041">
+		<article id="comment-43041" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Juan CORDERO</span>				<span class="comment_date">
+					el 16/08/2024 a las 23:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Voy a viajar a Filipinas esta Navidad visitaremos coron el nido y Boracay podríais aconsejarnos empresas para reservar las excursiones,también tengo problemas para ir de el nido a Boracay ya no hay plazas en el avión y me obligan a volar de el nido a Manila y Manila Boracay me gustaría saber si tengo otras opciones gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43041' data-commentid="43041" data-postid="6723" data-belowelement="comment-43041" data-respondelement="respond" data-replyto="Responder a Juan CORDERO" aria-label='Responder a Juan CORDERO'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-43061">
+		<article id="comment-43061" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/08/2024 a las 11:12				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Juan, acabamos de pasarte contactos de Coron y El Nido, para Boracay no tenemos ninguno, pero puedes mirar opciones en <a href="https://www.viajarporfilipinas.com/que-hacer-boracay/" title="Qué hacer en Boracay: la isla más famosa de Filipinas" target="_blank" rel="noopener ugc">QUÉ HACER EN BORACAY</a>. Los vuelos de El Nido a Boracay son solo algunas veces a la semana, puedes esperar a ver si ponen más, pero sino la otra opción es la que te indican. Puedes leer más en <a href="https://www.viajarporfilipinas.com/como-ir-de-el-nido-a-boracay/" title="Cómo ir de El Nido a Boracay y viceversa" target="_blank" rel="noopener ugc">Cómo ir de El Nido a Boracay</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-40114">
+		<article id="comment-40114" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Dani</span>				<span class="comment_date">
+					el 07/07/2024 a las 03:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Gracias por las recomendaciones! Sofía voy a viajar con unos amigos a Filipinas y coincidimos en alguna zona por fecha, es por si tal vez estáis interesados en hacer tour privado para que nos salga mejor de precio. También vamos a hacer tour A-C. Si quieres nos contactamos,</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-40114' data-commentid="40114" data-postid="6723" data-belowelement="comment-40114" data-respondelement="respond" data-replyto="Responder a Dani" aria-label='Responder a Dani'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-40130">
+		<article id="comment-40130" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/07/2024 a las 12:06				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Dani, para buscar a otros viajeros, puedes usar el <a href="https://filipinapp.com/calendario-tours-filipinas/" target="_blank" rel="noopener nofollow ugc">calendario</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-39458">
+		<article id="comment-39458" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Celia</span>				<span class="comment_date">
+					el 24/06/2024 a las 20:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Muchísimas gracias por toda la información.<br />
+Vamos a ir a Filipinas en diciembre-enero, y teníamos en mente pasar por Camiguín, pero acabamos de leer que en Mindanao (Siargao y Camiguin) es epoca de lluvias. ¿Qué nos recomendarías que fuera similar? No buscamos ambiente, solo rutas, playas y ver tortugas.<br />
+Nuestro planning por ahora es:<br />
+Dia 1: Manila &#8211; Puerto Princesa<br />
+Dias 2, 3, 4 &#8211; El Nido (Island Hoppings)<br />
+Dias 5, 6, 7 y 8 &#8211; El Nido-Coron (expedición)<br />
+Dias 9, 10, 11 y 12 &#8211; Camiguin (esta ultima parte nos la estamos replanteando, por si teneis algun consejo. Además nos sobran unos 3 días antes de regresar, alguna recomendacion?). Mil gracias!!! un saludo 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39458' data-commentid="39458" data-postid="6723" data-belowelement="comment-39458" data-respondelement="respond" data-replyto="Responder a Celia" aria-label='Responder a Celia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-39478">
+		<article id="comment-39478" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/06/2024 a las 09:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Celia, pues nosotros haríamos un combinado de Siquijor con Bohol : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-39148">
+		<article id="comment-39148" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Fatima</span>				<span class="comment_date">
+					el 17/06/2024 a las 21:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! He leido el blog y he visto que no recomendáis Siargao en diciembre. Nosotros iremos del 13 al 3 de diciembre y queríamos incluir Siargao en nuestro itinerario. ¿Cómo son las lluvias ahí en esta epoca?</p>
+<p>Muchas gracias de antemano.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39148' data-commentid="39148" data-postid="6723" data-belowelement="comment-39148" data-respondelement="respond" data-replyto="Responder a Fatima" aria-label='Responder a Fatima'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-39157">
+		<article id="comment-39157" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 18/06/2024 a las 07:27				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Fátima, a ver, no es que te podamos decir que te vaya a llover sí o sí, pero diciembre y enero son los meses más lluviosos en Siargao, mientras que en el resto de Filipinas es época seca. Las lluvias en temporada de lluvias acostumbran a ser de 2-3 horas y muchas veces por la tarde, con chaparrones intermitentes y cielos nublados a veces durante el día. Personalmente, con todo un país en época seca menos Siargao, quizás lo evitaríamos, pero cada uno es cada uno. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-36779">
+		<article id="comment-36779" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sofía</span>				<span class="comment_date">
+					el 25/04/2024 a las 11:45				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días,</p>
+<p>En primer lugar, agradeceros la fantástica labor que estáis haciendo con este blog, es maravilloso.<br />
+Por otro lado, estoy organizando nuestro viaje a Filipinas para las navidades de 2024.<br />
+El itinerario que había pensado es el siguiente:</p>
+<p>DÍA	22	Llegada a Manila de noche (24:10) &#8211; dormir en Manila<br />
+DÍA	23	Salida a Corón a primera hora de la mañana. Corón (1N)<br />
+DÍA	24	Corón (2N) &#8211; Ultimate Tour<br />
+DÍA	25	Expedición a El Nido (1N)<br />
+DÍA	26	Expedición a El Nido (2N)<br />
+DÍA	27	Expedición a El Nido &#8211; El Nido (1N)<br />
+DÍA	28	El Nido (2N) &#8211; Tour A/C<br />
+DÍA	29	El Nido (3N) &#8211; Tour A/C<br />
+DÍA	30	El Nido-Port Barton (1N) &#8211; Snorkel<br />
+DÍA	31	Port Barton (2N) &#8211; Snorkel<br />
+DÍA	1	Port Barton &#8211; Puerto Princesa &#8211; Bohol &#8211; Cabilao o Port Barton &#8211; Puerto Princesa &#8211; Cebú &#8211; Bohol -Cabilao<br />
+DÍA	2	Buceo en Cabilao<br />
+DÍA	3	Buceo en Cabilao<br />
+DÍA	4	Sitio Buceo &#8211; Manila<br />
+DÍA	5	Manila- España	</p>
+<p>¿Cómo lo veis? ¿Creéis que es factible incluir Port Barton en el viaje o se hace muy justo el itinerario?<br />
+¿Puede que sea preferible hacer buceo en otro lugar para aprovechar mejor los días y hacer menos desplazamientos? Me preocupa un poco el traslado desde Port Barton a Cabilao.</p>
+<p>Dudamos mucho entre ir en agosto (3 semanas) o en navidad tan solo 2, pero teniendo en cuenta que queremos si o sí hacer la expedición, al final nos decantamos por navidades.</p>
+<p>Estamos abiertos a cualquier sugerencia/recomendación que nos queráis aportar y porsupuesto haremos algún island hopping en el Nido y el ultimate en Corón.</p>
+<p>Un saludo y muchas gracias de nuevo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-36779' data-commentid="36779" data-postid="6723" data-belowelement="comment-36779" data-respondelement="respond" data-replyto="Responder a Sofía" aria-label='Responder a Sofía'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-36810">
+		<article id="comment-36810" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/04/2024 a las 08:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sofía, ¡muchas gracias a ti por leernos y bienvenida! Las expediciones suelen ser de 4 días y 3 noches, que son las que aconsejamos porque sino se te queda corto. Nosotros aconsejamos al menos 2 tours en El Nido y no iríamos a Port Barton para estar solo 1 día, directamente lo suprimiríamos. ¿Por qué tienes tanto interés en Cabilao? Desgraciadamente, un tifón de 2021 se llevó mucho el arrecife por delante&#8230; Si tu objetivo es buceo, nosotros miraríamos de hacer al menos 1 día de submarinismo en Coron y combinar con otro destino como Panglao o Malapascua. En cuanto a las fechas, realmente aconsejamos ir el máximo tiempo posible, aunque es cierto que las posibilidades de lluvia en dicha ruta son mayores en verano. Nos encantaría deciros algo definido, pero realmente es un poquito lotería. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-36991">
+		<article id="comment-36991" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sofía</span>				<span class="comment_date">
+					el 30/04/2024 a las 12:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!, muchísimas gracias por vuestra respuesta, todas las aportaciones son muy bienvenidas.<br />
+En base a lo que me comentas, cambiaré la expedición para que sean si o sí 3 noches.<br />
+Quería incluir Port Barton, porque me da la sensación de que es un destino con un rollo algo diferente y que todavía no está masificado, y si vamos en navidad y además a El Nido y Corón principalmente, quería llevarme algo un poco más diferente sin masificación (odiamos los sitios masificados).</p>
+<p>Con respecto a Cabilao, estamos abiertos a otras opciones de buceo, pero me gustaría incluir al menos 1 o 2 inmersiones en el itinerario. Tenemos el OW con lo cual el tema tiburones zorro se nos queda justo, y nos gustan los corales, tortugas y biodiversidad en general. No sé si hay alguna opción que se pudiera incluir. </p>
+<p>He modificado el itinerario, con dos alternativas a ver qué os parece:</p>
+<p>OPCIÓN B<br />
+22	Llegada a Manila de noche (24:10) &#8211; dormir en Manila<br />
+23	Manila &#8211; Malapascua o Panglao (1N)<br />
+24	Buceo en Malapascua/Panglao (2N)<br />
+25	Buceo en Malapascua/Panglao (3N)<br />
+26	Malapascua o Panglao &#8211; Corón (1N)<br />
+27	Corón (2N)<br />
+28	Corón (3N)<br />
+29	Expedición El Nido (1N)<br />
+30	Expedición El Nido (2N)<br />
+31	Expedición El Nido (3N)<br />
+1	El Nido (1N)<br />
+2	El Nido (2N) &#8211; Island Hopping<br />
+3	El Nido (3N) &#8211; Island Hopping<br />
+4	El Nido &#8211; Manila<br />
+5	Manila &#8211; España	</p>
+<p>OPCIÓN C	&#8211;<br />
+22	Llegada a Manila de noche (24:10) &#8211; dormir en Manila<br />
+23	Salida a Corón a primera hora de la mañana. Corón (1N)<br />
+24	Corón (2N) &#8211; Ultimate Tour<br />
+25	Corón (3N) &#8211; Buceo<br />
+26	Corón (4N) &#8211; Buceo<br />
+27	Expedición a El Nido (1N)<br />
+28	Expedición a El Nido (2N)<br />
+29	Expedición a El Nido &#8211; (3N)<br />
+30	El Nido (1N)<br />
+31	El Nido (2N) &#8211; Tour A/C<br />
+1	El Nido (3N) &#8211; Tour A/C<br />
+2	El Nido-Port Barton(1N)<br />
+3	Port Barton (2N) &#8211; Snorkel<br />
+4	Port Barton &#8211; Manila<br />
+5	Manila- España	</p>
+<p>También teniendo en cuenta las fechas, no nos gustaría que hubiera mucha masificación y preferimos prescindir de ciertas actividades por ver lo más local.</p>
+<p>Espero vuestros comentarios y de nuevo muchas gracias.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-36999">
+		<article id="comment-36999" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/04/2024 a las 15:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sofía, no hay de qué. Por quitarte algunas ideas preconcebidas: 1) en El Nido y Coron no creemos que haya masificación y mucho menos si hacéis tours privados. Es cierto que en Navidad habrá algo más gente, pero está lejos de las marabuntas de otros destinos como Tailandia. La clave son tours privados. 2) el tiburón zorro se puede ver a día de hoy con OW. Podéis hacer muy buenos buceos en Coron y en Balicasag/Panglao. En Malapascua también tenéis zonas de arrecife preciosas como Gato Island. En cuanto a las rutas, todas son buenas, pero evidentemente en términos de arrecife, será mejor cualquiera que incluya Bohol o Malapascua. Lo local se puede ver en cualquier sitio de Filipinas, incluido El Nido, solo hay que salirse de las 4 calles que tiene el pueblo ; ) Busuanga igualmente es una isla enorme y que tiene mucho más allá de Coron&#8230; Por lo que dices, quizás Malapascua cuadraría más con vosotros. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-37001">
+		<article id="comment-37001" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sofía</span>				<span class="comment_date">
+					el 30/04/2024 a las 15:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>De nuevo, un millón de gracias.</p>
+<p>Me decanto entonces por Malapascua, cambiando el itinerario para quitar Port Barton y meter Malapascua.<br />
+Ahora, a cuadrar desplazamientos y alojamientos.</p>
+<p>Muchas gracias!!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-37004">
+		<article id="comment-37004" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/04/2024 a las 15:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>De nada, si quieres, cuando lo tengas más concreto, nos lo puedes enviar a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a>, que así podemos verlo de forma más clara. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/navidad-filipinas/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/navidad-filipinas/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='6723' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ec10627dbc" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="88"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"6723","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

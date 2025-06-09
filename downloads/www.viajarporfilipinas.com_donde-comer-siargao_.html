@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Dónde comer en Siargao: restaurantes 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="¿Hambre? Descubre los mejores locales donde comer en Siargao tanto en el sur como en el norte de la isla. Añadimos cafeterías, bares y ¡mucho más!" />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/donde-comer-siargao/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Dónde comer en Siargao: restaurantes 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="¿Hambre? Descubre los mejores locales donde comer en Siargao tanto en el sur como en el norte de la isla. Añadimos cafeterías, bares y ¡mucho más!" />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/donde-comer-siargao/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-06-20T07:16:19+00:00" />
+	<meta property="article:modified_time" content="2024-05-17T16:50:27+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="32 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Dónde comer en Siargao: los mejores restaurantes y bares de la isla","datePublished":"2018-06-20T07:16:19+00:00","dateModified":"2024-05-17T16:50:27+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/"},"wordCount":6406,"commentCount":19,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2.jpg","articleSection":["Mindanao","Siargao"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/donde-comer-siargao/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/","url":"https://www.viajarporfilipinas.com/donde-comer-siargao/","name":"▷ Dónde comer en Siargao: restaurantes 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2.jpg","datePublished":"2018-06-20T07:16:19+00:00","dateModified":"2024-05-17T16:50:27+00:00","description":"¿Hambre? Descubre los mejores locales donde comer en Siargao tanto en el sur como en el norte de la isla. Añadimos cafeterías, bares y ¡mucho más!","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/donde-comer-siargao/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2.jpg","width":1200,"height":630,"caption":"Dónde comer en Siargao"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/donde-comer-siargao/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Dónde comer en Siargao: los mejores restaurantes y bares de la isla"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/donde-comer-siargao/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Dónde comer en Siargao: los mejores restaurantes y bares de la isla del feed" href="https://www.viajarporfilipinas.com/donde-comer-siargao/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/478" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=478' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fdonde-comer-siargao%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fdonde-comer-siargao%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-478-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/478/et-core-unified-478.min.css?ver=1745580724" /><link rel="stylesheet" id="et-core-unified-deferred-478-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/478/et-core-unified-deferred-478.min.css?ver=1745580724" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-478 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-478" class="et_pb_post post-478 post type-post status-publish format-standard has-post-thumbnail hentry category-mindanao category-siargao">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Dónde comer en Siargao: los mejores restaurantes y bares de la isla</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/mindanao/" rel="category tag">Mindanao</a>, <a href="https://www.viajarporfilipinas.com/category/mindanao/siargao/" rel="category tag">Siargao</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Dónde comer en Siargao" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-1080x630.jpg" alt="Dónde comer en Siargao" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/comer-siargao-p2-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Uno de los planazos <a href="https://www.viajarporfilipinas.com/que-hacer-siargao/">que hacer en Siargao</a> que te proponíamos era disfrutar de la oferta gastronómica de la isla. Gracias al desarrollo turístico, encontrarás <strong>infinidad de restaurantes</strong> donde comer en Siargao con comida de todos los lugares del mundo, pero también tradicionales <em>carenderias</em> o <em>eateries </em>en las que descubrir la gastronomía local. Nosotros, que hemos estado varias veces largas temporadas en la isla, nos hemos «sacrificado» para traerte todo tipo de alternativas.<span id="more-478"></span></p>
+<p style="text-align: justify;">Los <strong>precios de la comida en Siargao</strong> son ligeramente más caros que en otros lugares de Filipinas, pero será raro que gastes más de 10€-15€ por persona en los mejores restaurantes de la isla. En el caso de que quieras economizar, es posible <strong>comer en Siargao </strong>por algo más de 1-2€. ¡Hay opciones para todos los gustos!</p>
+<p style="text-align: justify;">Como expertos en <strong>viajar por libre a Filipinas</strong>, aquí queremos recomendarte <strong>los mejores lugares donde comer en Siargao</strong>. Un avisillo: primero nos centraremos en los situados en el sur de la isla, que es donde se suele quedar la gran mayoría de la gente y donde más variedad de restaurantes y bares encontrarás. Más abajo te recomendaremos otros rincones en el norte (Alegría, Burgos, Pacífico&#8230;), que poco a poco van cogiendo más movimiento y que a nosotros nos encanta.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682588ede6fb5" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682588ede6fb5"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#_Los_mejores_restaurantes_baratos_en_Siargao" title="$ Los mejores restaurantes baratos en Siargao ">$ Los mejores restaurantes baratos en Siargao </a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#_Los_mejores_restaurantes_de_precio_medio_en_Siargao" title="$$ Los mejores restaurantes de precio medio en Siargao ">$$ Los mejores restaurantes de precio medio en Siargao </a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#_Donde_comer_en_Siargao_rascandose_un_poco_el_bolsillo" title="$$$ Dónde comer en Siargao rascándose un poco el bolsillo">$$$ Dónde comer en Siargao rascándose un poco el bolsillo</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Los_mejores_desayunos_en_Siargao_y_cafeterias" title="Los mejores desayunos en Siargao (y cafeterías)">Los mejores desayunos en Siargao (y cafeterías)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Bares_en_Siargao_%C2%BFdonde_salir_de_fiesta" title="Bares en Siargao, ¿dónde salir de fiesta?">Bares en Siargao, ¿dónde salir de fiesta?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Donde_comer_en_el_norte_de_Siargao" title="Dónde comer en el norte de Siargao">Dónde comer en el norte de Siargao</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="_Los_mejores_restaurantes_baratos_en_Siargao"></span><span style="color: #33cccc;">$ Los mejores restaurantes baratos en Siargao </span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si lo que buscas es algo baratillo para comer en Siargao, tendrás que recurrir a las carinderias, que verás sobre todo en el propio pueblo de General Luna y al comienzo de la carretera que une GL con Cloud9. Aquí te contamos algunas opciones que creemos interesantes y que nosotros mismos hemos probado en varias ocasiones.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Kurvada </span></h3>
+<p style="text-align: justify;">Esta diríamos que es una <strong>«carendería deluxe»</strong>. Es decir, es el típico local con ollitas y bandejas de comida ya hecha, en el que tú vas eligiendo conforme te va entrando por el ojo y te lo ponen en un plato y, al final, pagas conforme lo que has comido. Pero la cosa es que Kurvada, que está al comienzo de una curva de la carretera principal, a pocos pasos de General Luna, tiene cantidad de platos que se salen un poquito de lo tradicional que encontrarías en una carinderia filipina. Es decir, además del tradicional munggo (la versión filipina de las lentejas), las lumpias (rollitos primavera) o el adobo, por ponerte varios ejemplos, verás pasta al pesto, cuscús, enormes filetes empanados&#8230; Y todo esto seguro que te suena bien, pero de verdad que a la variedad le acompaña la calidad, todo lo que probamos estaba espectacular y servido en cantidades generosas.</p>
+<p style="text-align: justify;">El precio es un pelín más elevado (puedes comer fácilmente por unos 150-180 pesos) que una carendería típica, pero considerando las raciones y, como comentamos, la calidad, nos parece que está más que justificado. Además, tienen cantidad de <strong>opciones vegetarianas y veganas</strong> y, si preguntas, saben a qué te refieres (que eso a veces en algunos lugares fuera del circuito turístico es complicado).</p>
+<p style="text-align: justify;"><strong>Aconsejamos ir sobre las 12:30 o 13:00</strong> como tarde porque después las ollas comienzan a vaciarse rápidamente. Por las noches también abren, aunque, desde nuestra experiencia, la variedad es algo inferior. Como te dirán ellos, después de pedir, hazle una foto al plato porque esa será la «prueba» que tendrás que enseñar en la caja al final para pagar.</p>
+<p style="text-align: justify;">Por cierto, justo al lado de Kurvada hay uno muy similar llamado Derecho. No está mal, pero creemos que está lejos de Kurvada en términos de cantidad y sabor.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-13165" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20622'%3E%3C/svg%3E" alt="Kurvada Siargao comer barato" width="1000" height="622" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23-980x610.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23-480x299.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-13165" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23.jpg" alt="Kurvada Siargao comer barato" width="1000" height="622" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23-980x610.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-23-480x299.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Aventino’s Pizza</span></h3>
+<p style="text-align: justify;">Somos grandes habituales de la sucursal de esta cadena de pizzas ubicada en General Luna. Con <strong>buena variedad de pizzas</strong> en las que se puede elegir el grosor de la masa, aunque no serán las mejores pizzas que te hayas comido en tu vida, la verdad es que la <strong>relación calidad-precio</strong> de estas es imbatible. Por 200 pesos podrían comer 2 personas perfectamente. Además, también cuentan con algunos platos de pasta y carne.</p>
+<p style="text-align: justify;">Si eres <strong>vegetariano</strong> o vegano, puedes pedirles que quiten la carne o el queso de la pizza, ¡son muy majos!</p>
+<p style="text-align: justify;">También encontrarás otros locales de Aventino’s en Dapa y cerca de Cloud 9.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Dadang &amp; William Eatery</span></h3>
+<p style="text-align: justify;">Encontrarás muchas <em>carinderias</em> donde comer en Siargao a buen precio, una de nuestras favoritas es Dadang &amp; William Eatery, ubicada en la carretera hacia General Luna. En ella encontrarás un montón de <strong>“ollitas”</strong> en las que elegir qué te apetece comer por unos 30 pesos la ración. Además, es de los pocos locales con muchos <strong>platos vegetarianos y veganos</strong>.</p>
+<p style="text-align: justify;">¡Tienen batidos de aguacate por 50 pesos! Recuerda pedirlos con pajita y colabora con una Siargao limpia.</p>
+<h3><span style="color: #33cccc;">Food Lab</span></h3>
+<p style="text-align: justify;">No sabíamos si ponerlo en la categoría de barato o intermedio porque las raciones no son muy grandes, pero no queremos dejar de recomendarte este pequeño local abierto a finales de 2023 en el corazón de General Luna que ofrece platos de <strong>comida vietnamita</strong> muy bien conseguidos y a precios bastante contenidos. Tienes, entre otras cosas, <em>phở</em>, noodles, rollitos vietnamitas (fritos o frescos), <em>Bánh mì</em>, dumplings y café vietnamita todo en versión vegetariana o vegana.</p>
+<p style="text-align: justify;">El servicio es un poquito lento y algo despistado, pero el sabor de la comida y su salsa picante (que nos chifla) hacen que lo incluyamos en esta lista de los mejores sitios donde comer en Siargao. ¡Esperamos que te guste!</p>
+<p style="text-align: justify;">Por cierto, girando la esquina, está <strong>TAG Grocery</strong>, que es el supermercado más grande de la zona, por si necesitases comprar alguna cosilla para hacerte el desayuno y picar.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13157" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Food Lab Siargao dónde comer" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13157" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20.jpg" alt="Food Lab Siargao dónde comer" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-20-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">El mejor pan de coco</span></h3>
+<p style="text-align: justify;">No es un restaurante como tal, pero vas a flipar con este mini-puesto de <strong>pan relleno de coco recién hecho y calentito</strong>. Esta señora lleva años poniéndose frente a la iglesia de General Luna más o menos a partir de las 14:00 y vendiendo estos bollitos a 5 pesos que hacen las delicias de todo el mundo. Si te fijas, frente a ella, en un callejón, tiene el horno donde los hace. Para que no te los pierdas, los hemos marcado en el mapa de sitios donde comer en Siargao que encontrarás al final de esta guía.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="_Los_mejores_restaurantes_de_precio_medio_en_Siargao"></span><span style="color: #33cccc;">$$ Los mejores restaurantes de precio medio en Siargao </span><span class="ez-toc-section-end"></span></h2>
+<h3><span style="color: #33cccc;">Noods Wok Bar</span></h3>
+<p style="text-align: justify;">No serán los mejores <em>noodles</em> que habrás comido en tu vida, pero la <strong>relación calidad-precio</strong> de este local en la carretera principal creemos que es buena y es un sitio agradable para empezar la noche. Puedes customizar tu <strong><em>wok</em></strong> como quieras, eligiendo entre distintos tipos de noodles y arroz, salsa, proteína (incluido el tofu y champiñones) y otros extras. También tienes baos, dumplings (bastante ricos, por cierto) y ramen. Los precios rondan los 300-350 pesos por plato y, como muchísimos restaurantes en Siargao, tendrás opciones vegetarianas y veganas si las vas buscando.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13166" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20607'%3E%3C/svg%3E" alt="Noods Siargao comer" width="1000" height="607" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24-980x595.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24-480x291.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13166" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24.jpg" alt="Noods Siargao comer" width="1000" height="607" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24-980x595.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-24-480x291.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Cosmic Siargao</span></h3>
+<p style="text-align: justify;">Esta es <strong>la sucursal de uno de nuestros restaurantes veganos favoritos de Manila</strong>, Cosmic. Situado en la parte más marchosa de Siargao y con una estupenda terraza para comer el aire libre, aquí tienes deliciosos <strong>platos filipinos veganizados</strong> que poco tienen que envidiar a los tradicionales. Especialmente buenos están el <em>sisig</em> y el <em>kare kare</em>, que se pueden hacer en <em>kombo komida</em> con arroz y un acompañante (aconsejamos probar el <em>isaw</em> y el <em>unpork bbq</em>). Saldrás bien comido por 300-400 pesos y, si quieres ponerle la nota dulce, el <em>brownie</em> nos gustó mucho.</p>
+<h3><span style="color: #33cccc;">La Mesa</span></h3>
+<p style="text-align: justify;">Si buscas un sitio majo para comer o cenar sin dejarte mucho el presupuesto, creemos que este local te gustará. Propiedad de una pareja filipino-española, aquí tienes una <strong>mezcla de comida occidental y tailandesa</strong>, ya que Aimee, su propietaria, pasó bastante tiempo viviendo en Tailandia. Como buenos conocedores de dicho país, donde también hemos pasado largas temporadas, te podemos decir que tanto el <em>pad thai</em> como el <em>thai basil stir-fry</em> nos parecieron tremendamente bien conseguidos.</p>
+<p style="text-align: justify;">Cuentan con opciones veganas y vegetarianas (tofu incluido) y un servicio extremadamente agradable. Los precios de los platos rondan los 300-500 pesos, que no nos parece nada mal para la calidad que tienen. Si veis a Guille o a Aimee, podéis darle un abrazo de nuestra parte 😉</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13167" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20662'%3E%3C/svg%3E" alt="La Mesa Siargao restaurantes" width="1000" height="662" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25-980x649.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25-480x318.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13167" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25.jpg" alt="La Mesa Siargao restaurantes" width="1000" height="662" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25-980x649.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-25-480x318.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Bayani Restaurant (Harana Surf Resort)</span></h3>
+<p style="text-align: justify;">Aquí venimos con otra recomendación bien guapa para comer en Siargao de la que estamos seguros que no os vais a arrepentir si lo que buscáis es <strong>comida típica filipina bien elaborada</strong> (hay muchos platos típicos de la región de Mindanao) y en buenas raciones. El restaurante de este resort (que en ciertos días de la semana se convierte también en el centro de la fiesta de la isla gracias a su zona junto al mar) es una auténtica maravilla si quieres probar platos como el<strong><em> kare kare</em></strong> (por favor, no dejes de pedirlo, es de los mejores que hemos probado en Filipinas y no han sido pocos) o las <em>lumpias</em>, que aquí las hacen espectaculares, mucho menos pringosas que en cualquier carinderia. Otros platos conocidos son el bangus sisig y, para poner el broche de oro, el halo halo, el postre más emblemático del país.</p>
+<p style="text-align: justify;">El local, además, es súper agradable, con una zona con pufs para echarte un rato y abre por las mañanas para servir contundentes desayuno tanto al estilo filipino (muy buenos <em>silogs</em>) como más «occidentales». El servicio nos pareció bastante majo y rápido y, si quieres, te ponen «service water», que se puede beber perfectamente.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13173" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="Bayani donde comer Siargao" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13173" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27.jpg" alt="Bayani donde comer Siargao" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-27-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Big Belly Siargao</span></h3>
+<p style="text-align: justify;">Somos de la opinión que en un viaje a Filipinas hay que probar la comida típica todo lo posible, pero de vez en cuando dan ganas de hincarse una <strong>hamburguesa</strong> y, con tanta variedad, hay muchos restaurantes en Siargao que las ofrecen. Entre los más conocidos está este local de dos plantas en todo el cogollo de bares y restaurantes que es propiedad de dos españoles que viven por la zona y que se han inventado burgers como la Big Marc, la B.B. King o la Pollos Hermanos acompañadas de contundentes raciones de patatas como las <em>chorifries</em>.</p>
+<p style="text-align: justify;">Se puede elegir entre distintos tipos de <em>patty</em>: de carne de <em>wagyu</em>, cerdo, pollo, pescado, chorizo o <em>unmeat</em> (vegetariana). Por supuesto, cuentan con zumos, batidos y cerveza para acompañar, incluyendo la Engkanto, una cerveza artesanal filipina riquísima. Los precios de las hamburguesas rondan los 320-550 pesos.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13159" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Big Belly Siargao comer" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13159" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22.jpg" alt="Big Belly Siargao comer" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-22-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Más opciones de precio medio donde comer en Siargao:</span></h3>
+<p style="text-align: justify;">Como sino nos íbamos a extender demasiado, aquí tienes un pequeño resumen de otras que encontramos de interés:</p>
+<ul>
+<li style="text-align: justify;"><strong>Vedya Siargao:</strong> a mediodía hacen una especie de carendería deluxe, al estilo Kurvada, pero donde todo es vegetariano/vegano. Nos resultó que todo estaba bastante bueno, pero que las raciones eran algo escasillas y que el personal estaba algo desmotivado. Sin embargo, la seguimos metiendo dentro de esta selección de restaurantes en Siargao por tres cosas: los platos de carta tienen una pinta maravillosa, los bowls están bastante ricos y tienen un café de Bukidnon (región de Mindanao) que es una locura y a muy buen precio. Por lo tanto, creemos que también es un sitio guay para desayunar en Siargao. Más abajo ahondamos en este apartado.</li>
+<li style="text-align: justify;"><strong>Trattoria Al Trove Siargao:</strong> si te apetece pizza en horno de piedra, las de Al Trove también están muy ricas, aunque se están «subiendo a la parra» cada vez más con los precios. Las verás por 420-765 pesos. Tienes también sucursales de esta pequeña cadena en El Nido, Coron y Moalboal.</li>
+<li style="text-align: justify;"><strong>My Greek Taverna:</strong> seguro que por el nombre ya lo has adivinado, ¿no? Comida griega en un local majo. Platos entre los 300 y los 500 pesos y opciones vegetarianas.</li>
+<li style="text-align: justify;"><strong>Keyun&#8217;s Burger:</strong> no tan conocido como otros sitios de hamburguesas en Siargao, pero quizás hasta mejor. El pan lo hacen ellos y tienen varias opciones de ternera, pollo y vegetarianas, así como alitas de pollo y patatas «cargadas» por unos 200-250 pesos. ¡Barato para la isla!</li>
+</ul>
+<hr />
+<h2><span class="ez-toc-section" id="_Donde_comer_en_Siargao_rascandose_un_poco_el_bolsillo"></span><span style="color: #33cccc;">$$$ Dónde comer en Siargao rascándose un poco el bolsillo</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sin que se pueda decir que son caros porque difícilmente en Europa se puede comer por este precio y tan bien, aquí te traemos una selección de sitios donde comer en Siargao de mayor nivel y que nos flipan.</p>
+<h3><span style="color: #33cccc;">Roots</span></h3>
+<p style="text-align: justify;">No hay discusión, estamos ante <strong>uno de los mejores restaurantes de Siargao</strong> y, posiblemente, de todo Filipinas. Inaugurado en 2023 en un espectacular local situado en la carretera principal, los fundadores son las hermanas Castañeda Matos (Marina e Inés) de padre mexicano y madre portuguesa pero que han pasado parte de su vida en España (entre otros países) y que, por tanto, hablan perfecto castellano; y Filippo Turrini, que pone el toque italiano al equipo y que es, junto con Inés, uno de los chefs. Habiendo trabajado en distintas cocinas en España, Italia, Perú y Japón, entre otros lugares, en Roots se disfruta un menú que va cambiando día a día donde lo que prima es el producto y que toma de las raíces de cada uno de ellos, pero al mismo tiempo pone en valor la gastronomía filipina.</p>
+<p style="text-align: justify;">Para nosotros, comer aquí es una experiencia y diríamos que hasta una actividad extra en la isla. Podríamos estar ante una <strong>experiencia culinaria, pero también cultural</strong>, ya que, como en los restaurantes de cocina de autor, aquí te van a explicar qué ingredientes tiene cada plato, de dónde se obtienen (la gran mayoría son filipinos y muchos de ellos se obtienen de la propia Siargao) y cómo se han tratado. Además, Marina estará encantada de hablarte del concepto del restaurante, su decoración y mobiliario, que también tienen su (arduo) trabajo detrás.</p>
+<p style="text-align: justify;">Los precios de los platos oscilan entre los 300 y los 500 pesos, pero debes considerar que tendrás que pedir varios para sentirte saciado, ya que son un poquitín más grandes de lo que en España se podría considerar una tapa. Además, tienen unos cócteles de autor y postres en los que seguramente vas a caer, por lo que la cuenta se dispara fácilmente a los 1.200-1.800 pesos por persona. Considerando la calidad, el servicio, el local y lo que te podría salir una cena así en España, nos parece una <strong>relación calidad-precio más que buena</strong> y un básico para comer en Siargao si buscas algo más allá que salir del paso.</p>
+<p style="text-align: justify;"><strong>Conviene reservar</strong> con antelación (puedes hacerlo a través de su Instagram) y, en caso de ser vegetariano/vegano o tener alguna intolerancia, es mejor consultar con antelación. Nos consta que no suelen tener problema en versionar algunos de sus platos. Por cierto, si vais, nos haría ilusión que decís que lo hacéis de nuestra parte 😉</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13169" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20564'%3E%3C/svg%3E" alt="Roots Siargao mejores restaurantes" width="1000" height="564" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26-980x553.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26-480x271.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13169" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26.jpg" alt="Roots Siargao mejores restaurantes" width="1000" height="564" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26-980x553.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-26-480x271.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">CEV: Ceviche &amp; Kinilaw Shack</span></h3>
+<p style="text-align: justify;">Más modesto que el anterior, pero igualmente un sitio increíble para comer en Siargao es CEV, la obra maestra en la isla del chef David del Rosario que conjuga dos platos muy similares pero a la vez distintos que muestran las raíces comunes de Filipinas con América Latina. Es decir, <strong>aquí podrás probar deliciosos ceviches y <em>kinilaws</em></strong>, platos cuyo ingrediente principal es el pescado marinado en calamansi (la versión filipina de la lima) o <em>suka</em> (vinagre de coco) + tuba (néctar de coco). De verdad, todos funcionan bien, incluso el vegetariano, que sustituye los animales por una deliciosa berenjena asada.</p>
+<p style="text-align: justify;">Los precios tampoco son una locura para la calidad que aquí se ofrece, pues los principales rondan los 340-460 pesos. Si es un día para celebrar, regálate un <strong>cóctel</strong>, que te aseguramos que no son de bar malo, y la «twix» bar para endulzar. El local, además, es muy majo y el servicio extremadamente rápido para lo que estamos acostumbrados en Filipinas.</p>
+<p style="text-align: justify;">Si es para cenas, <strong>recomendamos reservar</strong> al menos el día antes porque suele estar hasta arriba incluso en temporada baja. Aun más si estás pensando en ir en fin de semana.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13174" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="CEV ceviche kinilaw Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13174" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28.jpg" alt="CEV ceviche kinilaw Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-28-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Kermit Surf Resort and Restaurant</span></h3>
+<p style="text-align: justify;">No es raro que haya una<strong> lista de espera</strong> de casi 1 hora cada noche en el Kermit, sirven algunas de las <strong>mejores pizzas, pastas y <em>risottos</em> de Siargao</strong>. Puedes intentar reservar (aunque a veces no las admiten), pero, en el caso de que no puedas, la espera merecerá la pena. Nuestros platos preferidos son el <em>Risotto al Funghi Porcini</em> y los <em>Gnocchi al Gorgozola</em>. Los precios han subido en los últimos años situándose en la franja de los 300-500 pesos por plato, para que lo tengas en cuenta.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Bravo Restaurant</span></h3>
+<p style="text-align: justify;">¿<strong>Tortilla de patatas, gazpacho, croquetas</strong>…? ¿en Siargao? Si echas de menos la comida española, date una vuelta por Bravo. Además de estas tapas tan típicas y ricas, encontrarás otros platos como <em>hummus</em> o una <strong>hamburguesa vegana</strong> buenísima. Es uno de los locales con más ambientillo de la isla (quizás escuelas canciones de El Cigala o Maná), tiene vistas al mar y una pequeña piscina en la que darte un remojón.</p>
+<p style="text-align: justify;">Por cierto, si tienes que teletrabajar, aquí tienen un internet que tira bastante rápido y, ya que te toca currar, las vistas lo harán más fácil.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">La Carinderia</span></h3>
+<p style="text-align: justify;">Este pequeño restaurante al aire libre es uno de nuestros rincones preferidos donde comer en Siargao. De dueño italiano, carta incorpora <strong>platos típicos de Italia (la pasta fresca es estupenda) con algunos otros de Filipinas</strong>. El sabor es bueno, pero tienes que tener en cuenta que las porciones son un poco pequeñas para los precios, que tienden a ser altos (entre los 400 y los 500 pesos por plato). Cuentan con opciones vegetarianas y alguna que otra vegana.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13158" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="La Carinderia Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13158" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21.jpg" alt="La Carinderia Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-21-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Los_mejores_desayunos_en_Siargao_y_cafeterias"></span><span style="color: #33cccc;">Los mejores desayunos en Siargao (y cafeterías)</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Somos muchos los que preferimos empezar el día dándonos un homenaje y aquí estamos de suerte porque tienes un montón de sitios flipantes donde desayunar en Siargao con<em> smothie bowls</em> increíbles, bollería, cafés de origen y buenos panes. Aquí tienes una pequeña selección.</p>
+<h3><span style="color: #33cccc;">Coco Frío</span></h3>
+<p style="text-align: justify;">Lugar de reunión de turistas y extranjeros residentes en la isla de 8:00 a 17:00 donde aquí no se paran de utilizar cocos, que ya puedes ver en plena entrada. Si necesitas energía después de tanto tute, apuesta por el helado artesanal de coco, un batido (el vegano es una delicia, pues lo hacen con leche de coco) o sino algún café vietnamita que, adivina, estará aderezado con algún producto de coco. El local es minúsculo, con un par de mesitas bajas y poco más, pero, te lo prometemos, puede ser una de las mejores bebidas que tomes en Siargao.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Lunares Café’ Siargao</span></h3>
+<p style="text-align: justify;">Si tuviésemos que elegir un sitio <strong>donde desayunar en Siargao</strong>, apostaríamos por Lunares Café. Propiedad de un matrimonio filipino-italiano, no es de extrañar que aquí esté el mejor café de la isla y los mejores <strong><em>croissants</em></strong>. Los zumos y batidos son también estupendos y tienen selección de bollería y pastelería vegana. Si quieres hacer un buen <em>brunch</em>, también tienen platos salados. Como curiosidad, a finales de 2020 le dieron un lavado de cara al local y lo pusieron un poquito más chic.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter wp-image-485 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20495%20650'%3E%3C/svg%3E" alt="desayunar en Siargao Lunares Cafe" width="495" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5.jpg 495w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5-228x300.jpg 228w" data-lazy-sizes="(max-width: 495px) 100vw, 495px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-485 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5.jpg" alt="desayunar en Siargao Lunares Cafe" width="495" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5.jpg 495w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao5-228x300.jpg 228w" sizes="(max-width: 495px) 100vw, 495px" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Shaka Siargao</span></h3>
+<p style="text-align: justify;">Si hay un sitio <strong><em>instagrameable</em> </strong>en la isla, ese es Shaka. Ubicado en Cloud 9 y con vistas chulas, aquí se sirven unos <em>smoothies bowls </em>preciosos. ¡Tienen hasta de <em>açaí</em>! ¿Te han gustado? Encontrarás sucursales de esta empresa en Panglao (Bohol), El Nido, Manila y Moalboal. En las dos primeras sirven unas hamburguesas espectaculares y también tienen cervezas artesanales que te enamorarán. De hecho, hasta han abierto fronteras recientemente, instalándose en algunos lugares de Tailandia.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter wp-image-483 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20516%20650'%3E%3C/svg%3E" alt="bowl açai Siargao Shaka" width="516" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3.jpg 516w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3-238x300.jpg 238w" data-lazy-sizes="(max-width: 516px) 100vw, 516px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-483 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3.jpg" alt="bowl açai Siargao Shaka" width="516" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3.jpg 516w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-Siargao3-238x300.jpg 238w" sizes="(max-width: 516px) 100vw, 516px" /></noscript></p>
+<h3><span style="color: #33cccc;">Saint Thomas Coffee</span></h3>
+<p style="text-align: justify;">Desde que pasamos un par de meses por Colombia no hemos vuelto a ser los mismos y, seguramente como muchos otros, empezamos a poner en valor un buen café. Por desgracia, en Filipinas sufrimos constantemente con los 3en1 que se ven en todos lados, pero en Siargao no tenemos que llorar tanto porque hay varios sitios donde se pone en valor el <strong>café de especialidad</strong>, que se cultiva en varias partes del archipiélago. Uno de ellos es Vedya&#8217;s, pero el otro que queremos destacarte es esta pequeña cafetería, también inaugurada en 2023 y con un local de aire industrial pero rodeado de naturaleza que lo hace muy agradable.</p>
+<p style="text-align: justify;">Aquí, además de los cafés más tradicionales, que se hacen con la mezcla del día (cuando fuimos nosotros tenían un café muy rico de Tanzania), tienen cantidad de recetas distintas, algunas un poco estrambóticas pero que funcionan, como la que lleva raspado de sandía. Aunque no lo probamos, nuestra amiga Jenn, residente en la isla y creadora junto a Daniel de la marca de joyería Golden Monstera (y que nos recomendó muchos de estos rincones que te hemos comentado), nos chivó que el <strong><em>matcha latte</em> </strong>es increíble.</p>
+<p style="text-align: justify;">Lo hemos incluido en esta lista de sitios para desayunar en Siargao porque, además, tienen una <strong>bollería</strong> que tenía pintaza. El día que nosotros fuimos servían <em>pain au chocolat</em> y <em>croissants</em>. Además, cuentan con una buena red wifi y unas cuantas mesas en el interior donde vimos gente teletrabajando.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13175" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20594'%3E%3C/svg%3E" alt="Saint Thomas Coffee Siargao" width="1000" height="594" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29-980x582.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29-480x285.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13175" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29.jpg" alt="Saint Thomas Coffee Siargao" width="1000" height="594" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29-980x582.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-29-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Coffee Stroll Siargao</span></h3>
+<p style="text-align: justify;">En la búsqueda de buen café en Siargao dimos con esta cafetería con encanto en la carretera principal, cerquita de Cloud 9 y que nos embelesó. Propiedad y llevada por <em>siargaonons</em>, el concepto se basa en que todo se haga a mano. Así que preparan los cafés despacito y con buena letra, <strong>sin molinillos ni cafeteras eléctricos</strong>. Puedes elegir entre <strong>distintos tipos de granos de varias zonas de Filipinas</strong>, métodos de preparación chulos (filtrado, <em>aeropress</em>, sifón, etc.) y hasta cócteles con base de café. Si no estás muy puesto en el tema, déjate aconsejar según el café que te guste regularmente. Además, tienen leches vegetales y algún que otro sándwich y dulces para acompañar. Los precios en la línea: cafés entre 80 y 130 pesos.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13176" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20730'%3E%3C/svg%3E" alt="Coffee Stroll Siargao" width="1000" height="730" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30-980x715.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30-480x350.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13176" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30.jpg" alt="Coffee Stroll Siargao" width="1000" height="730" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30-980x715.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-30-480x350.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Más sitios donde desayunar en Siargao:</span></h3>
+<p style="text-align: justify;">Nos está quedando un poco largo el asunto, pero es que hemos probado más sitios y no queremos dejar de nombrártelos por si te cuadran más o te quedas sin ideas:</p>
+<ul>
+<li style="text-align: justify;"><strong>White Beard Coffee:</strong> abre a las 6:00, así que si nada más levantarte quieres buen café, ¡adelante! Está en el corazón de GL y aquí también te pones unas tostadas francesas, gofres, huevos benedictinos y sándwiches que quitan el <em>sentío</em>. Cuentan con leches vegetales.</li>
+<li style="text-align: justify;"><strong>Shanty Shanty Café Siargao:</strong> inaugurado también en 2023 y propiedad de una pareja filipino-francesa muy maja, aunque está retirado de toda la movida, creemos que por sus tostadas y sándwiches de pan de masa fermentada (<em>sourdough</em>) todo vale. También puedes comprar el pan si tienes un alojamiento con cocina (como nosotros en nuestra última visita) y gozarlo como quieras. Un pan bien grande ronda los 200-220, precio más que aceptable para lo brutalmente bueno que está. Por cierto, puedes elegir leche vegetal en tu café sin que te cobren un suplemento, ¡todo un detalle!</li>
+<li style="text-align: justify;"><strong>Mao Mao Surf:</strong> solo diremos una cosa, <em>pancakes</em>.</li>
+<li style="text-align: justify;"><strong>Amon Café:</strong> posiblemente la cafetería más «cuqui» de la isla, con aire acondicionado, música agradable, café de especialidad tostado en la isla y cantidad de opciones para desayuno que van desde tortillas hasta tostadas pasando por básicos filipinos. Cuentan con varias opciones veganas y leche de avena. Es un buen sitio para teletrabajar, desayunar o hacer un <em>brunch</em>.</li>
+<li style="text-align: justify;"><strong>Greenhouse Siargao:</strong> contundentísimos desayunos y una parte con vistas al mar que te hará amar aún más esta isla. La relación calidad-precio es estupenda.</li>
+<li style="text-align: justify;"><strong>Spotted Pig Café:</strong> carete, pero maravilloso, con una carta de cafés que incluye filtrados en V60 y <em>cold brews</em>.</li>
+<li style="text-align: justify;"><strong>Kanaway Snack Bar:</strong> no parábamos de pasar por esta esquinita de Catangnan llena de gente y tuvimos que pararnos a investigar. Lo que atrae a la gente por aquí son sus deliciosos smothie bowls a buen precio y los <em>slushies</em> (como granizados) de fruta. Además de todo esto, tienen unas mesas muy majas dando al mar.</li>
+<li style="text-align: justify;"><strong>Alter Space:</strong> si tienes que teletrabajar en Siargao, este es tu sitio. Tienen Starlink y un generador, así que los frecuentes cortes de luz de la isla no te van a molestar. Para hacer el trabajo más ameno, cuentan con cafés, otro tipo de bebidas y snacks. Tienen paquetes por días o por meses.</li>
+</ul>
+<hr />
+<h2><span class="ez-toc-section" id="Bares_en_Siargao_%C2%BFdonde_salir_de_fiesta"></span><span style="color: #33cccc;">Bares en Siargao, ¿dónde salir de fiesta?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Dicen que Boracay es la «Ibiza de Asia», pero hace ya unos años que la isla está de capa caída en este sentido y, desde nuestra percepción, Siargao se ha convertido, junto con Manila, en uno de los mejores sitios para disfrutar de la noche filipina. Aunque te vamos a ser sinceros y nosotros no somos aves nocturnas (nos gusta mucho madrugar y aprovechar bien el día), sí que hemos querido reunir los <strong>bares de Siargao</strong> más conocidos y que nos han ido recomendando nuestros viajeros durante los últimos años.</p>
+<p style="text-align: justify;">Algo a considerar de cara a salir de fiesta por Siargao es que, además de que hay bastantes sitios, l<strong>a «movida» va rotando durante la semana</strong>. Te daremos algunas recomendaciones en este sentido, pero nunca está de más consultar las cuentas de Instagram de los bares, preguntar en tu alojamiento dónde se mueve la fiesta el día en el que estés interesado o siempre puedes preguntar en nuestros <a href="https://www.viajarporfilipinas.com/grupos-whatsapp-filipinas/" target="_blank" rel="noopener">grupos de WhatsApp para Filipinas</a>, donde seguramente también encuentres algún compañero para la noche.</p>
+<p style="text-align: justify;">Por otro lado, buena parte de los bares cierran sobre la medianoche, pero siempre suele haber algún <em>afterparty</em>. Lo mejor es preguntar al resto de la gente dónde se va después.</p>
+<ul>
+<li style="text-align: justify;"><strong>Mama Coco Siargao:</strong> los lunes es cuando se monta gorda (suelen poner música <em>retro</em> o de los 80), otros días tienen música en directo, los miércoles reggaeton y los viernes <em>house</em> y <em>techno</em>. Ojo que el sitio no es muy grande y se empieza a animar sobre las 22:00. Tienen happy hour de 18:00 a 20:00.</li>
+<li style="text-align: justify;"><strong>Sidargo:</strong> con influencias japonesas (cuidado con los <em>highballs</em>, que son peligrosos) y hawaianas, además de bar, es restaurante de sushi, bowls y pinchos. La fiesta grande es el martes y el cóctel más conocido es su s<em>moked amaretto sour</em>.</li>
+<li style="text-align: justify;"><strong>Barrel Beachfront Bar:</strong> como su nombre indica, tiene unas vistas muy chachis de la playa, pero, además, todos los martes hacen una TRIVIA Night bastante divertida en la que se suele competir por algo de dinero y una botella de Jagger. Es buena idea comenzar aquí para después pasarte por Sidargo. También es el sitio estupendo para ver algún evento deportivo o jugar al billar.</li>
+<li style="text-align: justify;"><strong>Goodies:</strong> la comida y el café no están nada mal, pero es aquí también donde tienes que venir si quieres fiesta en Siargao el miércoles, cuando suele haber música o algún DJ pinchando. Es lo que llaman «Funky Wednesday». Los lunes tienen una «Bingo Night», los martes película, los miércoles noche de scattergories y los sábados barbacoa en el <a href="https://www.booking.com/hotel/ph/happiness-hostel-siargao.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Happiness Hostel</a> (misma cadena).</li>
+<li style="text-align: justify;"><strong>Bed and Brew:</strong> los jueves montan el <em>Ihaw at Sayaw</em>, fiestón + barbacoa, ¿qué se puede pedir más? La fiesta empieza a partir de las 20:00.</li>
+<li style="text-align: justify;"><strong>Sibol:</strong> aunque no es raro encontrar música en directo cualquier día de la semana, los jueves se celebra el «Tribal Thursday» a partir de las 18:00 con música rollo reggae en directo y un DJ para cerrar la noche. Los domingos también suele estar animado.</li>
+<li style="text-align: justify;"><strong>El Lobo:</strong> uno de los más orientados a la fiesta en Siargao, así que es raro encontrárselo vacío cualquier día. Aun así, si quieres salir un viernes, su «Funky Friday» te hará bailar, sobre todo techno y house. Suelen tener también fiestas gordas los domingos y en días especiales rollo Oktoberfest, Halloween y demás. En su cuenta de Instragram anuncian casi todo.</li>
+<li style="text-align: justify;"><strong>Barbosa:</strong> el hermano fiestero de CEV suele tener música en directo muchos días a la semana (excepto los miércoles, que cierra), pero acostumbra a estar más movido los viernes en su «Bread and Butter». Happy hour (Golden Hour le llaman) de 17:00 a 19:30, martes «Disco Tropico» y jueves «Barbosa Sala Session».</li>
+<li style="text-align: justify;"><strong>Harana:</strong> ya te lo hemos nombrado dentro de nuestros restaurantes favoritos, pero los sábados se convierte en uno de los bares en Siargao más movidos gracias a las «Harana Sabado Nights» (tienen su propia cuenta de Instagram). El sitio, además, nos parece muy chulo, con un ambiente junto al mar.</li>
+<li style="text-align: justify;"><strong>Hang Loose:</strong> suele tener fiestas bastante gordas los sábados, pero también despuntan algún que otro día de la semana. Tienen mesas que se pueden reservar comprando una botella. Las fiestas empiezan a partir de las 22:00.</li>
+<li style="text-align: justify;"><strong>Happiness Resort Beach Bar:</strong> en este barcito junto al mar y con piscina tienen lugar los «Sunday Funday», donde también suele haber un <em>night market</em> o mercadillo nocturno de comida. Por cierto, aquí tienes el <a href="https://www.booking.com/hotel/ph/arka-hayahay-surf-and-beach-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Happiness Beach Resort</a>, que está muy guay para alojarte.</li>
+<li style="text-align: justify;"><strong>Siargao Beach Club:</strong> tienen fiesta básicamente todos los días a partir de las 20:00 con cervezas por 50 pesos de 16:00 a 19:00 y algunas ofertas de chupitos según la noche.</li>
+<li style="text-align: justify;"><strong>Kabja Restobar:</strong> suele ser el sitio de la <em>afterparty</em> (más o menos hasta las 2:00) casi cualquier día de la semana.</li>
+<li><strong>Roots:</strong> cada domingo de 10:00 a 14:30 hacen un brunch con cócteles y tacos «de autor» amenizado con música.</li>
+<li style="text-align: justify;"><strong>Manu Siargao:</strong> si buscas un sitio más <em>chill</em> para tomarte un cóctel de nivel, este <em>speakeasy</em> de General Luna es tu lugar. Algunos días encontrarás música en directo o DJs.</li>
+</ul>
+<p>&nbsp;</p>
+<p><img decoding="async" class="aligncenter size-large wp-image-13196" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20475%201024'%3E%3C/svg%3E" alt="salir de fiesta en Siargao" width="475" height="1024" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/fiesta-siargao-bares-1-475x1024.jpg" /><noscript><img decoding="async" class="aligncenter size-large wp-image-13196" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/fiesta-siargao-bares-1-475x1024.jpg" alt="salir de fiesta en Siargao" width="475" height="1024" /></noscript></p>
+<hr />
+<h2><span class="ez-toc-section" id="Donde_comer_en_el_norte_de_Siargao"></span><span style="color: #33cccc;">Dónde comer en el norte de Siargao</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Hasta hace solo unos años, el norte de la isla se mantenía como pausado en el tiempo, un mundo paralelo a una General Luna que crecía a pasos agigantados. Sin embargo, poco a poco van surgiendo nuevos negocios con el paulatino aumento de viajeros que deciden quedarse durante unos días en pueblecitos con encanto como Alegria (con la que es la <a href="https://www.viajarporfilipinas.com/playas-siargao/" target="_blank" rel="noopener"><strong>mejor playa de Siargao</strong></a>), Pacífico o Burgos.</p>
+<p style="text-align: justify;">Como te contamos en <a href="https://www.viajarporfilipinas.com/donde-dormir-siargao/" target="_blank" rel="noopener"><strong>Dónde dormir en Siargao</strong></a>, si tienes más de 4 días en la isla, nuestro consejo es que dividas tu estancia entre norte o sur. En caso de disponer de menos, será imprescindible que te acerques un día al menos a investigar con tu moto, tuk tuk o tour y, para que te nutras bien, aquí tienes algunos de los mejores sitios donde comer en Siargao en su parte norte.</p>
+<h3><span style="color: #33cccc;">The Hub by Lokal Lab</span></h3>
+<p style="text-align: justify;">Lo lleva la <strong>ONG</strong> Lokal Lab una de las más activas de la isla y que hace una grandísima labor con la comunidad con varios proyectos de sostenibilidad que van desde huertas con una visión <em>eco-friendly</em> hasta sesiones de capacitación sobre diferentes temas, pasando por talleres orientados a los visitantes de la isla (cursos de trenzado de fibras para crear tus propios productos o visitas a la huerta para aprender del proceso).</p>
+<p style="text-align: justify;">Sin embargo, en lo que respecta al «papeo», nos interesan dos lugares: The Hub by Lokal Lab en General Luna y The Hub by Lokal Lab en Burgos. Ambos son proyectos que dan trabajo a mujeres locales y en el que se utilizan productos de sus propias huertas para cocinar <strong>platos filipinos</strong>. Si encima te decimos que, además de contribuir a una buena causa, están ricos y que los precios son estupendos, seguro que ya estás deseando ir, ¿verdad? En el de Burgos sirven unos <em>bowls</em> riquísimos (opciones vegetarianas y veganas disponibles), pero no dejes de pedir de postre el <strong><em>calamay</em></strong>, que por solo 10 pesos te hará estar en las nubes. El local es muy chulo, ya que puedes ver a las mujeres prepararte tu almuerzo.</p>
+<p style="text-align: justify;">En el Hub de General Luna, además, tienen mucho movimiento casi diariamente con distintos eventos, tardes de juegos y charlas. Lo mejor es que consultes su cuenta de Instagram.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13179" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20576'%3E%3C/svg%3E" alt="Lokal Lab Burgos Siargao dónde comer" width="1000" height="576" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31-980x564.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31-480x276.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13179" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31.jpg" alt="Lokal Lab Burgos Siargao dónde comer" width="1000" height="576" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31-980x564.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-31-480x276.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Kolekbibo</span></h3>
+<p style="text-align: justify;">Otro proyecto social que hace tan especial a Siargao y con el que estamos encantados de colaborar. Este pequeño restaurante situado entre Burgos y Alegría con vistas maravillosas al mar (si no nos crees, mira la foto de la terraza de abajo) es solo uno de los proyectos de esta <strong>empresa social</strong> que tiene como objetivo primordial contribuir a la buena alimentación de las personas sin recurso del norte de la isla.</p>
+<p style="text-align: justify;">Puedes participar como voluntario poniéndote en contacto por email o por Instagram, pero otra manera de contribuir es, simplemente, <strong>pasándote a desayunar, comer o cenar</strong> (ojo, que abren sobre las 9:00 cierran a las 19:00). No será un gran esfuerzo tampoco porque podrás disfrutar de smothie bowls muy majos así como otros para almuerzo o cena (nuestro favorito es el Bitaug) y entrantes como los ricos <em>fingers</em> de berenjena. Todo vegetariano y con precios que rondan los 280-300 pesos.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13180" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Kolekbibo Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13180" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32.jpg" alt="Kolekbibo Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-32-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">DaRosa del Mar</span></h3>
+<p style="text-align: justify;">No te lo vamos a recomendar por sus dotes culinarias, que, a ver, no están mal y son totalmente aceptables, sino porque es, desde nuestra perspectiva, u<strong>n sítiazo si estás buscando dónde comer en Siargao para disfrutar de un rato de playa</strong>. En este hotel fue donde nos alojamos en nuestro último paso por la isla durante varios días y en caso de querer disfrutar de una cabaña junto a una playa de infarto sin pagar una barbaridad, te recomendamos <a href="https://www.booking.com/hotel/ph/darosa-del-mar.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>RESERVAR YA AQUÍ</strong></a>. Solo tienes que ver la foto de abajo (sin filtro alguno), nuestra cabaña tenía acceso directo a lo que contemplas, ¡brutal!</p>
+<p style="text-align: justify;">Si no te quedas a dormir (mal), puedes pasar para desayunar/comer/cenar/tomar algo y gozar de su zona de <em>chill-out</em> frente a esta franja de arena dorada que nos tiene cautivados desde que pisamos Siargao por primera vez en 2015. Si hablamos de comida, los platos de pasta no están mal, igual que el pancit, la versión filipina de los <em>noodles</em> salteados.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13181" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="DaRosa del Mar Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13181" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33.jpg" alt="DaRosa del Mar Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-33-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Más sitios donde comer en el norte de Siargao:</span></h3>
+<p style="text-align: justify;">Otras opciones interesantes en esta parte de la isla son:</p>
+<ul>
+<li style="text-align: justify;"><strong>Dawis Restaurant:</strong> aunque técnicamente no es el norte, sí que te puede venir bien si estás de camino hacia allí o haciendo una rutilla. Está justo antes del llamado «mirador de las palmeras» o «Coconut View», lo que asegura unas vistas mágicas mientras estás comiendo. Tienen desayunos contundentes, hamburguesas y comidas sencillas como curris o noodles a precios bastante competitivos.</li>
+<li style="text-align: justify;"><strong>North Dirty Kitchen: </strong>un poco más al norte de Kolekbibo, en la cima de una colina (fíjate bien en el cartel que hay en el lado izquierdo de la carretera si vas de camino a Alegría) y, por tanto, con unas vistas de infarto del mar. Ya solo por la panorámica merece la pena venir hasta aquí, pero también tienen platos bastante ricos de pasta y un <em>banana bread</em> buenísimo. Los precios de los principales rondan los 300 pesos, algo bastante comprensible para la calidad de lo que ofrecen. Abren a partir de las 8:00, así que también puedes aprovechar para desayunar.</li>
+<li style="text-align: justify;"><strong>The Garage by Izustarri:</strong> propiedad de una pareja española-filipina, <a href="https://www.booking.com/hotel/ph/izustarri.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>este hotel</strong></a> (que nos consta que tiene unas habitaciones con vistas al mar fabulosas) también cuenta con un restaurante bastante majo con variedad de sándwiches, tapas (algunas con acento español como el gazpacho, la ensaladilla rusa o las croquetas) y principales (entre 300 y 400 pesos) que van desde los raviolis veganos hasta el bonito con tomate.</li>
+<li style="text-align: justify;"><strong>Karsada:</strong> ubicado en el mismo pueblo de Pacífico, junto a la «calzada», este restaurante de dos plantas sin muchas pretensiones sirve unos <em>silogs</em> (el desayuno filipino por antonomasia, con arroz, alguna que otra proteína y huevo) bastante potentes y platos de inspiración japonesa como el <em>katsudon</em> y el <em>yakisoba</em> a buenos precios. No esperes tampoco una cocina de infarto, pero creemos que la relación calidad-precio no está del todo mal. Para amenizar la espera, tienen juegos de mesa.</li>
+<li style="text-align: justify;"><strong>Swell Cafe and Bar Pacífico:</strong> ubicado justo enfrente del anterior, este pequeño local con una tienda de surf anexa nos sorprendió con su <em>chika cheek&#8217;n sandwich</em>, un potente bocadillo de tofu rebozado aderezado con una estupenda mayonesa de chipotle. También tienen <em>smothie bowls</em> y tostadas, así que es genial para hacer un desayuno potente o <em>brunch</em>. Quizás se nos hace un poquitín caro para la zona, pero tenemos que reconocer que todo lo que probamos nos gustó. La carta es completamente vegana, excepto un par de platos de pescado.</li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-13184" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Dónde comer en el norte de Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13184" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34.jpg" alt="Dónde comer en el norte de Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/donde-comer-siargao-34-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Mapa de Siargao</span></h3>
+<p style="text-align: justify;">Descubre estos rincones donde comer en Siargao en este mapa de la isla que te hemos preparado:</p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1s2PA7CRSC4ojc9NHSSKzODW3TPdp6kA&#038;ehbc=2E312F"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1s2PA7CRSC4ojc9NHSSKzODW3TPdp6kA&amp;ehbc=2E312F" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<hr />
+<h3><span style="color: #33cccc;">Guía de Siargao</span></h3>
+<p>Esto es solo una pequeña parte de todo lo que hemos investigado en Siargao para ti. Échale un vistazo a estos otros artículos y disfruta al máximo de la isla:</p>
+<ul>
+<li><a title="Siargao" href="https://www.viajarporfilipinas.com/guia-de-siargao/" rel=""><strong>Guía de Siargao</strong></a></li>
+<li><a title="Qué hacer en Siargao: imprescindibles y guía completa" href="https://www.viajarporfilipinas.com/que-hacer-siargao/" rel=""><strong>Qué ver en Siargao</strong></a></li>
+<li><a title="Dónde dormir en Siargao: los mejores hoteles y resorts de la isla" href="https://www.viajarporfilipinas.com/donde-dormir-siargao/" rel=""><strong>Dónde dormir en Siargao</strong></a></li>
+<li><a title="Cómo llegar a Siargao" href="https://www.viajarporfilipinas.com/como-llegar-siargao/" rel=""><strong>Cómo llegar a Siargao</strong></a></li>
+<li><a title="Cómo moverse por Siargao" href="https://www.viajarporfilipinas.com/como-moverse-por-siargao/" rel=""><strong>Cómo moverse por Siargao</strong></a></li>
+</ul>
+<p style="text-align: center;"><em>Si tienes cualquier sugerencia para comer o cenar en Siargao, te leemos encantados en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">19 Comentarios</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-52828">
+		<article id="comment-52828" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Maria</span>				<span class="comment_date">
+					el 17/02/2025 a las 14:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podrías pásame el link de Diargao de ahora? Estamos ahora mismo aquí ☺️<br />
+Mil gracias las</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52828' data-commentid="52828" data-postid="478" data-belowelement="comment-52828" data-respondelement="respond" data-replyto="Responder a Maria" aria-label='Responder a Maria'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52858">
+		<article id="comment-52858" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/02/2025 a las 23:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, ¿Diargo? ¿Quizás te refieres a Sidargo? Es este: <a href="https://maps.app.goo.gl/FeVfTmABoy8B8hoAA" target="_blank" rel="noopener nofollow ugc">https://maps.app.goo.gl/FeVfTmABoy8B8hoAA</a><br />
+Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51789">
+		<article id="comment-51789" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Gisselle</span>				<span class="comment_date">
+					el 31/01/2025 a las 07:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola ! Gracias por la guía, han hecho nuestra estancia en Siargao perfecta !</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51789' data-commentid="51789" data-postid="478" data-belowelement="comment-51789" data-respondelement="respond" data-replyto="Responder a Gisselle" aria-label='Responder a Gisselle'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51808">
+		<article id="comment-51808" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 31/01/2025 a las 14:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Oh Giseelle 🙂 Muchas gracias por tomarte el tiempo en escribirnos esto. Lo apreciamos un montón. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-39294">
+		<article id="comment-39294" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Maria Perez</span>				<span class="comment_date">
+					el 20/06/2024 a las 22:11				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenas !<br />
+Muchísimas gracias de nuevo por el trabajado en vuestra web<br />
+Llevo meses preparando el viaje y por tanto leyendo y releyendo y hay un trabajo increíble detrás<br />
+Ya estamos en Manila y me he dado cuenta que me harían falta dos contactos si fuera posible<br />
+-un contacto para alquiler de moto en siargao<br />
+-contacto para tour privado en coron</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39294' data-commentid="39294" data-postid="478" data-belowelement="comment-39294" data-respondelement="respond" data-replyto="Responder a Maria Perez" aria-label='Responder a Maria Perez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-39300">
+		<article id="comment-39300" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/06/2024 a las 07:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, no hay de qué. ¿Recibiste el correo que te pasamos de El Nido? Pasamos, como sabes, muchas horas respondiendo mails y agradecemos contestación, antes de seguir enviándote más información. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-38962">
+		<article id="comment-38962" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Cristian Sanchis peña</span>				<span class="comment_date">
+					el 13/06/2024 a las 19:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola muy buenas me encanta vuestro blog , me gustaría comentaros si hay algún bar o restaurante que sirvan carnes , pescados y mariscos en la isla</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-38962' data-commentid="38962" data-postid="478" data-belowelement="comment-38962" data-respondelement="respond" data-replyto="Responder a Cristian Sanchis peña" aria-label='Responder a Cristian Sanchis peña'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-38970">
+		<article id="comment-38970" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/06/2024 a las 07:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Cristian, muchas gracias. Cualquiera de los comentados tienen todo lo que indicas. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-9225">
+		<article id="comment-9225" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Arantza</span>				<span class="comment_date">
+					el 12/12/2019 a las 09:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola<br />
+Me gustaría saber si es buena opción pasar allí la noche vieja.<br />
+Y es así cuál es la mejor zona<br />
+Vamos con nuestros hijos de 22 y 23<br />
+Siargao</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-9225' data-commentid="9225" data-postid="478" data-belowelement="comment-9225" data-respondelement="respond" data-replyto="Responder a Arantza" aria-label='Responder a Arantza'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-9229">
+		<article id="comment-9229" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/12/2019 a las 10:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Arantza, sí, claro, Siargao es una isla con muchísimo ambiente y seguro que en Nochevieja hay mucha marcha. La mejor zona es General Luna, hay muchos bares en los que habrá fiesta. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-4355">
+		<article id="comment-4355" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn"><a href="http://Mateos" class="url" rel="ugc external nofollow">Adriana</a></span>				<span class="comment_date">
+					el 28/06/2019 a las 13:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, sólo añadir que el reefcut bar está cerrado permanentemente! Y que hay otro sitio vegano en general luna, en pleno centro para desuyno y comida vegana que se llama Cafehonest que tienen unos smoothie bowls impresionantes y un sticky mango rice templado delicioso que me parece digno de mención. Han abierto hace muy poco y es fácil verlo. Frente de Kokai&#8217;s Resort.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-4355' data-commentid="4355" data-postid="478" data-belowelement="comment-4355" data-respondelement="respond" data-replyto="Responder a Adriana" aria-label='Responder a Adriana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-4359">
+		<article id="comment-4359" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/06/2019 a las 19:28				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Adriana, muchas gracias por la info 🙁 Jo, una verdadera lástima ese cierre porque las hamburguesas estaban deliciosas. Les acabamos de escribir y nos comenten que tienen intención de reabrir en un futuro pero no saben ni donde ni cuando. Nos apuntmos el Cafehonest para nuestra próxima visita ¡muchas gracias!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-32675">
+		<article id="comment-32675" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Juan carlos Gutierrez romero</span>				<span class="comment_date">
+					el 18/02/2024 a las 19:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Esta cerrado tmb permanentemente</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-3058">
+		<article id="comment-3058" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Rochi</span>				<span class="comment_date">
+					el 29/04/2019 a las 15:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos! Aquí desde Siargao. Hoy no vengo a pedir nada jeje, les quiero aportar un lugar para comer que me pareció muy bueno, se llama SUSHI NORI. Por 260php podes comer un bowl con arroz salmón y otras cosas no identificadas pero muy ricas!<br />
+Tienen opciones veganas y vegetarianas,<br />
+Cerveza por 60php<br />
+Espero que les sirva!<br />
+Saludos!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-3058' data-commentid="3058" data-postid="478" data-belowelement="comment-3058" data-respondelement="respond" data-replyto="Responder a Rochi" aria-label='Responder a Rochi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-3063">
+		<article id="comment-3063" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 29/04/2019 a las 18:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>¡Muchas gracias Rochi! Cómo nos gustan estos comentarios que aportan información a otros viajeros. Estamos deseando volver por ahí y probar esas opciones veganas 😀</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1760">
+		<article id="comment-1760" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">David</span>				<span class="comment_date">
+					el 02/03/2019 a las 13:32				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola. Una buena y una mala noticia acerca de Miguel&#8217;s taqueria: la buena, cierra a las 10 pm; la mala, los burritos cuestan 150 pesos. Aún así sigue siendo un precio razonable y la verdad es que están bastante ricos. Tacos 130 y quesadillas 170</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-1760' data-commentid="1760" data-postid="478" data-belowelement="comment-1760" data-respondelement="respond" data-replyto="Responder a David" aria-label='Responder a David'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-1767">
+		<article id="comment-1767" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/03/2019 a las 08:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola David,<br />
+¡Gracias! Sí, justo nos avisaron hace unas semanas que abrieron una sucursal nueva y que los precios han subido&#8230; Siargao cambia rápidamente.<br />
+Cambiamos la info.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment odd alt depth-2" id="li-comment-8991">
+		<article id="comment-8991" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Verónica</span>				<span class="comment_date">
+					el 05/12/2019 a las 00:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Me encanta tu web, es super completa. Quería añadir que anoche descubrimos un mercado con varios puestos de comida «el mercato», en general luna. Esta muy bonito decorado, con lucecitas, puestos de todo tipo de comida (filipina, griega, mexicana, italiana&#8230;) Y con tiendas de ropa&#8230;todo muy bonito y la comida, por supuesto, muy rica!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-9001">
+		<article id="comment-9001" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/12/2019 a las 03:11				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Oh Verónica, suena genial : ) Muchas gracias por la info . Nos lo apuntamos para nuestra próximas escapada a la isla ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/donde-comer-siargao/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='478' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="875b96a9dc" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="144"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"478","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

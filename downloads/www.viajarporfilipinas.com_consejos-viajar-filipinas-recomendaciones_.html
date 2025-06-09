@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Viajar a Filipinas: consejos y recomendaciones [2025] Viajar por Filipinas</title>
+	<meta name="description" content="Estas son las recomendaciones y consejos para viajar a Filipinas que nos hubiesen gustado recibir en nuestro primer viaje al archipiélago." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Viajar a Filipinas: consejos y recomendaciones [2025] Viajar por Filipinas" />
+	<meta property="og:description" content="Estas son las recomendaciones y consejos para viajar a Filipinas que nos hubiesen gustado recibir en nuestro primer viaje al archipiélago." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2019-07-08T12:10:29+00:00" />
+	<meta property="article:modified_time" content="2024-03-04T09:01:17+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="23 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Recomendaciones y consejos para viajar a Filipinas","datePublished":"2019-07-08T12:10:29+00:00","dateModified":"2024-03-04T09:01:17+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/"},"wordCount":4549,"commentCount":16,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg","articleSection":["Info práctica"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/","url":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/","name":"▷ Viajar a Filipinas: consejos y recomendaciones [2025] Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg","datePublished":"2019-07-08T12:10:29+00:00","dateModified":"2024-03-04T09:01:17+00:00","description":"Estas son las recomendaciones y consejos para viajar a Filipinas que nos hubiesen gustado recibir en nuestro primer viaje al archipiélago.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg","width":1000,"height":667,"caption":"mejores recomendaciones y consejos filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Recomendaciones y consejos para viajar a Filipinas"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Recomendaciones y consejos para viajar a Filipinas del feed" href="https://www.viajarporfilipinas.com/consejos-viajar-filipinas-recomendaciones/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/4385" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=4385' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fconsejos-viajar-filipinas-recomendaciones%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fconsejos-viajar-filipinas-recomendaciones%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-4385-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/4385/et-core-unified-4385.min.css?ver=1745584024" /><link rel="stylesheet" id="et-core-unified-deferred-4385-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/4385/et-core-unified-deferred-4385.min.css?ver=1745584024" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-4385 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-4385" class="et_pb_post post-4385 post type-post status-publish format-standard has-post-thumbnail hentry category-info-practica">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Recomendaciones y consejos para viajar a Filipinas</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/info-practica/" rel="category tag">Info práctica</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="mejores recomendaciones y consejos filipinas" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-9.jpg" alt="mejores recomendaciones y consejos filipinas" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">En <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/">Viajar por Filipinas</a> nos hemos propuesto que ames este país tanto o más que nosotros. Para ello, la página está repleta de <strong>recomendaciones y consejos para viajar a Filipinas</strong> por libre, esos truquillos de viajero a viajero que nos gustaría haber tenido a nosotros la primera vez que pusimos un pie por estas tierras.</p>
+<p style="text-align: justify;">Si bien una de las mejores cosas a la hora de hacer un viaje por el archipiélago es dejarse llevar un poco y hacer nuevos “descubrimientos”, aquí queremos hacer un resumen de las <strong>variables básicas</strong> que debes considerar a la hora de diseñarlo y ejecutarlo. Sigue con nosotros porque vamos a darte las <strong>principales recomendaciones y consejos para viajar a Filipinas</strong> y no fracasar en el intento.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">1. Procura dedicar bastante tiempo a tu viaje, el principal consejo para viajar a Filipinas</span></h2>
+<p style="text-align: justify;">Vale que lo nuestro no es lo habitual, pues pasamos meses cada vez que vamos, pero la recomendación para viajar a Filipinas es: <strong>no escatimes en tiempo</strong>.</p>
+<p style="text-align: justify;">No podemos decirte que no vayas si tienes solo 7 días, pero reconocemos que nos da bastante pena imaginar un viaje tan corto a tantísimos kilómetros de casa. Ya solo el coste monetario y en tiempo de un vuelo de larga duración debería hacerte plantearte el tiempo que vas a pasar, pero a esto se le une una variable importante: <strong>en Filipinas los traslados son muy pesados</strong>.</p>
+<p style="text-align: justify;">En la mayoría de los casos, cada vez que cambias de destino dentro del país, significa que tienes que invertir un día de tu viaje. Con lo cual, cuanto menos tiempo tengas, mayor será la sensación de que te pasas el día montado en un avión, un bus, un <em>jeepney</em>, un <em>trycicle</em>, un ferri, una <em>bangka</em>…</p>
+<p>No solo eso, viajar lento es más barato, como te contamos en <a title="¿Cuánto cuesta viajar a Filipinas? ¿Es barato?" href="https://www.viajarporfilipinas.com/cuanto-cuesta-viajar-filipinas/" target="_blank" rel="noopener noreferrer"><strong>¿Cuánto cuesta viajar a Filipinas?</strong></a>.</p>
+<blockquote>
+<p style="text-align: justify;">Nuestro consejo es que <strong>no dediques menos de 15 días completos</strong> (sin considerar los vuelos internacionales) a un viaje por Filipinas. Una cifra mucho más razonable, según nuestra opinión, serían 20 días.</p>
+</blockquote>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-4390" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="consejos viajar por filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-4390" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8.jpg" alt="consejos viajar por filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-8-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">2. Infórmate sobre el clima en el momento de tu viaje</span></h2>
+<p style="text-align: justify;">Igual que cuando haces un viaje por España o Europa investigas cómo será el clima en el momento en el que vas a ir, en Filipinas esto es aún más importante.</p>
+<p style="text-align: justify;">Filipinas, por su posición geográfica, tiene un <strong>clima tropical y diferentes zonas climáticas</strong>. Haciendo un resumen grande, el <strong><a href="https://www.viajarporfilipinas.com/cuando-viajar-filipinas/" target="_blank" rel="noopener noreferrer">clima en Filipinas</a></strong> se resume en <strong>3 épocas</strong>:</p>
+<ul style="text-align: justify;">
+<li>Temporada seca y suave: de diciembre a febrero.</li>
+<li>Temporada seca y calurosa: de marzo a mayo.</li>
+<li>Temporada de lluvias: de junio a noviembre.</li>
+</ul>
+<p style="text-align: justify;">Teniendo en consideración tanto el tiempo, como la afluencia de turistas, nosotros consideramos que la <strong><a href="https://www.viajarporfilipinas.com/mejor-epoca-para-viajar-a-filipinas/" target="_blank" rel="noopener noreferrer">mejor época para viajar a Filipinas</a></strong> se da en los meses de febrero y marzo.</p>
+<p style="text-align: justify;">Aun así, <strong>no te partas la cabeza</strong> ni deseches la idea de viajar a Filipinas en la época en la que tengas vacaciones. Aunque se puedan estimar unos patrones de lluvias o ausencia de ellas<strong>, el tiempo es impredecible</strong>. De hecho, es totalmente <strong>posible <a href="https://www.viajarporfilipinas.com/viajar-filipinas-julio/" target="_blank" rel="noopener noreferrer">viajar a Filipinas en julio</a> y en <a href="https://www.viajarporfilipinas.com/viajar-filipinas-agosto/" target="_blank" rel="noopener noreferrer">agosto</a></strong>.</p>
+<p style="text-align: justify;">Por todo ello, la mejor <strong>recomendación para viajar a Filipinas</strong> que podemos darte es estar informado y orientar el viaje a según qué zonas según la época en la que lo hagas.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">3. Busca vuelos con suficiente antelación</span></h2>
+<p style="text-align: justify;">Consejo: <strong>busca tus vuelos cuanto antes</strong>, sobre todo si vas a viajar en temporada alta. En los meses de verano europeo y en períodos de alta demanda como Semana Santa o Navidades los precios tienden a subir como la espuma.</p>
+<p style="text-align: justify;">En nuestra página de <strong><a href="https://www.viajarporfilipinas.com/vuelos-baratos-filipinas/" target="_blank" rel="noopener noreferrer">Vuelos baratos a Filipinas</a></strong> podrás encontrar más truquillos para dar con chollos.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">4. Conoce todo lo que puedes hacer en Filipinas</span></h2>
+<p style="text-align: justify;">Quizás parece muy obvio, pero es clave. Hay tantos viajes a Filipinas como viajeros y momentos. En muchos casos nos cegamos con las típicas fotos que vemos en <a href="https://www.instagram.com/viajarporfilipinas/" target="_blank" rel="nofollow noopener noreferrer">Instagram</a>, pero <strong>no hay ningún imprescindible ni viaje único a Filipinas</strong>.</p>
+<p style="text-align: justify;">En todos estos años viajando por el país y <a href="https://www.viajarporfilipinas.com/asesoria-de-viajes-a-filipinas/" target="_blank" rel="noopener noreferrer">diseñando itinerarios para viajeros</a>, hemos reconfirmado una y otra vez aquello de “para gustos, colores”. Lo que a nosotros nos ha encantado, a otro le puede parecer indiferente o, aún más, odiarlo. Si bien es cierto que esto solo se puede comprobar <em>in situ</em>, unos de nuestros consejos para viajar a Filipinas y no “cagarla” es <strong>informarte con antelación de todo lo que puedes hacer</strong>.</p>
+<p style="text-align: justify;">Puedes empezar por nuestro artículo <strong><a href="https://www.viajarporfilipinas.com/que-hacer-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en Filipinas</a></strong>, donde hacemos un resumen muy general de lo que puedes encontrar en el país, pero es esencial que leas y leas. En nuestra web encontrarás información detallada de muchas islas (¡y las que nos quedan por redactar!), pero, por supuesto, también hay muchísima más en la red. ¡Hay 7.000 islas! <strong>En Filipinas siempre hay espacio para salirse de lo habitual</strong>. Por ejemplo, nosotros fuimos a <a href="https://www.viajarporfilipinas.com/guia-de-romblon/" target="_blank" rel="noopener noreferrer">Romblon</a> cuando no había apenas nada escrito en internet y, como esta zona, hay muchísimas: Masbate, Linapacan, Leyte, Mati…</p>
+<blockquote>
+<p style="text-align: justify;"><em>De viajero a viajero</em>: abre un mapa en Google Maps y empieza a pinear sitios que te interesan.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-4391" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="recomendaciones para viajar a filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4391" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14.jpg" alt="recomendaciones para viajar a filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-14-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">5. Párate a diseñar una ruta y procura que sea poco pretenciosa</span></h2>
+<p style="text-align: justify;">Ya te avisamos: esto es <strong>lo más difícil</strong>.</p>
+<p style="text-align: justify;">Quizás pusiste decenas de banderitas en el mapa, pero ahora toca saber cómo unirlas, cuánto se tarda en ir de un punto a otro y cuántos días dedicar a cada sitio. Esto en un país como Tailandia, con una infraestructura turística medianamente desarrollada, puede ser relativamente fácil, pero en Filipinas, créenos, no lo es. Es parte del encanto de Filipinas, pero, si no lo tienes en cuenta, <strong>puede ser que acabes aborreciendo los traslados</strong> y, por tanto, no disfrutes del viaje.</p>
+<p style="text-align: justify;">En nuestra web puedes encontrar información actualizada sobre los transportes entre islas en Filipinas porque nos esmeramos en estar al día, pero, las páginas de las navieras no suelen ser muy buenas o, directamente, ni existen. Poco a poco las cosas van cambiando y van apareciendo cada vez más opciones en webs como la de la <strong><a href="https://12go.asia/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">agencia 12go</a></strong> (en la que se pueden, incluso, reservar buses, furgonetas y barcos), pero también tienes que dejar un poquito de <strong>margen de maniobra</strong>, especialmente si vas a visitar zonas poco turísticas.</p>
+<p style="text-align: justify;">Ya sea en nuestros artículos o en otro lado, una recomendación para viajar a Filipinas muy importante es: <strong>calcula 1 día para cada traslado entre islas</strong> y así no te pillarás los dedos.</p>
+<p style="text-align: justify;">Por muy sencillo que te pueda parecer de primeras, porque las islas están muy cerca, es muy probable que, para moverte de un lado a otro tengas que <strong>combinar varios transportes</strong>. Por ponerte un ejemplo, Camiguin y Bohol están separadas por 60 kilómetros, pero, el trayecto entre ambas sería:</p>
+<ol style="text-align: justify;">
+<li><em>Trycicle</em>, <em>jeepney</em> o <em>motorela</em> desde tu alojamiento en Camiguin hasta el puerto de Balbagon (aprox. 20 minutos).</li>
+<li>Ferri a Jagna (unas 3-4 horas).</li>
+<li>Traslado de Jagna a Loboc o Panglao (dependiendo de cómo lo hagas, pero sería raro que bajase de 2 horas).</li>
+</ol>
+<p style="text-align: justify;">Como ves, sería raro que tardases menos de 6 horas en hacer este recorrido y, considerando que en Filipinas se hace de noche sobre las 18:00, habrías invertido gran parte de tu día de viaje.</p>
+<p style="text-align: justify;">A esto se le añade la posibilidad de sufrir <strong>cancelaciones y retrasos</strong> en vuelos, barcos y buses. En Filipinas no todo funciona a la perfección y estas cosas ocurren, sobre todo teniendo un clima tropical.</p>
+<p style="text-align: justify;">Así que, a riesgo de ser pesados, <strong>no seas pretencioso</strong> y no quieras ver mil islas en tu primer viaje. Sé más comedido, dedícale tiempo suficiente a cada lugar y considera que los desplazamientos son pesados. El manido lema de “menos es más” es esencial a la hora de planificar un viaje a Filipinas.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://viajarporfilipinas.com/itinerarios)" target="_blank" rel="noopener noreferrer">Itinerarios por Filipinas</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4392" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20679'%3E%3C/svg%3E" alt="consejo para un viaje a filipinas" width="1000" height="679" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6-300x204.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6-768x521.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4392" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6.jpg" alt="consejo para un viaje a filipinas" width="1000" height="679" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6-300x204.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-6-768x521.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">6. Viaja seguro, recomendación clave para viajar a Filipinas</span></h2>
+<p style="text-align: justify;">Aunque ya te hemos contado en <strong><a href="https://www.viajarporfilipinas.com/es-seguro-viajar-a-filipinas/" target="_blank" rel="noopener noreferrer">¿Es seguro viajar a Filipinas?</a></strong> todo lo que debes saber sobre los “peligros” y en <strong><a href="https://www.viajarporfilipinas.com/vacunas-viajar-filipinas/" target="_blank" rel="noopener noreferrer">Vacunas para Filipinas</a></strong> lo que tiene que ver con la vacunación, es primordial que nos escuches con este asunto: el <strong>seguro de viajes</strong>.</p>
+<p style="text-align: justify;">En Filipinas, fuera de grandes ciudades como Cebu y Manila, los centros médicos u hospitales de provincia son muy limitados. Esto quiere decir que si tienes un <strong>problema grave</strong> (ojalá que no) como un accidente de coche o moto, es recomendable ser trasladado de urgencia a Manila o Cebu. Lo decimos por varias experiencias propias, la última cuando Jairo tuvo que ser trasladado de Tuguegarao (una ciudad perdida al norte de la isla de Luzon) a Manila para ser intervenido por una neumonía severa.</p>
+<p style="text-align: justify;">Si esto te llegase a ocurrir, tener la ayuda de una buena aseguradora te ahorrará no solo un <strong>disgusto económico</strong> (que puede no ser pequeño), sino también de uno <strong>logístico</strong> (ellos se encargarán de todo y tú solo tienes que preocuparte de mejorar) y de uno <strong>psicológico</strong> (cuando estás enfermo no te apetece ni hablar en inglés ni ocuparte de nada).</p>
+<p style="text-align: justify;">De verdad, <strong>no viajes sin seguro de viajes</strong>. El coste de la póliza no es nada comparado con los problemas serios que puedes llegar a tener. Échale un vistazo al <strong><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer">seguro para viajar a Filipinas que nosotros usamos</a></strong>. Además, te damos un <strong><a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer">5% de descuento</a></strong> por ser nuestro lector.</p>
+<p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=consejos" target="_blank" rel="nofollow noopener noreferrer"><img decoding="async" class="aligncenter wp-image-3312 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento seguro de viaje" width="700" height="125" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-3312 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" alt="descuento seguro de viaje" width="700" height="125" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">7. No lo idealices todo antes de llegar</span></h2>
+<p style="text-align: justify;">Que Filipinas tiene algunas de las <strong><a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejores playas</a></strong> del mundo nadie lo puede negar. Que podrás hacer algunos de las <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">mejores inmersiones de buceo</a></strong> del planeta también. Los filipinos son amables, abiertos al turista y dicharacheros, la comida está rica, los precios son buenos… ¡Hay muchísimas cosas perfectas de Filipinas! <strong>PERO, no todo es ideal</strong>.</p>
+<p style="text-align: justify;">Obviamente, en esta web, en Instagram y en cualquier medio digital (incluso si hablas con la gran mayoría de viajeros) lo que más se muestra es lo bonito. Seguro que en nuestra propia ciudad o país hacemos fotos a las cosas bellas y no a los vertederos, a los barrios más desfavorecidos y al plato de comida que no nos ha quedado más <em>instagrameable</em>, ¿verdad?</p>
+<p style="text-align: justify;">Y, aunque este aviso quizás sobra, no está de más pararse a pensar que <strong>en Filipinas también hay problemas</strong>, sobre todo teniendo en cuenta que es un país en vías de desarrollo. Por nombrar solo algunos, aunque la tasa de crecimiento economía es de casi el 7%, más del 21% de los filipinos viven por debajo del umbral de pobreza (dato de <a href="https://www.adb.org/countries/philippines/poverty" target="_blank" rel="nofollow noopener noreferrer">ADB</a>), las desigualdades sociales se palpan (sobre todo en las grandes ciudades), existe un gran problema con la gestión de los residuos y no se presta atención a temas como el maltrato animal (peleas de gallos, perros abandonados…).</p>
+<p style="text-align: justify;">Es bastante probable que, como turista, muchos de estos aspectos de Filipinas pasen desapercibidos y que este sea uno de los mejores viajes de tu vida, pero <strong>tampoco se puede ir pensando que todo va a ser perfecto</strong>. Desde luego, un viaje a Filipinas no es un viaje a la Costa Amalfitana (¡menos mal!) y hay que ir con la mente abierta para aceptar lo bueno y lo menos bueno y, sobre todo, a <strong>contribuir que lo menos bueno mejore</strong>.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">8. Ármate de paciencia con los transportes</span></h2>
+<p style="text-align: justify;">Muy relacionado con un apartado anterior, otro de nuestros <strong>consejos para viajar a Filipinas</strong> es aplicar algo que dicen mucho los filipinos: “bahala na”. Esto quiere decir “Dios proveerá” o algo así como “las cosas ya vendrán”. Vas a comprobar que esto les funciona muy bien a ellos, que se toman todo con muchísima filosofía y tienen una actitud frente a la vida muy diferente a la nuestra.</p>
+<p style="text-align: justify;">Súmate a este pensamiento y disfruta del recorrido. Si hay retrasos, tendrás que aceptarlos. Si el bus no sale hasta que no se llena, pues también. Puedes leer muchísimo más sobre ellos en <a title="Cómo moverse por Filipinas, ¿cómo son los transportes?" href="https://www.viajarporfilipinas.com/como-moverse-filipinas-transportes/" target="_blank" rel="noopener noreferrer"><strong>Transporte en Filipinas</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4393" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20738'%3E%3C/svg%3E" alt="paciencia con los transportes filipinos" width="1000" height="738" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7-300x221.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7-768x567.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4393" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7.jpg" alt="paciencia con los transportes filipinos" width="1000" height="738" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7-300x221.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-7-768x567.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">9. Reserva hoteles </span></h2>
+<p style="text-align: justify;">Por algún motivo que todavía no llegamos a entender al 100%, en Filipinas es, en la mayoría de los casos, <strong>más barato reservar por internet</strong> que hacerlo directamente al llegar al alojamiento.</p>
+<p style="text-align: justify;">Además, hay que reconocerlo, la <strong>relación calidad-precio de muchos</strong> hoteles (sobre todo en sitios como Siargao o El Nido) no es nada comparable a la de países cercanos como Tailandia o Indonesia. Por ello, si quieres un alojamiento medianamente decente, con su baño privado, te recomendamos reservar con antelación a través de <strong><a href="https://www.booking.com/index.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Booking</a></strong> o <strong><a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es" target="_blank" rel="nofollow noopener noreferrer">Agoda</a></strong>. Realmente no hay mucha diferencia entre ambos, a veces uno tiene un precio más económico que otro y viceversa.</p>
+<p style="text-align: justify;">Una de las <strong>recomendaciones para viajar a Filipinas</strong> que no puede faltar: en el caso de que vayas a ir en fechas de mucha demanda (Semana Santa, <a title="Viajar en Navidad a Filipinas, ¿cómo disfrutarla? ¿Es recomendable?" href="https://www.viajarporfilipinas.com/navidad-filipinas/" target="_blank" rel="noopener noreferrer">Navidad</a>, Año Nuevo Chino y Puente de Mayo u otros festivos filipinos) es imprescindible que reserves cuanto antes. Los precios se ponen por las nubes porque, además de los extranjeros, los filipinos viajan mucho dentro de su país.</p>
+<p style="text-align: justify;">?️ En nuestra <strong><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/" target="_blank" rel="noopener noreferrer">Guía de alojamiento en Filipinas</a></strong> encontrarás más información.</p>
+<p><ins class="bookingaff" data-aid="1818830" data-target_aid="1818830" data-prod="sbp" data-width="500" data-height="230" data-lang="es" data-cc1="ph" data-df_num_properties="3"><br />
+<!-- Anything inside will go away once widget is loaded. --><br />
+<a href="//www.booking.com?aid=1818830">Booking.com</a><br />
+</ins><br />
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">10. Comprueba que tienes la documentación en regla, ¿necesitas visado?</span></h2>
+<p style="text-align: justify;">Como te contamos en <strong><a href="https://www.viajarporfilipinas.com/visado-para-filipinas/" target="_blank" rel="noopener noreferrer">Visado para Filipinas</a></strong>, para la mayoría de ciudadanos de Europa y América, si vas a estar <strong>menos de 30 días</strong> no necesitarás tramitar ningún visado con antelación. Es esencial, aun así, que compruebes que tu pasaporte tiene una <strong>validez superior a 6 meses</strong> desde que entras en el país.</p>
+<p style="text-align: justify;">En caso de que vayas a estar más tiempo, tienes la opción de tramitar un visado en una embajada o consulado o de hacer la <strong>extensión del visado</strong> en Filipinas. Puedes consultar el trámite de la extensión en nuestro artículo <a href="https://www.viajarporfilipinas.com/extension-de-visado-de-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Extensión del visado en Filipinas</strong></a>.</p>
+<blockquote>
+<p style="text-align: justify;"><em>Consejo de viajero a viajero</em>: si no sabes cuánto tiempo te vas a quedar en Filipinas, tienes que saber que en el 99% de los casos, a la hora de la facturación o el embarque, la aerolínea puede pedirte que demuestres un <strong>billete de salida</strong> del país. Encontrarás cómo apañarte con este tema <a href="https://www.viajarporfilipinas.com/visado-para-filipinas/" target="_blank" rel="noopener noreferrer">aquí</a>.</p>
+</blockquote>
+<p style="text-align: justify;">Por otro lado, también es importante que investigues sobre la validez de tu <strong>carné de conducir en Filipinas</strong>. Por ejemplo, los españoles podemos usar nuestro propio carné español durante 90 días en Filipinas. Aun así, como podrás leer en <strong><a href="https://www.viajarporfilipinas.com/alquilar-moto-filipinas-conducir/" target="_blank" rel="noopener noreferrer">Conducir y alquilar moto en Filipinas</a></strong>, debes tener algunas consideraciones si tu permiso es solo de tipo B.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4394" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20768'%3E%3C/svg%3E" alt="cuidado al conducir por filipinas" width="576" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15-225x300.jpg 225w" data-lazy-sizes="(max-width: 576px) 100vw, 576px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4394" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15.jpg" alt="cuidado al conducir por filipinas" width="576" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-15-225x300.jpg 225w" sizes="(max-width: 576px) 100vw, 576px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">11. Piensa cómo vas a apañarte con el dinero</span></h2>
+<p style="text-align: justify;"><strong>En Filipinas el efectivo es el rey</strong> y, además, la mayoría de los cajeros cobran una <strong>comisión</strong> de 250 pesos (unos 4€) por retirada. Por ello, te podemos dar <strong>dos grandes consejos</strong> para viajar a Filipinas sin dejarte una pasta en comisiones:</p>
+<ol style="text-align: justify;">
+<li>Ve con efectivo y cámbialo en Filipinas. Sorprendentemente, en el aeropuerto de Manila hay uno de los mejores tipos de cambio del país. En <strong><a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/" target="_blank" rel="noopener noreferrer">Dinero en Filipinas</a></strong> encontrarás más detalles sobre esto.</li>
+<li>Usa tarjetas que, al menos, te ahorren la comisión de tu banco español. En <strong><a href="https://www.viajarporfilipinas.com/mejor-tarjeta-viajar-filipinas/" target="_blank" rel="noopener noreferrer">Mejor tarjeta para viajar a Filipinas</a></strong> encontrarás las que nosotros usamos.</li>
+</ol>
+<p>? Descubre tu <strong><a title="¿Cuánto cuesta viajar a Filipinas? ¿Es barato?" href="https://www.viajarporfilipinas.com/cuanto-cuesta-viajar-filipinas/" target="_blank" rel="noopener noreferrer">presupuesto para Filipinas</a></strong>.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">12. Prepara tu mochila con antelación</span></h2>
+<p style="text-align: justify;">Ya sabemos que se te va a echar el tiempo encima (como nos pasa siempre a nosotros), pero no está de más que te avisemos: echa un vistazo a lo más importante que debes echar en tu <strong><a href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener noreferrer">mochila o maleta para Filipinas</a></strong> unas semanas antes. Así no tendrás que ir el día de antes con prisas a comprar.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">13. No te preocupes por el tiempo</span></h2>
+<p style="text-align: justify;">Te quedan 2 días para viajar a Filipinas, abres <em>accuweather</em> o el parte meteorológico de cualquier otra web y aparece: día 1 – lluvia, día 2 – lluvia a mares, día 3 – relámpagos… <em>Don’t panic!</em></p>
+<p style="text-align: justify;">Somos conscientes de que es fácil decirlo y no hacerlo, pero <strong>no te preocupes tanto</strong>. Lo primero que tienes que hacer es abrir el <strong><a href="https://www1.pagasa.dost.gov.ph/#satellite" target="_blank" rel="nofollow noopener noreferrer">satélite de PAGASA</a></strong>, la Agencia de Meterología de Filipinas, y ver que no hay ningún aviso de <strong>tifón</strong>, depresión tropical o tormenta tropical. Estos son avisos muy específicos que la agencia hace en el caso de que haya algo muy “importante” acechando Filipinas. Las trayectorias de estos fenómenos meteorológicos se tienen más o menos claras al menos una semana antes de que pasen por Filipinas, así que no es algo que pille por sorpresa y por lo que tengas que tener miedo.</p>
+<p style="text-align: justify;">En caso de que exista esto, modula tu viaje en consonancia.</p>
+<p style="text-align: justify;">Si no hay ningún aviso, el resto de <em>apps</em> del clima lo que hacen es decir que va a lloverte todo el día aun cuando solo llueva 5 minutos de verdad. Te volvemos a repetir que Filipinas tiene un <strong>clima tropical</strong>. Muchas veces pasa que llueve un rato y, de pronto, a los 10 minutos hace un sol de justicia. Por eso, volverse loco con el clima no tiene ningún sentido. Hay que aceptar lo que viene y tomarlo de la mejor manera. Si llueve, en Filipinas hay mucho que hacer también.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4395" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="clima nublado en filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4395" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10.jpg" alt="clima nublado en filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-10-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">14. Ten cuidado al conducir</span></h2>
+<p style="text-align: justify;">Muchas carreteras en Filipinas están en buen estado, pero otras no. Hay carreteras con baches, llenas de barro y, lo más importante, aunque fuera de las grandes ciudades no suela haber mucho tráfico, hay muchos <strong>animales</strong> (gallos, gallinas, perros, vacas, cabras…) que se te cruzan de la nada, pudiéndote provocar un accidente nada deseable.</p>
+<p style="text-align: justify;">No te confíes, circula con cuidado, sobre todo de noche, y, si vas en moto, usa el casco. <strong>Si nunca en tu vida has alquilado una moto, tampoco es el mejor momento </strong>para ponerse a aprender.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">15. Recomendaciones sobre internet en Filipinas</span></h2>
+<p style="text-align: justify;">Seamos claros: el wifi fuera de Cebu y Manila es una porquería.</p>
+<p style="text-align: justify;">Aunque la red <strong>3G/4G</strong> también falla según qué zonas, tiende a funcionar bastante mejor que la red wifi de los hoteles. Así que, si quieres estar conectado, lo mejor es comprar una tarjeta sim con un plan de datos. En<strong> <a href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener noreferrer">Internet en Filipinas</a></strong> te damos todos los consejos.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">16. Consejos sobre la comida y la bebida en Filipinas</span></h2>
+<p style="text-align: justify;">Si bien es cierto que en Filipinas no hay comidas tan exóticas como el <em>pad thai</em> o el <em>tom yum</em> de Tailandia, la comida no está nada mal. Un almuerzo o una cena (y hasta un desayuno) en Filipinas se compone básicamente de una buena porción de <strong>arroz</strong> acompañada de un estofado o guiso o un pescado o carne a la brasa. Hay guisos en los que detectarás una clarísima raíz hispana como el <em>menudo</em> o la <em>afritada</em>.</p>
+<p style="text-align: justify;">Los filipinos suelen comer en las llamadas <strong><em>carenderias</em></strong>. Estos son unos pequeños negocios en los que encontrarás unas ollitas con platos preparados. Puedes cotillear levantando las tapas, preguntando qué tienen hoy y dejándote sorprender. Y quizás te preguntas<strong>:<em> ¿me voy a poner malo comiendo de ahí?</em></strong> Pues, como en los restaurantes, hay de todo. Hay algunas en las que la salubridad es dudosa y otras que están limpísimas, pero, si te sirve de algo: en años viajando por Filipinas nunca nos hemos puesto enfermos comiendo en carenderias.</p>
+<p style="text-align: justify;">La comida en estos sitios suele ser fresca y, además, muy económicas. No es raro que gastes <strong>menos de 1,5€-2€</strong> en una buena comida. Desde luego, nosotros te animamos a hacer la mayor parte de tus comidas en ellas, no solo porque es barato, sino porque estarás comiendo lo que comen realmente los filipinos.</p>
+<p style="text-align: justify;">Si crees que tu estómago no lo va a tolerar o un día te apetece otra cosa, no te preocupes. En Filipinas también vas a encontrar todo tipo de comida “occidental” y “<em>fast food</em>”. Hay pizzas, hamburguesas, pasta… Los precios son más elevados, pero no te van a faltar.</p>
+<p style="text-align: justify;">En cuanto a las <strong>bebidas</strong>, <strong>los filipinos no beben agua del grifo</strong> porque no es potable, así que el riesgo de que te pongas malo por beber agua contaminada es casi nulo. Y, no, los cubitos de hielo tampoco se hacen con agua del grifo, se hace con el agua purificada que ellos usan para beber. Como cualquier filipino, bebe agua embotellada y, para ser responsable, lo mejor es que lleves tu propia botella y la rellenes en los miles de tanques que verás en hoteles, restaurantes e, incluso, por la calle. Así gastamos menos plástico.</p>
+<p style="text-align: justify;">Y, si eres <strong>vegetariano o vegano</strong>, quizás has leído por ahí que te vas a morir de hambre. Felizmente te comunicamos que no va a ser así. Estos dos que escriben la web no comen productos de origen animal y todavía siguen vivos y coleando. De hecho, es una pena porque nunca adelgazamos en Filipinas. Aún tenemos mucho que escribir sobre el tema, pero, por ejemplo, en <a href="https://www.viajarporfilipinas.com/donde-comer-manila-filipinas/" target="_blank" rel="noopener noreferrer">Dónde comer en Manila</a> o <a href="https://www.viajarporfilipinas.com/donde-comer-siargao/" target="_blank" rel="noopener noreferrer">Dónde comer en Siargao</a> tienes fabulosos ejemplos de locales con comida vegana. También encontrarás una buena selección en <a title="Los mejores restaurantes veganos y vegetarianos en Filipinas" href="https://www.viajarporfilipinas.com/restaurantes-vegetarianos-filipinas/" target="_blank" rel="noopener noreferrer">Restaurantes veganos y vegetarianos en Filipinas</a>.</p>
+<p>? Descúbrelo todo en <a href="https://www.viajarporfilipinas.com/que-comer-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Qué comer en Filipinas, platos y bebidas típicas</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4396" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="típico platillo de afritada en Filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4396" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4.jpg" alt="típico platillo de afritada en Filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-4-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">17. Recursos con recomendaciones para viajar a Filipinas</span></h2>
+<p style="text-align: justify;">En esta página encontrarás información a raudales (la ampliamos cada semana), pero también encontrarás consejos para viajar a Filipinas en:</p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.facebook.com/groups/viajar.filipinas" target="_blank" rel="nofollow noopener noreferrer">Nuestro grupo de Facebook</a></strong> (¡somos más de 6.000 viajeros ya!)</li>
+<li><strong><a href="https://www.instagram.com/viajarporfilipinas/" target="_blank" rel="nofollow noopener noreferrer">Nuestra cuenta de Instagram</a></strong></li>
+<li><strong><a href="https://amzn.to/2YAxjNd" target="_blank" rel="nofollow noopener noreferrer">La guía de Lonely Planet</a></strong>: no es que esté tan actualizada como nuestra web, pero te servirá para hacerte una idea o para leer mientras te aburres en el bus de turno.</li>
+</ul>
+<p style="text-align: justify;">En cuanto a <strong><em>app</em> para el móvil</strong>:</p>
+<ul style="text-align: justify;">
+<li>Orientación: <a href="http://maps.google.com/" target="_blank" rel="nofollow noopener noreferrer">Googlemaps</a> y maps.<a href="https://es.maps.me/" target="_blank" rel="nofollow noopener">me</a></li>
+<li>Reservas de alojamiento: <a href="https://www.booking.com/index.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Booking</a>, <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es" target="_blank" rel="nofollow noopener noreferrer">Agoda</a> y <a href="https://www.airbnb.es/associates/123405?c=.pi115.pk0_9&amp;a4ptk=21651_0_9_123405&amp;af=115&amp;s=67&amp;unique_share_id=aa639c73-89cf-4194-9b6f-b89912d8e58c" target="_blank" rel="nofollow noopener noreferrer">Airbnb</a></li>
+<li>Reservas de vuelos: <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001" target="_blank" rel="nofollow noopener">Skyscanner </a></li>
+<li>Transporte: <a href="https://www.grab.com/sg/download/" target="_blank" rel="nofollow noopener noreferrer">Grab</a></li>
+<li>Almacenamiento: <a href="https://www.google.es/drive/apps.html" target="_blank" rel="nofollow noopener noreferrer">Google Drive</a> o <a href="https://www.dropbox.com/es_ES/downloading" target="_blank" rel="nofollow noopener noreferrer">Dropbox</a> (para subir a la nube)</li>
+</ul>
+<p>? Echa un vistazo a las <a title="Mejores aplicaciones para viajar a Filipinas" href="https://www.viajarporfilipinas.com/aplicaciones-viajar-filipinas/" target="_blank" rel="noopener noreferrer"><strong>mejores aplicaciones para viajar a Filipinas</strong></a>.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">18. ¡HABLA!</span></h2>
+<p style="text-align: justify;">Si bien ya poco queda del español que se hablaba antes en Filipinas, son muchas las <strong>palabras de herencia castellana</strong> que quedan en las diferentes lenguas que se hablan en el país. Además, el <strong>inglés</strong> es lengua oficial y gran parte de la población lo habla con soltura. Los filipinos son muy abiertos, divertidos y amables. Una aplastante mayoría de ellos estarán encantados de hablar un poco contigo. Aprovecha para entablar una conversación respetuosa y aprender sobre ellos.</p>
+<blockquote>
+<p style="text-align: justify;"><em>Truquillo</em>: si les empiezas a decir palabras como los números (uno, dos, tres, cuatro…) o los utensilios de comida (tenedor, cuchillo, cuchara, platito…), les sacarás una carcajada. Es una buena manera de iniciar conversación y de disfrutar de los lazos que aún nos unen.</p>
+</blockquote>
+<p style="text-align: justify;">☀️ Puedes aprender mucho más sobre este tema en <a title="Idiomas de Filipinas, ¿qué se habla?" href="https://www.viajarporfilipinas.com/idiomas-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Idiomas de Filipinas</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-4397" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="señor simpático de filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4397" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5.jpg" alt="señor simpático de filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-5-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">19. Practica turismo en responsable en Filipinas</span></h2>
+<p style="text-align: justify;">Y, aunque lo dejamos para el final, no es menos importante que el resto: por favor, sé un turista responsable. Esto quiere decir que la huella que dejes en tu viaje no debe ser negativa, sino, justo lo contrario, la mejor posible.</p>
+<p style="text-align: justify;">Por favor, ten en cuenta estas <strong>recomendaciones para viajar a Filipinas</strong> de una manera responsable:</p>
+<ul style="text-align: justify;">
+<li><strong>Oslob y Lila:</strong> no vayas a Oslob a nadar con el tiburón ballena. Ya te contamos en detalle <a href="https://www.viajarporfilipinas.com/tiburon-ballena-oslob-filipinas/" target="_blank" rel="noopener noreferrer">Tiburón ballena en Oslob </a>porqué es una aberración. Existen otros lugares donde hacerlo de una manera que no complique la existencia de una especie en peligro de extinción, puedes encontrarlos en <a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer">Dónde nadar con el tiburón ballena en Filipinas</a>. Desde hace unos meses, ha surgido un nuevo sitio en Bohol donde también se les trata así de mal. Se llama Lila, por favor, evítalo.</li>
+<li><strong>Sé respetuoso con la gente</strong>. Regatear es parte de la vidilla del viaje y ninguno queremos que se nos engañe, pero hacerlo hasta la saciedad para ahorrarte 0,50€ tampoco es turismo responsable. Para ti 0,50€ no es nada, para una familia filipina es muchísimo. Una manera de evitar que te cobren precios abusivos es preguntar en tu hotel un precio estimado de lo que podría costarte ese traslado, ese tour o ese <em>souvenir</em>.</li>
+<li><strong>Esnórquel y buceo:</strong> en el mar solo se mira y no se toca. No atosigues a los animales ni saques las estrellas del agua. No pises el coral. Usa cremas solares no perjudiciales. En nuestro artículo sobre el <strong><a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer">Esnórquel en Filipinas</a></strong> tienes más información sobre el tema.</li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-4398" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="buceo en filipinas" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-4398" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11.jpg" alt="buceo en filipinas" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/07/viajar-filipinas-recomendaciones-consejos-11-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<ul style="text-align: justify;">
+<li><strong>Investiga sobre las empresas con las que vas a contratar:</strong> no somos perfectos, pero ya hay muchísima información en internet como para meter la pata. Busca opiniones sobre las agencias y comprueba qué tipo de prácticas realizan. Por ejemplo, sabemos que en Balicasag (Bohol) hay agencias que atosigan a las tortugas, dan pan a los peces…</li>
+<li><strong>Calesas:</strong> no montes en las típicas calesas, carros tirados por caballos. Es muy típico verlas en Intramuros y Vigan, pero los caballos están en un estado lamentable.</li>
+<li><strong>Plásticos:</strong> reduce el consumo de plásticos de un solo uso. Filipinas tiene un serio problema con el plástico. Debido a la falta de recursos económicos de las familias, muchos productos de cosmética, de cuidado del hogar o de comida (como las salsas o el típico café 3en1) se venden en <em>sachets</em> (sobres pequeños), lo que hace que el consumo de plásticos sea descomunal. A eso se le une una conciencia ambiental que todavía es muy escasa. Aunque es una batalla casi titánica, está en tu mano poner tu granito de arena desechando este tipo de envases, llevando tu propia botella rellenable y uniéndote a las diversas recogidas que cada vez más se ven en las zonas turísticas. Aún más, no hace falta que haya ninguna recogida planeada, con 5-10 minutos recogiendo los plásticos que ves en las playas, ya estarás haciendo entender a alguien lo importante que son estos gestos.</li>
+<li><strong>Turismo con animales: </strong>en Filipinas también hay acuarios, zoos, granjas de cocodrilos, peleas de gallos… Por favor, lee <a href="http://turismo-responsable.com/post-443-filipinas" target="_blank" rel="nofollow noopener noreferrer">este artículo de FAADA sobre el tema</a> y evita ser partícipe. En Bohol, evita el santuario de tarsiers que hay junto a las Chocolate Hills, el mejor es <a href="https://goo.gl/maps/1crcAxuDdGQqw9tb7" target="_blank" rel="nofollow noopener noreferrer">el que está en Corella</a>. En <strong><a href="https://www.viajarporfilipinas.com/que-hacer-bohol/" target="_blank" rel="noopener noreferrer">Qué hacer en Bohol</a></strong> te contamos todo.</li>
+</ul>
+<hr />
+<p style="text-align: center;"><em>Seguro que nos hemos dejado alguna cosilla en el tintero&#8230; Si tienes dudas o quieres más recomendaciones o consejos para viajar a Filipinas, déjanos un comentarios y estaremos encantados de responderte.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">16 Comentarios</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-51023">
+		<article id="comment-51023" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Irune</span>				<span class="comment_date">
+					el 21/01/2025 a las 10:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días</p>
+<p>Me gustaría saber si es mejor coger los vuelos internos con antelación o es mejor cogerlos una vez estemos en filipinas.</p>
+<p>He leído que hay retrasos en los vuelos pero no he leído si es mejor realizarlo con antelación la reserva de los vuelos.</p>
+<p>gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51023' data-commentid="51023" data-postid="4385" data-belowelement="comment-51023" data-respondelement="respond" data-replyto="Responder a Irune" aria-label='Responder a Irune'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51042">
+		<article id="comment-51042" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/01/2025 a las 14:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Irune, no es ni mejor ni peor, pero ten en cuenta que los vuelos en Filipinas comprados con poca antelación cuestan el doble o el triple&#8230; Ya depende de si prefieres flexibilidad o precio. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-43240">
+		<article id="comment-43240" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carlota</span>				<span class="comment_date">
+					el 19/08/2024 a las 00:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Que seguro teníais cuando os pasó lo de la neumonía con Jairo? O</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43240' data-commentid="43240" data-postid="4385" data-belowelement="comment-43240" data-respondelement="respond" data-replyto="Responder a Carlota" aria-label='Responder a Carlota'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-43257">
+		<article id="comment-43257" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/08/2024 a las 07:27				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carlota, ¡qué memoría! Jajaj Era este: <a href="https://www.viajarporfilipinas.com/iati-mochilero-descuento/" title="IATI Mochilero: Descuento y detalles ¿Vale la pena?" target="_blank" rel="noopener ugc">IATI Mochilero</a>. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-35958">
+		<article id="comment-35958" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Aldo Chiappe</span>				<span class="comment_date">
+					el 09/04/2024 a las 03:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Muy buenos tus escritos,los seguiremos.<br />
+Pregunta<br />
+Tengo 3.15 h, entre que llega mi vuelo internacional y tomo un vuelo interno a Puerto Princesa.<br />
+Me dara tiempo?<br />
+Y es tan mal como dicen Phillipines Air Asia?<br />
+Gracias<br />
+Saludos de Costa Rica</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-35958' data-commentid="35958" data-postid="4385" data-belowelement="comment-35958" data-respondelement="respond" data-replyto="Responder a Aldo Chiappe" aria-label='Responder a Aldo Chiappe'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-35970">
+		<article id="comment-35970" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/04/2024 a las 07:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Aldo, creemos que son 3 horas es suficiente. Nosotros hemos volado con Air Asia muchísimas veces sin problema alguno. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-12428">
+		<article id="comment-12428" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sara</span>				<span class="comment_date">
+					el 05/08/2021 a las 14:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Qué alegria me ha dado saber que no coméis productos de origen animal y encontrar información sobre esto en vuestra magnífica web!!! Enhorabuena por el gran trabajo y esfuerzo.<br />
+No dejaré de seguiros, aún quedan 2 años para mi boda en Filipinas!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-12428' data-commentid="12428" data-postid="4385" data-belowelement="comment-12428" data-respondelement="respond" data-replyto="Responder a Sara" aria-label='Responder a Sara'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-12430">
+		<article id="comment-12430" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/08/2021 a las 15:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sara, ¡qué alegría leer tu comentario! Así es : ) en Filipinas ser vegano es un poquito difícil, pero cada vez es más sencillo, así que, cuando vayas, lo tendrás más cómodo. Un besote y mil gracias por tu comentario</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-5686">
+		<article id="comment-5686" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Pascual</span>				<span class="comment_date">
+					el 09/08/2019 a las 11:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola viajeros a o por Filipinas, mi viaje a Filipinas ha sido en familia, 3 adultos y  un «niño» 14 años, en un viaje de 30 dias es logico que te encuentres con situaciones de todo tipo buenas y menos buenas. Hemos hecho 4 viajes por el sudeste asiatico y filipinas ha sido el ultimo de hecho hemos disfrutado pero en los 15 dias primeros hicimos la siguiente ruta, de Manila a Puerto princesa (vuelo) vimos lo que se tenia que ver, en minivan a Port Barton, excursiones a playas y mas playas, despues a el Nido, mas de lo mismo playas y mas playas para los adultos y una gran tirolina para el nieto en playa las Cabañas, en barco a Coron ya cansados de tanta playa «sufrimos» la odisea para salir de Coron, en barco solo a el Nido y en avión solo opción a Manila. Cansados de siempre lo mismo decidimos dar el salto a Bali Indonesia, dos dias muy bonito todo lo que vimos, otra cultura, de Bali a islas Gilí (dos horas de barco) y otro mundo sin coches ni motos, alguna electrica y solo coches de caballos super incomodos y vicicletas todos en lucha por un espacio en la calle principal abarrotada de jovenes mochileros, no vimos ni en Filipinas ni en Gilí a viajeros con una cierta edad, nosotros 70 y 69, las excursiones dirigidas al buceo y poco mas o sea no aptas para mayores. Seguire contando cosillas de nuestro viaje por filipinas.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-5686' data-commentid="5686" data-postid="4385" data-belowelement="comment-5686" data-respondelement="respond" data-replyto="Responder a Pascual" aria-label='Responder a Pascual'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-5695">
+		<article id="comment-5695" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/08/2019 a las 16:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Pascual,<br />
+Gracias por compartir tu opinión.<br />
+Para tu información, en Filipinas hay muchos más lugares en los que hay más cosas que hacer además de playas. Para la próxima vez podríais visitar el interior de Bohol y ver paisajes de montañas, las terrazas de arroz con más de 2000 años de antigüedad en Banaue y Batad, ciudades coloniales como Vigan y muchísimas cosas más.<br />
+También debes saber que para ir de El Nido a Coron puedes coger aviones y que desde El Nido y Coron tienes vuelos también a Cebu y Clark, así como a Bohol y Boracay.<br />
+Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-4959">
+		<article id="comment-4959" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Nadia</span>				<span class="comment_date">
+					el 20/07/2019 a las 09:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!lo primero felicitaros por vuestro blog!no estáis facilitando muchísimo el organizar nuestro viaje.<br />
+Acabo de leer que es necesario vacunarse de fiebre amarilla,pero no nos dan cita en los centros de vacunación antes del viaje..es completamente necesario? gracias por vuestra información.<br />
+Un saludo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-4959' data-commentid="4959" data-postid="4385" data-belowelement="comment-4959" data-respondelement="respond" data-replyto="Responder a Nadia" aria-label='Responder a Nadia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-4997">
+		<article id="comment-4997" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 22/07/2019 a las 09:09				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Nadia, bienvenida y gracias 🙂<br />
+Como pone en el artículo, la fiebre amarilla es solo obligatoria si vienes de un país endémico. Es decir, de lugares de Sudamérica o África. Si estás en España, no es necesario. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-4800">
+		<article id="comment-4800" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Monica Lamagna</span>				<span class="comment_date">
+					el 15/07/2019 a las 01:12				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Tan buena pagina! Quisiera saber si tienen referencia de skyjet que anunciaron que llegará a San Vicente. Hemos leído que suelen cancelar y tener demasiados retrasos. Podrían darnos su opinión?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-4800' data-commentid="4800" data-postid="4385" data-belowelement="comment-4800" data-respondelement="respond" data-replyto="Responder a Monica Lamagna" aria-label='Responder a Monica Lamagna'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-4805">
+		<article id="comment-4805" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/07/2019 a las 08:11				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mónica,<br />
+Pues nosotros podemos decirte que nunca hemos tenido ningún problema con Skyjet, que es la aerolínea que empieza a operar la ruta a San Vicente desde mañana.<br />
+Aun así, siempre recomendamos dejar margen de sobra porque las cancelaciones y retrasos en Filipinas no son infrecuentes.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-4750">
+		<article id="comment-4750" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Montse y Alex</span>				<span class="comment_date">
+					el 13/07/2019 a las 05:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Gracias por vuestros consejos,! Acabo de leer lo de la validez del pasaporte superior a 6 meses, y creo que estoy en el caso. Viajo en agosto para 24 días, y mi pasaporte caduca en enero de 2020. Mi pregunta es: debo de solicitar uno nuevo? O puedo viajar con el mío?<br />
+Por lo demás agradeceros todo! Todo! Todo! Lo que hacéis ! Muchas gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-4750' data-commentid="4750" data-postid="4385" data-belowelement="comment-4750" data-respondelement="respond" data-replyto="Responder a Montse y Alex" aria-label='Responder a Montse y Alex'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-4758">
+		<article id="comment-4758" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/07/2019 a las 11:28				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola. ¡Qué suerte que hayas leído el artículo a tiempo! Deberás hacerte uno nuevo o no te dejarán embarcar. ¡Por los pelos! Nos alegra mucho haberte podido ayudar en esto 🙂</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/consejos-viajar-filipinas-recomendaciones/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='4385' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5b234fb4b1" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="111"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"4385","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

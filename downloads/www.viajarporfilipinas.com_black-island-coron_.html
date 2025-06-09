@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Black Island, paraíso en Coron - Viajar por Filipinas</title>
+	<meta name="description" content="Black Island es una isla brutal cerca de Coron. Te contamos todos los detalles para que te enamores de este rincon de Busuanga: horarios, precios, llegar..." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/black-island-coron/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Black Island, paraíso en Coron - Viajar por Filipinas" />
+	<meta property="og:description" content="Black Island es una isla brutal cerca de Coron. Te contamos todos los detalles para que te enamores de este rincon de Busuanga: horarios, precios, llegar..." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/black-island-coron/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2021-01-11T17:41:12+00:00" />
+	<meta property="article:modified_time" content="2025-01-24T01:59:23+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="15 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/black-island-coron/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Black Island (Malajon), el tesoro por descubrir en Coron","datePublished":"2021-01-11T17:41:12+00:00","dateModified":"2025-01-24T01:59:23+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/"},"wordCount":3320,"commentCount":197,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7.jpg","articleSection":["Coron","Islas y playas de Filipinas","Palawan"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/black-island-coron/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/black-island-coron/","url":"https://www.viajarporfilipinas.com/black-island-coron/","name":"▷ Black Island, paraíso en Coron - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7.jpg","datePublished":"2021-01-11T17:41:12+00:00","dateModified":"2025-01-24T01:59:23+00:00","description":"Black Island es una isla brutal cerca de Coron. Te contamos todos los detalles para que te enamores de este rincon de Busuanga: horarios, precios, llegar...","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/black-island-coron/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/black-island-coron/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/black-island-coron/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7.jpg","width":1200,"height":630,"caption":"Black Island, Busuanga Coron"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/black-island-coron/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Black Island (Malajon), el tesoro por descubrir en Coron"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/black-island-coron/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Black Island (Malajon), el tesoro por descubrir en Coron del feed" href="https://www.viajarporfilipinas.com/black-island-coron/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/9580" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=9580' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fblack-island-coron%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fblack-island-coron%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-9580-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/9580/et-core-unified-9580.min.css?ver=1745592640" /><link rel="stylesheet" id="et-core-unified-deferred-9580-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/9580/et-core-unified-deferred-9580.min.css?ver=1745592640" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-9580 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-9580" class="et_pb_post post-9580 post type-post status-publish format-standard has-post-thumbnail hentry category-coron category-islas-y-playas-de-filipinas category-palawan">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Black Island (Malajon), el tesoro por descubrir en Coron</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/coron/" rel="category tag">Coron</a>, <a href="https://www.viajarporfilipinas.com/category/islas-y-playas-de-filipinas/" rel="category tag">Islas y playas de Filipinas</a>, <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Black Island, Busuanga Coron" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-1080x630.jpg" alt="Black Island, Busuanga Coron" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-7-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;"><strong>Black Island</strong>, vamos a ser sinceros e ir directamente al grano, <strong>nos pareció brutal</strong>. Conforme nuestra <em>bangka</em> se iba a acercando a la isla, nuestros ojos se iban abriendo más y más y nuestra sonrisa iba creciendo como lo hace cuando estás ante un lugar de <strong>una belleza excepcional</strong>. Una vez pusimos los pies en su arena blanca lo tuvimos 100% claro, había valido totalmente la pena el viaje hasta este lugar único.</p>
+<p style="text-align: justify;">En este artículo vamos a contarte los secretos de Black Island para que sepas qué te espera ahí y la puedas disfrutar y enamorarte de ella tal y como hicimos nosotros la primera vez y las siguientes veces que la visitamos. ¡Será difícil que no caigas rendido a sus pies!<span id="more-9580"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-6825896cbba28" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-6825896cbba28"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Donde_esta_Black_Island" title="Donde está Black Island">Donde está Black Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_te_espera_en_Black_Island_Busuanga" title="Qué te espera en Black Island, Busuanga">Qué te espera en Black Island, Busuanga</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Playas_y_calas_de_Black_Island" title="Playas y calas de Black Island">Playas y calas de Black Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Cuevas_por_descubrir_y_varanos_en_libertad" title="Cuevas por descubrir y varanos en libertad">Cuevas por descubrir y varanos en libertad</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Como_llegar_a_Black_Island" title="Cómo llegar a Black Island">Cómo llegar a Black Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Consejos_para_visitar_Black_Island" title="Consejos para visitar Black Island">Consejos para visitar Black Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#Donde_dormir_para_ir_a_Black_Island" title="Dónde dormir para ir a Black Island">Dónde dormir para ir a Black Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Seguir_explorando_Coron" title="Seguir explorando Coron">Seguir explorando Coron</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_esta_Black_Island"></span><span style="color: #33cccc;">Donde está Black Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Antes de entrar en detalle a hablarte de este pequeño paraíso de Filipinas, vamos a situarlo en el mapa para que te hagas una idea de dónde queda y desde dónde puedes llegar, punto del que te hablaremos más adelante.</p>
+<p style="text-align: justify;"><strong>Black Island, conocida por los lugareños como Malajon Island</strong>, es una de las islas más al <strong>oeste de Busuanga</strong>, prácticamente en el lado opuesto al que se encuentra Coron Town, que seguramente estará en tu <a title="Itinerarios de viaje a Filipinas por libre" href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/" target="_blank" rel="noopener noreferrer">itinerario por Filipinas</a> si estás sopesando la idea de hacer esta excursión. Al estar fuera de la zona más turística de la isla, podrás gozar de este lugar con muuucha menos gente de lo que harás en los famosos <a title="Island hopping en Coron: la guía definitiva" href="https://www.viajarporfilipinas.com/island-hopping-coron/" target="_blank" rel="noopener noreferrer">island hoppings de Coron</a>.</p>
+<p style="text-align: justify;">En este mapa, te marcamos Black Island en naranja, la playa de Ocam Ocam (desde la que irás), Concepción (uno de los pueblos donde puedes hacer base) y más hacia la izquierda el pueblo de Coron Town, la base principal de la isla de Busuanga.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/embed?mid=1ZggIR36n3g69XSJ-MIkmPwx6yNK5-tfv"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/embed?mid=1ZggIR36n3g69XSJ-MIkmPwx6yNK5-tfv" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_te_espera_en_Black_Island_Busuanga"></span><span style="color: #33cccc;">Qué te espera en Black Island, Busuanga</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">En Black Island te espera <em>epicidad</em>. Una vez pongas los pies en su arena, la brutalidad de <strong>sus enormes paredes de piedra kárstica negra</strong>, las cuales dan nombre a la isla, te alucinarán. Si ya has hecho algún island hopping por la zona sur y sudoeste de Busuanga, estarás acostumbrado a pequeñas islas paradisiacas en las que no hay nada más que arena y palmeras, pero aquí las moles de piedra que delimitan la playa se llevan parte del protagonismo por su alucinante belleza.</p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-9590" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="playa de Black Island" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-9590" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3.jpg" alt="playa de Black Island" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-3-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;">Si ya has estado haciendo algún island hopping por la zona de Coron Island, este paisaje te resultará ya algo familiar. Pero aquí hay algunos premios extra para aquellos que se hayan lanzado a cruzar Busuanga en busca de algo más:<strong> cuevas, playas escondidas, un barco hundido e incluso una notable comunidad de lagartos monitor que viven ahí tranquilamente a sus anchas</strong>.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Playas_y_calas_de_Black_Island"></span><span style="color: #33cccc;">Playas y calas de Black Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Una vez el asombro que producen <strong>las enormes paredes negras de roca kárstica de Black Island</strong> te lo permita, te darás cuenta que estás en una <strong>enorme playa larga de arena blanca y fina</strong>. Da igual hacia donde mires, pues es bella de punta a punta. Dado que a Black Island suele llegar todavía poca gente, podrás escoger sin problemas un trozo de este paraíso en el que estar completamente solo, disfrutando tomando el sol y bañándote, como si fueras un náufrago.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-9617" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="isla paradisíaca de Filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9617" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10.jpg" alt="isla paradisíaca de Filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;">La zona en la que suelen parar las <em>bangkas</em> es algo más frondosa en cuanto a vegetación y es ideal para aquellos que buscan algo de sombra. Además, por esta zona <strong>hay un barco hundido justo al lado de la orilla</strong> que podrás ver haciendo snorkel si las condiciones del tiempo y la marea lo permiten. Fíjate bien porque a veces hay bangkas encima que lo cubren y, siendo sinceros, está bastante destrozado.</p>
+<div id="attachment_9591" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-9591" class="size-full wp-image-9591" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20749'%3E%3C/svg%3E" alt="calas secretas de Black Island" width="1000" height="749" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-9591" class="size-full wp-image-9591" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4.jpg" alt="calas secretas de Black Island" width="1000" height="749" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-4-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-9591" class="wp-caption-text"><span style="color: #999999;"><em>Calas secretas de Black Island</em></span></p></div>
+<p style="text-align: justify;">La zona opuesta de la playa es pura arena y las pocas palmeras que hay se encuentran tras subir <strong>una pequeña duna de arena</strong>. En esa misma zona encontrarás también una pequeña caseta, apartada del resto, en la que podrás dejar tus cosas o comer tranquilamente, y un columpio ideal para esa foto de Instagram con un hashtag como #ColumpioEnElParaiso.</p>
+<blockquote>
+<p style="text-align: justify;"><span style="color: #ff9900;">Hablando de Instagram</span>, en nuestra cuenta <strong><a href="https://www.instagram.com/viajarporfilipinas/" target="_blank" rel="nofollow noopener noreferrer">Viajar por Filipinas</a></strong> se ha formado la mayor comunidad filipinera de esta red social. Usando el hashtag <strong>#ViajarporFilipinas</strong> podremos ver tu paso por el país y compartirlo con nuestros miles de seguidores. Además, a través de los Stories de mostramos estos paraísos en directo. En esta serie de Stories destacados puedes ver, además de otros lugares de Busuanga, <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODc2NzA1MDMyNTUwODU0?igshid=1adtulvkzz85o" target="_blank" rel="nofollow noopener noreferrer">nuestro paso por Black Island</a>. ¿Qué te parece?</p>
+</blockquote>
+<p style="text-align: justify;">Tras haber paseado por toda la playa y disfrutado de algunos baños, volamos nuestro dron y, aparte de alucinar con la belleza de la isla desde el cielo, vimos que existían <strong>otras calas cercanas en las que, literalmente, no había absolutamente nadie</strong>.</p>
+<p style="text-align: justify;">Así, si una vez llegues al final de la playa por el lado frondoso te apetece una pequeña aventura, podrás voltear el acantilado nadando y llegar a una de estas <strong>pequeñas playas desiertas</strong>. Por el camino te cruzarás con una gran roca a la que puedes subir si eres de los que disfruta saltando desde las alturas y una zona submarina con <strong>una biodiversidad brutal de corales y peces de todos los colores</strong>. Eso sí, ¡por favor! Si ves que el mar está algo movido, no intentes llegar a la cala ya que el camino hasta ella es algo rocoso y podría ser algo complicado. ¡Has venido a disfrutar!</p>
+<p style="text-align: justify;">A esta playita también se puede llegar a través de las cuevas, con un poco de cuidado. Si le preguntas a algún cuidador, estará encantado de indicarte cómo hacerlo. Eso sí, te recomendamos llevar escarpines.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-9593" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20749'%3E%3C/svg%3E" alt="playa principal de Black Island" width="1000" height="749" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9593" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6.jpg" alt="playa principal de Black Island" width="1000" height="749" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-6-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuevas_por_descubrir_y_varanos_en_libertad"></span><span style="color: #33cccc;">Cuevas por descubrir y varanos en libertad</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Al principio de este artículo sobre Black Island, además de playas, te hemos prometido cuevas y no te hemos engañado. No te puedes ir de aquí sin darte un paseo por el corazón de la isla. Justo en la zona inferior de la pared kárstica encontrarás <strong>una pequeña escalera de madera que conecta con una enorme cueva</strong>.</p>
+<p style="text-align: justify;">Camina hacia el interior sin miedo pues, tras unos 15 metros, te espera <strong>una pequeña piscina natural rodeada de estalactitas y formaciones rocosas interesantes</strong> que vale mucho la pena visitar. Junto la entrada existe también <strong>otra pequeña piscina en la que podrás zambullirte saltando desde una roca elevada a unos 5 metros de altura</strong>, ¿te atreves?</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-9595" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20815'%3E%3C/svg%3E" alt="cuevas para explorar" width="500" height="815" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8.jpg 500w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8-480x782.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 500px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9595" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8.jpg" alt="cuevas para explorar" width="500" height="815" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8.jpg 500w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-8-480x782.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 500px, 100vw" /></noscript></p>
+<p style="text-align: justify;">A pocos metros de la cueva principal hay una segunda y diminuta cueva en la que metimos la cabeza para curiosear y luego echamos marcha atrás porque no había mucho donde rascar.</p>
+<p style="text-align: justify;">No te asustes si cuando estés explorando esta zona de Black Island empiezan a cruzarse en tu camino unos <strong>lagartos de tamaño mediano</strong>. Estos varanos viven ahí tranquilamente y tienen un área protegida solo para ellos, aunque suelen salir a dar paseos por los alrededores ya que <strong>son libres y la isla es suya</strong>. Son inofensivos si no les molestas, así que usa la Área de Observación para verlos y respeta su espacio ya que estás en su casa.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-9587" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="varanos en Filipinas" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9587" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2.jpg" alt="varanos en Filipinas" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-2-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Black_Island"></span><span style="color: #33cccc;">Cómo llegar a Black Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;"><strong>Llegar a Black Island no es difícil</strong>, si entendemos como difícil por ejemplo la romería que hay que hacer para llegar a lugares como la épica <a title="Cresta de Gallo, ¿la mejor isla de Filipinas?" href="https://www.viajarporfilipinas.com/cresta-de-gallo-filipinas/" target="_blank" rel="noopener noreferrer">lengua de arena de Cresta de Gallo</a>. Lo que sucede es que no está cerca del centro neurálgico desde el que salen la gran mayoría de actividades de Coron. Por ello, te tocará acercarte hasta ahí desde otra población o hacer un island hopping que llegue hasta su orilla. Estas son las diferentes opciones:</p>
+<ul style="text-align: justify;">
+<li><span style="color: #ff9900;"><strong>Desde Coron Town</strong></span>: Si te estás alojando en Coron Town y no quieres cruzar Busuanga en moto en un par de horas,<strong> puedes llegar a Black Island haciendo un island hopping</strong>. el precio del barco para 4 personas es de unos 11.000 pesos. Como verás, es superior a la media de los que salen desde Coron Town ya que la distancia para llegar es también muy superior, te esperan dos horas y media de trayecto. Si lo deseas (ya que llegas hasta aquí no está de más), puedes añadir una visita a Pass Island sumando otros 500 pesos. Si te decantas por esta opción <strong>dínoslo en los comentarios y te pasamos los contactos de nuestros guías de confianza para que puedas hacer esta excursión en las mejores manos</strong>.</li>
+<li><span style="color: #ff9900;"><strong>Desde Concepción o Salvación</strong></span>: entre Coron Town y Black Island hay un par de pequeñas poblaciones en las que te puedes alojar para explorar Busuanga desde ahí, lejos de las grandes masas turísticas. En el muelle de ambas podrás contratar los servicios de barqueros que te llevarán a hacer los island hoppings de la zona. Desde unos 5.000 pesos podrás visitar Black Island de esta manera, siendo más barato desde Salvación (alrededor de 3.500). Podrías meterle Debotunay (muy chula) y North Cay por 500 pesos más.</li>
+<li><span style="color: #ff9900;"><strong>Desde Ocam-Ocam Beach</strong></span>: Ocam-Ocam es la principal playa cercana a la isla y no nos cabe duda de que este lugar, ahora cero turístico, va a ganar mucha fama en los próximos años. No en vano, ya se pueden encontrar algunos alojamientos. Una forma de llegar por libre, fácil y a buen precio a Black Island es conduciendo tu moto hasta esta playa. Lleva <strong>una hora desde Concepción como hicimos nosotros o dos desde Coron Town</strong>. Al llegar a Ocam-Ocam bastará con que te des un paseo para encontrar algún guía que te lleve hasta tu destino por unos 1.500 pesos por barco, aun así ahora hay una caseta con supuestos precios oficiales por 2.500 pesos por barco pequeño en el que caben de 1 a 3 personas (nos consta que se puede negociar). El recorrido dura unos 20-30 minutos, según el estado del mar. Si tienes más tiempo, puedes combinar Black Island con Debutonay (con una playa muy chula y buen snorkel por 3.500 pesos), con Pass Island (una de nuestras islas favoritas, 7.000 pesos) o con los dugones de Calauit (5.000 pesos por el barco más las tasas de las que te hablamos en <a title="Cómo nadar con dugones en Coron (Busuanga)" href="https://www.viajarporfilipinas.com/dugones-coron/" target="_blank" rel="noopener">Dugones en Coron</a>). Para evitar vivir algo como lo que te vamos a contar al final de la sección de Cómo llegar a Black Island, <strong>déjanos un comentario pidiéndolo y te pasamos el contacto de nuestro guía de confianza para llegar a Black Island.</strong></li>
+</ul>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-9586" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="guía para Island Hopping en Black Island" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9586" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1.jpg" alt="guía para Island Hopping en Black Island" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-1-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<blockquote>
+<p style="text-align: justify;"><strong><span style="color: #ff9900;">Aquí va una anécdota viajera </span></strong>con final feliz que te puede ser de mucha ayuda. Nosotros <strong>llegamos a Black Island totalmente por nuestra cuenta</strong>, conduciendo en moto hasta la playa de Ocam-Ocam Beach. Ahí, solo con pasear, puedes encontrar diferentes barqueros que te llevarán a la isla. Vimos que una pareja subía a una <em>bangka</em> para hacer la excursión y les propusimos compartirla para dividir gastos. Se acordó que <strong>nos quedaríamos en la isla hasta última hora</strong> y nos fuimos felizmente rumbo a ella los 4. Tras un par de horas, la pareja decidió que había que marcharse y nosotros les dijimos que estábamos en un lugar maravilloso que valía la pena aprovechar y que, además, habíamos acordado estar varias horas más. Hablaron con el barquero, le dieron un extra y, literalmente,<strong> nos dejaron tirados en Black Island sin forma de volver</strong>.</p>
+<p style="text-align: justify;">Realmente no nos preocupamos en exceso porque, oye, si hay que quedarse a dormir en una isla paradisiaca, Black Island es un buen lugar, pero por suerte apareció en nuestro camino el bueno de “<strong>Sandokán</strong>”, un carismático guía que enseguida nos enamoró. Nos dijo que nos llevaría de vuelta sin problemas y pasamos con él un rato estupendo, tanto ahí como en nuestro alojamiento tomando unas cervezas después.</p>
+<p style="text-align: justify;">Desgraciadamente, nuestro querido Macmac (a.k.a. Sandokán, quien llevó a muchos viajeros que venían de nuestra parte) falleció hace poco, pero su hijo sigue llevando el neogocio. Así, si quieres ir a Black Island desde Ocam-Ocam Beach, no lo dudes, déjanos un comentario pidiéndolo y te pasamos su contacto para que hagas el tour en las mejores manos posibles.</p>
+</blockquote>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Consejos_para_visitar_Black_Island"></span><span style="color: #33cccc;">Consejos para visitar Black Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ahora que seguramente ya te habrás enamorado de este lugar y estés deseando incluir Black Island en tu viaje, vamos a darte algunos consejos finales para que tu aventura sea un 10.</p>
+<p style="text-align: justify;">&#8211; <strong>En Black Island no existe ningún puesto en el que comprar comida</strong>. Por ello, lo más recomendable es que cuentes con ese dato a la hora de preparar tu excursión. No confíes demasiado en la oferta gastronómica de Ocam-Ocam porque no hay mucho donde rascar y los que hay tardan mucho en preparar algo. Si vas a llegar a la isla haciendo uno de esos laaargos island hopping desde Coron, pregunta a tu guía sobre la posibilidad de incluir la comida. Si tu tour no incluye comida o si vas por libre, pásate primero (con tiempo) por algún restaurante o sari-sari y lleva la comida contigo. Además, es ideal que vayas provisto también con algo para beber. En <a title="Qué llevar en la mochila para Filipinas" href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener noreferrer">Equipaje para Filipinas</a> te hablamos de ello y te presentamos la opción cómoda, sencilla y ecológica por la que nosotros optamos siempre: una de estas <a href="https://amzn.to/2LHWQ3i" target="_blank" rel="nofollow noopener noreferrer">botellas reutilizables</a> que podrás rellenar en casi cualquier lugar de Filipinas.</p>
+<p style="text-align: justify;">&#8211; En el apartado de <strong>Qué llevar a Black Island</strong> destacaremos también los clásicos de los que solemos hablar en este tipo de excursiones. <a href="https://amzn.to/49jk1ZG" target="_blank" rel="nofollow noopener noreferrer">Crema solar</a> para estar protegido frente al sol (o una <a href="https://amzn.to/3cbUwfk" target="_blank" rel="nofollow noopener noreferrer">camiseta protectora</a> como la que usan los filipinos), <a href="https://amzn.to/2JBcfQi" target="_blank" rel="nofollow noopener noreferrer">máscara y tubo de esnórquel</a> para disfrutar del barco hundido y la biodiversidad de la zona, <a href="https://amzn.to/2JsRtSZ" target="_blank" rel="nofollow noopener noreferrer">escarpines</a> para explorar la cueva o subirte a las rocas, una <a href="https://amzn.to/2FWNRry" target="_blank" rel="nofollow noopener noreferrer">bolsa estanca</a> en la que llevar tus cosas de valor y ahorrarte un susto en el caso de que te pille lluvia u oleaje, y por supuesto tu cámara para inmortalizar esta épica visita a una de nuestras islas favoritas. Tienes mucha más información y consejos sobre qué llevar en tu viaje en <a title="Qué llevar en la mochila para Filipinas" href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener noreferrer">Mochila para Filipinas</a>.</p>
+<p style="text-align: justify;">&#8211; La <strong>mejor época</strong> para ir a Black Island va <strong>de diciembre a mayo</strong>, cuando es temporada seca. Sin embargo, se trata de una isla bastante separada de la costa y no sería raro que estuviese algo afectada por el viento, sobre todo conforme avanza el día.</p>
+<p style="text-align: justify;">&#8211; Ya sea para visitar Black Island, relajarse en Siquijor o dar un paseo en kayak por Loboc, en un viaje a Filipinas es siempre imprescindible <strong>un buen seguro de viaje</strong>. Nosotros lo hemos tenido que usar en más de una ocasión y <strong>nos ha ahorrado miles de euros</strong>. En <a title="Seguro de viaje para Filipinas" href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer">Seguro de viaje para Filipinas</a> te hablamos del que usamos (cubre cosas como snorkel que, aunque te sorprenda, <strong>no todos lo cubren</strong>). Y <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer">haciendo clic aquí puedes hacerte ya con tu seguro y beneficiarte de un 5% de descuento por venir de nuestra parte</a>.</p>
+<p style="text-align: justify;">&#8211; Obviamente, este tipo de excursiones se pagan en metálico. ¡Olvídate de tarjetas de crédito para los <em>island hopping</em>! En el caso de Black Island, <strong>la tasa de entrada es de 250 pesos por persona</strong>.</p>
+<p style="text-align: justify;">&#8211; Recuerda que si nos dejas un comentario pidiéndolo, te podemos pasar el contacto de los diferentes<strong> guías de confianza</strong> que tenemos tras haber pateado Busuanga de punta a punta.</p>
+<div id="attachment_9592" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-9592" class="size-full wp-image-9592" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20749'%3E%3C/svg%3E" alt="Black Island desde el dron" width="1000" height="749" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-9592" class="size-full wp-image-9592" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5.jpg" alt="Black Island desde el dron" width="1000" height="749" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-5-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-9592" class="wp-caption-text"><em><span style="color: #999999;">Black Island desde el dron</span></em></p></div>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_dormir_para_ir_a_Black_Island"></span><span style="color: #33cccc;">Dónde dormir para ir a Black Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Elegir dónde dormir para ir a Black Island dependerá de cuál sea tu plan de viaje.</p>
+<p style="text-align: justify;">· Si tu idea es usar <strong>Coron Town como base</strong> y desde ahí llegar a Black Island (ya sea en island hopping o en moto), no debes perderte la guía detallada en la que te damos las mejores recomendaciones y propuestas de alojamiento: <strong><a title="Dónde dormir en Coron: los mejores hoteles baratos y resorts" href="https://www.viajarporfilipinas.com/donde-dormir-en-coron-filipinas/" target="_blank" rel="noopener noreferrer">Dormir en Coron</a></strong>.</p>
+<p style="text-align: justify;">Aquí van un par de propuestas, pero en la guía tienes muchas más:</p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.booking.com/hotel/ph/the-bay-area-coron.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Bay Area Lodge</a>:</strong> excelente hotel con muy buena calidad-precio y muy renovado. Está en la zona más céntrica de Coron Town y los desayunos no están nada mal. Échale un ojo al <a href="https://www.booking.com/hotel/ph/the-bay-area-coron.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">precio y disponibilidad aquí</a>.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/dayon-hostel.en.html?aid=1542173" target="_blank" rel="nofollow noopener">Dayon Hostel</a>:</strong> nuestro hostel favorito en Coron. Instalaciones super nuevas, buen ambiente, buen precio, restaurantes cerca y una terraza ideal para acabar el día con una cerveza bien fría. Puedes ver <a href="https://www.booking.com/hotel/ph/dayon-hostel.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">precio y disponibilidad aquí</a>.</li>
+</ul>
+<p style="text-align: justify;">Si te aventuras a explorar Busuanga <strong>desde Concepción</strong>, aquí van algunas recomendaciones:</p>
+<ul style="text-align: justify;">
+<li><strong>Anne &amp; Mike’s:</strong> alojamiento acogedor y muy sencillo en Concepción, un lugar que es pura paz y tranquilidad. Tienen habitaciones con aire acondicionado, otras con ventilador y puedes elegir entre baño privado o compartido. La señal de internet es mala, eso sí. Al no aparecer en las webs de búsqueda deberás <strong>reservar llamando o por SMS una vez ahí</strong>. Si te apetece saber más sobre esta zona, puede que te acabes de convencer con nuestra experiencia a través del artículo <strong><a title="Qué hacer en Concepción, Busuanga" href="https://www.viajarporfilipinas.com/que-hacer-concepcion-busuanga/" target="_blank" rel="noopener noreferrer">Qué hacer en Concepción, Busuanga</a></strong>.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/puerto-del-sol-resort-amp-dive-center.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Marina del Sol Resort</a>:</strong> a pocos kilómetros de Concepción se encuentra Busuanga Bay, que tiene hoteles super chulos como este. Recién remodelado y llevado por una pareja de españoles, te enamorarás de los atardeceres desde su terraza. <a href="https://www.booking.com/hotel/ph/puerto-del-sol-resort-amp-dive-center.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Échale un ojo aquí a los precios</a>.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/josefina-39-s-tourist-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Josefina&#8217;s Tourist Inn</a>:</strong> aquí nos quedamos en nuestra última visita a Salvación y no dábamos crédito de la estupenda relación calidad-precio de este hotel nuevo. Además, en los alrededores tienes varios restaurantes muy interesantes y un puerto desde el que puedes recorrer otras islas. Mira <a href="https://www.booking.com/hotel/ph/josefina-39-s-tourist-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a> y verás.</li>
+</ul>
+<p style="text-align: justify;">También tienes opciones en la propia Ocam Ocam, que, para nosotros es muy apetecible para pasar unos días:</p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.booking.com/hotel/ph/sea-front-cottage-ocam-ocam-beach.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Seafront Cottage Ocam Ocam Beach</a>:</strong> en plena Ocam-Ocam Beach, un lugar maravilloso y alejado de los turistas, con ambiente 100% filipino y esta épica playa para ti solo con vistas al atardecer. El alojamiento es una cabaña MUY sencilla, pero su anfitrión y su localización hace que los que pasan por ahí acaben enamorados de la experiencia. Puedes verlo <a href="https://www.booking.com/hotel/ph/sea-front-cottage-ocam-ocam-beach.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">haciendo clic aquí</a>.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/the-beach-house-ocam-ocam.es.html?aid=1542173" target="_blank" rel="nofollow noopener">The Beach House Ocam Ocam</a>:</strong> la opción más deluxe en Ocam Ocam a día de hoy, una casa digna de revista con una piscina dando a la playa, ¿qué más se puede pedir? Cotillea precios en <a href="https://www.booking.com/hotel/ph/the-beach-house-ocam-ocam.es.html?aid=1542173" target="_blank" rel="nofollow noopener">este enlace</a>.</li>
+</ul>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-9596" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="playas de arena blanca y palmeras" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-9596" src="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9.jpg" alt="playas de arena blanca y palmeras" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2021/01/black-island-coron-9-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;"><ins class="bookingaff" data-aid="2111504" data-target_aid="2111504" data-prod="map" data-width="100%" data-height="590" data-lang="ualng" data-dest_id="0" data-dest_type="landmark" data-latitude="12.1476391" data-longitude="120.0202964" data-landmark_name="Busuanga" data-mwhsb="0" data-address="Busuanga Island, Philippines"><br />
+<!-- Anything inside will go away once widget is loaded. --><br />
+<a href="//www.booking.com?aid=2111504" target="_blank" rel="nofollow noopener noreferrer">Booking.com</a><br />
+</ins><br />
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Seguir_explorando_Coron"></span><span style="color: #33cccc;">Seguir explorando Coron</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;"><strong>Black Island es solo una pequeña pincelada</strong> de la infinidad de maravillas que te esperan en tu visita a Coron y Busuanga. A través de nuestra guía completa encontrarás artículos para exprimir el jugo al máximo de tu viaje. Las playas, los island hopping, dónde comer, consejos y mucho más en la super detallada <strong>Guía de Coron</strong>. ¡Hecha con nuestros corazones para que disfrutes tanto como nosotros!</p>
+<p style="text-align: justify;">Como <em>spoiler</em>, te diremos que cerca de Ocam Ocam (recuerda, la playa desde la que salen las bangkas a Black Island) puedes ir a ver los <a title="Cómo nadar con dugones en Coron (Busuanga)" href="https://www.viajarporfilipinas.com/dugones-coron/" target="_blank" rel="noopener">dugones en Coron</a> y que tienes otras islas en los alrededores como Pass Island y Debutonay que son una auténtica maravilla.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/guia-de-coron/" target="_blank" rel="noopener noreferrer">GUÍA DE CORON</a></p>
+<p style="text-align: center;"><em>Si tienes cualquier duda o sugerencia, ¡te leemos encantados en comentarios!</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">197 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/black-island-coron/comment-page-8/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56334">
+		<article id="comment-56334" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lorena</span>				<span class="comment_date">
+					el 27/04/2025 a las 15:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+De nuevo, deciros que es una maravilla poder organizar un viaje con toda la información que nos aportáis. Ya te solicité el contacto de Corón para realizar los Island Hopping y ya tengo uno contratado con el. Lamentablemente no ha sido posible poder gestionar otro, porque el día 12 de mayo son elecciones y me dijo el contacto que no trabajaban. Así que aquí ando mirando un plan alternativo como es Black Island a ver si tengo mas suerte, por lo que podrías pasarme el contacto para visitar Black Island?<br />
+Creeis que es buena opción que el día 11 que llegamos a Corón sobre las 8:00 dejemos las cosas en nuestro hotel de Corón Town, alquilemos una moto y nos vayamos a Ocam Ocam para hacer noche y realizar la visita desde allí? Supongo que ese día desde Corón nos será complicado si los Island Hopping salen temprano.</p>
+<p>Muchas gracias de nuevo.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56334' data-commentid="56334" data-postid="9580" data-belowelement="comment-56334" data-respondelement="respond" data-replyto="Responder a Lorena" aria-label='Responder a Lorena'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56357">
+		<article id="comment-56357" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/04/2025 a las 19:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lorena, agradecemos, como indicamos en el correo, respuesta al correo que te enviamos antes de seguir enviándote información. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56303">
+		<article id="comment-56303" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ares</span>				<span class="comment_date">
+					el 26/04/2025 a las 16:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Muchas gracias por toda la información que aportais. Me ha sido muy útil para organizar el viaje. Vamos este agosto a Filipinas y esperamos que el tiempo nos acompañe. Me podrías pasar el contacto de Black island desde Ocam Ocam beach?<br />
+Muchas gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56303' data-commentid="56303" data-postid="9580" data-belowelement="comment-56303" data-respondelement="respond" data-replyto="Responder a Ares" aria-label='Responder a Ares'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56314">
+		<article id="comment-56314" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/04/2025 a las 08:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ares, en enero te pasamos otro correo con info. Si lo recibiste, agradecemos tu respuesta antes de seguir enviándote datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55956">
+		<article id="comment-55956" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carlos Hernández</span>				<span class="comment_date">
+					el 18/04/2025 a las 07:54				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días, muchas gracias por vuestro blog, nos está viniendo genial para organizar nuestro viaje. ¿Podrías por favor pasarme el contacto de vuestros guías recomendados para hacer el tour a Black Island y Pass Island desde Coron Town y desde Concepción? No tengo claro aún si nos «atreveremos» con la moto (quizás hasta Concepción sí, pero no hasta Ocam Ocam).<br />
+Aprovecho también para pedirte el contacto de los guías para el Ultimate y Escapade, que también queremos hacer.<br />
+Muchas gracias<br />
+Carlos</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55956' data-commentid="55956" data-postid="9580" data-belowelement="comment-55956" data-respondelement="respond" data-replyto="Responder a Carlos Hernández" aria-label='Responder a Carlos Hernández'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55958">
+		<article id="comment-55958" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 18/04/2025 a las 09:18				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carlos, muchas gracias por leernos. Ahora mismo te pasamos la información. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55465">
+		<article id="comment-55465" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Yaiza</span>				<span class="comment_date">
+					el 08/04/2025 a las 09:47				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!!! Estamos pensando en hacer la excursión a Black island por nuestra cuenta! Podrías pasarme el contacto del guía!? Muchiiiiiisimas gracias!!!! Por cierto, estamos pensando en ir en moto desde Coron town hasta ocam ocam con las mochilas ya que hacemos noche allí… el camino es muy malo o podremos hacerlo en la moto con las mochilas? Es que las vans o transfer nos están pidiendo 3.500-4.000 solo ida…. Gracias!!!!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55465' data-commentid="55465" data-postid="9580" data-belowelement="comment-55465" data-respondelement="respond" data-replyto="Responder a Yaiza" aria-label='Responder a Yaiza'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55484">
+		<article id="comment-55484" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/04/2025 a las 00:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Yaiza, la carretera, salvo la última parte, está bien, pero sería mejor que dejaras las mochilas en Coron Town y fueses con lo justo. Te pasamos la información ahora. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55368">
+		<article id="comment-55368" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Natalia</span>				<span class="comment_date">
+					el 06/04/2025 a las 04:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, me pasarias el contacto del guía?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55368' data-commentid="55368" data-postid="9580" data-belowelement="comment-55368" data-respondelement="respond" data-replyto="Responder a Natalia" aria-label='Responder a Natalia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55369">
+		<article id="comment-55369" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/04/2025 a las 07:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Claro, Natalia. Ya lo tienes en tu correo. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54422">
+		<article id="comment-54422" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">juan</span>				<span class="comment_date">
+					el 18/03/2025 a las 16:54				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>hola como estas? Me pasarias el contacto para hacer el island hopping de black island por favor,voy en um mes</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54422' data-commentid="54422" data-postid="9580" data-belowelement="comment-54422" data-respondelement="respond" data-replyto="Responder a juan" aria-label='Responder a juan'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54452">
+		<article id="comment-54452" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/03/2025 a las 01:45				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Juan, estamos genial, gracias : ) ahora mismo te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-55495">
+		<article id="comment-55495" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Zenaida</span>				<span class="comment_date">
+					el 09/04/2025 a las 03:44				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podéis pasarnos el contacto para ir de Black island desde Ocam Ocam?gracias!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55498">
+		<article id="comment-55498" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/04/2025 a las 08:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Te lo acabamos de enviar, Zenaida. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-54096">
+		<article id="comment-54096" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">María</span>				<span class="comment_date">
+					el 11/03/2025 a las 23:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podrías pasarnos el contacto del barquero para is a Black Island?<br />
+Vamos a estar la semana que viene por ahí. Hemos pensado hacer excursión de un día, saliendo desde Corón en moto (es donde dormimos) y subiendo a Ocam Ocam beach y aquí cogiendo barco para ir a Black Island. Posteriormente nos tocaría volver a Corón a dormir en moto de nuevo. Lo véis factible??<br />
+Muchas gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54096' data-commentid="54096" data-postid="9580" data-belowelement="comment-54096" data-respondelement="respond" data-replyto="Responder a María" aria-label='Responder a María'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54113">
+		<article id="comment-54113" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/03/2025 a las 00:05				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, claro que sí, te lo acabamos de enviar. Es factible, solo ten en cuenta que son 2 horas ir y 2 horas volver ya solo con la moto ; )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-53983">
+		<article id="comment-53983" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Paloma</span>				<span class="comment_date">
+					el 10/03/2025 a las 09:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Me podéis pasar el contacto del barquero por si acaso? Vamos a ir mañana o pasado 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-53983' data-commentid="53983" data-postid="9580" data-belowelement="comment-53983" data-respondelement="respond" data-replyto="Responder a Paloma" aria-label='Responder a Paloma'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-53986">
+		<article id="comment-53986" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/03/2025 a las 10:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Paloma, claro, te lo hemos enviado ahora mismo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-53824">
+		<article id="comment-53824" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">María</span>				<span class="comment_date">
+					el 08/03/2025 a las 10:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Una vez más agradeceros en primer lugar por toda la información que nos está facilitando el viaje un montón! La semana que viene llegaremos a Coron y hemos pensado visitar Black Island desde Ocam Ocam, nos podríais pasar el contacto? Mil gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-53824' data-commentid="53824" data-postid="9580" data-belowelement="comment-53824" data-respondelement="respond" data-replyto="Responder a María" aria-label='Responder a María'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-53886">
+		<article id="comment-53886" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/03/2025 a las 00:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, agradecemos mucho la respuesta a los correos que te pasamos antes de seguir enviándote datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/black-island-coron/comment-page-8/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/black-island-coron/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='9580' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5218a6e326" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="81"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"9580","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

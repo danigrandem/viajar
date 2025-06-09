@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer en Puerto Princesa, Palawan - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Descubre todo lo que hay para hacer en Puerto Princesa, Palawan. Visitar el Río Subterráneo, hacer un tour por Honda Bay y mucho más." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer en Puerto Princesa, Palawan - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Descubre todo lo que hay para hacer en Puerto Princesa, Palawan. Visitar el Río Subterráneo, hacer un tour por Honda Bay y mucho más." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-12-28T07:32:11+00:00" />
+	<meta property="article:modified_time" content="2025-04-17T07:04:18+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="24 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué hacer en Puerto Princesa, la capital de Palawan","datePublished":"2018-12-28T07:32:11+00:00","dateModified":"2025-04-17T07:04:18+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/"},"wordCount":5118,"commentCount":302,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg","articleSection":["Palawan","Puerto Princesa"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/","url":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/","name":"▷ Qué hacer en Puerto Princesa, Palawan - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg","datePublished":"2018-12-28T07:32:11+00:00","dateModified":"2025-04-17T07:04:18+00:00","description":"Descubre todo lo que hay para hacer en Puerto Princesa, Palawan. Visitar el Río Subterráneo, hacer un tour por Honda Bay y mucho más.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg","width":1000,"height":667,"caption":"qué hacer en Puerto Princesa"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué hacer en Puerto Princesa, la capital de Palawan"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué hacer en Puerto Princesa, la capital de Palawan del feed" href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/2833" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=2833' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-puerto-princesa-palawan%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-puerto-princesa-palawan%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-2833-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2833/et-core-unified-2833.min.css?ver=1745576680" /><link rel="stylesheet" id="et-core-unified-deferred-2833-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2833/et-core-unified-deferred-2833.min.css?ver=1745576680" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-2833 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-2833" class="et_pb_post post-2833 post type-post status-publish format-standard has-post-thumbnail hentry category-palawan category-puerto-princesa">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué hacer en Puerto Princesa, la capital de Palawan</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a>, <a href="https://www.viajarporfilipinas.com/category/palawan/puerto-princesa/" rel="category tag">Puerto Princesa</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="qué hacer en Puerto Princesa" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg" alt="qué hacer en Puerto Princesa" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Puerto Princesa es la <strong>capital de la isla de Palawan</strong> y la posible puerta de entrada a lugares increíbles de tu <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">viaje a Filipinas</a>. Aunque muchos viajeros se dirigen directamente a <a href="https://www.viajarporfilipinas.com/guia-de-port-barton/" target="_blank" rel="noopener noreferrer">Port Barton</a> o <a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="noopener noreferrer">El Nido</a>, lo cierto es que hay algunas cosas <strong>que hacer en Puerto Princesa</strong>. Si quieres hacer algo diferente y tienes un <a title="Itinerarios de viaje a Filipinas por libre" href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/" target="_blank" rel="noopener noreferrer">itinerario de viaje por Filipinas</a> holgado que te lo permita, echa un vistazo a estas recomendaciones que te vamos a dar, ¡quizás te sorprendes!</p>
+<p style="text-align: justify;">Sigue leyendo y descubre <strong>qué ver y qué hacer en Puerto Princesa, Palawan</strong>. Te hablaremos de los que pensamos que son los básicos, pero también alguna que otra actividad que te puede cuadrar si tienes más tiempo.</p>
+<p><span id="more-2833"></span></p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Por qué el nombre de Puerto Princesa?</strong> Dicen que el origen del nombre se pudo deber a una bonita princesa que recorría la isla al anochecer, aunque también puede ser que se le atribuyese tras la muerte de la <strong>Princesa Eulalia</strong>, que fue hija de la reina Isabel II y Francisco de Asís. También pudo recibirlo por su <strong>posición geográfica</strong>. Los españoles vieron que el puerto quedaba protegido siempre y era perfecto para el refugio de todo tipo de embarcaciones.</p>
+</blockquote>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682589a3b0261" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682589a3b0261"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFCuantos_dias_pasar_en_Puerto_Princesa" title="¿Cuántos días pasar en Puerto Princesa?">¿Cuántos días pasar en Puerto Princesa?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_hacer_en_Puerto_Princesa" title="Qué hacer en Puerto Princesa">Qué hacer en Puerto Princesa</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Que_no_hacer_en_Puerto_Princesa" title="Qué no hacer en Puerto Princesa">Qué no hacer en Puerto Princesa</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Datos_practicos_sobre_Puerto_Princesa" title="Datos prácticos sobre Puerto Princesa">Datos prácticos sobre Puerto Princesa</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="%C2%BFCuantos_dias_pasar_en_Puerto_Princesa"></span><span style="color: #33cccc;">¿Cuántos días pasar en Puerto Princesa?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Cuántos días en Puerto Princesa? Todo <strong>depende de las excursiones</strong> que tengas planeado hacer y el tiempo del que dispongas en tu viaje a Filipinas. El centro de Puerto Princesa podrás verlo en una mañana (tampoco creemos que sea un imprescindible), pero, si quieres hacer una excursión para ver el Río Subterráneo o nadar con los tiburones ballena (en temporada), te aconsejamos pasar al menos 1 día y medio o 2 en Puerto Princesa.</p>
+<p style="text-align: justify;">Por otro lado, queremos hacer hincapié en que, <strong>si no tienes muchos días en Filipinas, quedarte en Puerto Princesa no suele ser lo mejor</strong>. Aunque es cierto que tiene actividades que están bien, lo mejor de Palawan está, en primer lugar, en El Nido y, después, en otros sitios como Port Barton o <a title="Balabac: island hopping de ensueño en Filipinas" href="https://www.viajarporfilipinas.com/balabac-island-hopping/" target="_blank" rel="noopener">Balabac</a>. Si vienes a Filipinas entre mayo y octubre, quizás quieras hacer como muchos viajeros y quedarte al menos un día para hacer la excursión del tiburón ballena.</p>
+<p style="text-align: justify;">Puerto Princesa, aunque no se puede decir que sea fea, no es una ciudad agradable para pasar mucho tiempo. Es cierto que nosotros llevamos muchos años explorando Filipinas y nos hemos quedado en ella bastantes semanas, pero no es un lugar que te recomendemos como base más allá que para unos días. Dicho esto, vamos a contarte todo lo que hay que ver en Puerto Princesa y ya tú decides.</p>
+<hr />
+<h2><span class="ez-toc-section" id="Que_hacer_en_Puerto_Princesa"></span><span style="color: #33cccc;">Qué hacer en Puerto Princesa</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sin ya enrollarnos más, vamos a contarte las que creemos que son las mejores actividades que hacer en Puerto Princesa, excursiones y consejos.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Dar un paseo por el centro de Puerto Princesa</span></h3>
+<p style="text-align: justify;">Las ciudades filipinas tienden a ser caóticas, Puerto Princesa tampoco se libra, pero cuenta con un centro algo más tranquilo que la mayoría. Poco queda de la locura que se vivió aquí durante la <strong>II Guerra Mundial</strong>, de la que esta ciudad fue protagonista.</p>
+<p style="text-align: justify;">Te aconsejamos darle una oportunidad y conocer por <strong>Plaza Cuartel</strong>, bastión de los soldados estadounidenses y filipinos construido en 1940. Cuando fue tomado por las fuerzas japonesas, fue transformado en prisión y en 1944 quemaron vivos a unos 154 soldados. Solo 11 pudieron escapar. En la plaza se pueden encontrar algunos carteles explicativos, pero su aspecto actual es de un jardín que apacible que poco tiene que ver con la historia de terror anterior. La entrada es gratuita, pero, si vas después del anochecer (cosa que en Filipinas se da entre las 17:30 y las 18:00), es posible que encuentres la verja cerrada.</p>
+<p style="text-align: justify;">Justo enfrente se encuentra la <strong>Catedral de la Inmaculada Concepción de María</strong>. Esta iglesia de estilo neoclásico sustituyó a la anterior iglesia mandada a construir por los españoles a finales del siglo XIX. Fueron ellos quienes proclamaron a la Inmaculada Concepción de María como patrona de Puerto Princesa. Es, por ello, que el 8 de diciembre de cada año se celebra la <em>fiesta</em> de la ciudad.</p>
+<p style="text-align: justify;">A nosotros nos resultó muy agradable pasear por ambos lugares y, aunque no creemos que sean súper impresionantes, no dudamos en recomendártelo como algo <strong>que hacer en Puerto Princesa</strong>.</p>
+<p style="text-align: justify;">Si te apetece, también puedes visitar <strong>Palawan Special Battalion WW-II Memorial Museum</strong>, un museo en el que podrás conocer un poco mejor el papel fundamental de Filipinas y de la <em>guerrilla palaweña</em> durante la II Guerra Mundial. En él se pueden ver algunos vehículos y diferentes artefactos bélicos como pistolas o bombas. La entrada cuesta 50 pesos.</p>
+<p style="text-align: justify;">Más cerca del centro y del aeropuerto está el <strong>Palawan Heritage Center</strong>, donde aprenderás sobre la historia y cultura de Palawan a través de algunos carteles explicativos y objetos. La entrada cuesta 50 pesos, pero te incluye una visita guiada de unos 15 minutos que no está mal.</p>
+<p style="text-align: justify;">¿Cuánto tiempo te llevará esto? Si quitas los museos, en menos de una hora lo habrás visto todo. Incluso podrás acercarte al Baywalk Park, del que te hablaremos a continuación. Es decir, que podrás ver lo básico en muy poquito tiempo.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-14311" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20686'%3E%3C/svg%3E" alt="Catedral Puerto Princesa qué hacer" width="1000" height="686" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1-980x672.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1-480x329.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-14311" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1.jpg" alt="Catedral Puerto Princesa qué hacer" width="1000" height="686" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1-980x672.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-1-480x329.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Ver el atardecer desde el Baywalk Park</span></h3>
+<p style="text-align: justify;">Si vas a quedarte a dormir en la ciudad, una de las cosas que te aconsejamos hacer en Puerto Princesa es dar un paseo por el <strong>Baywalk</strong>. El que viene a ser el <strong>paseo marítimo</strong> de Puerto Princesa es un agradable parque que los palaweños usan para reunirse, hacer deporte o tomar algo en alguno de los puestecitos. También puedes picar algo a buen precio en ellos mientras ves el atardecer. Si vas a viajar a Puerto Princesa con niños, aquí tienes también algunas bicicletas y triciclos para alquilar.</p>
+<p style="text-align: justify;">Además, recientemente lo han modernizado y se pueden encontrar varios restaurantes y cafeterías que no están nada mal para echar el rato o cenar. Uno de los locales que más nos gusta es Lato Coffee and Restaurant.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14312" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20674'%3E%3C/svg%3E" alt="Atardecer desde el Baywalk de Puerto Princesa" width="1000" height="674" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1-980x661.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1-480x324.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14312" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1.jpg" alt="Atardecer desde el Baywalk de Puerto Princesa" width="1000" height="674" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1-980x661.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-102-1-480x324.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">3. Hacer una excursión al Parque Nacional del Río Subterráneo de Puerto Princesa</span></h3>
+<p style="text-align: justify;">No hay discusión, <strong>la actividad más famosa que hacer en Puerto Princesa</strong> es la visita al <strong>Río Subterráneo o Underground River</strong>. Situado a unos 80 kilómetros de la capital, en la pequeña ciudad de Sabang, se trata de un río de 25 kilómetros, de los cuales los últimos 8 son completamente subterráneos. A muchos viajeros les encanta esta excursión y no es de extrañar porque se trata del río subterráneo más largo del mundo, declarado <strong>Patrimonio de la Humanidad por la Unesco</strong> y una de las <strong>7 Nuevas Maravillas Naturales del Mundo</strong>.</p>
+<p style="text-align: justify;">Ten en cuenta que solo podemos visitar 1,5 kilómetros del sistema de cuevas a través de una <strong>barca con remos</strong> que se introduce en él desde el mar. Gracias a las linternas, podrás apreciar las estalactitas, estalagmitas y toda la vida que se desarrolla dentro del río. Además, gracias a la <strong>audioguía</strong> (posibilidad de ponerla en español) entenderás la importancia del Río Subterráneo. El recorrido dura más o menos una hora.</p>
+<p style="text-align: center;">Tienes toda la información sobre este precioso lugar en <a href="https://www.viajarporfilipinas.com/rio-subterraneo-puerto-princesa/" target="_blank" rel="noopener noreferrer"><strong>El Parque Nacional del Río Subterráneo de Puerto Princesa, ¿cómo visitarlo?</strong></a></p>
+<p style="text-align: justify;"><strong>Mucha gente nos pregunta si esta visita realmente merece la pena o no</strong>. En nuestra opinión, que hemos ido varias veces, creemos que sí, pero tampoco diríamos que es lo mejor de Palawan. Te lo recomendamos mucho si tienes bastantes días en Filipinas y si te gusta mucho la naturaleza. Dicho esto, llevamos muchos años aconsejando a viajeros y hemos leído todo tipo de opiniones. Como siempre, para gustos, colores.</p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">¿Cómo visitar el Undergroud River o Río Subterráneo?</span></h3>
+<p style="text-align: justify;">Tienes básicamente 2 opciones:</p>
+<p style="text-align: justify;"><strong>a) En un tour desde Puerto Princesa:</strong> la opción fácil que te aconsejamos si tienes poco tiempo y luego quieres visitar otros sitios de Palawan sin quedarte en Sabang. Los precios oscilan entre los 2.000-2.300 pesos. Suelen incluir la recogida en tu hotel y una comida de tipo buffet.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/activity/4087-puerto-princesa-underground-river-day-tour-palawan/?adid=41337&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer">Reserva tu excursión al Río Subterráneo con Klook</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/puerto-princesa/tour-rio-subterraneo/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Reserva el tour por el Río Subterráneo con Civitatis</a></p>
+<p style="text-align: left;"><strong>b) Yendo a Sabang por tu cuenta y contratando la excursión:</strong> la opción barata pero más complicada. Estos son los <strong>pasos</strong> que tienes que seguir:</p>
+<ol style="text-align: justify;">
+<li><strong><em> Reservar un permiso</em></strong> al menos el día de antes en la Puerto Princesa Underground River Office en el City Coliseum en Puerto Princesa. También se puede hacer en Sabang, pero quizás es mejor hacerlo en Puerto para asegurarte. Los cupos están restringidos y el permiso cuesta 500 pesos por persona, más 150 pesos de tasa medioambiental (se pagan en Sabang), 85 pesos de la audioguía y 5 de tasas de la terminal.</li>
+</ol>
+<blockquote>
+<p style="text-align: justify;"><em>El horario de apertura es de lunes a viernes de 8:00 a 16:00 y sábados y domingos de 8:00 a 12:00 y de 13:00 a 17:00. Consulta siempre los horarios, por si te coincide con algún festivo.</em></p>
+</blockquote>
+<ol style="text-align: justify;" start="2">
+<li><strong><em> Ir a Sabang:</em></strong> puedes ir a la terminal de San José y coger un bus o <em>jeepney</em> (150 pesos/3 horas) o coger una furgoneta o van desde tu hotel (250 pesos/1,5-2 horas). <a href="https://12go.asia/es/travel/puerto-princesa/sabang/?z=1864900" target="_blank" rel="nofollow noopener noreferrer"><strong>Puedes reservarla aquí</strong></a>.</li>
+<li><strong><em> Ir a la Puerto Princesa Underground River tourist office en Sabang</em></strong>, pagar la tasa medioambiental y pagar el barco. Lo normal es que sean 184 pesos por persona si compartes con otros viajeros. En el barco caben 6 personas y no tendrás problema en encontrar más gente.</li>
+<li><strong><em> ¡Disfrutar del recorrido por el Río Subterráneo!</em></strong></li>
+</ol>
+<div class='et-box et-info'>
+					<div class='et-box-content'>Como ves, el precio por hacerlo por tu cuenta ronda los 1.120 pesos sin contar el transporte de vuelta, lo que haría un total de unos 1.600-1.700 pesos. En definitiva, a no ser que vayas a quedarte unos días en Sabang o desde Sabang quieras continuar a Port Barton, <strong>visitar el Río Subterráneo por tu cuenta, en nuestra opinión, no merece demasiado la pena</strong>, puesto que la excursión organizada suele incluir también la comida.</div></div>
+<p><img decoding="async" class="aligncenter size-full wp-image-6365" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Río Subterráneo Puerto Princesa" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6365" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100.jpg" alt="Río Subterráneo Puerto Princesa" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">4. Visitar la playa de Sabang</span></h3>
+<p style="text-align: justify;">Si tienes ganas de playa, una de las cosas que puedes <strong>hacer en Puerto Princesa</strong> es saltar a Sabang. Tardarás algo menos de 2 horas desde Puerto y puedes combinarla con la anterior excursión al Río Subterráneo. No es la <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejor playa de Filipinas</a>, pero es un sitio agradable, con lugares para comer en la playa, buena oferta hotelera y alguna cascada que descubrir.</p>
+<p style="text-align: center;">Puedes conocer todas un poco mejor este pueblecito leyendo nuestra <a href="https://www.viajarporfilipinas.com/que-hacer-sabang" target="_blank" rel="noopener noreferrer"><strong>Guía de Sabang</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6366" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="playa de Sabang" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6366" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101.jpg" alt="playa de Sabang" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-101-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">5. Conocer la Bahía de Honda u Honda Bay</span></h3>
+<p style="text-align: justify;">Otra de las actividades más populares que hacer en Puerto Princesa es un <strong><em>island hopping</em> por Honda Bay o la Bahía de Honda</strong>. Aunque no se pueden comparar con la belleza de las islas de <a href="https://www.viajarporfilipinas.com/que-hacer-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">El Nido</a>, visitarás bonitas islas que de lunes a viernes suelen estar tranquilas <strong>como </strong><strong>Cowrie Island </strong>(la mejor de las 3)<strong>, Luli Island y Starfish Island</strong>. Los precios rondan los 1.500 – 1.900 pesos por persona y suelen incluir un almuerzo.</p>
+<p style="text-align: justify;">Pronto te hablaremos en detalle de este island hopping con un artículo específico, pero si tenemos que serte honestos, no es de nuestros favoritos. Es mejor invertir tus días en mejores tours.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/activity/4111-honda-bay-island-hopping-tour-palawan/?krt=s21&amp;krid=b7d2d5aa-231c-4489-4494-313272b342ac&amp;adid=41337&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer">Reserva tu island hopping por Honday Bay con Klook</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/puerto-princesa/excursion-honda-bay/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Reserva la excursión por Honda Bay con Civitatis</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14310" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20551'%3E%3C/svg%3E" alt="Honda Bay Puerto Princesa" width="1000" height="551" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1-980x540.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1-480x264.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14310" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1.jpg" alt="Honda Bay Puerto Princesa" width="1000" height="551" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1-980x540.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-100-1-480x264.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">6. Nadar con el tiburón ballena o ver delfines</span></h3>
+<p style="text-align: justify;">Hasta hace poco nada se sabía de la posibilidad de nadar con el precioso tiburón ballena por estas aguas. Sin embargo, si pasas por Filipinas <strong>entre los meses de abril y octubre</strong>, tienes la posibilidad de incluir en tu lista de cosas <strong>que hacer en Puerto Princesa el nado con el tiburón ballena</strong>. Lo mejor: de manera responsable y no como ocurre en Oslob o en Lila.</p>
+<p style="text-align: justify;">En este artículo sobre el <strong><a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer">tiburón ballena en Filipinas</a> </strong>te contamos mucho más, pero ya te adelantamos que es una excursión que suele comenzar sobre las 7:00 y acabar sobre las 14:00. Para nosotros, esta es<strong> la razón más poderosa para visitar Puerto Princesa a día de hoy</strong>. Si puedes hacerlo coincidir un poco antes o después de la luna llena, será mucho mejor, ya que, al haber mayores concentraciones de plancton, las posibilidades de verlos aumentan.</p>
+<blockquote><p><span style="color: #ff0000;">La temporada 2025 YA HA COMENZADO y desde comienzos de abril están saliendo los tours. Por otro lado, en el caso de que viajes entre noviembre y abril, tienes oportunidades de alistamiento en Pintuyan (nuestro favorito) y Donsol.</span></p></blockquote>
+<p style="text-align: justify;">En la zona de Honda Bay también es factible ver delfines giradores (<em>spinner dolphins</em> o <em>Stenella longirostris</em>) de forma respetuosa. La temporada se estira más que la de los tiburones ballena.</p>
+<p style="text-align: center;"><strong>Puedes pedirnos contactos para hacer este tour de forma respetuosa en los comentarios.</strong></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">7. Probar el <em>chao long</em> y sitios donde comer en Puerto Princesa</span></h3>
+<p style="text-align: justify;">Sería un pecado que te fueses de Puerto sin probar su <strong>comida más típica</strong>, el <em>chao long</em>. Esta sopa muy parecida al <strong><em>phở</em></strong> vietnamita viene con una historia bajo el brazo. En 1975, con la llegada del comunismo al sur de Vietnam, muchos vietnamitas emigraron. Alrededor de 2.000 de ellos aparecieron en Palawan, de los cuales, 800 permanecieron en la isla y se integraron montando algunos negocios, entre ellos, los restaurantes.</p>
+<p style="text-align: justify;">Los <strong><em>chaolongan</em></strong> son los restaurantes donde se vende el <em>chao long</em>, esta suntuosa sopa que suele llevar carne y que se acostumbra a acompañar de un tipo de pan francés que te recordarás al de los <strong><em>bánh mì</em></strong> que quizás has probado en Vietnam y Laos. Si eres un enamorado de nosotros de estos bocadillos asiáticos, ¡también los encontrarás aquí!</p>
+<p style="text-align: justify;">A nosotros nos gustaron muchos los <i>bánh mì </i>de <a href="https://goo.gl/maps/BUaZakjewrk" target="_blank" rel="nofollow noopener noreferrer">Bona’s Chao Long</a> y Rene&#8217;s Saigon. El primero es barato, local y rico. El segundo es mejor y es más bonito, pero ten en cuenta que está un poquitín alejado del centro.</p>
+<p style="text-align: justify;">Por supuesto, como ciudad relativamente grande, las opciones gastronómicas son grandes y tienes sitios bastante interesantes <strong>donde comer en Puerto Princesa</strong> y echar un rato agradable. Aquí te dejamos las que nos gustan más a nosotros:</p>
+<ul style="text-align: justify;">
+<li><strong>Kalui:</strong> es el restaurante más famoso de Puerto Princesa y con razón. Tienen pescado y marisco fresco y una temperatura de berenjena (eggplant) que es una delicia. La decoración es chula y acostumbra a tener mucho ambiente. Si buscas algo especial, este es tu sitio.</li>
+<li><strong>Palaweño Brewery:</strong> ¿cerveza artesanal en Filipinas? ¡Allá que tienes que ir! Precios entre 170 y 180 pesos por cerveza.</li>
+<li><strong>Pagetek Foodcourt:</strong> patio de comidas que abrió sus puertas hace relativamente poco, muy céntrico y con variedad de opciones que van desde kinilaw (el ceviche filipino) hasta lechón. Buena opción para cenar.</li>
+<li style="text-align: justify;"><strong>Ver De Puerto Princesa</strong>: en nuestra opinión, el mejor restaurante de Puerto Princesa. Es 100% vegano y sirve deliciosos y sanos smoothies. Además, tienen el wifi más rápido de toda la ciudad. Esta fue la primera, pero tienen otras sucursales en El Nido y Siargao.</li>
+<li><strong>Ima’s Vegetarian:</strong> ¡un vegetariano en Filipinas! Raramente se ven fuera de Manila y Cebú, pero en Puerto Princesa encontraréis pizzas, burritos y platos típicos filipinos vegetarianos.</li>
+<li><strong>Gold Cup:</strong> una cadena local de café bueno. Tienen varias sucursales, siendo la más bonita como para sentarse a echar el rato <a href="https://maps.app.goo.gl/2E1Ga7zNSpZyyWSB8" target="_blank" rel="nofollow noopener">esta</a>, que poco tiene que envidiar a cualquiera de Manila.</li>
+</ul>
+<p style="text-align: justify;">Te los marcamos todos en el mapa de Puerto Princesa que hemos hecho, más abajo.</p>
+<p style="text-align: justify;">Además, en Puerto se encuentran todas las sucursales de las franquicias filipinas: McDonald’s, Chowking, Mang Inasal…</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2839" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Algo que hacer en Puerto Princesa: comer chaolong" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2839" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6.jpg" alt="Algo que hacer en Puerto Princesa: comer chaolong" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-palawan-6-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">8. Bucear, algo curioso que hacer en Puerto Princesa</span></h3>
+<p style="text-align: justify;">Quizás te sorprendes, pero una de las cosas que puedes hacer en Puerto Princesa es bucear. Fuera del radar de los principales sitios de <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">buceo en Filipinas</a> encontrarás puntos como <strong>Arrecife Island</strong> (también llamado Arreceffi), <strong>Panglima Island o Pandan Island</strong>. Nosotros todavía no hemos ido a conocerlos, pero no descartamos hacerlo pronto.</p>
+<p style="text-align: justify;">Además, desde Puerto salen los barcos de vida a bordo (normalmente de 7 días y 6 noches) al que es, posiblemente, el mejor lugar para bucear en el país: <strong>Tubbattaha Reef</strong>. Es aquí donde tienes mayores oportunidades de ver vida marina grande como mantas, tiburones ballena o varios tipos de tiburones, pero también arrecifes muy ricos con mucha vida macro.</p>
+<p style="text-align: justify;">Algo a considerar es que los <em>liveaboard</em> a este arrecife, al estar tan alejado de tierra, solo se realizan entre mediados de marzo y comienzos de julio, cuando el mar está más calmado. Las plazas, por esto (y a pesar de que los precios no son especialmente baratos, rondando los 1.500€-4.000€), también vuelan. Si quieres un barco económico, te recomendamos echar un vistazo a <a href="https://www.liveaboard.com/es/diving/philippines/narayana?cid=7782" target="_blank" rel="nofollow noopener">este</a>, para algo de mayor nivel, <a href="https://www.liveaboard.com/es/diving/philippines/discovery-palawan?cid=7782" target="_blank" rel="nofollow noopener">este</a>.</p>
+<h3 style="text-align: left;"><span style="color: #33cccc;">9. Darte un chapuzón en Nagtabon Beach</span></h3>
+<p style="text-align: justify;">No hace mucho esta playa palaweña pasaba totalmente desapercibida. Si bien cuando la visitamos por primera vez allá por 2014 pudimos disfrutarla para nosotros solos, ahora algunos viajeros que se salen de los recorridos habituales ya se animan a llegar hasta aquí.</p>
+<p style="text-align: justify;">Para <strong>llegar a Nagtabon Beach</strong> lo mejor es alquilar una moto en Puerto Princesa (más o menos por 500 pesos al día) y conducir los 24 kilómetros que separan ambos puntos. El recorrido te llevará unos 40 minutos, pero ten en cuenta que la última bajada hasta la playa es un tanto peligrosa. Conduce con cuidado.</p>
+<p style="text-align: justify;">Otra manera es tomar un bus en dirección a Taytay, Roxas o El Nido y bajarte en Bacungan (aproximadamente 50 pesos). Una vez ahí, puedes tomar un <em>tricycle</em> a Nagtabon Beach por 250 pesos.</p>
+<p style="text-align: justify;">Si tienes ganas de seguir explorando más, un poco más al norte de Nagtabon tienes <strong>Talaudyong Beach</strong>. Es accesible desde la misma carretera, pero ten en cuenta que el camino entre ambas está en peor estado y que tiene más curvas. Así, te recomendamos visitarla solo si tienes pericia con la moto.</p>
+<p><img decoding="async" class="size-full wp-image-14315" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Nagtabon Beach Puerto Princesa" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104.jpg" /><noscript><img decoding="async" class="size-full wp-image-14315" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104.jpg" alt="Nagtabon Beach Puerto Princesa" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-104-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">10. Ver las luciérnagas del río Iwahig</span></h3>
+<p style="text-align: justify;">Si nunca has visto <strong>luciérnagas</strong>, no dejes de incluir el avistamiento de ellas en los manglares del río Iwahig. Esta es una de las actividades más populares que hacer en Puerto Princesa y muchas agencias lo ofrecen. Por 1.200-1.400 pesos te llevarán a dar un paseo por el río para ver miles de luciérnagas y luego te ofrecerán una cena buffet. La salida es a las 18:00 y a las 21:30-22:00 ya estarás de vuelta en el hotel.</p>
+<p style="text-align: justify;">Ten en cuenta que el mejor momento para ver luciérnagas en Puerto Princesa es durante la <strong>luna nueva</strong>. Si hay luna llena, debido a la luz, es más difícil apreciar la luz.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/activity/4094-puerto-princesa-firefly-watching-palawan/?aid=67b976df963ba7d2&amp;af_wid=4209&amp;adid=41337" target="_blank" rel="nofollow noopener noreferrer">Reserva tu tour de luciérnagas en Puerto Princesa con Klook</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/puerto-princesa/crucero-nocturno-puerto-princesa/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Reserva tu tour de luciérnagas con Civitatis</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">11. Alojarte en un resort de todo lujo y olvidarte de todo</span></h3>
+<p style="text-align: justify;">Si necesitas un poco de relax y tienes tiempo de sobra, Puerto Princesa y sus alrededores ofrecen buenas posibilidades para hacerlo. Hay <strong>hotelazos de alto nivel</strong>, algunos de ellos ubicados en zonas alejadas de todo ruido, y con mucha mejor relación calidad-precio que los de El Nido o Coron.</p>
+<p style="text-align: justify;">Por ejemplo, echa un ojo a <a href="https://www.booking.com/hotel/ph/the-funny-lion-puerto-princesa.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>The Funny Lion</strong></a>, a <strong><a href="https://www.booking.com/hotel/ph/sheridan-beach-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Four Points by Sheridan</a></strong> o a <strong><a href="https://www.booking.com/hotel/ph/daluyon-beach-and-mountain-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Daluyon Beach Resort</a></strong>. Este último ubicado en Sabang.</p>
+<h3><span style="color: #33cccc;">12. Cotillear el Old Public Market</span></h3>
+<p style="text-align: justify;">No es que sea algo súper básico que ver en Puerto Princesa, pero somos fans de caminar por mercados y el de aquí, a pesar de no ser muy grande, es curioso. Está en pleno centro, no está orientado al turismo y, para nuestra delicia, tienes un montón de productos como los que te enseñamos en la foto. Muchos de ellos los utilizan los filipinos en su día a día, como los sombreros, las hamacas (preciosas), los bolsos, los paipays o bandejas para el arroz, por lo que los precios no son ni mucho menos disparatados.</p>
+<p>Por supuesto, también tienes puestos de fruta, verdura, carne, pescado, ropa, etc.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14320" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20780'%3E%3C/svg%3E" alt="Old Public Market Puerto Princesa" width="1000" height="780" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106-980x764.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106-480x374.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14320" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106.jpg" alt="Old Public Market Puerto Princesa" width="1000" height="780" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106-980x764.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-106-480x374.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">13. Hacer la expedición de Balabac</span></h3>
+<p style="text-align: justify;">No podíamos dejar esta lista de cosas que hacer en Puerto Princesa sin mencionarte Balabac. Aunque está en la puntita más al sur de la isla de Palawan (casi tocando Malasia), <strong>este grupo de islas se visita normalmente en un tour que tiene como punto de partida (y final) Puerto Princesa</strong>. Debido a su popularidad en redes sociales, donde se ve en repetidas ocasiones la espectacular isla de <strong>Onok</strong> (que te enseñamos en la foto de abajo, que no lleva filtro alguno), ha ido cogiendo fuerza como uno de los destinos turísticos de Filipinas, incluso entre los extranjeros.</p>
+<p style="text-align: justify;">Las expediciones suelen durar <strong>entre 3 y 4 días</strong> y se puede pernoctar en campamentos en bonitas islas. El servicio de las empresas que las ofrecen todavía está lejos de las de las <a title="Expedición Coron El Nido: la aventura definitiva" href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener">expediciones Coron-El Nido</a> (o viceversa), pero, si estás dispuesto a sacrificar un poco tu comodidad, estamos seguros de que lo gozarás.</p>
+<p style="text-align: center;">Podrás encontrar toda la información sobre este tour en nuestra guía sobre el <a title="Balabac: island hopping de ensueño en Filipinas" href="https://www.viajarporfilipinas.com/balabac-island-hopping/" target="_blank" rel="noopener"><strong>Island hopping de Balabac</strong></a>. También puedes dejarnos un comentario en este mismo artículo y te enviamos nuestros contactos para realizarlo.</p>
+<p><img decoding="async" class="size-full wp-image-14321" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E" alt="Onok Island" width="800" height="600" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107.jpg 800w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107.jpg" /><noscript><img decoding="async" class="size-full wp-image-14321" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107.jpg" alt="Onok Island" width="800" height="600" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107.jpg 800w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-107-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" /></noscript></p>
+<hr />
+<h2><span class="ez-toc-section" id="Que_no_hacer_en_Puerto_Princesa"></span><span style="color: #33cccc;">Qué no hacer en Puerto Princesa</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Tan importante como qué hacer es lo que no hacer en Puerto Princesa. Desgraciadamente, en la capital palaweña hay ciertas actividades de turismo irresponsable y es nuestro deber como viajeros informarnos y no contribuir a perpetuarlas. Para que no haya errores, te las citamos aquí:</p>
+<ul>
+<li class="DUwDvf lfPIob" style="text-align: justify;">Palawan Wildlife Rescue and Conservation Center (Crocodile Farm): el nombre suena bien, pero, desgraciadamente, las prácticas aquí distan de un santuario. Los animales están enjaulados en lugares muy pequeños, no se guarda ningún tipo de silencio, hay ejemplares simplemente para cogerlos y hacerse fotos&#8230; En definitiva, un despropósito.</li>
+<li class="DUwDvf lfPIob" style="text-align: justify;">Palawan Butterfly Ecological Garden and Tribal Village: la parte cultural está bien, pero tienen un zoológico que es todo menos respetuoso, hasta con serpientes para hacerse fotos. Sin duda, un tipo de turismo que no es para apoyar.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Datos_practicos_sobre_Puerto_Princesa"></span><span style="color: #33cccc;">Datos prácticos sobre Puerto Princesa</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para que tu estancia sea más cómoda, hemos reunido datos más interesantes que hemos ido sacando de nuestras visitas a Puerto Princesa.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Dónde dormir en Puerto Princesa</span></h3>
+<p style="text-align: justify;">Ya vayas a salir al día siguiente hacia el aeropuerto, El Nido o Port Barton, nuestro consejo es que te quedes a <strong>dormir en el centro de Puerto Princesa</strong>. Todo está relativamente cerca y así podrás salir a cenar tranquilamente en alguno de los sitios que te recomendamos arriba. Aquí te dejamos algunas sugerencias:</p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.booking.com/hotel/ph/hibiscus-garden-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Hibiscus Garden Inn</a>:</strong> cercano al aeropuerto, al centro y a los restaurantes, tiene piscina y un entorno que te hará olvidarte de que estás en una ciudad. Ideal si vas en familia. Precios alrededor de 50€.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/golden-pension-house-palawan.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Golden Pension House</a>:</strong> limpio, funcional y céntrico y con transporte gratuito desde y hasta el aeropuerto. Desde 29€ la habitación doble con desayuno incluido. Lo llevan una pareja de abuelitos que siempre nos cuidan muy bien. Guardan en el equipaje si te vas de expedición varios días de forma gratuita.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/guni-guni-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Guni Guni Hostel</a>:</strong> si viajas solo, no hay mejor sitio que este. Con habitaciones compartidas de 6, 8 y 10 personas (mixtas o para mujeres) que parecen más habitaciones de hotel con todos los detalles, zonas comunes agradables y un restaurante majo. Desde 8€ la noche por persona.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/wilnags-inn-puerto-princesa-palawan.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Wilnags Inn Puerto Princesa</a>:</strong> ubicado muy cerca del aeropuerto y desde tan solo 20€ la noche.</li>
+</ul>
+<p style="text-align: justify;">En <a href="https://www.viajarporfilipinas.com/donde-dormir-puerto-princesa/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Puerto Princesa</strong></a> encontrarás más recomendaciones y explicaciones sobre las diferentes zonas para alojarte.</p>
+<div id="attachment_14318" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-14318" class="size-full wp-image-14318" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20648'%3E%3C/svg%3E" alt="Golden Pension House" width="1000" height="648" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105-980x635.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105-480x311.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-14318" class="size-full wp-image-14318" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105.jpg" alt="Golden Pension House" width="1000" height="648" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105-980x635.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-105-480x311.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-14318" class="wp-caption-text">Golden Pension House</p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Cómo llegar a Puerto Princesa</span></h3>
+<p style="text-align: justify;">Lo más habitual es llegar a Puerto Princesa en <strong>avión</strong> con <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fmnl%2Fpps%2Fmanila-ninoy-aquino-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener noreferrer">vuelos desde Manila</a> o <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fceb%2Fpps%2Finternacional-de-mactan-cebu-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener noreferrer">Cebu</a>. También podrás hacerlo en <strong>furgoneta (van) o bus</strong> desde <a href="https://12go.asia/es/travel/el-nido/puerto-princesa/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">El Nido</a>, <a href="https://12go.asia/es/travel/port-barton/puerto-princesa/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">Port Barton</a> o <a href="https://12go.asia/es/travel/sabang/puerto-princesa/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">Sabang</a>. Existen ferris a Puerto Princesa desde Manila e Iloilo, pero ten en cuenta que tardarás entre un día o dos.</p>
+<p style="text-align: center;">En <a href="https://www.viajarporfilipinas.com/como-llegar-puerto-princesa-palawan/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Puerto Princesa</strong></a> te contamos más.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Consejos para visitar Puerto Princesa</span></h3>
+<p style="text-align: justify;">Ahora que ya sabes qué hacer en Puerto Princesa, ten en cuenta estos <strong>consejos</strong> para que tu viaje sea más sencillo:</p>
+<ul style="text-align: justify;">
+<li>Saca dinero en los <strong>cajeros automáticos</strong> del centro. Si luego vas a ir a Port Barton, es mejor llevar efectivo porque a veces los cajeros se quedan sin dinero y lo mismo (aunque en menor medida) en El Nido. Como te hemos contado en otras ocasiones, la mejor forma de obtener efectivo es usando Remitly, ya que te ahorras las comisiones de los cajeros y el tipo de cambio es mejor. En Puerto Princesa tienes un montón de pawnshop y cajeros para conseguir dinero de esta manera. Te contamos de qué va esto en <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener"><strong>Remitly en Filipinas</strong></a> y con <a href="https://remitly.tod8mp.net/c/1436363/2043894/10408" target="_blank" rel="nofollow noopener"><strong>nuestro enlace</strong></a>, además de mejor tipo de cambio, tienes 10€ gratis.</li>
+<li>Si traes efectivo y no has cambiado en Manila (el tipo de cambio es muy bueno en el aeropuerto), en el aeropuerto de Puerto Princesa, también encontrarás buen tipo de cambio. También tienes varios bancos y oficinas de tipo de cambio repartidas por la ciudad.</li>
+<li>En cuanto a internet, desde nuestra experiencia, lo mejor es ir al SM City Puerto Princesa, donde tienes tiendas de Globe y Smart, donde podrás comprar una sim y poner tarifas más económicas que las del aeropuerto. Tienes más información en <a title="Internet en Filipinas: qué tarjeta SIM filipina escoger" href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener"><strong>Internet en Filipinas</strong></a>.</li>
+<li>La <strong>terminal de San José</strong> de Puerto Princesa es el punto desde el que salen la mayoría de furgonetas, buses y <em>jeepneys</em> a otros lugares de Palawan. Aun así, te recomendamos reconfirmar porque hay una nueva terminal a varios kilómetros llamada Irawan, desde la que salen muchos buses.</li>
+<li>Puedes <strong>moverte por Puerto Princesa</strong> en <em>tricycle</em>, pero es aún más económico y menos engorroso tomar un <em>multicab</em> (una especie de jeepneys pequeños). Los recorridos tanto al aeropuerto como a la terminal de buses cuestan entre 10 y 15 pesos por persona. Dicho esto, desde el aeropuerto hasta cualquier hotel céntrico no te costará más de 50 pesos en tricycle. Como siempre, es mejor acordar el precio con antelación.</li>
+<li>Puedes recorrer tranquilamente el centro de Puerto Princesa a pie, nosotros lo hemos hecho cantidad de veces. Es una ciudad segura.</li>
+<li>Si necesitas <strong>comprar productos</strong> como cremas solares o repelentes o un centro comercial grande, puedes ir al NCCC Mall, al Robinsons Place o al moderno SM City Puerto Princesa. Ten en cuenta que aquí serán mucho más baratos y de mejor calidad que en Port Barton y El Nido. Si estás a la caza y captura de cosas <a title="Qué comprar en Filipinas: los mejores souvenirs y tiendas" href="https://www.viajarporfilipinas.com/que-comprar-filipinas/" target="_blank" rel="noopener noreferrer"><strong>que comprar en Filipinas</strong></a>, échale un vistazo a nuestro artículo y encontrarás consejos así como lugares a los que ir de tiendas.</li>
+<li>Como posiblemente hayas adivinado, es en Puerto Princesa donde están los mejores <strong>hospitales</strong> de Palawan. Por eso, si te pasa algo grave durante tu recorrido por la isla, aquí es donde tienes las posibilidades de ser mejor atendido, concretamente en el ACE Medical Center Palawan o en el Adventist Hospital. De ser algo aún más importante, tendrás que ser trasladado a Manila. Todos estos son centros privados, por lo que la atención es de pago. Es importantísimo, por ello, viajar con el <a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener">mejor seguro de viaje para Filipinas</a>. Haciendo clic <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=ppc" target="_blank" rel="nofollow noopener"><strong>ESTE ENLACE</strong></a> te llevas un <strong>5% de descuento</strong> en el que nosotros llevamos usando más de 10 años por el país y también nos ayudas a poder dedicar tiempo a crear estas guías.</li>
+</ul>
+<div id="attachment_14316" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-14316" class="size-full wp-image-14316" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Dónde comer en Puerto Princesa" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-14316" class="size-full wp-image-14316" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103.jpg" alt="Dónde comer en Puerto Princesa" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/que-hacer-puerto-princesa-103-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-14316" class="wp-caption-text">Pagetek Foodcourt</p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Preguntas frecuentes sobre Puerto Princesa</span></h3>
+<p style="text-align: justify;">Para resumir lo dicho, aquí respondemos a las preguntas más frecuentes sobre este destino filipino:</p>
+<p style="text-align: justify;"><em><strong>¿Cuánto tiempo hay que estar en Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">Depende mucho del tiempo que tengas para visitar Filipinas. Podrías directamente saltártela e ir hacia Port Barton o El Nido. Nuestro consejo es que analices qué actividades te cuadraría hacer, ya que de eso dependerá el número de días a invertir.</p>
+<p style="text-align: justify;"><em><strong>¿Cómo moverse en Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">El centro se puede recorrer perfectamente a pie. Si no quieres andar, tienes tricycles y multicabs. Un recorrido en tricycle por el centro de la ciudad y/o desde el aeropuerto no debería costar más de 50 pesos.</p>
+<p style="text-align: justify;"><em><strong>¿Por qué es famoso Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">Por ser la capital de la isla de Palawan y porque desde ella hay varias excursiones interesantes como la del Río Subterráneo o la del tiburón ballena (en temporada). Desde aquí también salen los tours hacia Balabac.</p>
+<p style="text-align: justify;"><em><strong>¿Vale la pena quedarse en Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">Depende del tiempo del que dispongas y de tus intereses.</p>
+<p style="text-align: justify;"><em><strong>¿Qué playas visitar en Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">En la propia ciudad no hay ninguna bonita, pero relativamente cerca están las de Nagtabon y Talaudyong.</p>
+<p style="text-align: justify;"><em><strong>¿Qué hacer en Puerto Princesa?</strong></em></p>
+<p style="text-align: justify;">Tienes algunos lugares históricos y religiosos como la Catedral de la Inmaculada Concepción de María, Plaza Cuartel, el Palawan Heritage Center o el Palawan Special Battalion WW-II Memorial Museum. Después, el Baywalk es una zona agradable para pasear por la tarde y siempre puedes cotillear en el mercado. Aun así, lo más interesante que hacer en Palawan son sus excursiones, siendo las que más resaltan las del tiburón ballena (de abril a octubre), el Río Subterráneo de Puerto Princesa y la de Honda Bay.</p>
+<hr />
+<h3><span style="color: #33cccc;">Mapa de Puerto Princesa</span></h3>
+<p>Aquí hemos marcado los principales lugares que visitar en Puerto Princesa que te hemos ido comentando:</p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/0/embed?mid=1ZbUt0Z6ZEpWaMHLNVtHgWbCudNmXqQsB"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZbUt0Z6ZEpWaMHLNVtHgWbCudNmXqQsB" width="1000" height="480"></iframe></noscript></p>
+<hr />
+<p style="text-align: center;"><em>¿Tienes alguna duda sobre qué hacer en Puerto Princesa, Palawan? Nos encantará responderla en los comentarios.</em></p>
+<p style="text-align: justify;">Esta es solo una pequeña parte de toda la info que tenemos sobre la isla más famosa de Filipinas. Si quieres seguir investigando, te animamos a leer nuestra guía <a title="Qué ver en Palawan: guía para viajar a una de las joyas de Filipinas" href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/" target="_blank" rel="noopener"><strong>Qué hacer en Palawan</strong></a>.</p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">302 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/comment-page-13/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56881">
+		<article id="comment-56881" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Elena Piñol Algueró</span>				<span class="comment_date">
+					el 13/05/2025 a las 01:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, me encanta vuestro blog! Podéis recomendarme donde hacer el tour del tiburón ballena en Puerto Princesa? Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56881' data-commentid="56881" data-postid="2833" data-belowelement="comment-56881" data-respondelement="respond" data-replyto="Responder a Elena Piñol Algueró" aria-label='Responder a Elena Piñol Algueró'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56885">
+		<article id="comment-56885" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/05/2025 a las 09:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Elena, muchas gracias. Ahora te lo enviamos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56776">
+		<article id="comment-56776" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Enrique</span>				<span class="comment_date">
+					el 10/05/2025 a las 07:06				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!</p>
+<p>Estamos en Puerto Princesa y nos gustaría ver los tiburones ballena.</p>
+<p>Un saludo! Gracias por el blog</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56776' data-commentid="56776" data-postid="2833" data-belowelement="comment-56776" data-respondelement="respond" data-replyto="Responder a Enrique" aria-label='Responder a Enrique'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56786">
+		<article id="comment-56786" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/05/2025 a las 09:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Enrique, gracias a ti por leernos. Ahora mismo os pasamos la info. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56560">
+		<article id="comment-56560" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lucía</span>				<span class="comment_date">
+					el 04/05/2025 a las 10:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!!</p>
+<p>Quería ir a Puerto Princesa y me encantaría hacer la excursión del tiburón ballena, ¿podrías pasarme el contacto? Mil gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56560' data-commentid="56560" data-postid="2833" data-belowelement="comment-56560" data-respondelement="respond" data-replyto="Responder a Lucía" aria-label='Responder a Lucía'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56561">
+		<article id="comment-56561" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 04/05/2025 a las 11:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía, el 25 de abril te pasamos otro correo con info. Si lo recibiste, agradecemos respuesta antes de seguir enviándote más datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55968">
+		<article id="comment-55968" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Nuria</span>				<span class="comment_date">
+					el 18/04/2025 a las 16:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Vamos a pasar unos días por Palawan y nos gustaría saber el contacto del nado con el tiburón ballena de manera respetuosa. Muchas gracias 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55968' data-commentid="55968" data-postid="2833" data-belowelement="comment-55968" data-respondelement="respond" data-replyto="Responder a Nuria" aria-label='Responder a Nuria'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55978">
+		<article id="comment-55978" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/04/2025 a las 10:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Nuria, pues ya lo debes de tener : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55901">
+		<article id="comment-55901" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Hugo</span>				<span class="comment_date">
+					el 17/04/2025 a las 07:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas!!</p>
+<p>Voy con un grupo de amigos a Filipinas del 29 al 7 de mayo,  y va a ser nuestra primer viaje al país .Vamos a estar por Port Barton, El Nido y Puerto Princesa. </p>
+<p>¿Nos podéis pasar el contacto del tiburón Ballena en Puerto Princesa y contactos para alquilar motos en El Nido y Port Barton?.</p>
+<p>Muchas gracias por el blog, ya no solo por lo claro que lo explicáis todo, sino también por apoyar actividades que promueven el turismo responsable.</p>
+<p>Que ganas de llegar ya 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55901' data-commentid="55901" data-postid="2833" data-belowelement="comment-55901" data-respondelement="respond" data-replyto="Responder a Hugo" aria-label='Responder a Hugo'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55908">
+		<article id="comment-55908" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/04/2025 a las 07:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Hugo, muchas gracias por tus palabras y qué bien que vengáis por aquí ; ) ahora mismo te pasamos la información. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55748">
+		<article id="comment-55748" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Bea</span>				<span class="comment_date">
+					el 14/04/2025 a las 11:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! </p>
+<p>Estoy visitando Puerto Princesa y me encantaría hacer la excursión del tiburón ballena, ¿podrías pasarme el contacto porfi? Mil gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55748' data-commentid="55748" data-postid="2833" data-belowelement="comment-55748" data-respondelement="respond" data-replyto="Responder a Bea" aria-label='Responder a Bea'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55769">
+		<article id="comment-55769" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/04/2025 a las 20:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Bea, por supuesto, ahora te lo enviamos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55745">
+		<article id="comment-55745" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Itziar</span>				<span class="comment_date">
+					el 14/04/2025 a las 09:28				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!!! Primero, muchas gracias por toda la informacion que compartis.<br />
+Segundo,  podrías pasarme tmabein el contacto para ver el tiburon  ballena?<br />
+Saludos, y gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55745' data-commentid="55745" data-postid="2833" data-belowelement="comment-55745" data-respondelement="respond" data-replyto="Responder a Itziar" aria-label='Responder a Itziar'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55767">
+		<article id="comment-55767" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/04/2025 a las 20:33				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Itziar, gracias a ti por leernos. Ahora mismo te lo pasamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-55960">
+		<article id="comment-55960" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Maria</span>				<span class="comment_date">
+					el 18/04/2025 a las 12:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenas ! Somos un grupo de tres amigas que estamos ahora en Port Barton, en 3-4 días iremos a Puerto Princesa con intencion de hacer la excursion del tiburon ballena ! Tal y como hemos leido en el blog, podrias pasarnos el contacto para hacerlo de una manera menos masificada y respetando lo maximo posible la naturaleza ? Gracias</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55976">
+		<article id="comment-55976" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/04/2025 a las 09:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, claro que sí, ahora mismo te lo pasamos. Abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55696">
+		<article id="comment-55696" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Francesco</span>				<span class="comment_date">
+					el 13/04/2025 a las 14:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola,</p>
+<p>Es mi segundo viaje en Filipinas y vuestro blog me sigue siendo de grande ayuda, muchas gracias!</p>
+<p>Me podrías pasar el contacto por el tiburón ballena en Puerto Princesa? ????????</p>
+<p>Sería para el día 29 de abril.<br />
+Donde me puedo informar si siguen los avistamientos?</p>
+<p>Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55696' data-commentid="55696" data-postid="2833" data-belowelement="comment-55696" data-respondelement="respond" data-replyto="Responder a Francesco" aria-label='Responder a Francesco'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55720">
+		<article id="comment-55720" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/04/2025 a las 22:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Francesco, nos alegramos mucho : ) los avistamientos se están dando ya, así que puedes reservar sin problemas. Ahora mismo te enviamos la información. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55659">
+		<article id="comment-55659" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Mitchell Rodríguez</span>				<span class="comment_date">
+					el 12/04/2025 a las 23:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas! Visitaremos Puerto Princesa el 6-7 de mayo y nos gustaría hacer el nado con el tiburón ballena.</p>
+<p>¿Nos podéis por favor enviar los contactos?</p>
+<p>Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55659' data-commentid="55659" data-postid="2833" data-belowelement="comment-55659" data-respondelement="respond" data-replyto="Responder a Mitchell Rodríguez" aria-label='Responder a Mitchell Rodríguez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55673">
+		<article id="comment-55673" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/04/2025 a las 02:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mitchell, claro que sí, ahora mismo lo tienes. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/comment-page-13/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-puerto-princesa-palawan/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='2833' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d424a84cdf" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="25"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><link rel='stylesheet' id='et-shortcodes-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes-legacy.css?ver=4.24.2' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2833","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script type="text/javascript" id="et-shortcodes-js-js-extra">
+/* <![CDATA[ */
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=4.24.2" id="et-shortcodes-js-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

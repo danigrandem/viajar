@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700|Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8sDE3U5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE3U5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tvE3U5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8uDFHU5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8u6FHU5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8vdFHU5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8v0FHU5f4c.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYiFWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-h4-FWUUw.ttf) format('truetype');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-FWUUw.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8sDE3U5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE3U5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tvE3U5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8uDFHU5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8u6FHU5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8vdFHU5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8v0FHU5f4Q.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYiFWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-h4-FWUUz.woff) format('woff');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-FWUUz.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8sDE3U5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE3U5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tvE3U5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8uDFHU5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8u6FHU5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8vdFHU5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8v0FHU5f4I.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYiFWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-h4-FWUU1.woff2) format('woff2');}@font-face {font-family: 'Rubik';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-ro-FWUU1.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Guía de SIARGAO para viajar a Filipinas por libre - Viajar por Filipinas</title>
+	<meta name="description" content="Si vas a viajar a Siargao y quieres disfrutar al máximo de la isla, aquí te traemos la Guía de Siargao que nace tras varias visitas a ese paraíso." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/guia-de-siargao/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Guía de SIARGAO para viajar a Filipinas por libre - Viajar por Filipinas" />
+	<meta property="og:description" content="Si vas a viajar a Siargao y quieres disfrutar al máximo de la isla, aquí te traemos la Guía de Siargao que nace tras varias visitas a ese paraíso." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/guia-de-siargao/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:modified_time" content="2025-04-15T17:04:17+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/guia-siargao-fb.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Tiempo de lectura" />
+	<meta name="twitter:data1" content="29 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/guia-de-siargao/","url":"https://www.viajarporfilipinas.com/guia-de-siargao/","name":"▷ Guía de SIARGAO para viajar a Filipinas por libre - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/guia-de-siargao/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/guia-de-siargao/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/guia-siargao-fb.jpg","datePublished":"2018-06-02T05:28:28+00:00","dateModified":"2025-04-15T17:04:17+00:00","description":"Si vas a viajar a Siargao y quieres disfrutar al máximo de la isla, aquí te traemos la Guía de Siargao que nace tras varias visitas a ese paraíso.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/guia-de-siargao/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/guia-de-siargao/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/guia-de-siargao/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/guia-siargao-fb.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/guia-siargao-fb.jpg","width":1200,"height":630,"caption":"Guía de Siargao"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/guia-de-siargao/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Siargao"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/pages/131" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=131' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fguia-de-siargao%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fguia-de-siargao%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-core-unified-131-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/131/et-core-unified-131.min.css?ver=1745575607" /><link rel="stylesheet" id="et-core-unified-deferred-131-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/131/et-core-unified-deferred-131.min.css?ver=1745575607" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="page-template-default page page-id-131 cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-131 current_page_item menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/" aria-current="page">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-131" class="post-131 page type-page status-publish has-post-thumbnail hentry">
+
+				
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1><span style="color: #ffffff;">Guía de Siargao</span></h1></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Siargao es, por muchas razones, una de las islas más de moda de Filipinas. Meca para los amantes del surf, gracias a la famosa ola <strong>Cloud 9</strong>, este rincón tropical tiene mucho más que ofrecer a los que todavía no se animan con la tabla. Sus paisajes de palmerales infinitos, lagunas y piscinas naturales, los <em>island hopping</em> a paraísos cercanos, el ambiente nocturno y la posibilidad de hacer una ruta por carretera a tu aire la han convertido en <strong>la favorita de muchos viajeros </strong>en los últimos años y el hogar de muchos extranjeros (¡muchos de ellos españoles!) que han decidido asentarse. En esta <strong>guía de Siargao</strong> encontrarás toda la información que necesitas para sacarle todo el jugo.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				
+				
+				<a href="http://www.iatiseguros.com/?r=2655703123870&#038;cmp=GuiaSiargao" target="_blank"><span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="700" height="125" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento seguro de viaje" title="descuento seguro de viaje" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5-300x54.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5-480x86.jpg 480w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" class="wp-image-11017" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5.jpg" /><noscript><img fetchpriority="high" decoding="async" width="700" height="125" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5.jpg" alt="descuento seguro de viaje" title="descuento seguro de viaje" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5-300x54.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b5-480x86.jpg 480w" sizes="(max-width: 700px) 100vw, 700px" class="wp-image-11017" /></noscript></span></a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><strong><a href="#quehacersiargao">QUÉ HACER</a> &#8211; <a href="#islandhoppingsiargao">ISLA HOPPING</a> &#8211; <a href="#donde-comer-siargao">DÓNDE COMER</a> &#8211; <a href="#transporte-siargao">CÓMO MOVERSE</a>&#8211; <a href="#llegar-siargao">CÓMO LLEGAR</a> &#8211; <a href="#dormir-siargao">DORMIR EN SIARGAO</a></strong></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Hace ya unos cuantos años que pisamos por primera vez Siargao. ¡Caímos tan rendidos a sus encantos que nos hizo plantearnos la posibilidad de quedarnos a vivir! Y, aunque bien es cierto que la isla ha cambiado mucho (quizás demasiado y demasiado rápido), todavía sigue siendo <strong>uno de nuestros destinos más queridos en Filipinas</strong> por muchas razones.</p>
+<p style="text-align: justify;">En Siargao hay <strong>muchísimo que hacer además de surfear</strong>. Su <strong>carretera</strong> circular es una de las más escénicas por las que hemos circulado y te atrapa con sus paisajes de miles de palmeras. Y, aunque muchas de sus playas son casi inexistentes en marea baja y sus <em>island hopping</em> cada vez son más populares, no te faltan opciones para salirte de la ruta y buscar ese <strong>paraíso playero</strong> que tienes en mente. No es muy difícil que tú también salgas de allí pensando “pues yo me quedaría aquí una temporada”. Para que eso te ocurra, hemos preparado la <strong>mejor guía de Siargao</strong> que encontrarás en la red. Descubre las maneras más cómodas para llegar, los mejores hoteles donde dormir, cómo moverte por la isla, los restaurantes más deliciosos dónde comer y, por supuesto, todo lo que hacer en Siargao en tu viaje por libre por Filipinas.</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_3_5 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div id="quehacersiargao" class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>QUÉ HACER EN SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Ya te lo hemos avanzado arriba, hay mucho que hacer en Siargao. Eso de que “si no haces surf, no vayas” es un sinsentido. Mira todo lo que puedes hacer en Siargao:</p>
+<ul style="text-align: justify;">
+<li><strong>Surf:</strong> por supuesto. Ya seas principiante o profesional o quieras aprender, Siargao es el sitio para darle al <a href="https://www.viajarporfilipinas.com/surf-filipinas/" target="_blank" rel="noopener noreferrer" title="surf en Filipinas">surf en Filipinas</a>. Además de la famosa ola <strong>Cloud 9</strong>, hay un montón de puntos para todo tipo de surfistas. Si te quieres iniciar, hay infinidad instructores dispuestos a enseñarte por unos 600 pesos por hora, incluido el alquiler de tabla.</li>
+<li><strong>Recorrer las carreteras de Siargao:</strong> lo que, posiblemente, te enamore más de esta isla es darle la vuelta por su carretera costera. Te esperan mares de palmeras, manglares, ríos, playas, piscinas naturales (Magpupungko Rock Pools), alguna cascada y, sobre todo, mucha tranquilidad.</li>
+<li><strong><em>Island hopping</em>:</strong> muy diferentes a los de Coron y El Nido, pero no por ello peores. Te contamos más sobre ellos a continuación.</li>
+<li><strong>Playas:</strong> digámoslo alto, Siargao no es que tenga las mejores playas de Filipinas, pero  algunas de ellas no están nada mal, sobre todo las que se visitan con <em>los island hopping</em>. Dentro de la isla, la mayoría de ellas tienen poca profundidad, por lo que, al bajar la marea, es difícil bañarse. Aun así, gracias a su tranquilidad, disfrutarás mucho de <strong>Alegría Beach</strong> y las cercanas a Pacifico (sin bautizar). A nosotros nos gustan mucho las de la zona de <strong>Malinao</strong>, cerca del hotel Sandy Feet. Sus palmeras cercanas al mar nos parecen muy fotogénicas.</li>
+<li><strong>Ambiente nocturno: </strong>si bien la mayoría de ciudades o pueblos filipinos se apagan sobre las 9 o 10 de la noche, ¡en Siargao no pasa! Por ello, no podíamos dejar de incluir en esta guía de Siargao la fiesta. Casi cada día encontrarás un bar en el que tomar algo y echarte unos bailes, así que, mete esta isla en tu itinerario por Filipinas, si valoras algo de marchilla.</li>
+</ul>
+<p style="text-align: justify;">En esta <strong>guía de Siargao</strong> te recomendamos que, al menos, dediques <strong>4 días completos</strong> (sin traslados) a descubrir la isla. Si puede ser 5, mucho mejor. De verdad, si solo le dedicas 2 o 3 días te arrepentirás.</p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_2_5 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="433" height="698" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20433%20698'%3E%3C/svg%3E" alt="Guía de Siargao" title="Guía de Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2.jpg 433w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2-186x300.jpg 186w" data-lazy-sizes="(max-width: 433px) 100vw, 433px" class="wp-image-4693" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2.jpg" /><noscript><img decoding="async" width="433" height="698" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2.jpg" alt="Guía de Siargao" title="Guía de Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2.jpg 433w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-2-186x300.jpg 186w" sizes="(max-width: 433px) 100vw, 433px" class="wp-image-4693" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_5">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/que-hacer-siargao/" target="_blank">QUÉ HACER EN SIARGAO</a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_2">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="900" height="675" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20675'%3E%3C/svg%3E" alt="Siargao Filipinas" title="Siargao Filipinas" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8.jpg 900w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-510x382.jpg 510w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" class="wp-image-4704" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8.jpg" /><noscript><img decoding="async" width="900" height="675" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8.jpg" alt="Siargao Filipinas" title="Siargao Filipinas" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8.jpg 900w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-8-510x382.jpg 510w" sizes="(max-width: 900px) 100vw, 900px" class="wp-image-4704" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_4 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_2_5 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_3">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="696" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20696%20493'%3E%3C/svg%3E" alt="Island hopping en Siargao" title="Island hopping en Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4.jpg 696w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4-400x284.jpg 400w" data-lazy-sizes="(max-width: 696px) 100vw, 696px" class="wp-image-4694" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4.jpg" /><noscript><img decoding="async" width="696" height="493" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4.jpg" alt="Island hopping en Siargao" title="Island hopping en Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4.jpg 696w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-4-400x284.jpg 400w" sizes="(max-width: 696px) 100vw, 696px" class="wp-image-4694" /></noscript></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div id="islandhoppingsiargao" class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>ISLAND HOPPING EN SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Podrás descubrir las vecinas islas de <strong>Daku, Naked y Guyam</strong>, pero también los manglares de Del Carmen, el famoso <strong>Sugba Lagoon</strong> y la espectacular lengua de arena de Kawhagan Island. Los más aventureros disfrutarán de <strong>Corregidor, Mam’om o Sohoton</strong>, entre muchos otros rincones.</p>
+<p style="text-align: justify;">Para saber cómo hacerlos, cuánto cuestan y mucho más, lee:</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/island-hopping-siargao/" target="_blank">ISLAND HOPPING EN SIARGAO</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_7">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_4">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="900" height="675" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20675'%3E%3C/svg%3E" alt="guía para viajar a Siargao" title="guía para viajar a Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9.jpg 900w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-510x382.jpg 510w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" class="wp-image-4705" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9.jpg" /><noscript><img decoding="async" width="900" height="675" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9.jpg" alt="guía para viajar a Siargao" title="guía para viajar a Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9.jpg 900w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-9-510x382.jpg 510w" sizes="(max-width: 900px) 100vw, 900px" class="wp-image-4705" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_5 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_8">
+				<div class="et_pb_column et_pb_column_3_5 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div id="donde-comer-siargao" class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>DÓNDE COMER EN SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_2 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Es probable que Siargao sea el paraíso para los que tengan un paladar “gourmet”. Hay un montón de sitios para mover el bigote y, aunque muchos de ellos tirando a caros, <strong>para todos los presupuestos</strong>. Desde las famosas pizzas y <em>risottos</em> del Kermit hasta los <em>smoothies bowls</em> del Shaka pasando por las <em>carenderias</em> de barrio con platos a 50 pesos, ¡de todo! Encontrarás todo sobre el buen comer aquí:</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/donde-comer-siargao/" target="_blank">COMER EN SIARGAO</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_2_5 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_5">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="700" height="496" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20496'%3E%3C/svg%3E" alt="dónde comer en Siargao" title="dónde comer en Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5-400x284.jpg 400w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" class="wp-image-4696" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5.jpg" /><noscript><img decoding="async" width="700" height="496" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5.jpg" alt="dónde comer en Siargao" title="dónde comer en Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-5-400x284.jpg 400w" sizes="(max-width: 700px) 100vw, 700px" class="wp-image-4696" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_9">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_6">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="1000" height="404" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20404'%3E%3C/svg%3E" alt="guía de restaurantes de Siargao" title="guía de restaurantes de Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10-300x121.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10-768x310.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" class="wp-image-4706" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10.jpg" /><noscript><img decoding="async" width="1000" height="404" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10.jpg" alt="guía de restaurantes de Siargao" title="guía de restaurantes de Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10-300x121.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-10-768x310.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" class="wp-image-4706" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_10">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div id="transporte-siargao" class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>CÓMO MOVERSE POR SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_3 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;"><span style="color: #000000;">Si bien no se puede decir que el transporte público (buses o jeepneys) sea muy frecuente y eficiente, encontrarás maneras de moverte por Siargao. Si tienes la pericia y la licencia oportuna, nuestro consejo es que te <strong>alquiles una moto</strong>, ya que es la mejor manera de descubrir la isla. De otra manera, también puedes alquilar un coche o contratar los servicios de un conductor de <em>trycicle</em> o un <em>habal-habal</em> (conductores de moto). Como particularidad de esta isla, <strong>hay una empresa que alquila tuk-tuks</strong> muy chulos. Aunque es más caro que alquilar una moto, es una buena opción si sois varios o viajáis en familia.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>¿Cómo llegar desde el aeropuerto de Siargao a tu hotel?</strong> Desde el aeropuerto de Siargao salen furgonetas compartidas a cualquier punto de General Luna, Cloud 9 y Malinao. Cobran caro, unos 200 pesos por persona. Si quieres economizar y no vas muy cargado, puedes alquilar una moto fuera del aeropuerto. Según el tiempo que la alquiles, podrás encontrarla por 250-400 pesos al día.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Te contamos todo esto y más en:</span></p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_3_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_3 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/como-moverse-por-siargao/" target="_blank">MOVERSE POR SIARGAO</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_7 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_11">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_7">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="490" height="660" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20490%20660'%3E%3C/svg%3E" alt="cómo llegar a Siargao" title="cómo llegar a Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7.jpg 490w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7-223x300.jpg 223w" data-lazy-sizes="(max-width: 490px) 100vw, 490px" class="wp-image-4698" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7.jpg" /><noscript><img decoding="async" width="490" height="660" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7.jpg" alt="cómo llegar a Siargao" title="cómo llegar a Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7.jpg 490w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-7-223x300.jpg 223w" sizes="(max-width: 490px) 100vw, 490px" class="wp-image-4698" /></noscript></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_2_3 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div id="llegar-siargao" class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>CÓMO LLEGAR A SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_4 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Debido al creciente aumento del turismo, ahora es más fácil llegar a Siargao que nunca. Básicamente puedes:</p>
+<ul style="text-align: justify;">
+<li><strong>Llegar a Siargao en avión:</strong> existen varios vuelos diarios y directos desde Cebú y Manila.</li>
+<li><strong>Llegar a Siargao en ferri:</strong> desde Surigao salen varios barcos más o menos desde las 4:00 a las 12:00. Para llegar a Surigao, puedes coger uno de los 3 ferris que salen desde Cebu casi diariamente, podrás dormir por el camino, pues tienen camas. Si vienes desde Camiguin, también podrás ir enlazando transportes, como te contamos en <a href="https://www.viajarporfilipinas.com/como-ir-de-camiguin-siargao/">Cómo ir a Siargao desde Camiguin</a>.</li>
+</ul>
+<p style="text-align: justify;">En esta guía de Siargao solo tienes una pequeña introducción, aquí encontrarás todo explicado con detalle:</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_12">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_4_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_4 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/como-llegar-siargao/" target="_blank">CÓMO LLEGAR A SIARGAO</a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_8">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="1000" height="532" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20532'%3E%3C/svg%3E" alt="visitar Siargao" title="visitar Siargao" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11-300x160.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11-768x409.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" class="wp-image-4707" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11.jpg" /><noscript><img decoding="async" width="1000" height="532" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11.jpg" alt="visitar Siargao" title="visitar Siargao" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11-300x160.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/08/guia-de-siargao-11-768x409.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" class="wp-image-4707" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_8 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_13">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div id="dormir-siargao" class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;">DORMIR EN SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_5 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Aunque se están construyendo hoteles y resorts casi a marchas forzadas, lo cierto es que <strong>todavía es difícil encontrar dónde dormir en Siargao sin dejarte un pastizal</strong> o que sea un antro. Con su creciente popularidad, los precios han subido como la espuma y en esta guía de Siargao te recomendamos encarecidamente que reserves tu alojamiento con <strong>antelación</strong>, sobre todo en Navidades, Semana Santa y los meses de julio, agosto y septiembre (temporada seca en la isla y cuando se celebran campeonatos de surf).</p>
+<p style="text-align: justify;">La mayoría de hoteles se concentra entre el pueblo de <strong>General Luna</strong> y la zona de Cloud 9. Si quieres mayor tranquilidad, pero acceso sencillo a restaurantes y bares, en <strong>Malinao</strong> están surgiendo más opciones. Para paz total y buen surf, lo tuyo sería <strong>Pacífico</strong>. Encuentra toda la info que necesitas en:</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_5_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_5 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/donde-dormir-siargao/" target="_blank">DORMIR EN SIARGAO</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Si estás buscando que te experiencia de alojamiento vaya un poco más allá, no dudes en echarle un ojo a nuestra guía exclusiva de los mejores resorts de Siargao. Piscinas infintas, habitaciones de ensueño y un servicio totalmente <strong>a la altura de lo que te mereces</strong>:</p>
+<p>&nbsp;</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_6_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_6 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/mejores-resorts-siargao/" target="_blank">RESORTS DE SIARGAO</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>En cambio, si buscas una experiencia diferente, de precios reducidos donde puedas conocer también a otros viajeros y compartir actividades y zonas comunes con ellos, seguro que te interesa esta otra guía:</p>
+<p>&nbsp;</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_7 et_pb_bg_layout_light" href="https://www.viajarporfilipinas.com/mejores-hostels-siargao/" target="_blank">HOSTELS EN SIARGAO</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_9 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_14">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>CONSEJOS PARA VISITAR SIARGAO</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_6 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_19  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: justify;">Aquí te dejamos algunos consejos que agregar a esta Guía de Siargao:</p>
+<ul>
+<li style="text-align: justify;"><strong>CAJEROS EN SIARGAO:</strong> hay cajeros automáticos en General Luna y Dapa. Ojo, hay veces que alguno no funciona o no tiene dinero suficiente, procura llevar efectivo. Lee nuestros artículos <span style="color: #ff9900;"><strong><a href="https://www.viajarporfilipinas.com/mejor-tarjeta-viajar-filipinas/" style="color: #ff9900;" target="_blank" rel="noopener noreferrer" title="Mejores tarjetas para viajar a Filipinas ">Mejores tarjetas para viajar a Filipinas </a></strong></span>y <span style="color: #ff9900;"><strong><a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/" style="color: #ff9900;" target="_blank" rel="noopener noreferrer" title="Dinero en Filipinas">Dinero en Filipinas</a></strong></span> para no dejarte mucho dinero en comisiones.</li>
+<li style="text-align: justify;"><strong>CUÁNDO VIAJAR A SIARGAO: </strong>el clima de Siargao es distinto al del resto de Filipinas. La mejor época para viajar a Siargao va de junio a noviembre, aproximadamente.</li>
+<li style="text-align: justify;"><strong>SEGURIDAD EN SIARGAO:</strong> a excepción de algunos hurtos, Siargao es seguro, pero la mayoría de accidentes en la isla son de <strong>tráfico</strong> y han llegado a ser mortales. Por favor, no viajes a Siargao sin seguro. El hospital de la isla es una verdadera pena (hemos tenido, por desgracia, que probarlo) y si te pasa algo grave tendrás que ser trasladado de urgencia a Cebu o Manila. Este es el <span style="color: #ff9900;"><strong><a href="https://www.viajarporfilipinas.com/mejor-seguro-viaje/" style="color: #ff9900;" target="_blank" rel="noopener noreferrer" title="mejor seguro de viajes y, por ser nuestro lector, tienes un 5% de descuento.">mejor seguro de viajes y, por ser nuestro lector, tienes un 5% de descuento.</a></strong></span></li>
+<li style="text-align: justify;"><strong>INTERNET EN SIARGAO:</strong> la conexión 3G/4G y el wifi en hoteles y restaurantes suele ir bastante a pedales… En esta guía de Siargao te contamos que nuestra mejor experiencia fue en el centro del pueblo de General Luna. Si tienes que usar internet con urgencia, lo mejor es comprar una tarjeta SIM, en <span style="color: #ff9900;"><strong><a href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" style="color: #ff9900;" target="_blank" rel="noopener noreferrer" title="Internet en Filipinas ">Internet en Filipinas </a></strong></span>tienes más info.</li>
+<li style="text-align: justify;"><strong>RESERVA CON ANTELACIÓN</strong>: Siargao es lo más <em>trendy</em> de Filipinas y los precios están por las nubes. Si no quieres quedarte con lo peorcito, reserva tu alojamiento en Siargao con antelación.</li>
+</ul></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='none' onload="media='all'" />
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"131","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

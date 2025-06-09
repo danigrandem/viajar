@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer en Loboc, el corazón de Bohol - Viajar por Filipinas</title>
+	<meta name="description" content="Hay mil cosas que hacer en Loboc: cascadas, deportes de aventura, fauna, lugares únicos, etc. Te contamos los secretos del corazón de Bohol." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-loboc/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer en Loboc, el corazón de Bohol - Viajar por Filipinas" />
+	<meta property="og:description" content="Hay mil cosas que hacer en Loboc: cascadas, deportes de aventura, fauna, lugares únicos, etc. Te contamos los secretos del corazón de Bohol." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-loboc/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2019-12-11T06:29:54+00:00" />
+	<meta property="article:modified_time" content="2025-01-19T00:04:14+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="749" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="23 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué hacer en Loboc, el corazón de Bohol","datePublished":"2019-12-11T06:29:54+00:00","dateModified":"2025-01-19T00:04:14+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/"},"wordCount":4727,"commentCount":545,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10.jpg","articleSection":["Bohol","Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-loboc/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/","url":"https://www.viajarporfilipinas.com/que-hacer-loboc/","name":"▷ Qué hacer en Loboc, el corazón de Bohol - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10.jpg","datePublished":"2019-12-11T06:29:54+00:00","dateModified":"2025-01-19T00:04:14+00:00","description":"Hay mil cosas que hacer en Loboc: cascadas, deportes de aventura, fauna, lugares únicos, etc. Te contamos los secretos del corazón de Bohol.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-loboc/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10.jpg","width":1000,"height":749,"caption":"que hacer en Loboc"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-loboc/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué hacer en Loboc, el corazón de Bohol"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-loboc/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué hacer en Loboc, el corazón de Bohol del feed" href="https://www.viajarporfilipinas.com/que-hacer-loboc/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/5137" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=5137' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-loboc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-loboc%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-5137-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/5137/et-core-unified-5137.min.css?ver=1745576280" /><link rel="stylesheet" id="et-core-unified-deferred-5137-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/5137/et-core-unified-deferred-5137.min.css?ver=1745576280" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-5137 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-5137" class="et_pb_post post-5137 post type-post status-publish format-standard has-post-thumbnail hentry category-bohol category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué hacer en Loboc, el corazón de Bohol</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/bohol/" rel="category tag">Bohol</a>, <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="que hacer en Loboc" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-1000x675.jpg" alt="que hacer en Loboc" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Cada vez son más los viajeros que, en su paso por la <a href="https://www.viajarporfilipinas.com/guia-de-bohol/">isla de Bohol</a>, deciden asentar su base en la zona de <strong>Loboc</strong> en lugar de hacerlo en la turística Panglao. ¿El motivo? ¡<strong>Hay muchas cosas que hacer en Loboc</strong>!</p>
+<p style="text-align: justify;">Si tu viaje a Filipinas está bien cargado de destinos en los que las playas serán las protagonistas o si simplemente no te llama demasiado Alona Beach o Panglao, merece la pena dedicarle unos días a esta zona repleta exuberante naturaleza en forma de ríos, cascadas y montañas. Hemos creado esta guía de “Qué hacer en Loboc” tras nuestras varias visitas desde 2010 para explorar esta increíble parte de Bohol. Así que, créenos, <strong>Loboc tiene algo que engancha</strong> y estás a punto de descubrirlo con nosotros.<span id="more-5137"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258961d7b62" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258961d7b62"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Cuantos_dias_estar_en_Loboc" title="Cuántos días estar en Loboc">Cuántos días estar en Loboc</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#Como_visitar_Loboc_y_sus_alrededores" title="Cómo visitar Loboc y sus alrededores">Cómo visitar Loboc y sus alrededores</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Que_ver_y_hacer_en_Loboc_el_otro_Bohol" title="Qué ver y hacer en Loboc, el otro Bohol">Qué ver y hacer en Loboc, el otro Bohol</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#1_Crucero_por_rio_Loboc" title="1. Crucero por río Loboc">1. Crucero por río Loboc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#2_Loboc_Ecoturism_Adventure_Park" title="2. Loboc Ecoturism Adventure Park">2. Loboc Ecoturism Adventure Park</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#3_Avistamiento_de_luciernagas_en_el_rio_Loboc" title="3. Avistamiento de luciérnagas en el río Loboc">3. Avistamiento de luciérnagas en el río Loboc</a><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-7" href="#%C2%BFComo_ver_luciernagas_en_Loboc" title="¿Cómo ver luciérnagas en Loboc?">¿Cómo ver luciérnagas en Loboc?</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#4_Paddle_surf_y_kayak_en_el_rio_Loboc" title="4. Paddle surf y kayak en el río Loboc">4. Paddle surf y kayak en el río Loboc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#5_Cascadas_cercanas" title="5. Cascadas cercanas">5. Cascadas cercanas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#6_Chocolate_Hills_o_Colinas_de_Chocolate" title="6. Chocolate Hills o Colinas de Chocolate">6. Chocolate Hills o Colinas de Chocolate</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#7_Bilar_Man_Made_Forest" title="7. Bilar Man Made Forest">7. Bilar Man Made Forest</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#8_Los_Tarseros_de_Corella" title="8. Los Tarseros de Corella">8. Los Tarseros de Corella</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#9_Puente_colgante_de_bambu_o_Sipatan_Twin_Hanging_Bridge" title="9. Puente colgante de bambú (o Sipatan Twin Hanging Bridge)">9. Puente colgante de bambú (o Sipatan Twin Hanging Bridge)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#10_Parroquia_San_Pedro_Apostol_y_el_pueblo" title="10. Parroquia San Pedro Apóstol y el pueblo">10. Parroquia San Pedro Apóstol y el pueblo</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-15" href="#Datos_practicos_sobre_Loboc" title="Datos prácticos sobre Loboc">Datos prácticos sobre Loboc</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-16" href="#Donde_dormir_en_Loboc" title="Dónde dormir en Loboc">Dónde dormir en Loboc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-17" href="#Como_llegar_a_Loboc" title="Cómo llegar a Loboc">Cómo llegar a Loboc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-18" href="#Donde_comer_en_Loboc" title="Dónde comer en Loboc">Dónde comer en Loboc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-19" href="#Mas_consejos_para_visitar_Loboc" title="Más consejos para visitar Loboc">Más consejos para visitar Loboc</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-20" href="#Mapa_de_Loboc" title="Mapa de Loboc">Mapa de Loboc</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_estar_en_Loboc"></span><span style="color: #33cccc;">Cuántos días estar en Loboc</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">El número de días que pasar en Loboc dependerá de lo holgado que sea tu itinerario y de las actividades de esta guía que quieras realizar. Nosotros, basándonos en nuestra experiencia, te recomendamos <strong>un mínimo de 2 días</strong> para poder dar la zona por visitada y 3 si te lo quieres tomar con más calma.</p>
+<p style="text-align: justify;">Una propuesta de ruta por Loboc, con <strong>dos días completos</strong>, sería:</p>
+<ul style="text-align: justify;">
+<li>Día 1: Visita a los tarseros en el santuario de Corella, crucero por el río Loboc (o paseo en kayak, SUP o barco, lo que quieras), Man Made Forest, Colinas de Chocolate, Pangas Falls y tour nocturno de luciérnagas.</li>
+<li>Día 2: Loboc Ecoturism Park (tirolinas), Ingkumhan Falls y Pahangog Falls.</li>
+</ul>
+<p style="text-align: justify;">Por supuesto, es solo un ejemplo y dependerá de tus gustos y de lo quieras quitar y poner de lo que te mostraremos a continuación.</p>
+<p style="text-align: justify;">Si tienes más días para explorar la isla, <strong>Loboc también te puede servir de base para conocer lo mejor de Anda e, incluso, de Panglao</strong>. Sin embargo, ten en cuenta que tendrás que pegarte un pequeño tute de transporte, sobre todo si quieres hacerlo en moto. Alona Beach está a, más o menos, 90 minutos de Loboc y Anda a casi 2 horas.</p>
+<p style="text-align: justify;">Finalmente, si tienes en mente hacer base en Panglao y en Anda y no dispones de más tiempo, otra idea sería <strong>visitar Loboc y las Chocolate Hills con un coche con conductor el día que haces el traslado entre Panglao y Anda</strong>. Es decir, el conductor se desvía durante unas horas y así aprovechas el trayecto. También tenemos un contacto que te puede ayudar en este sentido. Desde nuestra perspectiva, es una forma más completa de hacerte una idea de lo que Bohol tiene para ofrecerte.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Como_visitar_Loboc_y_sus_alrededores"></span><span style="color: #33cccc;">Cómo visitar Loboc y sus alrededores</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Ahora que tienes más o menos un <em>planning</em> de lo que puede ser tu visita a Loboc, y antes de profundizar en detalle con cada una de las actividades, seguramente te preguntes <strong>cómo moverte por la zona</strong>. Ahí van las diferentes posibilidades:</p>
+<ul style="text-align: justify;">
+<li><strong>Alquilar un moto</strong>: esta es <strong>nuestra opción favorita</strong> ya que nos otorga una libertad total de horario y lugares que visitar. Alquilar una moto en Loboc a través de un hotel suele rondar los <strong>400 pesos</strong>, pero puedes conseguirla algo más económica con algunos contactos que tenemos o alquilando durante varios días. Si los quieres, puedes dejarnos un comentario y te pasamos toda la info. Las carreteras de Loboc (salvo la que te lleva a la cascada Pahangog Falls y la que conecta con Nuts Huts) están, por lo general, en muy buen estado. Eso sí, como siempre te decimos, si nunca antes te has puesto al volante de una moto, <strong>no recomendamos que tu primera vez sea en Filipinas</strong>, sobre todo porque en Bohol hay cantidad de caminos y furgonetas que conducen como locos.</li>
+<li><strong>Alquilar un transporte con conductor</strong>: algunos hoteles ofrecen packs de tours que te llevarán a ver los sitios más turístico disponibles. El precio suele ser elevado y no ofrece la libertad que da la moto, pero es un buen recurso si no quieres conducir. Otra opción, algo más recomendable a nuestro parecer, es contratar un conductor y poder ser tú el que escoja los destinos a visitar. Si quieres, puedes escribirnos en comentarios y te podemos enviar <strong>nuestro contacto de confianza</strong>. Ten en cuenta que, como siempre, contratar a un conductor de tricycle será bastante más económico que uno de coche. Van algo más lentos, pero es igualmente cómodo.</li>
+<li><strong>Transporte público</strong>: únicamente te aconsejamos esta opción si la vas a utilizar para visitar lugares muy cercanos a tu alojamiento o con acceso directo como podrían ser las Chocolate Hills. De lo contrario, vas a perder mucho tiempo en la carretera.</li>
+</ul>
+<p style="text-align: justify;">En el caso de que estés visitando Loboc desde Panglao/Alona Beach, te puede cuadrar la opción de contratar <a href="https://www.civitatis.com/es/bohol/tour-privado-bohol/?aid=2773" target="_blank" rel="nofollow noopener"><strong>este tour de un día con guía de habla hispana</strong></a>, <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=589760&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-PH%2Factivity%2F20902-private-car-charter-bohol%2F" target="_blank" rel="nofollow noopener"><strong>este coche con conductor</strong></a> o <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=589760&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Fcar-rentals%2Fresults%2F%3Fpick%3DBohol-Panglao%2520International%2520Airport%26drop%3DBohol-Panglao%2520International%2520Airport%26diffLoc%3Dfalse%26pDate%3D2022-04-07%252010%3A00%26dDate%3D2022-04-10%252010%3A00%26age%3D30%26lat%3D9.566667%26long%3D123.775%26dLat%3D9.566667%26dLong%3D123.775%26code%3DPH%26dCode%3DPH%26iata%3DTAG%26dIata%3DTAG%26spm%3DSearchResult.SearchResult_LIST%26clickId%3D6fb2ea11e2" target="_blank" rel="nofollow noopener"><strong>alquilar un coche en el aeropuerto de Panglao</strong></a> y hacerlo todo por tu cuenta.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_ver_y_hacer_en_Loboc_el_otro_Bohol"></span><span style="color: #33cccc;">Qué ver y hacer en Loboc, el otro Bohol</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sin ya enrollarnos mucho más, aquí queremos hablare de todo lo que se puede ver en Loboc.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Crucero_por_rio_Loboc"></span><span style="color: #33cccc;">1. Crucero por río Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El <strong>río Loboc</strong> es el protagonista de muchas de las actividades que hacer en Loboc, pues atraviesa el pueblo y durante su recorrido serpentea pasando por lugares como el Loboc Ecoturism Adventure Park o la zona de avistamiento de luciérnagas. El <strong>crucero por el río Loboc es una de las actividades más populares de la zona</strong> y suele estar incluida en los <strong>tours de un día por Bohol más populares</strong>.</p>
+<p style="text-align: justify;">¿<strong>Qué esperar del crucero por el río Loboc</strong>? Si bien es sabido que esta actividad es una de las clásicas “turistadas” que hacer en Loboc, es de las que, a nuestro parecer, merece más la pena. Una vez hayas comprado tu entrada en la zona de embarque serás dirigido a la que será tu asiento en el crucero durante la siguiente hora y media. El recorrido, que recuerda a los preciosos <em>backwaters</em> del sur de India, te llevará a través del rio Loboc entre<strong> multitud de palmeras y vegetación, mientras disfrutas del variados buffet libre y la música en directo</strong>, parando en alguna ocasión en la orilla del río para ver danzas y artesanía típica de la zona.</p>
+<p style="text-align: justify;">El precio de esta excursión que hacer en Loboc es <strong>1.000 pesos</strong> (incluyendo tasas, entrada, comida y agua, los niños pagan 412 pesos), pero si quieres darte un homenaje y tomarte una cerveza o un refresco deberás pagarlo aparte. Dependiendo del crucero que te toque, te encontrarás con mesas de 4, 6 o más personas. El viaje no empieza hasta que están todos los asientos ocupados, por lo que <strong>seguramente compartirás mesa con otros viajeros</strong>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Loboc_Ecoturism_Adventure_Park"></span><span style="color: #33cccc;">2. Loboc Ecoturism Adventure Park</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El <strong>Loboc Ecoturism Adventure Park</strong> era un lugar que en un principio no nos llamaba especialmente la atención, pero que, dada su popularidad, teníamos claro que queríamos visitar para poder hablar de ello en primera persona en este artículo sobre qué hacer en Loboc. Pese a que llegamos ahí algo escépticos, salimos con una gran sonrisa y <strong>habiendo disfrutado mucho de la experiencia</strong>.</p>
+<p style="text-align: justify;">Las dos atracciones principales de este parque son su <strong>tirolina (<em>zipline</em>) de más de 500 metros de recorrido y un <em>cablecar</em></strong> (teleférico) desde el que poder disfrutar del paisaje con mucha más calma. Las vistas desde arriba, <strong>entre 100 y 120 metros de altura</strong>, son excepcionales y abarcan desde las lejanas montañas plagadas de palmeras hasta el río Loboc y una pequeña cascada que queda justo debajo de la tirolina.</p>
+<div style="text-align: justify;" align="center"><iframe loading="lazy" src="about:blank" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/DJYb5J0fByQ"></iframe><noscript><iframe src="https://www.youtube.com/embed/DJYb5J0fByQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></noscript></div>
+<p style="text-align: justify;">Cuando vayas a comprar tu entrada te darán a elegir entre hacer un recorrido de ida y vuelta en tirolina por 700 pesos, hacerlo en teleférico por 460 o probar una combinación de <strong>ida en tirolina y vuelta en <em>cablecar</em> por 700 pesos</strong>. Nosotros probamos el combo y, desde nuestro punto de vista, es la mejor opción: primero un chute de adrenalina y luego un paseo más tranquilo para disfrutar de las vistas. Hay una opción más que, por 900 pesos, te permite hacer un recorrido de ida y vuelta tanto con la tirolina como con el teleférico, pero con un viaje ya tendrás más que suficiente.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Avistamiento_de_luciernagas_en_el_rio_Loboc"></span><span style="color: #33cccc;">3. Avistamiento de luciérnagas en el río Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Otra de las actividades más populares que hacer en Loboc que atrae tanto a los viajeros que se alojan en la zona, como incluso a otros que llegan hasta aquí en un tour solo para ello, es el <strong>avistamiento de luciérnagas en el río Loboc</strong>, el famoso <em>Firefly Watching Tour</em>.</p>
+<p style="text-align: justify;">Adentrándose en el río desde la zona Loboc pueblo se puede llegar a una zona en la que existen diferentes árboles en los que viven estos insectos. Durante el día podrías pasar por delante y pensar que es un árbol más pero, a la noche, es cuando ocurre la “magia” y empieza el espectáculo de luz. <strong>Miles de luciérnagas empiezan a brillar a las orillas del río, creando un espectáculo único</strong>.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_ver_luciernagas_en_Loboc"></span><span style="color: #33cccc;">¿Cómo ver luciérnagas en Loboc?</span><span class="ez-toc-section-end"></span></h4>
+<p style="text-align: justify;">Existen diferentes maneras de ver luciérnagas en Loboc, algunas menos recomendables que otras. Desde nuestro punto de vista y experiencia, <strong>la mejor forma de hacer el Firefly Watching Tour es en una excursión en kayak o en paddle sur</strong> (llamados también SUP). Estas suelen salir sobre las 18:00 y tienen una duración de entre hora y media y dos horas.</p>
+<p style="text-align: justify;">Otra opción, para nosotros menos recomendable, es hacer este mismo tour en barco. Parte de la magia de esta experiencia es sumergirse en la oscuridad y dejarse asombrar por los diferentes sonidos del río y los animales de lugar, cosa que con una embarcación se elimina por completo a causa del estridente ruido del motor. Además, muchos de los barqueros se aproximan demasiado a los árboles y los golpean para mover las ramas y hacer que las luciérnagas vuelen, hecho que está provocando un descenso en la cantidad de estas. Kayak y <em>sup</em> te aseguran una experiencia mucho más bonita y respetuosa.</p>
+<p style="text-align: justify;">&#8211; <strong>Si te alojas en Loboc</strong>, puede reservar tu excursión desde aquí. Son tours que salen desde el propio río (tendrás que elegir entre paseo diurno o nocturno para ver los fireflies): <strong><a href="https://affiliate.klook.com/jump/en-HK/activity/7309-loboc-river-stand-up-paddle-adventure-bohol/?adid=86778&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer">tour nocturno en paddle surf de Luciérnagas en Loboc</a></strong></p>
+<p style="text-align: justify;">&#8211; <strong>Si estás alojado en otra zona de Bohol</strong> y quieres venir a Loboc únicamente al avistamiento de Luciérnagas, este es tu tour: <a href="https://www.civitatis.com/es/bohol/paseo-barco-avistamiento-luciernagas/?aid=2773" target="_blank" rel="nofollow noopener noreferrer"><strong>tour nocturno en kayak en Loboc desde Bohol</strong></a></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Paddle_surf_y_kayak_en_el_rio_Loboc"></span><span style="color: #33cccc;">4.<em> Paddle surf</em> y kayak en el río Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Otra forma diferente de recorrer el río es navegando en un kayak o en los cada vez más populares <em>paddle surf</em>. A diferencia del crucero, de esta forma podrás vivir una experiencia mucho más <em>slow</em> y sentir de forma abrumadora la enormidad de este lugar. Si no has hecho antes paddle surf o kayak, este <strong>es un lugar ideal para empezar</strong>. La ausencia de olaje, de rápidos y la más que soportable corriente cuando tengas que hacer el camino de vuelta, lo convierte en <strong>un lugar ideal para una primera vez</strong>.</p>
+<p style="text-align: justify;">¡No tengas miedo! Es una experiencia muy divertida y es muchísimo más fácil llevar de lo que puede parecer.</p>
+<p style="text-align: justify;">Estando en Loboc podrás encontrar diferentes lugares en los que alquilar un kayak. Si te apetece las probar la experiencia del paddle surf, este es tu tour: <a href="https://affiliate.klook.com/jump/en-HK/activity/7309-loboc-river-stand-up-paddle-adventure-bohol/?adid=86778&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer"><strong>Tour en paddle surf por el río Loboc</strong></a>.</p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5139" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="paddle surf y kayak en río Loboc" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5139" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1.jpg" alt="paddle surf y kayak en río Loboc" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-1-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Cascadas_cercanas"></span><span style="color: #33cccc;">5. Cascadas cercanas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Bohol es ampliamente conocida por el <a title="Buceo en Panglao: mejores inmersiones y centro español recomendado" href="https://www.viajarporfilipinas.com/buceo-panglao/">buceo en Panglao</a>, las Colinas de Chocolate, los tarseros… Pero es también una isla que atesora una gran cantidad de cascadas que merecen una visita. Estas están repartidas por toda la isla y cerca de Loboc hay algunas de las que más merecen una visita. Estas 4 (podrás localizarlas fácilmente en el mapa que te dejamos al final de la guía) son de nuestras favoritas:</p>
+<p style="text-align: justify;"><strong>Ingkumhan Falls</strong>: Para llegar a las cascadas Ingkumhan Falls desde Loboc existen dos caminos, uno que va por el interior de la isla y otro que bordea la costa. <strong>El trayecto dura unos 45 minutos</strong> de media por ambos, pero te recomendamos que optes por el camino de costa ya que, además de que las vistas son muy agradables, está mucho mejor pavimentado que el otro (siendo algo peligroso si ha llovido recientemente). Tras pagar una <strong>tasa de entrada de 30 pesos</strong> (10 para niños) <strong>y 10 por tu moto</strong>, accederás a esta espectacular cascada. A la derecha de ella encontrarás una cuerda desde la que podrás lanzarte a lo Tarzán, mientras a que desde el lazo izquierda podrás saltar, si te atreves, de una altura de más 5 metros. <strong>El lugar es realmente bonito</strong> y posiblemente te dejará sin palabras como a nosotros. La localización, las formaciones rocosas, la vegetación el color del agua&#8230; ¡Es brutal!</p>
+<blockquote><p>Te aconsejamos que, si puedes, visites estas cascadas entre semana, ya que los fines de semana suelen estar bastante concurridas por el turismo local. Nosotros fuimos un lunes y éramos, junto a tres chicas españolas, los únicos visitantes. Ten en cuenta que en temporada seca (marzo-mayo) puede que no tengan mucha agua, así que mejor echar un vistazo a las reseñas más recientes de Google Maps antes.</p></blockquote>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5142" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="cascada Ingkumhan Falls" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5142" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4.jpg" alt="cascada Ingkumhan Falls" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-4-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;"><strong>Pahangog Falls</strong>: A las Pahangog Falls se las conoce también como <strong>Twin Falls</strong> y son un complemento perfecto a las Ingkumhan Falls. El principal inconveniente que tienen es el camino para llegar a ellas. Tras seguir ascendiendo por la carretera que te llevó a las anteriores cascadas y girar a la derecha en la escuela que te cruzarás, llegarás hasta una pequeña cancha de baloncesto. Tendrás la opción de aparcar y dejar que un local te lleve en su moto hasta la entrada de la cascada (100 pesos por moto) o acabar el recorrido por tu cuenta. Si recientemente ha llovido (como fue en nuestro caso), te recomendamos encarecidamente que aparques y te dejes llevar. Nosotros intentamos hacerlo por nuestra cuenta y el esfuerzo y caída (sin mayores consecuencias), hicieron que nos arrepintiéramos de nuestra decisión.</p>
+<p style="text-align: justify;">Tras llegar al final del recorrido (verás una caseta en la que venden <em>snacks</em> y refrescos) y hacer un descenso de uno 10 minutos, llegarás a estas maravillosas cascadas. Podrás bañarte en una gran área de aguas color turquesa, hacerte un masaje natural bajo el gran chorro de agua o, si eres lo suficientemente valiente, saltar desde los más de 10 metros de altura de la cascada izquierda. Si las anteriores cascadas te gustaron, esta te enamorará definitivamente.</p>
+<p style="text-align: justify;"><strong>El precio de la entrada es de 50 pesos</strong> y existe también la posibilidad de alquilar las enormes casetas de descanso o unos grandes flotadores en forma de donut para relajarse en medio del agua. Por desgracia, aunque el camino es sencillo, desde hace poco es obligatorio contratar un guía por 200 pesos el grupo. También cobran 20 pesos por aparcar la moto.</p>
+<p style="text-align: justify;"><strong>Pangas Falls</strong>: Las Pangas Falls están en una zona completamente diferente a las anteriores y son un plan excelente que hacer en Loboc si vienes o vas a las Chocolate Hills, pues vienen de paso. En este caso, el camino es mucho más rápido y sencillo que los anteriores, no tiene pérdida. <strong>La entrada cuesta 30 pesos</strong> por persona y accedes una salto de agua de tamaño mediano con una gran zona de baño rodeada de palmeras. Esta cascada suele ser muy concurrida al ser de fácil acceso y estar cerca de un lugar turístico, pero es ideal para refrescarte durante tu ruta descubriendo los mejores lugares que ver en Loboc.</p>
+<p style="text-align: justify;">Te recomendamos que las visites durante la mañana, ya que a partir de las 14:00 la sombra de las palmeras empieza a cubrir la zona.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5143" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Pangas Falls cerca de las Colinas de Chocolate" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5143" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5.jpg" alt="Pangas Falls cerca de las Colinas de Chocolate" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-5-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;"><strong>Busay Falls</strong>: ¡OJO! Busay Falls existen dos en la zona de Loboc y es bastante común ir en busca de una y acabar en la otra. Te contamos los detalles:</p>
+<p style="text-align: justify;">Las primeras Busay Falls de las que vamos hablar (están todas marcadas en el mapa al final del artículo) se encuentran<strong> de camino al Puente Colgante de Bambú</strong>. Poco antes de llegar ahí verás a tu izquierda unas escaleras que descienden hasta el río Loboc. Ahí encontrarás las primeras Busay Falls de la zona (en Google Maps ahora llamado Busai Dream Falls) y podrás saltar al agua usando la cuerda instalada junto a la orilla. Eso sí, te en cuenta que el río Loboc suele ir muy fuerte en esa zona y que es un lugar más enfocado a pasar un rato saltando que a relajarse en el agua.</p>
+<p style="text-align: justify;">Las siguientes Busay Falls están situadas justo <strong>debajo del Loboc Ecoturism Adventure Park</strong> y son lo que verás cuando te lances a la aventura desde su tirolina, ¡vale mucho la pena! Verlas desde ahí es sencillo, pero acceder ya es otra historia. Para ello <strong>tendrás que alquilar un kayak desde el resort Nuts Huts</strong> y remontar río arriba durante 10 minutos. Ten en cuenta que este resort se encuentra algo alejado de la carretera principal y que el camino que lleva hasta él se convierte en un barrizal los días que ha llovido. Si lo prefieres, tendrás la opción de llegar al resort a bordo de uno de los taxi-boat que salen desde las cercanías de Loboc pueblo.</p>
+<p style="text-align: center;">Puedes leer sobre ellas y otras más en la isla en nuestro artículo <a title="Las mejores cascadas de Bohol: 8 saltos de agua increíbles" href="https://www.viajarporfilipinas.com/cascadas-bohol/" target="_blank" rel="noopener noreferrer"><strong>Cascadas de Bohol</strong></a>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="6_Chocolate_Hills_o_Colinas_de_Chocolate"></span><span style="color: #33cccc;">6. Chocolate Hills o Colinas de Chocolate</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Las <strong>Colinas de Chocolate</strong> son uno de los lugares más populares no solo de Bohol, sino de toda Filipinas. Estas espectaculares formaciones rocosas tan singulares forman un paisaje único que merece mucho la pena conocer (nosotros hemos perdido la cuenta ya de las veces que las hemos explorado).</p>
+<p style="text-align: justify;">Es una de las principales actividades que hacer en Loboc y por ello <strong>le hemos dedicado una guía completa</strong> para que conozcas a fondo sus detalles: <strong><a href="https://www.viajarporfilipinas.com/chocolate-hills-bohol-como-llegar/" target="_blank" rel="noopener noreferrer">Colinas de Chocolate</a></strong>. Allí encontrarás los distintos miradores existentes y cómo verlas a tu aire.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5140" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20749'%3E%3C/svg%3E" alt="Colinas de Chocolate desde Loboc" width="1000" height="749" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5140" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2.jpg" alt="Colinas de Chocolate desde Loboc" width="1000" height="749" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2-980x734.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="7_Bilar_Man_Made_Forest"></span><span style="color: #33cccc;">7. Bilar Man Made Forest</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El <strong>Man Made Forest</strong> te vendrá de paso, sí o sí, cuando vayas desde Loboc a la zona de las Colinas de Chocolate. Este bosque tiene una historia que se remonta hasta la Segunda Guerra Mundial, cuando toda la zona sufrió una gran desforestación a causa del <em>kaingin</em>, un sistema de cultivo muy agresivo. Con el paso de los años se decidió remendar esa tragedia medioambiental y se plantaron miles de árboles de caoba por toda la zona.</p>
+<p style="text-align: justify;">Ahora, son cientos los turistas que a diario se paran en los <strong>más de 2 kilómetros</strong> de carretera que cruzan el Man Made Forest (bosque hecho por el hombre) para tomar unas fotos en este lugar tan especial. La luz entrando entre las copas de los árboles de caoba, la disposición ordenada, la frondosidad y los colores, crean un ambiente mágico que nos obliga a parar ahí cada vez que exploramos la zona.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5141" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20649'%3E%3C/svg%3E" alt="visitar Made Man Forest" width="487" height="649" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3-480x640.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 487px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5141" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3.jpg" alt="visitar Made Man Forest" width="487" height="649" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-3-480x640.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 487px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="8_Los_Tarseros_de_Corella"></span><span style="color: #33cccc;">8. Los Tarseros de Corella</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El tarsero, <em>tarsier</em> en inglés, es uno de los animales más emblemáticos de Filipinas y se puede ver muy fácilmente en Bohol en una excursión desde Loboc. Este diminuto animal es el simio (que no mono) más pequeño del planeta y sus características son realmente curiosas:</p>
+<ul style="text-align: justify;">
+<li>Es el mamífero con los ojos más grande en proporción a su cuerpo</li>
+<li>De hecho, sus ojos son mayor que su cerebro</li>
+<li>Son animales nocturnos</li>
+<li>Aunque muy lentos y poco amantes del movimiento, cuando tienen que cazar pueden llegar a dar saltos de hasta 5 metros</li>
+</ul>
+<p style="text-align: justify;">Todo esto y mucho más podrás descubrirlo en tu visita al <strong>Santuario de Tarsiers de Corella</strong>. El precio es de 150 pesos por persona.</p>
+<p style="text-align: justify;">¿Por qué recomendamos el Santuario de Tarseros de Corella y no los demás? Este centro está gestionado por la Philippine Tarsier Foundation, una ONG dedicada exclusivamente la protección de este animal. En los otros centros cercanos en los que se puede ver al tarsero se han reportado un gran número de quejas sobre el estado de las instalaciones y el estrés al que se somete a los animales (grupos masificados de gente, ruido, golpes a los árboles en los que se encuentra para provocar que se muevan, flashes de fotos…). Solo tienes que darte un paseo por las reseñas de Google Maps, sobre todo las de la supuesta Bohol Tarsier Conservation Area, para alucinar con el trato que les dan.</p>
+<p style="text-align: justify;">Considera que, al ser un animal nocturno, el tarsero (intenta) dormir durante el día. Así, cuando vayas a visitarlo, por favor, procura hacer el menor ruido posible y no molestes su descanso.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5147" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20492%20738'%3E%3C/svg%3E" alt="tarsiers en Bohol" width="492" height="738" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9.jpg 492w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9-480x720.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 492px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5147" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9.jpg" alt="tarsiers en Bohol" width="492" height="738" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9.jpg 492w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-9-480x720.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 492px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="9_Puente_colgante_de_bambu_o_Sipatan_Twin_Hanging_Bridge"></span><span style="color: #33cccc;">9. Puente colgante de bambú (o Sipatan Twin Hanging Bridge)</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">El <strong>puente colgante de bambú</strong> es una de esas cosas que hacer en Loboc que crea división de opiniones entre los viajeros. A algunos les parece una experiencia muy divertida y otros dicen que no vale tanto la pena. En nuestro caso, creemos que es una visita muy chula y un complemento genial para cerrar un itinerario de cosas que hacer en Loboc que antes te haya llevado a lugares como la tirolina, las Colinas de Chocolate o las cascadas de Pangas Falls. La entrada cuesta únicamente <strong>50 pesos</strong> y con ella podrás hacer un trayecto de ida y vuelta sobre el río Loboc mientras cruzas estos puentes que, ya te avisamos, ¡se mueven bastante y pueden asustar un poco a los más vertiginosos! Es un lugar chulo para hacer fotos del río Loboc.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5144" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="puente colgante de Loboc" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5144" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6.jpg" alt="puente colgante de Loboc" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-6-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="10_Parroquia_San_Pedro_Apostol_y_el_pueblo"></span><span style="color: #33cccc;">10. Parroquia San Pedro Apóstol y el pueblo</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aunque dista de ser uno de los pueblos más atractivos que visitar en Filipinas, no podemos acabar esta guía de Loboc sin mencionar la <strong>Parroquia San Pedro Apóstol</strong>, también conocida como Loboc old Church. A solo 100 metros del río se encuentra la que es <strong>la segunda iglesia más antigua de Bohol</strong>, acabada de construir en 1638. De estilo románico, en su interior se podían contemplar diferentes frescos y un bonito y colorido retablo. Por desgracia, un terremoto de escala 7’2 destruyó en 2013 gran parte de este edificio sagrado, pero ya se puede ver bastante restaurada.</p>
+<p style="text-align: justify;">Loboc pueblo no tiene mucho más que ofrecer a nivel histórico/turístico. En plaza principal podrás encontrar un puesto alquiler de motos a muy buen precio, un 7-ELEVEN y alguna carenderia o sitio de pinchitos, que son el único foco de ambiente en Loboc por las noches.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5145" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="antigua iglesia de Loboc" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5145" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7.jpg" alt="antigua iglesia de Loboc" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-7-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Datos_practicos_sobre_Loboc"></span><span style="color: #33cccc;">Datos prácticos sobre Loboc</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para terminar de perfilar tu visita, aquí te damos algunos datos prácticos sobre Loboc.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Donde_dormir_en_Loboc"></span><span style="color: #33cccc;">Dónde dormir en Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En la zona de Loboc existen alojamientos para todo tipo de gustos y bolsillos. En nuestra guía de <a href="https://www.viajarporfilipinas.com/dormir-bohol-isla-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Dónde Dormir en Bohol</strong></a>, le dedicamos una sección entera a los alojamiento en esta zona. Pero te avanzamos un par de alojamiento en Loboc en los que nos quedamos en nuestra última visita y recomendamos:</p>
+<ul style="text-align: justify;">
+<li><a href="https://www.booking.com/hotel/ph/foxandthe-firefly-cottages.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>Fox &amp; the Firefly Cottages</strong></a>: seguramente el alojamiento más famoso de Loboc. Situado a escasos metros del río y junto a unos arrozales, ofrecen unas habitaciones con una decoración única. Su terraza es un lugar ideal para acabar el día y sus baños a cielo abierto son una experiencia que has de probar. Puedes leer <a title="Dormir en Fox &amp; the Firefly Cottages, Loboc" href="https://www.viajarporfilipinas.com/fox-and-firefly-loboc/" target="_blank" rel="noopener noreferrer">nuestra experiencia en Fox &amp; the Firefly Cottages aquí</a>. <a href="https://www.booking.com/hotel/ph/foxandthe-firefly-cottages.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>➡ Disponibilidad y precios</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/michelina-princess-guest-house.en.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>Michelina Princess Guest House</strong></a>: De precios mucho más económicos y a escasos minutos del centro del pueblo, cuenta con habitaciones muy amplias, aire acondicionado, buen wifi, desayuno incluido y una dueña la mar de simpática. Eso sí, como única pega, no tiene agua caliente. Puedes leer <a title="Dormir en Michelina Princess Guest House, Loboc" href="https://www.viajarporfilipinas.com/michelina-princess-loboc/" target="_blank" rel="noopener noreferrer">nuestra experiencia en Michelina Princess Guest House aquí</a>. <strong><a href="https://www.booking.com/hotel/ph/michelina-princess-guest-house.en.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">➡ Más información</a></strong></li>
+</ul>
+<p style="text-align: justify;">Como sois cada vez más los viajeros que decidís hacer base en la zona, hemos creado un artículo específico para ahondar en el tema de <a title="Dormir en Loboc: hoteles recomendados" href="https://www.viajarporfilipinas.com/donde-dormir-loboc/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Loboc</strong></a>.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-5146" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Fox &amp; the Firefly Loboc" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5146" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8.jpg" alt="Fox &amp; the Firefly Loboc" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/que-hacer-loboc-8-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Loboc"></span><span style="color: #33cccc;">Cómo llegar a Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Lo primero que tendrás que hacer para ir a Loboc es llegar a la isla de Bohol, tienes todos los detalles en <strong><a title="Cómo llegar a Loboc (Bohol)" href="https://www.viajarporfilipinas.com/como-llegar-loboc/" target="_blank" rel="noopener">Cómo llegar a Loboc</a></strong>. Una vez ahí, dependiendo de cuál haya sido tu puerto de entrada, deberás tomar un camino u otro.</p>
+<ul style="text-align: justify;">
+<li><strong>Desde Tagbilaran</strong> deberás dirigirte a la estación de buses DAO Terminal. De ahí salen, conforme se van llenando, los autobuses rumbo a Loboc. Tardarás unos 45 minutos y apenas cuestan 50 pesos.</li>
+<li><strong>Desde Panglao</strong>, puedes coger el bus que sale junto al McDonald&#8217;s de Alona (70 pesos) o un tricycle (sobre los 300 pesos) hasta la DAO Terminal. Ya allí, coge un jeepney o bus a Loboc, como te contamos en el apartado anterior.</li>
+<li><strong>Desde el puerto de Jagna</strong>, si vienes de Camiguin, ve a la carretera principal y coge un <em>jeepney</em>, bus o furgoneta que te deje en el cruce de Loay (45 pesos más o menos) y ahí tomar otro bus o <em>jeepney</em> hasta Loboc (15 pesos aproximadamente). Calcula algo más o menos 90 minutos.</li>
+<li><strong>Desde el aeropuerto de Panglao</strong>, puedes ir hasta la DAO terminal en bus o contratar <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=589760&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Fairport-transfers%2Fservice%2Ftag-bohol%25E2%2580%2593panglao-international-airport%2F%3F" target="_blank" rel="nofollow noopener">este transfer</a>.</li>
+<li><strong>Desde Anda</strong>, tienes que coger cualquier bus o furgoneta que vaya a Tagbilaran (horarios bastante erráticos, pero calcula unos 100 pesos) y bajarte en Loay. Ya en la intersección, espera a que pase un jeepney o bus a Loboc (unos 15-20 pesos). Calcula que tardarás algo más de 2 horas.</li>
+</ul>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Donde_comer_en_Loboc"></span><span style="color: #33cccc;">Dónde comer en Loboc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aunque las opciones son mucho más reducidas que en Panglao, tienes varios sitios interesantes para comer en Loboc. Te dejamos toda la información en <a title="Dónde comer en Bohol: Panglao, Loboc y Anda" href="https://www.viajarporfilipinas.com/donde-comer-bohol-panglao/" target="_blank" rel="noopener noreferrer"><strong>Dónde comer en Bohol: Panglao, Loboc y Anda</strong></a>.</p>
+<h3><span class="ez-toc-section" id="Mas_consejos_para_visitar_Loboc"></span><span style="color: #33cccc;">Más consejos para visitar Loboc</span><span class="ez-toc-section-end"></span></h3>
+<ul>
+<li style="text-align: justify;">Ten presente que es una zona con <strong>poco desarrollo turístico aún</strong>, con sus ventajas e inconvenientes. No encontrarás gran oferta de restaurantes o bares, pero sí una Bohol muy distinta a la de Panglao.</li>
+<li style="text-align: justify;">Elige la forma de visitar Loboc que mejor vaya contigo: ya sea en un día desde Panglao o pasando un par de noches.</li>
+<li style="text-align: justify;">La red 4G tanto de Smart como de Globe funciona bien en los alojamientos cercanos al pueblo. Tienes más info sobre el asunto en <a title="Internet en Filipinas: qué tarjeta SIM filipina escoger" href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener">Internet en Filipinas</a>.</li>
+<li style="text-align: justify;">Si te animas con el kayak o el paddle board y no tienes mucha práctica, evita la zona por la que pasan los cruceros del río Loboc.</li>
+<li style="text-align: justify;">La <strong>mejor época para ver Loboc</strong> va más o menos de octubre a mayo, que es cuando en teoría llueve menos.</li>
+<li style="text-align: justify;">Personalmente, aunque Loboc nos encanta, no nos iríamos de Bohol sin hacer una <a title="Excursión de snorkel en Balicasag" href="https://www.viajarporfilipinas.com/excursion-snorkel-balicasag/" target="_blank" rel="noopener">excursión a Balicasag</a> o un <a title="Buceo en Balicasag: guía y centro español recomendado" href="https://www.viajarporfilipinas.com/buceo-balicasag/" target="_blank" rel="noopener">buceo en Balicasag</a>.</li>
+<li style="text-align: justify;">Si conduces <strong>moto</strong>, ve con ojo con los perros, gallos/gallinas y personas que se te cruzan por la carretera, especialmente por las noches.</li>
+<li style="text-align: justify;">En caso de tener experiencia con la moto, te recomendamos mucho ir a las Chocolate Hills al amanecer o al atardecer, que es aún más mágico.</li>
+<li style="text-align: justify;">Por favor, sé un viajero responsable y evita participar en alguna de las muchas actividades que hay por la zona con animales como el serpentario, los falsos santuarios de tarsiers.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Loboc"></span><span style="color: #33cccc;">Mapa de Loboc</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para que te orientes mejor, hemos creado este mapa en el que marcamos todos los puntos de interés:</p>
+<div style="text-align: justify;" align="center"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/embed?mid=1_DmQygJFEcrXM2FniatiELkPrQstzRa4"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/embed?mid=1_DmQygJFEcrXM2FniatiELkPrQstzRa4" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></div>
+<div align="center">
+<hr />
+</div>
+<div align="center"></div>
+<div align="center"><em>¿Qué te parecen estos planazos que hacer en Loboc? Si tienes alguna pregunta, no dudes en dejar un comentario. ¡Estamos encantados de ayudarte a descubrir Filipinas!</em></div>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">545 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-loboc/comment-page-22/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56666">
+		<article id="comment-56666" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">ELISABET</span>				<span class="comment_date">
+					el 06/05/2025 a las 13:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Llegaremos al aeropuerto de Panglao y tenemos que trasladarnos hasta el Loboc River Resort.<br />
+Tenéis contacto de algun chófer para este trayecto?</p>
+<p>Mil gracias por anticipado.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56666' data-commentid="56666" data-postid="5137" data-belowelement="comment-56666" data-respondelement="respond" data-replyto="Responder a ELISABET" aria-label='Responder a ELISABET'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56669">
+		<article id="comment-56669" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/05/2025 a las 15:33				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Elisabet, acabamos de pasarte el contacto que tenemos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56505">
+		<article id="comment-56505" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Nacho</span>				<span class="comment_date">
+					el 02/05/2025 a las 13:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Tenemos nuestro viaje a Filipinas planificado para septiembre y una de nuestras paradas será Bohol. Llegaremos sobre las 19:30 y nos desplazaremos hasta Loboc para dormir.<br />
+Podríais compartirme el contacto del alquiler de moto para los 4 días que pasaremos por aquí? (2 días Loboc &#8211; 2 días Panglao)<br />
+Gracias y enhorabuena por el blog, nos está siendo de gran ayuda para planificar todo.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56505' data-commentid="56505" data-postid="5137" data-belowelement="comment-56505" data-respondelement="respond" data-replyto="Responder a Nacho" aria-label='Responder a Nacho'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56524">
+		<article id="comment-56524" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/05/2025 a las 08:28				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Nacho, nos alegra ser de ayuda. Para la moto en Panglao, tienes hasta una foto en el apartado de consejos de <a href="https://www.viajarporfilipinas.com/que-hacer-panglao-bohol/" title="Qué hacer en Panglao" target="_blank" rel="noopener ugc">Qué hacer en Panglao</a>. Para la de Loboc te la enviamos ahora. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56323">
+		<article id="comment-56323" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Bego</span>				<span class="comment_date">
+					el 27/04/2025 a las 09:51				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, voy a estar en mayo unos días en Panglao y quiero visitar las cosas más interesantes de Bohol. Me podéis facilitar por favor el contacto que recomendáis de coche con conductor? Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56323' data-commentid="56323" data-postid="5137" data-belowelement="comment-56323" data-respondelement="respond" data-replyto="Responder a Bego" aria-label='Responder a Bego'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56324">
+		<article id="comment-56324" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/04/2025 a las 09:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Bego, hace 1 mes te pasamos un correo con info de El Nido. Si lo recibiste, agradecemos tu respuesta antes de seguir pasándote datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55879">
+		<article id="comment-55879" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carol</span>				<span class="comment_date">
+					el 16/04/2025 a las 11:51				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas! Sabeis a que hora opera el crucero por el rio? Y si hay forma de reservar online? Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55879' data-commentid="55879" data-postid="5137" data-belowelement="comment-55879" data-respondelement="respond" data-replyto="Responder a Carol" aria-label='Responder a Carol'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55884">
+		<article id="comment-55884" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 16/04/2025 a las 15:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carol, no, no se puede reservar online y tampoco sería necesario, pues son muy frecuentes. Que sepamos, el crucero opera desde las 10:00 hasta las 15:00 al menos. Es mejor ir a la hora de la comida porque incluye almuerzo. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-54844">
+		<article id="comment-54844" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">María cristina Barrios Prieto</span>				<span class="comment_date">
+					el 26/03/2025 a las 00:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Maravilloso blog hoy llego a Loboc, me podéis pasar contacto para recorrer dos días?<br />
+Por cierto, no hay vans compartidas en el aeropuerto que te lleven a Loboc sin tener que ir a la estación de autobuses?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54844' data-commentid="54844" data-postid="5137" data-belowelement="comment-54844" data-respondelement="respond" data-replyto="Responder a María cristina Barrios Prieto" aria-label='Responder a María cristina Barrios Prieto'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54849">
+		<article id="comment-54849" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/03/2025 a las 03:27				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María Cristina, no, en el aeropuerto no hay vans compartidas. Tienes que ir a Tagbilaran y de ahí a Loboc. Hace unos días te pasamos un correo con otra información. Si lo recibiste, agradecemos respuesta antes de seguir enviándote datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54432">
+		<article id="comment-54432" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carla</span>				<span class="comment_date">
+					el 18/03/2025 a las 20:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, una pregunta, el autobús desde la DAO terminal hasta Loboc sabéis a qué hora es el último servicio? Y para ir al alojamiento desde donde nos deja el autobús, se podrá coger taxi/jeepney o lo que haya? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54432' data-commentid="54432" data-postid="5137" data-belowelement="comment-54432" data-respondelement="respond" data-replyto="Responder a Carla" aria-label='Responder a Carla'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54461">
+		<article id="comment-54461" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/03/2025 a las 01:52				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carla, que sepamos salen con muchas frecuencias hasta las 18h y ya menos, pero no sabemos cuándo es el último. En cuanto a ir al alojamiento, ¿cuál es? Por lo general, hay tricycles. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-54504">
+		<article id="comment-54504" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carla</span>				<span class="comment_date">
+					el 19/03/2025 a las 21:11				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos, genial gracias por la información. Aterrizamos a las 18:30, probaremos a ver si sale alguno aunque sea algo más tarde y luego tricycle.  Si vemos que no hay autobuses   tendremos improvisar un plan B :)! Nos alojamos en NutsHuts!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54522">
+		<article id="comment-54522" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/03/2025 a las 10:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carla, para el Nuts Huts está complicado el tema de la carretera. Nosotros le preguntaríamos al mismo hotel a ver qué manera es mejor porque quizás lo más cómodo es que os recojan en barca. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-54742">
+		<article id="comment-54742" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carla</span>				<span class="comment_date">
+					el 24/03/2025 a las 11:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>De acuerdo, muchas gracias !!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-54197">
+		<article id="comment-54197" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Olivia</span>				<span class="comment_date">
+					el 14/03/2025 a las 09:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Hemos llegado hoy a Bohol y queremos ir mañana a Loboc, nos pasáis vuestro contacto para alquilar coche con conductor? Nos recomendáis una ruta a seguir? Es factible en esa visita incluir el crucero por el río Loboc? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54197' data-commentid="54197" data-postid="5137" data-belowelement="comment-54197" data-respondelement="respond" data-replyto="Responder a Olivia" aria-label='Responder a Olivia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-54206">
+		<article id="comment-54206" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/03/2025 a las 09:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Olivia. Te hemos enviado ya un par de correos y nunca nos has respondido. Saludos y buen viaje.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-loboc/comment-page-22/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-loboc/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='5137' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a0621a3285" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="202"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"5137","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Buceo en Malapascua: mejores inmersiones y centro español - Viajar por Filipinas</title>
+	<meta name="description" content="¿Cómo es el buceo en Malapascua? Tras muchas inmersiones y un curso de dive master, te contamos los mejores dive sites y centro español de confianza." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/buceo-malapascua/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Buceo en Malapascua: mejores inmersiones y centro español - Viajar por Filipinas" />
+	<meta property="og:description" content="¿Cómo es el buceo en Malapascua? Tras muchas inmersiones y un curso de dive master, te contamos los mejores dive sites y centro español de confianza." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/buceo-malapascua/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-09-05T16:02:51+00:00" />
+	<meta property="article:modified_time" content="2025-04-15T16:57:11+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="24 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Buceo en Malapascua: mejores inmersiones y centro español recomendado","datePublished":"2020-09-05T16:02:51+00:00","dateModified":"2025-04-15T16:57:11+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/"},"wordCount":5110,"commentCount":1336,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11.jpg","articleSection":["Buceo","Malapascua"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/buceo-malapascua/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/buceo-malapascua/","url":"https://www.viajarporfilipinas.com/buceo-malapascua/","name":"▷ Buceo en Malapascua: mejores inmersiones y centro español - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11.jpg","datePublished":"2020-09-05T16:02:51+00:00","dateModified":"2025-04-15T16:57:11+00:00","description":"¿Cómo es el buceo en Malapascua? Tras muchas inmersiones y un curso de dive master, te contamos los mejores dive sites y centro español de confianza.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/buceo-malapascua/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11.jpg","width":1200,"height":630,"caption":"Buceo en Malapascua"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/buceo-malapascua/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Buceo en Malapascua: mejores inmersiones y centro español recomendado"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/buceo-malapascua/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Buceo en Malapascua: mejores inmersiones y centro español recomendado del feed" href="https://www.viajarporfilipinas.com/buceo-malapascua/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/8459" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=8459' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fbuceo-malapascua%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fbuceo-malapascua%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-8459-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8459/et-core-unified-8459.min.css?ver=1745577864" /><link rel="stylesheet" id="et-core-unified-deferred-8459-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8459/et-core-unified-deferred-8459.min.css?ver=1745577864" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-8459 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-8459" class="et_pb_post post-8459 post type-post status-publish format-standard has-post-thumbnail hentry category-buceo category-malapascua">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Buceo en Malapascua: mejores inmersiones y centro español recomendado</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/buceo/" rel="category tag">Buceo</a>, <a href="https://www.viajarporfilipinas.com/category/cebu/malapascua/" rel="category tag">Malapascua</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Buceo en Malapascua" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-1080x630.jpg" alt="Buceo en Malapascua" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-11-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Hacer <strong>buceo en Malapascua</strong> es un SÍ rotundo. Si eres un enamorado del mar o piensas que te va a gustar y quieres probar, sería un verdadero pecado que en tu <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">viaje a Filipinas</a> no incluyeras Malapascua. Bucear en Malapascua es, simplemente, una verdadera maravilla. Además de ser uno de los pocos lugares del mundo en los que puedes ver con un altísimo porcentaje de probabilidades (por no decir el 100%) a los magníficos <strong>tiburones zorro</strong>, tienes un montón de puntos de buceo que atraen a personas de todo el mundo.</p>
+<p style="text-align: justify;">Desde animales tan pequeños (pero increíbles) como el pez mandarín o el pulpo de anillos azules hasta enormes mantas y tiburones, te prometemos que el buceo en Malapascua no te va a defraudar. No en vano, a nosotros nos gusta tanto que decidimos hacer nuestro curso de <em>dive master</em> allí mismo.</p>
+<p style="text-align: justify;">Hemos querido contarte toda nuestra sabiduría sobre el buceo en Malapascua y aquí vas a encontrar las mejores <strong>inmersiones</strong>, excursiones de buceo, qué <strong>cursos</strong> son interesantes y, por supuesto, un montón de <strong>recomendaciones</strong> personales para que lo goces aún más.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258997b70e6" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258997b70e6"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Buceo_en_Malapascua_%C2%BFComo_es_%C2%BFQue_se_puede_ver" title="Buceo en Malapascua ¿Cómo es? ¿Qué se puede ver?">Buceo en Malapascua ¿Cómo es? ¿Qué se puede ver?</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#Condiciones_de_buceo_y_mejor_epoca_para_bucear_en_Malapascua" title="Condiciones de buceo y mejor época para bucear en Malapascua">Condiciones de buceo y mejor época para bucear en Malapascua</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#%C2%BFDonde_esta_Malapascua_y_como_llegar" title="¿Dónde está Malapascua y cómo llegar?">¿Dónde está Malapascua y cómo llegar?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#%C2%BFCuanto_cuesta_bucear_en_Malapascua_Precios_de_las_inmersiones" title="¿Cuánto cuesta bucear en Malapascua? Precios de las inmersiones">¿Cuánto cuesta bucear en Malapascua? Precios de las inmersiones</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#%C2%BFDonde_bucear_en_Malapascua_Mejores_puntos_de_buceo_en_Malapascua" title="¿Dónde bucear en Malapascua? Mejores puntos de buceo en Malapascua">¿Dónde bucear en Malapascua? Mejores puntos de buceo en Malapascua</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#Los_imprescindibles_del_buceo_en_Malapascua_Kimud_Shoal_y_Gato_Island" title="Los imprescindibles del buceo en Malapascua: Kimud Shoal y Gato Island">Los imprescindibles del buceo en Malapascua: Kimud Shoal y Gato Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#Sitios_recomendables_para_bucear_en_Malapascua" title="Sitios recomendables para bucear en Malapascua">Sitios recomendables para bucear en Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#Otros_sitios_interesantes_de_buceo_en_Malapascua" title="Otros sitios interesantes de buceo en Malapascua">Otros sitios interesantes de buceo en Malapascua</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#Excursiones_de_buceo_desde_Malapascua" title="Excursiones de buceo desde Malapascua">Excursiones de buceo desde Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#%C2%BFCon_quien_bucear_en_Malapascua_El_mejor_centro_con_profesionales_espanoles" title="¿Con quién bucear en Malapascua? El mejor centro con profesionales españoles">¿Con quién bucear en Malapascua? El mejor centro con profesionales españoles</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="#Cursos_de_buceo_en_Malapascua" title="Cursos de buceo en Malapascua">Cursos de buceo en Malapascua</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#Bautismo_de_buceo_en_Malapascua" title="Bautismo de buceo en Malapascua">Bautismo de buceo en Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#Open_Water_en_Malapascua" title="Open Water en Malapascua">Open Water en Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#Advanced_Open_Water_Diver_en_Malapascua" title="Advanced Open Water Diver en Malapascua">Advanced Open Water Diver en Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#Curso_de_Dive_Master_en_Malapascua" title="Curso de Dive Master en Malapascua">Curso de Dive Master en Malapascua</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-16" href="#Recomendaciones_para_bucear_en_Malapascua" title="Recomendaciones para bucear en Malapascua">Recomendaciones para bucear en Malapascua</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-17" href="#Sitios_aconsejables_para_alojarte_en_Malapascua_y_bucear" title="Sitios aconsejables para alojarte en Malapascua y bucear">Sitios aconsejables para alojarte en Malapascua y bucear</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Buceo_en_Malapascua_%C2%BFComo_es_%C2%BFQue_se_puede_ver"></span><span style="color: #33cccc;">Buceo en Malapascua ¿Cómo es? ¿Qué se puede ver?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Todo el archipiélago filipino se ubica en pleno <strong>Triángulo de coral</strong>, esto es, el lugar del planeta con mayor biodiversidad marina y Malapascua es una representación clara de eso. En este cayo coralino no te van a faltar opciones de ver con tus ojos los polos opuestos: pelágicos y especies macro difíciles de ver en otros sitios. Sin duda alguna, vas a disfrutar de algunas de las <a title="Las mejores inmersiones de Filipinas" href="https://www.viajarporfilipinas.com/mejores-inmersiones-filipinas/" target="_blank" rel="noopener noreferrer"><strong>mejores inmersiones de Filipinas</strong></a>.</p>
+<p style="text-align: justify;"><strong>¿Qué hace especial al buceo Malapascua? </strong>Cosas como estas:</p>
+<ul style="text-align: justify;">
+<li><strong>Tiburones zorro y otros pelágicos: </strong>haciendo buceo en Malapascua podrás avistar con casi toda seguridad a los increíbles tiburones zorro, algo que ocurre en pocos lugares del mundo, pero también tienes la posibilidad de encontrarte con tiburones de punta blanca, tiburones tigre, mantas gigantes, los escurridizos tiburones martillo y, con mucha suerte, otro rey de los mares: el tiburón ballena.</li>
+<li><strong>Macro fabuloso:</strong> también tendrás el contrapunto, porque los fondos marinos de la isla son la perdición de los enamorados de la vida macro o <em>muck diving</em>. Se ven con relativa facilidad animales que son complicados de ver en otras partes del mundo. Tal es el caso de los peces mandarín (con su fabuloso cortejo de apareamiento), 12 variedades de caballitos de mar (entre ellas, el precioso caballito pigmeo), el esquivo pulpo de anillos azules, el <em>ornate ghot pipefish</em>, la impresionante <em>flamboyant cuttlefish</em>, varios tipos de <em>frogfish</em>, así como un montón de variedades de nudibranquios y gambitas como las arlequín. Si te gusta la fotografía submarina, lo vas a gozar.</li>
+<li><strong>Excursiones de buceo épicas: </strong>también tienes la posibilidad de ver algún que otro pecio, como el Doña Marilyn, relativamente cerca de la impresionante Gato Island, una de las mejores excursiones de buceo en Malapascua. Si quieres combinar una isla paradisiaca con buen buceo, también tienes la opción de hacer un tour de buceo a Kalanggaman.</li>
+</ul>
+<p style="text-align: justify;">Por desgracia, lo que no vas a ver, a diferencia de por ejemplo el <a href="https://www.viajarporfilipinas.com/buceo-panglao/" target="_blank" rel="noopener noreferrer">buceo en Panglao</a> o Moalboal, son abundantes <strong>paredes de coral</strong>. Hace varios años un tifón arrasó los arrecifes y ahora vas a encontrar algunos puntos de buceo en los que abunda el coral blando y algo de coral duro, que, poco a poco, se va recuperando. Aun así, <em>don’t worry</em>, desde Malapascua vas a poder hacer unas excursiones que te llevarán a ver vergeles de coral como Chocolate Island o Capitancillo. Incluso Kimud Shoal, el hogar actual de los tiburones zorro (la estrella a la hora de bucear en Malapascua), tiene un maravillosa pared de coral que combinada con los <em>tibus</em> es una locura.</p>
+<p style="text-align: justify;">En definitiva, <strong>no te vas a aburrir</strong> si haces buceo en Malapascua. Es una isla ideal tanto para buceadores que llevan varios años dándole al tanque como para novatos o, incluso, para aquellos que todavía no lo han probado. De hecho, es un destino habitual para los clientes de agencias de buceo, que se pueden pasar más de una semana buceando 3 veces cada día, ya te darás cuenta.</p>
+<p style="text-align: justify;">Las <strong>condiciones de buceo en Malapascua </strong>suelen ser muy cómodas, ya que no hay grandes corrientes ni se precisan viajes largos en barco (algo que, por experiencia, agradecerás si te mareas…). Las escuelas de buceo, si quieres, se encargan de todo, hasta de montarte el equipo y tienes <em>dive master</em> entregados y con años de experiencia en esos fondos marinos, por lo que ya saben más que de sobra encontrar aquello que más ganas tienes de ver.</p>
+<p style="text-align: justify;">A todo esto se le añade un <strong>ambiente sanote</strong>. La alegría se palpa en los barcos, cuando surgen charlas con un café o un Milo mientras se disfruta de un amanecer. Existe muy buen rollo entre los diferentes centros de la isla. Al ser muy pequeña, la gente se reúne en los bares para ver la puesta de sol o para cenar en el mercado. ¿Se nota ya que nos encanta?</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Condiciones_de_buceo_y_mejor_epoca_para_bucear_en_Malapascua"></span><span style="color: #33cccc;">Condiciones de buceo y mejor época para bucear en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<ul style="text-align: justify;">
+<li><strong>Temperatura del agua: </strong>entre 26ºC (enero) y 29ºC (mayo). La media durante el año ronda los 28ºC.</li>
+<li><strong>Visibilidad:</strong> entre 15 y 25 metros. La visibilidad es algo peor (5-10 metros) entre noviembre y enero por la cantidad de plancton, aun así, en esa época hay más posibilidad de ver mantas. A veces, en determinados puntos del norte de la isla, se forma lo que conocen los locales “calamansi juice”. El agua está bastante amarillenta (como un zumo de <em>calamansi</em>, una especie de lima) y la visibilidad disminuye, pero no es lo habitual.</li>
+<li><strong>Rango de profundidad de buceo: </strong>entre 5 y 40 metros.</li>
+<li><strong>Dificultad: </strong>para todos los niveles. No hay grandes corrientes.</li>
+<li><strong>Mejor época para bucear en Malapascua:</strong> se puede hacer todo el año, siendo la temporada alta entre febrero y mayo. Entre junio y octubre es época de lluvias y, por tanto, existe posibilidad de tifones y, por tanto, mala mar. En nuestra opinión, enero-marzo son ideales. Intenta evitar Navidad y Semana Santa. Por si te lo preguntas, los tiburones zorro están todo el año 😉 lo que sí que, según nos comentaron, los tiburones martillo tienen más papeletas de aparecer en abril y mayo.</li>
+</ul>
+<p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-8466 size-full" title="bucear en Malapascua" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="bucear en Malapascua" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter wp-image-8466 size-full" title="bucear en Malapascua" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8.jpg" alt="bucear en Malapascua" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-8-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_esta_Malapascua_y_como_llegar"></span><span style="color: #33cccc;">¿Dónde está Malapascua y cómo llegar?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Malapascua es una pequeña isla al norte de Cebú. La manera más directa de llegar hasta ella es cogiendo un <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Fvuelos-a%2Fceb%2Fvuelos-baratos-a-internacional-de-mactan-cebu-aeropuerto.html" target="_blank" rel="nofollow noopener noreferrer"><strong>vuelo a Cebú City</strong></a> y, después, viajando por carretera hasta el puerto de Maya, para luego montarse en una <em>bangka</em> (las embarcaciones tradicionales) hasta Malapascua.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Fvuelos-a%2Fceb%2Fvuelos-baratos-a-internacional-de-mactan-cebu-aeropuerto.html" target="_blank" rel="nofollow noopener noreferrer">Reserva tus vuelos a Cebú</a></p>
+<p style="text-align: justify;"><strong>¿Cuánto tardarás?</strong> El recorrido por tierra durará más o menos según el tráfico de salida que haya en Cebú. Si vas en bus, no deberías calcular menos de 5 horas. Si lo haces en furgoneta o en coche privado, puedes hacerlo en un tiempo récord de 3 horas. Ambos te dejarán en el puerto nuevo, que es desde donde salen más barcos.</p>
+<blockquote>
+<p style="text-align: justify;">En caso de que quieras un coche o una furgoneta privados para ir más cómodo, puedes dejarnos un comentario y te enviamos toda la info. Los precios de un taxi privado para hasta 4 personas rondan los 2.500 pesos.</p>
+</blockquote>
+<p style="text-align: justify;">El <strong>barco de Maya a Malapascua</strong> tarda entre 30 y 45 minutos, según el estado del mar. Estos te suelen dejar en el muelle de Logon (Barrio, el principal «pueblo» de la isla).</p>
+<p style="text-align: justify;">Tienes todo explicado en detalle, incluyendo trayectos desde otros puntos de Filipinas, en <a href="https://www.viajarporfilipinas.com/como-llegar-a-malapascua/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Malapascua</strong></a>.</p>
+<p><img decoding="async" class="aligncenter wp-image-8462 size-full" title="tanques de buceo en una playa de Malapascua" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="tanques de buceo en una playa de Malapascua" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8462 size-full" title="tanques de buceo en una playa de Malapascua" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6.jpg" alt="tanques de buceo en una playa de Malapascua" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-6-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFCuanto_cuesta_bucear_en_Malapascua_Precios_de_las_inmersiones"></span><span style="color: #33cccc;">¿Cuánto cuesta bucear en Malapascua? Precios de las inmersiones</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Bucear en Malapascua es <strong>ligeramente más caro</strong> que hacerlo en otros sitios de Filipinas. Esto ocurre, principalmente, porque los buceos conllevan una <strong>tasa</strong> obligatoria de 300 pesos al día dirigida al gobierno. Ademas, en el caso de Kimud/Monad, se pagan 150 pesos más.</p>
+<p style="text-align: justify;">Si tienes pensado hacer menos de 5 buceos en Malapascua (a partir de ahí se suelen comenzar a aplicar precios de paquete) cada inmersión ronda <strong>entre los 1.300 y los 1.800 pesos filipinos</strong> más las tasas que te hemos comentado. Por supuesto, esto dependerá de la escuela y también de la temporada. Ten en cuenta que la temporada baja va más o menos de junio a noviembre.</p>
+<p style="text-align: justify;">También hay que considerar el <strong>alquiler del equipo</strong>, en caso de que no lleves el tuyo. Los centros de buceo en Malapascua cobran entre 500 y 900 pesos diarios, más si necesitas linterna y computador.</p>
+<p style="text-align: justify;">Además del buceo en Malapascua, como te contaremos más adelante, existen <strong>excursiones de buceo</strong> de un día desde la isla. Son los llamados “<em>island trips</em>” y los más conocidos son el de Kimud/Monad (tiburones zorro/tiburones tigre), Gato Island, Kalanggaman y Capitancillo. Estas excursiones de buceo en Malapascua suelen incluir 3 inmersiones. A los precios de una inmersión común, deberás aumentarle entre 1.000 y 1.300 pesos por el extra de ir tan lejos. Además, si quieres bucear en Kalanggaman, tendrás que pagar 1.000 pesos en concepto de tasas que cobra la Municipalidad de Leyte.</p>
+<p style="text-align: justify;">Las inmersiones <strong>nocturnas</strong> también tienen un coste extra y tienes que considerar que tienes que alquilar la linterna, en caso de no llevarla. Sale más o menos por 200-300 pesos.</p>
+<p>Si te llama el buceo nocturno, te puede interesar mucho esta salida:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/malapascua/buceo-nocturno-malapascua/?aid=2773&amp;cmp=buceomalapascua" target="_blank" rel="nofollow noopener">Buceo nocturno en Malapascua</a></p>
+<p>&nbsp;</p>
+<p><img decoding="async" class="aligncenter wp-image-8467 size-full" title="buceo muck diving en Malapascua" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="buceo muck diving en Malapascua" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8467 size-full" title="buceo muck diving en Malapascua" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2.jpg" alt="buceo muck diving en Malapascua" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_bucear_en_Malapascua_Mejores_puntos_de_buceo_en_Malapascua"></span><span style="color: #33cccc;">¿Dónde bucear en Malapascua? Mejores puntos de buceo en Malapascua</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ya sabes cómo es más o menos el buceo y cuánto te va a costar, ¿pero cuáles son las mejores inmersiones? En Malapascua cuentas con <strong>más de 20 puntos de buceo</strong>. Con unos cuantos tanques vacíos a nuestras espaldas, te vamos a contar las que nos parecen más interesantes.</p>
+<p style="text-align: justify;">Aquí te dejamos un <strong>mapa</strong> con todos los puntos de buceo en Malapascua y sus alrededores. Si clicas en ellos, podrás ver el nombre.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1bslhBtU2p6x-bQabuZk2gzadSmigLOMt"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1bslhBtU2p6x-bQabuZk2gzadSmigLOMt" width="1000" height="480"></iframe></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Los_imprescindibles_del_buceo_en_Malapascua_Kimud_Shoal_y_Gato_Island"></span><span style="color: #33cccc;">Los imprescindibles del buceo en Malapascua: Kimud Shoal y Gato Island</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si solo tuvieses 1 o 2 días para bucear en Malapascua o el presupuesto no te da para más, no lo dudes, lo que tienes que hacer es esto:</p>
+<ul style="text-align: justify;">
+<li><strong>Kimud Shoal:</strong> la estrella, la que ha puesto a Malapascua en el mapa y el motivo por el que nos levantaríamos a las 4 de la mañana una y otra vez. Los thresher shark suben cada mañana a esta estación de limpieza, brindándonos un espectáculo único. Los tiburones zorro se sitúan entre los 13 y los 20 metros. Previamente estos tiburones se veían en Monad Shoal, pero, durante la pandemia, parece que los tiburones tigre se hicieron con ese shoal y los zorros se mudaron a Kimud, haciendo la inmersión aún más fascinante, ya que no es necesario bajar hasta los 30 metros y se ven con muchísima facilidad. La plataforma en la que se encuentran ahora está llena de coral, así que, aunque ya no sea un buceo tan profundo, los centros más respetuosos de la isla piden a los buceadores que solo tengan la licencia de Open Water Diver que hagan el curso de conservación de tiburones o alguna «aventura» (parte) del Advanced. Te contamos más en nuestro post sobre el <a href="https://www.viajarporfilipinas.com/buceo-tiburon-zorro-malapascua/" target="_blank" rel="noopener noreferrer"><strong>Tiburón zorro en Malapascua</strong></a>.</li>
+<li><strong>Gato Island:</strong> venir a bucear a Malapascua y no hacerlo en Gato Island debería ser un pecado. Esta pequeña isla a unos 45-60 minutos de Malapascua es una verdadera joya y te brindará recuerdos imborrables. Cuenta con 5 puntos de buceo, aunque lo habitual es hacer 2 o 3. La atraviesa un túnel de norte a oeste de unos 30 metros en el que no faltan los corales, pero las estrellas son los tiburones de puntas blancas, que suelen brindar una visión gloriosa junto al juego de luces. También se pueden avistar tiburones bambú y tiburones gato. No es raro encontrarse con serpientes anilladas, peces sapo, peces pipa, peces escorpión, peces hoja, pulpos, gambas mantis, bailarinas españolas, rayas moteadas de puntos azules y multitud de seres marinos que harán tus delicias. En nuestra última aventura por aquí vimos varios peces rara y hasta al grandioso pulpo de anillos azules. Es aconsejable ser AOW, pero estas inmersiones son adaptables a cualquier nivel.</li>
+</ul>
+<p style="text-align: justify;">Por otro lado, casi todos los centros de buceo de Malapascua hacen salidas de <strong>2 inmersiones en Kimud</strong>. De 5:30 a 10:30 más o menos, para que calcules. Esto es así porque el punto de buceo está bastante lejos, así que de esta manera les sale a cuenta. Ademas, cada vez es más habitual que se ofrezcan viajes de 2 inmersiones en Kimud y otra en Monad Shoal con el objetivo de ver a los tiburones tigre en el segundo buceo. En este caso, el regreso a Malapascua suele ser para comer.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Sitios_recomendables_para_bucear_en_Malapascua"></span><span style="color: #33cccc;">Sitios recomendables para bucear en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Para los que tienen más días:</p>
+<ul style="text-align: justify;">
+<li><strong>Deep Rock (Bogtong Bato):</strong> este pináculo al noroeste de la isla brida un buceo muy interesante entre los 14 y 28 metros con múltiples posibilidades de ver vida macro como <em>frogfish</em>, nudibranquios, caballitos pigmeo, <em>robust ghost pipefish</em>… Es uno de los mejores sitios para ver corales alrededor de la isla.</li>
+<li><strong>Lighthouse:</strong> la razón para venir aquí y por la que muchos vienen a bucear en Malapascua es porque es uno de los pocos sitios del mundo donde vas a poder ver con casi toda probabilidad el cortejo del pez mandarín. Es una inmersión que se suele hacer al caer el sol y es poco profunda (entre 8 y 11 metros), por lo que luego vas a poder ver otras criaturillas típicas de las nocturnas. Hay un pequeño pecio de la II Guerra Mundial muy cerca a apenas 3 metros, que también se puede ver haciendo esnórquel.</li>
+<li><strong>Deep Slope (North Point):</strong> uno de nuestros favoritos. Es un buceo algo extraño que comienza en una pendiente de arena hasta los 26 metros en la que no parece haber nada, pero que realmente está llena de vida. Allí vimos nuestra primera <em>flamboyant cuttlefish</em> (metasepia pfefferi) y también puedes encontrar caballitos pigmeo, pulpos de anillos azules, peces dragón y otras criaturas “raras”. Acaba en un arrecife de corales blandos y duros entre los 12 y los 20 metros.</li>
+<li><strong>Manta Point:</strong> este buceo se hace en la misma plataforma de Monad Shoal y también es una estación de limpieza. Como su nombre indica, tienes opciones de ver mantas rayas oceánicas, pero, como está justo al lado, no es raro ver algún tiburón zorro. En las veces que fuimos, no tuvimos suerte con las mantas, pero sí la gran fortuna de ver a los segundos. Es un buceo profundo, solo para AOW.</li>
+</ul>
+<p><img decoding="async" class="aligncenter wp-image-8464 size-full" title="buceo macro en Malapascua" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="buceo macro en Malapascua" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8464 size-full" title="buceo macro en Malapascua" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1.jpg" alt="buceo macro en Malapascua" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-1-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Otros_sitios_interesantes_de_buceo_en_Malapascua"></span><span style="color: #33cccc;">Otros sitios interesantes de buceo en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<ul style="text-align: justify;">
+<li><strong>Lapus Lapus:</strong> junto a Deep Rock, es el mejor sitio para hacer una inmersión de corales. Con una gran variedad de corales blandos y duros, es normal ver <em>scorpionfish</em>, <em>lionfish</em>, <em>frogfish</em>, cangrejos, gambas y caballitos pigmeo.</li>
+<li><strong>Doña Marilyn:</strong> con casi 100 metros de longitud, este era un ferri de pasajeros que unía Manila con Tacloban, pero que se hundió por un tifón en 1988. Las inmersiones son muy interesantes, ya que se puede penetrar el barco, pero, por desgracia, en 2018 algunos desalmados robaron partes del pecio. No es una inmersión muy popular, ya que está bastante lejos.</li>
+<li><strong>East Garden (Ka Osting):</strong> ubicado al este de la isla, esta inmersión poco profunda y con apenas corriente es perfecta para los amantes del <em>muck diving</em>. Se trata de una zona de arena y rocas donde se pueden ver langostas, cangrejos porcelana, peces sapo…Con suerte, se puede ver el graciosísimo <em>hairy frogfish</em>. La vecina inmersión de Bantigue es muy similar.</li>
+</ul>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Excursiones_de_buceo_desde_Malapascua"></span><span style="color: #33cccc;">Excursiones de buceo desde Malapascua</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como ves, tienes un montón de puntos de buceo en Malapascua. Sin embargo, a ellos se les une la posibilidad de descubrir otros haciendo excursiones. Las más típicas son:</p>
+<ul style="text-align: justify;">
+<li><strong>Gato Island:</strong> ya te hablamos de ella más arriba porque nos parece un imprescindible, pero, en realidad, es una excursión en la que se hacen 2-3 inmersiones. Algunos centros la combinan con Kimud.</li>
+<li><strong>Kalanggaman:</strong> esta isla se encuentra ubica a más o menos 90 minutos de Malapascua y es una verdadera postal. En esta excursión se suelen hacer un par de inmersiones, una barbacoa y dispones de tiempo para poner los pies en su preciosa lengua de arena. A diferencia de los fondos marinos de Malapascua, aquí podrás encontrar paredes de coral con gorgonias y corales blandos. La visibilidad tiende a ser brutal y, si miras al azul, ocasionalmente se ven tiburones, rayas, atunes o barracudas. Puedes encontrar mucha información sobre la visita a esta isla en nuestro artículo sobre <a href="https://www.viajarporfilipinas.com/kalanggaman-island-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer"><strong>Kalanggaman</strong></a>. Los centros la suelen combinar con Kimud, ya que está de camino.</li>
+<li><strong>Capitancillo: </strong>una de las recientes incorporaciones al panorama de buceo de Malapascua es esta pequeñísima isla en la que destaca un faro. Sus fondos marinos de ensueño están cubiertos por gorgonias, corales blandos y duros. Aquí se dan básicamente buceos de pared en los que apreciar la vida macro, pero también cardúmenes de meros, atunes o lucios. Está a un par de horas de Malapascua, así que bucear aquí supone un coste extra.</li>
+<li><strong>Chocolate:</strong> pináculo al sur de la isla que hace las delicias de los amantes del macro. Es una inmersión poco profunda en la que predominan los corales blandos y donde no es raro ver <em>flatworms</em> (a veces apareándose), pegasus, morenas, nudibranquios, gambas…</li>
+<li><strong>Sambawan + Maripipi:</strong> no es una excursión muy habitual porque está bastante lejos (2,5 horas), pero los 2 puntos de buceo de Maripipi (Toblerone y Rock Road) combinados con la belleza de Sambawan son combinación ganadora.</li>
+</ul>
+<p style="text-align: justify;">Las excursiones suelen comenzar a las 9:00 (a no ser que se combine con la inmersión de Kimud, que suelen salir sobre las 5 o 6 de la mañana). Estarás de vuelta en la isla alrededor de las 16:00, una hora perfecta para coger sitio en Ocean Vida y disfrutar del atardecer con un cóctel en la mano.</p>
+<p><img decoding="async" class="aligncenter wp-image-8465 size-full" title="excursión de buceo a Kalanggaman" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="excursión de buceo a Kalanggaman" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8465 size-full" title="excursión de buceo a Kalanggaman" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7.jpg" alt="excursión de buceo a Kalanggaman" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-7-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFCon_quien_bucear_en_Malapascua_El_mejor_centro_con_profesionales_espanoles"></span><span style="color: #33cccc;">¿Con quién bucear en Malapascua? El mejor centro con profesionales españoles</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Esta es la pregunta del millón, pues, como habrás intuido, siendo una meca del buceo, hay un <strong>montón de centros de buceo</strong> <strong>en Malapascua</strong>. Nosotros, que hemos pasado temporadas en la isla, hemos podido probar varios de ellos y, como siempre, hay gente más y menos profesional, equipos más o menos gastados y barcos más o menos cómodos.</p>
+<p style="text-align: justify;">Seguro que como tú, al ser hispanohablantes, tenemos que reconocer que siempre nos sentimos <strong>más cómodos si se nos atiende en nuestro idioma</strong>. Esto creemos que es aún más importante cuando todavía no se tiene mucha experiencia en el mundo del buceo. Y, siendo sinceros, también nos encanta conocer a gente que se enamoró de la isla y se quedó para que nos cuenten su historia con una San Miguel tras las inmersiones del día.</p>
+<p style="text-align: justify;">Cuidado, que un centro de buceo tenga instructores que hablen castellano no significa que todos los trabajadores sean españoles o latinos. Como en toda Filipinas, las escuelas de buceo de Malapascua necesitan que gran parte de la fuerza laboral sea local. Por esta razón, la mayoría de los instructores de la isla son extranjeros, para satisfacer a aquellos estudiantes que no hablan inglés, mientras que los <em>dive master</em>, es decir, los que guían los <em>fun dives</em> son filipinos.</p>
+<div class='et-box et-shadow'>
+					<div class='et-box-content'>Si vas a hacer un curso y te sientes <strong>más cómodo en tu idioma</strong> o si quieres hacer buceos en Malapascua pero sintiéndote un poco como en casa, déjanos un comentario en este artículo y te mandaremos toda la <strong>información sobre nuestro centro de buceo</strong> de confianza en Malapascua.</div></div>
+<p>Por otro lado, si quieres reservar ya directamente tu buceo, puedes hacerlo ahora mismo desde aquí:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/malapascua/buceo-malapascua/?aid=2773&amp;cmp=buceomalapascua" target="_blank" rel="nofollow noopener">Reservar Buceo en Malapascua</a></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/malapascua/buceo-tiburon-zorro-malapascua/?aid=2773&amp;cmp=buceomalapascua" target="_blank" rel="nofollow noopener">Reservar buceo con tiburón zorro</a></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cursos_de_buceo_en_Malapascua"></span><span style="color: #33cccc;">Cursos de buceo en Malapascua</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ya te lo adelantamos en <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">Buceo en Filipinas</a></strong>, Malapascua es, en nuestra opinión, uno de los <strong>mejores sitios para aprender a bucear</strong> o ver qué tal es. Las razones son muy simples:</p>
+<ul style="text-align: justify;">
+<li>Es un sitio <strong>cómodo</strong> para hacerlo, con buenos profesionales y un montón de escuelas justo en la playa, que te harán el estudio más agradable.</li>
+<li>Es un lugar <strong>seguro</strong>. No hay muchas corrientes, la visibilidad es buena, hay escuelas con buenos equipos y barcos.</li>
+<li>Vas a poder disfrutar de la <strong>vida marina</strong> desde el principio y, además, puedes ponerle el broche de oro a tu curso de Open Water Diver buceando con el tiburón zorro.</li>
+</ul>
+<p style="text-align: justify;">¿Quieres un centro para hacer <strong>buceo en Malapascua de confianza</strong>? Déjanos un comentario y te enviaremos toda la información a tu correo.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Bautismo_de_buceo_en_Malapascua"></span><span style="color: #33cccc;">Bautismo de buceo en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si no quieres dedicarle tanto tiempo, también puedes hacer lo que se conoce como bautismo de buceo, DSD o <em>Discovery Scuba Diving</em>. Esta es una inmersión en la que <strong>irás acompañado en todo momento por un instructor</strong> en la que se baja a menos profundidad que de costumbre para que te hagas una idea de las sensaciones del buceo.</p>
+<p style="text-align: justify;">Se tardan unas <strong>3 horas</strong>, en las que el instructor te dará primero unos conocimientos básicos para que entiendas la dinámica del buceo y cómo se solucionan las cuestiones más comunes. Después, iréis juntos al agua, practicaréis algunos sencillos ejercicios y descubriréis los fondos marinos buceando en Malapascua.</p>
+<p style="text-align: justify;"><strong>¿Cuánto vale un bautismo de buceo en Malapascua? </strong>Rondan los 3.000-4.000 pesos, incluyendo todo. Si luego quieres repetir y hacer otra inmersión similar, sale más económico.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Open_Water_en_Malapascua"></span><span style="color: #33cccc;">Open Water en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Una de las cosas más importante que tienes de saber sobre el curso de Open Water en Malapascua es que necesitarás entre <strong>3 y 4 días</strong> de tu viaje para ello. Aun así, si haces la teoría online, se puede reducir a 2-2,5 día. Además, te recomendamos darle 1 o 2 días más para hacer el Advanced o la aventura correspondiente y así ver a los tiburones zorro. A lo largo de estos días vas a aprender tanto la parte teórica como la práctica para que luego<strong> puedas bucear en cualquier parte del mundo</strong>.</p>
+<p style="text-align: justify;">Como te decíamos más arriba, en Malapascua vas a tener instructores muy profesionales que te van a enseñar <strong>en tu propio idioma</strong>, para que así estés más cómodo y se te olviden los miedos que todos hemos tenido al principio.</p>
+<p style="text-align: justify;"><strong>¿Cuánto cuesta el Open Water en Malapascua?</strong> Los precios rondan los 20.000 pesos, incluyendo todas las tasas, materiales y equipo. Es el precio estándar de Filipinas para estos cursos.</p>
+<blockquote><p>Si quieres que te pasamos la info de nuestro centro para hacer buceo en Malapascua de confianza, déjanos un comentario y te damos sus datos.</p></blockquote>
+<p><img decoding="async" class="aligncenter wp-image-8484 size-full" title="cursos para bucear en Malapascua" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="cursos para bucear en Malapascua" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8484 size-full" title="cursos para bucear en Malapascua" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9.jpg" alt="cursos para bucear en Malapascua" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-9-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Advanced_Open_Water_Diver_en_Malapascua"></span><span style="color: #33cccc;">Advanced Open Water Diver en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si ya tienes el Open Water, <strong>no se nos ocurre ningún sitio mejor</strong> para hacerte con el Advanced que Malapascua. ¿La razón? Que una de las inmersiones del curso la vas a hacer en Monad Shoal, es decir, con los tiburones zorro.</p>
+<p style="text-align: justify;">Este curso de <strong>2 días</strong> se centra en mejorar tus habilidades buceando, teniendo como obligatorias la inmersión de Aventura Profunda y la de Navegación Subacuática. Además, lo más común es que 2 o 3 de esas inmersiones se hagan en Kimud Shoal, por lo que te llevas el regalo de ver a los tiburones zorro. Por otro lado, podrás ampliar el límite de tu licencia de buceo hasta 30 metros, lo cual es importante para hacer muchas inmersiones alrededor del mundo.</p>
+<p style="text-align: justify;"><strong>¿Cuánto vale el Advanced en Malapascua? </strong>Alrededor de los 17.000 pesos, incluyendo las tasas, el material y el equipo.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Curso_de_Dive_Master_en_Malapascua"></span><span style="color: #33cccc;">Curso de Dive Master en Malapascua</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">La joya de la corona. Si has quedado enamorado irremediablemente de la isla, ¿qué mejor excusa que hacer el curso de Dive Master en Malapascua? Esto mismo nos pasó a nosotros, por lo que decidimos ampliar nuestros conocimientos de buceo haciendo lo que se llama un DMT.</p>
+<p style="text-align: justify;">Gracias a este curso podrás <strong>trabajar de guía de buceo</strong> (<em>dive master</em>) en cualquier lugar del mundo, pero lo más importante es que aprenderás muchísimo y, no vamos a negarlo, te puedes pasar 1 o 2 meses disfrutando de los fondos marinos de Malapascua y de la propia isla.</p>
+<p style="text-align: justify;">De los más de 70 países que conocemos, de verdad, <strong>no se nos ocurre un sitio mejor</strong> que Malapascua para hacer un DMT. La isla es cómoda, vivir en ella es súper barato (tienes habitaciones desde 120-150€ al mes y puedes comer por 2€), bucear es una maravilla y podrás hacerlo casi ilimitadamente, tu escuela estará en una playa fabulosa, el ambiente es buenísimo y, lo más importante, tienes escuelas con grandes profesionales hispanohablantes, que llevan años dedicándose a esto.</p>
+<p style="text-align: justify;"><strong>¿Cuánto cuesta un curso de dive master en Malapascua?</strong> Los precios rondan los 50.000 pesos, a los que tienes que añadir el alquiler del equipo, si no lo tienes, cosa que cuesta alrededor de 10.000 pesos; los materiales de PADI, que son 12.460 pesos; y la tasa de certificación como Dive Master de PADI, que cuesta 213 dólares australianos.</p>
+<p style="text-align: justify;">Si estás decidido y necesitas orientación sobre la escuela (en este caso esto es más importante que nunca), déjanos un comentario y te enviaremos toda la información.</p>
+<p><img decoding="async" class="aligncenter wp-image-8485 size-full" title="escuela de buceo en Malapascua en la playa" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="escuela de buceo en Malapascua en la playa" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8485 size-full" title="escuela de buceo en Malapascua en la playa" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10.jpg" alt="escuela de buceo en Malapascua en la playa" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/buceo-malapascua-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Recomendaciones_para_bucear_en_Malapascua"></span><span style="color: #33cccc;">Recomendaciones para bucear en Malapascua</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Disfruta del buceo en Malapascua con estos consejos de nuestra cosecha:</p>
+<ul style="text-align: justify;">
+<li><strong>Lleva bastante dinero en efectivo.</strong> Te podríamos decir que muchos los centros de buceo en Malapascua no aceptan tarjeta o cobran un porcentaje por pagar con tarjeta. En Malapascua tienes un par de cajeros de Euronet, que cobran comisión de 250 pesos por cada retirada de 10.000 pesos y, como te despistes, te aplican otros cargos extras, que son muy vivos. Ademas, muchas veces no tienen efectivo. Si te quieres ahorrar bastante, lo mejor es que uses <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener">Remitly</a>, ya que tienes dos pawnshops en la isla. En <a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/" target="_blank" rel="noopener noreferrer">Dinero en Filipinas</a> tienes esta info más detallada.</li>
+<li>Si vas a bucear muchísimo en Malapascua u otros lugares del archipiélago, <strong>te interesa traer tu propio equipo</strong> y así ahorrarás un poco.</li>
+<li>Si tienes pensado bucear en Malapascua en Navidad o Semana Santa y quieres ir al tiburón zorro, es aconsejable <strong>reservar con antelación</strong>. No es que exista un cupo como en Balicasag, pero sí que es recomendable. En caso de que hagas cursos, esto es aún más importante, sobre todo si quieres un instructor de habla hispana, ya que los grupos de estudiantes son reducidos (normalmente un máximo de 4 personas).</li>
+<li>Mucho ojo con los <strong>aires acondicionados</strong>. Los cambios de temperatura son enormes tanto en transportes como en los alojamientos. Ya sabes que si te resfrías, lo vas a tener complicado para compensar bajo el agua.</li>
+<li>Lo más importante: <strong>elige un buen centro de buceo</strong>, que tenga profesionales, equipos en buen estado y barcos cómodos. De verdad, no te dejes guiar por unos euros. La seguridad en el buceo es primordial y en Malapascua tienes varias inmersiones profundas que van más allá de un simple paseo por el coral. Además, en Malapascua no hay cámara hiperbárica, por lo que es mejor ir con un centro de buceo que te asegure que, en caso de accidente, puedas ser trasladado rápidamente y que tenga los materiales necesarios en el barco. Finalmente, elige un centro con ética. Hemos visto de todo: alimentación de tiburones, destrozo de coral, instructores saltándose normas de seguridad&#8230;</li>
+<li>Relacionadísimo con lo anterior, viaja con un <a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer"><strong>buen seguro de viajes</strong></a> como el que nosotros llevamos. <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><strong>Aquí tienes un 5% de descuento</strong></a>. El IATI Mochilero es el mejor en este caso, ya que es el único seguro de viaje que te cubre inmersiones de hasta 40 metros de profundidad.</li>
+</ul>
+<p><a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><img decoding="async" class="aligncenter size-full wp-image-3312" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento seguro de viaje" width="700" height="125" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3312" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" alt="descuento seguro de viaje" width="700" height="125" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Sitios_aconsejables_para_alojarte_en_Malapascua_y_bucear"></span><span style="color: #33cccc;">Sitios aconsejables para alojarte en Malapascua y bucear</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Casi todas las escuelas de buceo en Malapascua <strong>se sitúan a lo largo de Bounty Beach</strong>, con algunas excepciones dentro de lo que es el propio “pueblo” y alguna más al norte.</p>
+<p style="text-align: justify;">Nuestro consejo es que, si el presupuesto no es problema, te alojes <strong>a pie de playa</strong> porque es un verdadero gustazo levantarse con las vistas de ese azul turquesa malapascueño. Si quieres ahorrar un poco, quedarse en los alrededores del mercado no es mal plan. Llegarás en menos de 5 minutos caminando a los centros de buceo de Malapascua y tendrás a mano todos los restaurantes.</p>
+<p style="text-align: justify;">Aquí te recomendamos nuestros 3 sitios favoritos de más a menos caché:</p>
+<ul style="text-align: justify;">
+<li><a href="https://www.booking.com/hotel/ph/ocean-vida-beach-and-dive-resort-daanbantayan.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>Ocean Vida Resort</strong></a><strong>:</strong> en pleno corazón de Bounty Beach, es el resort más cómodo si vas a bucear en Malapascua. Tienes habitaciones espaciosas, bien decoradas y, lo mejor, con vistas al mar. Además, también una zona de hamacas y un restaurante perfecto.</li>
+<li><a href="https://www.booking.com/hotel/ph/tepanee-beach-resort.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer"><strong>Tepanee Beach Resort</strong></a><strong>: </strong>ubicado en una zona tranquilísima con acceso directo al mar, en nuestra opinión, sus habitaciones tienen la mejor relación calidad-precio si buscas una cabañita con vistazas.</li>
+<li><a href="https://www.booking.com/hotel/ph/celtis-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>Celtis Resort</strong></a><strong>:</strong> ubicado muy cerca del mercado, en pleno centro de Malapascua, es un sitio agradable y, sobre todo, muy tranquilo (no se escuchan los ruidosos gallos de la isla). La familia que lo lleva es encantadora. Fue aquí donde nos alojamos durante todo el tiempo del curso de dive master. Puedes leer más en <a title="Dormir en Celtis Resort, Malapascua" href="https://www.viajarporfilipinas.com/celtis-resort-malapascua/" target="_blank" rel="noopener noreferrer">Dormir en Celtis Resort Malapascua</a>.</li>
+</ul>
+<p style="text-align: justify;">Encontrarás muchas más alternativas en <a href="https://www.viajarporfilipinas.com/hoteles-en-malapascua/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Malapascua</strong></a>.</p>
+<p style="text-align: justify;">Recuerda que tienes todo lo necesario para exprimir la isla al máximo en nuestra <strong><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/" target="_blank" rel="noopener noreferrer">Guía de Malapascua</a></strong>.</p>
+<hr />
+<p style="text-align: center;"><em>¿Qué te ha parecido el buceo en Malapascua sobre el papel? ¡Pues es aún mejor en el agua! Estamos seguros de que estás deseando sumergirte. Si tienes cualquier duda, te responderemos encantados en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">1.336 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/buceo-malapascua/comment-page-59/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56668">
+		<article id="comment-56668" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Laura</span>				<span class="comment_date">
+					el 06/05/2025 a las 14:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Gracias por esta maravillosa guía para viajar por Filipinas, menudo trabajo!!!!! Me pueden recomendar algún centro para bucear en Malapascua que hablen español? Saben si se puede hacer snorkel en algunos de los puntos de inmersión para mi pareja que el no bucea???</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56668' data-commentid="56668" data-postid="8459" data-belowelement="comment-56668" data-respondelement="respond" data-replyto="Responder a Laura" aria-label='Responder a Laura'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56671">
+		<article id="comment-56671" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/05/2025 a las 15:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Laura, ¡muchas gracias! Acabamos de pasarte la mejor recomendación. En cuanto al snorkel, en los propios puntos de inmersión no porque no va a ver nada, pero hay ciertas zonas de Malapascua a las que puede ir a hacer snorkel por su cuenta. Encontrarás la info en <a href="https://www.viajarporfilipinas.com/que-hacer-en-malapascua/" title="Qué hacer en Malapascua: guía completa" target="_blank" rel="noopener ugc">Qué hacer en Malapascua</a>. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56615">
+		<article id="comment-56615" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Raúl Martín Hernández</span>				<span class="comment_date">
+					el 05/05/2025 a las 01:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, iremos a malapascua para hacer todas las inmersiones que podamos, nos podrías recomendar un centro de buceo de confianza para hacerlas. (Nos sentiríamos más cómodos si fuera en español).</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56615' data-commentid="56615" data-postid="8459" data-belowelement="comment-56615" data-respondelement="respond" data-replyto="Responder a Raúl Martín Hernández" aria-label='Responder a Raúl Martín Hernández'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56626">
+		<article id="comment-56626" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/05/2025 a las 09:44				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Raúl, buen plan : ) te lo pasamos ya mismo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56453">
+		<article id="comment-56453" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Paula Rivera Pérez</span>				<span class="comment_date">
+					el 30/04/2025 a las 14:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, mi pareja y yo queremos ir a Filipinas el año que viene, de cara a finales de febrero, la idea es irnos un mes o más. Entiendo que desde cualquier consulado, en este caso de Barcelona, podríamos sacar el visado sin ningún problema no?<br />
+Por otro lado, sobre el buceo en Malapascua, cual es vuestra recomendación como centro de buceo? Y cuantos dias aconsejais ir?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56453' data-commentid="56453" data-postid="8459" data-belowelement="comment-56453" data-respondelement="respond" data-replyto="Responder a Paula Rivera Pérez" aria-label='Responder a Paula Rivera Pérez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56456">
+		<article id="comment-56456" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/04/2025 a las 15:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Paula, sí, en cualquier consulado puedes hacer un visado o sino ir como turista y luego extender el visado como indicamos en <a href="https://www.viajarporfilipinas.com/extension-de-visado-de-filipinas/" title="Cómo hacer la extensión de visado de Filipinas – Guía actualizada" target="_blank" rel="noopener ugc">Extensión del visado de Filipinas</a>. Te acabamos de pasar el dato del buceo. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56366">
+		<article id="comment-56366" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Gemma Carreño</span>				<span class="comment_date">
+					el 28/04/2025 a las 07:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos! Gracias por todo la información facilitada. Mañana vamos a Malapascua y será el final de nuestro viaje, nos encantó Filipinas. Nos podéis decir el centro de buceo que recomiendas aquí, por favor. Fuimos al de Panglao y quedamos muy contentos. Gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56366' data-commentid="56366" data-postid="8459" data-belowelement="comment-56366" data-respondelement="respond" data-replyto="Responder a Gemma Carreño" aria-label='Responder a Gemma Carreño'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56378">
+		<article id="comment-56378" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/04/2025 a las 11:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Gemma, nos alegra que os fuera bien con ellos. Os pasamos la información de Malapascua. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56251">
+		<article id="comment-56251" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Aitor Martinez Jiménez</span>				<span class="comment_date">
+					el 25/04/2025 a las 03:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos!<br />
+Soy Aitor.<br />
+Podríais por favor pasarme la info de vuestro centro de buceo de confianza? Nos gustaría hacer la inmersión con el tiburón zorro y alguna más, y nos ayudaría bastante que hubiese guías en español. Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56251' data-commentid="56251" data-postid="8459" data-belowelement="comment-56251" data-respondelement="respond" data-replyto="Responder a Aitor Martinez Jiménez" aria-label='Responder a Aitor Martinez Jiménez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56263">
+		<article id="comment-56263" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/04/2025 a las 09:26				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Aitor, por supuesto que sí, ahora te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56212">
+		<article id="comment-56212" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Borja</span>				<span class="comment_date">
+					el 24/04/2025 a las 03:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, estaré en Malapascua en los próximos días y voy loco buscando una escuela de buceo donde pueda hablar en español. Si podéis echarme un cable con esto os le agradecería.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56212' data-commentid="56212" data-postid="8459" data-belowelement="comment-56212" data-respondelement="respond" data-replyto="Responder a Borja" aria-label='Responder a Borja'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56219">
+		<article id="comment-56219" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 24/04/2025 a las 07:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Borja. Por supuesto, te lo acabamos de enviar, ¡buenos buceos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/buceo-malapascua/comment-page-59/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/buceo-malapascua/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='8459' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f82f7abef0" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="8"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><link rel='stylesheet' id='et-shortcodes-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes-legacy.css?ver=4.24.2' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"8459","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script type="text/javascript" id="et-shortcodes-js-js-extra">
+/* <![CDATA[ */
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=4.24.2" id="et-shortcodes-js-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

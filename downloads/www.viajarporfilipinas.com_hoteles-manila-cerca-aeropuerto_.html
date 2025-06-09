@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Mejores hoteles en Manila cerca del aeropuerto 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Un hotel en Manila cerca del aeropuerto es la solución ideal si tu vuelo sale o llega desde ahí. Aquí los que hemos probado y recomendamos." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Mejores hoteles en Manila cerca del aeropuerto 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Un hotel en Manila cerca del aeropuerto es la solución ideal si tu vuelo sale o llega desde ahí. Aquí los que hemos probado y recomendamos." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2019-04-21T10:29:19+00:00" />
+	<meta property="article:modified_time" content="2025-05-09T08:19:33+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="18 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Mejores hoteles en Manila cerca del aeropuerto","datePublished":"2019-04-21T10:29:19+00:00","dateModified":"2025-05-09T08:19:33+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/"},"wordCount":3555,"commentCount":60,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1.jpg","articleSection":["Info práctica","Manila"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/","url":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/","name":"▷ Mejores hoteles en Manila cerca del aeropuerto 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1.jpg","datePublished":"2019-04-21T10:29:19+00:00","dateModified":"2025-05-09T08:19:33+00:00","description":"Un hotel en Manila cerca del aeropuerto es la solución ideal si tu vuelo sale o llega desde ahí. Aquí los que hemos probado y recomendamos.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1.jpg","width":1200,"height":630,"caption":"dormir cerca del Aeropuerto de Manila"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Mejores hoteles en Manila cerca del aeropuerto"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Mejores hoteles en Manila cerca del aeropuerto del feed" href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/3724" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=3724' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fhoteles-manila-cerca-aeropuerto%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fhoteles-manila-cerca-aeropuerto%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-3724-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/3724/et-core-unified-3724.min.css?ver=1746782893" /><link rel="stylesheet" id="et-core-unified-deferred-3724-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/3724/et-core-unified-deferred-3724.min.css?ver=1746782893" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-3724 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-3724" class="et_pb_post post-3724 post type-post status-publish format-standard has-post-thumbnail hentry category-info-practica category-manila">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Mejores hoteles en Manila cerca del aeropuerto</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/info-practica/" rel="category tag">Info práctica</a>, <a href="https://www.viajarporfilipinas.com/category/luzon/manila/" rel="category tag">Manila</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="dormir cerca del Aeropuerto de Manila" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-1080x630.jpg" alt="dormir cerca del Aeropuerto de Manila" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-p1-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Con nuestra guía de <a href="https://www.viajarporfilipinas.com/que-hacer-manila-filipinas/">qué hacer en Manila</a> tratamos siempre de convencer a los viajeros para que le den una oportunidad a la capital filipina y se adentren a explorar todo el legado histórico que esta ofrece. Te animes finalmente a ello o no, puede que para alguna de tus noches necesites un <strong>hotel en Manila cerca del aeropuerto</strong>, para de esta forma tenerlo cerca y evitar madrugones innecesarios o la tan frecuente congestión de tráfico de la ciudad.</p>
+<p style="text-align: justify;">Ten en cuenta, antes de decantarte por un hotel en Manila cerca del aeropuerto, que el Aeropuerto Internacional Ninoy Aquino (NAIA) cuenta con <strong>4 terminales diferentes</strong>, algunas de ellas algo alejada de las otras. Eso no significa que vayas a tardar mucho en llegar de una a otra si no duermes justo delante, pero si estás buscando un hotel tan cercano que te permita ir caminando o, simplemente, quieres ahorrar en tiempo y transporte, échale un ojo antes a la terminal en la que sale o llega tu vuelo.</p>
+<p style="text-align: justify;">De todas formas, si no te hospedas justo delante de la terminal que vayas a utilizar, tampoco debes preocuparte. Tanto en taxi (por favor, siempre con taxímetro), GRAB (el Uber asiático) o usando los transfers gratuitos que algunos hoteles en Manila cerca del aeropuerto ofrecen, <strong>llegarás a tu destino en apenas unos minutos</strong>. Para que no te timen, te recomendamos leer <a title="Cómo ir del aeropuerto de Manila al centro" href="https://www.viajarporfilipinas.com/como-ir-aeropuerto-manila-centro/" target="_blank" rel="noopener noreferrer"><strong>Cómo ir del aeropuerto de Manila al centro</strong></a>.</p>
+<blockquote><p>En el caso de que cambies de idea y quieras alojarte en otras zonas de la ciudad, echa un vistazo a nuestro artículo: <a href="https://www.viajarporfilipinas.com/dormir-manila-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Manila</strong></a>.</p></blockquote>
+<p style="text-align: justify;">Sea como sea, <strong>te recomendamos llegar con tiempo al aeropuerto de Manila,</strong> ya que, además del posible tráfico, se forman colas largas para entrar porque comprueban billete y pasaporte. Además, digamos que tampoco es el aeropuerto más eficiente del planeta. Nuestro consejo es que calcules estar al menos hora y media antes de la hora de salida de tu vuelo.</p>
+<p style="text-align: justify;">Hemos dividido la selección de hoteles cerca del aeropuerto de Manila<strong> por terminales</strong>, ya que es lo que creemos que prima. Dentro de cada apartado, también te los ordenamos por precio (de menor a mayor). En cualquier caso, te daremos precios aproximado de cada uno. Para ver desde qué terminal sale tu vuelo o a dónde llega, suele funcionar poner en Google tu número de vuelo y la ruta.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682589cf2a659" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682589cf2a659"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Alojamiento_cerca_del_aeropuerto_de_Manila_%E2%80%93_RESUMEN_y_MAPA" title="Alojamiento cerca del aeropuerto de Manila – RESUMEN y MAPA">Alojamiento cerca del aeropuerto de Manila – RESUMEN y MAPA</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Hoteles_cerca_del_aeropuerto_de_Manila_%E2%80%93_TERMINAL_1_y_2" title="Hoteles cerca del aeropuerto de Manila – TERMINAL 1 y 2">Hoteles cerca del aeropuerto de Manila – TERMINAL 1 y 2</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Hoteles_en_Manila_cerca_del_aeropuerto_%E2%80%93_TERMINAL_3" title="Hoteles en Manila cerca del aeropuerto – TERMINAL 3">Hoteles en Manila cerca del aeropuerto – TERMINAL 3</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Hoteles_cerca_del_aeropuerto_de_Manila_%E2%80%93_TERMINAL_4" title="Hoteles cerca del aeropuerto de Manila &#8211; TERMINAL 4">Hoteles cerca del aeropuerto de Manila &#8211; TERMINAL 4</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="Alojamiento_cerca_del_aeropuerto_de_Manila_%E2%80%93_RESUMEN_y_MAPA"></span><span style="color: #33cccc;">Alojamiento cerca del aeropuerto de Manila </span><span style="color: #33cccc;"><span style="font-size: 22px; text-align: justify;">–</span></span><span style="color: #33cccc;"> RESUMEN y MAPA</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si no tienes mucho tiempo para buscar y te fías de nuestro criterio (ya sabes que tenemos mucha experiencia en este tema), te dejamos una selección de los mejores hoteles en Manila cerca del aeropuerto clasificados por terminales. Clica sobre ellos para más información y reservar:</p>
+<ul>
+<li style="text-align: justify;"><span style="color: #ff0000;">TERMINAL 1 y 2 (están cerca la una de la otra):</span> <a href="https://www.booking.com/hotel/ph/blue-apartment.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Backpackers Homestay &#8211; NomadsMNL</strong></a>, <strong><strong><a href="https://www.booking.com/hotel/ph/rain-airport-bed-and-breakfast.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Rain Aiport Bed and Breakfast</a></strong></strong>, <strong><a href="https://www.booking.com/hotel/ph/cheng-shi-zhong-xin-xing-zheng-jiu-dian-ma-ni-la-ji-chang-ma-ni-la.es.html?aid=1542173" target="_blank" rel="nofollow noopener">City Center Executive Hotel-Near Manila Airport and PITX</a> </strong>y <a href="https://www.booking.com/hotel/ph/hyatt-city-of-dreams-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Hyatt Regency Manila City of Dreams</strong></a>.</li>
+<li style="text-align: justify;"><span style="color: #333399;">TERMINAL 3:</span> <a href="https://www.booking.com/hotel/ph/palm-tree-villas-1-pasay1.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Palm Tree Villas</strong></a>, <a href="https://www.booking.com/hotel/ph/savoy-manila-pasay.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Savoy Hotel Manila</strong></a>, <a href="https://www.booking.com/hotel/ph/belmont-hotels-and-resorts.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Belmont Hotel</strong></a>, <a href="https://www.booking.com/hotel/ph/cozy-studio-in-front-of-naia3.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Telly&#8217;s Studio Across NAIA 3</strong></a> y <a href="https://www.booking.com/hotel/ph/hilton-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Hilton Manila</strong></a>.</li>
+<li style="text-align: justify;"><span style="color: #339966;">TERMINAL 4:</span> <a href="https://www.booking.com/hotel/ph/achievers-airport.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Achievers Airport Hotel</strong></a> y <b><a href="https://www.booking.com/hotel/ph/red-planet-aseana.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Red Planet Manila Aseana City</a></b>.</li>
+</ul>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/0/embed?mid=1aBarlE2a_AYqn-CvqYsb7ayG4EsFcZ0&#038;ehbc=2E312F"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aBarlE2a_AYqn-CvqYsb7ayG4EsFcZ0&amp;ehbc=2E312F" width="1000" height="480"></iframe></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Hoteles_cerca_del_aeropuerto_de_Manila_%E2%80%93_TERMINAL_1_y_2"></span><span style="color: #33cccc;">Hoteles cerca del aeropuerto de Manila </span><span style="color: #33cccc;"><span style="font-size: 22px; text-align: justify;">– </span></span><span style="color: #ff0000;">TERMINAL 1 y 2</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">La<strong> terminal 1</strong> (T1) es, junto con la 3, la que opera vuelos internacionales, principalmente de la aerolínea de bandera filipina, Philippine Airlines (PAL), pero también otras compañías importantes como Saudia, Air China, China Eastern Airlines, Korean Air, Xiamen Air o Kuwait Airways.</p>
+<p style="text-align: justify;">Como está relativamente cerca de la <strong>terminal 2</strong> y realmente frente a esta es que no hay absolutamente nada, hemos englobado las dos en un mismo apartado. Esta es una terminal dedicada solo a vuelos domésticos mayoritariamente de Philippine Airlines, pero también de Air Asia y AirSWIFT.</p>
+<p>Aquí te dejamos algunos hoteles cerca del aeropuerto de Manila, concretamente de la T1 y la T2.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Backpackers Homestay &#8211; NomadsMNL &#8211; T1 y T2</span></h3>
+<p style="text-align: justify;">Si viajas <strong>solo o en pareja</strong> y estás buscando un alojamiento cerca del aeropuerto de Manila <strong>barato</strong>, concretamente cerca de las terminales 1 o 2 (aunque también está próximo a la 3), el NomadsMNL es tu sitio. Tienen dormitorios compartidos con o sin aire acondicionado, habitaciones individuales y dobles con aire acondicionado o ventilador desde 13€ la noche. Ten en cuenta a la hora de elegir que en algunas el baño es compartido.</p>
+<p style="text-align: justify;">Aunque el alojamiento es pequeñito, las habitaciones están limpias y, además, tienen una <strong>pequeña cocina</strong> para hacerte un desayuno rápido o unos <em>noodles</em> para matar el hambre. Hay una tiendecita justo debajo del hotel, por si necesitases cualquier cosa. La red Wifi va muy bien y Rica, la encargada, es un encanto y estará atenta para que estés cómodo y no pierdas tu vuelo. No ofrece traslado desde el aeropuerto, pero no te costará más de 100 pesos a la T1 y el recorrido son apenas 10 minutos (unos 15 hasta la T3).</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/blue-apartment.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Dale un ojo a este hotel aquí</a></p>
+<div id="attachment_14819" style="width: 1010px" class="wp-caption aligncenter"><img fetchpriority="high" decoding="async" aria-describedby="caption-attachment-14819" class="size-full wp-image-14819" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20557'%3E%3C/svg%3E" alt="Hostel Manila cerca aeropuerto" width="1000" height="557" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97-980x546.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97-480x267.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97.jpg" /><noscript><img fetchpriority="high" decoding="async" aria-describedby="caption-attachment-14819" class="size-full wp-image-14819" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97.jpg" alt="Hostel Manila cerca aeropuerto" width="1000" height="557" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97-980x546.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-97-480x267.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-14819" class="wp-caption-text">© Backpackers Homestay</p></div>
+<h3><span style="color: #33cccc;">NomadsMNL Hostel </span><span style="color: #33cccc;">&#8211; T1 y T2</span></h3>
+<p style="text-align: justify;">Si viajas solo y quieres dormir cerca del aeropuerto de Manila, posiblemente tu mejor opción sea este <strong>hostel</strong> porque es el único que realmente se podría considerar como tal. Sus <strong>dormitorios compartidos</strong> de hasta 8 personas son cómodos, cuentan con aire acondicionado y tienen camas que brindan total privacidad gracias a su diseño y la cortina. Cada una tiene luz individual y enchufe, así como su propia taquilla con llave. Los precios rondan los 13€ por noche.</p>
+<p style="text-align: justify;">En el caso de que viajes con amigos o familia, también hay <strong>habitaciones cuádruples</strong> amplias con baño propio y aire acondicionado por unos 50€.</p>
+<p style="text-align: justify;">Tienen detalles como dar a los clientes cepillo de dientes y crema dental, jabón, zapatillas y tapones para los oídos. Además, te dejan hacer check-in más pronto o más tarde por 50 pesos la hora. El personal te ayuda a buscar transporte, lo cual te supone unos 150 pesos (10 minutos) hasta la T1.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/nomadsmnl-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Reserva tu habitación clicando en el botón</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14814" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20484'%3E%3C/svg%3E" alt="hostel Manila aeropuerto" width="1000" height="484" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99-980x474.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99-480x232.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14814" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99.jpg" alt="hostel Manila aeropuerto" width="1000" height="484" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99-980x474.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-99-480x232.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Rain Airport Bed and Breakfast &#8211; T1 y T2</span></h3>
+<p style="text-align: justify;">El <a href="https://www.booking.com/hotel/ph/rain-airport-bed-and-breakfast.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Rain Aiport Bed and Breakfast</a> es un sitio súper agradable y a precio no muy loco para <strong>dormir cerca del aeropuerto de Manila</strong>, en concreto de la T1. Es de lo poquito que tiene un poco de gracia sin ser un hotelazo, con habitaciones tematizadas (Japón, países nórdicos, México, etc.) y una <strong>pequeña piscina en la azotea</strong> por si buscas algo más allá de una simple escala. Es cierto que las habitaciones no son muy grandes (el baño es más bien pequeño), pero son cómodas y acogedoras. Los precios rondan los 38€ para 2 personas y le puedes añadir desayuno por apenas 2€ más cada uno.</p>
+<p style="text-align: justify;">El personal es extremadamente amable y ayuda a todo. Por si te lo preguntas, está a unos 10 minutos en taxi desde la T1 (alrededor de 130-150 pesos) y a unos 20 de la T3 (menos de 300 pesos).</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/rain-airport-bed-and-breakfast.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Reserva en el Rain Airport Bed and Breakfast</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14815" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20489'%3E%3C/svg%3E" alt="hotel cerca aeropuerto Manila" width="1000" height="489" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98-980x479.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98-480x235.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14815" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98.jpg" alt="hotel cerca aeropuerto Manila" width="1000" height="489" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98-980x479.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-98-480x235.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 class="ddb12f4f86 pp-header__title"><span style="color: #33cccc;">City Center Executive Hotel-Near Manila Airport and PITX </span><span style="color: #33cccc;">&#8211; T1 y T2</span></h3>
+<p style="text-align: justify;">A nosotros este hotel cerca del aeropuerto de Manila nos parece una ganga y no sería raro que dentro de un tiempo suba de precio. Tienen <strong>amplios estudios y apartamentos</strong> con terraza, sofá y comedor desde solo 28€ a los que tienes que añadir una <strong>estupenda piscina y un gimnasio</strong>. Los más grandes, por si te interesa, tienen hasta cocina y hay algunos con capacidad hasta para 6 personas, por lo que son geniales si viajas en familia o en grupo. Así que, si lo tienes claro, te animamos a <a href="https://www.booking.com/hotel/ph/cheng-shi-zhong-xin-xing-zheng-jiu-dian-ma-ni-la-ji-chang-ma-ni-la.es.html?aid=1542173" target="_blank" rel="nofollow noopener">reservar cuanto antes</a>.</p>
+<p style="text-align: justify;">Justo detrás del hotel está la <strong>estación de buses PITX</strong>, desde donde salen buses a un montón de destinos dentro de la isla de Luzón, y, por esto, cuentas con mucha oferta de restaurantes (muchos de cadena rápida) y tiendas de conveniencia. El Mall of Asia (MOA), el centro comercial más grande de Filipinas, tampoco te queda lejos. En cuanto al aeropuerto, está a unos 15 minutos de la T1 y a unos 20 de la T3, por lo que el precio del transporte es casi anecdótico.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/cheng-shi-zhong-xin-xing-zheng-jiu-dian-ma-ni-la-ji-chang-ma-ni-la.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Reserva en este hotel cerca del aeropuerto de Manila AQUÍ</a></p>
+<div id="attachment_14820" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-14820" class="size-full wp-image-14820" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20585'%3E%3C/svg%3E" alt="City Center Executive Hotel" width="1000" height="585" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96-980x573.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96-480x281.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-14820" class="size-full wp-image-14820" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96.jpg" alt="City Center Executive Hotel" width="1000" height="585" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96-980x573.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-96-480x281.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-14820" class="wp-caption-text">© City Center Executive Hotel</p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Hyatt Regency Manila City of Dreams </span><span style="color: #33cccc;">&#8211; T1 y T2 (también T4)</span></h3>
+<p style="text-align: justify;">¡Ojo! Porque si eliges este <strong>hotel cinco estrellas cerca del aeropuerto de Manila</strong> y al día siguiente tienes un vuelo, quizá te lo piensas dos peses y decides quedarte. Ahora en serio, el buen gusto de las instalaciones de este alojamiento marca la diferencia y sus <strong>amplias habitaciones luminosas y con vistas a su piscina central</strong> son un lugar perfecto para reponer fuerzas.</p>
+<p style="text-align: justify;">Cuenta con <strong>gimnasio, spa y un gran restaurante </strong>con infinidad de platos. Sin embargo, si quieres salir a cenar, está súper bien, ya que está ubicado en una zona llamada City of Dreams, con cantidad de restaurantes, y muy cerca del Mall Of Asia (MOA), el centro comercial más grande de Filipinas.</p>
+<p style="text-align: justify;">De este hotel al aeropuerto de Manila (T1) tardarás apenas 10-15 minutos y no te costará más de 150-200 pesos. Si vienes o vas a la T3, calcula unos 20 minutos.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/hyatt-city-of-dreams-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Date un gustazo aquí</a></p>
+<p><img decoding="async" class="size-full wp-image-12638" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Hyatt Regency Manila City of Dreams" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98.jpg" /><noscript><img decoding="async" class="size-full wp-image-12638" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98.jpg" alt="Hyatt Regency Manila City of Dreams" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-98-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Más opciones de alojamiento cerca del aeropuerto de Manila (T1 y T2)</span></h3>
+<p style="text-align: justify;">Si los anteriores no te van bien, aquí te dejamos algunos más a los que puedes echar un ojo:</p>
+<ul>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/skyport-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Skyport Hotel</a>:</strong> limpio y moderno, por unos 60€ la doble con desayuno bufé incluido. Puedes reservar <a href="https://www.booking.com/hotel/ph/skyport-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/the-terrace-room-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">The Terrace Room</a>:</strong> una opción básica pero limpia de alojamiento cerca del aeropuerto de Manila por sus habitaciones dobles con aire acondicionado por unos 23€ la noche. La dueña es muy maja. Échale un ojo en <a href="https://www.booking.com/hotel/ph/the-terrace-room-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">este enlace</a>.</li>
+</ul>
+<hr />
+<h2><span class="ez-toc-section" id="Hoteles_en_Manila_cerca_del_aeropuerto_%E2%80%93_TERMINAL_3"></span><span style="color: #33cccc;">Hoteles en Manila cerca del aeropuerto <span style="font-size: 22px; text-align: justify;">– <span style="color: #000080;">TERMINAL 3</span></span></span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">La T3 es la más grande y la más nueva del aeropuerto de Manila y podría considerarse el <em>hub</em> de la aerolínea filipina Cebu Pacific Air. Desde ella salen todos sus vuelos internacionales y la mayoría de sus domésticos. Aun así, también la utilizan otras aerolíneas internacionales como Air Asia (vuelos internacionales), Cathay Pacific, Emirates, Qatar Airways, Etihad, Turkish Airlines, KLM y China Southern Airlines.</p>
+<p style="text-align: justify;">Es la que tiene mayor oferta de restauración, tiendas y hasta una zona dedicada a los transportes VTC (Grab, Joyride, etc.). Además, está <strong>conectada con el otro lado de la carretera</strong> (la zona de Newport, donde hay un casino y también varios hoteles cerca del aeropuerto de Manila) <strong>por un puente peatonal llamado <em>Runway </em></strong>(lo hemos marcado en el mapa que encontrarás arriba). Es por esto, que podemos encontrar mayor oferta de alojamiento a la que ir andando. Aquí también tienes restaurantes, cafeterías y tiendas de conveniencia, así que es la parte más cómoda si tienes que hacer una escala en Manila.</p>
+<p style="text-align: justify;">Por cierto, si te quieres quedar en el propio aeropuerto durante un período de tiempo corto, aunque no es ni mucho menos lo más cómodo o silencioso, tienes un lounge que se llama The Wings Transit Lounge. Puedes elegir entre una butaca, una cama rollo hostel o una doble o, simplemente, darte una ducha. Lo mejor es que les preguntes por <a href="https://www.facebook.com/TheWingsTransitLounge" target="_blank" rel="nofollow noopener">Facebook</a>.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Palm Tree Villas – T3</span></h3>
+<p style="text-align: justify;">En este caso, más que un hotel en Manila cerca del aeropuerto te proponemos un <strong>apartamento</strong>. ¿La razón? Enfrente de la T3 hay muchas torres de apartamentos (condominios) que muchos propietarios aprovechan para alquilar por días. Si te fijas en la foto central de abajo, estos cuentan con piscinas y están <strong>literalmente enfrente del aeropuerto</strong>, a pocos pasos del puente que te hemos comentado anteriormente y, al ser una zona habitada, tienes cantidad de restaurantes y tiendas de conveniencia a tu alrededor.</p>
+<p style="text-align: justify;"><strong>Se puede llegar desde el aeropuerto (T3) caminando en apenas 5 minutos</strong>. Si tienes mucho equipaje, por supuesto, también puedes coger un taxi o un GRAB.</p>
+<p style="text-align: justify;">Palm Tree Villas es, en realidad, un propietario que cuenta con varios apartamentos de 31-31 metros cuadrados con cama doble, baño y una pequeña cocina con nevera y microondas para aquellos que gusten de sentirse más como en casa. Tiene capacidad para <strong>2 personas</strong> y ofrece también acceso a un pequeño gimnasio y una piscina en la que refrescarte. Los precios rondan los 40€ por noche y, además, ofrecen cancelación gratuita.</p>
+<p style="text-align: justify;">La única desventaja que le vemos a este alojamiento cerca del aeropuerto de Manila es que, al no tratarse de un hotel, debes tener un poco de paciencia para hacer el check-in. El proceso es como el de un Airbnb y puede llegar a ser confuso. Si esto te da igual, ya has visto que la relación calidad-precio es muy buena.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/palm-tree-villas-1-pasay1.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Reserva en este hotel cerca del aeropuerto de Manila</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14822" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20450'%3E%3C/svg%3E" alt="palm tree villas aeropuerto manila hotel" width="1000" height="450" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95-980x441.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95-480x216.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14822" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95.jpg" alt="palm tree villas aeropuerto manila hotel" width="1000" height="450" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95-980x441.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/dormir-aeropuerto-manila-95-480x216.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Savoy Hotel Manila – T3</span></h3>
+<p style="text-align: justify;">Para nosotros, el <a href="https://www.booking.com/hotel/ph/savoy-manila-pasay.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Savoy</a> es <strong>la</strong> <strong>mejor opción si buscas un hotel en Manila cerca del aeropuerto, concretamente cerca de la T3 y no quieres complicarte la vida</strong> con que sea un apartamento, quieres que sea cómodo y tenga sitios para comer/comprar cerca. Es un alojamiento al que hemos ido en varias ocasiones y en el que seguiremos repitiendo porque nos encanta y, además, si reservas con antelación, puedes encontrar la doble por 50€, lo cual es más que razonable para el hotel que es.</p>
+<p style="text-align: justify;">Es de los hoteles más nuevos de la zona y tiene<strong> piscina, gimnasio, spa</strong>, un restaurante y una cafetería grande donde se sirve un <strong>desayuno bufé</strong> que hemos podido probar en el que la selección es bastante potente e incluye la mítica estación de tortillas mañaneras. Aun así, tienes varios restaurantes y cafeterías en los alrededores (incluyendo un Starbucks y un par de McDonald&#8217;s), un 7-ELEVEN (lo que te viene ideal para comprar una tarjeta sim sin pagar los precios turísticos del aeropuerto, más info en <a title="Internet en Filipinas: qué tarjeta SIM filipina escoger" href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener">Internet en Filipinas</a>) y hasta varios centros de masajes.</p>
+<p style="text-align: justify;">Para llegar, solo tienes que cruzar el puente que hay en la T3 y caminar. Es algo que no te llevará más de 10 minutos a pie. Por supuesto, si te da pereza o quieres llegar/ir desde/a otra terminal, puedes usar taxis o GRAB.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/savoy-manila-pasay.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Reserva aquí este hotel cerca del aeropuerto de Manila</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14827" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20428'%3E%3C/svg%3E" alt="hotel cerca aeropuerto Manila Savoy" width="1000" height="428" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88-980x419.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88-480x205.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14827" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88.jpg" alt="hotel cerca aeropuerto Manila Savoy" width="1000" height="428" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88-980x419.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-88-480x205.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Belmont Hotel &#8211; T3</span></h3>
+<p style="text-align: justify;">Otra buena opción para dormir cerca del Aeropuerto de Manila es el Belmont Hotel, un moderno <b>hotel justo enfrente de la terminal 3 del aeropuerto de Manila </b>nada más salir de la <em>Runway</em>, es decir, del puente peatonal. Con lo cual, llegarás en apenas 5 minutos andando.</p>
+<p style="text-align: justify;">Las habitaciones son súper espaciosas y modernas, con televisión de pantalla plana, aire acondicionado, una pequeña nevera y una <em>kettle</em>. Por supuesto, también tiene una piscina bastante hermosa en la azotea, gimnasio, spa, restaurante, cafetería y servicio de habitaciones. En definitiva, es lo que viene a ser un «hotel en condiciones». Los precios rondan los 90€ para las dobles y 160€ para las familiares (hasta 4 personas).</p>
+<p style="text-align: justify;">A día de hoy, creemos que es uno de los <strong>mejores sitios donde alojarse cerca del aeropuerto de Manila</strong>.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/belmont-hotels-and-resorts.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Más info de este hotel cerca del aeropuerto</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14826" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20352'%3E%3C/svg%3E" alt="Belmont Hotel Manila aeropuerto" width="1000" height="352" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94-980x345.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94-480x169.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14826" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94.jpg" alt="Belmont Hotel Manila aeropuerto" width="1000" height="352" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94-980x345.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-94-480x169.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Hilton Manila &#8211; T3</span></h3>
+<p style="text-align: justify;">Si estás buscando mejores comodidades y alojarte en un hotel cerca del aeropuerto de Manila que ofrezca un mayor nivel, el <a href="https://www.booking.com/hotel/ph/hilton-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Hilton Manila</a> tiene lo que necesitas. Su habitaciones cuando con una decoración sobria y moderna que no deja a la improvisación ningún tipo de detalle.</p>
+<p style="text-align: justify;"><strong>Su localización es perfecta</strong>, justo enfrente de la terminal 3 del aeropuerto, así que puedes llegar andando en menos de 10 minutos. La lista de servicios que tiene este gran hotel es casi infinita, pero cabe a destacar su <strong>gran buffet</strong> y restaurante con infinidad de platos, su <strong>gran piscina</strong> y su <strong>gimnasio</strong>. Créenos, aquí no te faltará de nada y <strong>el precio está muy por debajo del de otros hoteles de esta categoría</strong>.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/hilton-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Ten una estancia de 10 en el Hilton Manila</a></p>
+<div id="attachment_3729" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-3729" class="wp-image-3729 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20674'%3E%3C/svg%3E" alt="hotel 5 estrellas en aeropuerto de Manila" width="1000" height="674" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3-300x202.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3-768x518.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-3729" class="wp-image-3729 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3.jpg" alt="hotel 5 estrellas en aeropuerto de Manila" width="1000" height="674" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3-300x202.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-manila-cerca-aeropuerto-3-768x518.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript><p id="caption-attachment-3729" class="wp-caption-text">© Hilton Manila</p></div>
+<h3><span style="color: #33cccc;">Más hoteles cerca del aeropuerto de Manila (T3)</span></h3>
+<p>Como no hemos probado pocos, a continuación, te dejamos otros que nos han gustado, pero de los que no podíamos extendernos tanto para no hacerlo tan largo:</p>
+<ul>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/cozy-studio-in-front-of-naia3.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Telly&#8217;s Studio Across NAIA3</a>:</strong> casi tan bueno o más que el Palm Tree Villas, es otro apartamento ubicado en el mismo condominio. Bien mantenido y limpio por unos 40€ la noche y capacidad para hasta 3 personas. Se puede reservar <a href="https://www.booking.com/hotel/ph/cozy-studio-in-front-of-naia3.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/101-newport-blvd-condotel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">101 Newport Blvd Condotel</a>:</strong> si los dos apartamentos que te hemos recomendado están llenos, este también está bien, aunque un poquitín más alejado para ir andando (es 1 manzana más que el anterior). Es un poquito más económico, pudiéndose <a href="https://www.booking.com/hotel/ph/101-newport-blvd-condotel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">reservar por 35-36€ la noche</a>.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/khotel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Khotel</a>:</strong> no es nuestro favorito, pero si buscas algo barato (desde 26€ la noche) a donde puedas llegar andando desde la T3 (20 minutos), este te puede interesar. Eso sí, espera algo básico para dormir y ducharte. Puedes reservar desde <a href="https://www.booking.com/hotel/ph/khotel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">este enlace</a>.</li>
+</ul>
+<hr />
+<h2><span class="ez-toc-section" id="Hoteles_cerca_del_aeropuerto_de_Manila_%E2%80%93_TERMINAL_4"></span><span style="color: #33cccc;">Hoteles cerca del aeropuerto de Manila &#8211; <span style="color: #339966;">TERMINAL 4</span></span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Esta terminal <strong>dejó de estar operativa en noviembre de 2024</strong> y se demolió en abril de 2025. Por ahora, parece que no abrirá de nuevo y que lo que antes se operaba aquí pasará a una antigua terminal de cargo que se adaptará. Por esto, estamos todavía a la espera.</p>
+<p style="text-align: justify;">Dicho esto, en una especie de anexo (un poco raro, no nos vamos a engañar) se operan vuelos de <strong>Sunlight Air</strong>, una aerolínea que cada vez tiene más destinos dentro del país.</p>
+<p style="text-align: justify;">Aun así, es interesante porque justo enfrente de ella está <strong>uno de los pocos hoteles en Manila cerca del aeropuerto con <em>transfer</em></strong>, es decir, que ofrecen transporte gratuito a sus huéspedes. Te hablamos de él a continuación. Además, hay otros alojamientos relativamente cercanos que también te pueden venir muy bien para llegar a las otras terminales en poco tiempo con transporte.</p>
+<h3 style="text-align: start;"><span style="color: #33cccc; font-size: 22px; text-align: justify;">Achievers Airport Hotel – T4</span></h3>
+<p style="text-align: justify;">El Achivevers Airport Hotel es una estupenda opción de hotel cerca del Aeropuerto de Manila sin pagar mucho (las dobles empiezan en 31€). Se encuentra situado <strong>a escasos metros de la Terminal 4</strong> (tanto que puedes llegar caminando) y el precio <strong>incluye un traslado hasta el aeropuerto</strong>, que puede ser tanto de ida como de vuelta. Si quieres, por apenas 4€ más (a la hora de hacer la reserva, in situ es más caro), puedes añadir el desayuno para 2 personas, lo cual tampoco está nada más.</p>
+<p style="text-align: justify;">Cuenta con <strong>restaurante está abierto las 24 horas</strong>, por lo que si llegas al hotel con un vuelo nocturno y algo de hambre, podrás comer sin problema. Las habitaciones sin que sean para tirar cohetes, son cómodas. Además, cuentan con habitaciones familiares con capacidad hasta 4 personas, perfecta si viajas en familia o con amigos.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/achievers-airport.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Mira aquí fechas y precios</a></p>
+<div id="attachment_14828" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-14828" class="size-full wp-image-14828" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20477'%3E%3C/svg%3E" alt="hotel en Manila cerca del aeropuerto" width="1000" height="477" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93-980x467.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93-480x229.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-14828" class="size-full wp-image-14828" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93.jpg" alt="hotel en Manila cerca del aeropuerto" width="1000" height="477" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93-980x467.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-93-480x229.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-14828" class="wp-caption-text">© Achievers Airport Hotel</p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Red Planet Aseana – T4</span></h3>
+<p style="text-align: justify;">La cadena de hoteles Red Planet cuenta con muchos establecimientos por todo Filipinas en los que ofrece <strong>alojamiento a buen precio y habitación modernas y cómodas</strong>. Este en concreto se encuentra a pocos minutos de la <strong>Terminal 4</strong> y tiene como una de sus principales ventajas la <strong>cercanía a diferentes restaurantes y centros comerciales</strong>. Eso se traduce en que tendrás a tu alcance diferentes opciones para comer/cenar y que podrás realizar compras de última hora antes de poner rumbo a tu siguiente destino, ya que tienes el Mall of Asia muy cerquita.</p>
+<p style="text-align: justify;">Las habitaciones, a pesar de que son pequeñas, son cómodas y cuentan con aire acondicionado y caja fuerte, así como televisión por cable y una buena conexión de wifi. Si buscas un hotel en Manila cerca del aeropuerto a un precio medio y con buenas prestaciones, este es uno de los que más nos gusta porque tampoco es caro (alrededor de 34€ la noche).</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/red-planet-aseana.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Comprueba aquí su disponibilidad</a></p>
+<h3><img decoding="async" class="aligncenter size-full wp-image-14831" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20420'%3E%3C/svg%3E" alt="Red Planet aeropuerto Manila" width="1000" height="420" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92-980x412.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92-480x202.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14831" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92.jpg" alt="Red Planet aeropuerto Manila" width="1000" height="420" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92-980x412.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/hotel-cerca-aeropuerto-manila-92-480x202.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></h3>
+<h3><span style="color: #33cccc;">Otras opciones de alojamiento en el aeropuerto de Manila cerca de la T4</span></h3>
+<p style="text-align: justify;">Te dejamos algunas alternativas más para dormir cerca del aeropuerto de Manila:</p>
+<ul>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/bayprime-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Bayprime Hotel</a>:</strong> piscina, gimnasio, hotel súper nuevo a apenas 20 minutos de la T3. Precios alrededor de 50€. Puedes reservar <a href="https://www.booking.com/hotel/ph/bayprime-paranaque.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/hop-inn-aseana-city-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Hop Inn Hotel Aseana City Manila</a>:</strong> hotel de una cadena asiática el estilo Ibis, es decir, que te vas a encontrar con habitaciones con poco mobiliario, pero limpias y luminosas. Está situado en una zona con muchos restaurantes. Las dobles rondan los 35€. Reserva desde <a href="https://www.booking.com/hotel/ph/hop-inn-aseana-city-manila.es.html?aid=1542173" target="_blank" rel="nofollow noopener">este enlace</a>.</li>
+</ul>
+<hr />
+<p style="text-align: center;"><em>Si tienes alguna duda sobre reservar tu hotel en Manila cerca del aeropuerto o quieres hablarnos de otro en el que hayas estado, compártelo con nosotros en los comentarios. Como todos los artículos de nuestra web, esta selección de alojamientos está hecha gracias a nuestra experiencia (llevamos desde 2010 por aquí) y la de los lectores de Viajar por Filipinas.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">60 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-54434">
+		<article id="comment-54434" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carmen</span>				<span class="comment_date">
+					el 18/03/2025 a las 22:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo,a mí en la reserva ya hecha,en el contacto solo me indica contactar a través de un teléfono. He intentado enviar sms pero nadie responde. He intentado contactar a través de la web del hotel y tampoco.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54434' data-commentid="54434" data-postid="3724" data-belowelement="comment-54434" data-respondelement="respond" data-replyto="Responder a Carmen" aria-label='Responder a Carmen'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54463">
+		<article id="comment-54463" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/03/2025 a las 01:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Pues no sabríamos qué decirte, la verdad.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-54479">
+		<article id="comment-54479" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carmen GUERRERO HERNANDEZ</span>				<span class="comment_date">
+					el 19/03/2025 a las 07:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Vale, gracias chicos . Si no me contestan antes del viaje, optaré por pillar allí un taxi para ir al hotel y aprovechar ese servicio al día siguiente para que me lleven al aeropuerto&#8230;.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54480">
+		<article id="comment-54480" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/03/2025 a las 07:30				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Claro que sí. Usa Grab y te quitas de problemas. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54180">
+		<article id="comment-54180" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carmen</span>				<span class="comment_date">
+					el 13/03/2025 a las 22:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>hola chicos, gracias por toda la información. Me está sirviendo de mucho. Voy a filipinas a mediados de abril para encontrarme alli con unos amigos y me está sirviendo mucho vuestros tips e información. Una duda, he reservado una noche en el Achievers Airport HOtel, y mi duda es cómo utilizar el traslado incluido de aeropuerto a hotel. Quiero decir, tengo que avisar al hotel o hay transporte que sale de todas las terminales hacia allí o como funciona este tipo de servicio. Al hacer la reserva en booking no he visto ningún sitio donde tenga que añadir nada. Gracias, buen trabajo!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54180' data-commentid="54180" data-postid="3724" data-belowelement="comment-54180" data-respondelement="respond" data-replyto="Responder a Carmen" aria-label='Responder a Carmen'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54185">
+		<article id="comment-54185" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/03/2025 a las 00:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carmen, gracias a ti por leernos. Tienes que ponerte en contacto con el hotel a través de Booking (les mandas un mensaje) y ellos te dirán cómo te pueden recoger. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-54223">
+		<article id="comment-54223" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carmen</span>				<span class="comment_date">
+					el 14/03/2025 a las 20:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Gracias por la respuesta tan rápida. Es que a través de la app de Booking solo dan opción de llamada de teléfono para ponerte en contacto&#8230;.no sé cómo hacerlo antes de llegar allí&#8230;.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54228">
+		<article id="comment-54228" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/03/2025 a las 00:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Donde pone «contacta con el alojamiento», ¿no te da la opción de «enviar un mensaje»? Estoy con la app delante y veo eso.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-45579">
+		<article id="comment-45579" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Cristina</span>				<span class="comment_date">
+					el 06/10/2024 a las 20:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, llegamos sobre las 22:30 h a la T3 y volamos al día siguiente a las 10:30 en la T2. Qué hotel nos recomendáis?<br />
+El Savay Hotel ya no cuenta con transporte gratuito, lo pone en las preguntas de booking. </p>
+<p>Gracias por la ayuda y saludos!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-45579' data-commentid="45579" data-postid="3724" data-belowelement="comment-45579" data-respondelement="respond" data-replyto="Responder a Cristina" aria-label='Responder a Cristina'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-45620">
+		<article id="comment-45620" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/10/2024 a las 17:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Cristina. Gracias por el aviso del Savoy, le echamos un ojo. Nuestras recomendaciones son estas que puedes leer en la guía. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-44293">
+		<article id="comment-44293" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Pedro Miralles</span>				<span class="comment_date">
+					el 05/09/2024 a las 19:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>hola! queria haceros una pregunta, llegamos sobre las 23:00 a la t1 y volamos al dia siguiente a las 10:00 a el nido en la t4. ?que hotel nos recomendais el NomadMNL Hostel o el Achievers? no nos decidimos&#8230; </p>
+<p>Muchas gracias!<br />
+Saludos</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-44293' data-commentid="44293" data-postid="3724" data-belowelement="comment-44293" data-respondelement="respond" data-replyto="Responder a Pedro Miralles" aria-label='Responder a Pedro Miralles'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-44306">
+		<article id="comment-44306" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/09/2024 a las 07:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Pedro, nosotros elegiríamos el achievers usando el transporte gratuito que ofrecen para el primer día ; )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/hoteles-manila-cerca-aeropuerto/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/hoteles-manila-cerca-aeropuerto/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='3724' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a6fe04fe5f" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="147"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3724","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

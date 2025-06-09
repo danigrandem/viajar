@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer en Romblon: 11 imprescindibles, guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Descubre qué hacer en Romblon, uno de nuestros rincones favoritos de Filipinas que nos enamoró desde nuestra primera visita." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-romblon/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer en Romblon: 11 imprescindibles, guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Descubre qué hacer en Romblon, uno de nuestros rincones favoritos de Filipinas que nos enamoró desde nuestra primera visita." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-romblon/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-06-11T09:15:26+00:00" />
+	<meta property="article:modified_time" content="2024-05-07T09:28:26+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="749" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="16 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué hacer en Romblon: 11 imprescindibles y guía completa","datePublished":"2018-06-11T09:15:26+00:00","dateModified":"2024-05-07T09:28:26+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/"},"wordCount":3145,"commentCount":32,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20.jpg","articleSection":["Romblon","Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-romblon/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/","url":"https://www.viajarporfilipinas.com/que-hacer-romblon/","name":"▷ Qué hacer en Romblon: 11 imprescindibles, guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20.jpg","datePublished":"2018-06-11T09:15:26+00:00","dateModified":"2024-05-07T09:28:26+00:00","description":"Descubre qué hacer en Romblon, uno de nuestros rincones favoritos de Filipinas que nos enamoró desde nuestra primera visita.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-romblon/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20.jpg","width":1000,"height":749,"caption":"que hacer en Romblon Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-romblon/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué hacer en Romblon: 11 imprescindibles y guía completa"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-romblon/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué hacer en Romblon: 11 imprescindibles y guía completa del feed" href="https://www.viajarporfilipinas.com/que-hacer-romblon/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/304" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=304' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-romblon%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-romblon%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-304-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/304/et-core-unified-304.min.css?ver=1745591214" /><link rel="stylesheet" id="et-core-unified-deferred-304-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/304/et-core-unified-deferred-304.min.css?ver=1745591214" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-304 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-304" class="et_pb_post post-304 post type-post status-publish format-standard has-post-thumbnail hentry category-romblon category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué hacer en Romblon: 11 imprescindibles y guía completa</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/visayas/romblon/" rel="category tag">Romblon</a>, <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="que hacer en Romblon Filipinas" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-20-1000x675.jpg" alt="que hacer en Romblon Filipinas" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">El grupo de <strong>islas de Romblon</strong> es uno de nuestros rincones favoritos y uno de los descubrimientos de nuestros últimos <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/">viajes a Filipinas</a>. El archipiélago de islas reúne no solo <strong>paraísos que todavía no han sido explotados</strong>, sino gente tan acogedora que puede que te duela el brazo de saludarlos mientras lo recorres. Si quieres saber <strong>qué hacer en Romblon</strong>, sigue leyendo y descúbrelos con nosotros.</p>
+<p style="text-align: justify;">La primera aclaración que tenemos que hacerte es que<strong> Romblon es solo una de las islas del grupo de islas</strong> y la provincia del mismo nombre. Sin ser ni siquiera la más grande de todas, es <strong>la que más playas bonitas reúne</strong> y la que más atractivos tiene para los visitantes. Los lugareños suelen referirse a ella como<em><strong> Romblon Romblon</strong></em>. Además, seguro que ya has adivinado cómo se llama la capital de Romblon Romblon ¡Romblon!</p>
+<p style="text-align: justify;">Pronto te hablaremos de todos los atractivos de sus hermanas <strong>Tablas, <a title="Qué hacer en Carabao: guía completa" href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/" target="_blank" rel="noopener">Carabao</a> y <a title="Sibuyan" href="https://www.viajarporfilipinas.com/sibuyan-guia/" target="_blank" rel="noopener">Sibuyan</a></strong>, así como de la famosa e <em>instagrameable</em> <a href="https://www.viajarporfilipinas.com/cresta-de-gallo-filipinas/">isla Cresta de Gallo</a>, pero ahora vamos a contarte qué ver y <strong>qué hacer en Romblon</strong>. Además, también te daremos algunos datos prácticos que te facilitarán este viaje por Romblon, Filipinas.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682588e0060e9" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682588e0060e9"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFCuantos_dias_dedicar_a_Romblon" title="¿Cuántos días dedicar a Romblon?">¿Cuántos días dedicar a Romblon?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_hacer_en_Romblon" title="Qué hacer en Romblón ">Qué hacer en Romblón </a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#1_Ir_a_Bon_Bon_Beach" title="1. Ir a Bon Bon Beach">1. Ir a Bon Bon Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#2_Disfrutar_de_la_tranquilidad_de_Tiamban_Beach" title="2. Disfrutar de la tranquilidad de Tiamban Beach">2. Disfrutar de la tranquilidad de Tiamban Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#3_Nadar_con_tortugas_en_el_santuario_marino_de_Agpanabat" title="3. Nadar con tortugas en el santuario marino de Agpanabat">3. Nadar con tortugas en el santuario marino de Agpanabat</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#4_Apunan_Lighthouse" title="4. Apunan Lighthouse">4. Apunan Lighthouse</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#5_Descubrir_la_historia_en_Fuerza_San_Andres" title="5. Descubrir la historia en Fuerza San Andrés">5. Descubrir la historia en Fuerza San Andrés</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#6_Explorar_Romblon_Town" title="6. Explorar Romblon Town">6. Explorar Romblon Town</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#7_Relajarse_en_Talipasak_Beach_o_San_Pedro_Beach" title="7. Relajarse en Talipasak Beach o San Pedro Beach">7. Relajarse en Talipasak Beach o San Pedro Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#8_Hacer_buceo_en_Romblon" title="8. Hacer buceo en Romblon">8. Hacer buceo en Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#9_Investigar_sobre_la_industria_del_marmol_en_Romblon" title="9. Investigar sobre la industria del mármol en Romblon">9. Investigar sobre la industria del mármol en Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#10_Island_hopping_desde_Romblon" title="10. Island hopping desde Romblon">10. Island hopping desde Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#11_Perderte_con_la_moto_por_Romblon" title="11. Perderte con la moto por Romblon">11. Perderte con la moto por Romblon</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-14" href="#Informacion_practica_sobre_Romblon" title="Información práctica sobre Romblon">Información práctica sobre Romblon</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#Donde_dormir_en_Romblon" title="Dónde dormir en Romblon">Dónde dormir en Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-16" href="#Como_llegar_a_Romblon" title="Cómo llegar a Romblon">Cómo llegar a Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-17" href="#Donde_comer_en_Romblon" title="Dónde comer en Romblon">Dónde comer en Romblon</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-18" href="#Consejos_para_visitar_Romblon" title="Consejos para visitar Romblon">Consejos para visitar Romblon</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-19" href="#Mapa_de_Romblon" title="Mapa de Romblon">Mapa de Romblon</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="%C2%BFCuantos_dias_dedicar_a_Romblon"></span><span style="color: #33cccc;">¿Cuántos días dedicar a Romblon?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;"><a href="https://www.viajarporfilipinas.com/llegar-a-romblon/" target="_blank" rel="noopener noreferrer">Llegar a Romblon</a> no es del todo sencillo. Al tratarse de una isla muy poco turística, las infraestructuras tanto de transporte como hoteleras son todavía bastante limitadas. Eso no significa que Romblon no sea fabulosa, ¡al contrario! Solo tienes que considerar que <strong>todavía es un destino por explorar</strong> y que requiere un poco más de tiempo. En nuestra opinión, nos quedaríamos en Romblon <strong>al menos 4 días completos</strong>. Así tendrías tiempo a disfrutar de BonBon Beach y sus playas vecinas, recorrer la isla y descubrir nuevos lugares y hacer una excursión a preciosas islas cercanas como Cobrador Island.</p>
+<p style="text-align: justify;">Nosotros, además, creemos imprescindible que unas la visita a Romblon con Sibuyan y Cresta de Gallo. Para todo ello <strong>es esencial que cuentes con al menos 8-9 días</strong>. Esto te permitirá conocer todos estos lugares y, sobre todo, estar holgado con los traslados entre todas ellas. Los horarios de los barcos suelen modificarse y estos no son frecuentes. Desde nuestra perspectiva, tras varias visitas, el archipiélago de Romblon es todavía una zona inexplorada de Filipinas a la que hay que dedicarle tiempo.</p>
+<p style="text-align: justify;">Si tienes aún más tiempo, rasca unos cuantos días para <strong>Tablas y Carabao</strong>, islas que también tienen su encanto y playas muy bonitas.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_hacer_en_Romblon"></span><span style="color: #33cccc;">Qué hacer en Romblón </span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sin enrollarnos mucho más, aquí te vamos a contar los atractivos de esta isla que nos conquistó. Descubre qué ver en Romblon.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Ir_a_Bon_Bon_Beach"></span><span style="color: #33cccc;">1. Ir a Bon Bon Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Es probable que hayas llegado a este artículo sobre cosas que hacer en Romblon tras ver una foto de Bon Bon Beach (a veces también escrita como Bonbon Beach). No nos extraña, <strong>Bonbon Beach es una de las <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">playas más impresionantes de Filipinas</a></strong> y nos arriesgamos a decir que una de las lenguas de arena más increíbles del mundo. Además de la belleza indiscutible de la arena, las aguas que rodean la playa son unas de las más limpias y transparentes que hemos visto en el país.</p>
+<p style="text-align: justify;">Situada a 3 kilómetros de la ciudad principal de Romblon, no tardarás ni 10 minutos en llegar a este paraíso que luce aún más espectacular cuando está la<strong> marea baja</strong>. Es en este momento cuando podrás caminar sobre la <strong>lengua de arena que une Romblon con el pequeño islote inhabitado de Bang-og</strong>.</p>
+<p style="text-align: justify;">Durante la marea alta, el agua puede llegarte bastante por encima de la cadera y puedes quedarte atrapado si has decidido explorar la isla vecina. Por ello, te animamos a <a href="https://www.tide-forecast.com/locations/Romblon/tides/latest" target="_blank" rel="nofollow noopener noreferrer">consultar una <strong>tabla de mareas</strong></a> y a visitarla en el momento perfecto para ver Bon Bon Beach en todo su esplendor.</p>
+<p style="text-align: justify;">Para llegar, tendrás que dejar tu moto en el aparcamiento habilitado y caminar unos 5 minutos hasta llegar a la lengua de arena. El acceso, como para casi todas las playas de la isla, según nueva ordenanza, son 50 pesos por persona y <strong>no encontrarás ningún bar en Bonbon Beach</strong>. Así que te aconsejamos que traigas tu propia comida y bebida para pasar un buen rato haciendo una de las mejores cosas que hacer en Romblon: disfrutar de este paraíso.</p>
+<p style="text-align: justify;">Si quieres estar alojado muy cerquita de aquí, echa un vistazo a este hostal de nueva construcción: <b><a href="https://www.booking.com/hotel/ph/lonos-circle-bed-and-breakfast.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Lonos Circle</a></b>.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-326 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20650'%3E%3C/svg%3E" alt="bonbon beach en Romblon" width="487" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19-225x300.jpg 225w" data-lazy-sizes="(max-width: 487px) 100vw, 487px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter wp-image-326 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19.jpg" alt="bonbon beach en Romblon" width="487" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-19-225x300.jpg 225w" sizes="(max-width: 487px) 100vw, 487px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Disfrutar_de_la_tranquilidad_de_Tiamban_Beach"></span><span style="color: #33cccc;">2. Disfrutar de la tranquilidad de Tiamban Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Cuando llegamos a esta playa de Romblon, no dábamos crédito. Rápidamente se convirtió en <strong>una de nuestras playas favoritas de Filipinas</strong> por varias razones: arena fina y blanca, aguas tranquilas y limpias y la sombra de las palmeras para pasar un buen rato disfrutando del lugar. Por ello, visitar Tiamban Beach es algo que tienes <strong>que hacer en Romblon</strong> sí o sí.</p>
+<p style="text-align: justify;">Acceder cuesta 50 pesos, pues hay un <strong>pequeño restaurante</strong> que se hace cargo de que la playa esté limpísima. Además, también puedes pedir algo fresquito o algunos <em>snacks</em> como patatas fritas o sándwiches.</p>
+<p><img decoding="async" class="alignnone wp-image-320 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Tiamban Beach en Romblon" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14.jpg" /><noscript><img decoding="async" class="alignnone wp-image-320 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14.jpg" alt="Tiamban Beach en Romblon" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-14-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Nadar_con_tortugas_en_el_santuario_marino_de_Agpanabat"></span><span style="color: #33cccc;">3. Nadar con tortugas en el santuario marino de Agpanabat</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aunque veníamos sin muchas expectativas a este santuario marino, ¡salimos realmente impresionados! <strong>El coral del santuario de Agpanabat está en perfecto estado</strong> y reúne mucha vida marina, ¡tanta que vimos una tortuga! El agua estaba tranquilísima y <strong>la visibilidad alcanzaba los 20 metros</strong>, así que pasamos más de una hora disfrutando del que es, probablemente, <strong>el mejor lugar para hacer snorkel en Romblon</strong>.</p>
+<p style="text-align: justify;">Rose, de <strong>Reggae Vibes</strong>, un pequeño hostal, es quien gestiona el santuario. Tendrás que pagar una módica tasa de 10 pesos para su conservación. Además, si no tienes tu propia máscara y tubo, ella los alquilan.</p>
+<p style="text-align: justify;">Si eres un apasionado del snorkel, puedes preguntar en la oficina de turismo de Romblon, pues alrededor de la isla hay <strong>17 santuarios marinos</strong>.</p>
+<p><img decoding="async" class="aligncenter wp-image-321 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20650'%3E%3C/svg%3E" alt="snorkel en Agpunabat sanctuary" width="487" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17-225x300.jpg 225w" data-lazy-sizes="(max-width: 487px) 100vw, 487px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-321 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17.jpg" alt="snorkel en Agpunabat sanctuary" width="487" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-17-225x300.jpg 225w" sizes="(max-width: 487px) 100vw, 487px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Apunan_Lighthouse"></span><span style="color: #33cccc;">4. Apunan Lighthouse</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Romblon está llena de sorpresas y una de ellas es que podrás apreciarla desde las alturas si te animas a subir al <strong>faro de Apunan</strong>.</p>
+<p style="text-align: justify;">Es toda una aventurilla: tienes que pedir permiso para entrar a la casa de los cuidadores del faro y subir por unas más que empinadas escaleras, pero te prometemos que merecerá la pena. Ya no solo por las <strong>vistas de los palmerales infinitos de Romblon</strong>, sino porque te meterás en las entrañas de un faro en funcionamiento.</p>
+<p style="text-align: justify;">Para subir, te pedirán que te apuntes en el libro de visitas y contribuyas con la cantidad que te apetezca dar. Nosotros dimos 50 pesos cada uno.</p>
+<p style="text-align: justify;"><span style="color: #ff0000;">Actualización 2024:</span> parece que a día de hoy no dejan entrar al faro. Aun así, es una aventurilla llegar y te queda cerca de Agpanabat, por si vas con moto.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Descubrir_la_historia_en_Fuerza_San_Andres"></span><span style="color: #33cccc;">5. Descubrir la historia en Fuerza San Andrés</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">¿Sabías que otra de las cosas <strong>que hacer en Romblon</strong> es descubrir un <strong>fuerte español del siglo XVI</strong>? Aunque completamente rehabilitado, nos pareció muy interesante caminar por los muros de Fuerza San Andrés, este edificio que construyeron los españoles para defender la ciudad del ataque de los piratas.</p>
+<p style="text-align: justify;">Además, el fuerte ofrece unas <strong>vistas espectaculares</strong> de la ciudad de Romblon y de las islas vecinas y es un sitio estupendo para despedir el día con una estupenda <strong>puesta de sol</strong>.</p>
+<p style="text-align: justify;">El lugar a veces está vigilado por un guarda de seguridad que te abrirá las puertas tras pagar una módica donación para su conservación.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="fort San Andres Romblon" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2115" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon.jpg" alt="fort San Andres Romblon" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-en-romblon-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="6_Explorar_Romblon_Town"></span><span style="color: #33cccc;">6. Explorar Romblon Town</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">La pequeña capital de Romblon es una ciudad pequeñita pero agradable para el viajero. Nosotros te aconsejamos dar un paseo que reúna lugares como la <strong>Catedral de San José</strong> (St. Joseph Cathedral Parish) y su campanario, que datan del siglo XV; la <strong>fuente de Belén</strong>, también de la época colonial y con un cartel completamente en español; o sus más de 40 <strong>edificios coloniales</strong> como el que encontrarás en la esquina de MA Roxas Ave con Magsaysay St. o la de Municipal con MA Roxas Ave.</p>
+<p style="text-align: justify;">También encontrarás algunos<strong> puentes de la época española</strong> aún intactos, la mayoría de ellos hechos con coral. El Puente de Rio Casalogan, el Puente de Romblon y el Puente de Belen están reconocidos como importantes Propiedades Culturales por el Museo Nacional de Filipinas.</p>
+<p style="text-align: justify;">Aunque Romblon no tiene mucha vida nocturna, muchos locales se reúnen en el <strong>estadio junto a la Plaza Municipal</strong> para jugar al baloncesto, el deporte nacional de Filipinas, y es muy fácil quedarse embobado mirándolos.</p>
+<p><img decoding="async" class="alignnone wp-image-323 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="romblon town edificios españoles" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7.jpg" /><noscript><img decoding="async" class="alignnone wp-image-323 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7.jpg" alt="romblon town edificios españoles" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-7-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="7_Relajarse_en_Talipasak_Beach_o_San_Pedro_Beach"></span><span style="color: #33cccc;">7. Relajarse en Talipasak Beach o San Pedro Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Te avisamos que una de las <strong>mejores cosas que hacer en Romblon</strong> es disfrutar de sus playas, ¿no? Pues una de las mejores es la de San Pedro y te aseguramos que nunca la encontrarás llena de gente. Un poco más escondida que las demás, a media hora en moto desde Romblon Town, esta playa de aguas tranquilas tiene sombra suficiente para dedicarle un día completo y cuenta con<strong> un pequeño <em>resort</em></strong> (Robinson&#8217;s Cove) en el que podrás pedir comida y bebida. Además, ¡hay hamacas! La entrada cuesta 50 pesos por persona.</p>
+<p style="text-align: justify;">No olvides tu máscara de snorkel, pues aquí se encuentra el <strong>San Pedro Marine Sanctuary </strong>y se puede encontrar alguna cosita interesante bajo el mar.</p>
+<p style="text-align: justify;">Si quieres alejarte del mundanal ruido, aquí encontrarás unas<strong> sencillas cabañas</strong> con vistas al mar por 800 pesos la noche.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-13817" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="San Pedro Beach Romblon" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13817" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99.jpg" alt="San Pedro Beach Romblon" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-99-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="8_Hacer_buceo_en_Romblon"></span><span style="color: #33cccc;">8. Hacer buceo en Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">¿Sabías que Romblon es una de las mecas del <strong>buceo macro</strong> o del <em>muck diving</em>? Por ello, una de las cosas que hacer en Romblon es <strong>explorar su fondo marino</strong>. A día de hoy, el operador más importante de la isla es The Three P, que también cuenta con <a href="https://www.booking.com/hotel/ph/the-three-p-beach-resort-romblon.es.html?aid=1542173" target="_blank" rel="nofollow noopener">alojamiento</a>. Otra opciones son quedarte en la vecina isla de Alad con Romblon Fun Divers, ubicados en <a href="https://www.booking.com/hotel/ph/sunset-cove-beach-amp-dive-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener">este resort</a>, o en el <a href="https://www.booking.com/hotel/ph/romblon-beach-and-dive-resort-romblon13.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Romblon Beach and Dive Resort</a>, ubicado en la isla de Logbon.</p>
+<p style="text-align: justify;">Además de los <strong>más de 15 puntos de buceo</strong> que hay en Romblon, desde la isla se hacen inmersiones en islas cercanas como Logbon, Alad, Cobrador, Tablas (aquí está el famoso Blue Hole), Sibuyan, Banton o Simara. Los precios de las inmersiones oscilan los 1.700 pesos.</p>
+<p style="text-align: justify;">Romblon se encuentra al final del llamado <strong>Verde Island Passage</strong>, el que dicen que es el ecosistema submarino más diverso del mundo. Por ello, es uno de los mejores sitios para hacer <a title="Los mejores lugares de buceo en Filipinas" href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">buceo en Filipinas</a>. Además, las condiciones son buenas en cualquier momento del año, con visibilidad que puede superar los 20 metros y temperaturas entre los 26ºC y 30ºC. También se practica aquí el tan de moda <strong><em>blackwater diving</em></strong>, un buceo nocturno que se centra en atraer criaturas de lo más extraño.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="9_Investigar_sobre_la_industria_del_marmol_en_Romblon"></span><span style="color: #33cccc;">9. Investigar sobre la industria del mármol en Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Nada más llegar con el barco a Romblon verás un cartel que te anuncia: “the marble capital of the Philippines”. ¿Piensas descubrir por qué? Pues a pocos pasos del puerto, junto al Freedom Park, encontrarás una calle entera en la que se venden <strong>todo tipo de productos hecho con mármol</strong>. Desde lo más básico que puedas imaginar, hasta otras cosas más extrañas como menaje del hogar de mármol o enormes figuras de delfines y otros animales marinos.</p>
+<p style="text-align: justify;">Además, si te animas a explorar Romblon en moto, encontrarás un <strong>montón de canteras y artesanos</strong> tallando estas obras de arte que se dirigen a todos los lugares del mundo.</p>
+<p><img decoding="async" class="alignnone wp-image-324 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="mármol en Romblon" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6.jpg" /><noscript><img decoding="async" class="alignnone wp-image-324 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6.jpg" alt="mármol en Romblon" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-6-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="10_Island_hopping_desde_Romblon"></span><span style="color: #33cccc;">10. <em>Island hopping</em> desde Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Por si no era suficiente con la lista de cosas que hacer en Romblon, te añadimos un imprescindible: el <em>island hopping</em> por las islas vecinas. Este fue <strong>uno de nuestros días más bonitos en el archipiélago de Romblon</strong> y te recomendamos seguir nuestros pasos.</p>
+<p style="text-align: justify;">Island hopping significa literalmente saltar de isla en isla y eso fue lo que hicimos con nuestra <em>bangka</em> aquel día. Por 1.500 pesos pasamos un día entero descubriendo lugares espectaculares en las islas de <strong>Cobrador</strong> (también llamada Naguso), <strong>Alad</strong> y <strong>Lugbung</strong>. Dirígete al puerto para negociar, el precio es para un barco completo en el que suelen caber hasta 6 personas. Además, lleva comida y bebida contigo, pues no encontrarás dónde comprar nada.</p>
+<p style="text-align: justify;">También es posible hacer este recorrido en varios días y de una manera mucho más económica en <strong>barcos públicos</strong> que se dirigen a estas islas, pero tienes que tener en cuenta que, al no ser lugares muy turísticos, los horarios son un tanto erráticos.</p>
+<p style="text-align: justify;">Por cierto, si quieres alejarte de todo y pasar unos días de relax total. En Alad hay un resort, el <strong><a href="https://www.booking.com/hotel/ph/tinaoog-beach-resort.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Tinaoog Beach Resort</a></strong>, con un santuario marino precioso.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter wp-image-325 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20433%20650'%3E%3C/svg%3E" alt="Cobrador Island desde Romblon" width="433" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18.jpg 433w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18-200x300.jpg 200w" data-lazy-sizes="(max-width: 433px) 100vw, 433px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-325 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18.jpg" alt="Cobrador Island desde Romblon" width="433" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18.jpg 433w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-18-200x300.jpg 200w" sizes="(max-width: 433px) 100vw, 433px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="11_Perderte_con_la_moto_por_Romblon"></span><span style="color: #33cccc;">11. Perderte con la moto por Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En definitiva, aunque te hemos hablado de un montón de cosas que ver y que hacer en Romblon, lo que más nos gustó de esta isla es que<strong> todos los lugares que visitamos fueron para nosotros</strong>. Disfrutamos de estos rincones que te hemos dicho, pero también nos perdimos mucho por la isla con la moto y descubrimos lugares que no aparecían ni en una guía ni siquiera en Google Maps y calmamos nuestras ansias de exploradores.</p>
+<p style="text-align: justify;">Por ejemplo, si echas de menos un remojón en agua dulce, intenta buscar el <strong>río Kipot</strong> (te lo marcamos abajo, piden 30 pesos por cruzar la casa de una persona) o las <strong>cascadas Libtong, las de Inuquit o las de Myugab-I</strong>  Si quieres más aventura, intenta llegar a <strong>Lintian Beach</strong>. Aunque el recorrido no es del todo sencillo, deja la moto cuando el camino acabe y pregunta por la bajada para llegar hasta ella. La recompensa es que llegarás a esta increíble y desierta playa en la que solo hay un par de casitas de lugareños que te mirarán sorprendidos. Lleva las gafas de snorkel, ¡hay un montón de estrellas de mar!</p>
+<p style="text-align: justify;"><strong>Alquilar una moto en Romblon</strong> cuesta 500 pesos al día. Frente al restaurante Jd &amp; G hay una tienda de ropa en la que también se alquilan <em>scooters</em> y motos de mayor cilindrada. Aun así, recomendamos preguntar en tu alojamiento porque casi siempre están dispuestos a ayudarte a encontrar alguna.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter wp-image-327 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20650'%3E%3C/svg%3E" alt="lintian beach en Romblon" width="487" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1-225x300.jpg 225w" data-lazy-sizes="(max-width: 487px) 100vw, 487px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-327 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1.jpg" alt="lintian beach en Romblon" width="487" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-1-225x300.jpg 225w" sizes="(max-width: 487px) 100vw, 487px" /></noscript></p>
+<hr />
+<h2><span class="ez-toc-section" id="Informacion_practica_sobre_Romblon"></span><span style="color: #33cccc;">Información práctica sobre Romblon</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para que puedas planificar tu visita, te dejamos aquí algunos datos que seguro te van a servir.</p>
+<h3><span class="ez-toc-section" id="Donde_dormir_en_Romblon"></span><span style="color: #33cccc;">Dónde dormir en Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si buscas información sobre hoteles y resorts Romblon, no te pierdas este artículo donde te detallamos<a href="https://www.viajarporfilipinas.com/donde-dormir-en-romblon/"><strong> dónde dormir en Romblon</strong></a>.</p>
+<p>Pero, para que te vayas haciendo una idea, aquí te dejamos dos:</p>
+<ul>
+<li style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/romblon-transient-house.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Romblon Transient House</strong></a>: si buscas algo barato en Romblon «pueblo», este es tu sitio. Apartamentitos hasta con una pequeña cocina. <a href="https://www.booking.com/hotel/ph/romblon-transient-house.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Ver más información aquí</a>.</li>
+<li style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/sea-u-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Sea U Inn</strong></a>: a poquitos pasos de Bon Bon Beach, este hotel de nueva construcción tiene algunas habitaciones con vistas al mar desde 25€. Reserva desde <a href="https://www.booking.com/hotel/ph/sea-u-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>este enlace</strong></a>.</li>
+<li style="text-align: justify;"><b><a href="https://www.booking.com/hotel/ph/coral-canyon-romblon.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Coco Cabana Romblon</a>:</b> aunque algo más alejado del pueblo, es una opción si quieres relax y tener zona de snorkel. Tienes habitaciones de todo tipo, pero comparten dueños encantadores, piscina tipo infinity y restaurante con buena relación calidad-precio. Échale un ojo <a href="https://www.booking.com/hotel/ph/coral-canyon-romblon.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+</ul>
+<h3><span class="ez-toc-section" id="Como_llegar_a_Romblon"></span><span style="color: #33cccc;">Cómo llegar a Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Descubre en este artículo <a href="https://www.viajarporfilipinas.com/llegar-a-romblon/"><strong>cómo llegar a Romblon</strong></a> desde diferentes lugares de Filipinas. Ya te adelantamos que la isla no cuenta con aeropuerto, así que te tocará invertir un tiempo para acceder.</p>
+<h3><span class="ez-toc-section" id="Donde_comer_en_Romblon"></span><span style="color: #33cccc;">Dónde comer en Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">No es que Romblon sea una isla con mucha variedad gastronómica, pero en la capital se pueden encontrar muchas carenderias económicas y algunos restaurantes que no están nada mal. Si tenemos que destacar algunos, son estos:</p>
+<ul>
+<li style="text-align: justify;">JD &amp; G Italian Foods &amp; Real Italian Pizza: es carete comparado con el resto de la isla, pero no te vas a arrepentir porque tanto la pizza como la pasta están espectaculares.</li>
+<li style="text-align: justify;">Island Bistro: ubicado junto al puerto, un sitio majo para comer con buenos batidos de frutas y rica lasaña.</li>
+<li style="text-align: justify;">Joe-Ra Cafe: posiblemente el mejor restaurante de la isla, con vistas al mar y cocina filipina elaborada. No dejes de probar el <em>kare-kare</em>.</li>
+<li style="text-align: justify;">Romblon Deli: muy cerquita del anterior, es otro restaurante bonito dando al mar, con platos de pasta, pizza y algunas que otras especialidades filipinas y asiáticas.</li>
+</ul>
+<h3><span class="ez-toc-section" id="Consejos_para_visitar_Romblon"></span><span style="color: #33cccc;">Consejos para visitar Romblon</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aquí tienes algunas pistas para disfrutar al máximo de todo lo que se puede hacer en Romblon:</p>
+<ul>
+<li style="text-align: justify;">Aunque se puede ir todo el año, la <strong>mejor época para visitar Romblon</strong> es de noviembre a mayo. Aún mejor abril y mayo, que son los meses más secos.</li>
+<li style="text-align: justify;">Te recomendamos que al menos dediques <strong>3 días enteros a Romblon</strong> y que combines su visita con Sibuyan y Cresta de Gallo. Mejor aún si le dedicas un par de días a Tablas.</li>
+<li style="text-align: justify;">La mejor forma de exprimir Romblon es con una <strong>moto</strong>, ya que las carreteras costeras son preciosas. Es curioso porque es una de las pocas islas de Filipinas donde tienes motos eléctricas, con punto de recarga de baterías. Aun así, si no conduces, siempre podrás negociar con los tricycles.</li>
+<li style="text-align: justify;">Tienes algunos <strong>cajeros</strong> en Romblon Romblon, pero te aconsejamos llevar efectivo porque a veces se quedan sin dinero.</li>
+<li style="text-align: justify;">Dispones de algunas <strong>lavanderías</strong> baratas en Romblon Romblon, te hemos marcado la que nosotros usamos en el mapa de abajo.</li>
+<li style="text-align: justify;">Las playas de Romblon lucen más bonitas en <strong>marea alta</strong>, pero si quieres ver Bon Bon Beach, procura visitarla en marea baja.</li>
+<li style="text-align: justify;">Por un problemita, comprobamos que la infraestructura médica en Romblon es escasa, incluso en la vecina Tablas, que es más grande. Así que, en caso de tener que acudir a un hospital por urgencia, tendrás que ser trasladado a Manila. Por esto, es muy importante que viajes con un <strong><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer">buen seguro de viaje para Filipinas</a></strong> como el que llevamos nosotros. Aquí tienes un <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><strong>5% de descuento en tu póliza</strong></a>.</li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-13821" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20484'%3E%3C/svg%3E" alt="qué hacer en Romblon Filipinas" width="1000" height="484" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98-980x474.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98-480x232.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13821" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98.jpg" alt="qué hacer en Romblon Filipinas" width="1000" height="484" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98-980x474.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/que-hacer-romblon-98-480x232.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Romblon"></span><span style="color: #33cccc;">Mapa de Romblon</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Te hemos convencido con este montón de cosas que hacer en Romblon? Aquí te dejamos este mapa de Romblon que podrás ver en tu teléfono móvil y orientarte con nosotros cuando estés allí.</p>
+<div style="text-align: center;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/2/embed?mid=1V9z1zI6gE9y2NgBHtYixOqbIa3lj1ezz"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/2/embed?mid=1V9z1zI6gE9y2NgBHtYixOqbIa3lj1ezz" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></div>
+<hr />
+<p style="text-align: center;"><em>¡Si tienes alguna duda sobre tu viaje a Filipinas o tu visita a Romblon, déjala en los comentarios e intentaremos ayudarte!</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">32 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-romblon/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-51746">
+		<article id="comment-51746" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Zara</span>				<span class="comment_date">
+					el 30/01/2025 a las 15:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas chicxs!<br />
+Primero de todo, gracias por el currazo de transmitir toda esta info tan últil de manera tan clara 🙂<br />
+Nos queda una semana suelta al final de nuestro viaje por Filipinas. Estamos planteándonos ir para la zona de Romblón (necesitamos escapar de las típicas rutas y de las masificaciones), lo que hemos estado mirando reseñas de google y las más recientes dicen que las playas están llenas de basura y tal&#8230; Nos da un poco de miedo encontrarnos un chasco así después de toda la logística de llegar hasta allí&#8230;<br />
+La pregunta es, tenéis info reciente de cómo está la isla de Romblón (de cuidada, basura, etc? Y, creéis que llegamos tarde y ya no es esa joya desconocida? </p>
+<p>Ya que estoy, me podríais pasar vuestro dive center de confianza en Padre Burgos? </p>
+<p>Mil gracias por adelantado!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51746' data-commentid="51746" data-postid="304" data-belowelement="comment-51746" data-respondelement="respond" data-replyto="Responder a Zara" aria-label='Responder a Zara'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51820">
+		<article id="comment-51820" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 31/01/2025 a las 14:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Zara. Pues la verdad que no nos había llegado eso de la basura. La última vez que estuvimos está todo ok, qué pena leer eso&#8230; Sobre la masificación, está a años luz de destinos como El Nido, donde a día de hoy es casi imposible hasta encontrar alojamiento decentes.</p>
+<p>Te enviamos hace semanas la info de la moto en El Nido pero nunca nos llegaste a responder&#8230;échale un ojo porfa y pide por ahí si necesitas algo más.</p>
+<p>Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-47597">
+		<article id="comment-47597" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">adriana</span>				<span class="comment_date">
+					el 16/11/2024 a las 02:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>hola buenas noches desde argentina.una pregunta..es posible llegar en el dia de boracay a romblon romblon GRACIAS</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-47597' data-commentid="47597" data-postid="304" data-belowelement="comment-47597" data-respondelement="respond" data-replyto="Responder a adriana" aria-label='Responder a adriana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-47607">
+		<article id="comment-47607" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 16/11/2024 a las 03:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, tienes esto detallado en <a href="https://www.viajarporfilipinas.com/llegar-a-romblon/" title="Cómo llegar a Romblon" target="_blank" rel="noopener ugc">Cómo llegar a Romblon</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-31239">
+		<article id="comment-31239" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Pepa Rosell</span>				<span class="comment_date">
+					el 25/01/2024 a las 01:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Claudia y Jairo.</p>
+<p>Aunque nos resulta fácil organizarnos con vuestra estupenda guía a la que no le falta detalle, tenemos alguna duda para el final de nuestro viaje.<br />
+Después de 9 días en Palawan (2 en Puerto Princesa, 3 en Port Barton, 4 en El Nido y 4 en Corón), estamos valorando visitar Romblon y Cresta de Gallo.<br />
+Disponemos desde el sábado 20 al lunes 29 de abril para esta zona. Pensáis que es tiempo suficiente? cómo podríamos organizar estos días, o quizá nos aconsejáis algo alternativo? </p>
+<p>Muchísimas gracias, sois geniales!!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-31239' data-commentid="31239" data-postid="304" data-belowelement="comment-31239" data-respondelement="respond" data-replyto="Responder a Pepa Rosell" aria-label='Responder a Pepa Rosell'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-31250">
+		<article id="comment-31250" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/01/2024 a las 09:09				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Pepa, ¡nos alegramos mucho! Con 9 os daría, sí, solo que tenéis que considerar que llegar va a ser muy pesado. Lo más cómodo seguramente sea volar a Manila y ver si os coinciden los vuelos a Tablas. Si no, tendríais que coger barco y echar la noche entera. La otra es simplemente volar de Coron a Cebú y visitar algunas islas de las Bisayas de acceso más sencillo. Ya está en vosotros si os queréis complicar un poquito más o no. Sin duda son islas que lo valen. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-30299">
+		<article id="comment-30299" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sebastian Reynes Baumgartner</span>				<span class="comment_date">
+					el 08/01/2024 a las 10:12				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, estamos valorando visitar Romblon. Disponemos de 5 dias ya que vemos que los vuelos a Tablas son muy limitados y posteriormente a Romblon queremos ir a Malapascua. Son suficientes 5 dias para vistar romblon y alguna isla mas?</p>
+<p>Gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-30299' data-commentid="30299" data-postid="304" data-belowelement="comment-30299" data-respondelement="respond" data-replyto="Responder a Sebastian Reynes Baumgartner" aria-label='Responder a Sebastian Reynes Baumgartner'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-30300">
+		<article id="comment-30300" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/01/2024 a las 10:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sebastián, creemos que sin problemas, con un par de días completos o tres tienes para ver Romblon. A nosotros nos daría pena no ir a Cresta de Gallo desde Sibuyan, pero si lo ves muy justo, pues podrías ir a Tablas. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-18876">
+		<article id="comment-18876" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Javier Ortega Rodríguez</span>				<span class="comment_date">
+					el 26/01/2023 a las 02:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos,</p>
+<p>Seguimos dándole vueltas al itinerario, que a cada paso que damos, más dudas surgen.</p>
+<p>Teníamos pensado ir a El Nido y Coron, pero ahora también nos ha llamado mucho la atención Romblon.</p>
+<p>¿Vosotros cambiaríais Coron por Romblon ya que vamos a ir a El nido?</p>
+<p>Estaremos de viaje desde el 27 de marzo hasta el 16 de abril y lo dejaríamos para el final.</p>
+<p>Si me podéis decir vuestro top 3 de isla para esas fechas, os lo agradecería.</p>
+<p>Un saludo!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-18876' data-commentid="18876" data-postid="304" data-belowelement="comment-18876" data-respondelement="respond" data-replyto="Responder a Javier Ortega Rodríguez" aria-label='Responder a Javier Ortega Rodríguez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-18883">
+		<article id="comment-18883" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/01/2023 a las 08:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Javier, a ver&#8230; El Nido y Coron están bien conectados, pero Romblon es una isla poco accesible. Es una de nuestras favoritas, pero llegar conlleva su tiempo y ya solo todo el archipiélago os debería llevar unos 10 días, así que depende de lo que os queráis centrar. En marzo/abril es buena época, igual que para Palawan/Coron. No sabríamos decirte, la verdad. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-22686">
+		<article id="comment-22686" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Yola</span>				<span class="comment_date">
+					el 09/06/2023 a las 17:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola !!<br />
+Tengo mis vacaciones la segunda quincena de septiembre.<br />
+Quería ir a Romblon, tablas, cresta del gallo, pero estoy leyendo que la mejor época es abril, mayo.<br />
+En septiembre podré disfrutarlo? o que zona de Filipinas me recomendáis en esa fecha ?<br />
+Muchas gracias!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-22722">
+		<article id="comment-22722" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/06/2023 a las 06:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Yola, a ver&#8230; el clima de Filipinas es bastante impredecible. Es cierto que es época de lluvias por la zona, pero no significa que te vaya a llover. Aun así, si te da miedo el clima, echa un vistazo a <a href="https://www.viajarporfilipinas.com/viajar-filipinas-septiembre/" title="Viajar a Filipinas en septiembre, ¿cómo es?" rel="noopener" target="_blank">Viajar a Filipinas en septiembre</a> para ver las mejores zonas. Nosotros viajamos sea donde sea : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-16555">
+		<article id="comment-16555" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">RODRIGO</span>				<span class="comment_date">
+					el 22/10/2022 a las 20:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo,<br />
+Quisiera pudierais indicar cuál es la mejor época para visitar Romblon?<br />
+Gracias de antemano</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-16555' data-commentid="16555" data-postid="304" data-belowelement="comment-16555" data-respondelement="respond" data-replyto="Responder a RODRIGO" aria-label='Responder a RODRIGO'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-16556">
+		<article id="comment-16556" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 22/10/2022 a las 21:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, más o menos de diciembre a mayo, como para el resto de la zona de Bisayas. Puedes leer más en <a href="https://www.viajarporfilipinas.com/mejor-epoca-para-viajar-a-filipinas/" title="Mejor época para viajar a Filipinas, ¿cuándo viajar?" rel="noopener" target="_blank">Mejor época para viajar a Filipinas</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-romblon/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-romblon/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='304' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ed47f0587e" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="247"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"304","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

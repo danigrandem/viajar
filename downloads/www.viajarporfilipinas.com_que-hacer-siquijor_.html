@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer en Siquijor, Filipinas - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Si buscas qué hacer en Siquijor, aquí encontrarás todos sus secretos. Playas, cascadas, santuarios marinos y hasta sus famosas curanderas." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-siquijor/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer en Siquijor, Filipinas - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Si buscas qué hacer en Siquijor, aquí encontrarás todos sus secretos. Playas, cascadas, santuarios marinos y hasta sus famosas curanderas." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-siquijor/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-09-04T17:27:21+00:00" />
+	<meta property="article:modified_time" content="2025-01-20T02:49:25+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="750" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="27 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué hacer en Siquijor: guía completa","datePublished":"2018-09-04T17:27:21+00:00","dateModified":"2025-01-20T02:49:25+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/"},"wordCount":5919,"commentCount":1721,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16.jpg","articleSection":["Siquijor","Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-siquijor/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/","url":"https://www.viajarporfilipinas.com/que-hacer-siquijor/","name":"▷ Qué hacer en Siquijor, Filipinas - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16.jpg","datePublished":"2018-09-04T17:27:21+00:00","dateModified":"2025-01-20T02:49:25+00:00","description":"Si buscas qué hacer en Siquijor, aquí encontrarás todos sus secretos. Playas, cascadas, santuarios marinos y hasta sus famosas curanderas.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-siquijor/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16.jpg","width":1000,"height":750,"caption":"que hacer en siquijor"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-siquijor/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué hacer en Siquijor: guía completa"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-siquijor/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué hacer en Siquijor: guía completa del feed" href="https://www.viajarporfilipinas.com/que-hacer-siquijor/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/1156" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=1156' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-siquijor%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-siquijor%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-1156-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/1156/et-core-unified-1156.min.css?ver=1745575950" /><link rel="stylesheet" id="et-core-unified-deferred-1156-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/1156/et-core-unified-deferred-1156.min.css?ver=1745575950" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-1156 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-1156" class="et_pb_post post-1156 post type-post status-publish format-standard has-post-thumbnail hentry category-siquijor category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué hacer en Siquijor: guía completa</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/visayas/siquijor/" rel="category tag">Siquijor</a>, <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="que hacer en siquijor" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-1000x675.jpg" alt="que hacer en siquijor" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-16-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Muchas islas de Filipinas son conocidas por destacar en algo en concreto. Unas son ideales para el buceo, otras para el surf, hay lugares que te brindan la oportunidad de hacer un <em>island hopping</em> de ensueño y otras que te acercarán a preciosas cascadas. Pero, si tuviésemos que definir el punto fuerte de esta isla, podríamos decir que es <strong>la gran variedad de cosas que hacer en Siquijor</strong>.</p>
+<p style="text-align: justify;">Pese a no tener la playa más bonita del país ni las cascada más grandes que verás en tu <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/">viaje a Filipinas</a>, visitar Siquijor te da la oportunidad de, desde un mismo lugar, ver playas, cascadas, cuevas, buceo, edificios históricos o, entre otros planes, santuarios marinos. Todo ello envuelto de una <strong>atmósfera mágica</strong> que solamente conocerás si te adentras hasta el corazón de la isla.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258963f2616" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258963f2616"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Cuantos_dias_estar_en_Siquijor" title="Cuántos días estar en Siquijor">Cuántos días estar en Siquijor</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_ver_y_que_hacer_en_Siquijor" title="Qué ver y qué hacer en Siquijor">Qué ver y qué hacer en Siquijor</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Informacion_practica_sobre_Siquijor" title="Información práctica sobre Siquijor">Información práctica sobre Siquijor</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Mapa_de_Siquijor" title="Mapa de Siquijor">Mapa de Siquijor</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_estar_en_Siquijor"></span><span style="color: #33cccc;">Cuántos días estar en Siquijor</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ubicada en el corazón de la región de Bisayas, <strong><a href="https://www.viajarporfilipinas.com/como-llegar-a-siquijor/" target="_blank" rel="noopener noreferrer">llegar a Siquijor</a> </strong>es bastante sencillo. Aun así, aunque sepas que tienes más atractivos alrededor, no planifiques poco tiempo en la isla. Es bastante común que caigas enamorado y quieras dedicarle algún día más.</p>
+<p style="text-align: justify;">Nuestro consejo es que, al menos, pases <strong>2 días completos en Siquijor</strong>. Piensa que estos días no deberían incluir traslados, sino que son días para aprovechar enteramente en la isla. Con dos días en Siquijor podrás dar la vuelta completa a la carretera que la rodea, pero si te apetece algo más de aventurilla, añádale, por lo menos, un día más.</p>
+<blockquote>
+<p style="text-align: justify;">Por cierto, nosotros siempre hemos alquilado <strong>moto</strong> para visitar Siquijor. Aunque la mayor parte de la carretera suele estar en buen estado, <em>please</em>, no te arriesgues a conducir si no tienes mucha práctica. En ese caso, siempre podrás alquilar un conductor de <i>tricycle </i>durante un día y que te cuente algún que otro secretillo de esta isla encantada.</p>
+</blockquote>
+<p style="text-align: justify;">Además, si estás pensando en ir a hacer <strong>snorkel a Apo Island desde Siquijor</strong>, uno de los <a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer">mejores sitios para hacer snorkel de Filipinas</a>, piensa en agregarle al menos un día más y, el mismo día que llegues, ve a preguntar al hotel Coco Grove qué días tienen pensado hacer la excursión. No es diaria, así que tendrás que cuadrarlo.</p>
+<p style="text-align: justify;">Por ejemplo, un buen plan para exprimir al máximo Siquijor puede ser:</p>
+<p style="text-align: justify;"><strong>Día 1: </strong>Century Old Balete Tree, Cambugahay Falls, Convento de Lazi, Monkey Beach/Secret Beach, Iglesia de María, Salagdoong Beach y esnórquel y atardecer en Tubod. En caso de que sean los meses de más viento en la zona de Tubod, puedes cambiar Tubod por el snorkel en Paliton.</p>
+<p style="text-align: justify;"><strong>Día 2: </strong>Lugnason Falls, San Antonio (hilots), Cueva de Cantabon, Siquijor Town y playas cercanas, Paliton Beach y puesta de sol en Solangon Beach o en una de las cafeterías de la montaña.</p>
+<p style="text-align: justify;"><strong>Día 3:</strong> excursión a Apo Island + atardecer en Paliton Beach.</p>
+<p style="text-align: justify;">Como verás más adelante, esto son solo algunos básicos. Hay muchísimo más que hacer en Siquijor y, no olvides lo más importante, es una isla en la que se siente muchísimo relax, ¡aprovéchalo!</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_ver_y_que_hacer_en_Siquijor"></span><span style="color: #33cccc;">Qué ver y qué hacer en Siquijor</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Lo que más nos gusta hacer en Siquijor es perdernos por sus carreteras en moto. De verdad, los paisajes te enamorarán. Aun así, aquí te resumimos las cosas imprescindibles que creemos que tienes que ver y que hacer en Siquijor. Al final de este artículo encontrarás algunos «extras» para quienes más tiempo o son más aventureros.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. El Árbol Centenario Mágico (Old Enchanted Balete Tree)</span></h3>
+<p style="text-align: justify;">Quizá estés pensando “¿he venido hasta Filipinas para ver un árbol?”. A nosotros nos pasó lo mismo. Pero al pasar a su lado, pues se encuentra en la carretera principal de la isla, nos quedamos boquiabiertos y bajamos de la moto para conocerlo.</p>
+<p style="text-align: justify;">El <strong>Old Enchanted Balete Tree</strong> es un árbol de <strong>más de 400 años</strong> que pertenece a la familia de los banianos. Sus ramas, con el pasar de los siglos, se han ido extendiendo por el suelo, haciéndolo crecer en todas direcciones. Dicen que el agua del pequeño estanque donde reposa tiene propiedades curativas y son muchos los filipinos que van a probar suerte. Además, es muy común descalzarse, meter los pies en el agua y dejar que los peces que ahí viven se coman tus impurezas. Eso sí, ojo que hay algún pez grande que te puede dar un buen pellizco.</p>
+<p style="text-align: justify;">Como curiosidad, seguramente veas a una señora vendiendo <strong>«pócimas» e hierbas medicinales</strong>. Son muchos los filipinos que creen en la magia de Siquijor y su poder curativo (ya verás más adelante, cuando te hablemos de las <em>hilot</em>), así que este tipo de artículos tienen mucho éxito. Por otro lado, en el árbol centenario también venden unos cocos bien grandotes por tan solo 30 pesos, que servirán para hidratarte.</p>
+<p style="text-align: justify;">El precio de la entrada no debe preocuparte en absoluto, serán solo <strong>20 pesos</strong>. Tienes que pagar 5 pesos por aparcar la moto.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5671" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Limpieza de pies Old Balete Tree Siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5671" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10.jpg" alt="Limpieza de pies Old Balete Tree Siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Cambugahay Falls</span></h3>
+<p style="text-align: justify;">Las <strong>Cambugahay Falls</strong> son, sin duda, uno de los imprescindibles <strong>que ver en la isla de Siquijor</strong>. Una vez aparques tu moto en el parking y, bajando las escaleras, empieces a ver las aguas turquesas de esta preciosa cascada entenderás por qué. Este bello rincón está compuesto por 3 áreas de baño. La primera es la más famosa y bonita de ver. Una gran zona de baño rodeada de palmeras y vegetación donde rompe una cascada de unos 7 metros de altura. Puedes zambullirte saltando desde lo alto de la cascada o lanzándote agarrado al enorme columpio que cuelga de un árbol cercano. Ojo, tirarte cuesta 50 pesos y puedes hacerlo de manera ilimitada.</p>
+<p style="text-align: justify;">Los fines de semana suele haber bastante afluencia de turismo filipino y es muy normal verles hacer saltos mortales para entrar al agua, ¡todo un espectáculo! Eso sí, si las quieres para ti solo, <strong>madruga</strong> y plántate a las 7 de la mañana. Sobre las 9:00 ya se ponen hasta arriba. Aun así, para que les dé bien la luz y veas el color turquesa del agua, te recomendamos que vayas sobre las 11:30-12:00.</p>
+<p style="text-align: justify;">El siguiente nivel de las cascadas Cambugahay Falls son unas pequeñas piscinas naturales en las que podrás sentarte un rato a relajarte. El tercer nivel lo conforma una pequeña cascada que da un embalse de menor tamaño que el anterior. Si tienes que elegir, el primer nivel es el más bonito y cómodo. Aun así, en el segundo es donde suele haber menos gente.</p>
+<p style="text-align: justify;">La <strong>entrada</strong> cuesta 50 pesos y no se paga parking, aunque puedes dar una donación.</p>
+<p style="text-align: justify;">Puedes encontrar muchísima más información en nuestro artículo dedicado a ellas: <a title="Cambugahay Falls, el épico salto de agua de Siquijor" href="https://www.viajarporfilipinas.com/cambugahay-falls-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Cambugahay Falls</strong></a>.</p>
+<p style="text-align: center;">⭐ Ojo, en Siquijor hay muchas cascadas. Estas son solo las más populares (pero también una de las más bonitas). Aprovecha para perderte por otras como Lagaan Falls, Kawasan Falls, Locong Falls&#8230;</p>
+<p style="text-align: justify;">Si eres aventurero, también puedes ir, como nosotros, a las<strong> Cangbangag Falls</strong>, las más altas de la isla. Por el trabajo que cuesta llegar (fíate solo del mapa de Maps.me porque el de Google Maps no da la ubicación correcta, en cierto momento tendrás que ponerte a caminar y atravesar un río), nosotros solo te la aconsejamos si tienes 4 o 5 días en Siquijor. Son chulas y estarás solo, pero creemos que en otros sitios de Filipinas y en la propia Siquijor las hay mejores.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5672" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Cambugahay Falls Siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5672" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11.jpg" alt="Cambugahay Falls Siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-11-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">3. Salagdoong Beach</span></h3>
+<p style="text-align: justify;"><strong>Salagdoong Beach</strong> es una de las playas más populares de Siquijor y despierta opiniones algo enfrentadas. Está compuesta por dos pequeñas calas bañadas en preciosas aguas turquesas en las que, si llevas contigo tus gafas de snorkel, podrás disfrutar de su colorida biodiversidad. Tanto es así, que la última vez vimos hasta un par de tortugas.</p>
+<p style="text-align: justify;">El motivo para que existan detractores de este bonito rincón es que en esta playa en las que se han construido unas <strong>gradas de cemento</strong> que le quitan el encanto y que atraen a cientos de turistas locales a disfrutar de grandes barbacoas y del restaurante, sobre todo los fines de semana. Algunos dicen que esta playa se ha convertido en una especie de pequeño parque temático y tampoco les falta razón.</p>
+<p style="text-align: justify;">Sea como sea, Salagdoong Beach es un lugar ideal para hace una parada en tu <strong>ruta en moto por Siquijor</strong>. Además, es una de las pocas playas de Siquijor que tiene bastante profundidad, por lo que te podrás pegar un baño tanto en marea baja como en marea alta.</p>
+<p style="text-align: justify;">Si te atreves, puedes subir hasta lo alto de su acantilado y saltar desde el <strong>trampolín</strong>. Te avisamos: desde abajo parece mucho menos alto que lo te encuentras cuando estás a punto de saltar, quizá cuando sea tu turno de saltar te lo pienses dos veces.</p>
+<p style="text-align: justify;">Para entrar a esta playa deberás pagar una<strong> tasa de 50 pesos</strong> por persona más un pequeño suplemento que variará en función al vehículo con el que llegues. En el caso de la moto son 30 pesos. Además, el restaurante es apañado para comer, si es que una familia filipina no te invita a compartir su <em>bbq</em>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5673" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Salagdoong Beach en Siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5673" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12.jpg" alt="Salagdoong Beach en Siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-12-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">4. Playas de Siquijor</span></h3>
+<p style="text-align: justify;">Si buscas <strong>playas en Siquijor</strong> con algo de más de “esencia filipina”, te vamos a contar cuáles son nuestras tres playas favoritas.</p>
+<p style="text-align: center;">Puedes encontrar toda la información sobre estas y otras playas en nuestro artículo <a title="Las mejores playas de Siquijor" href="https://www.viajarporfilipinas.com/mejores-playas-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de Siquijor</strong></a>.</p>
+<p style="text-align: justify;">A solo 15 kilómetros al sur de Salagdoong Beach se encuentra la playa de <strong>Kagusuan Beach</strong>. Cuando llegues comprobarás que es totalmente diferente a la anterior, pues podrás estar prácticamente solo y sin sentirte rodeado de construcciones de cemento. Una de las cosas que hacer en Siquijor que más recomendamos es explorar, buscar más allá y perderte por los caminos. Si haces eso desde Kagusuan Beach y sigues un kilómetro más adelante llegarás a un camino que dirige a la aún poco conocida <strong>Monkey Beach</strong>. Aquí podrás estar prácticamente solo y disfrutar de las curiosas formaciones rocosas que se encuentran en la orilla.</p>
+<p style="text-align: justify;">También existen más playas hacia el norte, menos conocidas aún, en las que no te encontrarás a casi nadie. <strong>Secret Beach</strong> (la de la foto de abajo, también llamada Bacong Beach, algo rocosa pero con una zona donde te puedes echar) y <strong>Umpas Beach</strong> (ojo que para llegar a esta hay que bajar bastante) te encantarán si quieres sentirte como Robinson Crusoe. Ten en cuenta que el camino en moto es un poco horrible, así que solo te aconsejamos ir si tienes mucha pericia o no te importa caminar 20-30 minutos.</p>
+<p style="text-align: justify;"><strong>PRECAUCIÓN:</strong> nos han comentado algunos viajeros que en estas playas han sufrido robos por despiste. A pesar de que a nosotros nunca nos ha pasado nada similar y que consideramos Filipinas un país muy seguro, ten cuidado con tus pertenencias y no las dejes sin vigilar. Pégalas en lo posible a la orilla, ya que puede ser que roben colándose por la maleza. Por otro lado, considera que son playas sin ningún tipo de mantenimiento y que según la época del año pueden tener bastante basura.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5678" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Secret Beach en Siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5678" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17.jpg" alt="Secret Beach en Siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-17-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;">Otra playa que visitar en Siquijor, mucho más popular pero muy bonita, es <strong>Paliton Beach</strong>. Rodeada de palmeras y con arena blanca, es un lugar ideal para disfrutar de <strong>la mejor puesta de sol</strong> en la isla de Siquijor. En realidad, Paliton se divide en 2: <strong>Paliton (la más grande) y Cangbusyo Beach (así aparece en Google Maps, es la más pequeña)</strong>. Puedes llegar a ambas caminando, así que no dudes en explorarlas. La tasa de entrada son 20 pesos.</p>
+<p style="text-align: justify;">Ahora en ambas tienes puestecitos de bebida y de comida. Es factible caminar entre las dos sin dificultad alguna.</p>
+<p style="text-align: justify;">Tampoco le deberías hacer ascos a la propia <strong>playa de Solangon/San Juan</strong>, donde hay un par de bares con cervezas a buen precio para disfrutar del atardecer. Nuestro favorito es el del hotel Coral Cay. La <strong>playa del hotel Coco Grove</strong>, donde está el santuario marino de Tubod, también es genial. Si no eres huésped del hotel, no puedes hacer uso de las hamacas y las sombrillas, pero la playa es pública, así que puedes estar tranquilamente.</p>
+<p style="text-align: justify;">Otra de nuestras playas favoritas es <strong>Dapdap Beach</strong>, en el propio pueblo de Siquijor. Aquí no va casi nadie y es muy fotogénica. En ruta hacia Larena, también tienes <strong>Caleeia Beach</strong>, donde hay un barecito perfecto para relajarse.</p>
+<p style="text-align: justify;">Dependiendo de la <strong>época</strong> en la que visites Siquijor, los vientos soplarán hacia un lado u otro y eso afecta al estado de las playas. Así, cuando sopla el Habagat (el monzón del suroeste, que va más o menos de julio a noviembre), es habitual que las playas del este (Monkey Beach, Kagusuan&#8230;) tengan un agua más calmada, mientras que las del oeste (toda la parte de Paliton) se vean un poco menos bonita. Si vas a ir a Siquijor entre diciembre y mayo, es probable que te encuentres una Paliton Beach tranquila.</p>
+<p style="text-align: justify;">Ten en cuenta que, a excepción de Salagdoong Beach, la mayoría de las playas de Siquijor tienen muy <strong>poca profundidad</strong>, por lo que tendrás que caminar o nadar bastante para darte un baño relajante. A nosotros nos siguen gustando igual, pero es aconsejable que mires la <strong><a href="https://www.tide-forecast.com/locations/Siquijor/tides/latest" target="_blank" rel="nofollow noopener noreferrer">tabla de mareas</a></strong> para intentar hacer coincidir tu visita con un período de mareas altas, ya que de otra forma es posible que te defrauden.</p>
+<p><img decoding="async" class="aligncenter wp-image-1496 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Paliton Beach en Siquijor" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-1496 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9.jpg" alt="Paliton Beach en Siquijor" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-9-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">5. Cantabon Caves</span></h3>
+<p style="text-align: justify;">Además de bañarte en bonitas playas o saltar desde cascadas, otra de las cosas interesantes que hacer en Siquijor es adentrase en su subsuelo. En pleno corazón de la isla te esperan las <strong>Cantabon Caves</strong>, o cuevas de Cantabon, un entramado de túneles de casi un kilómetro de largo que podrás visitar con la ayuda de un guía. El recorrido actual es de 600 metros y prometemos que será de las actividades más especiales que hagas durante tu ruta por Siquijor.</p>
+<p style="text-align: justify;">La oficina de información se encuentra en el propio pueblo de Cantabon. Aquí deberás pagar la entrada que incluye: guía, casco y linterna. El guía son 500 pesos y es válido hasta para 3 personas, después tienes que añadirle 50 pesos por persona. La última entrada suele ser a las 17:00.</p>
+<p style="text-align: justify;">Una vez dentro empieza la aventura que te llevará por suelos resbaladizos, estalactitas, estalagmitas, columnas y otro tipo formaciones rocosas (la coliflor, la cascada, el sombrero de Harry Potter&#8230;) y hasta una piscina natural subterránea ideal para darse un baño. El recorrido dura entre 45 minutos y hora y media, según las paradas que hagas y la agilidad que tengas.</p>
+<blockquote>
+<p style="text-align: justify;"><span style="color: #33cccc;"><em><strong><span style="color: #33cccc;">De viajero a viajero</span>:</strong></em></span> haz esta visita con calzado anti-deslizante y apto para agua, bañador y aconsejamos que dejes tus dispositivos electrónicos en la taquilla para no tener que preocuparte por ellos. El móvil se puede llevar y durante el recorrido te lo pueden llevar hasta los guías, pero es mejor si también cuentas con una bolsa estanca.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-14569" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20544'%3E%3C/svg%3E" alt="Cuevas de Cantabon en Siquijor" width="1000" height="544" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55-980x533.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55-480x261.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14569" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55.jpg" alt="Cuevas de Cantabon en Siquijor" width="1000" height="544" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55-980x533.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-55-480x261.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">6. Las <em>Hilots</em> y curanderas de Siquijor</span></h3>
+<p style="text-align: justify;">Se habla mucho sobre la magia y el misticismo de Siquijor, pero realmente son pocos los viajeros que se embarcan en la aventura de descubrirlo. Esta fama viene, en parte, de <strong>las curanderas <em>Hilots</em></strong>. El <em>Hilot</em> es una <strong>terapia tradicional filipina</strong> basada en el masaje y la manipulación de huesos y músculos, que además se ayuda de diferentes <strong>rituales sagrados y plantas medicinales</strong>. Aunque ahora por ley es necesario un diploma para ejercer de <em>hilot</em>, las verdaderas practicantes (en su mayoría mujeres) adquieren este conocimiento de sus madres o abuelas.</p>
+<p style="text-align: justify;">Es posible que en diferentes hoteles de Siquijor veas que se ofrece un “Hilot massage”, pero este se acerca más a un clásico masaje relajante. Si quieres vivir la verdadera experiencia, conduce tu moto hasta la céntrica población de <strong>San Antonio</strong> y una vez ahí pregunta a los locales donde encontrar tu <em>hilot</em>. La experiencia vale totalmente la pena y después de tu sesión te sentirás como nuevo.</p>
+<p style="text-align: justify;">En nuestro caso, hemos tenido la oportunidad de pasar por las manos de 3 curanderos diferentes en Siquijor, cada uno con una técnica diferente y todas realmente súper interesantes. Nuestros primeros años por la isla los pasamos siempre visitando a una hilot que se basa principalmente en el masaje tradicional (aplicando diferentes «pócimas» de hierbas naturales), pero en nuestras últimas visitas hemos conocido nuevos curanderos. Uno de ellos aplica la técnica <em>Bulo Bulo</em> para hacerte una limpieza interior, es sorprendente ver cómo el agua que usa se va limpiando a la vez. El otro (bien, realmente son una pareja) practican el <em>toob</em>, una especie de limpieza de malas energías con el humo de diferentes plantas y luego suelen completarlo con un pequeño masaje con aceites naturales.</p>
+<p style="text-align: justify;">Si quieres el contacto de algunos de nuestros hilots y curanderos favoritos en Siquijor, déjanos un comentario y te enviaremos toda la información.</p>
+<blockquote><p>Por cierto, cada Semana Santa, Siquijor recibe cientos de visitantes que acuden al llamado <strong>Healing Festival</strong> o Festival de Sanadores. Tiene lugar en la cueva de Cantabon y a él no solo suelen asistir los hilots de Siquijor (que son los mayoritarios), sino otros de todo Filipinas.</p></blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-14570" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20544'%3E%3C/svg%3E" alt="hilots en Siquijor" width="1000" height="544" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54-980x533.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54-480x261.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14570" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54.jpg" alt="hilots en Siquijor" width="1000" height="544" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54-980x533.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-54-480x261.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">7. Convento de Lazi e Iglesia de San Isidro Labrador</span></h3>
+<p style="text-align: justify;">Otro posible plan que hacer en Siquijor es hacer una parada en dos de sus edificios históricos más importantes, que nos hablan del pasado colonial español de Filipinas. La <strong>Iglesia de San Isidro Labrador</strong>, hasta los topes durante la misa de los domingos, fue propuesta por la UNESCO en 2006 como <strong>Patrimonio de la Humanidad</strong>, pero el mal estado de su estructura y el poco interés de las autoridades en su conservación han impedido que consiga ese galardón.</p>
+<p style="text-align: justify;">En la acera de enfrente podrás visitar el <strong>Convento de Lazi</strong>, que ostenta el récord de ser <strong>el más antiguo de toda Asia</strong>, construido en 1887. Restaurado en 2019, es una interesante visita que te hará viajar en el tiempo rodeado de una atmósfera muy especial. La entrada al convento antes era totalmente gratuita, pero, desde marzo de 2019, se cobra una entrada de <strong>30 pesos por persona</strong>.</p>
+<p style="text-align: justify;">Si te interesan este tipo de edificios históricos, no dudes en acercarte al pueblo de Siquijor. Aquí se ubican la <strong>Iglesia de San Francisco de Asís</strong>, construida con coral entre 1795 y 1831, y el campanario anexo, que está en rehabilitación.</p>
+<p style="text-align: justify;">Por otro lado, en el pueblo de María está la <strong>Iglesia de Nuestra Señora de Providencia</strong>, construida en 1880. Dentro verás una estatua de Santa Rita de Cascia, que lleva una calavera y un crucifijo invertido. Como curiosidad, los habitantes de Siquijor dicen que se pasea por las noches&#8230;</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14571" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20653'%3E%3C/svg%3E" alt="Convento de Lazi en Siquijor" width="1000" height="653" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53-980x640.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53-480x313.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14571" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53.jpg" alt="Convento de Lazi en Siquijor" width="1000" height="653" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53-980x640.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-53-480x313.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">8. Lugnason Falls (Zodiac Falls)</span></h3>
+<p style="text-align: justify;">Otra de las <strong>cascadas de Siquijor</strong> que merecen una visita son las <strong>Lugnason Falls</strong>, cerca de la zona de San Juan, al sudoeste de la isla. Lo que seguramente más te llame la atención será el espectacular color de sus aguas, algo distintas a las de Cambugahay Falls. La zona de baños es más pequeña que las anteriores, pero la altura del salto desde la cascada es mayor.</p>
+<p style="text-align: justify;">La entrada cuesta 20 pesos y verás algunos guías que te llevan por los mejores rincones. Además, amenizarán tu estancia con su típico <em>show</em> de saltos increíbles desde lo alto de la cascada.</p>
+<p style="text-align: justify;">Las cascadas de Lugnason tienen <strong>hasta 12 niveles</strong> y puedes subir río arriba para descubrirlos, pero el que más merece una visita es el primero. Si quieres explorarlos todos, lo mejor es que te agencies algún guía.</p>
+<blockquote>
+<p style="text-align: justify;">Ojo, las cascadas tienen su máximo esplendor en época de lluvias. Durante los meses más secos (de febrero a mayo) a veces llevan muy poquito caudal.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-5675" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Lugnason Falls en Siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5675" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14.jpg" alt="Lugnason Falls en Siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-14-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">9. Esnórquel en Siquijor: santuario Marino de Tubod, el de Tulapos y el de Caticugan</span></h3>
+<p style="text-align: justify;">Si eres un amante del snorkel, un imprescindible que hacer en Siquijor para ti es visitar el <strong>Santuario Marino de Tubod</strong>. Este se encuentra dentro de la playa de uno de nuestros hoteles favoritos en Siquijor, el <a href="https://www.booking.com/hotel/ph/coco-grove-beach-resort-siquijor-island.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Coco Grove Beach Resort</a>.</p>
+<p style="text-align: justify;">En caso de que no te hospedes ahí, podrás acceder a su playa y santuario pagando los <strong>100 pesos de tasa</strong>. Si quieres, también se puede alquilar el equipo de snorkel por 50 pesos extra. Una vez dentro, podrás ir directamente a zambullirte en <strong>el increíble fondo marino del Santuario Marino de Tubod</strong>. Peces de todos los colores, un coral maravilloso y, con suerte, alguna que otra tortuga te esperan.</p>
+<p style="text-align: justify;">Como te contábamos al hablar de las playas, es mejor hacer snorkel en el Santuario de Tubod durante los meses en los que sopla el viento de Amihan, es decir, de diciembre a mayo. Así el agua está más tranquila y más clara.</p>
+<p style="text-align: justify;">En la zona cercana a Tubod hay un par de santuarios marinos más que te pueden interesar: el de Maite (100 pesos de tasas) y el que está en Paradise Bay, accesible desde Emocion Guesthouse. Desde el primero es bastante habitual ver alguna que otra tortuga. En Paliton también hay uno, pero no nos pareció muy interesante.</p>
+<p style="text-align: justify;">Del otro lado de la isla, se encuentra el <strong>Santuario Marino de Tulapos</strong>, donde es común ver tortugas, barracudas y tiburones de arrecife. Es obligatorio contratar un guía. El precio son 250 pesos por dos personas. También hay que pagar 100 pesos por persona. Si quieres, se alquila equipo de snorkel por 50 pesos y aletas por 100.</p>
+<p style="text-align: justify;">Para disfrutar del santuario de Tulapos es mucho mejor ir durante junio y noviembre, cuando hay menos viento en esta zona de la isla y, por lo tanto, el agua está menos movida.</p>
+<p style="text-align: justify;">Finalmente, el <strong>Santuario de Caticugan</strong>, a medio camino entre San Juan y Siquijor pueblo, también te regalará una experiencia de snorkel muy chula sin necesidad de nadar mucho. La entrada cuesta 50 pesos por persona, siendo necesario coger un guía (200 pesos por grupo) y allí también se puede alquilar equipo de snorkel (máscara y aletas por 200 pesos). También es un buen sitio para ir de junio a noviembre, que es cuando está más calmada el agua aquí.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5679" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="santuario marino de tubod en siquijor" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5679" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18.jpg" alt="santuario marino de tubod en siquijor" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-18-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">10. Sambulawan Underground River</span></h3>
+<p style="text-align: justify;">Descubierto solo en 2017, este río nos parece una <strong>auténtica flipada</strong>. No esperes nada similar al <a title="El Parque Nacional del Río Subterráneo de Puerto Princesa, ¿cómo visitarlo?" href="https://www.viajarporfilipinas.com/rio-subterraneo-puerto-princesa/" target="_blank" rel="noopener">Río Subterráneo de Puerto Princesa</a>, esta es una experiencia más «inmersiva». Se trata de un recorrido guiado a través de una cueva en la que hay literalmente un río subterráneo. Tanto es así que impresiona muchísimo escuchar el ruido del río corriendo.</p>
+<p style="text-align: justify;">Alucinarás nadando por las entrañas de la tierra y disfrutando de la tranquilidad absoluta. El recorrido es de ida y vuelta y dura más o menos 20 minutos en cada sentido. En la última parte hay una cámara donde se pueden encontrar algunas estalactitas y estalagmitas. De verdad, todo lo que te podamos contar sobre esto es poco.</p>
+<p style="text-align: justify;">Nosotros entramos en bañador y con la GoPro, aunque puedes ir con el móvil perfectamente, teniendo cuidado de que no se te moje. No es que tengas que sumergirte completamente si no quieres e irás flotando con el chaleco salvavidas que te dejarán. En cuanto al calzado, puedes ir en chanclas y luego dejarlas antes de ponerte a nadar por el río.</p>
+<p style="text-align: justify;">La entrada son <strong>250 pesos</strong> por persona (incluyen chaleco salvavidas y un frontal) y luego al guía se le paga la voluntad por todo el grupo. Se lo suelen currar, así que te aconsejamos que les dejes al menos unos 100 pesos por persona.</p>
+<p style="text-align: justify;">De verdad, altamente recomendable. Un imprescindible más a la lista de cosas que hacer en Siquijor. Si tienes que elegir entre Sambulawan y Cantabon, quizás Cantabon es más chulo, pero también más exigente y requiere más tiempo.</p>
+<h3><span style="color: #33cccc;">11. Buceo en Siquijor</span></h3>
+<p style="text-align: justify;">En nuestra última visita a Siquijor (ya hemos perdido hasta la cuenta del tiempo que hemos estado por esta isla), tuvimos la gran suerte de poder descubrir su fondo marino, una espinita que teníamos clavada desde hace mucho tiempo.</p>
+<p style="text-align: justify;">A pesar de no ser uno de los sitios más conocidos para el <a title="Los mejores lugares de buceo en Filipinas" href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener">buceo en Filipinas</a>, la verdad es que salimos encantados y nos parece un sitio genial tanto si eres principiante como si tienes experiencia, especialmente si te gustan las cositas pequeñas, ya que, aunque no al nivel de Dauin, los amantes del «macro» lo disfrutarán mucho. En el par de inmersiones que hicimos por la costa cercana a San Juan, vimos <strong>10-11 tortugas</strong>, así que es un sitio estupendo para ello si te hace ilusión, sin pagar los precios del viaje de Apo, del que te hablaremos a continuación.</p>
+<p style="text-align: justify;">El precio de los <em>fun dives</em> ronda los 1.400-1.600 pesos, según el número de inmersiones que hagas. Además, hay que pagar una tasa de 150 pesos por día de buceo.</p>
+<blockquote>
+<p style="text-align: justify;">Recientemente, una pareja de españoles se ha hecho cargo de un centro de buceo en la isla y nos decidimos a bucear con ellos. Nos lo pasamos genial y, además de buenos profesionales, son muy majos y te ayudarán a tener una experiencia más completa de la isla. Si te apetece tener su <strong>contacto</strong>, nos puedes dejar un comentario y te lo pasaremos encantados.</p>
+</blockquote>
+<h3><span style="color: #33cccc;">12. Apo Island</span></h3>
+<p style="text-align: justify;">Una visita a Siquijor no estaría del todo completa sin hacer la excursión a la fabulosa Apo Island. Este es uno de los paraísos del <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer"><strong>buceo en Filipinas</strong></a> y el <a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer"><strong>snorkel en Filipinas</strong></a> pues podrás verte rodeado de tortugas. El santuario marino goza de un coral en estupendo estado y con muchísima vida, así que no deberías dejar de incluirlo en tu viaje por el país.</p>
+<p style="text-align: justify;">Cuentas con <strong>dos maneras para llegar a Apo Island desde Siquijor</strong>. La más económica y complicada es yendo a Dumaguete (1 hora en barco, unos 350 pesos), cogiendo un bus a Malatapay (20 minutos, aprox. 50 pesos) y luego un barco a Apo Island (40 minutos, 300 pesos). Si eliges esta opción, lo mejor es quedarte a dormir al menos una noche en la isla y disfrutar de su ambiente relajado. Nosotros nos hemos quedado un par de ocasiones en el Liberty&#8217;s Lodge (habitaciones desde 500 pesos), que cuenta con un centro de buceo.</p>
+<blockquote>
+<p style="text-align: justify;">La manera más corta de llegar a Apo es en <strong>una excursión desde Siquijor</strong>. El trayecto dura 90 minutos (ida) y estarás unas horas en la isla haciendo snorkel. La organización corre a cargo del hotel Coco Groove y del centro de buceo Island Vibes Explorers. Suelen salir cuando hay un cupo mínimo de viajeros, normalmente 15 personas. Cuesta 2.750 pesos por persona (1.525 los niños) incluyendo comida, tasas y equipo de snorkel. Si quieres bucear, tendrás que pagar 4.700/6.350 pesos por 1/2 inmersiones de buceo. Island Vibes cobra 2.450 pesos (1.500 para menores de 12 años) por el snorkel y 4.300/5.900 pesos por 1/2 inmersiones.</p>
+</blockquote>
+<p style="text-align: center;">Puedes leer mucho más sobre esta isla, para ver si quieres hacer la excursión o quedarte allí en nuestra <a title="Apo Island" href="https://www.viajarporfilipinas.com/guia-apo-island/" target="_blank" rel="noopener noreferrer"><strong>Guía de Apo Island</strong></a>.</p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>OJO:</strong> </span>la excursiones a Apo no son diarias y necesitan un cupo mínimo para salir de 15 personas. Por tanto, es importante que nada más llegar a la isla te dirijas a uno de estos 2 sitios para apuntarte y que te avisen a ver si se forma grupo. Si te hace mucha ilusión ir a Apo y no salen tours, tendrías que hacer todo el recorrido hacia Dumaguete y Malatapay que contamos en <a title="Cómo llegar a Apo Island" href="https://www.viajarporfilipinas.com/como-llegar-apo-island/" target="_blank" rel="noopener">Cómo llegar a Apo Island</a>.</p>
+<p><img decoding="async" class="aligncenter wp-image-1256 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Excursión a Apo Island desde Siquijor" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-1256 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1.jpg" alt="Excursión a Apo Island desde Siquijor" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-1-1-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3><span style="color: #33cccc;">Más cosas chulas que ver y hacer en Siquijor</span></h3>
+<p>Aquí van algunos lugares extra que visitar en Siquijor:</p>
+<ul>
+<li style="text-align: justify;">Si vas a visitar las cuevas de Cantabon, te recomendamos continuar hacia delante por la misma carretera y llegarás al <strong>Mt. Bandilan National Park</strong>. Allí hay un montón de caminatas que hacer, pero, por desgracia, la oficina de información suele estar cerrada. Aun así, encontrarás la montaña más alta de Siquijor en la que han construido un mirador desde el que se obtienen unas vistas de 360º.</li>
+<li style="text-align: justify;">Hablando de miradores, desde <strong>Kamp Aninipot</strong>, un hotel que emula a las casas de los <em>hobbits</em> de <em>El Señor de los Anillos</em>, también se tienen unas vistas brutales. Tendrás que pagar 10 pesos.</li>
+<li style="text-align: justify;">Si quieres uno con <strong>piscina tipo <em>infinity</em></strong>, tienes dos muy guays en las que, pagando una tasa de entrada (100-150 pesos por persona), puedes bañarte sin ser huésped: <a href="https://www.booking.com/hotel/ph/nakabalo-guesthouse-amp-restaurant.en-gb.html?aid=1542173" target="_blank" rel="nofollow noopener">Nakabalo Guesthouse</a> e <a href="https://www.booking.com/hotel/ph/infinity-heights-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Infinity Heights Resort</a>.</li>
+<li style="text-align: justify;">¿Te gustan las vistazas? Sube hasta Bucafe al atardecer y tómate algo por allí.</li>
+<li style="text-align: justify;">En el pueblo de San Juan hay una especie de piscina municipal llamada <strong>Capilay Spring Park</strong> en las que te puedes dar un baño. Son gratuitas y el agua está fría.</li>
+<li style="text-align: justify;">Aunque desde cualquier punto de la zona de San Juan se ven puestas de sol chulas, tienes Pitogo Cliff, una zona de acantilados muy pintoresca. La entrada cuesta 30 pesos. Eso sí, evita el fin de semana porque a los filipinos les encanta ir a hacerse fotos.</li>
+<li style="text-align: justify;">Si has leído sobre la Blue Lagoon en algún lado, pasa del tema. Realmente merece entre 0 y nada la pena y te llenarás de barro. Está súper descuidado.</li>
+</ul>
+<hr />
+<h2><span class="ez-toc-section" id="Informacion_practica_sobre_Siquijor"></span><span style="color: #33cccc;">Información práctica sobre Siquijor</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sigue disfrutando de la magia de esta isla con estos otros consejos sobre ella que hemos sacado de nuestra cosecha.</p>
+<h3><span style="color: #33cccc;">Consejos para disfrutar de Siquijor </span></h3>
+<p style="text-align: justify;">No te pierdas estos consejos que nos hubiese gustado tener a nosotros en nuestra primera visita:</p>
+<ul>
+<li style="text-align: justify;">En Siquijor se come la mar de bien y a precios bastante decentes, comparándolos con otros sitios de Filipinas. Por eso, aprovechamos para hincharnos a comer y, de paso, prepararte una guía sobre <a title="Dónde comer en Siquijor: restaurantes recomendados de la isla" href="https://www.viajarporfilipinas.com/donde-comer-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Dónde comer en Siquijor</strong></a>.</li>
+<li style="text-align: justify;">La <strong>mejor época para visitar Siquijor</strong> es de diciembre a mayo, cuando es temporada seca. Sin embargo, eso no significa que no vaya a llover o que vaya a hacer mal tiempo en la temporada de lluvias. Nosotros te animamos a visitarla en cualquier momento.</li>
+<li style="text-align: justify;">Aunque <a title="¿Es seguro viajar a Filipinas?" href="https://www.viajarporfilipinas.com/es-seguro-viajar-a-filipinas/" target="_blank" rel="noopener">Filipinas es seguro</a>, algunos viajeros nos han alertado de robos en playas. Por favor, ten mucho cuidado con tus cosas si vas a bañarte o a hacer snorkel.</li>
+<li style="text-align: justify;">Los <strong>cajeros automáticos</strong> de Euronet se están expandiendo como una plaga, pero te recomendamos que tengas mucho cuidado con ellos porque te van a intentar hacer el lío con el tipo de cambio y que pagues muchísimo más dinero. Nosotros te aconsejamos que vayas ya con efectivo o que utilices Remitly, que es un trucazo para ahorrarte comisiones. Te hablamos más de ello en <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener"><strong>Remitly en Filipinas</strong></a>. Tienes pawnshops en el pueblo de Siquijor y en San Juan, concretamente <a href="https://maps.app.goo.gl/29GPL9Rbb5BYBaA7A" target="_blank" rel="nofollow noopener">esta</a> y <a href="https://maps.app.goo.gl/gWq1jQJNHSgNcgA86" target="_blank" rel="nofollow noopener">esta</a>.</li>
+<li style="text-align: justify;">Por experiencia, los <strong>hospitales</strong> de Siquijor dejan mucho que desear. Si necesitas asistencia sanitaria, es mejor que vayas a Dumaguete o Cebu. Recuerda viajar con un seguro de viajes como el que nosotros usamos. Aquí tienes un <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><strong>5% de descuento</strong></a> por venir de nuestra parte.</li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-5676" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="salagdoong beach en siquijor trampolín" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5676" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15.jpg" alt="salagdoong beach en siquijor trampolín" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-siquijor-15-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">Dónde dormir en Siquijor</span></h3>
+<p style="text-align: justify;">Si ya estás deseando llegar a la isla, echa un vistazo a estos hoteles que te recomendamos:</p>
+<ul>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/tropical-fun-ta-sea-rentals.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Tropical Fun Ta Sea Rentals</a>:</strong> este es nuestro favorito por su ubicación (junto al mar) y por lo grandes y limpias que están sus habitaciones.</li>
+<li style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/white-villas-resort-san-juan1.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer"><strong>White Villas Resort</strong></a>: este fue el hotel en el que nos quedamos más de 10 días en nuestra penúltima visita a Camiguin y nos enamoró. Está en la zona de Solangon, a pie de playa y tiene hasta una pequeña piscina. Inmejorable. Descubre todo sobre nuestra estancia en: <a href="https://www.viajarporfilipinas.com/white-villas-resort-siquijor/" target="_blank" rel="noopener noreferrer"><strong>Dormir en White Villas Resort, Siquijor</strong></a>.</li>
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/tagbaloyon-lodging-house.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2&amp;room1=A%2CA" target="_blank" rel="nofollow noopener">Tagbalayon Lodging House</a>:</strong> si buscas algo discreto y a buen precio, además de bien ubicado, este es tu sitio. También tiene dormitorios compartidos.</li>
+</ul>
+<p style="text-align: justify;">Si quieres saber la mejor zona para alojarte y algunas recomendaciones más, echa un vistazo a <a href="https://www.viajarporfilipinas.com/dormir-en-siquijor/" target="_blank" rel="noopener noreferrer"><strong>dónde dormir en Siquijor</strong></a> y no te quedes sin tu habitación.</p>
+<h3><span style="color: #33cccc;">Cómo llegar a Siquijor</span></h3>
+<p style="text-align: justify;">Descubre <a href="https://www.viajarporfilipinas.com/como-llegar-a-siquijor/" target="_blank" rel="noopener noreferrer"><strong>cómo llegar a Siquijor</strong></a> desde otros puntos de Filipinas como Bohol, Manila o Dumaguete. Ya te adelantamos que la isla todavía no tiene aeropuertos que reciban vuelos comerciales, así que tendrás que llegar en ferri desde Dumaguete, Bohol o Cebú.</p>
+<h3><span style="color: #33cccc;">Cómo moverte por Siquijor</span></h3>
+<p style="text-align: justify;">La mayoría de los viajeros recorren <strong>Siquijor en moto</strong> alquilada. Aunque la mayor parte del trazado de la carretera está en buen estado, solo te aconsejamos hacerlo si tienes licencia, práctica y si vas a conducir con mucha precaución, pues se han dado casos de accidentes fatales. Recuerda llevar siempre tu casco. El alquiler de moto ronda los 300-400 pesos al día, dependiendo del número de días que vayas a llevártela.</p>
+<blockquote><p>Si necesitas un buen <span style="color: #ff0000;"><strong>contacto para alquilar moto</strong></span> (de fiar y con motos que no se caen a pedazos), te lo podemos dar sin problemas si nos dejas un comentario abajo.</p></blockquote>
+<p style="text-align: justify;">Hay gasolineras repartidas por la isla, pero también verás que en las tiendecitas (los <em>sari-sari</em>) tienen botellas de Coca-Cola con gasolina.</p>
+<p style="text-align: justify;">Por otro lado, si no conduces, no te preocupes. Hay un montón de <strong><em>tricycles</em> </strong>que te llevarán de un punto a otro de la isla. La mayoría hacen un servicio establecido de punto a punto de la isla y van recogiendo a gente por el camino. Por tanto, te cobrarán el precio que se ha fijado por persona. Para saber cuál es, te recomendamos que preguntes en tu hotel.</p>
+<p style="text-align: justify;">Por ejemplo, la tarifa normal del puerto de Siquijor a San Juan es de 40 pesos por persona (100 aprox. por el trycicle completo). Desde el puerto de Larena a San Juan son 50 pesos.</p>
+<p style="text-align: justify;">Si te apetece aprovechar el día, lo mejor es que contrates los servicios de un <strong><em>tricycle</em> durante toda la jornada</strong>. Te cobrarán, entonces, una tarifa especial que dependerá de las distancias que quieras recorrer y del número de horas que quieras estar con él. Un precio más o menos común son 1.200 pesos por día. Nosotros también podemos darte un contacto sin problemas.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Siquijor"></span><span style="color: #33cccc;">Mapa de Siquijor</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Con este mapa de Siquijor podrás identificar fácilmente el lugar en el que se encuentra cada una de las cosas que hacer en la isla.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/0/embed?mid=1pE53LieOQerJKnpWs0FwKS5JCBFq6eF0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pE53LieOQerJKnpWs0FwKS5JCBFq6eF0" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<p style="text-align: center;"><em>¿Se nos ha quedado algo en el tintero en esta lista de cosas que hacer en Siquijor? En comentarios puedes hacernos todas las preguntas y sugerencias que quieras.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">1.721 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-siquijor/comment-page-74/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56652">
+		<article id="comment-56652" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Julia</span>				<span class="comment_date">
+					el 06/05/2025 a las 08:41				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Nos podríais pasar el contacto para el hilot, )si puede ser del segundo, para limpiar el interior) y el contacto del guía para el santuario de tulapos? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56652' data-commentid="56652" data-postid="1156" data-belowelement="comment-56652" data-respondelement="respond" data-replyto="Responder a Julia" aria-label='Responder a Julia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56657">
+		<article id="comment-56657" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/05/2025 a las 08:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Julia, acabamos de pasarte contacto de hilots, pero ten en cuenta que para Tulapos simplemente se contrata en el mismo santuario. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56630">
+		<article id="comment-56630" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carlos</span>				<span class="comment_date">
+					el 05/05/2025 a las 11:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!, muchas gracias por la guía. Es un trabajazo y nos está siendo de mucha ayuda.<br />
+Estamos pensando en alquilar una moto para ver la isla. ¿Me podrías facilitar la información de contacto?<br />
+Muchas gracias de antemano.<br />
+Un saludo</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56630' data-commentid="56630" data-postid="1156" data-belowelement="comment-56630" data-respondelement="respond" data-replyto="Responder a Carlos" aria-label='Responder a Carlos'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56631">
+		<article id="comment-56631" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/05/2025 a las 11:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carlos, ¡de nada y bienvenido! Ahora te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-56735">
+		<article id="comment-56735" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Javier</span>				<span class="comment_date">
+					el 08/05/2025 a las 13:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Millones de gracias por la guía! Nos podrías pasar el contacto del hilot?</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56747">
+		<article id="comment-56747" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/05/2025 a las 16:49				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Javier. Gracias por tus palabras. Ya lo tienes en tu correo. ¡Disfruta de la experiencia!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56365">
+		<article id="comment-56365" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Antia Gonzalez</span>				<span class="comment_date">
+					el 28/04/2025 a las 05:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos! Muchas gracias por toda la info tan increíble ????. Podéis pasarnos los contactos de los hilots que recomendáis? Mil gracias!! 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56365' data-commentid="56365" data-postid="1156" data-belowelement="comment-56365" data-respondelement="respond" data-replyto="Responder a Antia Gonzalez" aria-label='Responder a Antia Gonzalez'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56377">
+		<article id="comment-56377" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/04/2025 a las 11:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Antía, hace unos días te pasamos otros contactos de Bohol. Si lo recibiste, agradecemos respuesta antes de seguir enviándote más datos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56364">
+		<article id="comment-56364" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">josu san roman serrano</span>				<span class="comment_date">
+					el 28/04/2025 a las 05:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, muchas gracias por este blog q nos ha ayudado mucho en nuestro viaje por filipinas. Podríais enviarnos un contacto de fiar para alquilar una moto en el puerto de siquijor? Mil gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56364' data-commentid="56364" data-postid="1156" data-belowelement="comment-56364" data-respondelement="respond" data-replyto="Responder a josu san roman serrano" aria-label='Responder a josu san roman serrano'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56376">
+		<article id="comment-56376" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/04/2025 a las 11:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Josu, de nada : ) lo sentimos, pero no tenemos contactos para el puerto. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56333">
+		<article id="comment-56333" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Manuel</span>				<span class="comment_date">
+					el 27/04/2025 a las 14:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, primero que nada enhorabuena por la página, nos ha sido de gran ayuda en nuestro viaje por Filipinas. En un par de días estaremos en Siquijor y os queríamos preguntar por las curanderas de San Antonio. Nos podríais también enviar el contacto del trycicle por si acaso? Muchísimas gracias!!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56333' data-commentid="56333" data-postid="1156" data-belowelement="comment-56333" data-respondelement="respond" data-replyto="Responder a Manuel" aria-label='Responder a Manuel'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56347">
+		<article id="comment-56347" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/04/2025 a las 19:47				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Manuel, muchas gracias : ) ahora mismo os lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56276">
+		<article id="comment-56276" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carla</span>				<span class="comment_date">
+					el 25/04/2025 a las 12:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Estamos siguiendo vuestras indicaciones en nuestro viaje por Filipinas, muchas gracias por estos post, son muy muy útiles. Ahora mismo estamos en Siquijor y no queremos arriesgarnos a llevar moto ya que ninguno de los dos tenemos práctica. Nos podrías por favor pasar el contacto para alquilar un trycicle durante todo el día?  Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56276' data-commentid="56276" data-postid="1156" data-belowelement="comment-56276" data-respondelement="respond" data-replyto="Responder a Carla" aria-label='Responder a Carla'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56277">
+		<article id="comment-56277" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/04/2025 a las 12:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carla, nos alegra mucho ser de ayuda. Ahora te pasamos la información. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-siquijor/comment-page-74/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-siquijor/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='1156' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d330890582" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="177"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"1156","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer y qué ver en Coron: Guía Definitiva 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Coron es uno de los lugares más bonitos de Filipinas. Aquí te contamos con todo detalle qué hacer en Coron: tours, buceo, snorkel..." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-coron/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer y qué ver en Coron: Guía Definitiva 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Coron es uno de los lugares más bonitos de Filipinas. Aquí te contamos con todo detalle qué hacer en Coron: tours, buceo, snorkel..." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-coron/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-08-19T14:15:25+00:00" />
+	<meta property="article:modified_time" content="2025-04-15T16:54:04+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="750" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="21 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué ver y qué hacer en Coron: la guía más completa","datePublished":"2018-08-19T14:15:25+00:00","dateModified":"2025-04-15T16:54:04+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/"},"wordCount":4497,"commentCount":2229,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500.jpg","articleSection":["Coron","Palawan"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-coron/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-coron/","url":"https://www.viajarporfilipinas.com/que-hacer-coron/","name":"▷ Qué hacer y qué ver en Coron: Guía Definitiva 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500.jpg","datePublished":"2018-08-19T14:15:25+00:00","dateModified":"2025-04-15T16:54:04+00:00","description":"Coron es uno de los lugares más bonitos de Filipinas. Aquí te contamos con todo detalle qué hacer en Coron: tours, buceo, snorkel...","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-coron/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500.jpg","width":1000,"height":750,"caption":"qué hacer en coron"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-coron/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué ver y qué hacer en Coron: la guía más completa"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-coron/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué ver y qué hacer en Coron: la guía más completa del feed" href="https://www.viajarporfilipinas.com/que-hacer-coron/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/835" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=835' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-coron%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-coron%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-835-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/835/et-core-unified-835.min.css?ver=1745575565" /><link rel="stylesheet" id="et-core-unified-deferred-835-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/835/et-core-unified-deferred-835.min.css?ver=1745575565" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-835 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-835" class="et_pb_post post-835 post type-post status-publish format-standard has-post-thumbnail hentry category-coron category-palawan">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué ver y qué hacer en Coron: la guía más completa</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/coron/" rel="category tag">Coron</a>, <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="qué hacer en coron" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-1000x675.jpg" alt="qué hacer en coron" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-500-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Coron es uno de nuestros lugares favoritos en un <a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/">viaje a Filipinas</a>. No en vano, hemos estado 7 veces (la última 12 días) y no dudamos al decir que volveremos muchas más. <strong>Hay mucho que ver y que hacer en Coron</strong>, pero, aunque suene a topicazo, hay aún más que sentir.</p>
+<p style="text-align: justify;">La isla de Coron es <strong>una de las más bellas de Filipinas</strong>. En ella encontrarás los paisajes en los que una gama incontable de colores azules y turquesas contrasta con el color oscuro de las inmensas paredes de roca caliza adornadas por el fenómeno de erosión kárstico típico de <strong>Palawan</strong>. Descubrir paradisíacos lagos y <em>lagoons</em> y playas será el gran objetivo de tus días en Coron, pero hay muchísimo más que hacer y nosotros vamos a descubrírtelo todo.</p>
+<blockquote>
+<p style="text-align: justify;">Antes de nada, tenemos que hacer una <strong>pequeña puntualización</strong>: Coron Island es la isla que visitarás haciendo <em>island hopping</em>, pero la mayoría de los viajeros tienen su base en Coron Town, un pequeño pueblo que se ubica en la isla de Busuanga, donde se encuentra el aeropuerto más próximo. Ten en cuenta que Coron Town no es muy fotogénico y tiene poco que ofrecer al viajero, lo mejor de Coron está fuera de él.</p>
+<p style="text-align: justify;">Nosotros hablamos de Coron porque incluso los propios filipinos, cuando se refieren a este destino, lo llaman así en lugar de Busuanga, que técnicamente es la isla donde está Coron Town y que tiene un montón de atractivos más que los island hopping.</p>
+</blockquote>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-6825899377138" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-6825899377138"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFCuantos_dias_necesitas_para_disfrutar_de_todo_lo_que_puedes_ver_en_Coron" title="¿Cuántos días necesitas para disfrutar de todo lo que puedes ver en Coron?">¿Cuántos días necesitas para disfrutar de todo lo que puedes ver en Coron?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#%C2%BFEl_Nido_o_Coron" title="¿El Nido o Coron?">¿El Nido o Coron?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Que_ver_y_que_hacer_en_Coron_%E2%80%93_Guia_actualizada" title="Qué ver y qué hacer en Coron &#8211; Guía actualizada">Qué ver y qué hacer en Coron &#8211; Guía actualizada</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Datos_practicos_sobre_Coron" title="Datos prácticos sobre Coron">Datos prácticos sobre Coron</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Mapa_de_Coron" title="Mapa de Coron">Mapa de Coron</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFCuantos_dias_necesitas_para_disfrutar_de_todo_lo_que_puedes_ver_en_Coron"></span><span style="color: #33cccc;">¿Cuántos días necesitas para disfrutar de todo lo que puedes ver en Coron?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">En nuestra opinión, son <strong>2 días completos</strong>, es decir, 2 días sin contar los traslados hacia la isla, el tiempo mínimo que necesitas para disfrutar de lo principal que puedes hacer en Coron.</p>
+<p style="text-align: justify;">Estos dos días los tendrás que dedicar íntegramente a los dos tours que te vamos a contar, pero, por supuesto, nuestro consejo es que, al menos, consideres ampliar tu estancia en Coron a <strong>4 días</strong>. Este tiempo te brindará la oportunidad de disfrutar de uno de los mejores lugares para hacer buceo en Filipinas, conocer increíbles islas vecinas y hacer rutas en kayak, entre otras actividades.</p>
+<p style="text-align: justify;">Además, ten en cuenta que el tiempo en Filipinas es imprevisible. Un día te puede llover, otro día te puede hacer viento o, también, un día te puedes encontrar mal o simplemente tumbarte a la bartola. Por ello, 3 o 4 días es una cifra buena.</p>
+<p style="text-align: justify;">Aun así, si eres de los que prefieres explorar rincones menos conocidos, <strong>Busuanga tiene sitios preciosos más allá de Coron Island y Coron Town</strong>. Por ejemplo, en una de nuestras visitas nos pasamos una semana en <a title="Qué hacer en Concepción, Busuanga" href="https://www.viajarporfilipinas.com/que-hacer-concepcion-busuanga/" target="_blank" rel="noopener noreferrer"><strong>Concepcion</strong></a>, al oeste de la isla, haciendo recorridos en moto y visitando islas como Pass Island u Ocam Ocam, que nos enamoraron. En otra ocasión nos quedamos en Salvacion y fuimos a nadar con los dugones en las costas cercanas a Calauit. ¡Busuanga es enorme y tiene para todos!</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-844 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20525%20700'%3E%3C/svg%3E" alt="paisajes de lagoons en Coron Island" width="525" height="700" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg.jpg 525w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg-225x300.jpg 225w" data-lazy-sizes="(max-width: 525px) 100vw, 525px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter wp-image-844 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg.jpg" alt="paisajes de lagoons en Coron Island" width="525" height="700" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg.jpg 525w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg-225x300.jpg 225w" sizes="(max-width: 525px) 100vw, 525px" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFEl_Nido_o_Coron"></span><span style="color: #33cccc;">¿El Nido o Coron?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Son muchos viajeros los que nos hacen esta pregunta y con gran razón. Solamente hace falta echar un vistazo a las fotos de ambos lugares para darse cuenta de que <strong>las similitudes son claras</strong>, pues ambos paisajes de aguas limpias y turquesas y rocas kársticas.</p>
+<p style="text-align: justify;">Dicho lo cual, si bien es cierto que el archipiélago de Bacuit es inmenso y las posibilidades de hacer excursiones son infinitas, el <strong>turismo</strong> que recibe <strong><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="noopener noreferrer">El Nido</a></strong> en estos momentos (a no ser que hagas un tour privado, en los que, si quieres, puedes estar solo en las playas) hace que empañe un poco la experiencia. Por ello, quizás casi siempre disfrutamos un poco más de todo lo que Coron tiene para ofrecer, que, aunque recibe visitantes, todavía (aunque se acerca a pasos agigantados) no llega a los niveles de El Nido. Además, el <strong>precio</strong> de los <em>island hopping </em>privados en Coron son mucho más accesibles, incluso para dos personas, por lo que eso facilita que esquives a más turistas y puedas sentir que ese paraíso es un poquito tuyo.</p>
+<p style="text-align: justify;">Como ingrediente adicional, si eres un enamorado del <strong>buceo</strong>, Coron te ofrece la experiencia única de bucear entre barcos hundidos de la Segunda Guerra Mundial, lo que hace mover la balanza un poco más en su favor. Para nosotros, Coron es uno de<a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer"> los mejores lugares de buceo en Filipinas</a>.</p>
+<p style="text-align: justify;">Aun así, el plus de <strong>El Nido es que tienes unas playas estupendas muy cerca del pueblo</strong>, por lo que tienes la alternativa de pasar un día playero sin tener que ir demasiado lejos.</p>
+<p style="text-align: justify;">Por otro lado, habiendo hecho los tours de ambos sitios muchas veces, sí que podemos decirte que <strong>las formaciones de piedra caliza son clarísimamente más bonitas en El Nido</strong> y que el 90% de las playas son de arena fina y blanca. A esto se la añade que las playas de los island hopping son más vírgenes, sin apenas construcciones, cosa que cada vez se ve más en los sitios que se visitan en los tours Ultimate y Escapade de Coron. Esto no quiere decir ni mucho menos que las playas de Coron sean feas (¡para nada!), pero paisajísticamente hablando, desde nuestra opinión siempre, las de El Nido ganan.</p>
+<blockquote>
+<p style="text-align: justify;">En definitiva, <strong>si tienes tiempo para visitar tanto Coron como El Nido, no dudes en ir a ambos</strong>, pues son sitios increíbles, pero sí que es cierto que nosotros tenemos un pedacito de nuestro corazón en Coron.</p>
+<p style="text-align: justify;">Si puedes, la guinda del pastel es hacer la <a title="Expedición Coron El Nido: la aventura definitiva" href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener"><strong>Expedición de Coron a El Nido</strong></a> (o viceversa). Es una de nuestras experiencias favoritas de Filipinas, ya que tendrás la oportunidad de visitar islas intermedias durmiendo en islas desiertas. Todo lo que te contemos es poco.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter wp-image-845 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20710'%3E%3C/svg%3E" alt="paisajes de roca kárstica en Coron" width="1000" height="710" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-768x545.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-400x284.jpg 400w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-845 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg" alt="paisajes de roca kárstica en Coron" width="1000" height="710" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-300x213.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-768x545.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-8-400x284.jpg 400w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_ver_y_que_hacer_en_Coron_%E2%80%93_Guia_actualizada"></span><span style="color: #33cccc;">Qué ver y qué hacer en Coron &#8211; Guía actualizada</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Sin entrar ya en más divagaciones, vamos a contarte todo lo que puedes hacer desde Coron Town, tanto los island hopping como explorar otros rincones de Busuanga.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Island hopping en Coron</span></h3>
+<p style="text-align: justify;">Al igual que ocurre en El Nido, <strong>lo mejor que hacer en Coron</strong> es explorar las islas de los alrededores en un tour o <em>island hopping</em>. En este caso, la atracción principal es Coron Island, que guarda un montón de puntos interesantes como playas, lagos, lagunas y arrecifes.</p>
+<p style="text-align: justify;">La mayoría de las agencias en Coron tienen <strong>6 o 7 tours establecidos</strong>, siendo el más conocido el Ultimate Tour, que reúne los mejores puntos de Coron Island. Los precios oscilan entre los 1.100 y los 1.500 pesos por persona e incluyen tasas, comida y un guía. Sin embargo, de viajeros a viajeros, <strong>nuestro consejo es que optes por hacer en Coron tours privados</strong>.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/island-hopping-coron/" target="_blank" rel="noopener noreferrer">Descubre todo sobre los island hopping en Coron aquí</a></p>
+<p style="text-align: justify;">En el mismo Lualhati Park (en el centro de Coron Town) encontrarás personas de la Calamian Tourist Boat Association que tienen precios establecidos para las salidas de <em>bangkas</em> privadas. Aquí tú eres el rey y, por tanto, eliges los lugares que quieres visitar en Coron, el tiempo que desees estar y, lo más importante, la hora a la que quieres zarpar. Por supuesto, nuestra recomendación es que comiences a las 7:00 para evitar las masas.</p>
+<p style="text-align: justify;">Los precios son realmente competitivos (mucho más que en El Nido), sobre todo si sois 3 o 4 personas o más, y de verdad marca la diferencia en la experiencia global, pues la tripulación te podrá indicar qué sitios son menos visitados según las horas y tener el rincón para vuestro barco.</p>
+<p style="text-align: justify;">Aquí te dejamos los precios de los tours más habituales:</p>
+<table style="font-weight: 400;">
+<tbody>
+<tr style="height: 46px;">
+<td style="height: 46px; width: 146.296875px;"><span style="color: #33cccc;"><strong>TIPO DE TOUR</strong></span></td>
+<td style="height: 46px; width: 113px;"><span style="color: #33cccc;"><strong>2-4 personas</strong></span></td>
+<td style="height: 46px; width: 113px;"><span style="color: #33cccc;"><strong>5-8 personas</strong></span></td>
+<td style="height: 46px; width: 113px;"><span style="color: #33cccc;"><strong>9-15 personas</strong></span></td>
+<td style="height: 46px; width: 113px;"><span style="color: #33cccc;"><strong>16-20 personas</strong></span></td>
+</tr>
+<tr style="height: 69px;">
+<td style="height: 69px; width: 146.296875px;"><strong>Coron Island (Ultimate o Super Ultimate Tour)</strong></td>
+<td style="height: 69px; width: 113px;"><strong>3.500</strong></td>
+<td style="height: 69px; width: 113px;"><strong>4.000</strong></td>
+<td style="height: 69px; width: 113px;"><strong>4.500</strong></td>
+<td style="height: 69px; width: 113px;"><strong>5.700</strong></td>
+</tr>
+<tr style="height: 46px;">
+<td style="height: 46px; width: 146.296875px;"><strong>Malcapuya/Ditaytayan (Escapade Tour)</strong></td>
+<td style="height: 46px; width: 113px;"><strong>5.700</strong></td>
+<td style="height: 46px; width: 113px;"><strong>7.000</strong></td>
+<td style="height: 46px; width: 113px;"><strong>8.500</strong></td>
+<td style="height: 46px; width: 113px;"><strong>9.000</strong></td>
+</tr>
+<tr style="height: 92px;">
+<td style="height: 92px; width: 146.296875px;">Pass Island/Calumbuyan Island (Reefs &amp; Wrecks Tour)</td>
+<td style="height: 92px; width: 113px;">5.700</td>
+<td style="height: 92px; width: 113px;">7.000</td>
+<td style="height: 92px; width: 113px;">8.500</td>
+<td style="height: 92px; width: 113px;">9.000</td>
+</tr>
+<tr style="height: 46px;">
+<td style="height: 46px; width: 146.296875px;">North/South Cay Island/Black Island</td>
+<td style="height: 46px; width: 113px;">9.000</td>
+<td style="height: 46px; width: 113px;">10.500</td>
+<td style="height: 46px; width: 113px;">17.600</td>
+<td style="height: 46px; width: 113px;">18.150</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">A estos precios debes añadirles las <strong>tasas</strong> de cada lugar que quieras visitar, así que cuantos más sitios quieras ver, más sube la cuenta. Las más comunes son estas:</p>
+<table style="font-weight: 400;" width="537">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="7" width="537"><strong>TASAS de los ISLAND HOPPING por persona</strong></td>
+</tr>
+<tr>
+<td width="84"><strong>ULTIMATE TOUR</strong></td>
+<td width="86">Kayangan Lake</td>
+<td width="63">Twin Lagoon</td>
+<td width="81">Barracuda Lake</td>
+<td width="68">Siete Pecados</td>
+<td width="85">Green Lagoon</td>
+<td width="71">Skeleton Wreck</td>
+</tr>
+<tr>
+<td width="84"></td>
+<td width="86">300 php</td>
+<td width="63">200 php</td>
+<td width="81">200 php</td>
+<td width="68">100 php</td>
+<td width="85">200 php</td>
+<td width="71">150 php</td>
+</tr>
+<tr>
+<td width="84"></td>
+<td width="86">Skeleton Wreck</td>
+<td width="63">Coral Garden</td>
+<td width="81">Banol Beach</td>
+<td width="68">Smith Beach</td>
+<td width="85">Atwayan Beach</td>
+<td width="71"></td>
+</tr>
+<tr>
+<td width="84"></td>
+<td width="86">150 php</td>
+<td width="63">150 php</td>
+<td width="81">150 php</td>
+<td width="68">150 php</td>
+<td width="85">150 php</td>
+<td width="71"></td>
+</tr>
+<tr>
+<td width="84"><strong>ESCAPADE TOUR</strong></td>
+<td width="86">Malcapuya Beach</td>
+<td width="63">Banana Island</td>
+<td width="81">Bulog Dos Beach</td>
+<td width="68">Coco Beach</td>
+<td width="85">Ditaytayan Beach</td>
+<td width="71"></td>
+</tr>
+<tr>
+<td width="84"></td>
+<td width="86">300 php</td>
+<td width="63">300 php</td>
+<td width="81">200 php</td>
+<td width="68">200 php</td>
+<td width="85">200 php</td>
+<td width="71"></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Además, tendrás que <strong>comprar tu comida</strong>, pero, no te preocupes, tu guía te ayudará a elegir en el mercado y la tripulación cocinará. Por ello, el precio de un tour privado y uno compartido por agencia va a ser bastante similar, con la diferencia de que lo habrás disfrutado mucho más.</p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">¿Cuáles son los mejores island hopping en Coron?</span></h4>
+<p style="text-align: justify;">En el caso de que optes por la opción de hacer en Coron un tour compartido, nuestro consejo es hagas el <strong>Ultimate Tour </strong>(en la tabla de arriba corresponde a Coron Island), que suele englobar estos lugares: Banol Beach, Twin Lagoon, CYC Beach, Coral Garden, Kayangan Lake, Skeleton Wreck y Siete Pecados. Ya, para rizar el rizo, muchas agencias lo llaman <strong>Super Ultimate</strong>, pero, en realidad, se llama así porque tiene más paradas. Al hacerlo privado, puedes ponerle el nombre que quieras, ya que tú decidirás en qué sitios parar.</p>
+<p style="text-align: justify;"><div class='et-box et-bio'>
+					<div class='et-box-content'>Si vas a hacer un tour privado (lo mejor), puedes decidir qué ver en Coron Island. Nuestro consejo es que primero vayas a lo que más se suele llenar: Kayangan Lake, Twin Lagoon y Barracuda Lake. Después, visita Banul Beach o Smith Beach antes de que llegue la gente a comer porque son preciosas pero con tanto barco se empaña la experiencia. Finalmente, puedes ir a algún arrecife a hacer snorkel o a Skeleton Wreck y a relajarte a alguna que otra playa que tu guía te recomiende. Si es un buen guía (como el que nosotros recomendamos) sabrá decirte a dónde ir y cuándo ir, es la CLAVE.</div></div></p>
+<p><img decoding="async" class="aligncenter wp-image-846 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20467%20700'%3E%3C/svg%3E" alt="Kayangan Lake en Coron" width="467" height="700" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7.jpg 467w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7-200x300.jpg 200w" data-lazy-sizes="(max-width: 467px) 100vw, 467px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-846 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7.jpg" alt="Kayangan Lake en Coron" width="467" height="700" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7.jpg 467w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-7-200x300.jpg 200w" sizes="(max-width: 467px) 100vw, 467px" /></noscript></p>
+<p style="text-align: justify;">El segundo island hopping que nosotros te aconsejamos hacer en Coron el <strong>Escapade Tour </strong>(en la tabla de arriba llamado Banana/Malcapuya Island). Este engloba islas más alejadas que tienen playas espectaculares. El más común es el que te llevará a <strong>Banana Island, Coco Beach, Malcapuya Island y Bulog Dos</strong> o Waling Waling. El precio de este tour si lo haces privado es un poco más caro, pero también merece la pena si quieres ir a tu ritmo y si quieres ver sitios menos concurridos como <strong>Ditaytayan Island</strong>.</p>
+<p style="text-align: justify;">En el caso de que tengas otro día más y quieras sentirte como un náufrago, hay <strong>islas preciosas más lejanas</strong> que enamoran y que puedes ver desde Coron. Por ejemplo, puedes hacer un tour por <strong>North Cay, South Cay, Pass Island y Maltatayoc Island</strong>. Otro que nos enamora es el de <a title="Black Island (Malajon), el tesoro por descubrir en Coron" href="https://www.viajarporfilipinas.com/black-island-coron/" target="_blank" rel="noopener noreferrer"><strong>Black Island</strong></a> y, de camino, puedes parar en Pass Island. Si no quieres pagar uno privado, el que más nos gusta es <strong>Reefs &amp; Wrecks</strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2111" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20524%20699'%3E%3C/svg%3E" alt="Coron desde el Drone" width="524" height="699" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone.jpg 524w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone-225x300.jpg 225w" data-lazy-sizes="(max-width: 524px) 100vw, 524px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2111" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone.jpg" alt="Coron desde el Drone" width="524" height="699" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone.jpg 524w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-foto-drone-225x300.jpg 225w" sizes="(max-width: 524px) 100vw, 524px" /></noscript></p>
+<p style="text-align: center;"><div class='et-box et-bio'>
+					<div class='et-box-content'>¿Necesitas un contacto de confianza para estos tours? Escríbenos en comentarios y te enviaremos la info.</div></div></p>
+<p style="text-align: justify;">Por otro lado, hay empresas como Big Dream Boatman Coron, que hacen recorridos por las islas durmiendo en campamentos y que son, por experiencia, increíbles. Nosotros hemos hecho la <a title="Expedición Coron El Nido: la aventura definitiva" href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener noreferrer"><strong>Expedición Coron &#8211; El Nido</strong></a> y te podemos decir que es de lo mejor que hemos hecho en Filipinas. Como cada vez están más de moda y las plazas vuelan, te recomendamos reservar 2-3 meses antes. Puedes consultar el calendario de fechas disponibles, precios y más desde <a href="http://bigdreamboatmancoron.com/es?sca_ref=2078862.X0Ck1Umom1" target="_blank" rel="nofollow noopener"><strong>ESTE ENLACE</strong></a>.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Buceo en Coron</span></h3>
+<p style="text-align: justify;">El 24 de septiembre de 1944, en una encarnizada batalla de la II Guerra Mundial, <strong>24 barcos de la flota japonesa </strong>fueron hundidos por los misiles americanos en los alrededores de Coron. 12 de ellos han sido descubiertos y pueden disfrutarse haciendo buceo.</p>
+<p style="text-align: justify;">Ubicados en una profundidad entre 12 y 43 metros, la mayoría de ellos están tan bien conservados que es posible ver detalles como los cuartos de máquinas, el timón o la munición de los buques de guerra que ahora son el hogar de peces como el <em>scorpion fish</em>, el <em>ghost pipe fish</em> o los caballitos de mar. De hecho, en nuestras últimas inmersiones hemos llegado a ver hasta tortugas. Algunos de <strong>nuestros favoritos</strong> son el Akitsushima, el Okikawa, el Olympia Maru y el Irako Maru.</p>
+<p style="text-align: justify;">Ten en cuenta que el buceo dentro de pecios es muy peligroso y se ha cobrado muchas vidas. Por ello, te hacemos estas <strong>recomendaciones</strong>:</p>
+<ul style="text-align: justify;">
+<li><strong>Busca una empresa seria</strong> (con buenas reseñas de otros buceadores) y con un buen equipamiento. Si quieres, nosotros te podemos dar la nuestra si nos dejas un comentario en este artículo. La seguridad es lo primerísimo.</li>
+<li>Cíñete a penetrar dentro de los barcos solo si tienes una <strong>buena flotabilidad y experiencia</strong> buceando en condiciones de <strong>poca visibilidad</strong>. La visibilidad en Coron suele ubicarse entre los 3 y los 10 metros. Además, dentro de los pecios hay mucha arena, si tu flotabilidad es mala, harás que disminuya aún más. Si la empresa es buena, te llevará a lugares adecuados a tu experiencia y cada dive master o instructor llevará a pocos buceadores a su cargo para estar más atento. Es decir, se puede bucear siendo solo Open Water Diver, pero si es un centro de buceo serio, distribuirá a los buceadores según su nivel. Por lo general, si no eres un buceador experimentado, te llevarán al East Tangat o al Morazan Maru. Si tienes bastantes buceos a tus espaldas, lo habitual es combinar Olympia con Akitsushima o el Okikawa con el Irako.</li>
+<li>Es posible hacer <strong>bautismos de buceo en Coron</strong>, pues hay pecios a poca profundidad. En este caso, ten en cuenta que te irás casi de la mano de un instructor que te lleve a verlos por fuera. Obviamente la experiencia no será la misma que si eres buceador titulado, pero es una actividad que suele gustar mucho. La clave aquí es también ir con una empresa de confianza, así que, si necesitas un contacto, no dudes en escribirnos.</li>
+<li>Hay pecios que se pueden visitar por el exterior, hazlo así si no te sientes cómodo. Muchos barcos contienen pasillos y salas muy cerradas y pueden causarte claustrofobia. No dejes de hablar con tu dive master a la hora de planificar la inmersión.</li>
+</ul>
+<p style="text-align: justify;">La mayoría de las empresas de buceo de Coron hacen excursiones diarias en las que incluyen inmersiones en 2 barcos hundidos y una inmersión en Barracuda Lake, un curioso lago en el que sentirás el fenómeno de la termoclina, o en un arrecife cercano a la isla de Sangat que se llama Malpadon (¡hay caballitos de mar!). Para que calcules, se suele salir a las 8:00 y se está de regreso entre las 15:00 y las 16:00.</p>
+<p style="text-align: justify;">Sin duda, una de las mejores cosas <strong>que hacer en Coron</strong> es bucear uno o dos días y descubrir los tesoros que guardan sus fondos. Coron es, junto con Malapascua y Balicasag (Bohol), uno de nuestros sitios favoritos de Filipinas para hacer submarinismo.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">3. Maquinit Hot Springs</span></h3>
+<p style="text-align: justify;">Para terminar un día de visitas en Coron, nada como acabar con un relajante baño en estas <strong>piscinas de agua salada</strong> que tienen la curiosidad de emerger de un volcán inactivo a 40ºC. El calorcito hará que tus músculos se aflojen un poco. La entrada cuesta 300 pesos y los <em>tricycle</em> suelen cobrar unos 300 pesos en traerte y llevarte (ojo, normalmente te pedirán 500).</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6481" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Maquinit Hot Springs" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6481" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500.jpg" alt="Maquinit Hot Springs" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-500-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">4. Siete Pecados</span></h3>
+<p style="text-align: justify;">Siete Pecados (o Siete Picados) suele ser una de las paradas incluidas en el Ultimate Tour (o Super Ultimate, ya sabes), sin embargo, nosotros te recomendamos que hagas la visita a este arrecife en otro momento, que aproveches tu día de <em>island hopping</em> en otros lugares más cercanos y que dediques una o dos horas a hacer snorkel por aquí tranquilamente. Para nosotros es uno de los <a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer"><strong>mejores sitios para hacer snorkel en Filipinas</strong></a>.</p>
+<p style="text-align: justify;">Se trata de un conjunto de 7 islotes, 7 hermanas que eran 7 pecados, según nos contó nuestro barquero, en el que hay una vida marina increíble. La verdad es que el arrecife está en perfecto estado y podemos decirte que es <strong>uno de los mejores lugares en Coron para hacer snorkel</strong>. ¡Hemos visto hasta tortugas!</p>
+<p style="text-align: justify;">Puedes llegar por tu cuenta alquilando una moto hasta más o menos <a href="https://maps.app.goo.gl/Dp79wMDP1HiZaA3A8" target="_blank" rel="nofollow noopener">este punto</a> o diciéndole a un conductor de <em>tricycle</em> que te lleve al punto desde el que puedes alquilar un kayak o una <em>bangka</em> (todos conocen dónde está). Nosotros nos decantamos por esta segunda opción y pagamos 300 pesos ida y vuelta entre dos personas por el tricycle y luego 250 pesos por persona por la <em>bangka</em>. También puedes<strong> alquilar el kayak</strong>, ya que el arrecife está al lado y cuesta 250 pesos por persona. Si no llevas tu propia máscara, allí podrás alquilarla por 100 pesos. También tendrás que pagar 100 pesos por persona de tasas del santuario marino.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">5. Mt. Tapyas y el atardecer en Coron</span></h3>
+<p style="text-align: justify;">Si tras uno de los tours que hacer en Coron te ves con energía, no dudes en subir a disfrutar de un estupendo <strong>atardecer</strong> sobre el archipiélago de las Calamianes desde el Mt. Tapyas. Aunque la subida es empinada, llegar a lo más alto de los <strong>721 escalones</strong> te recompensará con unas vistas de infarto. No olvides llevar contigo agua y hacerte una foto con las famosas letras al más puro estilo de Hollywood.</p>
+<p style="text-align: justify;">En el caso de que te dé pereza subir tanto, te contamos el truquillo: ve al <strong>Hop Hostel</strong>. Tienen un <em>rooftop</em> muy chulo con las mejores vistas de Coron y orientación perfecta para el atardecer. La entrada es gratuita y no hace falta ser huésped, solo tienes que pagar la consumición (cervezas por 100 pesos).</p>
+<p><img decoding="async" class="aligncenter wp-image-841 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Mt. Tapyas en Coron" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-841 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3.jpg" alt="Mt. Tapyas en Coron" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/coron-que-hacer-3-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">6. Playas cercanas a Coron</span></h3>
+<p style="text-align: justify;">El propio pueblo de Coron no tiene ninguna playa, así que si tienes un día adicional y echas de menos un chapuzón, puedes alquilar una moto y visitar alguna playa cercana. No son, ni muchísimo menos, las mejores playas de Filipinas, pero están bien para refrescarse.</p>
+<p style="text-align: justify;">Las más próximas son <strong>Bali y Cabu Beach</strong>, ubicadas a unos 7 kilómetros de Coron Town. Aunque no son las mejores playas de Filipinas, tardarás en llegar unos 30 minutos y podrás disfrutar del ambiente local. La entrada a cada una de ellas cuesta 50 pesos y, en nuestra opinión, Cabu Beach es más bonita.</p>
+<p style="text-align: justify;">No tan cerca están las bonitas <strong>Ocam Ocam Beach y Marcilla o Marcilia Beach</strong>. Ten en cuenta que para llegar a la primera tardarás al menos un par de horas, así que puedes considerar el quedarte a dormir allí. Para llegar a la segunda, tardarás una hora o, más bien, hora y media. Mucho ojo al conducir si decides alquilar una moto, sobre todo si vas a ir a Marcilla, ya que la carretera es horrible.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6482" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Cabo Beach Coron" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6482" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501.jpg" alt="Cabo Beach Coron" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/que-hacer-coron-501-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span style="color: #33cccc;">7. Escaparte un par de días a Concepción o Salvación</span></h3>
+<p style="text-align: justify;">Ya te lo adelantamos más arriba, pero Concepción fue una verdadera sorpresa para nosotros. A tan solo 50 minutos de Coron Town, es <strong>como si retrasases el reloj 10 años</strong>. Este minúsculo pueblo es una buenísima base para ver las famosas <strong>Concepcion Falls</strong> (que no son para tanto, pero que desde aquí no tardas más de 10 minutos andando), hacer island hopping menos conocidos, bucear (los mejores pecios están más cerca) o, simplemente, alejarse de las multitudes.</p>
+<p style="text-align: justify;">De verdad, te lo recomendamos 100% tanto como complemento a lo que hacer en Coron como base para todos tus días. Puedes encontrarlo todo en <a title="Qué hacer en Concepción, Busuanga" href="https://www.viajarporfilipinas.com/que-hacer-concepcion-busuanga/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Concepción</strong></a>, Busuanga.</p>
+<p style="text-align: justify;">Un poquito más hacia el noroeste está <strong>Salvacion</strong> (aproximadamente a 75&#8242; desde Coron Town), lugar que también hemos visitado en alguna ocasión y desde el que salen los island hopping más económicos a Debotunay, North Cay e, incluso, Black Island. Tanto Concepcion como Salvacion son dos pueblos súper tranquilos que te gustarán si te van las cosas poco turísticas.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8663" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="pass island coron" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-510x382.jpg 510w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-480x360.jpg 480w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8663" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234.jpg" alt="pass island coron" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-510x382.jpg 510w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/qué-hacer-coron-1234-480x360.jpg 480w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3><span style="color: #33cccc;">8. Nadar con dugones o dugongos</span></h3>
+<p style="text-align: justify;">Sí, ¡has leído bien! Coron/Busuanga es uno de los pocos sitios del mundo en los que es posible nadar con dugones o vacas marinas, unos mamíferos muy parecidos a los manatíes y que son súper entrañables. Llegar no es tan fácil como podría esperarse, pues están en la punta más al norte de la isla (junto a las costas de la península de Calauit), y debes considerar que solo está permitido nadar junto a ellos durante<strong> 15 minutos</strong>, pero, si como a nosotros, te hace ilusión, te encantará.</p>
+<p style="text-align: justify;">Es posible hacer buceo con los dugongos también, pero realmente están a tan poca profundidad y suelen estar tan superficiales, que, en nuestra opinión, es mucho mejor el snorkel.</p>
+<p style="text-align: center;">Para que puedas disfrutarlo, hemos preparado una guía: <a title="Cómo nadar con dugones en Coron (Busuanga)" href="https://www.viajarporfilipinas.com/dugones-coron/" target="_blank" rel="noopener"><strong>Cómo nadar con dugones en Coron</strong></a>.</p>
+<h3><span style="color: #33cccc;">9. Hacer una expedición entre Coron y El Nido</span></h3>
+<p style="text-align: justify;">Afortunadamente, cada vez son más los viajeros que se animan a hacer la travesía entre Coron y El Nido disfrutando de las épicas islas que hay entre ambas y durmiendo en cabañitas en la playa. Es un recorrido de 3 o 4 días que te hará gozar de paraísos playeros y arrecifes poco explorados.</p>
+<p style="text-align: justify;">La experiencia no es súuuuper barata, pero te podemos decir que merece muchísimo la pena y, si no nos crees, échale un vistazo a nuestro artículo (incluye vídeo) sobre la <a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener"><strong>Expedición de Coron a El Nido</strong></a>. Nosotros elegimos hacerla con <a href="https://bigdreamboatmancoron.com/es?sca_ref=2078862.X0Ck1Umom1" target="_blank" rel="nofollow noopener"><strong>Big Dream Boat Man</strong></a>, que tienen el mejor barco de toda la zona y que ofrecen un servicio TOP. Eso sí, se agotan con 2-3 meses de antelación, así que más vale que reserves cuanto antes.</p>
+<hr />
+<h2><span class="ez-toc-section" id="Datos_practicos_sobre_Coron"></span><span style="color: #33cccc;">Datos prácticos sobre Coron</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ya te hemos contado lo más básico, pero aquí tienes algunas pistas para disfrutar de Coron tanto o más que nosotros.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Cómo llegar a Coron</span></h3>
+<p style="text-align: justify;">En <a title="Cómo llegar a Coron" href="https://www.viajarporfilipinas.com/como-llegar-coron-filipinas/" target="_blank" rel="noopener"><strong>Cómo llegar a Coron</strong></a> te contamos cómo llegar hasta aquí desde diferentes partes de Filipinas como Manila, Cebu o El Nido. Ya te chivamos que Busuanga cuenta con su aeropuerto, que recibe vuelos desde Manila, Clark, Cebú y El Nido. Ademas, tienes <em>speedboats</em> desde El Nido cada día.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Dónde dormir en Coron</span></h3>
+<p style="text-align: justify;">En Coron encontrarás hoteles para todos los presupuestos. Nuestros favoritos son:</p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><strong><a href="https://www.booking.com/hotel/ph/hop-hostel.en-gb.html?aid=1542173" target="_blank" rel="nofollow noopener">Hop Hostel</a>:</strong> si buscas alojamiento mochilero con piscina y vistas épicas desde su azotea para la puesta de sol, deja de buscar, este es tu sitio.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/the-bay-area-coron.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Bay Area Lodge</a>:</strong> aquí es donde nos quedamos siempre que vamos a Coron. Este es un hotel nuevo con todas las comodidades y en pleno centro. Los precios rondan los 35€ con desayuno. ¡Corre que se acaba rápido!</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/the-funny-lion-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">The Funny Lion</a>:</strong> si quieres algo «más elegante», este es tu sitio. La pisicina <em>infinity</em> con vistas es su punto fuerte.</li>
+</ul>
+<p style="text-align: justify;">¿Quieres cotillear más? Aquí seleccionamos los mejores hoteles <a href="https://www.viajarporfilipinas.com/donde-dormir-en-coron-filipinas/" target="_blank" rel="noopener noreferrer"><strong>donde dormir en Coron</strong></a>.</p>
+<p style="text-align: justify;"><strong>Aconsejamos <span style="color: #ff0000;">MUY ENCARECIDAMENTE</span> que reserves tu alojamiento lo antes posible</strong>. De verdad, este 2025 está siendo una locura y no nos hemos encontrado en una situación de realmente no encontrar nada&#8230; Llevamos 15 años dando vueltas por Filipinas y la situación es ciertamente difícil.</p>
+<h3><span style="color: #33cccc;">Dónde comer en Coron</span></h3>
+<p style="text-align: justify;">Con cada vez más turistas venidos de todas las partes del mundo, cada vez aumentan más las opciones para comer en Coron. Nuestros restaurantes favoritos son:</p>
+<ul>
+<li><b>Verde Rekado: </b>nuevo local con rollito rastafari y platos veganos/vegetarianos filipinos y occidenales, incluyendo burgers. Precios muy económicos.</li>
+<li><strong>AlTrove Coron:</strong> pizzas ricas ricas. Barato no es, pero merece la pena.</li>
+<li style="text-align: justify;"><b>Castizo Coron: </b>si echas de menos la comida española, aquí la encontrarás de verdad. Además, Nacho te dará buenos consejos sobre la isla.</li>
+</ul>
+<p style="text-align: justify;">¿Quieres más sugerencias? Podrás encontrarlas en <a title="Dónde comer en Coron: los mejores restaurantes y bares" href="https://www.viajarporfilipinas.com/donde-comer-coron-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Dónde comer en Coron</strong></a>.</p>
+<h3><span style="color: #33cccc;">Consejos para disfrutar de Coron</span></h3>
+<p style="text-align: justify;">Si vas a visitar Coron, aquí van algunos de nuestros consejillos:</p>
+<ul>
+<li style="text-align: justify;">En Coron hay algunos <strong>cajeros y casas de cambio</strong> (echa un ojo a las Palawan Pawnshop), pero, como te contamos en <a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/" target="_blank" rel="noopener noreferrer">Dinero en Filipinas</a>, es mejor que cambies en el Aeropuerto de Manila o en las casas de cambio de Cebú. A veces a los cajeros les da por no funcionar.</li>
+<li style="text-align: justify;">Si viajas a Coron en los meses de <strong>temporada de lluvias</strong> (en <a href="https://www.viajarporfilipinas.com/mejor-epoca-para-viajar-a-filipinas/">Mejor época para viajar a Filipinas</a> tienes toda la información, pero te adelantamos que va más o menos de junio a noviembre) y es tu última parada en Filipinas, considera dejar margen suficiente para llegar a Manila o Cebu tranquilamente. El aeropuerto de Coron es muy pequeño, si hace mal clima, los vuelos se cancelan. Lo mismo ocurre con los barcos de Coron a El Nido. Si hay mala mar, cancelados.</li>
+<li style="text-align: justify;">Si vas luego a El Nido, te aconsejamos <strong><a href="https://12go.asia/es/travel/coron-pier/el-nido/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">reservar el barco de Coron a El Nido con antelación</a></strong>.</li>
+<li style="text-align: justify;">La red <strong>wifi</strong> en los restaurantes y hoteles va, a veces, bastante regular. Nuestro consejo es que tengas tu propia <a href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener noreferrer">SIM filipina</a>, en el caso de que quieras usar internet. No es que el 4G sea súper rápido, pero tira.</li>
+<li style="text-align: justify;">Puedes alquilar una <strong>moto</strong> para visitar los alrededores de Coron, pero conduce siempre con casco y mucho cuidado. Los precios rondan los 500 pesos al día. En caso de que no quieras conducir, siempre habrá un <em>tricycle</em>.</li>
+<li style="text-align: justify;">No lo dudes, contrata un seguro de viaje en condiciones. Las infraestructuras médicas de Coron son muy básicas. Si te pasa algo grave, tendrías que volar a Manila (como te contamos en <a href="https://www.viajarporfilipinas.com/iati-seguros-opiniones/">seguro de viaje opiniones</a>) y eso, en un vuelo de última hora, te puede salir más caro que una póliza para 3 semanas. Echa un vistazo al <a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer"><strong>seguro de viaje para Filipinas</strong></a> que nosotros usamos.</li>
+</ul>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Coron"></span><span style="color: #33cccc;">Mapa de Coron</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Utiliza este mapa para orientarte sobre las actividades que hacer en Coron:</p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1kpPGd0NaK1dcOPlHL0KCMRVIl1TsFUGX"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1kpPGd0NaK1dcOPlHL0KCMRVIl1TsFUGX" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<p style="text-align: center;"><em>¿Tienes alguna duda o sugerencia? No te cortes y utiliza los comentarios. ¡Te responderemos cuanto antes!</em></p>
+<p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=qhCoron" target="_blank" rel="nofollow noopener noreferrer"><img decoding="async" class="aligncenter wp-image-3312 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento seguro de viaje" width="700" height="125" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-3312 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg" alt="descuento seguro de viaje" width="700" height="125" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/descuento-iati-p-300x54.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></a></p>
+<p style="text-align: center;">Haciendo <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=qhCoron" target="_blank" rel="nofollow noopener">clic aquí</a> tendrás al momento tu 5% de descuento en tu seguro de viaje a Filipinas. Además, contratarlo desde aquí es la mejor forma de apoyar a Viajar por Filipinas para que podamos seguir creando contenido sobre este paraíso.</p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">2.229 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-coron/comment-page-100/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56798">
+		<article id="comment-56798" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">LAIA LARA GONZÁLEZ</span>				<span class="comment_date">
+					el 10/05/2025 a las 15:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, estamos mirando para hacer los island hopping privados ya que lo recomendáis, en agosto. Nos podéis enviar el nombre del guia que recomendáis? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56798' data-commentid="56798" data-postid="835" data-belowelement="comment-56798" data-respondelement="respond" data-replyto="Responder a LAIA LARA GONZÁLEZ" aria-label='Responder a LAIA LARA GONZÁLEZ'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56806">
+		<article id="comment-56806" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/05/2025 a las 17:45				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Laia, claro que sí, ahora te pasamos toda la info. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56790">
+		<article id="comment-56790" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ainhoa</span>				<span class="comment_date">
+					el 10/05/2025 a las 11:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenaaaaas!</p>
+<p>Me gustaría recibir información sobre los centros de buceo en pecios situados en Corón.</p>
+<p>Por favor y gracias.</p>
+<p>¡Un saludo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56790' data-commentid="56790" data-postid="835" data-belowelement="comment-56790" data-respondelement="respond" data-replyto="Responder a Ainhoa" aria-label='Responder a Ainhoa'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56801">
+		<article id="comment-56801" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/05/2025 a las 17:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ainhoa, ahora mismo te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-coron/comment-page-100/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-coron/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='835' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6d0a7dc2ec" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="210"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><link rel='stylesheet' id='et-shortcodes-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes-legacy.css?ver=4.24.2' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"835","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script type="text/javascript" id="et-shortcodes-js-js-extra">
+/* <![CDATA[ */
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+var et_shortcodes_strings = {"previous":"Anterior","next":"Siguiente"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=4.24.2" id="et-shortcodes-js-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

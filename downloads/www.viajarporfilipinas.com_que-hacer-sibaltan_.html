@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué hacer en Sibaltan (Palawan) - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="A solo una hora de El Nido, Sibaltan es como otro mundo. Bonitas playas, buceo con mantas, un island hopping curioso... Descubre qué hacer en Sibaltan." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué hacer en Sibaltan (Palawan) - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="A solo una hora de El Nido, Sibaltan es como otro mundo. Bonitas playas, buceo con mantas, un island hopping curioso... Descubre qué hacer en Sibaltan." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-sibaltan/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2023-04-03T16:56:00+00:00" />
+	<meta property="article:modified_time" content="2023-09-14T14:21:27+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="23 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué hacer en Sibaltan (Palawan) &#8211; Guía completa","datePublished":"2023-04-03T16:56:00+00:00","dateModified":"2023-09-14T14:21:27+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/"},"wordCount":4543,"commentCount":52,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1.jpg","articleSection":["Palawan"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-sibaltan/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/","url":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/","name":"▷ Qué hacer en Sibaltan (Palawan) - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1.jpg","datePublished":"2023-04-03T16:56:00+00:00","dateModified":"2023-09-14T14:21:27+00:00","description":"A solo una hora de El Nido, Sibaltan es como otro mundo. Bonitas playas, buceo con mantas, un island hopping curioso... Descubre qué hacer en Sibaltan.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-sibaltan/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1.jpg","width":1200,"height":630,"caption":"Guía de Sibaltan, Palawan"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-sibaltan/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué hacer en Sibaltan (Palawan) &#8211; Guía completa"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué hacer en Sibaltan (Palawan) &#8211; Guía completa del feed" href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/12175" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=12175' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-sibaltan%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-sibaltan%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-12175-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/12175/et-core-unified-12175.min.css?ver=1745588726" /><link rel="stylesheet" id="et-core-unified-deferred-12175-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/12175/et-core-unified-deferred-12175.min.css?ver=1745588726" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-12175 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/" aria-current="page">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-12175" class="et_pb_post post-12175 post type-post status-publish format-standard has-post-thumbnail hentry category-palawan">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué hacer en Sibaltan (Palawan) &#8211; Guía completa</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Guía de Sibaltan, Palawan" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-1080x630.jpg" alt="Guía de Sibaltan, Palawan" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-p1-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Quizás te preguntas <strong>qué hacer en Sibaltan</strong> porque, a pesar de estar a algo menos de una hora de uno de los sitios más turísticos de Filipinas (El Nido), lo cierto es que apenas se escucha hablar de este destino. Sin embargo, nosotros caímos rendidos a sus encantos y estamos seguros que no dentro de muchos años formará parte de muchos itinerarios de viaje por el país como ya lo es la vecina isla de <a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/" target="_blank" rel="noopener">Darocotan</a>, que poco se veía en redes sociales y blogs hasta 2022.</p>
+<p style="text-align: justify;">Sibaltan es una pequeña localidad en la <strong>costa oriental de Palawan</strong>. Previamente era solo conocida por los amantes del <strong><em>kitesurf</em></strong>, ya que durante los meses de noviembre a marzo sopla el viento bastante fuerte, haciendo que sea un destino ideal para ellos. Sin embargo, a día de hoy creemos que es un lugar perfecto para los que quieren salirse de lo habitual, hacer <em>island hopping</em> desconocidos y, además, bucear con la segunda especie  de <strong>mantarrayas</strong> más grande del mundo la <a href="https://es.wikipedia.org/wiki/Manta_alfredi" target="_blank" rel="nofollow noopener"><em>manta alfredi</em></a>, que puede llegar a medir 5,5 metros.</p>
+<p style="text-align: justify;">Si todo esto te suena bien o te ha picado la curiosidad, sigue leyendo, que te traemos una completa guía de Sibaltan, un rinconcito más <a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/" target="_blank" rel="noopener">que ver en Palawan</a>.</p>
+<p style="text-align: justify;"><span id="more-12175"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682587f7a75b7" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682587f7a75b7"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFDonde_esta_Sibaltan" title="¿Dónde está Sibaltan?">¿Dónde está Sibaltan?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_esperar_de_Sibaltan_y_por_que_ir" title="Qué esperar de Sibaltan y por qué ir">Qué esperar de Sibaltan y por qué ir</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Cuantos_dias_ir_a_Sibaltan_y_ruta_sugerida" title="Cuántos días ir a Sibaltan y ruta sugerida">Cuántos días ir a Sibaltan y ruta sugerida</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Que_ver_y_hacer_en_Sibaltan" title="Qué ver y hacer en Sibaltan">Qué ver y hacer en Sibaltan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Informacion_practica_sobre_Sibaltan" title="Información práctica sobre Sibaltan">Información práctica sobre Sibaltan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Mapa_de_Sibaltan" title="Mapa de Sibaltan">Mapa de Sibaltan</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_esta_Sibaltan"></span><span style="color: #33cccc;">¿Dónde está Sibaltan?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si echas un vistazo al mapa, verás que Sibaltan está a unos 45 kilómetros de El Nido, en la costa este de Palawan. Como te contaremos en el apartado sobre transportes, es relativamente accesible desde El Nido en más o menos una hora de trayecto. Puedes elegir entre montarte en una de las furgonetas compartidas, alquilar una moto o negociar un tricycle.</p>
+<p style="text-align: justify;">El aeropuerto más cercano es el de El Nido, pero también puedes llegar desde Puerto Princesa.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_esperar_de_Sibaltan_y_por_que_ir"></span><span style="color: #33cccc;">Qué esperar de Sibaltan y por qué ir</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Empecemos por lo evidente: Sibaltan es un <strong>destino con pocas comodidades</strong> todavía. No hay buen internet, solo hay electricidad por las noches (algunos hoteles tienen generador) y los alojamientos o restaurantes tampoco abundan. <strong>La playa no es ni mucho menos espectacular</strong>, menos aún si las comparamos con las de El Nido o Darocotan. Llegados a este punto, seguro que te estarás preguntando por qué fuimos nosotros y por qué recomendamos ir.</p>
+<p style="text-align: justify;">Partamos de la base que nos encanta explorar sitios nuevos. Volvemos una y otra vez a lugares turísticos como Coron o El Nido para actualizar las guías, para descubrir rinconcitos nuevos y porque genuinamente nos parecen increíbles. Pero es cierto que creemos que en Filipinas hay mucho más que sota, caballo y rey y nos apetece salirnos de lo habitual. A veces nos equivocamos y otras, como en el caso de Sibaltan, acertamos de pleno y salimos enamorados.</p>
+<p style="text-align: justify;"><strong>Sibaltan es un destino guay si quieres complementar tu visita a El Nido con algo distinto y mucho menos explotado y/o si eres un apasionado del buceo y ansías ver mantas</strong>. El island hopping que hicimos a las islas de enfrente nos encantó, ya que apenas encontramos gente y no nos lo esperábamos. Vimos playas desiertas, tortugas, palmerales infinitos, lenguas de arena… No es comparable a lo que verás en los <a href="https://www.viajarporfilipinas.com/island-hopping-el-nido-filipinas/" target="_blank" rel="noopener">island hopping de El Nido</a>, ya que aquí no hay paredes de roca caliza, pero es un complemento ideal a esta aventura por Palawan.</p>
+<p style="text-align: justify;">Nosotros fuimos a Sibaltan desde Darocotan y nos parece un verdadero planazo combinar ambos destinos en esta zona de Palawan.</p>
+<div id="attachment_12184" style="width: 1010px" class="wp-caption alignnone"><img fetchpriority="high" decoding="async" aria-describedby="caption-attachment-12184" class="size-full wp-image-12184" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="calles Sibaltan Palawan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3.jpg" /><noscript><img fetchpriority="high" decoding="async" aria-describedby="caption-attachment-12184" class="size-full wp-image-12184" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3.jpg" alt="calles Sibaltan Palawan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-3-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-12184" class="wp-caption-text">Calles de Sibaltan</p></div>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_ir_a_Sibaltan_y_ruta_sugerida"></span><span style="color: #33cccc;">Cuántos días ir a Sibaltan y ruta sugerida</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Lo cierto es que todavía Sibaltan no es un destino conocido para hacer base y muchos viajeros vienen a pasar el día desde El Nido simplemente. Nosotros nos quedamos 4 noches porque viajamos bastante lento, pero, por si te sirve de orientación, diríamos que deberías dedicarle al menos <strong>2 días completos </strong>(sin contar con la llegada y la salida). Todo dependerá de tus planes en esta zona de Filipinas.</p>
+<p style="text-align: justify;">Es decir, si haces buceo y no te quieres perder el buceo con mantas, deberás dedicar un día a ello. Como volverás a mediodía, puedes pasarlo paseando por el pueblo, disfrutando de la playa y contemplando la puesta de sol.</p>
+<p style="text-align: justify;">En nuestra opinión, otro día deberías dedicarlo al island hopping. Aunque obviamente los paisajes no se pueden comparar a los de El Nido, estamos segurísimos de que lo disfrutarás un montón.</p>
+<p style="text-align: justify;">Si tienes más tiempo, puedes explorar Bulang Beach y Santa Mónica Beach o hacer kayak hasta Bubog Island. Incluso es factible explorar los manglares de la zona de Dewil o hacer un tour a la isla de Imorigue, donde hay cuevas. Por supuesto, si haces kitesurf o quieres aprender, no pierdas la oportunidad de practicar este deporte aquí.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_ver_y_hacer_en_Sibaltan"></span><span style="color: #33cccc;">Qué ver y hacer en Sibaltan</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Después de tanta intro, nos ponemos ya manos a la obra y te contamos qué ver y hacer en Sibaltan:</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Disfrutar de las playas de Sibaltan</span></h3>
+<p style="text-align: justify;">Como ya te hemos dicho arriba, las playas de Sibaltan no son comparables a las <a href="https://www.viajarporfilipinas.com/mejores-playas-el-nido/" target="_blank" rel="noopener">playas de El Nido</a>. No son playas de arena tan rubia y en marea baja es complicado darse un baño sin tener que andar mucho, pero realmente tienen el encanto de ser playas vírgenes y en las que no verás a casi nadie. Además, son <strong>largas y perfectas para pasear</strong>, con bastante vegetación para tener sombra cuando quieras.</p>
+<p style="text-align: justify;">Para ser sinceros, como estábamos perezosos, nosotros nos quedamos en la playa principal de Sibaltan, donde están los hoteles y restaurantes. Es una playa bonita que se puede recorrer fácilmente caminando y en la que puedes cotillear los resorts abandonados o alguno que otro por hacer.</p>
+<p style="text-align: justify;">No tiene mucha profundidad, así que en marea baja es un poco pesado bañarse, pero al haber bastantes algas o pasto marino, desde la misma orilla es posible ver las cabezas de las <strong>tortugas</strong> saliendo. En serio, fíjate bien porque están ahí. Otra cosa es que puedas verlas haciendo snorkel… Nosotros lo intentamos, pero son bastante rápidas y huidizas en esta zona, así que no logramos ver ninguna de cerca.</p>
+<p style="text-align: justify;">Si tienes ganas de explorar más playas, también tienes <strong>Santa Monica Beach y Bulang Beach</strong> más al norte, que son dos playas gemelas separadas por un punto llamado Toratod Point. Lo más cómodo para explorar estas playas es la moto, pero como no encontramos ningún sitio para alquilar aquí, a no ser que hayas venido de El Nido con la tuya propia, tendrás que negociar los servicios de un tricycle, que tampoco abundan.</p>
+<p style="text-align: justify;">En el caso de que no vayas a pasar varios días en Sibaltan y que solo vengas a pasar el día desde El Nido, te recomendamos que consultes la tabla de mareas para ver si durante tu visita te coincidirá con la marea alta, que es cuando más bonitas están las playas.</p>
+<div id="attachment_12181" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-12181" class="size-full wp-image-12181" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Sibaltan Beach" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-12181" class="size-full wp-image-12181" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8.jpg" alt="Sibaltan Beach" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-8-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-12181" class="wp-caption-text"><em>Sibaltan Beach</em></p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Kitesurf en Sibaltan (en temporada)</span></h3>
+<p style="text-align: justify;">La actividad estrella y la razón principal por la que muchos vienen aquí es el kitesurf. Cuando llega el <a href="https://es.wikipedia.org/wiki/Amihan" target="_blank" rel="nofollow noopener">amihan</a> o “viento del nordeste”, negocios y amantes de este deporte se frotan las manos. Este suele dominar <strong>de noviembre a marzo/abril</strong> cada año y trae a Sibaltan vientos de 15 a 25 nudos casi cada día. Además, la <a href="https://www.facebook.com/pkatours" target="_blank" rel="nofollow noopener">Philippine Kiteboarding Association</a> suele organizar un campeonato por aquí en enero.</p>
+<p style="text-align: justify;">Nosotros no somos expertos en la materia, pero parece ser un sitio ideal incluso para aprender porque el agua no acostumbra a tener mucho oleaje y se puede practicar incluso cuando la marea está baja. Puedes consultar las condiciones actuales <a href="https://www.windfinder.com/forecast/qi_palawan" target="_blank" rel="nofollow noopener">aquí</a>.</p>
+<p style="text-align: justify;">En la misma playa de Sibaltan hay un sitio donde se imparten clases y puedes alquilar tablas, por si no viajas con tu equipo: Sibaltan El Nido Kiteboarding</p>
+<p style="text-align: justify;">Por cierto, si te gusta el kitesurf, otros sitios de Filipinas donde practicarlo son <a href="https://www.viajarporfilipinas.com/guia-boracay/" target="_blank" rel="noopener">Boracay</a>, <a href="https://www.viajarporfilipinas.com/bantayan/" target="_blank" rel="noopener">Bantayan</a> y Cagbalete.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">3. Island hopping en Sibaltan, experiencia TOP</span></h3>
+<p style="text-align: justify;">Si lees nuestro artículo <a href="https://www.viajarporfilipinas.com/island-hopping-filipinas/" target="_blank" rel="noopener">Island hopping en Filipinas</a>, te darás cuenta de que hemos hecho tropecientos. Pues poco habíamos leído del island hopping en Sibaltan y, al acabar, no podíamos dar crédito de las bellezas que visitamos. En serio, nos encantó el recorrido, quizás también porque no esperábamos que fuese tan bonito y por la sensación de ser un poquito “descubridores”. De hecho, los dos acabamos diciendo: “este es el tipo de experiencias que a la gente les flipa”.</p>
+<p style="text-align: justify;">Pero basta ya de presentaciones. El island hopping de Sibaltan es un poquito a la carta. Olvídate de los tours establecidos en El Nido como A, B, C y D. Nosotros nos pusimos en las manos de nuestro guía y él fue quien nos aconsejó los rincones a visitar. La verdad es que tuvimos mucha suerte, ya que Jhong nació aquí y es un experto en la zona, así que nos fue dando algunos detallitos que nos enamoraron.</p>
+<p style="text-align: justify;">Lo habitual es que se visiten estos sitios:</p>
+<h4><span style="color: #33cccc;">Sálvame Beach o Villagracia Beach</span></h4>
+<p>En la isla de Binulbulan. Espectacular playa deshabitada (no, aquí no está Jorge Javier) llena de palmeras. Aquí estuvimos buscando tortugas, que suelen estar por aquí.</p>
+<h4><span style="color: #33cccc;">Snorkel Point</span></h4>
+<p>Desconocemos el nombre del punto en particular, pero en el mapa que está al final de está guía, te marcamos el punto concreto. La verdad es que nos gustó mucho, un arrecife bastante vivo. Saltamos al agua sin muchas expectativas y lo que vimos nos flipó.</p>
+<h4><span style="color: #33cccc;">Palma Beach</span></h4>
+<p style="text-align: justify;">En el lado opuesto a Sálvame Beach, en Binulbulan, entenderás rápidamente por qué se le llama Palma. Es un palmeral sublime. Además, en esta pequeña bahía que se forma, vimos 4-5 tortugas desde el barco. Son asustadizas, así que fue bastante rápido, pero de verdad que fue un momento mágico. Nos comentó el guía que por aquí se pueden ver dugones también.</p>
+<div id="attachment_12177" style="width: 1010px" class="wp-caption alignnone"><img decoding="async" aria-describedby="caption-attachment-12177" class="size-full wp-image-12177" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20650'%3E%3C/svg%3E" alt="island hopping Sibaltan" width="1000" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1-980x637.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1-480x312.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-12177" class="size-full wp-image-12177" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1.jpg" alt="island hopping Sibaltan" width="1000" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1-980x637.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-1-480x312.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-12177" class="wp-caption-text"><em>Sálvame a la izqda. y Palma en el centro y dcha.</em></p></div>
+<h4><span style="color: #33cccc;">Maosonon Island</span></h4>
+<p style="text-align: justify;">Ahora es privada, así que no te puedes bajar. Sin embargo, pasarás junto a ella y su espectacular lengua de arena. En serio, es preciosa.</p>
+<h4><span style="color: #33cccc;">Mangransing Island o Little Maosonon</span></h4>
+<p style="text-align: justify;">Junto con Palma Beach, lo mejor del tour. Espectacular isla de arena blanca y fina con una <em>sandbar</em> al final larguísima. Por eso, es mejor visitarla cuando la marea está baja. Es aquí donde se suele comer.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-12180" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20562'%3E%3C/svg%3E" alt="Mangransing Island Sibaltan" width="1000" height="562" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5-980x551.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5.jpg" /><noscript><img decoding="async" class="alignnone size-full wp-image-12180" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5.jpg" alt="Mangransing Island Sibaltan" width="1000" height="562" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5-980x551.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-5-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h4><span style="color: #33cccc;">Pical Island</span></h4>
+<p>Como vimos que una “tormentilla” estaba por venir, solo fuimos a un colorido mirador que hay en esta isla. Nos comentaron que aquí también hay varias playas chulas (Paduldolan Beach se veía la más bonita) y que también se puede pasear por el pueblo principal, por si queréis preguntar.</p>
+<div id="attachment_12179" style="width: 1010px" class="wp-caption alignnone"><img decoding="async" aria-describedby="caption-attachment-12179" class="size-full wp-image-12179" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="guia Sibaltan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-12179" class="size-full wp-image-12179" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2.jpg" alt="guia Sibaltan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-12179" class="wp-caption-text"><em>Paduldolan Beach</em></p></div>
+<p style="text-align: justify;">Si tienes más tiempo y quieres ir más allá, puedes preguntar por el island hopping a <strong>Imorigue Island</strong>, que es la gran isla que verás si te pones en Sibaltan Beach mirando hacia el mar y miras hacia la derecha. Esta imponente isla de roca kárstica tiene algunas cuevas y sitios para hacer <em>cliff jumping</em>. Desconocemos qué tal será y qué incluye este tour, pero nos comentaron que era interesante.</p>
+<p style="text-align: center;">Por cierto, estas islas que se visitan pertenecen al grupo de Linapacan, que también visitamos durante nuestra <a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener">Expedición Coron-El Nido</a> y que estamos seguros de que te encantará si Sibaltan es «tu rollo».</p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">Cuánto cuesta el island hopping en Sibaltan y cómo organizarlo</span></h4>
+<p style="text-align: justify;">La cuestión es que la oferta de sitios para organizar los tours en Sibaltan es súper reducida. Lo habitual es que sean los propios hoteles quienes lo hagan, por lo que tienes que hacerte cargo del precio del barco completo. Es decir, no es como en El Nido en el que hay agencias y te puedes unir a otras personas.</p>
+<p style="text-align: justify;">En nuestro caso, al ser solo 2, pagar los 6.000-7.000 pesos que nos pedían nos rompía un poco el presupuesto. Así que preguntamos por la posibilidad de ir en un barco pequeño y lo conseguimos por 3.500 pesos incluyendo comida. Eso sí, como podréis ver, el barco era minúsculo y literalmente solo cabíamos los 2, más el guía y el capitán en la parte trasera. Cómodo desde luego no fue, pero sí lo pasamos bien.</p>
+<p style="text-align: justify;">A día de hoy, el precio para un barco más adecuado para hacer <strong>este tour ronda los 9.500-15.000 por el barco completo</strong> de hasta 10 personas y 1.800 por persona con un mínimo de 8 personas. El precio incluye la comida, no es necesario pagar más tasas. La verdad es que no es muy económico, pero creemos que merece la pena si se juntan algunas personas.</p>
+<p style="text-align: justify;">De no haber conseguido ese precio, nuestro plan era ir al muelle que hay en el pueblo y allí buscar a alguien que nos ofreciese algo más competitivo.</p>
+<p style="text-align: justify;">En cualquier caso, si te interesa nuestro contacto, te lo podemos pasar sin problemas si nos dejas un comentario. Además, recuerda que tenemos un <a href="https://filipinapp.com/calendario-tours-filipinas/" target="_blank" rel="nofollow noopener">calendario</a> donde puedes apuntarte y buscar a otros viajeros.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-12185" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="tour por Sibaltan Palawan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9.jpg" /><noscript><img decoding="async" class="alignnone size-full wp-image-12185" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9.jpg" alt="tour por Sibaltan Palawan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-9-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">4. Bucear con mantas en Sibaltan</span></h3>
+<p style="text-align: justify;">Otra de las excusas para visitar Sibaltan es <strong>bucear con mantarrayas</strong>, concretamente mantas de arrecife o <em>manta alfredi</em>, una especie de la familia de las mobulas. Como te comentábamos arriba, es la 2ª especie de manta más grande del mundo, pudiendo alcanzar los 5,5 metros. Aun así, lo más habitual es encontrarlas con unos 3-3,5 metros.</p>
+<p style="text-align: justify;">Hace unos años se descubrieron varias estaciones de limpieza de estas mantas muy cerca de la isla de Binulbulan, que, al contrario que las del Manta Bowl (cerca de la isla de Ticao), están a unos 14 metros de profundidad y a 15 minutos de navegación desde Sibaltan, lo que convierte a este sitio en un lugar muy apetitoso para los amantes del submarinismo con “animales grandes” y para quienes buscan algo distinto de <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener">buceo en Filipinas</a>. Nos comentaron que las mantas, por ahora, se ven durante todo el año, aunque ya sabes que esto es naturaleza, los avistamientos no están 100% garantizados.</p>
+<p style="text-align: justify;">El par de escuelas de buceo de Sibaltan que existen a día de hoy y el equipo de la fundación LAMAVE están intentando regular la actividad de alguna manera para evitar que las mantas se vean afectadas por el creciente turismo que se espera.</p>
+<p style="text-align: justify;">La inmersión en <strong>Saan Ka</strong> (en tagalo, “¿dónde estás?”) es bastante sencilla. Los <em>dive masters</em> acostumbran a mirar si hay mantas y, en caso afirmativo, se salta para recorrer poco a poco los alrededores de las 4 estaciones de limpieza y así disfrutar de las mantas “volando”. No es raro encontrarse tampoco con alguna tortuga verde.</p>
+<p style="text-align: justify;">Lo habitual es que se hagan 2 buceos en las estaciones de limpieza y, si te animas a otro, en algún arrecife cercano. Según nos comentaron, hay inmersiones bastante interesantes, incluso nocturnas.</p>
+<p style="text-align: justify;">Estas inmersiones, al no ser muy profundas, se pueden hacer siendo solo open water diver, pero considera que si las mantas están aquí es porque es una zona de corrientes y, por tanto, con muchos nutrientes, lo que puede significar que la visibilidad no sea muy buena y que la inmersión no sea cómoda. Por ello, te recomendamos que tengas un mínimo de experiencia buceando.</p>
+<p style="text-align: justify;">Los <strong>precios</strong> rondan los 4.000 pesos para 2 inmersiones (incluye alquiler del equipo) y 5.000 para 3 buceos. A partir de 3 buceos también incluyen la comida, que se suele hacer en una playa en Binulbulan Island.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-12178" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="buceo Sibaltan manta" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4.jpg" /><noscript><img decoding="async" class="alignnone size-full wp-image-12178" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4.jpg" alt="buceo Sibaltan manta" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-4-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">5. Más cosas que hacer en Sibaltan</span></h3>
+<p style="text-align: justify;">Ya te hemos contado lo básico que hacer en Sibaltan: playas, island hopping, kiteboarding y buceo, pero, si tienes más tiempo o eres de los que quiere ir más allá, aquí tienes algunas cosillas que nos comentaron que también se puede hacer:</p>
+<ul style="text-align: justify;">
+<li><strong>Ille Cave + tour por manglares:</strong> a unos 30 minutos de Sibaltan está esta curiosa cueva que, además de ser naturalmente hablando muy interesante (sí, los murciélagos están asegurados), se puede encontrar un pequeño museo con restos arqueológicos que demuestran que esta zona fue habitada hace más de 12.000 años. Si tienes ganas de hacer ejercicio, también se puede subir a lo más alto de la montaña. Son 350 pesos por el guía (grupo completo) y 150 pesos extra si quieres subir.</li>
+<li><strong>Tour por los manglares:</strong> muy cerquita, junto al pueblo de New Ibajay, también se puede hacer un recorrido por los manglares hasta desembocar en el mar.</li>
+<li><strong>Kayak hasta Bubog Island:</strong> si miras hacia el mar desde la playa de Sibaltan, verás una minúscula isla a la que puedes llegar en kayak. Mientras estuvimos por allí, vimos como algunos lugareños iban a echar el día.</li>
+<li><strong>Sibaltan Heritage Center:</strong> por desgracia, estaba cerrado cuando fuimos, pero, si tienes la opción, parece una visita interesante. Sibaltan es un sitio con cierta fama arqueológica, ya que los habitantes del siglo XIX solían enterrar sus objetos de valor.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Informacion_practica_sobre_Sibaltan"></span><span style="color: #33cccc;">Información práctica sobre Sibaltan</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ahora que ya sabes qué hacer en Sibaltan, completamos la guía con algunos datos prácticos.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Dónde dormir en Sibaltan</span></h3>
+<p style="text-align: justify;">Comparado con El Nido, Sibaltan está todavía a años luz, sobre todo si lo visitas en temporada baja como hicimos nosotros. En ese momento, todos los sitios menos dos estaban cerrados, así que no tuvimos mucho margen de elección.</p>
+<p style="text-align: justify;">Los alojamientos en Sibaltan están a lo largo de la playa a más o menos distancia del pueblo. Realmente se puede llegar tranquilamente andando a todos ellos y, de hecho, en marea baja, las motos van por la playa. Aquí te contamos los que están abiertos a día de hoy donde dormir en Sibaltan:</p>
+<ul style="text-align: justify;">
+<li><a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es-es&amp;hid=2065151" target="_blank" rel="nofollow noopener"><strong>Ursula Beach Club</strong></a><strong>:</strong> aquí nos quedamos nosotros y fue un acierto. Regentado por una encantadora familia, cuentan ahora (aunque están ampliando) con 3 habitaciones, 2 a pie de playa y una cabaña en la colina con vistazas (la nuestra). Tienen generador e internet funciona decentemente. No es económico, pero es un sitio guay y el servicio es de 10. Por cierto, tienen unos perritos encantadores. Reserva <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es-es&amp;hid=2065151" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li><a href="https://www.booking.com/hotel/ph/erlittop-garden.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Erlittop Garden Eco Lodge</strong></a><strong>:</strong> cuando estuvimos estaban de obras, pero una viajera nos comentó que ella se quedó recientemente y que le encantó. La verdad es que las cabañas tienen súper buena pinta y los precios son accesibles. Reserva <a href="https://www.booking.com/hotel/ph/erlittop-garden.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li><a href="https://www.booking.com/hotel/ph/carmelita-homestay-el-nido-palawan.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Carmelita Homestay</strong></a><strong>:</strong> es el primer alojamiento de la parte principal de la playa de Sibaltan. El terreno tiene encanto, pero la verdad es que fuimos a cotillear las habitaciones y nos dejaron algo fríos. Son bastante básicas para el precio y, al no tener generador, estás sin luz hasta la noche. Lo descartamos porque necesitábamos electricidad para trabajar. Reserva <a href="https://www.booking.com/hotel/ph/carmelita-homestay-el-nido-palawan.es.html?aid=1542173" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+<li><a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=673199&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fhotels%2Fdetail%2F136550-floresitas-beach-resort%2F" target="_blank" rel="nofollow noopener"><strong>Floresita’s Beach Resort</strong></a><strong>:</strong> también estaba cerrado a cal y canto cuando estuvimos nosotros por allí, pero parece que ya están operativos de nuevo ofreciendo cabañas y tiendas de acampada. Reserva <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=673199&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fhotels%2Fdetail%2F136550-floresitas-beach-resort%2F" target="_blank" rel="nofollow noopener">aquí</a>.</li>
+</ul>
+<p style="text-align: justify;">No sabemos cuántos años le quedará a Sibaltan con esta “ruralidad” porque nos comentaron por allí que ya hay inversores chinos comprando terrenos a pie de playa y vimos algún que otro movimiento. Puede ser que en el futuro haya bastantes más resorts.</p>
+<div id="attachment_12182" style="width: 1010px" class="wp-caption alignnone"><img decoding="async" aria-describedby="caption-attachment-12182" class="size-full wp-image-12182" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Ursula Beach Club Sibaltan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-12182" class="size-full wp-image-12182" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6.jpg" alt="Ursula Beach Club Sibaltan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-6-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-12182" class="wp-caption-text"><em>Ursula Beach Club en Sibaltan</em></p></div>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Cómo llegar a Sibaltan</span></h3>
+<p style="text-align: justify;">Si no estás en Palawan todavía, lo primero que tienes que hacer es <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fmnl%2Fpps%2Fmanila-ninoy-aquino-a-internacional-de-puerto-princesa.html" target="_blank" rel="nofollow noopener">buscar vuelos a Puerto Princesa</a> o <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Fvuelos-a%2Feni%2Fvuelos-baratos-a-el-nido-aeropuerto.html" target="_blank" rel="nofollow noopener">a El Nido</a> o <a href="https://12go.asia/es/travel/coron-pier/el-nido/?z=1864900" target="_blank" rel="nofollow noopener">reservar el ferri de Coron a El Nido</a>. El aeropuerto de El Nido es el más cercano, por si quieres tardar lo menos posible.</p>
+<p style="text-align: justify;">Ahora te vamos a explicar cómo llegar a Sibaltan desde Puerto Princesa y El Nido, los dos destinos más habituales, pero debes saber que <strong>nosotros fuimos desde Darocotan</strong>. En el puerto de Teneguiban nos estaba esperando el conductor de tricycle que nos había llevado unos días antes desde El Nido y que nos dejó en Sibaltan de nuevo por 700 pesos. Si quieres, te podemos dar su contacto también dejándonos un comentario.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Cómo ir a Sibaltan desde Puerto Princesa</span></h3>
+<p style="text-align: justify;">En el caso de que estés en Puerto Princesa, tienes 2 alternativas:</p>
+<ul style="text-align: justify;">
+<li>Coger una furgoneta (4-5 horas) o bus a El Nido y luego enlazar con otra a Sibaltan (1-2 horas).</li>
+<li>Coger directamente la furgoneta a Sibaltan (7-8 horas/800 pesos).</li>
+</ul>
+<p style="text-align: justify;">La única empresa que ofrece la ruta de Puerto a Sibaltan y de El Nido a Sibaltan se llama <strong>Katar Van Transport</strong> y la verdad es que conocer los horarios es un poco locura. Salen dos o tres veces al día <strong>desde</strong> <strong>la terminal de Irawan </strong>(a unos 12 km de Puerto). Lo mejor es que llames o mandes un sms estando en Filipinas a uno de los siguientes números: 09066484602, 09054325019 o 09777183502</p>
+<p style="text-align: justify;">Otra forma de hacerlo es contactar con tu alojamiento una vez tengas reserva con ellos, que ellos se manejan bien y, además, te dejan la plaza reservada, cosa importante si vas de El Nido a Sibaltan, ya que son las mismas que hacen el recorrido desde Puerto Princesa y pueden ir llenas.</p>
+<p style="text-align: justify;">Ten en cuenta que las furgonetas hacen tropecientas paradas y van recogiendo y soltando a gente, así que por eso son tan lentas. En nuestro caso, para volver a El Nido tardamos más de 2 horas para un trayecto en el que se tarda 1 hora.</p>
+<p style="text-align: center;">* Descubre <a href="https://www.viajarporfilipinas.com/como-llegar-puerto-princesa-palawan/" target="_blank" rel="noopener"><strong>cómo llegar a Puerto Princesa</strong></a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Cómo ir de El Nido a Sibaltan</span></h3>
+<p style="text-align: justify;">Posiblemente esta sea la ruta que hagas. En Este caso, tienes 3 opciones:</p>
+<ul style="text-align: justify;">
+<li>Alquilar una moto: el camino es chulo, incluso hay una parte elevada desde la que se tienen buenas vistas. El precio suele ser por 500 pesos al día. Si quieres un contacto que te la deje un poco más barata, puedes dejarnos un comentario.</li>
+<li>Negociar un tricycle: calcula que te costará entre 800 y 1.000 pesos, según tus dotes de negociación.</li>
+<li>Coger una de las vans de Katar Van: lo mejor en este caso es contactar con la empresa en los números que te hemos dado arriba porque en la terminal de El Nido es todo un tanto caótico. También puedes preguntar en tu alojamiento. El precio son 300 pesos por persona. Si quieres, también puedes alquilar una completa por 2.500 pesos.</li>
+</ul>
+<p style="text-align: justify;">Si has aterrizado directamente en el aeropuerto de El Nido, puedes negociar un tricycle hasta Sibaltan (debería costarte lo mismo que desde El Nido Town) o decirle que te lleve a la terminal (250 pesos). Otra idea es intentar cuadrarlo con las furgonetas que van a Sibaltan, pero con los pocos horarios que hay, nos parece complicado a no ser que los contactes con antelación y los esperes en la carretera.</p>
+<p style="text-align: center;">* Descubre <a href="https://www.viajarporfilipinas.com/el-nido-filipinas-como-llegar/" target="_blank" rel="noopener"><strong>cómo llegar a El Nido</strong></a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Dónde comer en Sibaltan</span></h3>
+<p style="text-align: justify;">La verdad es que no podemos hacer una guía muy extensa de restaurantes en Sibaltan porque no hay apenas… A día de hoy, los que básicamente hay son estos:</p>
+<ul style="text-align: justify;">
+<li><strong>Ursula Beach Club:</strong> gran parte de nuestras comidas/cenas fueron aquí. Los precios son caretes, pero en la media de Palawan (algo más baratos que en El Nido, eso sí). Tienen platos de todo tipo, incluyendo pasta bastante rica. La presentación es de 10, sobre todo para las cenas, donde cuidan todos los detalles y se nota que han trabajado en los resorts más lujosos de Filipinas.</li>
+<li><strong>Sibaltan El Nido Kiteboarding:</strong> cuando nosotros fuimos, estaba cerrado (fuera de temporada), pero vimos que este sitio tenía un barecito y restaurante con comida a buen precio.</li>
+<li><strong>Carenderias:</strong> en el pueblo hay un par de carenderias o <em>eateries</em>, una frente a la cancha de baloncesto (Ran-Chel Canteen) y otra que te marcamos también en el mapa de abajo. La variedad no era grande y pasadas las 13h había poca cosa. No sabemos cómo estará el tema ya de noche… No apostaríamos mucho por ello.</li>
+</ul>
+<p style="text-align: justify;">En Sibaltan tienes algunas tiendecitas pequeñas para comprar snacks y bollitos, así como bebidas. Además, en casi todos los alojamientos también sirven comida, por lo que también te puedes pasar por allí.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-12183" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="comer Sibaltan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7.jpg" /><noscript><img decoding="async" class="alignnone size-full wp-image-12183" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7.jpg" alt="comer Sibaltan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/04/que-hacer-sibaltan-guia-7-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Consejos para visitar Sibaltan</span></h3>
+<p style="text-align: justify;">Aquí te damos algunos consejillos para visitar Sibaltan que extrajimos de nuestra experiencia:</p>
+<ul style="text-align: justify;">
+<li>La <strong>mejor época para visitar Sibaltan</strong> es más o menos de marzo a junio, cuando es temporada seca y el viento no pega tan fuerte. Recuerda que es un lugar querido por quienes practican kitesurf y, aunque ya no llueve tanto, el viento pega fuerte de noviembre a marzo. Con todo ello, nosotros visitamos Sibaltan en agosto y lo pasamos genial.</li>
+<li>Lleva <strong>efectivo</strong>. Vimos un cajero de Euronet en el pueblo, pero estaba apagado. Allí tendrás que tirar de efectivo.</li>
+<li>Cuando nosotros estuvimos allí estaban haciendo obras para mejorar <strong>internet</strong>, por lo que es posible que la conexión haya mejorado bastante. En ciertos puntos se pillaba buena red de la compañía SMART.</li>
+<li>Hazte a la idea de que es posible que no puedas usar la <strong>electricidad</strong> durante el día y solo por la noche. Aun así, en sitios como Ursula tienen generador y es 24 horas.</li>
+<li>Si tienes un itinerario bastante marcado, es mejor que contactes con los alojamientos con antelación para que ellos te reserven las plazas en las <strong>furgonetas</strong> y te den los horarios. Para no depender de esto, lo mejor sería alquilar una moto en El Nido y pedirle a tu alojamiento allí que te guarde el equipaje grande.</li>
+<li>No te olvides de tu <a href="https://amzn.to/2FWNRry" target="_blank" rel="nofollow noopener">bolsa estanca</a>. Durante el regreso, vino una tempestad alucinante y acabamos mojados completamente. Esto salvará tus cosas de valor.</li>
+<li>Te recomendamos encarecidamente que tomes biodramina (<em>bonamine</em> en Filipinas) si te mareas mucho en los coches, ya que en las furgonetas van como locos y hay curvas.</li>
+<li>En caso de urgencia grave, necesitarás ser trasladado a Puerto Princesa. Si es algo menos importante, puedes ir a El Nido Community Hospital, que es nuevo. Sea como sea, tendrás que pagar el tratamiento. Por ello (y, por desgracia, con mucha experiencia), te recomendamos que contrates un <a title="Seguro de viaje para Filipinas, el mejor de 2023" href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener">seguro de viaje a Filipinas</a>. Con <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=sibaltan" target="_blank" rel="nofollow noopener"><strong>este enlace tienes un 5% de descuento</strong></a> en el que a nosotros nos ha salvado muchas veces.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Sibaltan"></span><span style="color: #33cccc;">Mapa de Sibaltan</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para completar esta guía de Sibaltan, hemos hecho un mapa marcando los principales puntos de interés:</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1Fl71odLRh6fP03twdHC0YP7GwaU-F54&#038;ehbc=2E312F"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1Fl71odLRh6fP03twdHC0YP7GwaU-F54&amp;ehbc=2E312F" width="1000" height="480"></iframe></noscript></p>
+<hr />
+<p style="text-align: justify;">Esperamos haberte ayudado a descubrir este rinconcito de Filipinas y haberte animado a explorarlo. Si te gustan los destinos tranquilos y menos conocidos, estamos seguros de que lo disfrutarás mucho.</p>
+<p style="text-align: center;"><em>En caso de que tengas alguna duda o quieras contarnos tu experiencia, nos encantará leerte en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">52 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-55825">
+		<article id="comment-55825" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Jose</span>				<span class="comment_date">
+					el 15/04/2025 a las 12:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Estamos siguiendo vuestra guía y nos está yendo genial, de hecho ahora mismo estamos en el nido buscando transporte hasta Sibaltan. La única opción parecen ser los Tuctuc (triciclos). Y estamos un poco agobiados por llegar a tiempo a la inmersión, os parece buena idea hacer el nido-sibaltan en tricicle con las maletas y todo?? O hay mejor opción? Es luego nos vamos a darocotan.</p>
+<p>Muchas gracias!!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55825' data-commentid="55825" data-postid="12175" data-belowelement="comment-55825" data-respondelement="respond" data-replyto="Responder a Jose" aria-label='Responder a Jose'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55844">
+		<article id="comment-55844" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/04/2025 a las 17:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Jose, suponemos que ya no tendrás dudas : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-52622">
+		<article id="comment-52622" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">María</span>				<span class="comment_date">
+					el 13/02/2025 a las 23:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas! Mil gracias por el blog nos está salvando la organización del viaje. Vamos en abril 11 noches y nuestra idea es entrar por puerto princesa y hacer port barton-el nido-darocotan y coron pero lo mismo hacemos un día menos darocotan para ir a hacer el buceo de las mantas en Sibaltan, merece la pena? Nos podríais pasar el nombre de la escuela? Queremos hacer alguna incursión en este viaje pero nos ha dado miedo lo de los pecios. Es sufiente con snorkel para disfrutar? Mil gracias de antemano por todo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52622' data-commentid="52622" data-postid="12175" data-belowelement="comment-52622" data-respondelement="respond" data-replyto="Responder a María" aria-label='Responder a María'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52631">
+		<article id="comment-52631" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/02/2025 a las 00:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola María, nos alegramos mucho : ) acabamos de pasarte la info. Pensamos que sí, que merece la pena intentarlo. En cuanto a los pecios, con snorkel la verdad es que no se ve gran cosa. Si tenéis titulación, pensamos que ir a bucear en Coron en los pecios es increíble, os llevarán hasta donde vosotros queráis si no os veis muy cómodos penetrando por zonas más estrechas u oscuras. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-50982">
+		<article id="comment-50982" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Helvia</span>				<span class="comment_date">
+					el 20/01/2025 a las 20:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!</p>
+<p>Estoy planeando ir a Filipina a finales de febrero y una de mis paradas será en Sibaltan ^^<br />
+Quería saber si para ir de Sibaltan de vuelta a El Nido (o incluso directamente al aeropuerto) se puede hacer también con la empresa de Katar Van y si también hay tricycles disponibles.<br />
+Y hay disponibilidad para salir bien temprano por la mañana? Tipo 6/7.</p>
+<p>Muchas gracias y saludos!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50982' data-commentid="50982" data-postid="12175" data-belowelement="comment-50982" data-respondelement="respond" data-replyto="Responder a Helvia" aria-label='Responder a Helvia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51002">
+		<article id="comment-51002" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/01/2025 a las 00:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Helvia, nos alegramos mucho : ) sí claro, desde Sibaltan sale la misma empresa y los propios hoteles de Sibaltan te pueden reservar la plaza. Nosotros volvimos desde Sibaltan a El Nido a las 7. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-49827">
+		<article id="comment-49827" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Zara</span>				<span class="comment_date">
+					el 01/01/2025 a las 10:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas! Gracias por toda la info 🙂 podríais darme el contacto para alquilar moto bien de precio en el Nido? Gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-49827' data-commentid="49827" data-postid="12175" data-belowelement="comment-49827" data-respondelement="respond" data-replyto="Responder a Zara" aria-label='Responder a Zara'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-49894">
+		<article id="comment-49894" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 02/01/2025 a las 01:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Zara, ¡de nada! Acabamos de pasarte la info. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-50772">
+		<article id="comment-50772" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lucía</span>				<span class="comment_date">
+					el 16/01/2025 a las 21:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Vamos en Marzo a Filipinas y creo que he leído 100 veces vuestros post. Muchas gracias por toda la información 🙂</p>
+<p>Me gustaría saber con qué centro de buceo hicisteis las inmersiones para ver las mantas.</p>
+<p>Gracias!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50784">
+		<article id="comment-50784" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/01/2025 a las 00:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía, pues muchas gracias a ti por leernos : ) te acabamos de pasar la información. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-sibaltan/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='12175' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d06f4841cf" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="2"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"12175","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

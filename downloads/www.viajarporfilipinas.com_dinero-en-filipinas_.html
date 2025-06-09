@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Dinero en Filipinas: sacar dinero en cajeros y cambiar Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Seguramente tengas dudas sobre el dinero en Filipinas ¿Llevo metálico? ¿Qué tarjetas uso y cómo? En esta guía resolvemos todas tus dudas." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/dinero-en-filipinas/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Dinero en Filipinas: sacar dinero en cajeros y cambiar Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Seguramente tengas dudas sobre el dinero en Filipinas ¿Llevo metálico? ¿Qué tarjetas uso y cómo? En esta guía resolvemos todas tus dudas." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/dinero-en-filipinas/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-07-26T21:13:02+00:00" />
+	<meta property="article:modified_time" content="2025-05-06T15:27:48+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="750" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="23 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Dinero en Filipinas: sacar dinero en los cajeros automáticos y cambiar efectivo","datePublished":"2018-07-26T21:13:02+00:00","dateModified":"2025-05-06T15:27:48+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/"},"wordCount":5119,"commentCount":339,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11.jpg","articleSection":["Info práctica"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/dinero-en-filipinas/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/","url":"https://www.viajarporfilipinas.com/dinero-en-filipinas/","name":"▷ Dinero en Filipinas: sacar dinero en cajeros y cambiar Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11.jpg","datePublished":"2018-07-26T21:13:02+00:00","dateModified":"2025-05-06T15:27:48+00:00","description":"Seguramente tengas dudas sobre el dinero en Filipinas ¿Llevo metálico? ¿Qué tarjetas uso y cómo? En esta guía resolvemos todas tus dudas.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/dinero-en-filipinas/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11.jpg","width":1000,"height":750,"caption":"tarjetas viajes dinero Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/dinero-en-filipinas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Dinero en Filipinas: sacar dinero en los cajeros automáticos y cambiar efectivo"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/dinero-en-filipinas/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Dinero en Filipinas: sacar dinero en los cajeros automáticos y cambiar efectivo del feed" href="https://www.viajarporfilipinas.com/dinero-en-filipinas/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/666" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=666' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fdinero-en-filipinas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fdinero-en-filipinas%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-666-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/666/et-core-unified-666.min.css?ver=1746552091" /><link rel="stylesheet" id="et-core-unified-deferred-666-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/666/et-core-unified-deferred-666.min.css?ver=1746552091" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-666 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-666" class="et_pb_post post-666 post type-post status-publish format-standard has-post-thumbnail hentry category-info-practica">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Dinero en Filipinas: sacar dinero en los cajeros automáticos y cambiar efectivo</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/info-practica/" rel="category tag">Info práctica</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="tarjetas viajes dinero Filipinas" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-1000x675.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-1000x675.jpg" alt="tarjetas viajes dinero Filipinas" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-1000x675.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-11-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Algunas de las preguntas que más recibimos de aquellos viajeros que van a <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/">viajar</a> <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">por Filipinas</a> son: ¿cómo hago con el <strong>dinero en Filipinas</strong>? ¿Es mejor llevar dinero en efectivo y cambiar? ¿Puedo sacar dinero de los <strong>cajeros automáticos</strong> en Filipinas sin comisión? ¿Consigo dinero en pesos en mi país?</p>
+<p style="text-align: justify;">No te preocupes, aquí vas a obtener todas las respuestas sobre la gestión del dinero en Filipinas gracias a esta información actualizada y clara.<span id="more-666"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682589c93381d" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682589c93381d"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Dinero_en_Filipinas_el_peso_filipino" title="Dinero en Filipinas: el peso filipino">Dinero en Filipinas: el peso filipino</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Cambiar_dinero_en_Filipinas" title="Cambiar dinero en Filipinas">Cambiar dinero en Filipinas</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#1_Donde_cambiar_dinero_en_Manila" title="1. Dónde cambiar dinero en Manila">1. Dónde cambiar dinero en Manila</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#2_Donde_cambiar_dinero_en_Cebu" title="2. Dónde cambiar dinero en Cebu">2. Dónde cambiar dinero en Cebu</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#3_Donde_cambiar_dinero_en_Filipinas" title="3. Dónde cambiar dinero en Filipinas">3. Dónde cambiar dinero en Filipinas</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Cambiar_dinero_con_Remitly_o_sacar_dinero_en_las_casas_de_cambio" title="Cambiar dinero con Remitly o sacar dinero en las casas de cambio">Cambiar dinero con Remitly o sacar dinero en las casas de cambio</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#Pagar_con_tarjeta_en_Filipinas" title="Pagar con tarjeta en Filipinas">Pagar con tarjeta en Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Sacar_dinero_en_los_cajeros_automaticos_en_Filipinas_las_comisiones" title="Sacar dinero en los cajeros automáticos en Filipinas: las comisiones ">Sacar dinero en los cajeros automáticos en Filipinas: las comisiones </a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#Las_mejores_tarjetas_de_debito_y_credito_para_sacar_dinero_y_pagar_en_Filipinas" title="Las mejores tarjetas de débito y crédito para sacar dinero y pagar en Filipinas">Las mejores tarjetas de débito y crédito para sacar dinero y pagar en Filipinas</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#1_Tarjeta_Revolut_para_viajar_a_Filipinas" title="1. Tarjeta Revolut para viajar a Filipinas">1. Tarjeta Revolut para viajar a Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#2_Cuenta_y_tarjeta_N26_para_viajar_a_Filipinas" title="2. Cuenta y tarjeta N26 para viajar a Filipinas">2. Cuenta y tarjeta N26 para viajar a Filipinas</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-12" href="#En_resumen_como_manejarte_con_el_dinero_en_Filipinas" title="En resumen, cómo manejarte con el dinero en Filipinas">En resumen, cómo manejarte con el dinero en Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-13" href="#Preguntas_frecuentes_que_los_viajeros_nos_hacen_sobre_el_dinero_en_Filipinas" title="Preguntas frecuentes que los viajeros nos hacen sobre el dinero en Filipinas">Preguntas frecuentes que los viajeros nos hacen sobre el dinero en Filipinas</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Dinero_en_Filipinas_el_peso_filipino"></span><span style="color: #33cccc;">Dinero en Filipinas: el peso filipino</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">La moneda oficial de Filipinas es el <strong>peso</strong>. En filipino llamado <em>piso</em> y abreviado PHP, seguro que te sorprende escuchar una palabra tan latina en un país del Sudeste Asiático. La razón es sencilla: los orígenes del pesos filipino se remontan al real de a 8 español y al peso mexicano.</p>
+<p style="text-align: justify;">En estos momentos, el dinero en Filipinas se encuentra dividido en <strong>billetes</strong> de 20, 50, 100, 200, 500 y 1.000 pesos y <strong>monedas</strong> de 1, 5, 10 y 25 céntimos (<em>sentimos</em>) y de 1, 5 y 10 pesos.</p>
+<p style="text-align: justify;">Los <strong>billetes en Filipinas</strong> se diferencian perfectamente por su color y por los paisajes y animales típicos del país impresos en ellos:</p>
+<ul style="text-align: justify;">
+<li>20 pesos: color naranja, la civeta asiática en los arrozales de Banaue.</li>
+<li>50 pesos: color rojo, el <em>maliputo</em> (un tipo de pescado enorme) en el lago Taal y su volcán.</li>
+<li>100 pesos: color morado, el precioso <em>butanding</em> o tiburón ballena y el volcán Mayon.</li>
+<li>200 pesos: color verde, el <em>tarsier</em> filipino y las famosas Chocolate Hills de Bohol.</li>
+<li>500 pesos: color amarillo, el <em>pikoy</em> (un colorido loro) frente al <a title="El Parque Nacional del Río Subterráneo de Puerto Princesa, ¿cómo visitarlo?" href="https://www.viajarporfilipinas.com/rio-subterraneo-puerto-princesa/" target="_blank" rel="noopener noreferrer"><strong>Río Subterráneo en Palawan</strong></a>.</li>
+<li>1000 pesos: color azul, la enorme ostra <em>Pinctada maxima</em> que se asienta sobre los maravillosos arrecifes de Tubbataha.</li>
+</ul>
+<p style="text-align: justify;">A día de hoy (abril de 2025), el <strong>tipo de cambio del peso</strong> con respecto al euro es de 1€ / 64,35 PHP (está en máximos casi históricos). Consulta el <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&amp;From=EUR&amp;To=PHP" target="_blank" rel="nofollow noopener noreferrer">cambio a tiempo real en la web de XE.com</a>.</p>
+<blockquote>
+<p style="text-align: justify;">Por cierto, a los filipinos les cuesta mucho encontrar cambio pequeño. Por ello, es aconsejable que te deshagas de los billetes de 1.000 cuanto antes y atesores los billetes de 20, 50 y 100 pesos para pagar en los transportes y tiendas pequeñas.</p>
+</blockquote>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5885" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="billetes de filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-5885" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10.jpg" alt="billetes de filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cambiar_dinero_en_Filipinas"></span><span style="color: #33cccc;">Cambiar dinero en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si vienes de viaje desde tu país de origen, en especial de países en los que se funciona con euros o dólares, <strong>nosotros te recomendamos cambiar dinero en Filipinas directamente</strong>. Ello por dos razones:</p>
+<ul style="text-align: justify;">
+<li>Porque el tipo cambio será mucho más favorable que obtener pesos en tu país (no se te ocurra comprar pesos en España en las típicas compañías de Ría o similares, ¡las comisiones son altísimas!) y porque las casas de cambio en Filipinas no suelen cobrar comisiones.</li>
+<li>Porque, en la mayoría de los casos, sacar dinero en <strong>cajeros automáticos en Filipinas</strong> suele suponer una <strong>comisión</strong> que aplica el cajero filipino (todo ello sin considerar la comisión que te aplique tu banco actual, aunque más abajo ahondaremos en ello).</li>
+</ul>
+<p style="text-align: justify;">Por otro lado, existe una <strong>opción intermedia</strong> que todavía no es muy poco conocida (muchísimo menos para los viajeros de países europeos) que implica enviarte dinero a las llamadas <em>pawnshop</em>, unas tiendas repartidas por todos los sitios de Filipinas (incluso a islas perdidas, ya que los filipinos las usan constantemente para recibir el dinero de sus familiares en el extranjero o en otras islas). Tú te mandas euros y te hacen un cambio a peso a precio casi de mercado por una comisión mínima o incluso sin comisión. Te hablaremos más adelante de ello, pero usando <a href="https://remitly.tod8mp.net/c/1436363/2043894/10408" target="_blank" rel="nofollow noopener"><strong>ESTE ENLACE</strong></a> te dan 10€ de bienvenida por retirada de al menos 100€ y encima te ahorras las comisiones de los cajeros. ¡Es un trucazo!</p>
+<p style="text-align: center;">Te hemos preparado una guía aquí: <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener"><strong>Cambiar dinero con Remitly</strong></a>.</p>
+<blockquote><p>El Euro (como el dólar estadounidense y el australiano) se cambia perfectamente en Filipinas. Si vienes de un país europeo, no necesitas cambiar a dólar antes. Ven con tus euros y recibirás buen cambio.</p></blockquote>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Donde_cambiar_dinero_en_Manila"></span><span style="color: #33cccc;">1. Dónde cambiar dinero en Manila</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;"><strong>Cambiar dinero en el aeropuerto de <a href="https://www.viajarporfilipinas.com/manila-turismo/" target="_blank" rel="noopener noreferrer">Manila</a></strong> es buena opción, puesto que hay muchas <strong>oficinas de cambio</strong> tanto en la terminal 1 como en la terminal 3, muchas <strong>abiertas las 24 horas del día</strong>. Sorprendentemente y al contrario que ocurre en la mayoría de países del mundo, <strong>el tipo de cambio</strong> (con respecto a los euros o dólares) <strong>en el Aeropuerto de Manila es muy bueno</strong>. Aun así, te recomendamos que compares con el cambio real en XE y que revises las diferentes oficinas de cambio y cambies el dinero en la que ofrezca el tipo más favorable. Si ves que es razonable, cambia gran parte de tu dinero aquí, aunque encontrarás más lugares en otros puntos del país.</p>
+<blockquote><p>Tienes casas de cambio tanto en la zona de llegadas, como en la zona de salidas. A veces las de salidas dan mejor tipo que las de llegadas, te recomendamos analizar y ver qué te va mejor.</p>
+<p>Por cierto, también aquí podrás cambiar tu dinero si han sobrado pesos del viaje. El tipo de cambio no es muy loco y es mejor que no te lleves pesos de vuelta porque te costará cambiarlos.</p></blockquote>
+<p style="text-align: justify;">En el caso de que tengas más días para descubrir Manila, en la ciudad verás algunas casas de cambio que ofrecen un tipo de cambio ligeramente mejor. Tal es el caso de las sucursales de <strong>Czarina o Sanry’s </strong>(en el centro comercial Greenbelt 1 en Makati tienes una sucursal). Aun así, ten en cuenta que ya solo el recorrido en taxi puede suponer esta diferencia en el tipo de cambio. Por ello, solo te recomendamos cambiar dinero en estos lugares si vas a <a href="https://www.viajarporfilipinas.com/dormir-manila-filipinas/" target="_blank" rel="noopener noreferrer"><strong>dormir en Manila</strong></a> cerca de ellos o si tienes pensado cambiar una cantidad de dinero muy muy grande.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Donde_cambiar_dinero_en_Cebu"></span><span style="color: #33cccc;">2. Dónde cambiar dinero en Cebu</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Otro de los puntos de llegada de los viajeros que llegan al país es el Aeropuerto de Cebu. En él encontrarás algunas oficinas de cambio de divisas; sin embargo, <strong>no te aconsejamos cambiar dinero en el Aeropuerto de Cebu</strong>, el tipo de cambio suele ser pésimo.</p>
+<p style="text-align: justify;">Así, para gestionar el dinero en Filipinas llegando desde Cebu, nuestro consejo es que te dirijas a las casas de cambio que normalmente se sitúan en estos centros comerciales. Aquí te recomendamos lugares <strong>donde cambiar dinero en Cebu</strong> que nosotros usamos:</p>
+<ul style="text-align: justify;">
+<li style="list-style-type: none;">
+<ul style="text-align: justify;">
+<li><strong>Ayala Mall</strong> (ubicada junto al supermercado Rustans): recomendable si haces noche en Cebu. Tienes opciones para comer bien y,  justo enfrente, un par de cajeros sin comisión en los que también puedes sacar dinero sin comisión. El de <strong>HSBC</strong> permite extraer 50.000 pesos sin comisiones locales.</li>
+<li><strong>Raintree Mall:</strong> hay una casa de cambio llamada ALCO Foreing Exchange que, a día de hoy (2025), ofrece de los mejores tipos de cambio de la ciudad. Abre de lunes a viernes de 8:30 a 12:00 y de 12:30 a 16:00. Los sábados de 8:30 a 12:00 y de 12:30 a 14:00.</li>
+<li><strong>Marina Mall</strong> en Mactan: aconsejable si haces noche cerca del aeropuerto o si vas a dirigirte a otros puntos de Cebu, pues pedirle a tu taxi o <em>transfer</em> que haga parada aquí antes de continuar.</li>
+<li><strong>SM City</strong>: aconsejable si te diriges hacia el puerto de Cebu.</li>
+<li><strong>Pier 1</strong> del puerto: hay una casa de cambio. El tipo de cambio es ligeramente superior al del aeropuerto, pero peor que en los anteriores lugares.</li>
+<li style="text-align: justify;"><strong>Drop-By Foreign Exchange</strong>: situado en la zona de Fuente Osmeña, dan muy buen tipo de cambio.</li>
+</ul>
+</li>
+</ul>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/2/embed?mid=1yGYIrLFA1vaTbXW9W5QlCG_KmcXBzgCf"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/2/embed?mid=1yGYIrLFA1vaTbXW9W5QlCG_KmcXBzgCf" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Donde_cambiar_dinero_en_Filipinas"></span><span style="color: #33cccc;">3. Dónde cambiar dinero en Filipinas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En el caso de que necesites cambiar dinero en otros lugares de Filipinas, que no cunda el pánico. Busca en GoogleMaps alguna <strong>Palawan Pawnshop</strong> (como te decíamos, son unas pequeñas casas en las que los filipinos reciben dinero de sus familiares que viven en el extranjero), un <strong>Western Union</strong> o un banco local (BPI, Metrobank…). La mayoría de ellos aceptan dólares y euros y el tipo de cambio, especialmente en los bancos locales, no suele ser para nada malo.</p>
+<p style="text-align: justify;">Además, aquí puedes usar también la app de <a href="https://remitly.tod8mp.net/c/1436363/2043894/10408" target="_blank" rel="nofollow noopener">Remitly</a>, como te contamos <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener">aquí con 10€ de bienvenida</a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5888" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="oficinas de cambio en filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5888" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13.jpg" alt="oficinas de cambio en filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-13-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cambiar_dinero_con_Remitly_o_sacar_dinero_en_las_casas_de_cambio"></span><span style="color: #33cccc;">Cambiar dinero con Remitly o sacar dinero en las casas de cambio</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como te contábamos arriba, aunque sea un poquito difícil entender el concepto porque en Europa no estamos acostumbrados, en Filipinas tienes un montón de <em>pawnshops</em>, casas de empeño o para recibir/enviar dinero desde/a otros países. Esto es así porque los filipinos tienen muchos familiares viviendo en el extranjero que mandan dinero de vuelta a su país y necesitan una forma práctica y barata de recibirlo. Hay muchas empresas que se dedican a esto, pero las más conocidas son Palawan Pawnshop, Cebuana Lhuillier, M.L. Lhuillier, LBC y RD Pawnshop, que tienen sucursales repartidas hasta en los rincones más recónditos de filipinas. Puedes ver su aspecto en la foto de abajo.</p>
+<p style="text-align: justify;">Si te has quedado sin efectivo y quieres minimizar o, incluso, evitar las comisiones de retirada de los cajeros (unos 250 pesos), esto funciona de tal manera:</p>
+<ol>
+<li style="text-align: justify;">Abres la web de Remitly desde <strong><a href="https://remitly.tod8mp.net/c/1436363/2043894/10408" target="_blank" rel="nofollow noopener">este enlace</a></strong>.</li>
+<li style="text-align: justify;">Indica que quieres enviar dinero desde España y recogerlo en Filipinas.</li>
+<li style="text-align: justify;">Pon la cantidad de euros que quieres cambiar a pesos filipinos, verás que se te aplica un tipo de cambio espectacular, casi al de mercado.</li>
+<li style="text-align: justify;">Indica <strong>«retiro de efectivo»</strong> y en método de pago si es tarjeta de débito o de crédito. Si es tu primera vez, no tendrás que pagar los 2,99€ de la comisión de retirada. Además, gracias a entrar desde nuestro enlace, <strong>te darán 10€ de bienvenida</strong>. Es decir, que si quieres cambiar 200€, solo pagarás 190€. Ten en cuenta que la cantidad mínima para que te apliquen la promoción son 100€ y la máxima 1.000€.</li>
+<li style="text-align: justify;">Selecciona dónde quieres recoger tu dinero, si en las pawnshops (hay muchas) o en una sucursal bancaria. Nosotros aconsejamos las primeras porque hay más y tienen horarios de apertura más amplios. No tienes que seleccionar ninguna en particular, ni siquiera el sitio/isla. Puedes recogerla cuando tú quieras y donde quieras, ya que tienes hasta 2 meses.</li>
+<li style="text-align: justify;">Después indica el nombre de quien vaya a recoger el dinero, la ciudad en la que vive (Madrid, Barcelona, etc.), un número de teléfono para recibir notificaciones y sus datos de contacto.</li>
+<li style="text-align: justify;">Haz el pago con la tarjeta que quieras.</li>
+<li style="text-align: justify;">En cuestión de unos minutos (es casi instantáneo), podrás ir a cualquiera de las sucursales de las pawnshop y recoger tu dinero una vez que te identifiques en ella y des el código que habrás recibido al hacer la operación. ¡Así de fácil!</li>
+</ol>
+<p style="text-align: justify;">En resumen, que <strong>podrás enviarte dinero a ti mismo</strong>, recogerlo en una de estas tiendas casi al instante y que te hagan un <strong>tipo de cambio casi de mercado</strong>. Además, con <a href="https://remitly.tod8mp.net/c/1436363/2043894/10408" target="_blank" rel="nofollow noopener"><strong>NUESTRO ENLACE</strong></a>, al ser tu primera vez, no tendrás que pagar ninguna comisión y encima te llevas 10€ de bienvenida.</p>
+<p style="text-align: justify;">Si ya has usado Remitly en alguna ocasión, tendrás que pagar 2,99€ cada vez que lo utilices. Sin embargo, puesto que puedes sacar grandes cantidades de dinero, es una opción que sale más a cuenta que usar los cajeros, que cobran la misma comisión por retiradas que, salvo los de HSBC que nada más tienes en Cebú y Manila (en el aeropuerto de Manila no hay, solo en el de Cebú) no superan los 20.000 pesos (aproximadamente 300€).</p>
+<p style="text-align: center;">Te explicamos más al respecto en nuestra guía sobre <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener">Remitly en Filipinas</a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14025" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20462%20500'%3E%3C/svg%3E" alt="panwshop cambiar dinero Filipinas" width="462" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17.jpg 462w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17-277x300.jpg 277w" data-lazy-sizes="(max-width: 462px) 100vw, 462px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14025" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17.jpg" alt="panwshop cambiar dinero Filipinas" width="462" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17.jpg 462w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-17-277x300.jpg 277w" sizes="(max-width: 462px) 100vw, 462px" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Pagar_con_tarjeta_en_Filipinas"></span><span style="color: #33cccc;">Pagar con tarjeta en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Vale, todo lo anterior está muy bien, ¿pero no podré evitar tener que estar con efectivo todo el rato pagando con tarjeta? Desgraciadamente, en Filipinas eso no es posible y vas a tener que contar con <em>cash</em> en todo momento.</p>
+<p style="text-align: justify;">Por desgracia, <strong>solo podrás pagar con tarjeta en Filipinas en las grandes ciudades</strong> (Manila y Cebu, básicamente) y en algunos comercios, restaurantes u hoteles de más nivel de sitios turísticos como Boracay o El Nido. El pago con tarjeta todavía no está muy extendido.</p>
+<p style="text-align: justify;">Aun así, ten en cuenta que fuera de Manila o Cebu, muchos lugares como hoteles y centros de buceo cobran una <strong>comisión por pagar con tarjeta</strong>, que suele ser del 3% al 5% sobre el importe a pagar.</p>
+<p style="text-align: justify;">Considera que muchos bancos españoles (y, en general, extranjeros) cobran comisiones por pagar en moneda que no sea euro. En el último apartado de este artículo te <strong>recomendamos tarjetas para evitar estos pagos</strong> innecesarios y, para ello, <strong>elige siempre pagar en moneda local</strong>.</p>
+<blockquote><p>En Filipinas, todavía hay muchos TPV que no tienen para usar la tecnología <em>contacless</em>. Esto es, vas a necesitar la tarjeta física para pagar en muchos casos.</p></blockquote>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Sacar_dinero_en_los_cajeros_automaticos_en_Filipinas_las_comisiones"></span><span style="color: #33cccc;">Sacar dinero en los cajeros automáticos en Filipinas: las comisiones </span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si estás viajando ya desde hace tiempo y no tienes dinero para cambiar, se te ha acabado el que ya tenías o, por lo que sea, no quieres usar la opción de Remitly que te decíamos arriba, no te preocupes, <strong>encontrarás cajeros automáticos en Filipinas por muchos lugares del país</strong>. Sin embargo, tenemos un aviso que darte: <strong>la mayoría de ellos cobran comisiones</strong> de 250 pesos (entre 3€ y 4€) por retirada.</p>
+<p style="text-align: justify;">Esta comisión es una comisión local, es decir, que te aplica el banco filipino. Además, tendrás que ver con tu banco emisor de la tarjeta qué tipo de comisiones te van a aplicar ellos por sacar en un cajero fuera de tu país.</p>
+<p style="text-align: justify;">Por otro lado, <strong>muchos cajeros automáticos en Filipinas solo dejan extraer 10.000 o 20.000 pesos </strong>cada vez (160€ &#8211; 320€). Solo los del BPI dejan 20.000. Lo que significa que sacar dinero en Filipinas en un cajero automático puede salir bastante caro en un viaje de 15 o 20 días.</p>
+<blockquote>
+<p style="text-align: justify;">Los únicos <strong>cajeros automáticos o ATM que no aplican comisiones en Filipinas</strong> son los del banco <strong>HSBC</strong>. Además, estos cajeros dejan retirar importes mayores, incluso hasta 50.000 pesos de una vez. Sin embargo, solo podréis encontrar estos cajeros en Manila y Cebu y en muy pocos lugares de ambas ciudades. En Manila no hay en el aeropuerto, en el de Cebú sí.</p>
+</blockquote>
+<p style="text-align: justify;">Por ello, nosotros os recomendamos buscar estos cajeros siempre que podáis en el caso de que no tengáis dinero en efectivo para cambiar y sacar siempre la máxima cantidad posible.</p>
+<p style="text-align: justify;">Hay todavía muchas islas y lugares en Filipinas (principalmente los no turísticos) en los que <strong>no hay cajeros automáticos o que los que hay se estropean o se quedan sin dinero en fines de semana o festivos </strong>(como es el caso de los de General Luna en Siargao). Es por eso que nosotros te aconsejamos <strong>llevar siempre efectivo suficiente</strong> encima.</p>
+<p style="text-align: justify;">Además, es <span style="color: #33cccc;"><strong>INDISPENSABLE</strong> </span>que, si estás pensando en viajar a Filipinas, <strong>busques un banco o una tarjeta que no te aplique grandes comisiones</strong> por sacar dinero en Filipinas o por pagar con ella. Tienes que considerar que muchos bancos españoles también aplican un porcentaje de comisión sobre aquellos pagos con tarjeta que hagas en moneda diferente a euro, en algunos casos, por encima del 3% del importe.</p>
+<p style="text-align: justify;">Por otro lado, el contar con una tarjeta que no te aplique comisiones es <strong>perfecto mientras planificas tu viaje</strong>, ya que así podrás ir reservando hoteles y vuelos en pesos filipinos sin que te apliquen una riñonada por la conversión a euro.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.viajarporfilipinas.com/mejor-tarjeta-viajar-filipinas/" target="_blank" rel="noopener noreferrer">Descubre la mejor tarjeta para viajar a Filipinas aquí</a></p>
+<p style="text-align: justify;">En el caso de que quieras minimizar estas comisiones, sigue leyendo, que te contamos cómo hacemos nosotros con el <strong>dinero en Filipinas</strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5889" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="sacar del cajero en Filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5889" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14.jpg" alt="sacar del cajero en Filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-en-filipinas-14-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Las_mejores_tarjetas_de_debito_y_credito_para_sacar_dinero_y_pagar_en_Filipinas"></span><span style="color: #33cccc;">Las mejores tarjetas de débito y crédito para sacar dinero y pagar en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como te hemos contado, llevamos viviendo y viajando por Filipinas desde 2010, así que de esto sabemos un rato.</p>
+<p style="text-align: justify;">En estos momentos, nosotros solemos llevar siempre una <strong>cantidad de euros grande</strong> cuando viajamos desde España (unos 300€), usamos Remitly a menudo y contamos con 4 tarjetas diferentes que nos hacen ahorrarnos muchas comisiones bancarias. Creemos que es muy importante <strong>llevar al menos 2 tarjetas </strong>(mejor 3 si vas a estar una temporada) para viajar a Filipinas. No solo porque corres el peligro de que alguna se te pierda o te la cancelen por algún movimiento extraño, sino porque hay veces que (por razones X) no funcionan en determinados cajeros.</p>
+<p style="text-align: justify;">Por todo ello, nosotros vamos a hablarte de las que pensamos, desde nuestra experiencia, que son las <strong>mejores tarjetas para sacar dinero en Filipinas </strong>y pagar:</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Tarjeta_Revolut_para_viajar_a_Filipinas"></span><span style="color: #33cccc;">1. Tarjeta Revolut para viajar a Filipinas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Creemos que no hace falta presentación porque hace muchísimos años que lo «peta» entre los viajeros, pero la <a href="https://revolut.ngih.net/c/1436363/1576621/9626" target="_blank" rel="nofollow noopener">tarjeta de Revolut</a> es una <strong>tarjeta Mastercard de débito y la que nosotros usamos para viajar desde hace 10 años</strong>. Esta, con el plan estándar, deja retirar <strong>200€ al mes</strong> sin comisiones, aplicando el tipo de cambio muy competitivo (los fines de semana, al estar los mercados cerrados, cobra un 1% más). Después de esos 200€, te aplican solo un 2% de comisión.</p>
+<p style="text-align: justify;">No solo eso, la tarjeta está asociada a tu propio número de cuenta con IBAN español y cuentas con una moderna app bastante fácil de utilizar. Con Revolut recibes <strong>notificaciones</strong> al instante cada vez que pagas o sacas dinero, las transferencias nacionales e internacionales son gratuitas y, algo que nos gusta mucho, <strong>puedes recargarla al instante con otra tarjeta</strong>, como si simplemente estuvieses pagando online. Por supuesto, si es más cómodo, también puedes meterle dinero con una transferencia o con Google Pay o Apple Pay.</p>
+<p style="text-align: justify;">Es una buena tarjeta si piensas hacer muchas compras, pues, con el plan estándar, podrás hacer<strong> pagos de hasta 1.000€ al mes en moneda distinta a euro sin ningún tipo de comisión</strong>. A partir de ahí, solo cobran el 1%, lo mismo que si pagas en fin de semana. Esto, como decimos, es <strong>CRUCIAL</strong> cuando estás haciendo reservas de vuelos y hoteles, ya que te cobrarán en peso filipino y con Revolut no incurrirás en comisiones que sí aplican otros bancos.</p>
+<blockquote>
+<p style="text-align: justify;">Nosotros llevamos Revolut y todas las que hablamos en este artículo y así tenemos un límite de extracciones superior y una de «repuesto», por si tenemos problemas. Además, por ser sacártela desde <a href="https://revolut.ngih.net/c/1436363/1576621/9626" target="_blank" rel="nofollow noopener"><strong>ESTE ENLACE</strong></a>, tienes <strong>10€ de bienvenida</strong>.</p>
+</blockquote>
+<p style="text-align: justify;"><strong>¿Qué cosas buenas tiene la tarjeta Revolut y por qué a nosotros nos va bien tanto para Filipinas como para otros países?</strong> Aquí te contamos:</p>
+<ul>
+<li style="text-align: justify;">No tiene <strong>gastos</strong> de emisión ni de mantenimiento (sin comisión de gestión y mantenimiento de cuenta, 0% TAE 0% TIN).</li>
+<li style="text-align: justify;">No hay permanencia.</li>
+<li style="text-align: justify;">Con el plan estándar, puedes pagar con la tarjeta en el extranjero hasta 1.000€ al mes sin comisiones. Tras esa cifra, la comisión es de 1% sobre el importe. Ojo porque en fin de semana también se cobra un 1%, al estar cerrados los mercados.</li>
+<li style="text-align: justify;"><strong>Puedes sacar 200€ al mes en cajeros de todo el mundo sin comisión</strong>, después de 200€ pagas el 2% sobre el importe.</li>
+<li style="text-align: justify;">Aplican un <strong>tipo de cambio muy competitivo </strong>(de lunes a viernes). De 10:00 de la noche del viernes a las 23:00 del domingo (hora española) se aplica una comisión del 1%.</li>
+<li style="text-align: justify;">Es una tarjeta <strong>Mastecard</strong>.</li>
+<li style="text-align: justify;">Tienen una <strong><em>app</em></strong> muy intuitiva y fácil de utilizar.</li>
+<li>Puedes hacer <strong>transferencias</strong> gratuitas dentro de la Unión Europea y a bancos filipinos con una comisión nimia, lo cual es genial porque algunos centros de buceo y agencias de tours te piden una señal y con la banca convencional sería un pastón.</li>
+<li style="text-align: justify;">Recibimos notificaciones al instante, lo que nos da seguridad por si en algún momento hacen algún pago fraudulento con ella.</li>
+<li style="text-align: justify;">Puedes <strong>crearte tarjetas virtuales</strong> que puedes «apagar» o cancelar cuando quieras, lo que es genial para hacer pagos online si no te fías demasiado, ya que podrás pagar y que luego no te intenten hacer ningún cobro extra. Estas tarjetas también se pueden usar en las <em>wallets</em> de tu teléfono y pagar con contactless (aunque ya sabes que en Filipinas esto no se lleva demasiado). La tarjeta virtual la creas nada más hacerte la cuenta, por lo que puedes empezar a pagar tus hoteles y vuelos rápidamente.</li>
+</ul>
+<p style="text-align: justify;">Ojo, la Revolut funciona en Filipinas bien, pero no en los cajeros de <strong>Euronet</strong>. Parece que debido a las comisiones que aplican estos, no les permiten operar. <em>Don&#8217;t worry</em>, nosotros nunca hemos sido fan de ellos porque siempre te intentan hacer el lío para aplicarte su desventajosísimo tipo de cambio, que fácilmente supone clavadas de 30€ por retirada. Simplemente busca un cajero de BPI, Metrobank, HSBC o PNB y podrás sacar del cajero con Revolut en Filipinas con tu tarjeta. Los tienes casi en cualquier lado, son los bancos filipinos.</p>
+<p style="text-align: justify;">Los datos anteriores son, como te decíamos, para la cuenta estándar. Si, como nosotros, viajas mucho, una buenísima opción es pasarte a las <strong>opciones Premium o Metal</strong>, que, entre otras ventajas, te permite retirar 400€ y 600€, respectivamente, sin comisiones.</p>
+<p style="text-align: center;">Pídela desde <a href="https://revolut.ngih.net/c/1436363/1576621/9626" target="_blank" rel="nofollow noopener"><strong>este enlace</strong></a> y recibirás <strong>10€ de bienvenida</strong></p>
+<p style="text-align: justify;">Como lees, por venir de nuestra parte, <strong>recibirás 10€ de bienvenida</strong> por ser nuevo usuario al pedir tu tarjeta física o virtual y hacer tu primera compra de más de 10€. Para eso, solo tienes que hacer una transacción mínima de 1€ y recibirás los 10€ de bienvenida en un plazo máximo de 3 días. De esta forma, puedes compensar los costes del envío de la tarjeta. Solo debes considerar que para abrir la cuenta en Revolut tienes que ser mayor de 18 años. Lee también los <a href="https://www.revolut.com/en-ES/legal/" target="_blank" rel="nofollow noopener">términos y condiciones de uso de Revolut</a>.</p>
+<p><a href="https://revolut.ngih.net/c/1436363/1576621/9626"><img decoding="async" class="aligncenter size-full wp-image-14511" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20258'%3E%3C/svg%3E" alt="pagos filipinas tarjeta" width="1000" height="258" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44-980x253.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44-480x124.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-14511" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44.jpg" alt="pagos filipinas tarjeta" width="1000" height="258" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44-980x253.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-44-480x124.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></a></p>
+<p style="text-align: center;"><em>*Esta promo está sujeta a retención fiscal. Los servicios son prestados por Revolut Bank</em><br />
+<em>UAB, Sucursal en España (Banco de España código: 1583). No olvides que hay Términos y</em><br />
+<em>Condiciones, así que si quieres saber más, échale un vistazo <a href="https://www.revolut.com/es-ES/legal/revolut-partner-promotion-freetrial-topup/" target="_blank" rel="nofollow noopener">aquí</a></em></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Cuenta_y_tarjeta_N26_para_viajar_a_Filipinas"></span><span style="color: #33cccc;">2. Cuenta y tarjeta N26 para viajar a Filipinas</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Esta cuenta nos gusta un poco menos, pero que igualmente la tenemos y nos parece genial para quienes viajamos mucho.</p>
+<p style="text-align: justify;">La apertura de la <a href="http://n26-eu.c2nwa3.net/75qbAg" target="_blank" rel="nofollow noopener"><strong>cuenta de N26 y su tarjeta</strong></a> son totalmente gratuitas. Abrirla es súper fácil, se hace todo online y la tendrás lista en apenas 5 minutos. Lo más interesante es que tienes 3 retiradas gratis en cualquier cajero del mundo. A partir de la 4ª retirada, te cobran 2€ de comisión por cada extracción.</p>
+<p style="text-align: justify;">Por contraposición a la anterior, N26 aplica una comisión de <strong>1,7% en retiradas de efectivo</strong> diferente a euro, como sería el caso del peso filipino. Como ves, es una comisión un poco más alta que las anteriores, pero sigue siendo inferior a la que aplican otros bancos españoles.</p>
+<p style="text-align: justify;">Los <strong>pagos con tarjeta</strong> en divisa diferente a euro no conllevan ninguna comisión. Se aplica el tipo de cambio oficial de Mastercard.</p>
+<p style="text-align: justify;">La app es intuitiva (aunque más lenta que la de Revolut) y también te permite manejar tu tarjeta desde ella. Es decir, la puedes bloquear cuando no la usas y puedes aceptar los pagos sin tener que poner tu tarjeta SIM española.</p>
+<p style="text-align: justify;">¿Lo malo? Ahora <strong>cobran 10€ por el envío de la tarjeta</strong> y que hay un tope para hacer recargas instantáneas de dinero.</p>
+<p style="text-align: justify;">Existe una variante de este banco que es la que más te interesa si acostumbras a viajar mucho: la <strong>cuenta y la tarjeta N26 YOU</strong>. Es una tarjeta de pago (9,90€ al mes) pero que no aplica ninguna comisión en retiradas de efectivo (hasta 5 al mes) ni compras y que incluye los siguientes seguros:</p>
+<ul>
+<li style="text-align: justify;">Seguro de viaje y anulación (ojo, hasta 90 días consecutivos de viaje)</li>
+<li style="text-align: justify;">Seguro contra robo del móvil</li>
+<li style="text-align: justify;">Seguro contra robo en cajero</li>
+</ul>
+<p style="text-align: center;">Más información sobre la <a href="http://n26-eu.c2nwa3.net/75qbAg" target="_blank" rel="nofollow noopener">N26 aquí haciendo clic AQUÍ</a>.</p>
+<p style="text-align: center;"><img decoding="async" class="aligncenter size-full wp-image-10854" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10854" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16.jpg" alt="" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/07/dinero-filipinas-16-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: center;">Por cierto, antes usábamos VIVID, pero en 2022 cambiaron las condiciones y nos cerramos la cuenta porque ya no nos interesaba. Lo mismo nos pasó con EVO y BNEXT. Es, por ello, que ya no las recomendamos.</p>
+<p style="text-align: justify;">La que nos va mejor de las dos es <a href="https://revolut.ngih.net/c/1436363/1576621/9626" target="_blank" rel="nofollow noopener"><strong>Revolut</strong></a> (que usamos en nuestro día a día en España y en otros países), pero ten en cuenta que la cuenta estándar solo te permite retirar 200€ sin comisiones. Tampoco será mayor problema si haces lo que te aconsejamos y traes bastante efectivo y lo cambias, además de usar Remitly (que es un trucazo). Siempre viene genial Revolut para hacer pagos con tarjeta, ya sea en el país o para reservar hoteles y vuelos.</p>
+<p style="text-align: justify;">Recuerda que siempre que pagues con tarjeta o saques dinero, no aceptes que el banco te haga ninguna conversión porque entonces estarás pagando comisiones encubiertas. Por eso, aconsejamos evitar en lo posible los cajeros de Euronet, que siempre te intentan hacer el lío.</p>
+<hr />
+<h2><span class="ez-toc-section" id="En_resumen_como_manejarte_con_el_dinero_en_Filipinas"></span><span style="color: #33cccc;">En resumen, cómo manejarte con el dinero en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ya, sabemos que es mucha información, por eso queremos hacer un pequeño resumen y contarte qué es lo que haríamos nosotros de cara a llevar dinero a Filipinas. Por orden de preferencia:</p>
+<ol>
+<li style="text-align: justify;"><strong>Llevar una buena cantidad de efectivo</strong> (según el tiempo y tipo de viaje, pero 300€ suele estar bien) y cambiar en el aeropuerto de Manila o en una de las casas de cambio que te hemos recomendado.</li>
+<li style="text-align: justify;">Cuando te quedes sin dinero, <strong>usar <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener">Remitly con 10€ de bienvenida</a> para mandarte dinero y recogerlo en cualquier <em>pawnshop</em> de Filipinas.</strong></li>
+<li style="text-align: justify;">Tener una <strong>tarjeta que no te cobre comisiones</strong> por pagar en pesos y minimice las comisiones del cajero. Esto es importantísimo en la fase de preparación del viaje, ya que así podrás hacer reservas de transportes y alojamientos en pesos filipinos sin pagar comisiones.</li>
+<li style="text-align: justify;">Si tienes que sacar del cajero y estás en Manila o Cebú, buscar un HSBC. En caso de no estar en dichas ciudades, buscar uno de BPI (color rojo), que te permite sacar 20.000 pesos de una vez.</li>
+</ol>
+<hr />
+<h2><span class="ez-toc-section" id="Preguntas_frecuentes_que_los_viajeros_nos_hacen_sobre_el_dinero_en_Filipinas"></span><span style="color: #33cccc;">Preguntas frecuentes que los viajeros nos hacen sobre el dinero en Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para resumir un poquitín lo mucho que te hemos contado, aquí respondemos a las preguntas más frecuentes que soléis tener después de tantos años por aquí:</p>
+<p style="text-align: justify;"><em><strong>¿Cuál es la moneda de Filipinas?</strong></em></p>
+<p style="text-align: justify;">El peso filipino, PHP. Su billete de valor más alto en estos momentos es el de 1.000 pesos.</p>
+<p style="text-align: justify;"><em><strong>¿Como se paga en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Aunque el pago con tarjeta está extendido en sitios como Manila y Cebú, tendrás que tirar de efectivo en casi todos lados. Es cierto que en lugares turísticos (restaurantes u hoteles de mayor nivel) ya se acepta el pago con tarjetas, pero todavía no es lo habitual. Hazte a la idea de que necesitarás llevar efectivo encima y recomendamos que sea bastante porque es normal que los cajeros o no funcionen o se queden sin dinero.</p>
+<p style="text-align: justify;"><em><strong>¿Cuánto dinero llevar en efectivo a Filipinas?</strong></em></p>
+<p style="text-align: justify;">Esto depende muchísimo de cuántos días viajes, del tipo de viaje que vayas a hacer y de lo que hayas pagado con antelación. Es decir, no es lo mismo venir a Filipinas con hoteles y transportes pagados, que tener que abonar todo in situ, ni tener en mente comer en carenderias por 2-3€ que en restaurantes de mayor nivel por 6-10€ o dormir en hostales por 7-10€ por personas que en hoteles de precio medio por unos 20€. De igual forma, hay sitios más caros como El Nido, Boracay o Siargao y no te gastarás lo mismo haciendo muchos island hoppings privados y buceos que moderando el presupuesto. Con todo ello, nosotros aconsejamos traer unos 300€ por persona para cambiar en el aeropuerto o casas de cambio, tirar de Remitly para enviarte dinero y una o dos de las tarjetas mencionadas para emergencias y para las reservas que tengas que hacer previamente.</p>
+<p><em><strong>¿Y es aconsejable viajar con tanto dinero encima?</strong></em></p>
+<p style="text-align: justify;">A ninguno nos gusta, eso está claro, pero es lo que nosotros hacemos y en 15 años que llevamos explorando el país nunca nos han robado. Obviamente tenemos precaución y siempre lo llevamos con nosotros, pero de verdad que Filipinas es un país seguro.</p>
+<p style="text-align: justify;"><em><strong>¿Se puede cambiar de peso a euro en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Es decir, ¿si me sobran pesos filipinos puedo pasarlos a euros? Claro que sí. En el aeropuerto de Manila podrás volverlos a cambiar y a un tipo de cambio bastante justo.</p>
+<p style="text-align: justify;"><em><strong>¿Cuánto cuesta una cerveza en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Pregunta, sin duda, importante. Si la compras en una tienda, los precios rondan los 60-70 pesos filipinos. Si te la tomas en un restaurante/bar, es habitual verla alrededor de los 90-120 pesos.</p>
+<p style="text-align: justify;"><em><strong>¿Qué cajero no cobra comisiones en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Los únicos cajeros que no cobran comisiones son los de HSBC, pero solo se pueden encontrar en Manila y en Cebú.</p>
+<p style="text-align: justify;"><em><strong>¿Se puede sacar dinero o pagar con tarjeta contactless en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Por desgracia, casi ningún cajero tiene operativa contactless, así que necesitarás tarjeta física. Para pagar con tarjeta cada vez se ven más, pero todavía hay muchos que no tienen.</p>
+<p><em><strong>¿Cómo cambiar dinero sin comisiones en Filipinas?</strong></em></p>
+<p style="text-align: justify;">En el aeropuerto de Manila dan un cambio estupendo y es una opción cómoda. Otra alternativa es usar <a title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" target="_blank" rel="noopener">Remitly</a>, una empresa con la que te puedes mandar dinero a casi cualquier lugar de Filipinas con buen tipo de cambio y sin apenas comisiones.</p>
+<p style="text-align: justify;"><em><strong>¿Funciona Revolut en Filipinas?</strong></em></p>
+<p style="text-align: justify;">Sí, funciona, nosotros la hemos probado ampliamente en los últimos 8 años y es nuestra compañera de viajes no solo en Filipinas. Da problemas con los cajeros de Euronet, pero no con los demás. Recuerda que haciendo la cuenta con <a href="https://revolut.ngih.net/c/1436363/1576621/9626" target="_blank" rel="nofollow noopener"><strong>nuestro enlace</strong></a> te dan 10€ de bienvenida.</p>
+<hr />
+<p style="text-align: justify;">*Código ético: en este artículo encontrarás algunos enlaces de afiliación. Gracias a ellos tú te beneficias de descuentos y nosotros obtenemos una pequeña comisión que es lo que nos ayuda a trabajar diariamente en esta página. ¡Gracias por tu apoyo!</p>
+<p><em style="text-align: center;">¿Tienes alguna duda sobre la gestión del dinero en Filipinas? ¿Cómo sueles hacerlo tú? ¡Cuéntanos en comentarios!</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">339 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/comment-page-14/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56777">
+		<article id="comment-56777" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Jose</span>				<span class="comment_date">
+					el 10/05/2025 a las 07:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola veo que no actualizais la web poniendo que hay un cajero hbsc en el aeropuerto de cebu en llegadas. Por que?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56777' data-commentid="56777" data-postid="666" data-belowelement="comment-56777" data-respondelement="respond" data-replyto="Responder a Jose" aria-label='Responder a Jose'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56787">
+		<article id="comment-56787" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/05/2025 a las 09:59				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Jose, está mencionado 2 veces en este mismo artículo si te fijas bien. De cualquier forma, si no lo hubiésemos actualizado, tampoco somos máquinas. Lo que no vemos es tu respuesta al email que te enviamos con información hace 3 días. No entendemos por qué esta insistencia. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55894">
+		<article id="comment-55894" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ana</span>				<span class="comment_date">
+					el 16/04/2025 a las 18:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! GRACIAS POR VUESTRO CONTENIDO!!</p>
+<p>Una pregunta ¿sería buena idea cambiar 300e en efectivo en el aeropuerto de Manila y luego cambiar 300e en efectivo en alguna Pawnshop de El nido? Es por no llevar encima casi 40.000 php  (600e aprox.) encima ya que serían muchos billetes y si llevamos unos 20.000 php (300e aprox.) y unos 300 euros sería menos cantidad de billetes. </p>
+<p>Muchas gracias por adelantado!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55894' data-commentid="55894" data-postid="666" data-belowelement="comment-55894" data-respondelement="respond" data-replyto="Responder a Ana" aria-label='Responder a Ana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55895">
+		<article id="comment-55895" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 16/04/2025 a las 18:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ana, muchas gracias : ) lo mejor es que cambies 300 en el aeropuerto y lo otro que necesites lo saques con Remitly en una pawnshop. No llevas tanto dinero encima y, ademas, el tipo de cambio es mejor. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-55553">
+		<article id="comment-55553" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Cristina Alquegui</span>				<span class="comment_date">
+					el 10/04/2025 a las 10:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas,</p>
+<p>Quería haceros una consulta. Llegaremos a Cebú pasadas las 22 PM. Nos alojaremos al lado de aeropuerto porque a la mañana siguiente queremos ir a Siargao a las 7AM. La consulta es si «Marina Mall» estará abierto a esa hora de noche para cambiar cash. O si habrá otra alternativa cerca del aeropuerto a esas horas &#8230;</p>
+<p>Muchísimas gracias por toda la información!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55553' data-commentid="55553" data-postid="666" data-belowelement="comment-55553" data-respondelement="respond" data-replyto="Responder a Cristina Alquegui" aria-label='Responder a Cristina Alquegui'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55565">
+		<article id="comment-55565" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/04/2025 a las 13:54				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Cristina, no, tan tarde ya no, la verdad. No creemos que haya nada abierto más que las casas de cambio del aeropuerto. Quizás podrías cambiar lo justo y en Siargao usar Remitly. Un abrazo y gracias por leernos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55424">
+		<article id="comment-55424" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Chema</span>				<span class="comment_date">
+					el 07/04/2025 a las 10:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos dias,</p>
+<p>Yo llego el 1 de Mayo de madrugada a Manila y me gustaría saber si las casas de cambio abren 24h.</p>
+<p>Muchas gracias por vuestro trabajo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55424' data-commentid="55424" data-postid="666" data-belowelement="comment-55424" data-respondelement="respond" data-replyto="Responder a Chema" aria-label='Responder a Chema'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55427">
+		<article id="comment-55427" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/04/2025 a las 12:52				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Chema, sí, sí que abren 24 horas. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-55589">
+		<article id="comment-55589" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Chema</span>				<span class="comment_date">
+					el 11/04/2025 a las 08:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Y sabeis si hay que llevar el dinero en efectivo para cambiarlo alli? o se puede pagar con tarjeta?</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55605">
+		<article id="comment-55605" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 11/04/2025 a las 23:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>No, solo efectivo.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-54907">
+		<article id="comment-54907" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Toni</span>				<span class="comment_date">
+					el 27/03/2025 a las 08:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola soy Toni de Barcelona llegué a filipinas el 26 de marzo y vuelvo el 17 de abril me gustaría visitar 4 o 5 sitios chulos ( palawan, cebú… Me está costando encontrar vuelos para palawan, pensaba que serían más baratos, como es mejor comprar vuelos y reservar hoteles por booking?<br />
+Como me aconsejáis hacerlo.<br />
+Me ha encantado vuestra página, he flipado con la información que me enteré ayer que la teníais.<br />
+Felicidades !!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54907' data-commentid="54907" data-postid="666" data-belowelement="comment-54907" data-respondelement="respond" data-replyto="Responder a Toni" aria-label='Responder a Toni'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54911">
+		<article id="comment-54911" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/03/2025 a las 08:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Toni, ¡muchas gracias por tus palabras! La mejor forma de comprar vuelos es directamente en las páginas de las aerolíneas, pero, efectivamente, no son baratos y menos ahora que es temporada baja y que quieres comprar de aquí a nada. Si quieres, opta por destinos a los que te cueste más barato volar y deja Palawan para el final pero comprando los vuelos ya para que no te salga tan caro. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54822">
+		<article id="comment-54822" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Mónica</span>				<span class="comment_date">
+					el 25/03/2025 a las 15:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, gracia por tan interesante e importante información. Pienso viajar en noviembre -diciembre prox. un mes, desde Colombia. Podrías indicarme si es buena opción hospedarme en Makati,? o que me recomiendas, es la primera vez que viajo allí.<br />
+Gracias.<br />
+Abrazos.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54822' data-commentid="54822" data-postid="666" data-belowelement="comment-54822" data-respondelement="respond" data-replyto="Responder a Mónica" aria-label='Responder a Mónica'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54840">
+		<article id="comment-54840" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/03/2025 a las 23:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mónica, muchas gracias ti por leernos. Sí claro, Makati es la mejor opción cuando se trata de Manila y hablamos de ello en <a href="https://www.viajarporfilipinas.com/lub-d-manila-hotel/" title="Dormir en Lub d Makati, Manila" target="_blank" rel="noopener ugc">Dónde dormir en Manila</a>. Sin embargo, la capital es de «lo peor» del país. Si vienes a hacer turismo, lo suyo es que hicieras una ruta por islas más bonitas. Si quieres, échale un ojo a <a href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-20-dias/" title="Itinerario de viaje a Filipinas: 20 días por libre" target="_blank" rel="noopener ugc">Ruta de 20 días por Filipinas</a>. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-54324">
+		<article id="comment-54324" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Natalia</span>				<span class="comment_date">
+					el 16/03/2025 a las 18:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas tardes. Llegamos al aeropuerto de Cebú. Decís que una buena opción para cambiar dinero es el Centro Comercial SM city porque en el aeropuerto no hay buen tipo de cambio. He leído que este Centro Comercial es Gigante. ¿Sabéis qué banco o casa de cambio hay dentro para hacwer el cambio para buscarlo en el directorio? Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54324' data-commentid="54324" data-postid="666" data-belowelement="comment-54324" data-respondelement="respond" data-replyto="Responder a Natalia" aria-label='Responder a Natalia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54342">
+		<article id="comment-54342" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/03/2025 a las 02:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Natalia, se llama SM Currency Exchange, lo tienes en Google Maps. El cambio tiende a ser bueno, pero son algo lentos. Nuestro consejo es que tires de <a href="https://www.viajarporfilipinas.com/retirar-dinero-remitly/" title="Cambia euros a pesos filipinos con Remitly: 10€ gratis y mejor tipo de cambio" target="_blank" rel="noopener ugc">Remitly</a> en cualquier panwshop. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54077">
+		<article id="comment-54077" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Manuela</span>				<span class="comment_date">
+					el 11/03/2025 a las 16:52				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos que tal? Estamos pensando que nos va a sobrar pesos, sabeis si para obtener dólares conviene hacerlo también en el aeropuerto de Manila? es decir, que el cambio también es bueno para vender PHP. Ya que hago escala allí, viajo desde puerto princesa. Gracias por toda la información!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54077' data-commentid="54077" data-postid="666" data-belowelement="comment-54077" data-respondelement="respond" data-replyto="Responder a Manuela" aria-label='Responder a Manuela'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54098">
+		<article id="comment-54098" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 11/03/2025 a las 23:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Manuela, muy bien, gracias : ) sí, suele ser bastante bueno en comparación con otros lados. Es mejor que no te quedes con pesos filipinos porque te va a costar mucho cambiarlo en otras zonas del mundo. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/dinero-en-filipinas/comment-page-14/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/dinero-en-filipinas/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='666' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="baa3b9174d" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="98"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"666","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

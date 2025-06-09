@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Balabac: island hopping de ensueño en Filipinas 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="El island hopping de Balabac es uno de los más épicos de Filipinas. Te contamos cómo hacerlo, nuestra experiencia y todos los consejos necesarios." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/balabac-island-hopping/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Balabac: island hopping de ensueño en Filipinas 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="El island hopping de Balabac es uno de los más épicos de Filipinas. Te contamos cómo hacerlo, nuestra experiencia y todos los consejos necesarios." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/balabac-island-hopping/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2023-08-17T14:03:29+00:00" />
+	<meta property="article:modified_time" content="2025-04-15T16:59:55+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="32 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Balabac: island hopping de ensueño en Filipinas","datePublished":"2023-08-17T14:03:29+00:00","dateModified":"2025-04-15T16:59:55+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/"},"wordCount":6561,"commentCount":1501,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17.jpg","articleSection":["Balabac","Palawan"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/balabac-island-hopping/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/","url":"https://www.viajarporfilipinas.com/balabac-island-hopping/","name":"Balabac: island hopping de ensueño en Filipinas 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17.jpg","datePublished":"2023-08-17T14:03:29+00:00","dateModified":"2025-04-15T16:59:55+00:00","description":"El island hopping de Balabac es uno de los más épicos de Filipinas. Te contamos cómo hacerlo, nuestra experiencia y todos los consejos necesarios.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/balabac-island-hopping/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17.jpg","width":1200,"height":630,"caption":"Island Hopping Balabac en Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/balabac-island-hopping/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Balabac: island hopping de ensueño en Filipinas"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/balabac-island-hopping/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Balabac: island hopping de ensueño en Filipinas del feed" href="https://www.viajarporfilipinas.com/balabac-island-hopping/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/12526" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=12526' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fbalabac-island-hopping%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fbalabac-island-hopping%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-12526-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/12526/et-core-unified-12526.min.css?ver=1745575676" /><link rel="stylesheet" id="et-core-unified-deferred-12526-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/12526/et-core-unified-deferred-12526.min.css?ver=1745575676" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-12526 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/" aria-current="page">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-12526" class="et_pb_post post-12526 post type-post status-publish format-standard has-post-thumbnail hentry category-balabac category-palawan">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Balabac: island hopping de ensueño en Filipinas</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/balabac/" rel="category tag">Balabac</a>, <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Island Hopping Balabac en Filipinas" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-1080x630.jpg" alt="Island Hopping Balabac en Filipinas" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-17-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="font-weight: 400; text-align: justify;">Filipinas, con sus más de 7000 islas, atesora infinidad de rincones para hacer de tu viaje una aventura inolvidable. Playas de infarto, cascadas monumentales, arrozales con miles de años de antigüedad, ciudades de preciosa arquitectura colonial… Aquí jamás te faltarán planes.</p>
+<p style="font-weight: 400; text-align: justify;">Pero si has llegado a esta guía es porque a ti, como a nosotros, <strong>te gusta ir más allá y buscas una de esas experiencias únicas</strong> todavía apartadas del turismo de masas, aunque para ello tengas que invertir más tiempo y renunciar a ciertas comodidades. El <strong>island hopping en Balabac</strong> es una de esas experiencias inolvidables y en esta guía vamos a entrar en detalle para que tú puedas vivirla y sumarla a tu lista de momentos épicos en Filipinas.</p>
+<p style="font-weight: 400; text-align: center;">¿Listo para poner rumbo a este paraíso playero? ¡Empezamos!</p>
+<p style="font-weight: 400; text-align: center;"><span id="more-12526"></span></p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258999c8611" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258999c8611"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Donde_esta_Balabac" title="Dónde está Balabac">Dónde está Balabac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_te_espera_en_el_island_hopping_de_Balabac_y_como_se_hace" title="Qué te espera en el island hopping de Balabac y cómo se hace">Qué te espera en el island hopping de Balabac y cómo se hace</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Cuantos_dias_dedicar_a_Balabac" title="Cuántos días dedicar a Balábac">Cuántos días dedicar a Balábac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Posible_itinerario_por_Balabac" title="Posible itinerario por Balabac">Posible itinerario por Balabac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Mejor_momento_para_ir_a_Balabac" title="Mejor momento para ir a Balábac">Mejor momento para ir a Balábac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Islas_a_visitar_en_el_Island_Hopping_de_Balabac" title="Islas a visitar en el Island Hopping de Balabac">Islas a visitar en el Island Hopping de Balabac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#Donde_dormir_en_Balabac" title="Dónde dormir en Balabac">Dónde dormir en Balabac</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Consejos_utiles_para_el_island_hopping_de_Balabac" title="Consejos útiles para el island hopping de Balabac">Consejos útiles para el island hopping de Balabac</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_esta_Balabac"></span><span style="color: #33cccc;">Dónde está Balabac</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">Antes de empezar a descubrirte los secretos de esta joya que tanto nos alucinó en nuestra primera visita, vamos a situártela en el mapa para que sepas exactamente en qué escenario nos encontramos.</p>
+<p style="font-weight: 400; text-align: justify;">El llamado “island hopping de Balabac” realmente <strong>no implica necesariamente pasar por la isla de Balabac</strong> (a día de hoy creemos que no se te ha perdido nada por ahí), pero recibe este nombre por ser el nombre del municipio y de la mayor isla del archipiélago. Este se sitúa en la zona de este del Mar de Sulu (llamado también Mar de Joló) y está a escasísimos kilómetros de la frontera con Malasia.</p>
+<p style="font-weight: 400; text-align: justify;">Dado que aquí acaba Filipinas, es conocida popularmente como <strong>“The last frontier”: la última frontera</strong>. En este mapa puedes ver dónde se encuentra exactamente y tienes marcados los puntos de los que hablamos en esta guía:</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/embed?mid=181yZ0hfAErmYFKchYE_ojg2C4qZCdt4&#038;ehbc=2E312F"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/embed?mid=181yZ0hfAErmYFKchYE_ojg2C4qZCdt4&amp;ehbc=2E312F" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_te_espera_en_el_island_hopping_de_Balabac_y_como_se_hace"></span><span style="color: #33cccc;">Qué te espera en el island hopping de Balabac y cómo se hace</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">Esta recóndita zona de Filipinas está todavía<strong> a años luz de las infraestructuras turísticas</strong> que puedes encontrar en lugares archiconocidos del país como por ejemplo El Nido, que está a menos de 600 kilómetros. Por ello, lo primero que debes tener claro es que aquí no van a abundar los lujos, los restaurantes, los resorts o cualquier otro negocio turístico que te venga a la mente. Además, pese a que este tipo de island hoppings en Balabac hace años que se llevan a cabo, no esperes tampoco guías con una enorme experiencia de cara al turista. No creemos que eso sea nada malo, solo queremos avisarte por si te habías hecho una idea errónea. ¡Es parte de esta aventura!</p>
+<p style="font-weight: 400; text-align: justify;">Uno de los puntos fuertes de este island hopping es precisamente esto, el salirse de lo cómodo y vivir una aventura en busca de su otro, y principal, punto fuerte: <strong>la brutalidad de playas y lugares que aquí vas a conocer prácticamente en solitario</strong>. Lenguas de arena blanca, playas de aguas cristalinas y diminutas islas de todas las formas a las que prácticamente no llega más que un poco de turismo local.</p>
+<p style="text-align: justify;">Muchos viajeros <strong>nos preguntan si merece la pena ir solo a Balabac y dejar de lado sitios como El Nido o Coron</strong>. La pregunta es, cuanto menos, difícil de responder y, desde luego, la respuesta será siempre llena de matices y de percepciones personales. A nosotros, como ya te contaremos, la isla de Onok nos parece una barbaridad y una de las mejores que hemos visto en nuestra vida. El island hopping por Balabac es, además, muy disfrutón y tiene una relación calidad-precio muy buena (por lo menos, a día de hoy). Sin embargo, sí te diremos que los paisajes kársticos de los island hopping de El Nido y Coron son realmente incomparables.</p>
+<p style="text-align: justify;">Por otro lado, dado que se requiere bastante tiempo de navegación para alcanzar lugares como Onok, hay que tener presente que en ciertos momentos del año hay bastante frecuencia de cancelación parcial o total de barcos. Así que hay que venir concienciado de que todo puede ocurrir. No te queremos desanimar (¡todo lo contrario!), pero sí avisarte de que es un destino que tiene siempre un margen de imprevistos grande.</p>
+<p style="font-weight: 400; text-align: justify;">Dicho esto, <strong>¿cómo se puede hacer island hopping en Balabac?</strong> A día de hoy, hay dos formas posibles de hacerlo. Aunque, desde nuestra experiencia en la zona, solo una que valga la pena.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Island hopping desde la isla de Balabac:</span></h3>
+<p style="font-weight: 400; text-align: justify;">A día de hoy, lo descartamos completamente. Implica tener que llegar por tu cuenta hasta la isla de Balabac, alojarte en alguna de sus poquísimas y muy básicas <em>guest houses</em> y hacer los tours desde ahí. Creemos que te supone más tiempo, más esfuerzo y te quita la bonita experiencia de dormir en las islas del island hopping. Además, los poco atractivos turísticos de Balabac Island no creemos que esta opción sea muy apetecible.</p>
+<p style="font-weight: 400; text-align: justify;">Muy posiblemente en dentro de algunos años la isla avance para acoger al turismo y la oferta haga que valga un poco más la pena pero… <em>not today</em>.</p>
+<p style="text-align: justify;">Dicho esto, si sois varios y os va la marcha del regateo, quizás os interese para bajar unos pesos. Desde nuestra perspectiva, no creemos que compense, pero no todos somos iguales. Nosotros valoramos todas las alternativas y luego os damos nuestra opinión sincera siempre, pero, eso, no deja de ser nuestra experiencia y opinión.</p>
+<p style="font-weight: 400; text-align: justify;">En caso de que esta opción te llame más que la siguiente, te va a interesar echarle un ojo a esta guía: <em>Cómo llegar a Balabac (próximamente)</em>.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Island hopping durmiendo en las islas de Balabac:</span></h3>
+<p style="font-weight: 400; text-align: justify;">Aquí es donde la cosa se pone realmente interesante porque te lo dan todo hecho y la experiencia es completamente inmersiva. Para ello, lo único que tendrás que hacer es llegar hasta Puerto Princesa, contratar tu tour y ellos se encargarán de llevarte hasta el sur de Palawan (furgoneta hasta el puerto de Buliluyan), hacerte el island hopping, darte alojamiento, darte comida y, una vez acabe todo, volver a dejarte en tu hotel en Puerto Princesa. No solo eso, un tour como este <strong>incluye todas las tasas de las diferentes islas y te evita ir haciendo pagos</strong> y estar pendiente de más gastos.</p>
+<p style="font-weight: 400; text-align: justify;">En definitiva, te lo ponen todo en bandeja para que vayas a descubrir lo que realmente te ha traído hasta aquí. Esta es nuestra forma favorita de hacerlo y la que te recomendamos. Hay diferentes paquetes de 2, 3 y 4 días. En nuestro caso, optamos por la <strong>Expedición de Balabac de 4 días y 3 noches</strong>. Su precio oscila <strong>entre los 11.000 y los 14.500 pesos por persona </strong>(nosotros pagamos 12.500) que suelen incluir el transporte ida y vuelta desde Puerto Princesa, el island hopping, todas las comidas, agua, todas las tasas de entrada a las diferentes islas, tasas de ecoturismo y un guía en la bangka.</p>
+<p style="text-align: justify;">Siguiendo con el tema de los precios de los island hopping en Balabac, también es factible organizarlo de manera <strong>privada</strong>. Obviamente, esto suele salir un poco más caro (unos 2.000 pesos más por persona), pero quizás te puede salir a cuenta si sois varios. De esta manera, tendréis un poquito de más flexibilidad en horarios, aunque por el tema de «masificación» no tienes por qué preocupar. Por ahora, difícil será que sientas que estás en un destino muy turístico ni aún haciendo un tour compartido.</p>
+<p style="font-weight: 400; text-align: justify;">El <strong>itinerario</strong> que te dan antes de iniciar el tour es puramente orientativo y sujeto a (muchos) cambios. Lo más probable es que visites lugares que no aparecen ahí, te pierdas otros que sí aparecen y lo hagas todo en un orden diferente debido a condiciones climatológicas o la apertura/cierre de algunas islas privadas.</p>
+<blockquote>
+<p style="font-weight: 400;">Si te interesa hacerlo así, no dudes en dejarnos un comentario y te pasamos a tu mail la información de la empresa con la que nosotros lo hicimos y algún consejo extra. Ten también en cuenta que hay empresas que hacen un mix de estas dos opciones: te montan un island hopping de varios días pero te llevan cada noche a dormir a Balabac Island. Después de haber dormido en una de las islas a visitar, no lo haríamos de otra manera.</p>
+</blockquote>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-12547" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20476'%3E%3C/svg%3E" alt="empresa para el Expedición de Balabac" width="1000" height="476" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15-980x466.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15-480x228.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-12547" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15.jpg" alt="empresa para el Expedición de Balabac" width="1000" height="476" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15-980x466.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-15-480x228.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_dedicar_a_Balabac"></span><span style="color: #33cccc;">Cuántos días dedicar a Balábac</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como ya te hemos comentado, nosotros decidimos hacer la expedición a Balabac de 4 días y 3 noches y, para ser sinceros, a pesar de que las «camas» cómodas no eran, nos hubiésemos quedado tranquilamente un día más explorando. Por lo tanto, creemos que, <strong>como poco, deberías hacer la de 4 días y 3 noches</strong>.</p>
+<p style="text-align: justify;">Considera que el tour como tal empieza alrededor de las 2 de la madrugada del día 1, es decir, que necesitarás haber llegado a Puerto Princesa el día previo. Llegarás a Buliluyan para desayunar y, al acabar, empezarás el island hopping de Balabac como tal. Es decir, tendrás los días 1, 2 y 3 enteros de visitas de islas y te marcharás después de comer en el 4º día. Estarás de vuelta en Puerto Princesa sobre las 20:00-22:00.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Posible_itinerario_por_Balabac"></span><span style="color: #33cccc;">Posible itinerario por Balabac</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Aunque ya te hemos avisado de que las rutas suelen cambiar según las condiciones del mar, por cómo se esté dando el día o, incluso, por las ganas que tengan los viajeros o la tripulación, este es un ejemplo estándar de lo que suelen ofrecer las empresas de island hopping en Balabac:</p>
+<p><em>Day 1</em><br />
+<em>3:00 -3:30AM pick up at the hotel/ Travel to Buliluyan port (5 hrs travel)</em><br />
+<em>9:30AM- 4:30PM tour proper</em></p>
+<p><em>Places to visit: </em></p>
+<ul>
+<li><em>Patawan Island</em></li>
+<li><em>Canibungan Island</em></li>
+<li><em>Onok Island</em></li>
+<li><em>Onok Island overnight</em></li>
+</ul>
+<p><em>Day 2</em><br />
+<em>8:30AM- 4:00PM tour proper</em><br />
+<em>Places to visit:</em></p>
+<ul>
+<li><em>Giant clams watching</em></li>
+<li><em>Mansalangan (if low tide)</em></li>
+<li><em>Punta Sebaring</em></li>
+<li><em>Candaraman campsite &#8211; overnight</em></li>
+</ul>
+<p><em>Day 3</em><br />
+<em>8:00AM- 4:00PM tour proper</em><br />
+<em>Places to visit:</em></p>
+<ul>
+<li><em>Starfish Sandbar</em></li>
+<li><em>Snorkeling Activity in Candaraman</em></li>
+<li><em>Timbayan Rock formation</em></li>
+<li><em>Sicsican Island (optional)</em></li>
+<li><em>Candaraman campsite- overnight</em></li>
+</ul>
+<p><em>Day 4</em><br />
+<em>7:00AM- 1:00PM tour proper</em><br />
+<em>Places to visit:</em></p>
+<ul>
+<li><em>Tangkahan Island</em></li>
+<li><em>Canimeran Island</em></li>
+</ul>
+<p><em>After tour, travel going back to Buliluyan port</em></p>
+<p><em>2:00PM Departure from Buliluyan port </em><br />
+<em>8:30PM Estimated Arrival in Puerto Princesa City</em></p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mejor_momento_para_ir_a_Balabac"></span><span style="color: #33cccc;">Mejor momento para ir a Balábac</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">Partimos siempre de la premisa de que <a title="Mejor época para viajar a Filipinas, ¿cuándo viajar?" href="https://www.viajarporfilipinas.com/mejor-epoca-para-viajar-a-filipinas/" target="_blank" rel="noopener">el tiempo en Filipinas</a> no es una ciencia exacta y que puede llover cuando menos lo esperas y salir el sol en momentos en los que estadísticamente se esperaría lo contrario. Ten también en cuenta que, al encontrarse más cerca de Sabah (Malasia) que de la mayor parte de sitios de Filipinas, el tiempo poco tiene que ver con el que se pueda dar en el mismo momento en otras zonas incluso cercanas. Puedes estar viviendo una semana entera de lluvias en El Nido mientras que en Balabac está brillando el sol.</p>
+<p style="font-weight: 400; text-align: justify;">Dicho esto, y con los datos sobre la mesa,<strong> el periodo más recomendable para visitar es el que va entre los meses de marzo a mayo</strong>. En estas fechas es mucho más probable gozar del infinito cielo azul sin nubes que has visto en tantas fotos y, sobre todo, de aguas mucho más calmadas que <strong>convierten a Balabac en una enorme piscina cristalina</strong>. Esto aquí juega un factor primordial porque aguas bravas se pueden traducir en cancelaciones de la navegación total o modificaciones de la ruta que pueden implicar que te quedes sin ver la joya de la corona: Onok, ya que el tramo para alcanzarla es bastante largo.</p>
+<p style="font-weight: 400; text-align: justify;">La teoría dice también que en los clásicos meses de turismo europeo como julio y agosto no es precisamente la mejor época ya que se pueden dar más lluvias y vientos. Pero, repetimos, no es una ciencia exacta y, por ejemplo, muchos de los tours de finales de julio de este mismo año han transcurrido bajo un radiante sol y un mar totalmente plano.</p>
+<p style="font-weight: 400; text-align: justify;">Los Guardacostas del Sudeste de Palawan son la autoridad competente que regula cuándo se puede y cuándo no se puede salir a navegar por estas aguas. Avisan de estos posibles cierres desde <a href="https://www.facebook.com/profile.php?id=100088556271720" target="_blank" rel="nofollow noopener">su página de Facebook</a>.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Islas_a_visitar_en_el_Island_Hopping_de_Balabac"></span><span style="color: #33cccc;">Islas a visitar en el Island Hopping de Balabac</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">A continuación, te vamos a hablar de las principales <strong>islas que visitarás durante el island hopping de Balabac</strong>. Ten en cuenta que aquí el clima tiene un factor súper determinante y puede hacer que tu itinerario varíe. Además, nosotros hicimos un tour por Balabac de 4 días y 3 noches. Si tu visita es más corta también variará el número de islas visitadas.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Patongong Island (también llamada Tangkahan Island)</span></h3>
+<p style="font-weight: 400; text-align: justify;">Nuestra primera parada del island hopping fue prácticamente la única en la que el sol no nos acompañó del todo pero, igualmente, nos quedó claro que habíamos venido al lugar correcto.</p>
+<p style="font-weight: 400; text-align: justify;"><strong>Patongong Island</strong> es una isla repleta de palmeras, con arena fina dorada y una forma triangular que favorece mucho el baño incluso en momentos en los que hay fuertes vientos.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12532" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20685'%3E%3C/svg%3E" alt="Tangkahan Island, primera parada de nuestros island hopping de Balabac" width="1000" height="685" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1-980x671.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1-480x329.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12532" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1.jpg" alt="Tangkahan Island, primera parada de nuestros island hopping de Balabac" width="1000" height="685" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1-980x671.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-1-480x329.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Patawan Island</span></h3>
+<p style="font-weight: 400; text-align: justify;">Si en la primera parada ya empezamos a notar la magia del island hopping de Balabac, aquí, en <strong>Patawan Island</strong>, fue imposible no soltar el primero de muchos “¡¡<em>Woooow</em>!!”. Vista desde el aire se la reconoce por esa tan característica forma que a cada uno le sugiere algo distinto. Un boomerang, una aleta de tiburón, un monigote del Among Us&#8230; Da igual, veas lo que veas es espectacular. La arena aquí empieza a ser ya mas blanquecina, <strong>sus aguas son espectaculares</strong> y, si te animas a hacer esnórquel (alquilan máscara y aletas), seguro que encuentras algunas sorpresas en el arrecife que se sitúa justo delante.</p>
+<p style="font-weight: 400; text-align: justify;">En esta isla fue donde nuestro tour paró para comer el primer día y pudimos charlar un poco con la pareja que la cuida. Regentan, no solo la isla, sino también el pequeño resort que justo acababa de abrir cuando la visitamos. Esas habitaciones no son precisamente baratas pero<strong> las espectaculares vistas desde su pared de cristal frente al mar</strong> son una buena escusa para darse un capricho.  No tienen web, pero puedes cotillear en Google buscando “Patawan Resort” o llamándoles al +639708111240</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20488%20651'%3E%3C/svg%3E" alt="isla filipina en Balabac" width="488" height="651" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2.jpg 488w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2-480x640.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 488px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12533" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2.jpg" alt="isla filipina en Balabac" width="488" height="651" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2.jpg 488w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-2-480x640.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 488px, 100vw" /></noscript></p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12534" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20581'%3E%3C/svg%3E" alt="relax con vistas al mar de Sulu" width="1000" height="581" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3-980x569.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3-480x279.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12534" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3.jpg" alt="relax con vistas al mar de Sulu" width="1000" height="581" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3-980x569.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-3-480x279.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Canibugan Island</span></h3>
+<p style="font-weight: 400; text-align: justify;">Te acercas a la isla en tu bangka y empiezas a intuir su particular forma. Una de esas islas súper alargadas pero que puedes cruzar de lado a lado en pocos pasos. Te sigues acercando y compruebas que sí, que la calidad de sus aguas y arena te certifica que sigues en tu épico island hopping de Balabac.</p>
+<p style="font-weight: 400; text-align: justify;">Tu bangka sigue el recorrido hasta la orilla y de repente…<em> ¿hola?</em> Te das cuenta que a diferencia del 99% de las playas del país, aquí no mandan las palmeras, pues <strong>esta isla está llena de algo difícil de ver en Filipinas, ¡pinos!</strong> Quizá para ti, viniendo de otra parte del mundo, no te llame tanto la atención pero, al turista filipino eso y el columpio ideal para fotos de Instagram, lo hace.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12535" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20680'%3E%3C/svg%3E" alt="Canibugan Island, la isla con pinos de Balabac" width="1000" height="680" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4-980x666.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4-480x326.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12535" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4.jpg" alt="Canibugan Island, la isla con pinos de Balabac" width="1000" height="680" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4-980x666.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-4-480x326.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12536" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20687'%3E%3C/svg%3E" alt="palmera con columpio al sur de Palawan" width="1000" height="687" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5-980x673.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5-480x330.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12536" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5.jpg" alt="palmera con columpio al sur de Palawan" width="1000" height="687" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5-980x673.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-5-480x330.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Starfish Sandbar</span></h3>
+<p style="font-weight: 400; text-align: justify;">Una de las lenguas de arena más famosas de este island hopping es la de <strong>Starfish</strong> y su propio nombre ya te da una pista de lo que ahí te espera. Esta lengua de arena, que <strong>cambiará de tamaño y forma según el momento en que la visites</strong>, suele estar frecuentada por las <em>horned sea star</em>, la clásica estrella de mar que encontrarás en muchos sitios de Filipinas y que parece que porte chispas de chocolate por su cuerpo. Por favor, sé respetuoso con este animal y <strong>no las toques bajo ningún concepto</strong>. Podrías herirlas o matarlas. Si quieres hacer una foto, que sea con una cámara acuática y dentro de su hábitat natural.</p>
+<p style="font-weight: 400; text-align: justify;">Como seguramente ya sepas, la apariencia y profundidad de las lenguas de arena varían totalmente con la altura cambiante de las mareas. Te recomendamos consultar antes del island hopping la tabla de mareas para los siguientes días y asegurarte que visitarás Starfish con marea baja (o lo más baja posible). A nosotros, por ejemplo, quisieron llevarnos a la siguiente lengua de arena en un horario en el que era marea alta y, como tuvimos esta información, presionamos para ajustar la visita a una marea más baja. ¡Cambia mucho la experiencia!</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12537" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20488%20651'%3E%3C/svg%3E" alt="lengua de arena Starfish Sandbar en Balabac" width="488" height="651" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6.jpg 488w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6-480x640.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 488px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12537" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6.jpg" alt="lengua de arena Starfish Sandbar en Balabac" width="488" height="651" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6.jpg 488w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-6-480x640.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 488px, 100vw" /></noscript></p>
+<p style="text-align: center;"><span style="color: #33cccc;"><span style="font-size: 2em;">Viajar seguro por Balabac</span></span></p>
+<p style="text-align: justify;">Siempre insistimos en la enorme necesidad de contar con el <a title="Seguro de viaje para Filipinas, el mejor de 2023" href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener">mejor seguro para viajar a Filipinas</a> y en este destino esta recomendación cobra aun más sentido. Balabac es una de esas experiencias únicas en la vida y quieres disfrutarla sabiendo que, si algo pasara, estás en las mejores manos. Desde  problemas de salud como picaduras de mosquitos portadores de enfermedad o cortes con el coral al disfrute del esnórquel, hasta incidentes con tus transportes o equipaje, <strong>la póliza que llevamos años</strong> usando se ocupa de todo eso y mucho más.</p>
+<p style="text-align: justify;">A nosotros<strong> nos ha ahorrado miles de euros</strong> y te puedes hacer con ella desde aquí con un descuento por venir de nuestra parte:</p>
+<p style="text-align: justify;"><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=balabislandbnn" target="_blank" rel="noopener"><img decoding="async" class="aligncenter wp-image-11020 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20125'%3E%3C/svg%3E" alt="descuento seguro de viaje" width="700" height="125" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2-480x86.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 700px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-11020 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2.jpg" alt="descuento seguro de viaje" width="700" height="125" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2.jpg 700w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/descuento-seguro-de-viaje-b2-480x86.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 700px, 100vw" /></noscript></a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Onok Island</span></h3>
+<p style="font-weight: 400; text-align: justify;"><strong>La joya de la corona</strong>. Lo que es la Torre Eiffel para París, lo es <strong>Onok Island</strong> al Island Hopping de Balabac: el lugar más icónico. Para muchos es el motivo principal de venir hasta aquí e incluso para algunos es <strong>la mejor isla de Filipinas</strong>. Nosotros llevamos <strong>más de 13 años exprimiendo de verdad el país</strong> y hemos visto tantas que ya nos cuesta elegir una única pero, sin duda, en el top de nuestras favoritas se metió de lleno.</p>
+<p style="font-weight: 400; text-align: justify;"><strong>Onok es una barbaridad de bonita</strong>. Arena blanca, aguas cristalinas, palmeras, bancos de arena que te permiten casi “caminar sobre el agua”&#8230; Todo lo que esperas encontrar en una isla idílica pero elevado a la máxima potencia, una locura de la naturaleza.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12538" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20720'%3E%3C/svg%3E" alt="Onok Island, Balabac, Filipinas" width="1000" height="720" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7-980x706.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7-480x346.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12538" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7.jpg" alt="Onok Island, Balabac, Filipinas" width="1000" height="720" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7-980x706.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-7-480x346.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="font-weight: 400; text-align: justify;">La bangka atraca en una zona donde apenas cubre y justo delante te encuentras la mítica pasarela que protagoniza una de las fotos más buscadas en la isla. En esa misma pasarela encontrarás un par de casetas. Una semiabierta que suele ser donde se para a comer en los tours y otra que es <strong>el alojamiento más codiciado de Balabac</strong>. Dormir ahí (te hablamos de ello más adelante) te brinda la oportunidad única de estar solo al amanecer y al atardecer en este paraíso. Muchas de las empresas que hacen este island hopping ofrecen esta opción pero suele ser difícil asegurarlo porque son pocas plazas, van muy buscadas y el dueño (un político filipino como ocurre con muchas islas de la zona) puede cerrarla en cualquier momento para montar un evento privado.</p>
+<p style="font-weight: 400; text-align: justify;">Nuestra zona favorita es la opuesta a la de las casetas, al otro lado de la isla. La primera vez que estuvimos en Onok la mayoría de gente no llegó hasta ahí y estuvimos solos la mayor parte del tiempo. Además,<strong> es la zona de baño más bonita</strong>.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12540" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20608'%3E%3C/svg%3E" alt="la mejor isla de Filipinas" width="1000" height="608" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8-980x596.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8-480x292.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12540" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8.jpg" alt="la mejor isla de Filipinas" width="1000" height="608" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8-980x596.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-8-480x292.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="font-weight: 400; text-align: justify;">Algo que para nada esperábamos ni habíamos leído por ahí es <strong>la enorme cantidad de tortugas que se acercan a la orilla</strong>. Primero fue desde la pasarela que conecta las casetas pero, horas después, vimos varias más en la playa de la zona opuesta. ¡Fue mágico!</p>
+<blockquote><p>La entrada a las diferentes islas del island hopping suele tener un precio de entre 100 y 150 pesos, mientras que para entrar a Balabac hay pagar 1.500 pesos. Si te quedas a dormir, a la cuenta se añaden 500 pesos más.</p></blockquote>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Candaraman Island</span></h3>
+<p style="font-weight: 400; text-align: justify;">Los que deciden hospedarse en la isla principal de Balabac y desde ahí hacen escapadas a diferentes islas, no suelen acercarse al “lado bueno” de <strong>Candaraman Island</strong> y se quedan con una visita a una playa que no tiene mucha gracia.</p>
+<p style="font-weight: 400; text-align: justify;">En nuestro caso, <strong>Candaraman fue nuestra base durante tres noches</strong> y gracias a ello tuvimos la oportunidad de acercarnos a conocer la playa que se encuentra en su esquina sudoeste, un lugar perfecto para acabar el día con el sol a punto de ponerse.</p>
+<p style="font-weight: 400; text-align: justify;">En las últimas semanas se está construyendo, en el lado opuesto de la isla, una pista de aterrizaje para avionetas. Estaremos atentos de cómo prosigue esta apertura de la zona por vía aérea. Hay gente asustada con cómo puede afectar la apertura de hoteles y resorts y otros, por su lado, ven una posibilidad de acercar el island hopping de Balabac a más gente y, por ende, ir acercando también más comodidades.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12541" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20705'%3E%3C/svg%3E" alt="Candaraman Island" width="1000" height="705" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9-980x691.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9-480x338.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12541" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9.jpg" alt="Candaraman Island" width="1000" height="705" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9-980x691.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-9-480x338.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Timbayan Rock Formation</span></h3>
+<p style="font-weight: 400; text-align: justify;">La parada en <strong>Timbayan</strong>, pese a que estuvo interesante, quizá fue la que menos nos llamó la atención de todo el recorrido del island hopping de Balabac. El atractivo principal es ver la gran y peculiar formación rocosa donde acaba la isla.</p>
+<p style="font-weight: 400; text-align: justify;">Pese a que la playa es bastante aceptable por ambos lados de las rocas y a que insistimos en pegarnos un baño, nos dijeron una y otra vez que no se podía porque no era seguro. Como te contamos en el apartado de seguridad de la Guía de Balabac, en la isla principal hay cocodrilos de agua salada que tienen aterrorizados a muchos lugareños. Seguramente, al estar Timbayan tan cerca, ese sea el motivo por el que a día de hoy no te puedas bañar aquí. De hecho… Si echas un ojo a las fotos de este lugar en Google Maps verás un cocodrilo muerto en las rocas.</p>
+<p style="text-align: justify;">Sea como sea, aun sin ser nuestro lugar favorito, fue un extra que nos llevamos y que nos gustó conocer. Además, el recorrido por el canal que hay entre Balabac Island y Ramos Island nos pareció muy pintoresco. Está repleto de manglares y palafitos.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12542" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="Formación rocosa" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12542" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10.jpg" alt="Formación rocosa" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-10-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Sicsican Island</span></h3>
+<p style="font-weight: 400; text-align: justify;">Onuk Island es nuestra isla favorita de este tour, no hay discusión. Pero<strong> a nivel lugar de “playeo y esnórquel”, mucho ojo con Sicsican</strong> (también llamada Caxisigan Island). Nuestra parada en esta isla fue en el lado oeste para luego cruzarla por el interior hasta llegar a la costa este, donde se encuentra uno de los campamentos en el que las diferentes empresas de tours hacen noche. Fuimos básicamente para comer en una de sus casetas y al acabar nos dieron tiempo libre. El resto del grupo se quedó en ese mismo lado, frente al campamento, pero nosotros volvimos hacia el lugar donde nos había dejado la bangka y <strong>nos quedamos esa playa para nosotros solos</strong>.</p>
+<p style="font-weight: 400; text-align: justify;">Estuvimos la mar de a gusto disfrutando de la arena fina y de la sombra de las palmeras y cuando creíamos que la cosa no podía ir a mejor <strong>descubrimos su brutal fondo marino</strong>. A escasos metros de la orilla y a muy poca profundidad te esperan un sinfín de corales de todos los colores junto a peces de todos los tamaños. ¡No te lo puedes perder!</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12543" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20716'%3E%3C/svg%3E" alt="Sicsican Island" width="1000" height="716" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11-980x702.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11-480x344.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12543" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11.jpg" alt="Sicsican Island" width="1000" height="716" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11-980x702.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-11-480x344.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Secret Reef</span></h3>
+<p style="text-align: justify;">No sabemos si el nombre será inventado, pero una de las paradas de nuestro island hopping era el arrecife que hay entre Candaraman y Sicsican. Aunque quizás nos gustó más el de esta última isla, ya que estaba a menos profundidad y se podía hacer cómodamente, no te arrepentirás de lanzarte al agua porque de verdad que vimos un coral en muy buen estado y mucha vida marina.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Mansalangan Sandbar</span></h3>
+<p style="font-weight: 400; text-align: justify;">La hermana mayor de Starfish Island se encuentra lejos del área principal donde están el resto de paradas y se suele visitar al empezar/finalizar el tour por el rato que cuesta llegar hasta ahí.</p>
+<p style="font-weight: 400; text-align: justify;">Tal y como comentamos con la primera lengua de arena, aquí es muy importante hacer coincidir la visita con la marea baja, ya que con marea alta no vas a ver absolutamente nada y simplemente pasearás por una enorme zona inundada que te llega en algunos puntos por las caderas. En cambio, si consigues llegar <strong>en bajamar, tendrás la oportunidad de ver el más de kilómetro y medio de lengua de arena que aparece</strong>. Un lugar espectacular si vas en el momento correcto.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12544" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20706'%3E%3C/svg%3E" alt="Mansalangan Sandbar en el island hopping de Balabac" width="1000" height="706" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12-980x692.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12-480x339.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12544" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12.jpg" alt="Mansalangan Sandbar en el island hopping de Balabac" width="1000" height="706" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12-980x692.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-12-480x339.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Canimeran Island</span></h3>
+<p style="font-weight: 400; text-align: justify;">Esta fue la última isla de nuestra expedición por Balabac y realmente no esperábamos mucho más de ella que un lugar en el que comer antes de poner rumbo al puerto de Buliluyan para posteriormente iniciar el camino de vuelta rumbo a Puerto Princesa.</p>
+<p style="font-weight: 400; text-align: justify;">Lo primero que nos llamó la atención fue el grupito de <strong>pavos reales que viven y merodean por la isla</strong>. Después, tras cruzar al otro lado, nos encontramos <strong>una playa súper apetecible</strong> con una arena que se teñía de un ligero color rosa cuando salía el sol y unas bonitas y mansas aguas turquesas que fueron la despedida por todo lo alto de esta visita a Balabac. Además, tenía un aire «apocalíptico» con tantas palmeras caídas. ¿Una de las mejores playas? No lo descartamos.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12545" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20690'%3E%3C/svg%3E" alt="playa de Balabac" width="1000" height="690" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13-980x676.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13-480x331.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12545" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13.jpg" alt="playa de Balabac" width="1000" height="690" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13-980x676.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-13-480x331.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_dormir_en_Balabac"></span><span style="color: #33cccc;">Dónde dormir en Balabac</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">Ya te hemos avanzado antes que los servicios turísticos en este archipiélago están a años luz todavía de los de otros lugares del país y no solo en calidad, sino también en cantidad. En parte, gracias a ello, es posible visitar Balabac sin coincidir con cientos de otros viajeros.</p>
+<p style="font-weight: 400; text-align: justify;">Si optas por hacer la Expedición de Balabac de varios días, en función de la agencia con la que lo hagas y la disponibilidad en ese momento, dormirás en estos <em>camps</em>:</p>
+<h3 style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;">Candaraman Campsite</span></h3>
+<p style="font-weight: 400; text-align: justify;">Se trata de un <em>campsite</em> muy básico sin florituras y que usan varias empresas de expediciones. La nuestra cuenta con una caseta principal en las que hay 5 habitaciones separadas por paredes de nipa, un colchón en el suelo y una luz en el techo que se comparte con la habitación de al lado. Cero lujos. También existe la posibilidad de dormir en tienda de campaña.</p>
+<p style="font-weight: 400; text-align: justify;">La zona del baño es menos lujosa aún. Encontrarás dos lavabos en los que, además de hacer tus necesidades, podrás ducharte a base de cubos de agua del tiempo. Para comer hay un cobertizo con una gran mesa donde sirven el desayuno y la cena. Ahí será donde desde las 18:00 de la tarde puedas cargar tus dispositivos.</p>
+<p style="font-weight: 400; text-align: justify;">Uno de los puntos fuertes es su orientación que te permitirá <strong>disfrutar del atardecer desde la playa</strong>. Este <em>camp</em> tiene realmente muchísimo potencial pero lo tienen bastante descuidado y con un par de retoques pasaría a ser un lugar muchísimo mejor.</p>
+<h3 style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;">Sicsican Campsite</span></h3>
+<p style="font-weight: 400; text-align: justify;">Este es, a día de hoy, <strong>el campamento más bien gestionado</strong>. Tanto por la limpieza de la zona como por el cuidado en los detalles decorativos. Además, en su caseta principal tienen una pequeña tienda con nevera (algo que verás poco durante estos días) y puedes comprar snacks y bebida realmente fría. Como dato curioso, buena parte de lo que se vende aquí está producido en Malasia, dada la cercanía con este país.</p>
+<p style="font-weight: 400; text-align: justify;">Las habitaciones son pequeñas cabañas triangulares más privadas que las de Cadaraman y los baños también son más apetecibles en todos los sentidos. También cuentan con tiendas de campaña.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12546" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20702'%3E%3C/svg%3E" alt="Sicsican Campsite" width="1000" height="702" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14-980x688.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14-480x337.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12546" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14.jpg" alt="Sicsican Campsite" width="1000" height="702" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14-980x688.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-14-480x337.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;">Onok Island Campsite</span></h3>
+<p style="font-weight: 400; text-align: justify;">Sin lugar a dudas, disfrutar del atardecer y el amanecer en Onok Island y tener la isla tantas horas prácticamente para ti solo es lo que <strong>convierte a este alojamiento en el más deseado</strong>.</p>
+<p style="font-weight: 400; text-align: justify;">Las casetas flotantes esconden habitaciones con varios colchones, un diminuto lavabo, una pequeña nevera y una zona de carga de aparatos electrónicos (de 18:00 a 22:30).  Existe también la posibilidad de dormir en la propia isla en tienda de campaña.</p>
+<p style="font-weight: 400; text-align: justify;">Ten en cuenta que dormir aquí tiene un coste extra de 500 pesos, que no es fácil hacerlo si no reservas con tiempo y que, aun así, un evento privado de última hora o una mala mar te puede dejar a las puertas de hacerlo. En nuestro caso, el dormir aquí estaba incluido en el coste de la expedición, pero, por desgracia, no pudimos finalmente quedarnos. ¡Nos resarciremos!</p>
+<h3 style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;">Punta Sebaring Campsite (Bugsuk Island)</span></h3>
+<p style="text-align: justify;">Esta, a pesar de que está bastante lejos (a un par de horas de navegación de Candaraman/Sicsican y aún más de Balabac Island), es una de las paradas habituales de los island hopping de Balabac. En nuestro caso, a pesar de estar incluido en el itinerario, no llegamos a visitarla debido al oleaje. Se suele ir después de ver la Mansalangan Sandbar, que queda más o menos de camino.</p>
+<p style="text-align: justify;">Como no la hemos visitado, no te podemos decir mucho, pero sí que nos comentaron que tiene una playa muy bonita, aunque, por desgracia, con bastantes sandlfies o nik nik. La incluimos aquí porque hay algún operador de expediciones en Balabac que tiene su campamento en ella. Por favor, si la visitas, cuéntanos tus impresiones.</p>
+<hr />
+<p style="font-weight: 400; text-align: justify;">En caso de que te decantes por la opción de alojarte en la isla de Balabac, ya sea porque vas a hacer salidas desde ahí o porque la empresa con la que harás el island hopping no ofrece <em>overnight</em> en otras islas, las opciones son escasas y mayormente sencillitas:</p>
+<p style="font-weight: 400; text-align: justify;">&#8211; <strong>Sing &amp; Swing (también llamado JD Lodge)</strong>: Sencillísimo alojamiento como el que te puedes encontrar en muchos sitios de filipinas. Habitaciones con baño privado y aire acondicionado antiguo junto a un dormitorio de 6/8 personas con ventilador. Justito pero aceptable para lo que hoy en día ofrece la zona. La habitación cuesta 1.000 pesos y no se puede reservar online, pero puedes escribir a este número: +639399377948 o por <a href="https://www.facebook.com/profile.php?id=100063584246075" target="_blank" rel="nofollow noopener">Facebook</a>.</p>
+<p style="font-weight: 400; text-align: justify;">&#8211; <strong>Marloe Lodging House</strong>: Un concepto filipino básico muy parecido al anterior. Sin muchas diferencias pero algo más limpio y ordenado. Un punto a favor es que puedes reservar online desde aquí:  <a href="https://www.booking.com/hotel/ph/marloe-lodging-house.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener">Precios y disponibilidad en Marloe LH</a>.</p>
+<p style="text-align: justify;">&#8211; <strong>Batalla’s Lodging House:</strong> Uno de los hostales más nuevos de la isla, con modernas máquinas de aire acondicionado, pero también más «carete». Son 1.500 pesos la noche por la doble. Se puede reservar por teléfono (+63 9085505823) o por mensaje de <a href="https://www.facebook.com/profile.php?id=100078130448685" target="_blank" rel="nofollow noopener">Facebook</a>.</p>
+<p style="font-weight: 400; text-align: justify;">&#8211; <strong>Balabac Eco Resort</strong>: Todavía en construcción y con vistas (según nos cuenta el propio dueño) a abrir de forma oficial en enero de 2024, pondrá la nota de lujo en la isla. Habitación estilo “<em>dome</em> geométrico “con aire acondicionado, playa privada preciosa, <em>speed boat</em> para llegar en un periquete a las diferentes islas, wifi de alta velocidad por Starlink… Un futuro imán para <a title="Mejores hoteles para una luna de miel en Filipinas" href="https://www.viajarporfilipinas.com/mejores-hoteles-luna-miel-filipinas/" target="_blank" rel="noopener">Lunas de Miel en Filipinas</a>. Puedes echar un ojo aquí: <a href="https://www.booking.com/hotel/ph/balabac-eco-resort.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener">Balabac Eco Resort</a>.</p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Consejos_utiles_para_el_island_hopping_de_Balabac"></span><span style="color: #33cccc;">Consejos útiles para el island hopping de Balabac</span><span class="ez-toc-section-end"></span></h2>
+<p style="font-weight: 400; text-align: justify;">Ahora que ya te hemos contado todo lo necesario para que conozcas qué te espera en la expedición de Balabac, queremos acabar esta guía con unos consejos que harán que tu experiencia sea todavía mejor:</p>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><strong>Equipaje mojado</strong></span>: Las bangkas que realizan el island hopping de Balabac son pequeñas en comparación a las que se suelen encontrar en las expediciones de Coron a El Nido o de Coron a Coron. Si a ello le sumas que gran parte de esta aventura transcurre en mar abierto, da por hecho que te mojarás y que irá entrando agua en la embarcación. Entonces te preguntarás, «<em>¿Qué hago con mi equipaje?</em>«. Nuestra recomendación aquí es que llegues hasta Balabac con lo mínimo y <strong>dejes el resto de tus cosas en Puerto Princesa</strong>.</p>
+<p style="font-weight: 400; text-align: justify;">Nosotros llevamos años hospedándonos en <a href="https://www.booking.com/hotel/ph/golden-pension-house-palawan.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener">Golden Pension</a>, un hotel céntrico regentado por una familia súper amable. Si te hospedas ahí <strong>puedes dejar tus cosas en su custodia sin problema</strong>. Nosotros dejamos ahí, entre muchas otras cosas, nuestros dos portátiles y al volver estaba todo tal y como lo habíamos dejado. No solo eso, te llevan y te van a buscar al aeropuerto de Puerto Princesa gratis. Puedes echarle un ojo y reservar desde aquí: <a href="https://www.booking.com/hotel/ph/golden-pension-house-palawan.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener">Precios y disponibilidad de Golden Pension en Puerto Princesa</a>.</p>
+<p style="text-align: justify;">Por cierto, aunque no queremos que se haga competición, donde menos te mojarás en el barco será en la zona más pegada al capitán. De verdad, hubo momentos en los que entraban olas completas y aquí es donde menos te dará el agua.</p>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><strong>Cobertura</strong></span>: La cobertura aquí es cero fiable. Si necesitas hacer una videollamada o resolver algún trámite por internet, este no es el lugar correcto. Hay lugares como Canimeran en los que verás a lo lejos la antena y te llegará algún WhatsApp cada X horas y otros lugares como Onok Island donde, aun estando en medio de la nada, pudimos enviar algún video. Comparativamente nos pareció que Smart funcionaba mejor que Globe, pero sin mucha diferencia destacable.</p>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><strong>Dinero</strong></span>: No hay cajeros en ninguna de las islas ni tampoco en la propia Balabac. Lleva dinero para cubrir los gastos que necesites. Si haces una expedición como la nuestra te bastará con unos pesos para bebidas más allá del agua incluida (y para alguna propina a tus guías si así lo consideras). De lo contrario, tendrás que pagar también tasas y salidas. La expedición la pagamos in situ antes de comenzar y en efectivo.</p>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><em><strong>Nik-nik</strong></em></span>: Pese que no es al área de Filipinas donde más vas a encontrar, en alguna de las islas puede que te cruces con las tediosas <em>sandflies</em>, esos bichitos que durante tu paso por la playa no parecen hacer nada pero al día siguiente vuelven a tu memoria cuando te pica todo. Si eres de los que las atrae o reacciona mucho a sus picaduras no olvides darte una capa de aceite de coco para ahuyentarlas.</p>
+<p style="text-align: justify;"><span style="color: #33cccc;"><strong>Comida</strong></span>: Si vas a unirte a alguna de las expediciones por Balabac, toda la comida, desde que te recogen hasta que te devuelven a Puerto Princesa, está incluida. También el agua potable. En los campamentos, aun así, se pueden comprar bebidas, incluyendo alguna que otra cerveza. En el caso de que tengas alguna alergia/intolerancia o seas vegano o vegetariano, te recomendamos que lo avises antes de hacer tu reserva y cuando llegues al campamento, que es donde harás la mayoría de las comidas. Se adaptarán a ti, aunque tampoco esperes grandes adaptaciones. De otra manera, las comidas suelen ser medianamente abundantes y en ocasiones incluyen marisco fresco. Si puedes llevar algún snack desde Puerto, quizás lo agradeces en algún momento.</p>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><strong>Qué llevar</strong></span>: En nuestra súper guía de <a title="Qué llevar en la mochila para Filipinas" href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener">Qué llevar a Filipinas</a> tienes ya muchas pistas de lo que te puede resultar útil también en el island hopping de Balabac. Algunos de nuestros básicos serían:</p>
+<ul style="text-align: justify;">
+<li><strong>Bolsa estanca</strong>: Será tu mejor amiga cuando el oleaje entre una y otra vez en tu bangka y quieras tener a buen resguardo cosas como tu pasaporte, tu cámara o tu dron. En algunos lugares de Filipinas las podrás comprar pero si quieres llevarla ya desde casa échale un ojo a esta: <a href="https://amzn.to/2FWNRry" target="_blank" rel="nofollow noopener">Bolsa estanca para viajar</a>.</li>
+<li><strong>Batería portátil</strong>: La electricidad en los campamentos de las expediciones está limitada a ciertas horas del día y cuando estés visitando las islas seguramente gastes mucha batería del móvil para inmortalizar este paraíso a base de cientos de fotos y vídeos. Si no te quieres quedar sin batería te puede resultar muy útil contar con una externa como esta: <a href="https://amzn.to/3saZW7t" target="_blank" rel="nofollow noopener">Batería portátil para viajar</a>.</li>
+<li><strong>Ladrón</strong>: Quizá esto en tu caso no te sea necesario pero ahí te dejamos la idea. Nosotros viajamos con cámaras, drones, móviles, baterías portátiles, ordenadores… Sería injusto quedarnos con todos los enchufes disponibles en la zona común de los campings y por ello llevamos siempre nuestro “ladrón-cubo”. Ocupamos un único enchufe pero podemos cargarlo todo a la vez e incluso compartirlo con otros viajeros. Usamos este: <a href="https://amzn.to/3YwMV44" target="_blank" rel="nofollow noopener">Enchufe cubo con USB</a>.</li>
+<li><strong>Repelente de mosquitos</strong>: Otro básico que no debe faltar. En cualquier <em>sari sari</em> podrás comprar el clásico Off.</li>
+<li><strong>Máscara y tubo de esnórquel</strong>: Ya sabes que siempre recomendamos viajar con tu propio kit de esnórquel. Es más higiénico, será material de mucha mayor calidad, ahorrarás dinero y no es algo que en la mochila ocupe demasiado. Esta es la que llevamos años usando: <a href="https://amzn.to/2JBcfQi" target="_blank" rel="nofollow noopener">Equipo de esnórquel de calidad</a>.</li>
+<li><strong>Botella de reutilizable de acero</strong>: Otra cosa con la que llevamos años viajando. Ideal para tener agua fresca en medio de un día caluroso e ideal para ir rellenando por toda Filipinas de forma gratuita sin tener que comprar botellas que generan residuos plásticos. Usamos esta ahora mismo y estamos súper contentos con ella: <a href="https://amzn.to/3OARcyO" target="_blank" rel="nofollow noopener">Botella reutilizable buena</a>.</li>
+<li><strong>Protector solar</strong>: Estarás absorto ante la belleza del lugar e, incluso en días nublados, el sol pega fuerte. No olvides llevar tu protector solar para no arrepentirte al día siguiente cuando estés quemado. Por favor, hazte con uno que no sea nocivo para el coral y los animales marinos, como este: <a href="https://amzn.to/3sasRbK" target="_blank" rel="nofollow noopener">Protector solar eco</a>.</li>
+<li><strong>Ropa</strong>: Aquí no vamos a profundizar mucho porque es obvio que el bañador es la pieza fundamental. Pero si que queremos recomendarte que te lleves algo de abrigo por si te toca días de mal tiempo o si durante las noches refresca. ¡Más vale prevenir que constipar!</li>
+<li style="text-align: justify;"><strong>Biodramina (con cafeína):</strong> si no la llevas desde casa, puedes comprar Bonamine en cualquier farmacia filipina. Da sueño, pero es efectiva si te mareas mucho en los barcos. Hay trayectos que se te pueden hacer largos, por lo que quizás tomarte media te será de utilidad.</li>
+<li style="text-align: justify;"><strong>Champú/jabón:</strong> no te van a dar nada de eso y no lo encontrarás. Suena básico, pero es mejor que no se te olvide.</li>
+</ul>
+<p style="font-weight: 400; text-align: justify;"><span style="color: #33cccc;"><strong>Seguro de viaje</strong></span>: No se nos ocurre viajar a ningún lugar de Filipinas sin él <strong>y menos aquí</strong>. Un corte con el coral, algún alimento que te sentara mal, la picadura de algún mosquito portador de enfermedades… <strong>no quieres quedarte colgado en Balabac</strong>. Nosotros llevamos años usando este <a title="Seguro de viaje para Filipinas, el mejor de 2023" href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener">seguro de viaje a Filipinas</a> (ya sabes que nos ahorró más de 22.000 euros en Manila) y además tienes un <a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=balabisland" target="_blank" rel="nofollow noopener">5% de descuento si te haces con él haciendo clic aquí</a>.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-12551" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Balabac, Viajar por Filipinas, Claudia y Jairo" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12551" src="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18.jpg" alt="Balabac, Viajar por Filipinas, Claudia y Jairo" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2023/08/balabac-island-hopping-18-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<p style="text-align: center;">¿Todo listo para disfrutar el island hopping de Balabac? ¡Te encantará! Si tienes dudas o quieres más información no dudes en dejarnos un comentario aquí abajo y te ayudaremos encantados. Además, en la Guía de Balabac, tienes otros artículos interesantes que también te ayudarán.</p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">1.501 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/comment-page-65/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56895">
+		<article id="comment-56895" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Yola</span>				<span class="comment_date">
+					el 13/05/2025 a las 15:12				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!!!<br />
+Muchas gracias por toda la info que compartís. Es de mucha ayuda<br />
+Podrías enviarme el contacto para el island hopping en Balabac ?<br />
+Gracias ????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56895' data-commentid="56895" data-postid="12526" data-belowelement="comment-56895" data-respondelement="respond" data-replyto="Responder a Yola" aria-label='Responder a Yola'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56897">
+		<article id="comment-56897" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/05/2025 a las 16:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Yola, ¡de nada! Ahora mismo te lo pasamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56846">
+		<article id="comment-56846" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Adrian</span>				<span class="comment_date">
+					el 11/05/2025 a las 22:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podriais pasarme el contacto de la agencia? Nos ha encantado!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56846' data-commentid="56846" data-postid="12526" data-belowelement="comment-56846" data-respondelement="respond" data-replyto="Responder a Adrian" aria-label='Responder a Adrian'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56857">
+		<article id="comment-56857" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/05/2025 a las 10:05				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Adrian. Te lo acabamos de enviar.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56826">
+		<article id="comment-56826" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">enric</span>				<span class="comment_date">
+					el 11/05/2025 a las 11:47				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, llegaremos a puerto princesa el 33 de noviembre destino balabac..nos puedes dar detalle de la agencia para hacer el island hoppig, somos un grupo de 6..</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56826' data-commentid="56826" data-postid="12526" data-belowelement="comment-56826" data-respondelement="respond" data-replyto="Responder a enric" aria-label='Responder a enric'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56827">
+		<article id="comment-56827" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 11/05/2025 a las 12:03				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Enric, ahora te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56752">
+		<article id="comment-56752" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Gisela</span>				<span class="comment_date">
+					el 08/05/2025 a las 20:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>HOLA !!<br />
+mil gracias por toda la informacion!! Quisiera pedirles la agencia para hacer el tour 4 dias y 3 noches por la isla de balabac!<br />
+Muchas Gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56752' data-commentid="56752" data-postid="12526" data-belowelement="comment-56752" data-respondelement="respond" data-replyto="Responder a Gisela" aria-label='Responder a Gisela'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56756">
+		<article id="comment-56756" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/05/2025 a las 08:54				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>¡De nada, Gisela! Te lo enviamos ahora mismo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56693">
+		<article id="comment-56693" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Tom</span>				<span class="comment_date">
+					el 07/05/2025 a las 10:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Me podrías pasar información sobre el island hopping que hicisteis en Balabac 4D3N por favor? Gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56693' data-commentid="56693" data-postid="12526" data-belowelement="comment-56693" data-respondelement="respond" data-replyto="Responder a Tom" aria-label='Responder a Tom'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56705">
+		<article id="comment-56705" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/05/2025 a las 17:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Tom, por supuesto que sí, ya lo tienes. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56687">
+		<article id="comment-56687" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lidia</span>				<span class="comment_date">
+					el 07/05/2025 a las 02:36				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chic@s! Me ha encantado este post. Voy a estar en Filipinas un mes y este Island Hopping está entre las posibles cosas para hacer. ¿Podrías pasarme el enlace de la empresa con la que lo hicísteis? Muchísimas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56687' data-commentid="56687" data-postid="12526" data-belowelement="comment-56687" data-respondelement="respond" data-replyto="Responder a Lidia" aria-label='Responder a Lidia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56701">
+		<article id="comment-56701" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/05/2025 a las 16:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lidia, muchas gracias. Ahora mismo te lo pasamos. Abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56680">
+		<article id="comment-56680" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Marina</span>				<span class="comment_date">
+					el 06/05/2025 a las 20:03				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>¡Buenas! Me ha encantado este post. Voy a estar en Filipinas un mes y este Island Hopping está entre las posibles cosas para hacer. ¿Podrías pasarme el enlace de la empresa con la que lo hicísteis? Muchísimas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56680' data-commentid="56680" data-postid="12526" data-belowelement="comment-56680" data-respondelement="respond" data-replyto="Responder a Marina" aria-label='Responder a Marina'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56682">
+		<article id="comment-56682" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/05/2025 a las 21:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Marina, muchas gracias : ) te lo pasamos ahora mismo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56645">
+		<article id="comment-56645" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lucia</span>				<span class="comment_date">
+					el 05/05/2025 a las 18:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Me podrían pasar el nombre de la agencia con la que hicieron la expedición a Balabac? Gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56645' data-commentid="56645" data-postid="12526" data-belowelement="comment-56645" data-respondelement="respond" data-replyto="Responder a Lucia" aria-label='Responder a Lucia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56646">
+		<article id="comment-56646" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/05/2025 a las 18:32				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía, ahora te lo enviamos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-56641">
+		<article id="comment-56641" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Marta</span>				<span class="comment_date">
+					el 05/05/2025 a las 17:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Nos interesa la expedición de balabac desde puerto princesa aunque necesitamos alguna recomendacion. Estamos ya en filipinas y el dia 16 llegamos a el nido y el dia 24 volvemos a casa desde puerto princesa. Leyendo sobre Balabac nos surge la duda de si apostar por ello en este viaje o quedarnos mas tranquilamente con lo “planificado” por el nido &#8211; port barton-puerto princesa. Nos podeis orientar un poco??<br />
+Mil gracias por adelantado y por el blog.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56641' data-commentid="56641" data-postid="12526" data-belowelement="comment-56641" data-respondelement="respond" data-replyto="Responder a Marta" aria-label='Responder a Marta'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56644">
+		<article id="comment-56644" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/05/2025 a las 18:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Marta, sentimos no poder ayudaros, pero es que ambas opciones son muy buenas. Port Barton y El Nido son geniales para los días que tenéis y, además, se están viendo los tiburones ballena en Puerto Princesa, por lo que también es un buen final de viaje. Nos encantaría poder deciros más, pero os diríamos que os orientéis por el <em>feeling</em> que os dé cada cosa. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56517">
+		<article id="comment-56517" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Nieves</span>				<span class="comment_date">
+					el 02/05/2025 a las 22:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Muchas gracias por toda la información, estamos dudando si hacer Balabac las Islas Gigantes o las Islas Romblon, ¿tenéis alguna recomendación? ¿Me podríais facilitar el nombre de la agencia con la que hicisteis el island hopping? Mil gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56517' data-commentid="56517" data-postid="12526" data-belowelement="comment-56517" data-respondelement="respond" data-replyto="Responder a Nieves" aria-label='Responder a Nieves'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56535">
+		<article id="comment-56535" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/05/2025 a las 08:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Nieves, ¡de nada! Nosotros elegiríamos según el número de días del que dispongáis y del resto de la ruta, ya que los desplazamientos os llevarán más o menos. Ahora te pasamos igualmente lo de Balabac. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/comment-page-65/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/balabac-island-hopping/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='12526' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dce447d578" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="44"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"12526","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

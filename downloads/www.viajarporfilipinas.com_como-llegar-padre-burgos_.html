@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Cómo llegar a Padre Burgos - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Si quieres nadar con el tiburón ballena o bucear en un sitio de película, necesitas saber cómo llegar a Padre Burgos, Leyte. Horarios, precios..." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Cómo llegar a Padre Burgos - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Si quieres nadar con el tiburón ballena o bucear en un sitio de película, necesitas saber cómo llegar a Padre Burgos, Leyte. Horarios, precios..." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-08-31T17:22:52+00:00" />
+	<meta property="article:modified_time" content="2024-09-24T09:44:28+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="16 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Cómo llegar a Padre Burgos","datePublished":"2020-08-31T17:22:52+00:00","dateModified":"2024-09-24T09:44:28+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/"},"wordCount":3197,"commentCount":38,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4.jpg","articleSection":["Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/","url":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/","name":"▷ Cómo llegar a Padre Burgos - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4.jpg","datePublished":"2020-08-31T17:22:52+00:00","dateModified":"2024-09-24T09:44:28+00:00","description":"Si quieres nadar con el tiburón ballena o bucear en un sitio de película, necesitas saber cómo llegar a Padre Burgos, Leyte. Horarios, precios...","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/como-llegar-padre-burgos/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4.jpg","width":1200,"height":630,"caption":"Cómo llegar a Padre Burgos"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/como-llegar-padre-burgos/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Cómo llegar a Padre Burgos"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Cómo llegar a Padre Burgos del feed" href="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/8420" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=8420' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fcomo-llegar-padre-burgos%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fcomo-llegar-padre-burgos%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-8420-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8420/et-core-unified-8420.min.css?ver=1745578230" /><link rel="stylesheet" id="et-core-unified-deferred-8420-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8420/et-core-unified-deferred-8420.min.css?ver=1745578230" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-8420 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-8420" class="et_pb_post post-8420 post type-post status-publish format-standard has-post-thumbnail hentry category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Cómo llegar a Padre Burgos</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Cómo llegar a Padre Burgos" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-1080x630.jpg" alt="Cómo llegar a Padre Burgos" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-4-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Si estás buscando <strong>cómo llegar a Padre Burgos </strong>es porque te mueres de ganas de <a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer"><strong>nadar con el tiburón ballena en Filipinas </strong></a>o quieres conocer los fabulosos fondos marinos de la bahía de Sogod.</p>
+<p style="text-align: justify;">Ubicada al sur de la isla de Leyte, este pequeño pueblo es un punto perfecto para pasar unos días de relax. Sin embargo, al ser un sitio tan poco turístico, todavía <strong>no existen muchas opciones de transporte directo</strong> y vas a tener que combinar varios. Por ello, nos hemos animado a crear esta guía para que puedas <strong>llegar a Padre Burgos</strong> lo más rápido posible.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258922b74a0" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258922b74a0"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFDonde_esta_Padre_Burgos" title="¿Dónde está Padre Burgos?">¿Dónde está Padre Burgos?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Como_llegar_a_Padre_Burgos_desde_Cebu" title="Cómo llegar a Padre Burgos desde Cebú">Cómo llegar a Padre Burgos desde Cebú</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#1_Ir_de_Cebu_a_Padre_Burgos_via_Maasin" title="1. Ir de Cebú a Padre Burgos vía Maasin">1. Ir de Cebú a Padre Burgos vía Maasin</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#2_Ir_de_Cebu_a_Padre_Burgos_via_Hilongos" title="2. Ir de Cebú a Padre Burgos vía Hilongos">2. Ir de Cebú a Padre Burgos vía Hilongos</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#3_Ir_de_Cebu_a_Padre_Burgos_via_Bato" title="3. Ir de Cebú a Padre Burgos vía Bato">3. Ir de Cebú a Padre Burgos vía Bato</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#4_Ir_de_Cebu_a_Padre_Burgos_via_Ormoc" title="4. Ir de Cebú a Padre Burgos vía Ormoc">4. Ir de Cebú a Padre Burgos vía Ormoc</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#5_Ir_de_Cebu_a_Padre_Burgos_via_Tacloban" title="5. Ir de Cebú a Padre Burgos vía Tacloban">5. Ir de Cebú a Padre Burgos vía Tacloban</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Como_llegar_a_Padre_Burgos_desde_Bohol" title="Cómo llegar a Padre Burgos desde Bohol">Cómo llegar a Padre Burgos desde Bohol</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#Como_llegar_a_Padre_Burgos_desde_Siargao" title="Cómo llegar a Padre Burgos desde Siargao">Cómo llegar a Padre Burgos desde Siargao</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#Como_llegar_a_Padre_Burgos_desde_Malapascua" title="Cómo llegar a Padre Burgos desde Malapascua">Cómo llegar a Padre Burgos desde Malapascua</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#1_Ir_de_Malapascua_a_Padre_Burgos_via_Cebu" title="1. Ir de Malapascua a Padre Burgos vía Cebu">1. Ir de Malapascua a Padre Burgos vía Cebu</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#2_Ir_de_Malapascua_a_Padre_Burgos_via_Kalanggaman" title="2. Ir de Malapascua a Padre Burgos vía Kalanggaman">2. Ir de Malapascua a Padre Burgos vía Kalanggaman</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-13" href="#Como_llegar_a_Padre_Burgos_desde_Manila" title="Cómo llegar a Padre Burgos desde Manila">Cómo llegar a Padre Burgos desde Manila</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-14" href="#Ir_a_Padre_Burgos_desde_otros_rincones_de_Filipinas" title="Ir a Padre Burgos desde otros rincones de Filipinas">Ir a Padre Burgos desde otros rincones de Filipinas</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-15" href="#Donde_dormir_en_Padre_Burgos" title="Dónde dormir en Padre Burgos">Dónde dormir en Padre Burgos</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_esta_Padre_Burgos"></span><span style="color: #33cccc;">¿Dónde está Padre Burgos?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Padre Burgos se ubica en la provincia de <strong>Southern Leyte</strong>, en la isla de Leyte. Esta pertenece a la región de Eastern Bisayas. Si te fijas en el mapa, se sitúa junto a la <strong>bahía de Sogod</strong>.</p>
+<p style="text-align: justify;">El puerto más importante cercano a ella es el de <strong>Maasin</strong> (a unos 30 kilómetros) y después están los de Bato e Hilongos, en la costa opuesta de Leyte. El <strong>aeropuerto</strong> más próximo es el de Tacloban, al norte de la isla.</p>
+<p style="text-align: justify;">La mayoría de resorts se ubican a lo largo de la costa, en dirección al norte. Los buses no tienen ninguna parada exacta, sino que van parando conforme la gente lo va pidiendo, así que no vas a tener ningún problema en llegar a tu alojamiento.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=14AGccD9DOMBm4CyNr12Vy4WFol4hS3W1"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=14AGccD9DOMBm4CyNr12Vy4WFol4hS3W1" width="1000" height="480"></iframe></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Padre_Burgos_desde_Cebu"></span><span style="color: #33cccc;">Cómo llegar a Padre Burgos desde Cebú</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">En nuestra opinión, a no ser que ya estés en Bohol, la manera más cómoda de llegar a Padre Burgos es desde Cebú. Como te contamos en <a href="https://www.viajarporfilipinas.com/como-llegar-cebu/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Cebú</strong></a>, ahí tienes un aeropuerto internacional, así como un puerto muy importante al que llegan barcos de casi cualquier punto de Filipinas.</p>
+<p style="text-align: justify;">Para ir a Padre Burgos desde Cebú tienes básicamente <strong>5 opciones</strong>: por el puerto de Maasin, por el puerto de Hilongos, por el puerto de Bato, por el puerto de Ormoc y por el aeropuerto de Tacloban. <strong>La más directa es vía Maasin, ya que es un puerto más cercano</strong>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Ir_de_Cebu_a_Padre_Burgos_via_Maasin"></span><span style="color: #33cccc;">1. Ir de Cebú a Padre Burgos vía Maasin</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Esta es la forma para llegar a Padre Burgos más directa en caso de venir desde Cebú.</p>
+<p style="text-align: justify;">La opción más rápida te la da <strong>Oceanjet</strong>, que desde septiembre de 2024 tiene barcos rápidos cada día a las 7:00 de la mañana y llega en apenas 3 horas a Maasin, ¡un lujazo! Puedes reservar desde <a href="https://12go.asia/es/travel/cebu/maasin-port?z=1864900" target="_blank" rel="nofollow noopener"><strong>esta plataforma</strong></a>.</p>
+<p style="text-align: justify;">Si quieres ahorrar, también la opción de ir con <strong>Cockaliong Shipping</strong>, que sale cada lunes y viernes a las 19:00. Llega a la 1:30 de la madrugada a Maasin. Zarpan desde el pier 1 (muelle 1) del puerto de Cebú City. Como es una ruta algo variable, te recomendamos reconfirmar los horarios <a href="https://www.cokaliongshipping.com/index.php/about/" target="_blank" rel="nofollow noopener noreferrer">aquí</a>. No se venden online.</p>
+<p style="text-align: justify;">En el sentido contrario, es decir, de Maasin a Cebu, salen a las 8:00 los martes y jueves y llegan más o menos a las 14:00.</p>
+<p style="text-align: justify;">Los precios de este recorrido comienzan en 540 pesos para la clase Economy y van aumentando conforme subes de clase, pudiendo estar hasta en una suite. En cualquier caso, todo son <strong>camas</strong>, por lo que irás bastante cómodo. A este coste tendrás que sumarle 25 pesos de las tasas del puerto de Cebú.</p>
+<p style="text-align: justify;"><strong><em>¿Cómo ir desde Maasin a Padre Burgos?</em></strong> Una vez allí, nada más salir del puerto, verás unos <em>multicabs</em> (<em>jeepneys</em> más pequeños) que van hacia Padre Burgos. Tardan entre 30 y 40 minutos y el precio ronda los 60 pesos por persona. A nosotros nos dejaron en nuestro resort, pasando ya el pueblo de Padre Burgos. También puedes esperar que pase cualquier bus en dirección Sogod.</p>
+<p style="text-align: justify;">Casi todos los resorts en Padre Burgos organizan recogidas en cualquier punto de Leyte. Así que también puedes consultar con ellos por si no quieres complicarte demasiado. Al final de este artículo encontrarás recomendaciones para dormir en Padre Burgos.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Ir_de_Cebu_a_Padre_Burgos_via_Hilongos"></span><span style="color: #33cccc;">2. Ir de Cebú a Padre Burgos vía Hilongos</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si no encuentras barcos a Maasin que te convengan, otra manera de ir a Padre Burgos desde Cebú es cogiendo un ferri a Hilongos. Existen varias empresas, pero las 2 principales son:</p>
+<ul style="text-align: justify;">
+<li><a href="https://www.robleshipping.com/" target="_blank" rel="nofollow noopener noreferrer"><strong>Roble Shipping</strong></a><strong>:</strong> barcos a las 11:00 y a las 21:00 cada día. El viaje dura unas 5 horas. Los precios empiezan en 480 pesos por un asiento, pero, ya que son unas cuantas horas, merece la pena ir en una cama. La diferencia de precio no es mucha. No se puede reservar online, tendrás que ir a <a href="https://goo.gl/maps/NEzw1XmnKKsHHY6W7" target="_blank" rel="nofollow noopener noreferrer">su oficina</a>. Una vez allí, puedes caminar al Pier 3, que es desde donde salen los barcos.</li>
+<li><a href="https://www.facebook.com/gabisanshipping/" target="_blank" rel="nofollow noopener noreferrer"><strong>Gabisan Shipping Lines</strong></a><strong>:</strong> barcos todos los días menos los martes a las 14:00 (llegada 17:30) y todos los días menos los domingos a las 21:00 en un barco tipo ro-ro, que es más lento (unas 5 horas). El viaje también dura unas 5 horas y los precios son parecidos a los de Roble, a partir de 400 pesos.</li>
+</ul>
+<p style="text-align: justify;"><strong><em>¿Cómo ir de Hilongos a Padre Burgos?</em></strong> Una vez en el puerto, lo habitual es ver unos buses nada más salir del barco a mano izquierda. Es muy probable que alguno de ellos vaya a Maasin, ya que es un destino muy frecuente. En caso de no ser así, puedes caminar hasta la carretera principal o coger un <em>pedicab</em> (<em>tricycle</em> de pedales) y allí parar cualquier bus que vaya hacia Maasin. El recorrido dura, más o menos, 90 minutos. El precio del bus depende de si es con o sin aire acondicionado, pero ronda los 80 pesos.</p>
+<p style="text-align: justify;">Una vez en Maasin, enlaza con cualquier bus o <em>multicab</em> que vaya a Padre Burgos. Son unos 45 minutos más.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-8423" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="barco cebu hilongos roble shipping" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-8423" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1.jpg" alt="barco cebu hilongos roble shipping" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-1-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Ir_de_Cebu_a_Padre_Burgos_via_Bato"></span><span style="color: #33cccc;">3. Ir de Cebú a Padre Burgos vía Bato</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Otra alternativa es coger un ferri a Bato. Las empresas son:</p>
+<ul style="text-align: justify;">
+<li><strong>Medallion Transport</strong><strong>: </strong>barcos lunes, miércoles y viernes a las 20:30. Dura 6 horas y cuesta a partir de 470 pesos. Se puede reservar online <a href="https://12go.com/es/travel/cebu/bato/?z=1864900" target="_blank" rel="nofollow noopener"><strong>aquí</strong></a>.</li>
+<li><strong>Southern Pacific Trans. Corp.:</strong> salen cada día a las 20:00 y llegan a las 3:00. &#8211; <span style="color: #ff0000;">Confirma con antelación en el puerto, no tienen ni web ni Facebook.</span></li>
+</ul>
+<p style="text-align: justify;"><strong><em>¿Cómo ir de Bato a Padre Burgos?</em></strong> Como en el caso de Hilongos, también existen buses que van hacia Maasin. De hecho, suelen ser los mismos que pasan por Hilongos. Al estar más cerca, el recorrido dura, aproximadamente, una hora. Ya en Maasin, coge un bus o <em>multicab</em> a Padre Burgos.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Ir_de_Cebu_a_Padre_Burgos_via_Ormoc"></span><span style="color: #33cccc;">4. Ir de Cebú a Padre Burgos vía Ormoc</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Ormoc está bastante más al norte que Hilongos, pero quizás te venga bien coger, por horario, alguno de los ferris que van hasta allí para ir de Cebú a Padre Burgos. Las compañías son:</p>
+<ul style="text-align: justify;">
+<li><strong>Roble Shipping: </strong>ferri diario de Cebú a Ormoc a las 22:00. Tarda unas 5 horas. A partir de 600 pesos.</li>
+<li><strong>Lite Shipping</strong><strong>:</strong> cada día a las 11:00. También tarda unas 7 horas y se puede reservar <a href="https://12go.com/es/travel/cebu/ormoc/?z=1864900" target="_blank" rel="nofollow noopener"><strong>aquí</strong></a>.</li>
+<li><strong>Oceanjet:</strong> barcos rápidos a las 5:00, 6:00, 9:30, 12:00, 13:00 y 16:30. El viaje dura 2 horas y 40 minutos. Puedes reservar <strong><a href="https://12go.asia/es/travel/cebu/ormoc/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">aquí</a></strong>.</li>
+<li><strong>Supercat:</strong> diarios a las 5:30, 9:00, 12:30 y 16:00. El recorrido dura 3 horas. Puedes reservar <strong><a href="https://12go.asia/es/travel/cebu/ormoc/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">aquí</a></strong>.</li>
+<li><strong>Seacat:</strong> diarios a las 8:30 y las 15:30. También duran alrededor de 3 horas y se puede reservar <a href="https://12go.asia/es/travel/cebu/ormoc/?z=1864900" target="_blank" rel="nofollow noopener"><strong>aquí</strong></a>.</li>
+</ul>
+<p style="text-align: justify;"><strong><em>¿Cómo ir de Ormoc a Maasin?</em></strong> Puedes coger un bus o furgoneta que vaya hacia Maasin. El recorrido dura unas 3,5 horas y salen por unos 200 pesos, según lo que elijas. Por el puerto suele haber oferta, pero, si no encuentras nada, vete al Ormoc City Park, entre Larrazabal St. y el baywalk.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Ir_de_Cebu_a_Padre_Burgos_via_Tacloban"></span><span style="color: #33cccc;">5. Ir de Cebú a Padre Burgos vía Tacloban</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si no te cuadran los horarios, puedes ir en avión, aunque si no se reservar con antelación será más caro y no ahorras mucho tiempo. Cebu Pacific Air (Cebgo) y Philippine Airlines operan vuelos casi cada día. En caso de tenerlo muy claro con semanas/meses de antelación se pueden encontrar vuelos por unos 16€.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fceb%2Ftac%2Finternacional-de-mactan-cebu-a-tacloban.html" target="_blank" rel="nofollow noopener noreferrer">Vuelos de Cebú a Tacloban</a></p>
+<p style="text-align: justify;"><strong><em>¿Cómo ir de Tacloban a Padre Burgos? </em></strong>Tendrás que coger primero un <em>tricycle</em> a la Robinsons Tacloban Transport Terminal. Una vez allí, verás furgonetas y buses hacia Maasin. Si puedes, pregunta por las que pasan por Padre Burgos, para no tener que dar más vueltas. Tardarás más o menos 3 horas y media si vas en furgoneta, bastante más en bus, ya que van haciendo paradas.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Padre_Burgos_desde_Bohol"></span><span style="color: #33cccc;">Cómo llegar a Padre Burgos desde Bohol</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Has pasado unos días en la preciosa Bohol y quieres llegar a Padre Burgos? Pues entonces no lo tienes demasiado complicado.</p>
+<p style="text-align: justify;">Lo primero que tienes que hacer es <strong>llegar al puerto de Ubay</strong>, desde el cual zarpan los barcos hacia Leyte. Dependiendo de dónde estés en Bohol, tendrás que llegar de una manera u otra:</p>
+<ul style="text-align: justify;">
+<li><strong>De Tagbilaran a Ubay:</strong> en la Dao Terminal (Integrated Bus Terminal) tienes buses y furgonetas a Ubay. El recorrido dura unas 3 horas y ronda los 150 pesos.</li>
+<li><strong>De Panglao a Ubay:</strong> tendrás que ir a la terminal de buses de Tagbilaran primero. Para ello, puedes coger el bus del aeropuerto, que pasa por la carretera principal de Alona Beach (1 hora/50 pesos), un <em>tricycle</em> (45 minutos/300 pesos) o un taxi (30 minutos/500 pesos). Después, sigue los pasos de arriba.</li>
+<li><strong>De Anda a Ubay: </strong>coge una <em>motorela</em> hasta la Bohol Circumferential Road (si la coges compartida, cobran 20-30 pesos). Allí, espera cualquier bus que vaya a Ubay. Tardarás 90 minutos aproximadamente.</li>
+</ul>
+<p style="text-align: justify;">Cuando llegues a Ubay, tendrás que coger un tricycle hasta el puerto, ya que la nueva estación de buses está a 3 kilómetros. Por uno para ti solo no deberían cobrarte más de 40 pesos. El <strong>horario de los barcos de Bohol a Leyte</strong> es:</p>
+<ul style="text-align: justify;">
+<li><strong>A Bato:</strong> el Soemco Mariner sale cada día a las 8:00 y tarda 1,5 horas. Cuesta 470 pesos. También tienes ferris de la compañía Medallion Transport. Sale a las 10:00, las 12:00 y las 18:00. El billete cuesta 480 pesos. Ninguno de los dos se puede reservar online. En dirección contraria, de Bato a Ubay, salen de a las 8:30, 10:30, 15:00 y 18:00.</li>
+<li><strong>Hilongos:</strong> los barcos de Leopard salen a las 9:00 de Ubay y tardan un par de horas.</li>
+</ul>
+<p style="text-align: justify;"><strong>OJO:</strong> todos estos horarios es mejor que los toméis con pinzas o los confirméis con antelación con los centros de buceo en Padre Burgos porque no son zonas turísticas, hay pocas opciones y cambian constantemente.</p>
+<p style="text-align: justify;">Una vez en Bato o Hilongos, tendrás que coger un bus hasta Maasin y luego un <em>multicab</em> a Padre Burgos. Calcula entre 90 minutos y 2 horas.</p>
+<p style="text-align: center;">Si todavía no estás en Bohol, no te pierdas nuestro artículo <a href="https://www.viajarporfilipinas.com/como-llegar-bohol/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Bohol</strong></a><strong>.</strong></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8425" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="barcos de bohol a padre burgos" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8425" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3.jpg" alt="barcos de bohol a padre burgos" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-bugos-3-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Padre_Burgos_desde_Siargao"></span><span style="color: #33cccc;">Cómo llegar a Padre Burgos desde Siargao</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si estás en la bonita Siargao y quieres nadar con el tiburón ballena, no dudes en ir a Padre Burgos. No es tan complicado, ya que está relativamente cerca.</p>
+<p style="text-align: justify;">Para ir de Siargao a Padre Burgos, sigue estos pasos:</p>
+<ol style="text-align: justify;">
+<li><strong>Coge el barco de Siargao a Surigao en Dapa: </strong>hay barcos más o menos desde las 4:00 hasta las 15:30. El único que se puede <a href="https://12go.asia/es/travel/siargao-island/surigao/?z=1864900" target="_blank" rel="nofollow noopener noreferrer"><strong>reservar online</strong></a> es el de Evaristo and Sons, que sale a las 4:00, 6:00, 10:00, 13:00 y 15:30 cada día. El de las 4:00 tarda 3,5 horas y los demás 1,5 horas. Sale por unos 400 pesos, según el tipo de barco. Si sales a primera hora, podrás llegar a Padre Burgos desde Siargao tranquilamente en el mismo día.</li>
+<li><strong>Coge un tricycle o anda desde la Eva Macapagal Passenger Terminal hasta el Luneta Park:</strong> el tricycle no te debe costar más de 10 pesos por persona.</li>
+<li><strong>Coge un <em>jeepney</em> al puerto de Lipata: </strong>salen más o menos conforme se llenan desde la esquina de la calle Borromeo con Luneta. El viaje son apenas 8 kilómetros.</li>
+<li><strong>Coge un barco de Lipata a Lilo-an: </strong><a href="https://www.fastcat.com.ph/schedules/#1521184793782-47cd4105-4365" target="_blank" rel="nofollow noopener noreferrer">Fastcat </a>tiene barcos a las 00:00, 6:00, 12:00 y 18:00 cada día. El viaje dura 2 horas. Si no llegas a los de Lilo-an, que está más cerca, puedes ir a San Ricardo. San Ricardo Shipping Lines y Montenegro tienen varias frecuencias más o menos entre las 5:00 y las 17:00. No se venden online y aconsejamos preguntar a la <a href="https://www.facebook.com/profile.php?id=100072240535158" target="_blank" rel="nofollow noopener">oficina de turismo de Pintuyan</a> para reconfirmar horarios. El recorrido dura aproximadamente una hora y cuesta alrededor de los 300 pesos.</li>
+<li><strong>Coge un bus o furgoneta hacia Sogod o Maasin:</strong> pregunta al conductor, pero lo habitual es que puedas montarte en cualquiera que vaya a Tacloban, Sogod, Ormoc… Pregunta también por si hay alguna que vaya a Maasin. Tardarás unos 40 minutos hacia Sogod. Una vez allí, coge otro bus que vaya a Maasin. Pregunta si pasa por Padre Burgos, para que puedas bajarte en tu alojamiento. Este recorrido te va a llevar unas 4-5 horas.</li>
+</ol>
+<p style="text-align: justify;">☀️ Recuerda que <strong><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/" target="_blank" rel="noopener noreferrer">Pintuyan</a></strong> te queda de paso, por lo que quedarte ahí es una alternativa más corta en tiempo y también en dinero.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Padre_Burgos_desde_Malapascua"></span><span style="color: #33cccc;">Cómo llegar a Padre Burgos desde Malapascua</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si piensas hacer doblete y disfrutar tanto del <a href="https://www.viajarporfilipinas.com/buceo-tiburon-zorro-malapascua/" target="_blank" rel="noopener noreferrer"><strong>tiburón zorro en Malapascua</strong></a> como del ballena, entonces te interesa saber cómo ir de Malapascua a Padre Burgos. Para ello, puedes optar entre pasar por Cebú o por Kalanggaman. Descubre las <strong>dos opciones</strong>:</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Ir_de_Malapascua_a_Padre_Burgos_via_Cebu"></span><span style="color: #33cccc;">1. Ir de Malapascua a Padre Burgos vía Cebu</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Tendrás que volver a Cebú y luego ir hacia Leyte. Dependiendo de la hora de barco que elijas, tendrás que hacer noche o no en la ciudad. Echa un vistazo a <strong><a href="https://www.viajarporfilipinas.com/dormir-en-cebu/" target="_blank" rel="noopener noreferrer">Dónde dormir en Cebú</a></strong> para decidir. Los pasos son:</p>
+<ol style="text-align: justify;">
+<li><strong>Bangka de Malapascua a Maya: </strong>salen más o menos cada hora desde las 6:30 hasta las 17:30. El billete son 200 pesos por persona y tardan unos 30-45 minutos.</li>
+<li><strong>Bus o furgoneta a Cebu:</strong> puedes elegir entre las furgonetas que hay en el puerto (350 pesos) o los buses (250-320 pesos). Las furgonetas son más rápidas, dependiendo del tráfico de entrada en la ciudad. Calcula entre 3 y 6 horas.</li>
+<li><strong>Taxi a la terminal del puerto que te corresponda:</strong> puedes tardar unos 30 minutos, según el tráfico. Mira que que te pongan el taxímetro.</li>
+<li><strong>Ferri a Maasin, Bato, Hilongos u Ormoc:</strong> los tienes detallado en Cómo llegar a Padre Burgos desde Cebu.</li>
+<li><strong>Bus a Maasin:</strong> también lo tienes detallado arriba.</li>
+<li><strong><em>Multicab</em> a Padre Burgos</strong>.</li>
+</ol>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Ir_de_Malapascua_a_Padre_Burgos_via_Kalanggaman"></span><span style="color: #33cccc;">2. Ir de Malapascua a Padre Burgos vía Kalanggaman</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Te va a costar más trabajo, pero, si tienes pensado visitar <a href="https://www.viajarporfilipinas.com/kalanggaman-island-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer"><strong>Kalanggaman</strong></a>, quizás te sale a cuenta. Los pasos:</p>
+<ol style="text-align: justify;">
+<li><strong>Negociar el traslado a Kalanggaman:</strong> esta excursión cuesta 1.200-1.300 pesos por el transporte de ida y vuelta y 1.000 pesos de tasas de la isla. Por lo tanto, tendrías que negociar por el puerto cuánto te cuesta el trayecto ida. Puedes pensar en unos 600 pesos. La salida suele ser a las 9:00 y son unas 2 horas de navegación.</li>
+<li><strong>Negociar el traslado a Palompon:</strong> al no haber un transporte “de línea” que una Kalanggaman con Leyte, tendrías que unirte a un barco que haya venido desde Palompon y vaya a volver allí ese mismo día. Considera que llegarás a Kalanggaman sobre las 11:00, por lo que tendrás que esperar que las excursiones se volviesen, que suele ser sobre las 15:00 o 16:00. Si quieres quedarte más tiempo en Kalanggaman, ya sabes que puedes quedarte a dormir en las cabañas o tiendas de campañas de las que te hablamos en el artículo sobre la isla. Para que te hagas una idea, el barco de hasta 15 personas desde Palompon en ida y vuelta cuesta 3.000 pesos, por lo que el precio varía según el número de pasajeros. El trayecto dura unos 45 minutos.</li>
+<li><strong>Coger un bus o furgoneta a Ormoc:</strong> la furgoneta es bastante más rápida. Cuesta alrededor de 200 pesos y tarda 90 minutos.</li>
+<li><strong>Coger un bus o furgoneta de Ormoc a Maasin:</strong> las furgonetas son bastante más rápidas. Tardan unas, 3,5 horas.</li>
+<li><strong>Coger un bus o multicab a Padre Burgos:</strong> tardarás 30-40 minutos.</li>
+</ol>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar_a_Padre_Burgos_desde_Manila"></span><span style="color: #33cccc;">Cómo llegar a Padre Burgos desde Manila</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si estás en la capital filipina, para llegar a Padre Burgos lo más cómodo es que cojas un <strong>vuelo a Tacloban o a Cebú</strong>. Comprando con antelación se pueden conseguir por unos 16€. Una vez ahí, sigue los pasos que te hemos indicado en los apartados anteriores.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.espanol.skyscanner.com%2Frutas%2Fmnl%2Ftac%2Fmanila-ninoy-aquino-a-tacloban.html" target="_blank" rel="nofollow noopener noreferrer">Vuelos de Manila a Tacloban</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Frutas-aereas%2Fmnl%2Fceb%2Fmanila-ninoy-aquino-a-internacional-de-mactan-cebu.html" target="_blank" rel="nofollow noopener noreferrer">Vuelos de Manila a Cebú</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8424" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="vuelos a tacloban para llegar a padre burgos" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8424" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2.jpg" alt="vuelos a tacloban para llegar a padre burgos" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/08/como-llegar-padre-burgos-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Ir_a_Padre_Burgos_desde_otros_rincones_de_Filipinas"></span><span style="color: #33cccc;">Ir a Padre Burgos desde otros rincones de Filipinas</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Quieres ir a Padre Burgos desde algún punto que no hemos nombrado aquí? Puedes dejarnos un comentario y te contaremos, pero aquí te hacemos un pequeño resumen de los sitios más comunes:</p>
+<ul style="text-align: justify;">
+<li><strong>De Camiguin a Padre Burgos:</strong> tienes la opción de ir de Camiguin a Jagna (Bohol) en el barco de las 9:30 y llegar sobre las 13:30. Puedes reservar desde <a href="https://12go.asia/es/travel/balbagon/jagna?z=1864900" target="_blank" rel="nofollow noopener">este enlace</a>. Una vez ahí coger un bus a Ubay e intentar pillar algún barco que vaya hacia Bato o Hilongos.</li>
+<li><strong>De Bantayan a Padre Burgos: </strong>tendrás que regresar hasta Cebú (barco + bus) y luego seguir los pasos que te hemos dado arriba para llegar a Padre Burgos.</li>
+<li><strong>De Siquijor a Padre Burgos:</strong> tienes la opción de ir hasta Bohol (lee todo en <strong><a href="https://www.viajarporfilipinas.com/como-ir-bohol-siquijor/" target="_blank" rel="noopener noreferrer">Cómo ir de Siquijor a Bohol</a></strong>) o hasta Cebú (más en <strong><a href="https://www.viajarporfilipinas.com/como-llegar-cebu/" target="_blank" rel="noopener noreferrer">Cómo ir a Cebú</a></strong>).</li>
+<li><strong>De Moalboal a Padre Burgos: </strong>coge uno de los buses frecuentes hasta Cebú (3 horas) y luego sigue los pasos hacia Padre Burgos.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_dormir_en_Padre_Burgos"></span><span style="color: #33cccc;">Dónde dormir en Padre Burgos</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Padre Burgos es un sitio pequeño y con poco turismo. La gente que viene aquí viene básicamente a bucear porque es uno de los mejores sitios para hacer <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">buceo en Filipinas</a></strong>. Por ello, lo que lo que más vas a encontrar son <strong>resorts dedicados al mundo del buceo</strong>. En los últimos años han aumentado el número de viajeros que vienen a ver al tiburón ballena, por lo que los hoteles se han puesto las pilas y también están ofreciendo alojamientos más económicos.</p>
+<p style="text-align: justify;">Aquí te damos algunas recomendaciones <strong>donde dormir en Padre Burgos:</strong></p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.booking.com/hotel/ph/burgos-reef-padre-burgos3.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Burgos Reef Boutique Resort</a>:</strong> el mejor de la zona con gran diferencia, recién inaugurado.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/portofino-homestay-southern-leyte.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Portofino Homestay</a>:</strong> ubicado al norte de Padre Burgos, en un sitio tranquilísimo junto al mar. Con habitaciones cómodas y piscina.</li>
+<li><strong><a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es&amp;hid=5696117" target="_blank" rel="nofollow noopener noreferrer">Daom Dive Resort</a>:</strong> habitaciones sencillas, pero amplias y algunas con vistas al mar. El hotel tiene una pequeña pero bonita playa para darte un chapuzón y salir directamente a hacer esnórquel. Cuentan con restaurante y, por supuesto, tienda de buceo.</li>
+</ul>
+<p style="text-align: justify;">Si tienes pensado ir a Padre Burgos en temporada de tiburón ballena (de noviembre a abril) y, sobre todo, en fin de semana, te aconsejamos que <strong>reserves con antelación</strong>.</p>
+<hr />
+<p style="text-align: justify;">Por cierto, si finalmente te decides por Pintuyan en lugar de Padre Burgos para ver al tiburón ballena, no te pierdas nuestro artículo <a href="https://www.viajarporfilipinas.com/como-llegar-pintuyan/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Pintuyan</strong></a>.</p>
+<p style="text-align: center;"><em>Esperamos haberte orientado para llegar a Padre Burgos. Si tienes cualquier duda, te responderemos encantados en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">38 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-55011">
+		<article id="comment-55011" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Victor</span>				<span class="comment_date">
+					el 29/03/2025 a las 20:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! lo primero, muchas gracias por todo el contenido, nos sirve mucho de ayuda.</p>
+<p>Tenemos una semana, y tenemos pensado volar hasta el Nido (vamos desde China), después nos gustaría nadar ver tiburones en Padre Burgos y por último ir a Manila para la vuelta a España.<br />
+La pregunta es si hay alguna manera de ir desde el Nido a Padre Burgos, o si veis alguna alternativa diferente que veáis mejor.</p>
+<p>Gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55011' data-commentid="55011" data-postid="8420" data-belowelement="comment-55011" data-respondelement="respond" data-replyto="Responder a Victor" aria-label='Responder a Victor'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55019">
+		<article id="comment-55019" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/03/2025 a las 00:03				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Víctor, ¡de nada! Pues la forma más cómoda será volar de El Nido a Cebu y de ahí enlazar con el fast boat a Maasin. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51617">
+		<article id="comment-51617" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Žiga Žibert</span>				<span class="comment_date">
+					el 29/01/2025 a las 13:15				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, Muchas gracias por escribir este blog. Nos ha ayudado bastante planificando nuestro viaje pero tenemos algunas preguntas sobre como ir de Ubey a Leyte tu recomiendas hablar con los guias del las companias de buceo para confirmar los horarios pero hay una compania especifica con cual recomiendas ir? Tambien te queriamos preguntar si conoces si estos barcos van todos los dias porque tenemos miedo llegar y tener todo reservado y no poder cojer el barco. Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51617' data-commentid="51617" data-postid="8420" data-belowelement="comment-51617" data-respondelement="respond" data-replyto="Responder a Žiga Žibert" aria-label='Responder a Žiga Žibert'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51698">
+		<article id="comment-51698" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/01/2025 a las 04:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ziga, muchas gracias a ti por leernos : ) sí, nuestro consejo es que les preguntéis a los centros de buceo, que son quienes tienen los horarios actualizados para ir desde Ubay. Sí, los barcos van todos los días y no os preocupéis porque no es una ruta muy demandada y suele haber plazas siempre. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-48710">
+		<article id="comment-48710" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alan</span>				<span class="comment_date">
+					el 06/12/2024 a las 15:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas estare en palawan del 28 de enero al 12 de febrero, hay alguna posibilidad de ver al tiburon ballena en esas fechas? Estare del 12 de febrero al 18 en cebu estoy pensando sino en ir esos dias a visitar padre burgos pero como voy un poco justo de tiempo en mi estancia en cebu porque queria visitar siquijor queria saber si se podria verlo en palawan ya que estare mas tiempo, gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-48710' data-commentid="48710" data-postid="8420" data-belowelement="comment-48710" data-respondelement="respond" data-replyto="Responder a Alan" aria-label='Responder a Alan'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-48714">
+		<article id="comment-48714" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/12/2024 a las 15:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alan, qué va, en esa época no se ve en Palawan, es que no salen ni los barcos. Lo que más cómodo te sería es Padre Burgos cogiendo barco rápido a Maasin. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-43398">
+		<article id="comment-43398" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sergi</span>				<span class="comment_date">
+					el 20/08/2024 a las 22:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Me gustaría saber, por favor, cuál sería la ruta más adecuada para ir desde Coron hasta Padre Burgos. Muchas gracias por toda la información! ????????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43398' data-commentid="43398" data-postid="8420" data-belowelement="comment-43398" data-respondelement="respond" data-replyto="Responder a Sergi" aria-label='Responder a Sergi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-43414">
+		<article id="comment-43414" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/08/2024 a las 08:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sergi, ¡gracias a ti por leernos! Tendrías que volar de Coron a Cebú y luego seguir los pasos que indicamos aquí o buscar vuelo con escala de Coron a Tacloban. ¡saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-43220">
+		<article id="comment-43220" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Sergi</span>				<span class="comment_date">
+					el 18/08/2024 a las 17:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Me gustaría saber, por favor, cuál sería la ruta más adecuada para ir desde Coron hasta Padre Burgos. Muchas gracias por toda la información! ????????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43220' data-commentid="43220" data-postid="8420" data-belowelement="comment-43220" data-respondelement="respond" data-replyto="Responder a Sergi" aria-label='Responder a Sergi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-43232">
+		<article id="comment-43232" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 18/08/2024 a las 21:06				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Sergi, pues podrías volar a Cebú y seguir los pasos que indicamos o volar de Coron a Tacloban (con escala) y seguir los pasos desde ahí. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-42265">
+		<article id="comment-42265" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Raquel</span>				<span class="comment_date">
+					el 07/08/2024 a las 16:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas tardes! A mediados de noviembre queríamos ir a intentar ver el tiburón ballena.<br />
+Estamos entre Donsol , Leyte o Padre Burgos.<br />
+Nuestra idea era ir desde Manila a alguno de estos sitios y luego a Bohol , cual nos recomendarías para no perder días?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-42265' data-commentid="42265" data-postid="8420" data-belowelement="comment-42265" data-respondelement="respond" data-replyto="Responder a Raquel" aria-label='Responder a Raquel'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-42266">
+		<article id="comment-42266" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 07/08/2024 a las 16:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Raquel, nosotros aconsejamos mucho más <a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/" title="Nadar con el tiburón ballena en Pintuyan" target="_blank" rel="noopener ugc">Pintuyan</a>, es una experiencia más bonita. Podríais enlazar luego a Bohol por tierra y mar. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-40843">
+		<article id="comment-40843" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Mari</span>				<span class="comment_date">
+					el 18/07/2024 a las 18:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+En primer lugar, muchas gracias por tanta información ☺️ nos está ayudando mucho.<br />
+Viajamos a Filipinas a finales noviembre &#8211; principios de diciembre, durante 15 días, dudados si merece la pena ir a Padre Burgos para intentar ver el tiburón ballena, o mejor invertir los días en visitar otra isla.<br />
+Un millón de gracias! ????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-40843' data-commentid="40843" data-postid="8420" data-belowelement="comment-40843" data-respondelement="respond" data-replyto="Responder a Mari" aria-label='Responder a Mari'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-40871">
+		<article id="comment-40871" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/07/2024 a las 12:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mari, ¡gracias a ti! Pues depende de la ilusión que te haga : ) a nosotros es algo que nos encanta hacer, pero, obviamente, requiere tu tiempo&#8230;</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-35654">
+		<article id="comment-35654" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Stefano</span>				<span class="comment_date">
+					el 02/04/2024 a las 17:49				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas tardes, en mayo vamos a ir a Padre Burgos, en Leyte. Teníamos dudas sobre como volver de Padre Burgos a Cebú desde Bato o Hilongs. También podríamos ir hasta Ormoc pero parece demasiado lejos. Nos podrían decir cuáles son las mejores opciones? Gracias. Un saludo</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-35654' data-commentid="35654" data-postid="8420" data-belowelement="comment-35654" data-respondelement="respond" data-replyto="Responder a Stefano" aria-label='Responder a Stefano'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-35686">
+		<article id="comment-35686" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/04/2024 a las 07:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Stefano, lo más fácil es desde Maasin, que está más cerca y tiene varios barcos, sino pues desde Bato o Hilongos. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/como-llegar-padre-burgos/comment-page-1/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/como-llegar-padre-burgos/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='8420' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="425c245f88" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="68"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"8420","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

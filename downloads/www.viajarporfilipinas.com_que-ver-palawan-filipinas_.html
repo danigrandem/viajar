@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué ver en Palawan, la MEGA-GUÍA [2025] - Viajar por Filipinas</title>
+	<meta name="description" content="¿Vas a viajar a Palawan? Aquí descubrirás todo lo que necesitas para llegar, dormir o moverte y los mejores sitios que ver en Palawan (conocidos y ocultos)." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué ver en Palawan, la MEGA-GUÍA [2025] - Viajar por Filipinas" />
+	<meta property="og:description" content="¿Vas a viajar a Palawan? Aquí descubrirás todo lo que necesitas para llegar, dormir o moverte y los mejores sitios que ver en Palawan (conocidos y ocultos)." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2019-04-11T10:28:59+00:00" />
+	<meta property="article:modified_time" content="2024-01-09T15:30:09+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="30 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué ver en Palawan: guía para viajar a una de las joyas de Filipinas","datePublished":"2019-04-11T10:28:59+00:00","dateModified":"2024-01-09T15:30:09+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/"},"wordCount":6065,"commentCount":116,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg","articleSection":["Palawan"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/","url":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/","name":"▷ Qué ver en Palawan, la MEGA-GUÍA [2025] - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg","datePublished":"2019-04-11T10:28:59+00:00","dateModified":"2024-01-09T15:30:09+00:00","description":"¿Vas a viajar a Palawan? Aquí descubrirás todo lo que necesitas para llegar, dormir o moverte y los mejores sitios que ver en Palawan (conocidos y ocultos).","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg","width":1000,"height":667,"caption":"Qué ver en Palawan"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué ver en Palawan: guía para viajar a una de las joyas de Filipinas"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué ver en Palawan: guía para viajar a una de las joyas de Filipinas del feed" href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/3583" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=3583' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-ver-palawan-filipinas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-ver-palawan-filipinas%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-3583-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/3583/et-core-unified-3583.min.css?ver=1745578529" /><link rel="stylesheet" id="et-core-unified-deferred-3583-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/3583/et-core-unified-deferred-3583.min.css?ver=1745578529" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-3583 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/" aria-current="page">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-3583" class="et_pb_post post-3583 post type-post status-publish format-standard has-post-thumbnail hentry category-palawan">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué ver en Palawan: guía para viajar a una de las joyas de Filipinas</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/palawan/" rel="category tag">Palawan</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Qué ver en Palawan" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-17.jpg" alt="Qué ver en Palawan" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;"><strong>Viajar a Palawan</strong> es casi un obligatorio de todos los que piensan en <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/" target="_blank" rel="noopener noreferrer">viajar a Filipinas</a>. Es normal, en miles de sitios verás que es la “joya” del país y, no es para menos, las oscuras paredes de roca caliza unidas con el turquesa de las aguas que la bañan es una de las postales más impresionantes de Filipinas. <strong>El Nido</strong> es el rincón más conocido de la provincia, sin embargo, hay mucho más <strong>que ver en Palawan, Filipinas</strong>.</p>
+<p style="text-align: justify;">Si no quieres quedarte a medias, sigue leyendo, porque aquí vamos a contarte todo para que puedas <strong>viajar a Palawan sin perderte nada</strong>. Además de hacerte una lista de los <strong>mejores lugares</strong> que visitar, vamos a darte algunos datos prácticos que serán tu <strong>guía</strong> por estas islas.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258813e29c0" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258813e29c0"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#%C2%BFDonde_esta_Palawan_Filipinas" title="¿Dónde está Palawan, Filipinas?">¿Dónde está Palawan, Filipinas?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Algunas_curiosidades_sobre_Palawan" title="Algunas curiosidades sobre Palawan">Algunas curiosidades sobre Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#%C2%BFCuando_viajar_a_Palawan" title="¿Cuándo viajar a Palawan?">¿Cuándo viajar a Palawan?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#%C2%BFComo_llegar_a_Palawan" title="¿Cómo llegar a Palawan?">¿Cómo llegar a Palawan?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#%C2%BFComo_visitar_Palawan_%C2%BFComo_moverse_por_Palawan" title="¿Cómo visitar Palawan? ¿Cómo moverse por Palawan?">¿Cómo visitar Palawan? ¿Cómo moverse por Palawan?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#%C2%BFDonde_dormir_en_Palawan" title="¿Dónde dormir en Palawan?">¿Dónde dormir en Palawan?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#%C2%BFQue_ver_en_Palawan_Lugares_turisticos_de_Palawan_y_menos_conocidos" title="¿Qué ver en Palawan? Lugares turísticos de Palawan y menos conocidos">¿Qué ver en Palawan? Lugares turísticos de Palawan y menos conocidos</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#1_El_Nido_el_lugar_mas_famoso_que_ver_en_Palawan" title="1. El Nido, el lugar más famoso que ver en Palawan">1. El Nido, el lugar más famoso que ver en Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#2_Coron_y_las_demas_islas_de_Calamianes" title="2. Coron y las demás islas de Calamianes">2. Coron y las demás islas de Calamianes</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#3_Linapacan_Culion_y_todas_las_islas_entre_El_Nido_y_Coron" title="3. Linapacan, Culion y todas las islas entre El Nido y Coron">3. Linapacan, Culion y todas las islas entre El Nido y Coron</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#4_Port_Barton_el_pueblo_con_mas_encanto_que_visitar_en_Palawan" title="4. Port Barton, el pueblo con más encanto que visitar en Palawan">4. Port Barton, el pueblo con más encanto que visitar en Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#5_Puerto_Princesa_la_capital_de_Palawan" title="5. Puerto Princesa, la capital de Palawan">5. Puerto Princesa, la capital de Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#6_Rio_Subterraneo_de_Puerto_Princesa" title="6. Río Subterráneo de Puerto Princesa">6. Río Subterráneo de Puerto Princesa</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#7_Balabac_la_nueva_estrella_de_Palawan" title="7. Balabac, la nueva estrella de Palawan">7. Balabac, la nueva estrella de Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#8_Sabang_Beach_una_olvidada_que_ver_en_Palawan" title="8. Sabang Beach, una olvidada que ver en Palawan">8. Sabang Beach, una olvidada que ver en Palawan</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-16" href="#9_Nagtabon_Beach" title="9. Nagtabon Beach">9. Nagtabon Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-17" href="#Lugares_menos_turisticos_que_ver_en_Palawan" title="Lugares menos turísticos que ver en Palawan">Lugares menos turísticos que ver en Palawan</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-18" href="#Mapa_de_los_lugares_que_visitar_en_Palawan" title="Mapa de los lugares que visitar en Palawan">Mapa de los lugares que visitar en Palawan</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_esta_Palawan_Filipinas"></span><span style="color: #33cccc;">¿Dónde está Palawan, Filipinas?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Antes de ahondar en esto, lo primero que tenemos que aclarar es que Palawan, además de una isla, es una <strong>provincia</strong>. Es decir, la provincia de Palawan también incluye <strong>más de 1.700 islas e islotes</strong>, entre los que se encuentran las islas Calamianes (entre las que se encuentra Coron), Bugsuk y Balabac, Dumaran y el archipiélago de Cuyo.</p>
+<p style="text-align: justify;">Palawan pertenece a la región de MIMAROPA y es la isla más occidental del archipiélago filipino. Está muy cerca de la parte malasia de la isla de Borneo y, por esta razón y por ser uno de los lugares con <strong>mayor biodiversidad</strong> del Sudeste Asiático, es conocida como <strong>“la Última Frontera” de Filipinas</strong>.</p>
+<p style="text-align: justify;">⭐ La capital de Palawan es <strong>Puerto Princesa</strong>.</p>
+<p style="text-align: justify;">En Palawan hay varios <strong>aeropuertos</strong>: el de El Nido, el de Puerto Princesa, el de Busuanga (Coron), el de San Vicente y el de Taytay. También hay muchos <strong>puertos</strong>, entre los que destacan el de Puerto Princesa, el de El Nido, el de Coron y el de San Fernando (Sibaltan).</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1AjYYWVSoaAgvhOeknIHBBlUoTl7d1Dna"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1AjYYWVSoaAgvhOeknIHBBlUoTl7d1Dna" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Algunas_curiosidades_sobre_Palawan"></span><span style="color: #33cccc;">Algunas curiosidades sobre Palawan</span><span class="ez-toc-section-end"></span></h2>
+<ul style="text-align: justify;">
+<li>¿Sabías Alex Garlan, el autor del libro <strong>“La Playa”</strong> y la posterior película que fue rodada en Koh Phi Phi (Tailandia), se inspiró en Palawan, más concretamente, en El Nido?</li>
+<li>Palawan antes se llamaba <strong>La Paragua</strong>, por su forma de paraguas. Si no nos crees, ¡mira el mapa!</li>
+<li>Los <strong>idiomas</strong> oficiales de Palawan son el tagalo, el ilongo, el tausug, el batak, el tagbanua, el palahueño y el cuyunon, ¡toma ya!</li>
+<li>Muchos <strong>refugiados de guerra vietnamitas</strong> navegaron sin rumbo fijo hasta que se encontraron con Palawan y se establecieron allí. Por ello, uno de los platos típicos de Puerto Princesa es el <em>chao long</em>, una versión filipina de la sopa <em>Phở</em>.</li>
+</ul>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFCuando_viajar_a_Palawan"></span><span style="color: #33cccc;">¿Cuándo viajar a Palawan?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si quieres <strong>viajar a Palawan, Filipinas</strong>, tienes que considerar el momento del año en el que es mejor hacerlo. En Palawan se distinguen 2 épocas: la seca y la de lluvias.</p>
+<p style="text-align: justify;">La <strong>temporada seca en Palawan</strong> suele ir de diciembre a mayo. La <strong>temporada de lluvias en Palawan</strong> acostumbra a ir de junio a noviembre. Los tifones raramente suelen tocar la provincia de manera directa, pero debes andar con ojo entre julio y noviembre, aproximadamente. Como te contamos en <strong><a href="https://www.viajarporfilipinas.com/cuando-viajar-filipinas/" target="_blank" rel="noopener noreferrer">¿Cuándo viajar a Filipinas?</a></strong>, esto no es una ciencia. Filipinas tiene un <strong>clima tropical</strong>, lo que significa que puede llover en cualquier momento del año y que, incluso en temporada de lluvias, puede que tengas días súper soleados.</p>
+<blockquote>
+<p style="text-align: justify;">Nunca podremos responderte si en julio, en noviembre o en enero, por poner un ejemplo, va a lloverte en Palawan o no. Es imposible predecirlo.</p>
+</blockquote>
+<p style="text-align: justify;">En cualquier caso, incluso en temporada de monzón en Palawan tendrás temperaturas máximas alrededor de los 33ºC. También debes considerar que de junio a noviembre, Palawan recibe menos visitantes y que la temporada baja también da la oportunidad de obtener <strong>mejores precios en aviones y hoteles</strong>.</p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-3593" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-3593" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11.jpg" alt="" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-11-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_llegar_a_Palawan"></span><span style="color: #33cccc;">¿Cómo llegar a Palawan?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Esta pregunta no se puede responder de una manera, puesto que puedes empezar a viajar a Palawan, Filipinas, por diferentes lugares. Resumiendo, <strong>puedes llegar a Palawan a través de</strong>:</p>
+<ul style="text-align: justify;">
+<li><strong>Coron</strong>: en un vuelo directo desde Cebu o Manila o en barco desde Manila o San Jose (Mindoro). En <a href="https://www.viajarporfilipinas.com/como-llegar-coron-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Coron</strong></a> tienes toda la información.</li>
+<li><strong>El Nido:</strong> en un vuelo directo desde Cebu, Manila, Boracay o Bohol. En <a href="https://www.viajarporfilipinas.com/el-nido-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a El Nido</strong></a> tienes la información actualizada.</li>
+<li><strong>San Vicente:</strong> en un vuelo directo desde Manila. Solo Sunlight Air los opera algunas veces a la semana. Lee <a href="https://whttps://www.viajarporfilipinas.com/que-hacer-san-vicente-filipinas/#Como_llegar_a_San_Vicente" target="_blank" rel="noopener"><strong>Cómo llegar a San Vicente</strong></a> para más info.</li>
+<li><strong>Puerto Princesa:</strong> en un vuelo directo desde muchos aeropuertos de Filipinas o en barco desde Iloilo. En <a href="https://www.viajarporfilipinas.com/como-llegar-puerto-princesa-palawan/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Puerto Princesa</strong></a> tienes más información detallada.</li>
+</ul>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Fvuelos-a%2Fph%2Fvuelos-baratos-a-filipinas.html" target="_blank" rel="nofollow noopener noreferrer">Reserva vuelos en Filipinas</a></p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3592" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20460%20690'%3E%3C/svg%3E" alt="" width="460" height="690" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9.jpg 460w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9-200x300.jpg 200w" data-lazy-sizes="(max-width: 460px) 100vw, 460px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3592" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9.jpg" alt="" width="460" height="690" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9.jpg 460w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-9-200x300.jpg 200w" sizes="(max-width: 460px) 100vw, 460px" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_visitar_Palawan_%C2%BFComo_moverse_por_Palawan"></span><span style="color: #33cccc;">¿Cómo visitar Palawan? ¿Cómo moverse por Palawan?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Como verás más adelante, hay mucho <strong>que ver en Palawan</strong>, así que, dependiendo de los lugares que vayas a visitar, te conviene moverte de una manera u otra por la provincia. En nuestra opinión, la mejor manera de visitar Palawan es en <strong>transporte público</strong> y ya dentro de cada destino alquilar una moto o coger <em>tricycles</em>.</p>
+<p style="text-align: justify;">Por ejemplo, existen <strong><a href="https://12go.asia/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">buses y furgonetas</a> </strong>para unir destinos dentro de la propia isla de Palawan. De igual manera, hay barcos y aviones entre El Nido y Coron y también entre sus destinos intermedios como Linapacan o Culion.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://12go.asia/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">Reserva ferris, buses y furgonetas en Palawan aquí</a></p>
+<p style="text-align: justify;">En El Nido, Coron, Port Barton y Puerto Princesa, los principales lugares turísticos de Palawan, podrás <strong>alquilar motos</strong> si quieres moverte por los alrededores. En ese caso, los precios de alquiler de moto suelen rondar los 450-500 pesos al día.</p>
+<p style="text-align: justify;">Otra manera de moverse por Palawan es <strong>alquilando una moto o <a href="https://www.booking.com/cars/airport/ph/pps.es.html?aid=1542173" target="_blank" rel="nofollow noopener">un coche en Puerto Princesa</a></strong>. Nosotros te aconsejamos optar por ello solo si tienes mucho tiempo para hacerlo o si te apetece mucho perderte por rincones menos conocidos.</p>
+<p style="text-align: justify;">Ten en cuenta que esta opción suele ser <strong>menos económica</strong> que ir en transporte público porque tienes que alquilarla durante bastantes días en el caso de que, por ejemplo, vayas a ir a El Nido o Port Barton. Además, debes considerar que algunos tramos de carreteras en Palawan no están en muy buen estado. Esto es especialmente importante si piensas alquilar una moto. No lo hagas nunca si no tienes práctica, la licencia válida para hacerlo en Filipinas y, además, necesitas alquilar una moto de buena cilindrada. Los trayectos son muy largos.</p>
+<p style="text-align: justify;">Finalmente, está una opción más que chachi para viajar entre Coron y El Nido y que es de las mejores cosas que hemos hecho desde que empezamos a explorar Filipinas en 2010: la <a title="Expedición Coron El Nido: la aventura definitiva" href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener"><strong>Expedición de Coron a El Nido</strong></a> (o viceversa).</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3591" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3591" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7.jpg" alt="" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-7-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFDonde_dormir_en_Palawan"></span><span style="color: #33cccc;">¿Dónde dormir en Palawan?</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">La zona en la que te aconsejamos dormir dependerá de los lugares a los que vas a <strong>viajar en Palawan</strong>. Es decir, si tienes pensado visitar El Nido, no te recomendamos de ninguna manera quedarte en Coron, Puerto Princesa o Port Barton o viceversa. Las distancias entre todos los destinos dentro de la provincia son grandes, así que no te recomendamos hacer solo una base, sino varias.</p>
+<p style="text-align: justify;">Si vas a viajar a Palawan, Filipinas, encontrarás <strong>hoteles para todo tipo de bolsillos</strong>. Es decir, desde lugares muy básicos donde puedes pagar 10€ por noche (echa un vistazo a nuestro artículo de los <a title="Los mejores hostels en El Nido: 8 opciones estupendas" href="https://www.viajarporfilipinas.com/mejores-hostels-el-nido/" target="_blank" rel="noopener noreferrer"><strong>mejores hostels de El Nido</strong></a>, por ejemplo) a hotelazos de puro lujo como el <a href="https://www.booking.com/hotel/ph/cauayan-island-resort.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Cauayan Island Resort and Spa</a>, uno de los <strong><a href="https://www.viajarporfilipinas.com/resorts-en-filipinas/" target="_blank" rel="noopener noreferrer">mejores resorts en Filipinas</a></strong>.</p>
+<blockquote>
+<p style="text-align: justify;">Eso sí, Palawan es uno de los sitios más turísticos de Filipinas y la <strong>relación calidad-precio en El Nido y Coron brilla bastante por su ausencia</strong>. Los precios suben como la espuma y, si no quieres quedarte con lo peorcito, te recomendamos reservar cuanto antes. Esto es especialmente importante en períodos de mucha demanda como Semana Santa, Navidades, Año Nuevo Chino o el mes de mayo.</p>
+</blockquote>
+<p style="text-align: justify;">Aquí van algunas recomendaciones de <strong>hoteles con una relación calidad-precio buena</strong> en los principales lugares turísticos de Palawan:</p>
+<ul style="text-align: justify;">
+<li>El Nido: <strong><a href="https://www.booking.com/hotel/ph/bulskamp-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Bulskamp Inn</a></strong> | <strong><a href="https://www.booking.com/hotel/ph/spin-designer-hostel-el-nido.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Spin Designer Inn</a></strong> | <a href="https://www.viajarporfilipinas.com/donde-dormir-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Más sitios donde dormir en El Nido</a></li>
+<li>Coron: <strong><a href="https://www.booking.com/hotel/ph/acacia-garden-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Acacia Garden Inn</a></strong> | <strong><a href="https://www.booking.com/hotel/ph/the-funny-lion-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">The Funny Lion</a></strong> | <a href="https://www.viajarporfilipinas.com/donde-dormir-en-coron-filipinas/" target="_blank" rel="noopener noreferrer">Más sitios donde dormir en Coron</a></li>
+<li>Port Barton: <strong><a href="https://www.booking.com/hotel/ph/nellies-tourist-inn-port-barton.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Nellie’s Tourist Inn</a></strong> | <strong><a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Ausan Beach Front Cottages</a></strong> | <a href="https://www.viajarporfilipinas.com/hoteles-port-barton/" target="_blank" rel="noopener noreferrer">Más sitios donde dormir en Port Barton</a></li>
+<li>Puerto Princesa: <strong><a href="https://www.booking.com/hotel/ph/amor-39-s-place.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Amor’s Place</a></strong> | <strong><a href="https://www.booking.com/hotel/ph/greenspace-palawan.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Greenspace Palawan</a></strong> |<a href="https://www.viajarporfilipinas.com/donde-dormir-puerto-princesa/" target="_blank" rel="noopener noreferrer"> Más sitios donde dormir en Puerto Princesa</a></li>
+<li>Sabang: <a href="https://www.booking.com/hotel/ph/hill-myna-beach-cottages.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Hill Myna Beach Cottages</strong></a> | <a href="https://www.booking.com/hotel/ph/sheridan-beach-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Sheridan Beach Resort &amp; Spa</strong></a> | <a href="https://www.viajarporfilipinas.com/que-hacer-sabang/#Donde_dormir_en_Sabang" target="_blank" rel="noopener noreferrer">Más sitios donde dormir en Sabang</a></li>
+</ul>
+<p style="text-align: justify;"><ins class="bookingaff" data-aid="1754154" data-target_aid="1754154" data-prod="nsb" data-width="100%" data-height="auto" data-lang="es" data-df_num_properties="3"><br />
+<!-- Anything inside will go away once widget is loaded. --><br />
+<a href="//www.booking.com?aid=1754154">Booking.com</a><br />
+</ins><br />
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script></p>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFQue_ver_en_Palawan_Lugares_turisticos_de_Palawan_y_menos_conocidos"></span><span style="color: #33cccc;">¿Qué ver en Palawan? Lugares turísticos de Palawan y menos conocidos</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Hay muchos lugares <strong>que ver en Palawan</strong> y, como pasa siempre en Filipinas, hay sitios más turísticos y sitios que no visita nadie. Además, incluso en los sitios más visitados, siempre hay trucos para escaparse del resto de mundo y sacarle el mayor jugo posible al viaje. Nada como la información de primera mano de este par de viajeros enamorados de Filipinas.</p>
+<p style="text-align: justify;">Aquí vamos a contarte los <strong>mejores sitios para viajar a Palawan</strong>, tanto los más conocidos, como alguna joyita oculta que no visita nadie.</p>
+<p style="text-align: justify;">Si no tienes mucho tiempo, tienes estas 2 rutas que están centradas en Palawan: <a title="Itinerario de viaje a Filipinas de 10 días por libre: Palawan" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-10-dias/" target="_blank" rel="noopener"><strong>Itinerario de 10 días en Filipinas</strong></a> e <a title="Itinerario de viaje a Filipinas de 13 días por libre: Palawan" href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-13-dias/" target="_blank" rel="noopener"><strong>Itinerario de 13 días por Filipinas</strong></a>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_El_Nido_el_lugar_mas_famoso_que_ver_en_Palawan"></span><span style="color: #33cccc;">1. El Nido, el lugar más famoso que ver en Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Son muchos los que cuando piensan en viajar a Palawan piensan que solo existe El Nido. Es normal, es <strong>“la joya de la corona” de Palawan</strong> y sus paisajes son impresionantes y casi exclusivos de esta zona del país. Aunque el pueblo de El Nido es bastante feucho, lo que te aguarda en el <strong>archipiélago de Bacuit</strong> a través de sus excursiones de <em>island hopping</em> es incomparable. De igual manera, desde El Nido podrás <strong>visitar playas preciosas</strong> como Nacpan Beach, Duli Beach o Las Cabañas.</p>
+<p style="text-align: justify;">No vamos a dudar que en los últimos años su fama le ha sobrepasado y en períodos de mucha demanda se puede hablar de <strong>cierta masificación</strong> turística, pero lo cierto es que El Nido es uno de los mejores que ver en Palawan y merece muchísimo la pena. Como te contamos en nuestro artículo de <strong><a href="https://www.viajarporfilipinas.com/que-hacer-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Qué hacer en El Nido</a> e <a title="Island hopping en El Nido: los mejores tours" href="https://www.viajarporfilipinas.com/island-hopping-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Island hopping en El Nido</a></strong>, la mejor manera de evitar esas masificaciones en los tours es contratar un <strong>tour privado</strong>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en El Nido?</strong> Al menos 3 completos, sin incluir los días de traslados.</p>
+<p style="text-align: justify;"><strong>¿Qué sitios deberías ver sí o sí en El Nido? </strong>Seven Commandos Beach, Secret Lagoon, Big Lagoon, Shimizu Island, Matinloc Shrine, Nacpan Beach, Las Cabañas. Puedes leer más en <a title="Las mejores playas de El Nido (sin hacer island hopping)" href="https://www.viajarporfilipinas.com/mejores-playas-el-nido/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de El Nido</strong></a>.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Puesto que es un sitio turístico, la oferta hotelera es enorme. Desde hoteles sencillos como <a href="https://www.booking.com/hotel/ph/south-anchorage-inn.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>South Anchorage Inn</strong></a>, hasta resorts como <a href="https://www.booking.com/hotel/ph/last-frontier-beach-resort-el-nido.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener"><strong>Last Frontier</strong></a>. En El Nido es muy importante tener en cuenta la zona en la que te alojas, en <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-el-nido-filipinas/" target="_blank" rel="noopener noreferrer">Dónde dormir en El Nido</a></strong> te explicamos en detalla sus ventajas e inconvenientes. No te duermas mucho a la hora de reservar alojamiento, la relación calidad-precio es bastante mala y los mejores sitios se agotan rápido.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar? </strong>Descúbrelo todo en <strong><a href="https://www.viajarporfilipinas.com/el-nido-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer">Cómo llegar a El Nido</a></strong>.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-6438" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="que ver en palawan el nido" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6438" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300.jpg" alt="que ver en palawan el nido" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-300-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Coron_y_las_demas_islas_de_Calamianes"></span><span style="color: #33cccc;">2. Coron y las demás islas de Calamianes</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Si los paisajes de El Nido te dejaron con la boca abierta, los de Coron no lo harán menos. Coron Island es una de las islas de las denominadas <strong>islas de Calamianes</strong>. Este conjunto de islas se encuentra al norte de Palawan y, dentro de todas ellas, la <strong>isla de Coron</strong> es la más visitada. Aun así, lo más probable es que tu base sea la poco apetecible <strong>Coron Town</strong>, que se ubica en la isla de Busuanga. Sea como sea, los island hopping en Coron son impresionantes. Visitarás lagos y lagunas abrazados por enormes paredes de piedra caliza, puntos de esnórquel con mucha vida marina, barcos hundidos y playas de escándalo.</p>
+<p style="text-align: justify;">Además, desde Coron Town también salen <strong>barcos o expediciones a otras islas</strong> de Calamianes como Malcapuya, Pass Island, Black Island, Bulog Dos… En nuestro artículo sobre <strong><a href="https://www.viajarporfilipinas.com/que-hacer-coron/" target="_blank" rel="noopener noreferrer">Qué hacer en Coron</a></strong> e <a href="https://www.viajarporfilipinas.com/island-hopping-coron/" target="_blank" rel="noopener noreferrer"><strong><em>Island hopping</em> en Coron</strong></a> podrás encontrar una lista de estos <em>island hopping</em> y sus precios.</p>
+<p style="text-align: justify;">Aunque el nivel de masificación turística en Coron es bastante inferior al de El Nido, la verdad es que en los últimos años se ha puesto muy de moda. Otra manera de recorrer la isla a tu medida es haciendo un <strong><em>island hopping</em> privado</strong> y, además, tenemos contactos de confianza que te llevarán a los mejores sitios evitando a los demás barcos.</p>
+<p style="text-align: justify;">Por otro lado, Coron es uno de los <strong>mejores sitios para hacer</strong> <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">buceo en Filipinas</a></strong>. 24 barcos de una flota japonesa se hundieron en la bahía de Coron y visitarlos buceando es toda una experiencia. Sin duda, una de las mejores cosas <strong>que ver en Palawan</strong>. Si te gustan los animales, otra cosa que no te puedes perder es <a title="Cómo nadar con dugones en Coron (Busuanga)" href="https://www.viajarporfilipinas.com/dugones-coron/" target="_blank" rel="noopener">nadar con dugones en Coron</a>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Coron?</strong> Al menos 2 enteros para hacer un par de excursiones, pero te recomendamos dar al menos 1 día más para descubrir los alrededores. Si tienes pensado bucear en Coron, procura reservar 1 día más.</p>
+<p style="text-align: justify;"><strong>Imprescindibles en Coron:</strong> Kayangan Lake, Barracuda Lake, Siete Pecados, Mount Tapyas, Banul Beach, Pass Island, Waling Waling Island, Malcapuya Island…</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Aunque la oferta hotelera aumenta poco a poco en Coron, la verdad es que los mejores sitios se acaban rápido. En los últimos años han surgido <em>hostels</em> chulos como <strong><a href="https://www.booking.com/hotel/ph/dayon-hostel.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Dayon Hostel</a></strong> u hotelazos con piscina como <strong><a href="https://www.booking.com/hotel/ph/the-funny-lion-inn.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">The Funny Lion</a></strong>, pero, tal y como pasa en El Nido, es mejor reservar rápido. En <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-en-coron-filipinas/" target="_blank" rel="noopener noreferrer">Dónde dormir en Coron</a></strong> encontrarás toda la info.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar?</strong> En <strong><a href="https://www.viajarporfilipinas.com/como-llegar-coron-filipinas/" target="_blank" rel="noopener noreferrer">Cómo llegar a Coron</a></strong> dispones de todos los datos que necesitas.</p>
+</blockquote>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3594" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20460%20613'%3E%3C/svg%3E" alt="Banol Beach en Coron Palawan" width="460" height="613" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8.jpg 460w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8-225x300.jpg 225w" data-lazy-sizes="(max-width: 460px) 100vw, 460px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3594" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8.jpg" alt="Banol Beach en Coron Palawan" width="460" height="613" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8.jpg 460w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-8-225x300.jpg 225w" sizes="(max-width: 460px) 100vw, 460px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Linapacan_Culion_y_todas_las_islas_entre_El_Nido_y_Coron"></span><span style="color: #33cccc;">3. Linapacan, Culion y todas las islas entre El Nido y Coron</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Ya te lo advertimos, a la hora de viajar a Palawan, no todo es El Nido y Coron. De hecho, <strong>entre El Nido y Coron hay un montón de islas que visitar </strong>y a las que casi nadie va. Existen empresas que unen ambos destinos haciendo un recorrido de 3 o 4 días, parando a dormir en tiendas de campaña o pequeñas cabañas. Los precios oscilan los 350€-500€ por persona, según el número de días. No es barato, pero la experiencia es brutal y te diríamos que una de las mejores que hemos tenido viajando por Filipinas. Puedes leerlo todo en <a title="Expedición Coron El Nido: la aventura definitiva" href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="_blank" rel="noopener noreferrer"><strong>Expedición de Coron a El Nido</strong></a> o, si te hemos convencido, ir directamente a reservar en <a href="http://hƩps://bigdreamboatmancoron.com/es?sca_ref=2078862.X0Ck1Umom1" target="_blank" rel="nofollow noopener"><strong>este enlace</strong></a>.</p>
+<p style="text-align: justify;">Te advertimos que desde 2023 se ha puesto a tope de moda y que es necesario reservar con semanas o incluso a meses de antelación. No te asustes, no encontrarás masificaciones, es que, afortunadamente, son pocas las empresas que operan esta ruta por ahora.</p>
+<div class='et_post_video'><iframe loading="lazy" title="Expedición Coron - El Nido, una aventura épica en Filipinas" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/sXO1OGhLu8A?feature=oembed"></iframe><noscript><iframe title="Expedición Coron - El Nido, una aventura épica en Filipinas" width="1080" height="608" src="https://www.youtube.com/embed/sXO1OGhLu8A?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></noscript></div>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Port_Barton_el_pueblo_con_mas_encanto_que_visitar_en_Palawan"></span><span style="color: #33cccc;">4. Port Barton, el pueblo con más encanto que visitar en Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En cuanto pusimos un pie por primera vez en 2015 en Port Barton, supimos que este era <strong>“nuestro pueblo en Filipinas”</strong>. Para nosotros, este es uno de los mejores sitios <strong>que ver en Palawan</strong> y, por ello, miles de viajeros alargan la estancia en Port Barton irremediablemente.</p>
+<p style="text-align: justify;">Puede no tener los paisajes de Coron o El Nido, pero el buen rollo que se respira en este pueblo de callecitas de arena te atrapa. Además, muy cerca de él está una de las <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejores playas de Filipinas</a>, <strong>White Beach</strong>. Todo ello sin contar que el <a title="Island hopping en Port Barton: los mejores tours" href="https://www.viajarporfilipinas.com/island-hopping-port-barton/" target="_blank" rel="noopener noreferrer"><strong>island hopping en Port Barton </strong></a>te llevará a conocer islas preciosas, mucho más tranquilas, y la posibilidad de saludar a alguna que otra tortuga marina.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Port Barton?</strong> Te diríamos que 2 completos (sin traslados), pero es probable que te arrepientas de no haberte quedado más.</p>
+<p style="text-align: justify;"><strong>Obligatorios en Port Barton:</strong> White Beach, Coconut Beach, Pamuayan Falls, German Island… En <strong><a href="https://www.viajarporfilipinas.com/que-hacer-port-barton/" target="_blank" rel="noopener noreferrer">Qué hacer en Port Barton</a></strong> y <a title="Las mejores playas de Port Barton" href="https://www.viajarporfilipinas.com/mejores-playas-port-barton/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de Port Barton</strong></a> encontrarás tooooodo lo que no te puedes perder.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Aunque los hoteles no llegan, ni mucho menos, al nivel de El Nido y todo es un poquito más rural, lo cierto es que hay sitios cucos <a href="https://www.viajarporfilipinas.com/hoteles-port-barton/" target="_blank" rel="noopener noreferrer">donde dormir en Port Barton</a> desde apenas 10€ la noche. Podrás alojarte en la propia playa en <a href="https://www.booking.com/hotel/ph/ausan-beach-front-cottages.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Ausan Beach Front Cottages</a> o conocer gente en hostels recién inaugurados como <a href="https://www.booking.com/hotel/ph/cocorico-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">CocoRico</a>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar?</strong>  Conoce todo sobre <strong><a href="https://www.viajarporfilipinas.com/port-barton-como-llegar/" target="_blank" rel="noopener noreferrer">Cómo llegar a Port Barton</a></strong>.</p>
+</blockquote>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3595" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="coconut beach, un sitio que ver en palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3595" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4.jpg" alt="coconut beach, un sitio que ver en palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-4-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Puerto_Princesa_la_capital_de_Palawan"></span><span style="color: #33cccc;">5. Puerto Princesa, la capital de Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Seamos sinceros, no es que las ciudades filipinas sean muy bonitas y Puerto Princesa no resalta por sus atractivos. Sin embargo, la capital de la isla y de la provincia cuenta con algunos lugares interesantes que ver en Palawan como el histórico enclave de <strong>Plaza Cuartel</strong> o el <strong>Baywalk Park</strong>.</p>
+<p style="text-align: justify;">Aun así, hay varias cosas <strong><a href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/" target="_blank" rel="noopener noreferrer">que hacer en Puerto Princesa</a></strong> o sus alrededores que son una buena excusa para quedarte al menos un par de días. Por ejemplo, puedes hacer un <a href="https://affiliate.klook.com/jump/activity/4111-honda-bay-island-hopping-tour-palawan/?krt=s21&amp;krid=b7d2d5aa-231c-4489-4494-313272b342ac&amp;adid=41337&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer">recorrido en barco por Honda Bay</a>, conocer las cuevas de Ugong Rock y tirarte por la tirolina, ver luciérnagas con el tour de <a href="https://affiliate.klook.com/jump/activity/4094-puerto-princesa-firefly-watching-palawan/?aid=67b976df963ba7d2&amp;af_wid=4209&amp;adid=41337" target="_blank" rel="nofollow noopener noreferrer">Iwahig Firefly Watching</a> o, lo mejor de todo, nadar con el tiburón ballena. Sí, en temporada, Puerto Princesa es uno de los sitios <strong><a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer">donde nadar con el tiburón ballena en Filipinas</a></strong> de una manera respetuosa.</p>
+<p style="text-align: justify;">Por otro lado, Puerto Princesa también puede <strong>ser la base para hacer la <a title="El Parque Nacional del Río Subterráneo de Puerto Princesa, ¿cómo visitarlo?" href="https://www.viajarporfilipinas.com/rio-subterraneo-puerto-princesa/" target="_blank" rel="noopener noreferrer">excursión del Río Subterráneo</a></strong> o visitar Nagtabon Beach. Te daremos más info sobre ambos lugares a continuación.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Puerto Princesa?</strong> Depende de las actividades que pienses hacer.</p>
+<p style="text-align: justify;"><strong>Lugares recomendables en Puerto Princesa:</strong> Casa Cuartel, Catedral de la Inmaculada Concepción de María, Honda Bay, Nagtabon Beach…</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Puerto Princesa cuenta con un aeropuerto internacional, así que es probable que te quedes a dormir cerca de él. Si viajas solo o con presupuesto moderado, échale un ojo a <a href="https://www.booking.com/hotel/ph/guni-guni-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Guni Guni Hostel</strong></a>. Como no hay playa bonita en Puerto, <strong><a href="https://www.booking.com/hotel/ph/canvas-boutique.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">este con piscina</a></strong> te enamorará. En <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-puerto-princesa/" target="_blank" rel="noopener noreferrer">Dónde dormir en Puerto Princesa</a></strong> tienes toda la info.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar?</strong> Tienes múltiples opciones explicadas en <strong><a href="https://www.viajarporfilipinas.com/como-llegar-puerto-princesa-palawan/" target="_blank" rel="noopener noreferrer">Cómo llegar a Puerto Princesa</a></strong>.</p>
+</blockquote>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3596" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3596" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12.jpg" alt="" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-12-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="6_Rio_Subterraneo_de_Puerto_Princesa"></span><span style="color: #33cccc;">6. Río Subterráneo de Puerto Princesa</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Declarado <strong>Patrimonio de la Humanidad por la Unesco</strong> y una de las <strong>7 Nuevas Maravillas Naturales del Mundo</strong>, esta atracción siempre aparece en las listas de sitios que ver en Palawan. Se trata de un río de 25 kilómetros, de los cuales 8 son totalmente subterráneos y que recorrerás en pequeños barquitos. Aunque nosotros no somos particularmente fans del Río Subterráneo, sí que reconocemos que los paisajes son muy bonitos y que, si es la primera vez que visitas una cueva de este tipo, es un lugar que tienes que incluir en tu viaje a Palawan.</p>
+<p style="text-align: justify;">Lo más cómodo para hacer la excursión del Río Subterráneo es hacer base en Puerto Princesa, donde te recogerán las agencias. Otra opción es ir a Sabang, la localidad donde está situada esta maravilla natural y pasar allí una noche.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/activity/4087-puerto-princesa-underground-river-day-tour-palawan/?adid=41337&amp;af_wid=4209" target="_blank" rel="nofollow noopener noreferrer">Reserva el tour al Río Subterráneo con KLOOK</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/puerto-princesa/tour-rio-subterraneo/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Reserva el tour al Río Subterráneo con Civitatis</a></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6097" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="rio subterráneo, algo que ver en palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6097" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501.jpg" alt="rio subterráneo, algo que ver en palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-501-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3><span class="ez-toc-section" id="7_Balabac_la_nueva_estrella_de_Palawan"></span><span style="color: #33cccc;">7. Balabac, la nueva estrella de Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Fuera del radar durante muchos años debido a problemas de seguridad, Balabac apunta maneras y rápidamente se está convirtiendo en una de las nuevas estrellas que ver en Palawan gracias a las imágenes y vídeos que circulan de esta zona del archipiélago en las redes sociales. No nos extraña, Onok Island, su principal destino, es una de las islas más bonitas que hemos visto nunca, con aguas turquesas bañando sus orillas de arena fina, estilizadas palmeras y tortugas por todos lados.</p>
+<p style="text-align: justify;">Llegar hasta aquí puede ser pesado, pero cada vez hay más empresas que organizan <strong>recorridos en barco de 2, 3 y 4 días desde Puerto Princesa</strong>. A lo largo de estas jornadas, además de visitar la fabulosa Onok, disfrutarás de otras muchas islas paradisiacas como Patawan, Sicsican o Canimeran, 3 de nuestras favoritas. Eso sí, olvídate de grandes comodidades, conexión rápida a internet y fiesta. Aunque poco a poco vemos pasos de desarrollo turístico (incluyendo un aeropuerto), Balabac todavía es un destino virgen.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Balabac?</strong> Como poco, te recomendamos 4 días y 3 noches.</p>
+<p style="text-align: justify;"><strong>Obligatorios en Balabac: </strong>Onok, Patawan, Sicsican, Canimeran&#8230; No te preocupes, en <a title="Balabac: island hopping de ensueño en Filipinas" href="https://www.viajarporfilipinas.com/balabac-island-hopping/" target="_blank" rel="noopener"><strong>Island hopping en Balabac</strong></a> encontrarás toda la información para planificar tu visita.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Aunque es posible hacer noche en la propia isla de Balabac, creemos que la experiencia es mucho mejor pernoctando en alguna de las islas de los alrededores. Las mismas empresas de expediciones se harán cargo de esto.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar?</strong>  Conoce todo sobre <strong>Cómo llegar a Balabac </strong>(próximamente).</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-12565" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Onok Island Balabac Palawan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-12565" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987.jpg" alt="Onok Island Balabac Palawan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-987-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="8_Sabang_Beach_una_olvidada_que_ver_en_Palawan"></span><span style="color: #33cccc;">8. Sabang Beach, una olvidada que ver en Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Eclipsada totalmente por las playas de Port Barton y El Nido, la verdad es que Sabang Beach es uno de los sitios olvidados que ver en Palawan. Esta <strong>tranquila playa</strong> solo tiene un poco de ambiente por la mañana, cuando llegan las excursiones desde Puerto Princesa para ver el <a href="https://www.viajarporfilipinas.com/rio-subterraneo-puerto-princesa/" target="_blank" rel="noopener noreferrer"><strong>Río Subterráneo</strong></a>. Si quieres combinar la visita a esta “maravilla natural” con un poco de playa y aventura, haz al menos una noche en Sabang.</p>
+<p style="text-align: justify;">Además de disfrutar de Sabang Beach, podrás visitar sitios cercanos como Isla Rita, experimentar la adrenalina en la tirolina <strong>Sabang X Zipline</strong>, dar un paseo por los manglares o remojarte en agua dulce en unas vecinas cascadas. En nuestro artículo <strong><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/" target="_blank" rel="noopener">Qué ver y qué hacer en Sabang</a> encontrarás toda la información</strong>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Sabang?</strong> Al menos un par.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> En Sabang hay hotelazos como el <a href="https://www.booking.com/hotel/ph/daluyon-beach-and-mountain-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Daluyong Mountain Beach Resort</strong></a> o sitios mucho más modestos como <strong><a href="https://www.booking.com/hotel/ph/cafe-sabang.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Café Sabang</a></strong>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Sabang?</strong> Es tan fácil como coger una de las <a href="https://12go.asia/es/travel/puerto-princesa/sabang/?z=1864900" target="_blank" rel="nofollow noopener noreferrer">muchas furgonetas que van de Puerto Princesa a Sabang</a> (unos 90 minutos) o en jeepney desde la terminal de San Jose en Puerto Princesa (3 horas aprox.).</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-6096" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="sabang beach en palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6096" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500.jpg" alt="sabang beach en palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-500-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="9_Nagtabon_Beach"></span><span style="color: #33cccc;">9. Nagtabon Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Hasta hace algunos años este era uno de los sitios secretillos que ver en Palawan, ahora, sin llegar a ser nada masificado, la playa de Nagtabon recibe visitantes diarios desde Puerto Princesa y a algún que otro aventurero que quiere pasar la noche en uno de los poquitos hoteles que hay en la zona. <strong>La playa es realmente bonita</strong> y no hay mucho más que hacer que disfrutarla.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Nagtabon Beach?</strong> Desde unas horas yendo desde Puerto Princesa hasta varios días.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> No hay muchas opciones, <a href="https://www.booking.com/hotel/ph/playa-paraiso.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Playa Paraiso Nagtabon Beach</strong></a> es la mejor.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Nagtabon Beach?</strong> Lo más fácil es alquilar una moto en Puerto Princesa. Otra posibilidad es coger cualquier bus, van o jeepney que vaya hacia El Nido, Roxas o Taytay y pedir que te bajen en Bacungan. Desde ahí tendrás que buscar un trycicle que te acerque a la playa o, como nosotros, caminar o hacer autostop.</p>
+</blockquote>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-3602" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="nagtabon beach palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3602" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10.jpg" alt="nagtabon beach palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-10-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="Lugares_menos_turisticos_que_ver_en_Palawan"></span><span style="color: #33cccc;">Lugares menos turísticos que ver en Palawan</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Los de arriba son los sitios más visitados por la gente que decide viajar a Palawan, pero, como siempre pasa, la lista no acaba aquí. Hay muchísimos más <strong>sitios que ver en Palawan a los que no suele ir casi nadie</strong>, pero que no por ello son menos interesantes.</p>
+<h4><span style="color: #33cccc;">10. Darocotan</span></h4>
+<p style="text-align: justify;">Hemos dudado si meterla en la de menos turísticos o más porque desde finales de 2022 notamos un<strong> interés enorme</strong> por parte de los viajeros en visitar esta isla ubicada en la puntita norte de Palawan. Su <strong>cercanía con El Nido</strong> (en apenas 1 hora estarás aquí) la hace un destino que ver en Palawan accesible y que al mismo tiempo te regala esa experiencia de «naufrago» con la que muchos nos imaginamos cuando pensamos en Filipinas.</p>
+<p style="text-align: justify;">La isla se recorre a pie y es que, de hecho, no tiene ni carreteras ni caminos señalizados. Cuenta con un barco hundido a pocos metros de la orilla repleto de vida marina y playas que fácilmente se encuentran en nuestro podio de las favoritas al país. Tampoco tiene edificios de cemento, sino pequeños campamentos de cabañas de madera o bambú que son una auténtica cucada, por lo que la experiencia estilo Wilson es aún mayor. Por ello, aunque es factible visitarla en un día desde El Nido, te recomendamos encarecidamente que le des 1 noche o, muchísimo mejor, 2. De verdad que puede ser <strong>una de las paradas que marque tu viaje</strong>.</p>
+<p>Podrás leer mucho más en nuestra <a title="Guía de Darocotan: la desconexión isleña en Palawan" href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/" target="_blank" rel="noopener"><strong>Guía de Darocotan</strong></a>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Darocotan?</strong> Te aconsejamos al menos uno completo, pero mucho mejor si son dos.</p>
+<p style="text-align: justify;"><strong>¿Qué hacer en Darocotan?</strong> Disfrutar de las playas, explorar la isla a pie y snorkel en el barco hundido.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Aquí no hay duda, en el <a href="https://www.booking.com/hotel/ph/dryft-darocotan.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener"><strong>Dryft Darocotan</strong></a>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Darocotan?</strong> Los hoteles ofrecen traslados, pero sino también puedes ir por tu cuenta en moto al puerto de Teneguiban o en tricycle desde El Nido (45&#8242;) y negociar un barquito (15&#8242;).</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-13032" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="Darocotan qué visitar Palawan" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13032" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235.jpg" alt="Darocotan qué visitar Palawan" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1235-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">11. Sibaltan, un sitio poco conocido al que viajar en Palawan</span></h4>
+<p style="text-align: justify;">Al norte de El Nido está este <strong>pequeño y tranquilo pueblo </strong>que va ganando una minúscula parte del protagonismo de Palawan. Sibaltan es un <em>barangay</em> (barrio) de El Nido y se ubica a unos 45 kilómetros de este. Más o menos una hora de carreteras sinuosas separan un lugar del otro, pero son completamente distintos.</p>
+<p style="text-align: justify;">Si te animas a descubrir Sibaltan, podrás pasar unos días en un <strong>bungaló frente al mar</strong> por muy poco dinero y podrás distribuir tu tiempo entre relajarte en las <strong>playas</strong> de Bulang Beach, Bayog Beach y Sibaltan Beach, bucear con mantas, hacer esnórquel, ir en kayak a Bubog Island o, lo mejor de todo, hacer <strong><em>island hopping</em> por islas cercanas</strong> a las que nadie apenas va como Maosonon, Little Maosonon, Magransing, Pical, Binulbulan o Batas. Este suele salir por unos 1.500 pesos por persona.</p>
+<p>Puedes leerlo todo con detalle en <a title="Qué hacer en Sibaltan (Palawan) – Guía completa" href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/" target="_blank" rel="noopener"><strong>Qué hacer en Sibaltan</strong></a>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días mínimo en Sibaltan?</strong> Te aconsejamos al menos dos completos.</p>
+<p style="text-align: justify;"><strong>¿Qué hacer en Sibaltan?</strong> Relax en las playas e island hopping por las islas vecinas.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> Aunque la oferta va creciendo poco a poco, en Sibaltan no encontrarás muchas opciones para dormir. Tienes sitios básicos pero con encanto como <a href="https://www.booking.com/hotel/ph/erlittop-garden.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Erlittop Garden Eco Lodge</strong></a> o, si quieres algo un poco mejor, echa un ojo al <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1806760&amp;hl=es-es&amp;hid=2065151" target="_blank" rel="nofollow noopener"><strong>Ursula Beach Club</strong></a>, donde nos quedamos nosotros.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Sibaltan?</strong> Puedes llegar con tu propia moto (siempre con precaución) o coger una de las furgonetas que salen de manera frecuente a Sibaltan desde la terminal de buses de El Nido. Los precios rondan los 300 pesos.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-3609" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="que ver palawan sibaltan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3609" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3.jpg" alt="que ver palawan sibaltan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-3-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">12. Taytay y las islas de alrededor</span></h4>
+<p style="text-align: justify;">¿Sabías que una de las cosas que ver en Palawan es un fuerte español? Pues sí, en la ciudad palaweña de Taytay se ubica <strong>Fuerza de Santa Isabel</strong>, un fuerte construido en 1667 durante la colonización española. El edificio está en muy buen estado de conservación y, además, desde él se obtienen unas vistas espectaculares.</p>
+<p style="text-align: justify;">Te entendemos, no vas a venir a Taytay solo para ver un edificio, ¿no? Pues es que, aunque es un lugar muy poco conocido, lo cierto es que hay <strong>varias cosas interesantes que hacer</strong> desde Taytay. En primer lugar, puedes ir a las <strong>Kuyawyaw falls</strong>, unas cascadas de 3 niveles ubicadas a unos 25 kilómetros del pueblo. También hay otras cataratas cercanas como las <strong>Canique Waterfall</strong>, en el <em>barangay</em> Polaraquen. Otra atracción más es la posibilidad de avistar a los poco conocidos <strong>delfines Irrawaddy</strong>, endémicos del Malampaya Sound, una reserva natural que puedes visitar en barco.</p>
+<p style="text-align: justify;">Sin embargo, lo que te debe atraer hasta Taytay es el <strong><em>island hopping</em></strong> por las islas de sus alrededores, que no conoce apenas nadie. Nabat Island, Malutamban Island, Isla Blanca, Dinamayan Island, Elephant Island o Castle Island son algunas de las más conocidas. Además, también hay islas en las que se ubican resorts a donde puedes ir pasar el día (tendrás que pagar entrada) como <strong><a href="https://www.booking.com/hotel/ph/flower-island-resort.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Flower Island Resort</a></strong> o Apulit Island.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días en Taytay?</strong> Al menos un par.</p>
+<p style="text-align: justify;"><strong>¿Qué hacer en Taytay?</strong> Visitar Fuerza de Santa Isabel y hacer al menos un <em>island hopping</em>.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir en Taytay? <a href="https://www.booking.com/hotel/ph/casa-rosa-taytay.xu.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Casa Rosa</a></strong> es genial y es un buen punto para organizar island hopping desde Taytay. Para algo ya súper chulo, vete a <strong><a href="https://www.booking.com/hotel/ph/apulit-island-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">El Nido Resorts Apulit Island</a></strong>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Taytay?</strong> Puedes tomar uno de los buses o vans que van desde Puerto Princesa o hacia El Nido y bajarte en Taytay. El recorrido desde Puerto dura más o menos 3 horas.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-3610" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="fuerza santa isabel palawan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3610" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15.jpg" alt="fuerza santa isabel palawan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-15-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">13. Roxas, Palawan</span></h4>
+<p style="text-align: justify;">Otro de los sitios en los que casi nadie piensa a la hora de viajar a Palawan es Roxas. Esta es una ciudad <strong>a medio camino de El Nido y Port Barton</strong> en la que también encontrarás cosas que hacer casi en solitario.</p>
+<p style="text-align: justify;">Por ejemplo, puedes visitar unas cuantas <strong>cascadas</strong>: Matalangaw, Maqueregaen y Umalad Falls; ir a Tumarbong Beach y, lo mejor, hacer algún <em>island hopping</em> o simplemente ir a pasar el día en el <strong><a href="https://www.booking.com/hotel/ph/modessa-island-resort.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Modessa Island Resort</a></strong>, con unas playas espectaculares.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-3611" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="modessa island ver palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-3611" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6.jpg" alt="modessa island ver palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-6-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">14. San Vicente y su Long Beach</span></h4>
+<p style="text-align: justify;">Aunque accesible también desde Port Barton, si lo tuyo es la paz total, uno de los sitios que ver en Palawan es la <strong>Long Beach de San Vicente</strong>. Nombrada como “la playa de arena blanca más larga de Filipinas”, es posible conducir una moto por ella (con marea baja mejor…) durante 15 minutos sin parar. Mide nada más y nada menos que 14 kilómetros. Desde San Vicente, además, también podrás hacer los mismos <strong><em>island hopping</em></strong> que desde Port Barton.</p>
+<p style="text-align: justify;">Además, aquí está el mirador más <em>instagrameable</em> de Filipinas, el de Bato ni Ningning, se puede hacer surf, ver tortugas anidar y, sobre todo, disfrutar de un lugar que nos recordó a los inicios de esa Port Barton virgen que nos enamoró. Tienes toda la información en nuestra guía <a title="Qué ver y qué hacer en San Vicente (Filipinas) – Guía completa" href="https://www.viajarporfilipinas.com/que-hacer-san-vicente-filipinas/" target="_blank" rel="noopener"><strong>Qué hacer en San Vicente</strong></a>.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cuántos días en San Vicente?</strong> Al menos 2.</p>
+<p style="text-align: justify;"><strong>¿Qué hacer en San Vicente?</strong> Relajarte y, si apetece, algún <em>island hopping</em>.</p>
+<p style="text-align: justify;"><strong>¿Dónde dormir en San Vicente?</strong> Mira a ver si tienen habitaciones en <strong><a href="https://www.booking.com/hotel/ph/club-agutaya.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Club Agutaya</a></strong>, ¡a tope!</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a San Vicente? </strong>Sunlight Air tiene vuelos desde Manila varios días de la semana. También puedes llegar desde Puerto Princesa en furgoneta. El trayecto lleva entre 4 y 5 horas y las últimas suelen ser a las 17:00. También han puesto furgonetas desde El Nido recientemente.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-13030" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20563'%3E%3C/svg%3E" alt="Long Beach San Vicente Palawan qué ver" width="1000" height="563" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234-480x270.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-13030" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234.jpg" alt="Long Beach San Vicente Palawan qué ver" width="1000" height="563" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234-980x552.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-hacer-palawan-1234-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">15. Cuyo Island</span></h4>
+<p style="text-align: justify;">Las islas Cuyo son un grupo de islas situadas a medio camino entre la isla de Palawan y Mindoro. Como pertenecen a la provincia de la primera, las hemos incluido dentro de esta lista de lugares <strong>que ver en Palawan</strong>. Además, Cuyo es la única parada de los barcos que unen Iloilo (Bisayas) con Puerto Princesa, así que, si estás pensando en hacer esta ruta, dale una oportunidad.</p>
+<p style="text-align: justify;">Las islas Cuyo, debido a su posición geográfica, no reciben apenas turismo, pero cuentan algunos atractivos. Entre ellos, un fuerte construido durante el período español y que todavía permanece en pie. Dentro de <strong>Cuyo Fort</strong> se ubica la Iglesia de San Agustín, una construcción religiosa de comienzos del siglo XVIII. Por otro lado, estas islas son <strong>unos de los mejores sitios para hacer <em>kitesurf</em> en Filipinas</strong>, sobre todo durante los meses de octubre a abril.</p>
+<p style="text-align: justify;">También tienen playas preciosas como Capusa Beach o Lugbuan Beach y puedes pasarte un día entero de <strong><em>island hopping</em></strong> descubriendo islas como Pandan, Bisucay, Barrin, Capnayan, Quiminatin, Malcatop, Imalaguan o Silat.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Cómo llegar a Cuyo?</strong> Air Juan ofrece vuelos de Puerto Princesa a Cuyo. Otra opción es ir en barco desde Puerto Princesa o Iloilo con las compañías Milagrosa Shipping y Montenegro Shipping.</p>
+</blockquote>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">16. Ocam Ocam Beach, un lugar poco conocido en Busuanga Island (Coron)</span></h4>
+<p style="text-align: justify;">Aunque ya te hemos hablado de pasada de Busuanga Island, la isla en la que se ubica Coron Town y, por tanto, el punto de partida de los <em>island hopping</em> a Coron, lo cierto es que hemos pasado de puntillas. <strong>Busuanga es enorme</strong> y, por supuesto, hay muchísimo que ver. Además de las playas de Cabo y Bali (cercanas a Coron Town) y Marcilia Beach, si te animas, uno de los rincones que ver en Palawan se encuentra al este de la isla.</p>
+<p style="text-align: justify;"><strong>Ocam Ocam es una playa todavía virgen</strong>. No encontrarás arena blanca, sino más bien dorada, pero el paisaje, repleto de palmeras, es precioso. Las 2 horas que cuesta alcanzarla y la ausencia de transporte público hacen que todavía siga siendo un rincón sin apenas turismo. Puedes ir en el día desde Coron, pero, si eres de los que les gusta descubrir sitios sin gente, te recomendamos hacer noche. Además, desde Ocam Ocam puedes llegar a <a title="Black Island (Malajon), el tesoro por descubrir en Coron" href="https://www.viajarporfilipinas.com/black-island-coron/" target="_blank" rel="noopener noreferrer"><strong>Black Island</strong></a> (o Malajon Island), otra de las islas Calamianes conocida por ser una pequeña “Coron Island”.</p>
+<p style="text-align: justify;">Por cierto, también puedes llegar a Black Island desde <strong>Salvacion o <a title="Qué hacer en Concepción, Busuanga" href="https://www.viajarporfilipinas.com/que-hacer-concepcion-busuanga/" target="_blank" rel="noopener noreferrer">Concepcion</a></strong>, dos pueblos de Busuanga desde donde salen barcos a otras islas vecinas como Pass Island.</p>
+<blockquote>
+<p style="text-align: justify;"><strong>¿Dónde dormir?</strong> En Ocam Ocam hay algunos bungalós muy básicos a partir de 500 pesos, también puedes reserva <a href="https://www.booking.com/hotel/ph/sea-front-cottage-ocam-ocam-beach.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>estas cabañitas</strong></a>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar?</strong> Desconocemos si en estos momentos existe algún transporte público que te lleve a Ocam Ocam Beach. Lo más lejos que podrías llegar en una furgoneta sería hasta New Busuanga y luego contratar los servicios de algún <em>tricycle</em>. Lo más sencillo sería que alquilases una moto (te lo aconsejamos, pues el camino es bonito) o un coche con conductor que te llevase.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-6098" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="ocam ocam ver en palawan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6098" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502.jpg" alt="ocam ocam ver en palawan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/04/que-ver-palawan-502-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">17. Tubbataha Reef National Marine Park</span></h4>
+<p style="text-align: justify;">La joya de la corona en cuanto a buceo en Filipinas se refiere pertenece a Palawan y se llama Tubbataha Reef National Marine Park. Tiburones ballena, tiburones martillo, mantas, todo tipo de tortugas… ¡Todo lo que puedas pensar está allí! Sin embargo, llegar a este parque marino de 32.000 hectáreas no es fácil. Ubicado <strong>a 150 kilómetros al sureste de Puerto Princesa</strong>, la única manera de hacerlo es en barco y los que se suelen aventurar son <strong>barcos de vida a bordo</strong>, es decir, expediciones de buceo para pasar varios días disfrutando de las maravillas que hay bajo del mar.</p>
+<p style="text-align: justify;">Nos encantaría contarte que hemos estado, pero, por desgracia, aún no nos hemos animado a desembolsar los más de 2.000$ que suele costar la expedición. Además, ten en cuenta que solo se puede ir <strong>entre los meses de marzo y junio</strong>.</p>
+<hr />
+<h2><span class="ez-toc-section" id="Mapa_de_los_lugares_que_visitar_en_Palawan"></span><span style="color: #33cccc;">Mapa de los lugares que visitar en Palawan</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Hazte una idea de la ubicación de los sitios que hemos mencionado en este mapa:</p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1RAd8I9nD92oE3Xxqpd3fUNW5vQIq-Jg&#038;ehbc=2E312F"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1RAd8I9nD92oE3Xxqpd3fUNW5vQIq-Jg&amp;ehbc=2E312F" width="1000" height="480"></iframe></noscript></p>
+<p style="text-align: justify;">Y hasta aquí esta «megaguía» de lugares que ver en Palawan. Por supuesto, esta es una pequeña selección. Somos conscientes de que hay muchísimos más. De hecho, pronto ampliaremos el listado para todos aquellos que quieran salirse de las rutas habituales, como nosotros.</p>
+<p style="text-align: center;"><em>¿Te ha gustado este listado de lugares que ver en Palawan? ¡Esperamos que sí! Si tienes alguna duda, ¡pregúntanos en comentarios!</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">116 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/comment-page-4/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-55438">
+		<article id="comment-55438" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">marta</span>				<span class="comment_date">
+					el 07/04/2025 a las 22:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, estaremos unos 8-9 dias en Filipinas a finales de mayo/principios junio. Tenemos seguro que queremos ir a El Nido pero estamos un poco perdidos en cuanto a si quedarnos por Palawan o ir hacia otra zona tipo Siargao / Bohol (un poco ineficiente quizas). De Coron me han llegado comentarios de tofo tipo (mejor/peor). Si nos quedaramos por Palawan, cual seria vuestra sugerencia para tener un viaje diferente y especial ? Merece mas la pena que salir de Palawan?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55438' data-commentid="55438" data-postid="3583" data-belowelement="comment-55438" data-respondelement="respond" data-replyto="Responder a marta" aria-label='Responder a marta'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55444">
+		<article id="comment-55444" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/04/2025 a las 00:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Marta, la verdad es que es una pregunta difícil de responder. Palawan tiene para 1 mes si quieres y realmente Coron es un destino que nos encanta (no le vemos nada malo), pero sí que es cierto que en términos de variedad de paisajes con El Nido pues no será lo más «especial». Dicho esto, desde El Nido tienes vuelos directos a Bohol con Air Swift y sería una buena manera de aprovechar mejor el tiempo. Elijas lo que elijas estará bien. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-55719">
+		<article id="comment-55719" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">marta</span>				<span class="comment_date">
+					el 13/04/2025 a las 22:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Creo que nos hemos decidido, a ver que os parece<br />
+Dia 1: llegada a Manila. Vuelo a Coron<br />
+Dia 2: Coron<br />
+Dia 3: Vuelo a El Nido a 13pm (solo hay uno)<br />
+Dia 4 y 5: El Nido<br />
+Dia 6: Port Barton (llegada 11am)<br />
+Dia 7: Port Barton. Salida a Puerto princesa 5pm<br />
+Dia 8: Excursion tiburon ballena. Volar a Manila por la noche<br />
+Dia 9: Manila y vuelo de vuelta. </p>
+<p>Si tienes alguna recomendacion en cuanto a cambios al itinerario lo agradeceria. Se que el el dia del tiburon ballena no es muy eficiente pero debe ser algo impresionante asi que entieno que puede merecer mas la pena? Gracias!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55797">
+		<article id="comment-55797" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/04/2025 a las 08:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Marta, a nosotros nos parece que no merece la pena el lío de ir a Coron para estar solo 1 día, la verdad. Quitaríamos Coron y pasaríamos más tiempo entre El Nido y Port Barton, que realmente se queda muy compacto. En cuanto al tiburón ballena, creemos que cuadra bien, eso sin problema. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51836">
+		<article id="comment-51836" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Julia</span>				<span class="comment_date">
+					el 01/02/2025 a las 00:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Holaaa. Me encanta vuestro blog. Queremos hacer la expedición el Nido &#8211; Coron de 4D/3N. Os planteo un duda que nos surge y es si vale la pena pasar más días a El Nido y a Coron antes/dsp de la expedición. Tendríamos 5 días a repartir entre El Nido y Coron (a parte de los 4 que dura la expedición). Si es que sí, cómo los repartiríais 3 El Nido y 2 Coron o viceversa. Valdría la pena hacer los island hopping de cada sitio a parte de la expedición&#8230;o ya sería muy repetitivo? </p>
+<p>Muchas gracias por toda la info que nos ofrecéis.</p>
+<p>Un saludo.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51836' data-commentid="51836" data-postid="3583" data-belowelement="comment-51836" data-respondelement="respond" data-replyto="Responder a Julia" aria-label='Responder a Julia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51891">
+		<article id="comment-51891" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 02/02/2025 a las 00:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Julia, muchas gracias y bienvenida. Si hacéis la expedición que recomendamos nosotros, vais a ver lo básico de Coron, pero no se ve nada de El Nido. Por lo que nosotros haríamos al menos 2 tours en El Nido y a lo mejor saltaríamos a Port Barton. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-51608">
+		<article id="comment-51608" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Diego</span>				<span class="comment_date">
+					el 29/01/2025 a las 09:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo</p>
+<p>Ya más o menos tengo el viaje encauzado.</p>
+<p>Llego a Manila el 24 de febrero y en principio me quedo 2 días. Luego cogeré un vuelo a Puerto princesa y me quedaré 2 o 3 días. Después iré a Port Barton ahí  he pensado quedarme 5 días o 6 si le quito uno a Puerto princesa. De Port Barton me voy al Nido o mejor dicho he pillado alojamiento a 35 minutos del Nido , a buen precio y tiene buena pinta, y ahi me quiero quedar 12 días para explorar toda la zona y el nido por supuesto.  Después a Coron 6 días que sería hasta el 23 de marzo. Ese día me iría a Manila desde el aeropuerto de Coron porque el 24 de marzo tengo mi vuelo de Manila a Bangkok.</p>
+<p>Como lo ves? </p>
+<p>Faltan días en algún sitio o sobran?</p>
+<p>Son 28 días.</p>
+<p>El aeropuerto del Coron será fiable? Porque si me falla ese día estoy perdido porque pierdo el vuelo del 24.</p>
+<p>Muchas gracias por todo.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51608' data-commentid="51608" data-postid="3583" data-belowelement="comment-51608" data-respondelement="respond" data-replyto="Responder a Diego" aria-label='Responder a Diego'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51697">
+		<article id="comment-51697" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/01/2025 a las 04:41				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Diego. Nos resulta un poco confusa la forma en que expones el itinerario. Será mucho más cómodo y te podremos ayudar mejor si nos lo pasas a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a> y en un formato en el que entienda claramente los días completos en cada lugar y los días de traslado. Algo como:</p>
+<p>Día 1: Llegada a Manila<br />
+Día 2: Traslado a Puerto Princesa.<br />
+Días 3 y 4: Puerto Princesa.<br />
+Día 5: Traslado a Port Barton&#8230;</p>
+<p>etc.</p>
+<p>Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51225">
+		<article id="comment-51225" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Romina</span>				<span class="comment_date">
+					el 23/01/2025 a las 15:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas!!! Me podrías mandar algún contacto para hacer ese paseo de 3 noches y cuatro días en balabac. Entendi bien? Pues nos quedamos con ganas de hacer el paseo de coron-el nido, no hay mas vacantes en nuestra fecha y querríamos hacer algo parecido!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51225' data-commentid="51225" data-postid="3583" data-belowelement="comment-51225" data-respondelement="respond" data-replyto="Responder a Romina" aria-label='Responder a Romina'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51245">
+		<article id="comment-51245" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 24/01/2025 a las 00:18				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Romina, entendiste perfectamente : ) ahora mismo te lo enviamos. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-53121">
+		<article id="comment-53121" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Vanessa Macarro</span>				<span class="comment_date">
+					el 23/02/2025 a las 11:30				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenos días, primero de todo gracias por el trabajo que haceis y enhorabuena por esta pedazo de página, gracias!!!<br />
+Estamos planificando el viaje a Filipinas para el próximo mes de Agosto, ya sabemos que no es la época más idónea pero nosotros no tenemos más opciones&#8230;viajamos el matrimonio y un niño de 14 años, las fechas serían del 17 de Agosto (salida desde Barcelona) hasta el dia 30 de Agosto para asegurarnos estar aquí en casa el 31 porque el día 1 de septiembre trabajamos.<br />
+La idea principal de viaje era hacer: Barcelona-Manila<br />
+     Día 1:  Manila-Puerto princesa<br />
+     Día 2: Puerto Princesa<br />
+     Dia3:  Puerto Princesa-Port Barton<br />
+     Día 4: Port Barton<br />
+     Día 5: Port Barton<br />
+     Día 6: Port Barton-El Nido<br />
+     Día 7: El Nido<br />
+     Día 8: El Nido<br />
+     Día 9: El Nido- Coron<br />
+     Día 10: Coron<br />
+     Día 11: Coron<br />
+     Día 12: Coron-Manila vuelta a Barcelona<br />
+Peeeero nos ha surgido una nueva idea de ruta que sería Manila Cebu y 2 días en Cebu y volar directamente desde allí a Port Barton prescindiendo de Puerto Princesa y siguiendo con la ruta anterior.<br />
+Estamos hechos un poco de lío y nos gustaría porfavor que nos dierais vuestra opinión o si tenéis una propuesta mejor.<br />
+Espero vuestra respuesta y mil gracias de nuevo por vuestro trabajo.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-53122">
+		<article id="comment-53122" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 23/02/2025 a las 11:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Vanessa, nosotros no pasaríamos tanto tiempo en Puerto Princesa, sinceramente, pero tampoco iríamos a Cebú. Lo que haríamos es ir directamente a Port Barton y en El Nido echar un par de noches en <a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/" title="Guía de Darocotan: la desconexión isleña en Palawan" target="_blank" rel="noopener ugc">Darocotan</a> extra. Además, intentaríamos darle 1 noche más a Coron. Si queréis, nos podéis enviar mejor las rutas a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a>, donde podemos verlas fácilmente. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-50874">
+		<article id="comment-50874" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Diego</span>				<span class="comment_date">
+					el 19/01/2025 a las 06:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Bueno y los precios de alojamiento, que creo que son más baratos en Cebu y Bohol verdad?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50874' data-commentid="50874" data-postid="3583" data-belowelement="comment-50874" data-respondelement="respond" data-replyto="Responder a Diego" aria-label='Responder a Diego'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50876">
+		<article id="comment-50876" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/01/2025 a las 07:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Diego, si comparas con Palawan, sí. Pero es cierto que en Port Barton también son económicos. El Nido y Coron son más caros. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-50873">
+		<article id="comment-50873" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Diego</span>				<span class="comment_date">
+					el 19/01/2025 a las 06:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo y disculpa que te moleste otra vez.</p>
+<p>Como todavía no tengo claro si voy a ir aPalawan, por lo de tener que hacer tantos campos base en la isla, estoy mirando otras opciones.</p>
+<p>Ppr ejemplo la opción Cebu- Bohol , he estado leyendo lo que habéis publicado y puede ser una opción, lo que no sé es si en belleza se pueden comparar con Palawan.</p>
+<p>Sería tal vez 15 días en Cebu posiblemente y por cercanía yendo a Malapascua y los otros 15 en Bohol.</p>
+<p>Que te parece? </p>
+<p>Que diferencias ves entre estar el mes en Palawan o la opción está última que te he dicho?</p>
+<p>Gracias de nuevo.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50873' data-commentid="50873" data-postid="3583" data-belowelement="comment-50873" data-respondelement="respond" data-replyto="Responder a Diego" aria-label='Responder a Diego'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50875">
+		<article id="comment-50875" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/01/2025 a las 07:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Diego, no, nada que ver&#8230; Palawan es mucho más espectacular en términos de paisajes, la verdad. Nosotros optaríamos por Palawan, pero la otra opción que planteas está bien. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-50811">
+		<article id="comment-50811" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Diego</span>				<span class="comment_date">
+					el 17/01/2025 a las 14:13				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Gracias por la respuesta. Por lo que dices entonces tendré que hacer mínimo cuatro estancias distintas en palawan para los 30 días. Porque además de los tres que me has dicho tendré que hospedarme también en Coron. Me da pereza tener que hacer tantos hospedajes pero no queda otra porque para recorrer la isla en moto con uno dos campos base será imposible.</p>
+<p>Gracias otra vez.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50811' data-commentid="50811" data-postid="3583" data-belowelement="comment-50811" data-respondelement="respond" data-replyto="Responder a Diego" aria-label='Responder a Diego'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50816">
+		<article id="comment-50816" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/01/2025 a las 14:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Así es, Diego. Las distancias son considerables como para tener solo un par de campos base. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/comment-page-4/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-ver-palawan-filipinas/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='3583' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="20379c228c" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="119"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3583","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Snorkel en Bohol y Panglao: mejores sitios 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Con algunos de los mejores fondos marinos de Filipinas, hacer snorkel en Bohol y Panglao es obligatorio. Sitios, consejos y alojamientos." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Snorkel en Bohol y Panglao: mejores sitios 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Con algunos de los mejores fondos marinos de Filipinas, hacer snorkel en Bohol y Panglao es obligatorio. Sitios, consejos y alojamientos." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-09-22T16:38:11+00:00" />
+	<meta property="article:modified_time" content="2024-03-24T18:52:07+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="666" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="17 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Los mejores sitios para hacer snorkel en Bohol y Panglao","datePublished":"2020-09-22T16:38:11+00:00","dateModified":"2024-03-24T18:52:07+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/"},"wordCount":3406,"commentCount":65,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg","articleSection":["Bohol","Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/","url":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/","name":"▷ Snorkel en Bohol y Panglao: mejores sitios 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg","datePublished":"2020-09-22T16:38:11+00:00","dateModified":"2024-03-24T18:52:07+00:00","description":"Con algunos de los mejores fondos marinos de Filipinas, hacer snorkel en Bohol y Panglao es obligatorio. Sitios, consejos y alojamientos.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/snorkel-bohol-panglao/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg","width":1000,"height":666,"caption":"ver tortugas en Panglao"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/snorkel-bohol-panglao/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Los mejores sitios para hacer snorkel en Bohol y Panglao"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Los mejores sitios para hacer snorkel en Bohol y Panglao del feed" href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/8691" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=8691' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fsnorkel-bohol-panglao%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fsnorkel-bohol-panglao%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-8691-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8691/et-core-unified-8691.min.css?ver=1745585685" /><link rel="stylesheet" id="et-core-unified-deferred-8691-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/8691/et-core-unified-deferred-8691.min.css?ver=1745585685" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-8691 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-8691" class="et_pb_post post-8691 post type-post status-publish format-standard has-post-thumbnail hentry category-bohol category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Los mejores sitios para hacer snorkel en Bohol y Panglao</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/bohol/" rel="category tag">Bohol</a>, <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="ver tortugas en Panglao" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg" alt="ver tortugas en Panglao" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-9-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Hacer <strong>snorkel en Bohol y Panglao</strong> es, posiblemente, uno de los grandes motivos que te han traído hasta este rincón Filipinas. Sin necesidad de mucho más que una máscara y un tubo, vas a poder disfrutar de <strong>coloridos arrecifes llenos de vida</strong>. Tanto Bohol como su anexa isla Panglao son un verdadero paraíso bajo el mar y uno de los mejores sitios para hacer <strong><a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer">esnórquel en Filipinas</a></strong>.</p>
+<p style="text-align: justify;">Como enamorados del mar, hemos tenido la gran suerte de explorar esta isla desde 2010. Aquí queremos resumirte los <strong>mejores sitios</strong> para hacer snorkel en Bohol y Panglao. También te hablaremos de las <strong>excursiones a islas cercanas</strong> y te daremos consejos para que lo goces aún más. Al final encontrarás recomendaciones de <strong>alojamientos junto al mar</strong>, si lo que quieres es salir de tu habitación en bañador y sentirte la Sirenita.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">¿Cómo es el esnórquel en Bohol?</span></h2>
+<p style="text-align: justify;">Por ser concisos, el esnórquel en Bohol es una maravilla. Como toda Filipinas, Bohol y Panglao se ubican en pleno <strong>Triángulo de Coral</strong>. Es decir, en el lugar con mayor biodiversidad marina del mundo.</p>
+<p style="text-align: justify;">La costa sur de ambas islas cuenta con <strong>ricos arrecifes a pocos metros de la orilla</strong>. Es posible llegar hasta ellos perfectamente nadando. La parte más superficial es <strong>poco profunda</strong> (alrededor de los 5 o 6 metros), pero luego la pared de coral desciende hasta alcanzar profundidades entre los 33 y los 56 metros. Esto quiere decir que vas a poder hacer esnórquel en Bohol por tu cuenta y disfrutarlo mucho.</p>
+<p style="text-align: center;">Por supuesto, si te apetece y ya tienes tu título, también puedes optar por el <strong><a href="https://www.viajarporfilipinas.com/buceo-panglao/" target="_blank" rel="noopener noreferrer">buceo en Panglao</a></strong>. Si todavía no eres Open Water Diver y crees que te va a gustar eso del submarinismo, no lo dudes, hacer el <strong><a href="https://www.viajarporfilipinas.com/curso-buceo-bohol-espanol/" target="_blank" rel="noopener noreferrer">curso de buceo en Bohol</a></strong> es una de las mejores opciones.</p>
+<p style="text-align: justify;">Si puedes elegir, es mucho mejor hacer esnórquel en Bohol cuando la <strong>marea está baja</strong>. De esta manera, tendrás esas maravillas submarinas mucho más cerca de ti. Puedes consultar el estado <a href="https://www.tide-forecast.com/locations/Panglao/tides/latest" target="_blank" rel="nofollow noopener noreferrer">aquí</a>.</p>
+<p style="text-align: justify;">¡Ah! Además, la <strong>temperatura del agua</strong> en Filipinas ronda los 25-29ºC. Por ello, raras veces vas a sentir frío aunque te lleves horas dándole a la aleta.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">¿Qué se puede ver haciendo snorkel en Bohol y Panglao?</span></h3>
+<p style="text-align: justify;">Los fondos marinos de Bohol están repletos de <strong>corales duros y blandos</strong>. Será extremadamente difícil que no veas un montón de tipos de <strong>estrellas de mar</strong> (por favor, recuerda no tocarlas), peces payaso (los típicos “nemo”), morenas, nudibranquios e, incluso, <strong>tortugas</strong>. Estas se ven especialmente en Balicasag, como te contamos en <strong><a href="https://www.viajarporfilipinas.com/excursion-snorkel-balicasag/" target="_blank" rel="noopener noreferrer">Excursión de snorkel a Balicasag</a></strong>.</p>
+<p style="text-align: justify;">Con bastante suerte, incluso se pueden ver a los preciosos <strong>tiburones ballena</strong> sin necesidad de ir a sitios tan perjudiciales para ellos como <a href="https://www.viajarporfilipinas.com/tiburon-ballena-oslob-filipinas/" target="_blank" rel="noopener noreferrer">Oslob</a> o Lila.</p>
+<p style="text-align: justify;">Además, una de las estrellas del snorkel en Panglao, específicamente al norte de la isla, es el <strong>banco de miles de sardinas de Napaling</strong>. Si no vas a incluir en tu viaje <a href="https://www.viajarporfilipinas.com/moalboal-filipinas/" target="_blank" rel="noopener noreferrer">Moalboal</a>, sin duda, no te lo puedes perder.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-8703" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20787'%3E%3C/svg%3E" alt="esnórquel bohol tortugas" width="1000" height="787" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1-980x771.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1-480x378.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-8703" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1.jpg" alt="esnórquel bohol tortugas" width="1000" height="787" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1-980x771.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-1-480x378.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Mejores puntos para hacer snorkel en Panglao</span></h2>
+<p style="text-align: justify;">Ya te has hecho una idea de cómo es esta actividad en la zona, pero ahora vamos a hablarte de los principales puntos para hacer snorkel en Panglao.</p>
+<p style="text-align: justify;">Recuerda que, como te contamos en <strong><a href="https://www.viajarporfilipinas.com/como-llegar-panglao/" target="_blank" rel="noopener noreferrer">Cómo llegar a Panglao</a></strong>, esta es una pequeña isla unida a Bohol por un par de puentes. Por ello, es la base de muchos de los que visitan Bohol. Puedes leer mucha más información en <strong><a href="https://www.viajarporfilipinas.com/que-hacer-panglao-bohol/" target="_blank" rel="noopener noreferrer">Qué hacer en Panglao</a> </strong>y <strong><a href="https://www.viajarporfilipinas.com/dormir-en-panglao-bohol/" target="_blank" rel="noopener noreferrer">Dónde dormir en Panglao</a></strong>.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Napaling</span></h3>
+<p style="text-align: justify;">¿Qué te parecería meterte en el agua y verte rodeado de miles de sardinas? Al norte de Panglao hay un pequeño arrecife a apenas 3 metros de la orilla, en el que esto ocurre cada día.</p>
+<p style="text-align: justify;">Napaling se ha convertido en el <strong>mejor sitio para hacer snorkel en Panglao</strong>. Es una verdadera maravilla ver cómo se mueven estos animales de manera acompasada y sumergirse en lo más profundo y ver cómo tapan los rayos del sol. Además, también encontrarás un poco de coral, en el que no faltan nuestras queridas anémonas y peces payaso.</p>
+<p style="text-align: justify;">Dicen que por la mañana temprano, a veces pasan los <strong>tiburones ballena</strong> con ganas de desayunar sardinas. Por desgracia, no lo hemos podido comprobar, pero ojalá tú tengas suerte.</p>
+<div class='et_post_video'><iframe loading="lazy" title="???? Snorkel en NAPALING , Panglao ¡MILES DE SARDINAS! - Viajar por Filipinas" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/ZSo0mR_cM_w?feature=oembed"></iframe><noscript><iframe title="???? Snorkel en NAPALING , Panglao ¡MILES DE SARDINAS! - Viajar por Filipinas" width="1080" height="608" src="https://www.youtube.com/embed/ZSo0mR_cM_w?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></noscript></div>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">¿Cómo llegar a Napaling?</span></h4>
+<p style="text-align: justify;">El punto de snorkel está justo enfrente del Mojave Cliff Diving Resort.</p>
+<p style="text-align: justify;">Puedes hacerlo de <strong>3 maneras:</strong></p>
+<ul style="text-align: justify;">
+<li><strong>Con una moto de alquiler:</strong> las encontrarás desde 350 pesos al día. Recuerda tener precaución y todo lo que te contamos en <a href="https://www.viajarporfilipinas.com/alquilar-moto-filipinas-conducir/" target="_blank" rel="noopener noreferrer">Alquilar y conducir moto en Filipinas</a>.</li>
+<li><strong>Cogiendo un <em>tricycle</em>:</strong> esto te costará más o menos según dónde te encuentres. Si estás en Alona Beach, que es lo habitual, negocia algo menos de 100 pesos por viaje.</li>
+<li><strong>En una excursión:</strong> existen tours que incluyen Napaling en su ruta. La agencia filipina más reconocida, KLOOK, tiene <strong><a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=833338&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F102697-snorkel-napaling-swim-panglao-sardines%2F%3Fspm%3DActivity.TopNavigation.SelectLanguage%26clickId%3D733a66ee4d" target="_blank" rel="nofollow noopener noreferrer">este</a></strong>.</li>
+</ul>
+<p style="text-align: justify;">Una vez allí, es un poquito confuso porque en cada sitio te van a querer cobrar una cosa. En el Molave Cliff están cobrando 300 pesos por persona, pero en la cafetería que hay cerca (Dominggo) puedes entrar por 200. Otros viajeros nos comentan que hay un camino en la parte izquierda (donde en Google Maps pone Xander&#8217;s Place) en el que te puedes meter gratis. Sea como sea, te recomendamos ir muy temprano para evitar a los grupos grandes.</p>
+<p style="text-align: justify;">Desde Molave Cliff puedes meterte en el agua saltando por el trampolín del acantilado o a través de unas sencillas escaleras.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8706" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="snorkel banco sardinas napaling" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8706" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11.jpg" alt="snorkel banco sardinas napaling" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-11-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Snorkel en Alona Beach</span></h3>
+<p style="text-align: justify;">Napaling es una maravilla, pero, si te alojas por Alona Beach, no pierdas la oportunidad de echar un rato con tu máscara en el agua.</p>
+<p style="text-align: justify;">Como te contábamos más arriba, todo el sur de Panglao tiene un arrecife maravilloso y eso incluye a Alona Beach. Haciendo esnórquel vas a poder <strong>la parte más superficial de la plataforma coralina</strong> y allí no suelen faltar las estrellas de mar, los peces payaso, los nudibranquios e, incluso, los poco comunes <em>frogfish</em> o peces sapo.</p>
+<p style="text-align: justify;">¿El problema? Vas a tener que <strong>nadar</strong> un poco para llegar al arrecife. La parte más bonita es la que está situada donde se encuentran las boyas. Ten mucho ojo porque es una zona por la que pasan muchos barcos por el tema del buceo.</p>
+<p style="text-align: justify;">Nosotros nos metemos siempre por la parte que está frente al hotel <a href="https://www.booking.com/hotel/ph/la-sirenita.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">La Sirenita</a>, que es, además, nuestra parte de playa favorita.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8704" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="snorkel alona beach panglao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8704" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4.jpg" alt="snorkel alona beach panglao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-4-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">3. Momo Beach</span></h3>
+<p style="text-align: justify;">Ya sabes que Momo Beach es una de las <strong><a href="https://www.viajarporfilipinas.com/mejores-playas-panglao-bohol/" target="_blank" rel="noopener noreferrer">mejores playas de Bohol y Panglao</a></strong>, pero también es un sitio que destaca por su vida marina. Sin necesidad de hacer excursión y a pocos metros de la orilla, en Momo Beach hay un arrecife bonito salpicado con extensiones de arena en el que no es difícil encontrarte con <strong>tortugas marinas</strong>.</p>
+<p style="text-align: justify;">En esta zona de Panglao hay muy poquita profundidad, así que en marea baja es un poco difícil meterse en el agua. Aun así, han habilitado una especie de “camino” de arena para que sea más sencillo llegar a la zona más profunda. Si tienes escarpines, llévalos porque te serán muy útiles.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">4. Dumaluan – White Beach – Libaong</span></h3>
+<p style="text-align: justify;">Si tuviésemos que elegir una playa en esta isla, no tendríamos ninguna duda y sería esta. Bueno, pues también es aquí donde podrás disfrutar de varios de los mejores puntos para hacer <strong>snorkel en Panglao</strong>.</p>
+<p style="text-align: justify;">En la zona de Dumaluan, justo enfrente del hotel Bohol Beach Club tienes una zona de arena en la que también se ven algunos corales y anémonas simpáticos en los que no falta la vida marina.</p>
+<p style="text-align: justify;">Sin embargo, si tenemos que elegir, quizás nos quedamos con la parte de <strong>White Beach/Libaong</strong>. Aquí se ubica uno de los mejores puntos de submarinismo de la zona: <strong>Arco Point</strong>. Aunque es una pared de coral de muchísima profundidad, vas a poder ver la parte más superficial haciendo snorkel. Incluso podrás ver desde arriba la parte más conocida de la inmersión y por la cual recibe este nombre: un arco de roca.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-8701" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="pez payaso bohol" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8701" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3.jpg" alt="pez payaso bohol" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-3-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Mejores puntos para hacer snorkel en Bohol</span></h2>
+<p style="text-align: justify;">Bohol es un de las islas más grandes de Filipinas y, a pesar de ser una de las más turísticas, no se caracteriza por tener un turismo orientado a sus playas. <a href="https://www.viajarporfilipinas.com/que-hacer-loboc/" target="_blank" rel="noopener noreferrer">Loboc</a>, las <a href="https://www.viajarporfilipinas.com/chocolate-hills-bohol-como-llegar/" target="_blank" rel="noopener noreferrer">Chocolate Hills</a> y los tarsiers son sus rincones más conocidos. Aun así, si buscas sitios para hacer snorkel en Bohol, entonces tienes que dirigirte a <strong><a href="https://www.viajarporfilipinas.com/que-ver-anda-bohol/" target="_blank" rel="noopener noreferrer">Anda</a></strong>.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Snorkel en Anda</span></h3>
+<p style="text-align: justify;">Puede decirse que Anda es una <strong>pequeña península al este de Bohol</strong>. Si bien no es tan conocida como la zona de Alona Beach y todavía es un enclave muy poco turístico, lo cierto es que es otro de los sitios más interesantes si estás pensando en <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">bucear en Filipinas</a></strong>.</p>
+<p style="text-align: justify;">Como en el caso de Panglao, la costa sur de Anda está llena de <strong>arrecifes</strong> interesantes en los que, atención, no es raro ver <strong>tortugas</strong>. Si eres buen nadador, podrás llegar perfectamente. Es recomendable que lleves aletas porque está un poquitín lejos de la costa, pero tampoco nada exagerado.</p>
+<p style="text-align: justify;">En nuestra opinión, el mejor punto de snorkel en Bohol está justo enfrente del hotel <strong><a href="https://www.booking.com/hotel/ph/magic-oceans-dive-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Magic Oceans Dive Resort</a> </strong>o el Blue Star Dive Resort. Justo enfrente de este último, a pocos pasos de la orilla es común ver tortugas, solo que en estos momentos están cobrando 100 pesos de entrada.</p>
+<p style="text-align: justify;">Si viajas con niños o no te sientes cómodo nadando tanto, también <strong>tienes la opción de que algún barquero te lleve hasta el propio arrecife</strong>. Acostumbran a ser muy apañados, hacen de guías, hacen fotos y demás.</p>
+<blockquote><p>En el caso de quieras un contacto para esto, nosotros estamos encantados de darte el que tenemos.</p></blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-8705" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="snorkel en anda" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-8705" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10.jpg" alt="snorkel en anda" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Excursiones de snorkel desde Bohol</span></h2>
+<p style="text-align: justify;">Como ves, no te van a faltar opciones para hacer snorkel en Bohol y Panglao, pero también tienes dos islas coralinas impresionantes que te van a regalar momentos submarinos mágicos.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">1. Balicasag</span></h3>
+<p style="text-align: justify;">Con uno de los mejores santuarios marinos, esta es una de las mecas del buceo. Si bien es cierto que con el tanque vas a estar más tranquilo y vas a poder admirar sus imponentes paredes de coral, el esnórquel con máscara y tubo también es maravilloso. Esto se debe, sobre todo, a que es uno de los sitios donde tienes <strong>el avistamiento de tortugas marinas (verdes y hawcksbill) casi asegurado</strong>.</p>
+<p style="text-align: justify;">Balicasag se encuentra <strong>a unos 40 minutos en barco de Alona Beach</strong>. Por ello, no vas a poder hacer snorkel por tu cuenta. Para ello, tendrás que contratar una <em>bangka</em> o unirte a una excursión de snorkel o buceo. Según nuestra experiencia, esto último es mucho mejor, ya que son muchísimo más respetuosos con los animales y no te intentan timar diciendo que tienes que pagar varias tasas.</p>
+<blockquote><p>Si te apetece, puedes dejarnos un comentario y te damos el contacto de nuestra empresa de confianza.</p></blockquote>
+<p style="text-align: justify;">Puedes leer muchísimo más sobre esta actividad de snorkel en Bohol en <strong><a href="https://www.viajarporfilipinas.com/excursion-snorkel-balicasag/" target="_blank" rel="noopener noreferrer">Snorkel en Balicasag</a></strong>. Si tienes título de buceo, no lo dudes y lee <a title="Buceo en Balicasag: guía y centro español recomendado" href="https://www.viajarporfilipinas.com/buceo-balicasag/" target="_blank" rel="noopener noreferrer"><strong>Buceo en Balicasag</strong></a>.</p>
+<p style="text-align: justify;">Si da la rarísima casualidad de que no ves tortugas aquí, otros sitios con muchas posibilidades para nadar con ellas son <strong><a href="https://www.viajarporfilipinas.com/guia-apo-island/" target="_blank" rel="noopener noreferrer">Apo Island</a></strong> y <strong><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/" target="_blank" rel="noopener noreferrer">Moalboal</a></strong>.</p>
+<p><img decoding="async" class="aligncenter wp-image-8702 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="tortuga hawcksbill bohol" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8702 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2.jpg" alt="tortuga hawcksbill bohol" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">2. Pamilacan</span></h3>
+<p style="text-align: justify;">Balicasag es la más conocida, pero existe una joyita que todavía pasa desapercibida. Situada al sur de la costa de Bohol, Pamilacan es otro destino fabuloso para hacer snorkel. Su población de <strong>tortugas</strong>, aunque no es tan grande como la de la primera, ha crecido exponencialmente en los últimos años, así que no será raro que te las encuentres.</p>
+<p style="text-align: justify;">Por otro lado, el <strong>coral</strong> de Pamilacan está en un estado fabuloso y vas a poder disfrutar de miles de peces de colores. Con suerte, también podrás ver algún que otro delfín o hasta ballena.</p>
+<p style="text-align: justify;">Para nadar en la zona del <strong>santuario</strong> hay que pagar un guía y una tasa gubernamental (250 pesos por persona).</p>
+<p style="text-align: justify;">Como curiosidad, aquí también encontrarás un fuerte hecho completamente en coral de época colonial española. Este servía para vigilar la llegada de los “moros”.</p>
+<p style="text-align: center;">* Puedes leerlo todo en <a title="Qué hacer en Pamilacan (Bohol) – Guía completa" href="https://www.viajarporfilipinas.com/que-hacer-pamilacan/" target="_blank" rel="noopener"><strong>Qué hacer en Pamilacan</strong></a></p>
+<h4 style="text-align: justify;"><span style="color: #33cccc;">¿Cómo llegar a Pamilacan?</span></h4>
+<p style="text-align: justify;">Tienes <strong>3 opciones:</strong></p>
+<ul style="text-align: justify;">
+<li>Contratar una <strong>excursión desde Alona Beach</strong>. Puedes hacerlo online con <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=833338&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F103299-pamilacan-island-tour-bohol%2F%3Fspm%3DActivity.TopNavigation.SelectLanguage%26clickId%3Df8de573ff2" target="_blank" rel="nofollow noopener"><strong>KLOOK</strong></a> (la Civitatis filipina).</li>
+<li>Ir hasta Baclayon (Bohol) y <strong>negociar el precio de un barco</strong>. Este suele costar 1.500 pesos por trayecto.</li>
+<li>Intentar ir en el <strong>barco público</strong> que sale de Baclayon a Pamilacan cada día. Tiene que haber uno, pero nadie nos ha sabido decir a qué hora. En este caso, te costará 200 pesos por persona.</li>
+</ul>
+<p style="text-align: justify;">En nuestra opinión, <strong>lo mejor es quedarse al menos un par de noches</strong> en Pamilacan para disfrutar del esnórquel y la tranquilidad de la isla. La mejor opción de alojamiento son <a href="https://www.booking.com/hotel/ph/liwayway-sa-bohol-pamilacan-bed-amp-breakfast.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Liwayway sa Bohol</a>.</p>
+<p><img decoding="async" class="aligncenter wp-image-8707 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="excursión de snorkel a pamilacan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8707 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7.jpg" alt="excursión de snorkel a pamilacan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-7-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Consejos para hacer esnórquel en Bohol</span></h2>
+<ul style="text-align: justify;">
+<li>No se puede hablar de una <strong>mejor época</strong> para hacer esnórquel en Bohol, pero sí que es cierto que es mejor evitar los meses con riesgo de tifón en la zona. Estos son, más o menos, julio, agosto, septiembre, octubre y noviembre. Aunque vas a poder hacer snorkel, hay riesgo de que esté el agua más revuelta.</li>
+<li><strong>Sé un turista responsable</strong>: no toques ni persigas a las tortugas y a cualquier otro animal. Tampoco toques ni pises ningún otro animal marino como las estrellas de mar o los corales. Por favor, si ves a personas haciendo esto, explícales educadamente por qué están afectándolos.</li>
+<li>Recuerda llevar un <strong>buen seguro de viaje</strong> que te cubra este tipo de actividades. En Panglao no hay muy buenos hospitales y, en caso de necesitarlo, tendrás que ser trasladado de urgencia a Tagbilaran o Cebu. Echa un vistazo al que nosotros usamos: <a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Seguro de viaje para Filipinas</strong></a>.</li>
+<li>Evita ponerte <strong>protector solar</strong>, si no puedes, lleva uno biodegradable (como <a href="https://amzn.to/49jk1ZG" target="_blank" rel="nofollow noopener noreferrer">este</a>) o usa ropa con protección para el sol. Casi todas las cremas dañan a los corales y los animales.</li>
+<li>Lleva <strong>tu propio equipo de snorkel</strong> por comodidad, higiene y ahorro. Uno bueno es <a href="https://amzn.to/2JBcfQi" target="_blank" rel="nofollow noopener noreferrer">este</a>. Es más cómodo si tienes aletas, pero sabemos que es un poco pesado llevarlas de viaje. Si las quieres, puedes alquilarlas en muchas tiendas de buceo por 150 pesos, al igual que la máscara.</li>
+<li>Seguro que quieres retratar la belleza de lo que ves haciendo esnórquel en Bohol. Nosotros siempre llevamos la <strong><a href="https://amzn.to/3HTFLzi" target="_blank" rel="nofollow noopener noreferrer">GoPro</a></strong>. Si la tienes de las nuevas, recuerda que solo son sumergibles hasta cierta profundidad. Para hacer snorkel está bien, pero necesitarás una <strong><a href="https://amzn.to/42t6Enr" target="_blank" rel="nofollow noopener noreferrer">carcasa de buceo</a></strong> si vas a hacer submarinismo.</li>
+<li><strong>Ve con lo menos posible</strong>. Muchos nos preguntáis qué hacemos con nuestros objetos de valor cuando vamos a hacer esnórquel. Pues, depende. Si es un sitio poco conocido o si el arrecife está muy cerca de la orilla, lo habituales es que dejemos allí el monedero y poco más. En otro caso, nos turnamos. Filipinas es un país muy seguro, pero nunca se sabe.</li>
+</ul>
+<p style="text-align: justify;">Y, por favor, <strong>no vayas ni a Oslob ni a Lila</strong>. Desde la propia playa de Alona y muchas agencias en Bohol publicitan salidas para ir a nadar con el tiburón ballena a estos 2 sitios. El primero está en Cebú y el segundo es Bohol. En ambos se comete la misma barbaridad: se alimenta a los tiburones de manera artificial y se concentran miles de personas alrededor, con los daños que esto les causa. Puedes leer mucho más en <strong><a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer">Dónde nadar con el tiburón ballena en Filipinas</a></strong>.</p>
+<p><img decoding="async" class="aligncenter wp-image-8708 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20675'%3E%3C/svg%3E" alt="arrecifes y anémonas bohol" width="1000" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8-980x662.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8-480x324.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8.jpg" /><noscript><img decoding="async" class="aligncenter wp-image-8708 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8.jpg" alt="arrecifes y anémonas bohol" width="1000" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8-980x662.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/09/snorkel-bohol-panglao-8-480x324.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Dónde dormir para hacer snorkel en Bohol y Panglao</span></h2>
+<p style="text-align: justify;">Aunque en <a href="https://www.viajarporfilipinas.com/dormir-bohol-isla-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Bohol</strong></a> y <a href="https://www.viajarporfilipinas.com/dormir-en-panglao-bohol/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Panglao</strong></a> te hablamos largo y tendido sobre alojamientos en ambas islas, hemos querido recomendarte aquí hoteles en primera línea de mar para que no tengas más que salir de tu habitación con la máscara y el tubo y gozarlo.</p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Oceanica Resort Panglao – Dumaluan Beach (Panglao)   </span></h3>
+<p style="text-align: justify;">Para un <strong>homenaje</strong> épico y hacer snorkel en Panglao sin complicarte, el Oceanica es tu sitio. Está ubicado <strong>en la mejor playa de la isla</strong>, Dumaluan Beach. En él podrás elegir entre habitaciones, <em>suites</em> y cabañas con vistas al mar, ya que está en la propia playa. Las instalaciones son maravillosas e incluyen piscina y un bar maravilloso.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/south-palms-resort-panglao.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Reserva en el Oceanica aquí</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Amarela Resort – Libaong Beach (Panglao)</span></h3>
+<p style="text-align: justify;">Situado en la maravillosa Libaong Beach, es decir, la continuación natural de Dumaluan, si te alojas aquí podrás disfrutar de uno de los mejores puntos de snorkel de Bohol: Arco Point. El Amarela Resort es un <strong>hotel boutique decorado con materiales locales</strong> y muchísimo gusto. Tanto el restaurante como algunas habitaciones tienen vistas directas al mar y también cuenta con una pedazo de piscina en plena jungla.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/amarela-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Mira la disponibilidad del Amarela Resort aquí</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">La Sirenita – Alona Beach (Panglao)</span></h3>
+<p style="text-align: justify;">Es aquí donde nos solemos alojar cuando vamos a Panglao. Situado en el sitio más tranquilo de la bulliciosa Alona Beach, vas a tener literalmente <strong>a dos pasos la playa</strong>. Las habitaciones son espaciosas, están equipadas con mobiliario nuevo y el personal es súper agradable. Ah, tienen fibra óptica. ¡Internet va como un tiro!</p>
+<p style="text-align: justify;">Puedes leer mucho más sobre nuestra experiencia en <strong><a href="https://www.viajarporfilipinas.com/sirenita-dive-resort-panglao/" target="_blank" rel="noopener noreferrer">Dormir en La Sirenita Resort</a></strong>.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/la-sirenita.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Reserva en La Sirenita</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Best Western Plus The Ivywall Resort-Panglao – Alona Beach (Panglao)</span></h3>
+<p style="text-align: justify;">Es la <strong>nueva incorporación</strong> a los hoteles de Alona Beach. Con la categoría de un Best Western, te vas a enamorar de sus coloridas e insonorizadas habitaciones, muchas de ellas con vistas al mar. Cuentas con gimnasio, varias piscinas, tumbonas en la playa y un restaurante-bar orientado a la playa.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/best-western-the-ivywall-resort-panglao.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Busca tu habitación aquí</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Panglao Sea Resort Tagnan – Napaling (Panglao)</span></h3>
+<p style="text-align: justify;">Si tú lo que quieres es salir de tu habitación, saltar al agua y que la magia ocurra, este es tu sitio. Este resort nuevo está <strong>orientado a buceadores</strong> que quieran gozar bien de los fondos marinos de la isla. Recién inaugurado, tienen habitaciones muy sencillas pero limpias y equipadas. Si duermes aquí, tienes muchas más posibilidades de ver al fabuloso tiburón ballena hacer de las suyas, ya que tienen su propia escalera para acceder a la zona de esnórquel en Panglao.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/panglao-sea-resort-tangnan.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Busca tu habitación en el Panglao Sea Resort</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Amun Ini Beach Resort and Spa – Anda (Bohol)</span></h3>
+<p style="text-align: justify;">Este <strong>es el hotel más lujoso</strong> de la zona de Anda y uno de los mejores de la isla. De verdad, pocas opciones con más nivel se nos ocurren en Bohol. Todas las habitaciones tienen balcón con vistas al mar y están decoradas con un gusto exquisito. Tienen una piscina maravillosa, como todas sus zonas comunes.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/amun-ini-beach-resort-amp-spa.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Mira la disponibilidad del Amun Ini Beach Resort</a></p>
+<h3 style="text-align: justify;"><span style="color: #33cccc;">Blue Star Dive Resort – Anda (Bohol)</span></h3>
+<p style="text-align: justify;">Como te decíamos, justo delante de este resort acostumbra a haber un montón de tortugas, así que si te mueres de ganas de verlas muchas veces, este es tu sitio. Disponen, además, de bungalós con vistas al mar y piscina.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.booking.com/hotel/ph/blue-star-dive-and-resort.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Mira el calendario del Anda Cove Beach Resort</a></p>
+<hr />
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Mapa de snorkel en Bohol y Panglao</span></h2>
+<p style="text-align: justify;">Aquí podrás hacerte una idea de dónde se encuentran los sitios para hacer snorkel en Bohol y Panglao de los que te hemos hablado. También hemos incluido las sugerencias de alojamiento.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1gVNEo2MTHe-Q0EzvhpzH9YSVHnrD_bcp"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1gVNEo2MTHe-Q0EzvhpzH9YSVHnrD_bcp" width="1000" height="480"></iframe></noscript></p>
+<hr />
+<p style="text-align: justify;">Esperamos que esta recopilación de puntos de snorkel en Bohol y Panglao te haya servido. Estamos seguros de que los vas a gozar un montón. Recuerda que en nuestra <a href="https://www.viajarporfilipinas.com/guia-de-bohol/" target="_blank" rel="noopener noreferrer"><strong>Guía de Bohol</strong></a> tienes todo lo que necesitas para disfrutar de tu estancia en la isla.</p>
+<p style="text-align: center;"><em>Si tienes cualquier duda o sugerencia, estaremos encantados de leerte en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">65 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-52398">
+		<article id="comment-52398" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Laura</span>				<span class="comment_date">
+					el 10/02/2025 a las 06:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola de nuevo! Este blog lo tiene todo, porfin veo mas claro el viaje a Filipinas!<br />
+Me podriais pasar porfavor el contacto de vuestra empresa de confianza para ir a bucear a Balicasag?<br />
+Muchas gracias<br />
+Laura</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52398' data-commentid="52398" data-postid="8691" data-belowelement="comment-52398" data-respondelement="respond" data-replyto="Responder a Laura" aria-label='Responder a Laura'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52403">
+		<article id="comment-52403" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/02/2025 a las 06:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Laura. ¡Enviado!. Te lo hemos mandado junto a la información del DSD. ¡Abrazos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51278">
+		<article id="comment-51278" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">jose</span>				<span class="comment_date">
+					el 24/01/2025 a las 09:15				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, que me recomendáis, Balicasag o Pamilacan?</p>
+<p>Podéis pasarme el contacto de Baliccasag?</p>
+<p>Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51278' data-commentid="51278" data-postid="8691" data-belowelement="comment-51278" data-respondelement="respond" data-replyto="Responder a jose" aria-label='Responder a jose'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51290">
+		<article id="comment-51290" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 24/01/2025 a las 10:32				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Jose. Ambos nos encantan pero quizá Balicasag. Ya lo tienes en tu correo. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-50403">
+		<article id="comment-50403" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alejandro</span>				<span class="comment_date">
+					el 10/01/2025 a las 08:15				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, ¿podríais pasarme el contacto para el tour de snorkel en Balicasag? Gracias y enhorabuena por vuestra web. Es fantástica y super completa.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50403' data-commentid="50403" data-postid="8691" data-belowelement="comment-50403" data-respondelement="respond" data-replyto="Responder a Alejandro" aria-label='Responder a Alejandro'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50407">
+		<article id="comment-50407" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/01/2025 a las 09:38				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alejandro, muchas gracias : ) acabamos de enviártelo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-48361">
+		<article id="comment-48361" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Josefina</span>				<span class="comment_date">
+					el 29/11/2024 a las 20:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podríais recomendar un centro de buceo en Bohol? Para nuestra primera inmersión. Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-48361' data-commentid="48361" data-postid="8691" data-belowelement="comment-48361" data-respondelement="respond" data-replyto="Responder a Josefina" aria-label='Responder a Josefina'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-48374">
+		<article id="comment-48374" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 30/11/2024 a las 04:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Josefina, por supuesto, te acabamos de pasar el del mejor. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-48108">
+		<article id="comment-48108" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Paula</span>				<span class="comment_date">
+					el 24/11/2024 a las 19:37				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Podríais recomendar un centro de buceo en Bohol? Queremos sacarnos allí el título de buceo, muchas gracias 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-48108' data-commentid="48108" data-postid="8691" data-belowelement="comment-48108" data-respondelement="respond" data-replyto="Responder a Paula" aria-label='Responder a Paula'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-48129">
+		<article id="comment-48129" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/11/2024 a las 03:23				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Paula, claro que sí, te lo acabamos de enviar. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-47587">
+		<article id="comment-47587" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Andrea Burgos</span>				<span class="comment_date">
+					el 15/11/2024 a las 14:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Podrias pasar el contacto para la excursion a Balicasag? Gracias !</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-47587' data-commentid="47587" data-postid="8691" data-belowelement="comment-47587" data-respondelement="respond" data-replyto="Responder a Andrea Burgos" aria-label='Responder a Andrea Burgos'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-47598">
+		<article id="comment-47598" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 16/11/2024 a las 03:12				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Andrea, claro que sí, te lo acabamos de pasar. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-47555">
+		<article id="comment-47555" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alejandro</span>				<span class="comment_date">
+					el 15/11/2024 a las 09:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! me gustaria saber cual es el centro de buceo en panglao que recomendais para un dia de buceo.</p>
+<p>Un saludo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-47555' data-commentid="47555" data-postid="8691" data-belowelement="comment-47555" data-respondelement="respond" data-replyto="Responder a Alejandro" aria-label='Responder a Alejandro'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-47574">
+		<article id="comment-47574" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/11/2024 a las 12:51				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alejandro, te acabamos de pasar la info. un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-47515">
+		<article id="comment-47515" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alexa</span>				<span class="comment_date">
+					el 14/11/2024 a las 09:47				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola ,a mi tambien me gustaría saber algún centro de buceo que recomendéis para acoplarnos con ellos y hacer snorkel , un saludo y gracias !!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-47515' data-commentid="47515" data-postid="8691" data-belowelement="comment-47515" data-respondelement="respond" data-replyto="Responder a Alexa" aria-label='Responder a Alexa'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-47522">
+		<article id="comment-47522" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 14/11/2024 a las 10:01				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alexa, claro que sí, te acabamos de enviar la info. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-46109">
+		<article id="comment-46109" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Julia</span>				<span class="comment_date">
+					el 17/10/2024 a las 12:31				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Que centro de buceo me recomendariaís en panglao? Y en coron? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-46109' data-commentid="46109" data-postid="8691" data-belowelement="comment-46109" data-respondelement="respond" data-replyto="Responder a Julia" aria-label='Responder a Julia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-46111">
+		<article id="comment-46111" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/10/2024 a las 12:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Julia, acabamos de pasarte la info. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/snorkel-bohol-panglao/comment-page-2/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/snorkel-bohol-panglao/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='8691' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="506691f0cf" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="57"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"8691","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

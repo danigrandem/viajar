@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué ver y qué hacer en Apo Island - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Nadar con tortugas es tu objetivo principal, pero hay mucho más que hacer en Apo Island. Aquí encontrarás tu guía más detallada." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-apo-island/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué ver y qué hacer en Apo Island - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Nadar con tortugas es tu objetivo principal, pero hay mucho más que hacer en Apo Island. Aquí encontrarás tu guía más detallada." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-apo-island/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-06-05T10:44:24+00:00" />
+	<meta property="article:modified_time" content="2024-04-13T11:27:32+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="20 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué ver y qué hacer en Apo Island","datePublished":"2020-06-05T10:44:24+00:00","dateModified":"2024-04-13T11:27:32+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/"},"wordCount":4169,"commentCount":18,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer.jpg","articleSection":["Visayas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-apo-island/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/","url":"https://www.viajarporfilipinas.com/que-hacer-apo-island/","name":"▷ Qué ver y qué hacer en Apo Island - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer.jpg","datePublished":"2020-06-05T10:44:24+00:00","dateModified":"2024-04-13T11:27:32+00:00","description":"Nadar con tortugas es tu objetivo principal, pero hay mucho más que hacer en Apo Island. Aquí encontrarás tu guía más detallada.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-apo-island/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer.jpg","width":1200,"height":630,"caption":"Qué hacer y qué ver en Apo Island"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-apo-island/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué ver y qué hacer en Apo Island"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-apo-island/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué ver y qué hacer en Apo Island del feed" href="https://www.viajarporfilipinas.com/que-hacer-apo-island/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/7238" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=7238' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-apo-island%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-apo-island%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-7238-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/7238/et-core-unified-7238.min.css?ver=1745602985" /><link rel="stylesheet" id="et-core-unified-deferred-7238-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/7238/et-core-unified-deferred-7238.min.css?ver=1745602985" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-7238 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-7238" class="et_pb_post post-7238 post type-post status-publish format-standard has-post-thumbnail hentry category-visayas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué ver y qué hacer en Apo Island</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/visayas/" rel="category tag">Visayas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Qué hacer y qué ver en Apo Island" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-1080x630.jpg" alt="Qué hacer y qué ver en Apo Island" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/apo-island-que-hacer-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Seguro que ya tienes una ligera idea de <strong>qué hacer en Apo Island</strong>. Si has llegado hasta aquí es porque has oído cantos de sirena o, mejor, cantos de tortuga. La diminuta isla volcánica de Apo cuenta con una <strong>brutal reserva marina hogar de decenas de tortugas</strong> y, por tanto, es uno de los mejores sitios para hacer esnórquel y/o buceo en Filipinas.</p>
+<p style="text-align: justify;">No solo eso, Apo Island es un destino turístico muy poco desarrollado. Gran parte de sus visitantes vienen en una excursión desde Dumaguete, Siquijor o Dauin, que muchas veces ni siquiera ponen un pie en ella, por lo que es un sitio genial para disfrutar de unos <strong>días de calma, esnórquel, caminatas y puesta de sol rodeado de gente bonita</strong>.</p>
+<p style="text-align: justify;">Lo reconocemos, nosotros somos unos enamorados de Apo Island. “Por suerte”, la última vez que estuvimos nos quedamos atrapados gracias a un tifón durante una semana, así que nos dio tiempo a exprimirla a tope. Sigue leyendo y descubre <strong>qué ver y qué hacer en Apo Island</strong> con nosotros.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-682588b6d70f8" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-682588b6d70f8"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Donde_esta_Apo_Island" title="Dónde está Apo Island">Dónde está Apo Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Por_que_visitar_Apo_Island" title="Por qué visitar Apo Island">Por qué visitar Apo Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Cuantos_dias_pasar_en_Apo" title="Cuántos días pasar en Apo">Cuántos días pasar en Apo</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Que_ver_y_que_hacer_en_Apo_Island" title="Qué ver y qué hacer en Apo Island">Qué ver y qué hacer en Apo Island</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#1_Nadar_con_tortugas_en_Apo_Island" title="1. Nadar con tortugas en Apo Island">1. Nadar con tortugas en Apo Island</a><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-6" href="#%C2%BFComo_ver_tortugas_en_Apo_Island" title="¿Cómo ver tortugas en Apo Island?">¿Cómo ver tortugas en Apo Island?</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-7" href="#Consejos_para_nadar_con_tortugas_en_Apo" title="Consejos para nadar con tortugas en Apo">Consejos para nadar con tortugas en Apo</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-8" href="#Recomendaciones_de_turismo_responsable_para_avistar_tortugas_en_Apo_y_no_danarlas" title="Recomendaciones de turismo responsable para avistar tortugas en Apo y no dañarlas">Recomendaciones de turismo responsable para avistar tortugas en Apo y no dañarlas</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#2_Bucear_en_Apo_Island" title="2. Bucear en Apo Island">2. Bucear en Apo Island</a><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-10" href="#Sitios_de_buceo_en_Apo_Island" title="Sitios de buceo en Apo Island">Sitios de buceo en Apo Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-11" href="#%C2%BFSnorkel_o_buceo_en_Apo_Island" title="¿Snorkel o buceo en Apo Island?">¿Snorkel o buceo en Apo Island?</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#3_Caminar_hasta_el_faro_Apo_Island_Lighthouse" title="3. Caminar hasta el faro (Apo Island Lighthouse)">3. Caminar hasta el faro (Apo Island Lighthouse)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#4_Disfrutar_del_atardecer_desde_el_mirador_de_Rock_Point_Apo_Island_View_Deck" title="4. Disfrutar del atardecer desde el mirador de Rock Point (Apo Island View Deck)">4. Disfrutar del atardecer desde el mirador de Rock Point (Apo Island View Deck)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#5_Disfrutar_de_la_vida_de_Apo_Island" title="5. Disfrutar de la vida de Apo Island">5. Disfrutar de la vida de Apo Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#6_Tostarte_en_la_playa" title="6. Tostarte en la playa">6. Tostarte en la playa</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-16" href="#Donde_dormir" title="Dónde dormir">Dónde dormir</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-17" href="#Como_llegar" title="Cómo llegar">Cómo llegar</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-18" href="#Consejos_para_visitar_Apo_Island" title="Consejos para visitar Apo Island">Consejos para visitar Apo Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-19" href="#Mapa_de_Apo_Island" title="Mapa de Apo Island">Mapa de Apo Island</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_esta_Apo_Island"></span><span style="color: #33cccc;">Dónde está Apo Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Apo Island es una pequeñísima isla ubicada en la <strong>costa oriental de la isla de Negros</strong>. Concretamente, está a 7 kilómetros del <strong>puerto de Malatapay</strong>, situado en la provincia de Negros Oriental. La capital de esta es <strong>Dumaguete</strong>, una ciudad más o menos grande, que cuenta con todos los servicios y que es conocida por ser un punto de reunión de los estudiantes. En ella se encuentra la Silliman University, una de las más prestigiosas de Filipinas.</p>
+<p style="text-align: justify;">En Dumaguete tienes el <strong>Aeropuerto de Sibulán</strong> (IATA: DGT), un puerto y varias terminales de buses, siendo la más importante la Ceres Bus Terminal. De esta manera podrás conectarte con otros rincones de Filipinas.</p>
+<p style="text-align: justify;"><strong>¿Apo Island o Apo Reef?</strong> Por otro lado, es necesario que <strong>no confundas Apo Island con <a title="Guía de Apo Reef" href="https://www.viajarporfilipinas.com/buceo-apo-reef-filipinas/" target="_blank" rel="noopener">Apo Reef</a></strong>. Aunque ambos son lugares increíbles para <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">bucear en Filipinas</a></strong>, a Apo Reef se accede desde la isla de Mindoro; mientras que a Apo Island vas desde Negros. Están separados por cientos de kilómetros.</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/2/embed?mid=18xA9EDXzmny6oA0vDazFdehrMmbbKnbr"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/2/embed?mid=18xA9EDXzmny6oA0vDazFdehrMmbbKnbr" width="1000" height="480"></iframe></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Por_que_visitar_Apo_Island"></span><span style="color: #33cccc;">Por qué visitar Apo Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">¿Qué te puede atraer hasta este pedacito de tierra de tan solo 72 hectáreas? Pues principalmente su <strong>santuario marino de 619 hectáreas</strong>, el primero declarado de Filipinas en 1986.</p>
+<p style="text-align: justify;">Angel Alcalá, del Marine Laboratory de la Universidad de Silliman concienció hace más de 30 años a los locales de la isla de Apo de la importancia de lo que tenían a su alrededor. Con <strong>más de 650 especies de peces y 400 de corales</strong> documentados, Apo Island es una maravilla submarina y, por tanto, uno de <a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer"><strong>los mejores sitios para hacer snorkel en Filipinas</strong></a>, sobre todo si estás deseando nadar con <strong>tortugas marinas</strong>.</p>
+<p style="text-align: justify;">Y, aunque lo mejor que hacer en Apo Island es disfrutar de sus fondos marinos, a nosotros nos encanta, simplemente, estar allí. Apo es <strong>una isla muy poco desarrollada</strong> (de hecho, la electricidad aún no está en marcha las 24 horas) y son todavía pocos los viajeros que se quedan a dormir en ella. Muchos vienen solo a pasar el día desde Siquijor, Dumaguete o <a title="Guía de Dauin: qué hacer, cómo llegar y dónde dormir" href="https://www.viajarporfilipinas.com/que-hacer-dauin/" target="_blank" rel="noopener noreferrer">Dauin</a>, por lo que pasear por ella es una experiencia bonita.</p>
+<p style="text-align: justify;">Te contamos un secreto: a nosotros nos gusta bastante más la experiencia de nadar con tortugas en Apo que la <a href="https://www.viajarporfilipinas.com/excursion-snorkel-balicasag/" target="_blank" rel="noopener noreferrer"><strong>excursión de snorkel a Balicasag</strong></a>. Ambas islas son preciosas, pero, si te puedes quedar a dormir, Apo es mejor. En términos de buceo ambas son increíbles.</p>
+<blockquote><p>¿Sabías que “apo” significa nieto en bisaya? Apo es la pequeña nieta de la “lola” (abuela) Negros. Siquijor es la “anak” (hija) de Negros. Además, la correcta pronunciación es “apó”.</p></blockquote>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_pasar_en_Apo"></span><span style="color: #33cccc;">Cuántos días pasar en Apo</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si tienes tiempo, nosotros te recomendamos quedarte a <strong>dormir en Apo Island al menos una noche</strong>. En el caso de que vayas más ajustado, por supuesto, la excursión desde Siquijor a Apo de un día también merece la pena.</p>
+<p style="text-align: justify;">Para aquellos que disfruten de la tranquilidad suprema o que adoren bucear, Apo es un verdadero paraíso. Nosotros hemos visitado la isla en 3 ocasiones y en una de ellas pasamos una semana completa. ¡100% recomendable!</p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-7241" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="viajar por filipinas en apo island" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-7241" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10.jpg" alt="viajar por filipinas en apo island" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-10-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_ver_y_que_hacer_en_Apo_Island"></span><span style="color: #33cccc;">Qué ver y qué hacer en Apo Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Ahora ya te haces una idea de lo que vas a encontrar en esta diminuta isla, pero sigue leyendo y descubre qué ver y qué hacer en Apo Island en detalle. Te daremos los consejos que nos hubiesen gustado tener a nosotros la primera vez que la pisamos.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Nadar_con_tortugas_en_Apo_Island"></span><span style="color: #33cccc;">1. Nadar con tortugas en Apo Island</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Apo es un paraíso para las tortugas y aquellos que estamos enamorados de ellas. ¿Por qué? El fondo marino de la isla cuenta con <strong>un montón de algas y lechos de pastos marinos</strong>, la dieta favorita de las tortugas. Pero, además, la protección del santuario durante más de 3 décadas ha hecho que las tortugas estén confiadas de que allí no les va a pasar nada. Por esta misma razón, las tortugas no salen despavoridas cada vez que ven a una persona, ya que pasan meses en los alrededores de Apo.</p>
+<p style="text-align: justify;">Sería extremadamente raro que no encontraras tortugas nadando en los alrededores de la isla. Suelen estar comiendo a poquísima distancia de la orilla, donde también hay unos <strong>arrecifes de coral </strong>preciosos. Además, las tortugas no permanecen todo el rato sumergidas, sino que salen a la superficie a respirar, por lo que es habitual verlas sin necesidad de practicar apnea como un profesional.</p>
+<p style="text-align: justify;">En Apo hay una enorme población de <strong>tortugas verdes y tortugas hawksbill</strong>, la mayoría de ellas hembras. Las distinguirás fácilmente. El caparazón de las primeras es más redondito, mientras que el de las segundas es más picudo. Además, las hawksbill son de un vistoso color amarillo y tienen un pico más puntiagudo, que les sirve para romper coral duro y esponjas, sus manjares preferidos. Es más habitual ver tortugas verdes haciendo esnórquel en Apo, ya que viven en aguas poco profundas (de 0 a 15 metros).</p>
+<p style="text-align: justify;">? <strong><em>¿Cómo diferenciar un macho de una hembra?</em></strong> Básicamente por la cola. Las hembras la tienen cortita.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFComo_ver_tortugas_en_Apo_Island"></span><span style="color: #33cccc;">¿Cómo ver tortugas en Apo Island?</span><span class="ez-toc-section-end"></span></h4>
+<p style="text-align: justify;">Los mejores puntos para verlas son el arrecife de <strong>Chapel</strong> y su continuación natural, el de <strong>Katipanan</strong>. Ambos están en la misma zona donde se amarran los barcos, es decir, frente al resort Liberty’s. Lo único que tienes que hacer entonces es lanzarte a nadar por allí.</p>
+<p style="text-align: justify;">Ojo, existe una <strong>zona delimitada por boyas en la que se requiere un guía</strong>. Este cuesta 300 pesos por grupo y se contrata en la oficina de turismo de Apo Island. Supuestamente, en esta zona es donde se ven más tortugas, pero, como entenderás, estas van nadando por todos lados. Si te apetece por tu cuenta, puedes ir sin pagar esta tasa (sí que tendrás que pagar los 100 pesos de tasas medioambientales de Apo, que solo se paga al llegar). Aun así, ir con un guía te garantiza cansarte menos y, además, están súper acostumbrados a hacer fotos chulas. También es una manera de apoyar a la comunidad.</p>
+<p style="text-align: justify;">Si no tienes <strong>equipo de snorkeling</strong>, en Apo Island podrás alquilarlo en la oficina de turismo. Suelen cobrar 100 pesos. Es aconsejable alquilar las aletas también (100 pesos). También tienen chalecos salvavidas (100 pesos) y escarpines (100 pesos). Nosotros, como te contamos en <a title="Qué llevar en la mochila para Filipinas" href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener noreferrer">Mochila para Filipinas</a>, siempre recomendamos con viajar tu propia máscara y tubo. Es una forma mucho más higiénica y no te hace depender siempre de encontrar un lugar que alquile una en condiciones. Échale un ojo a la que usamos nosotros: <a href="https://amzn.to/2JBcfQi" target="_blank" rel="nofollow noopener noreferrer">es esta</a>.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7247" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="snorkel en apo island tortuga" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7247" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14.jpg" alt="snorkel en apo island tortuga" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-14-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="Consejos_para_nadar_con_tortugas_en_Apo"></span><span style="color: #33cccc;">Consejos para nadar con tortugas en Apo</span><span class="ez-toc-section-end"></span></h4>
+<p style="text-align: justify;">Lo principal que hacer en Apo Island es nadar con las tortugas y eso es lo que vienen también a hacer las excursiones que vienen desde Siquijor, Dumaguete y Dauin. Por ello, es normal que a media mañana se junte muchísima gente, empañando la experiencia.</p>
+<p style="text-align: justify;">Si te quedas a dormir en Apo Island, nuestro consejo es que intentes meterte en el agua <strong>a primera hora de la mañana</strong>. Además, sobre las 7:00 suele estar el mar más calmado. Otro buen momento es <strong>sobre las 16:00</strong>, cuando ya se han ido todos los barcos y las tendrás casi para ti solo.</p>
+<p style="text-align: justify;"><strong><em>¿Existe una mejor época para verlas?</em></strong> No, las tortugas están todo el año en Apo. Eso sí, en temporada de lluvias (de junio a noviembre, aproximadamente) puede hacer más viento y, por ende, hacer snorkeling es más incómodo.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="Recomendaciones_de_turismo_responsable_para_avistar_tortugas_en_Apo_y_no_danarlas"></span><span style="color: #33cccc;">Recomendaciones de turismo responsable para avistar tortugas en Apo y no dañarlas</span><span class="ez-toc-section-end"></span></h4>
+<p style="text-align: justify;">Las tortugas marinas son animales salvajes y frágiles. Por favor, sigue estas recomendaciones para que Apo Island siga siendo su hogar:</p>
+<ul style="text-align: justify;">
+<li><strong>No uses cremas solares comunes:</strong> casi todos los protectores llevan oxibenzona, un químico que daña a los arrecifes y la fauna marina. En pocas concentraciones no pasa nada, pero imagina la cantidad de turistas que van cada día con crema y el daño que esto causa. De hecho, hay estudios científicos que demuestran que los químicos de estas cremas les provocan tumores a las tortugas. Si te quemas, te animamos a comprar cremas biodegradables o a ponerte ropa con protección solar. <a href="https://amzn.to/3unszQj" target="_blank" rel="nofollow noopener noreferrer">Esta crema</a>, por ejemplo, no daña la vida marina.</li>
+<li><strong>No las toques:</strong> esta regla aplica para todo animal o coral que hay en el mar. De verdad, un gesto tan tonto les puede cambiar la vida, les podemos trasladar enfermedades y, aparte, les causamos estrés.</li>
+<li><strong>Guarda una distancia de, al menos, 3 metros: </strong>como decimos, las tortugas son animales salvajes, el estar tan cerca les causa estrés.</li>
+<li><strong>No las persigas ni les metas el palo de selfi en la cara.</strong></li>
+<li><strong>No las alimentes.</strong></li>
+<li><strong>No les impidas el camino:</strong> no te pongas justo delante o, si vais en grupo, no las rodeéis.</li>
+<li><strong>No te pongas de pie:</strong> desde luego no lo hagas en los corales o las esponjas (que a veces parecen rocas) y evita también hacerlo en la zona de algas.</li>
+<li>Si ves a alguien haciendo una de estas cosas, por favor, <strong>llámale la atención educadamente</strong> y explícale por qué lo está haciendo mal. Poco a poco nos iremos concienciando, ninguno nacimos aprendidos.</li>
+<li><strong>Fuera del agua:</strong> reduce tu consumo de plásticos de un solo uso. Las tortugas y otros animales marinos las confunden con medusas, que también son su alimento, y acaban muriendo. Si ves plásticos en el mar o en las playas, ayudas mucho recogiéndolo. Reduce el consumo de pescado o comprueba que la pesca que se realiza ha sido sostenible. La sobreexplotación afecta a los ecosistemas y también algunos tipos de pesca, como la de arrastre, que causa la muerte a muchísimas tortugas cada año.</li>
+</ul>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7246" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="nadar con tortugas en Apo Island" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7246" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11.jpg" alt="nadar con tortugas en Apo Island" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-11-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Bucear_en_Apo_Island"></span><span style="color: #33cccc;">2. Bucear en Apo Island</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Muy relacionada con la anterior, otra cosa que hacer en Apo Island es bucear. No solo por disfrutar de las tortugas tranquilamente, sino porque sus arrecifes tienen <strong>muchísima vida marina</strong> y, gracias a ello, componen algunos de los puntos de buceo más interesantes de la región de Bisayas.</p>
+<p style="text-align: justify;">Apo tiene inmersiones<strong> para todos los niveles</strong>. Desde tranquilos paseos por los arrecifes y exploración de paredes y cuevas hasta buceos con fuertes corrientes en las que son comunes los cardúmenes de lucios (<em>jack fish</em>), meros enormes y, con suerte, se pueden ver hasta tiburones ballena. También tienes oportunidades de buceo tipo macro, con un montón de nudibranquios, peces sapo, cangrejos orangután y los curiosos <em>candy crabs</em>.</p>
+<p style="text-align: justify;"><strong><em>¿Cuál es la mejor época para bucear en Apo?</em></strong> Pues puedes hacerlo durante todo el año y la visibilidad suele ser muy buena, pero el mejor momento es de noviembre a junio. De julio a septiembre es temporada de lluvias y viento, por lo que el mar puede estar más movido. Si puedes evitar los días de luna llena y próximos a ella, mejor, ya que es cuando más corriente hay.</p>
+<p style="text-align: justify;"><strong><em>¿Qué escuelas de buceo hay en Apo?</em></strong> Tienes básicamente 2 de los 2 hoteles más importantes operativos: Liberty’s y Mario’s. Nosotros siempre hemos buceado la escuela de buceo del Liberty’s (Paul’s Dive Center) y nos ha gustado mucho tanto el servicio como el equipo, pero nos han contado malas experiencias recientes. Nuestro consejo es que te pases por los 3, que están muy cerca, y examines bien los equipos. Los precios rondan los 1.400 pesos por inmersión y equipo.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="Sitios_de_buceo_en_Apo_Island"></span><span style="color: #33cccc;">Sitios de buceo en Apo Island</span><span class="ez-toc-section-end"></span></h4>
+<ul style="text-align: justify;">
+<li><strong>Chapel:</strong> llamado así porque está delante de la capilla de la isla, este es uno de los sitios más populares de Apo. Se comienza en una pequeña pendiente de arena que se transforma en una brutal pared con cuevas y repleta de coral blando, duro, esponjas y abanicos. No es un buceo complicado y es habitual ver peces león, peces escorpión, morenas, nudibranquios, peces sapo, tortugas, peces napoléon… No dejes de mirar al azul, a veces se han visto tiburones zorro y tiburones martillo.</li>
+<li><strong>Coconut Point:</strong> conocida como “la lavadora” por sus corrientes es un buceo tipo <em>drift dive</em> divertido en el que puedes ver grandes cardúmenes y peces de gran tamaño como los bumphead parrotfish, atunes, pargos, barracudas, meros, tiburones de arrecife y ocasionales mantas raya.</li>
+<li><strong>Cogon:</strong> este es otro buceo con corrientes que te asegura ver escuelas de jureles, rayas águila, mantas y tiburones de arrecife, pero también trascurre por una pendiente de arena y un pequeño arrecife en el que suelen haber tortugas, sepias, rayas y langostas mantis, entre otros.</li>
+<li><strong>Boluarte:</strong> esta es la pintoresca roca que verás en la playa de Apo. Es un buceo sencillo fundamentalmente plano, pero que tiene como curiosidad el ver las burbujas provocadas por la actividad volcánica de la isla.</li>
+<li><strong>Kan-Uran:</strong> buceo de pared repleta de vivos corales duros y blandos y con muchas cuevas pequeñas con miles de posibilidades para ver peces de tipo macro.</li>
+<li><strong>Katipanan:</strong> no suele haber corriente, así que es un sitio sencillo para buceadores poco experimentados. Se trata de una bonita pendiente repleta de corales blandos en los que suele haber tortugas, sepias, nudibranquios y serpientes marinas.</li>
+<li><strong>Largahan:</strong> aquí también podrás encontrar actividad volcánica y muchísima vida macro. No es raro ver peces sapo, peces escorpión, anguilas listón azul, nudibranquios y <em>flatworms</em>.</li>
+<li><strong>Mamsa Point:</strong> “mamsa” significa lucio en bisaya, así que no es raro encontrarse con escuelas de estos rodeadas por tiburones y atunes al acecho. La corriente suele ser fuerte.</li>
+<li><strong>Marine Sanctuary:</strong> cuando fuimos a Apo la última vez estaba cerrado porque un tifón de 2012 lo había destruido.</li>
+<li><strong>Olo:</strong> aquí las corrientes también pegan fuerte, pero la recompensa es que el sitio parece casi un acuario.</li>
+<li><strong>Rock Point East:</strong> ubicado en la punta de Apo, donde también hay corrientes, aquí podrás ver peces de arrecife y mirar al azul para encontrar cardúmenes de lucios, mantas raya y tiburones de arrecife.</li>
+<li><strong>Rock Point West:</strong> pendiente bastante pronunciada con diferentes plataformas. En la parte baja hay bonitos corales duros. Ojo porque también suele haber corriente.</li>
+</ul>
+<blockquote><p>Aunque la primera vez nos quedamos por la zona de Chapel, Katipanan y Largahan, la segunda vez que visitamos Apo Island buceamos por la parte “trasera” y alucinamos. Coconut Point y Cogon nos encantaron.</p></blockquote>
+<p style="text-align: justify;">Y, si te gusta el buceo, <strong>Dauin</strong> es otro punto extremadamente interesante a considerar. En la costa de Negros, un poquito más al sur de Dumaguete y antes de llegar a Malatapay (desde donde salen los barcos a Apo Island), te ofrece un montón de puntos de buceo increíbles si te enamora el <em>muck diving</em>. Aquí vimos nuestros primeros pulpos mimo y caballitos de mar.</p>
+<h4 style="text-align: justify;"><span class="ez-toc-section" id="%C2%BFSnorkel_o_buceo_en_Apo_Island"></span><span style="color: #33cccc;">¿Snorkel o buceo en Apo Island?</span><span class="ez-toc-section-end"></span></h4>
+<p style="text-align: justify;">¡Los 2! En nuestra opinión, el buceo se disfruta más y se va más cómodo, pero el esnórquel con tortugas en Apo también es brutal.</p>
+<p style="text-align: justify;">Si fuésemos en una excursión desde Siquijor o Dumaguete a Apo, nosotros haríamos 2 inmersiones y lo demás de snorkel. Si te quedas a dormir en Apo, le dedicaríamos mínimo un día al buceo haciendo 3 inmersiones y el resto del tiempo, que tienes de sobra, al snorkel.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7245" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="buceo, una de las cosas que hacer en Apo Island" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7245" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12.jpg" alt="buceo, una de las cosas que hacer en Apo Island" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-12-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Caminar_hasta_el_faro_Apo_Island_Lighthouse"></span><span style="color: #33cccc;">3. Caminar hasta el faro (Apo Island Lighthouse)</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">¡Hay cosas <strong>que hacer en Apo Island</strong> fuera del agua! Nosotros te animamos a perderte un poco por las calles del pueblo y saborear la vida isleña, pero, si quieres buscar un objetivo concreto, el más claro es la caminata al faro.</p>
+<p style="text-align: justify;">Aunque no es un faro especialmente bonito y no se puede entrar a él, las <strong>vistas</strong> desde el <strong>Apo Island Lighthouse</strong> merecen mucho la pena y es un sitio precioso para disfrutar del amanecer o el atardecer.</p>
+<p style="text-align: justify;">El <strong>sendero</strong> está marcado tanto en Google Maps (Lighthouse Treek) como en Maps.me y, además, encontrarás algunos carteles. Aunque no es muy difícil (sí algo cansado porque tendrás que subir 369 escalones), te aconsejamos no ir en chanclas porque quizás hay algo de barro. La mayor parte del camino son escaleras de cemento. Tardarás unos 30-45 minutos.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Disfrutar_del_atardecer_desde_el_mirador_de_Rock_Point_Apo_Island_View_Deck"></span><span style="color: #33cccc;">4. Disfrutar del atardecer desde el mirador de Rock Point (Apo Island View Deck)</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">La cosa sigue yendo de miradores. Otra de las cosas que hacer en Apo Island es caminar hasta el <strong>Rock Point</strong>, también conocido como Apo Island View Deck. No es muy complicado llegar (sigue la Lagoon Ave y luego el Habagat Eco Trail que sale en Google Maps) y, además, el camino es muy agradable, ya que pasarás por la enorme laguna en el corazón de Apo y la playa del santuario marino.</p>
+<p style="text-align: justify;">Existe otro mirador llamado <strong>Talaytay Viewpoint</strong>, que tiene vistas aún más increíbles de la isla. En Maps.me lo verás indicado como “View over Apo”. A pesar de ser tan pequeña, al ser tan montañosa, no te van a faltar opciones para caminar.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Disfrutar_de_la_vida_de_Apo_Island"></span><span style="color: #33cccc;">5. Disfrutar de la vida de Apo Island</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Puede sonar ñoño, pero a nosotros nos encanta simplemente “estar” en Apo Island. La isla es tan pequeña que, con que dar dos paseos, ya te sientes como en casa y empiezas a saludar a gente.</p>
+<p style="text-align: justify;">Curiosea la capilla, la pista de baloncesto, compra alguna bebida en las tiendas y siéntate a ver cómo juegan los niños y los perros en la playa, lee un libro en la terraza del Liberty’s, anímate a unirte a una sesión de karaoke… Si quieres contribuir con la comunidad, puedes implicarte en el colegio o el instituto. Varios viajeros de <a href="https://www.facebook.com/groups/viajar.filipinas" target="_blank" rel="nofollow noopener noreferrer"><strong>nuestro grupo de Facebook</strong></a> han hecho actividades de concienciación ambiental allí y se lo han pasado de maravilla. La dueña del Liberty’s te puede ayudar a organizarlo.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7248" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="vistas de Apo desde Liberty's Lodge" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7248" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7.jpg" alt="vistas de Apo desde Liberty's Lodge" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-7-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="6_Tostarte_en_la_playa"></span><span style="color: #33cccc;">6. Tostarte en la playa</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">A ver, en Apo no vas a encontrar las <strong><a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">mejores playas de Filipinas</a></strong>, pero sí hay playas majas para descansar un rato.</p>
+<p style="text-align: justify;">La zona en la que desembarcan las <em>bangkas</em> que vienen a la isla, junto delante del resort Liberty’s, que reconocerás fácilmente, es la más popular. Sin embargo, el baño no es muy cómodo porque la orilla es principalmente de roca. En nuestra opinión, la <strong>mejor playa de Apo Island</strong> es la que tiene el Apo Island Beach Resort. Si te fijas en el mapa, está justo a la derecha del Liberty’s, dividida por la formación de roca más famosa de la isla: el Boluarte.</p>
+<p style="text-align: justify;">Ojo, según nos han contado algunos lectores, recientemente piden 50 pesos por ingresar a ella. En nuestra opinión, merece la pena si la tienen limpia.</p>
+<p style="text-align: justify;">Si quieres tranquilidad absoluta, te aconsejamos caminar hasta la llamada <strong>Rock West Beach</strong>. Está enfrente del arrecife de Katipanan, así que es también un sitio perfecto para hacer esnórquel. Si está la marea baja, puedes llegar hasta ella caminando desde la playa principal, aunque ve con calzado adecuado porque tendrás que ir por rocas. De otra manera, puedes hacerlo por el camino que lleva al mirador y luego bajar.</p>
+<p style="text-align: justify;">Existen un par de playas más a las que puedes acceder caminando por los senderillos de Apo. Todas tienen rocas, pero son perfectas para aislarse de todo. Una es la que está frente al Kan Oran Reef y la otra frente al Mamsa Reef. En Maps.me puedes ver marcados los senderos.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7242" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="playa y balouarte apo island" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7242" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9.jpg" alt="playa y balouarte apo island" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-9-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Donde_dormir"></span><span style="color: #33cccc;">Dónde dormir</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">No es que haya una gran oferta, pero aquí tienes los que encontrarás en la isla a día de hoy:</p>
+<ul>
+<li><a href="https://www.booking.com/hotel/ph/elnor-homestay.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Elnor&#8217;s Home Stay</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/marios-scuba-diving-and-homestay.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Mario&#8217;s Scuba Diving and Homestay</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/libertys-community-lodge-and-pauls-diving.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Liberty&#8217;s Community Lodge</strong></a> (nuestro favorito)</li>
+</ul>
+<p style="text-align: justify;">Si quieres mayores comodidades (en Apo no encontrarás mucha), otra posibilidad es dormir en Dumaguete, Dauin o Zamboanguita e ir en una excursión a Apo Island. Te aconsejamos sitios como:</p>
+<ul style="text-align: justify;">
+<li><strong><a href="https://www.booking.com/hotel/ph/blue-horizon-hostel.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Blue Horizon Hostel</a></strong> en Dumaguete.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/mike-39-s-dauin-beach-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Mike’s Dauin Dive Resort</a></strong> en Dauin.</li>
+<li><strong><a href="https://www.booking.com/hotel/ph/kav-39-s-beach-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer">Kav’s Beach Resort</a></strong> en Zamboanguita.</li>
+</ul>
+<p style="text-align: justify;">Tienes toda la información que necesitas en <a href="https://www.viajarporfilipinas.com/donde-dormir-apo-island/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Apo Island</strong></a>.</p>
+<div id="attachment_7243" style="width: 1010px" class="wp-caption aligncenter"><img decoding="async" aria-describedby="caption-attachment-7243" class="wp-image-7243 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="habitación standard Liberty's Lodge" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5.jpg" /><noscript><img decoding="async" aria-describedby="caption-attachment-7243" class="wp-image-7243 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5.jpg" alt="habitación standard Liberty's Lodge" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5-980x653.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/que-hacer-apo-island-5-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript><p id="caption-attachment-7243" class="wp-caption-text"><span style="color: #999999;"><em>Nuestra habitación con vistas al mar en Liberty&#8217;s Lodge</em></span></p></div>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Como_llegar"></span><span style="color: #33cccc;">Cómo llegar</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Podríamos resumir <strong>4 posibilidades</strong>:</p>
+<ul style="text-align: justify;">
+<li>Desde Dumaguete por libre: desde la estación de buses de Ceres salen buses que te dejarán en Malatapay y ahí coges uno de los barcos a Apo Island.</li>
+<li>Desde Siquijor en una excursión: el hotel Coco Grove e Island Vibes organizan excursiones de un día para hacer buceo o esnórquel.</li>
+<li>Desde Dumaguete en una excursión: Mad Monkey Dumaguete hace excursiones varios días a la semana.</li>
+<li>Desde Dauin o Zamboanguita con una tienda de buceo: en esta zona hay resorts muy chulos que van a Apo a bucear.</li>
+</ul>
+<p style="text-align: justify;">Lo tienes todo explicado con muchísimo detalle en <a title="Cómo llegar a Apo Island" href="https://www.viajarporfilipinas.com/como-llegar-apo-island/" target="_blank" rel="noopener noreferrer"><strong>Cómo llegar a Apo Island</strong></a>. También te resumimos las posibilidades para llegar a Dumaguete desde otros lugares como Siquijor, Bohol, Moalboal o Cebú.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Consejos_para_visitar_Apo_Island"></span><span style="color: #33cccc;">Consejos para visitar Apo Island</span><span class="ez-toc-section-end"></span></h2>
+<ul style="text-align: justify;">
+<li>La <strong>mejor época para visitar Apo Island</strong> va más o menos de diciembre a mayo, cuando es temporada seca en esta zona del país y el mar suele estar más calmado, cosa importante para llegar (no veas cómo se menea la <em>bangka</em>) y hacer esnórquel. Aun así, se puede ir a Apo Island en cualquier momento, pero ten mucho ojo en temporada de tifones, ya que te puede pasar como nosotros, y quedarte una semana aislado. En <a href="https://www.viajarporfilipinas.com/mejor-epoca-para-viajar-a-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Mejor época para viajar a Filipinas</strong></a> tienes toda la información.</li>
+<li><strong>¿Qué llevar a Apo Island?</strong> En este caso son particularmente importantes 2 cosas: el equipo de esnórquel y los escarpines. Lo primero lo puedes alquilar en Apo por 100 pesos y también puedes alquilar las aletas, que te ayudarán a estar más cómodo. Los escarpines, en nuestra opinión, son imprescindibles. Casi toda la playa principal de Apo tiene entrada de rocas, así que puede ser incómodo y peligroso ir sin ellos. También te aconsejamos llevar una bolsa estanca y una funda de mochilas para protegerlas en el trayecto en barco, que a veces es movido. En <a href="https://www.viajarporfilipinas.com/mochila-para-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Mochila para Filipinas</strong></a> te hacemos todas las recomendaciones.</li>
+<li><strong>Internet en Apo:</strong> no esperes una gran conexión wifi en los diferentes hoteles. El 4G tira bastante bien, así que nosotros te aconsejamos llevar una tarjeta SIM local. En <a href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener noreferrer"><strong>Internet en Filipinas</strong></a> tienes info sobre esto.</li>
+<li><strong>Dinero en Apo Island:</strong> no vas a encontrar cajeros y no vas a poder pagar con tarjeta, lleva efectivo contigo. Podrás sacar y cambiar dinero en Dumaguete.</li>
+<li><strong>Dónde comer en Apo:</strong> los hoteles son tus aliados, ya que no hay apenas carinderias en Apo. Liberty&#8217;s y Mario&#8217;s sirven platos entre 150 y 200 pesos.</li>
+<li><strong>En Apo no hay hospitales ni clínicas</strong>, así que tendrás que ser trasladado a Dumaguete si te ocurre algo. Por eso, es muy importante viajar con un buen <a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener noreferrer"><strong>seguro de viajes para Filipinas</strong></a>. Mira que te incluya accidentes durante actividades de esnórquel o buceo. Nosotros te aconsejamos el IATI Mochilero o el IATI Grandes Viajeros. Aquí tienes un <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><strong>5% de descuento</strong></a> en tu póliza.</li>
+</ul>
+<div class='et_post_video'><iframe loading="lazy" title="APO ISLAND Dumaguete Philippines - &quot;Turtle Island&quot; - Travel Drone video 4k" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/cCD9ZRQDe6o?feature=oembed"></iframe><noscript><iframe title="APO ISLAND Dumaguete Philippines - &quot;Turtle Island&quot; - Travel Drone video 4k" width="1080" height="608" src="https://www.youtube.com/embed/cCD9ZRQDe6o?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript></div>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Apo_Island"></span><span style="color: #33cccc;">Mapa de Apo Island</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Encontrarás todas actividades que hacer en Apo Island y sugerencias de alojamiento en este mapa que hemos creado para ti:</p>
+<p style="text-align: justify;"><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/2/embed?mid=1I10keq66Ylsk1EDDfXeqvvhxA4qK5-mX"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/2/embed?mid=1I10keq66Ylsk1EDDfXeqvvhxA4qK5-mX" width="1000" height="480"></iframe></noscript></p>
+<p style="text-align: center;"><em>¡Esperamos que te haya gustado esta guía de Apo Island! Si tienes dudas o sugerencias, te las resolveremos encantados en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">18 Comentarios</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-55542">
+		<article id="comment-55542" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Paula m</span>				<span class="comment_date">
+					el 10/04/2025 a las 06:32				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos! Recomiendan algún cr Teo de buceo para ir a APO island desde siquijor?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55542' data-commentid="55542" data-postid="7238" data-belowelement="comment-55542" data-respondelement="respond" data-replyto="Responder a Paula m" aria-label='Responder a Paula m'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55556">
+		<article id="comment-55556" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/04/2025 a las 13:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Paula, solo hay 2 centros de buceo que hagan salidas a Apo desde Siquijor: Coco Grove e Island Vibes, ambos son buenos, pero el primero tiene mejor barco. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-55469">
+		<article id="comment-55469" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Octavio</span>				<span class="comment_date">
+					el 08/04/2025 a las 12:05				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Aconsejan algun centro de buceo para ir a Apo Island? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55469' data-commentid="55469" data-postid="7238" data-belowelement="comment-55469" data-respondelement="respond" data-replyto="Responder a Octavio" aria-label='Responder a Octavio'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55487">
+		<article id="comment-55487" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 09/04/2025 a las 00:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Octavio, ¿desde dónde?</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-52908">
+		<article id="comment-52908" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Moana</span>				<span class="comment_date">
+					el 19/02/2025 a las 02:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días chicos,<br />
+Nuevamente gracias por esta guía de filipinas, nos está ayudando mucho en nuestro viaje.<br />
+Estamos en Dumaguete y nuestra idea es ir an apo island desde aquí y luego cruzar a Siquijor.<br />
+Nos gustaría saber, si es posible cruzar desde apo island a Siquijor o tendríamos que volver a Dumaguete<br />
+Gracias<br />
+Un saludo</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52908' data-commentid="52908" data-postid="7238" data-belowelement="comment-52908" data-respondelement="respond" data-replyto="Responder a Moana" aria-label='Responder a Moana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52915">
+		<article id="comment-52915" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/02/2025 a las 07:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Moana, gracias a ti : ) la única opción de hacerlo así es volver con una de las excursiones que van a Apo desde Siquijor&#8230; Para eso, tendrías que preguntarles a esas empresas pues no son diarias. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-45279">
+		<article id="comment-45279" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Javi LG</span>				<span class="comment_date">
+					el 01/10/2024 a las 09:41				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días, lo primero y mas importante es daros la enhorabuena y las gracias por la web tan completisima que tenéis, nunca había visto nada similar para otros destinos !</p>
+<p>Quería preguntaros si para hacer la excursión de snorkel desde Siquijor a Apo Island recomendáis particularmente hacerla con Coco Grove Beach Resort o Island Vibes Explores?<br />
+He estado informándome y la verdad que de precio es similar (varía 4-5€). Mi duda es la disponibilidad, por intentar evitar cancelaciones de última hora al ser una excursión sujeta a un numero mínimo de personas.<br />
+un saludo y gracias de nuevo =)</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-45279' data-commentid="45279" data-postid="7238" data-belowelement="comment-45279" data-respondelement="respond" data-replyto="Responder a Javi LG" aria-label='Responder a Javi LG'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-45321">
+		<article id="comment-45321" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 01/10/2024 a las 11:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Javi. La más «famosa» es con Coco Grove pero ambas son buenas. El problema es como dices, que cancelan si no llegan a un mínimo. Intenta agendarla para el primer día en la isla. Así si cancelan puede que otro día haya más gente. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-39277">
+		<article id="comment-39277" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Pilar</span>				<span class="comment_date">
+					el 20/06/2024 a las 11:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Muchas gracias por toda la información!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39277' data-commentid="39277" data-postid="7238" data-belowelement="comment-39277" data-respondelement="respond" data-replyto="Responder a Pilar" aria-label='Responder a Pilar'>Responder</a></span>				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35519">
+		<article id="comment-35519" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Carolina Duran</span>				<span class="comment_date">
+					el 01/04/2024 a las 05:26				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, tenéis algún contacto para bucear en Apo? Un saludo ????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-35519' data-commentid="35519" data-postid="7238" data-belowelement="comment-35519" data-respondelement="respond" data-replyto="Responder a Carolina Duran" aria-label='Responder a Carolina Duran'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-35536">
+		<article id="comment-35536" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 01/04/2024 a las 08:03				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Carolina, siempre hemos buceado con el centro de buceo del Liberty&#8217;s. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-21736">
+		<article id="comment-21736" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Patricia</span>				<span class="comment_date">
+					el 28/04/2023 a las 12:38				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Ante todo muchas gracias por tanta información valiosa!! Iremos 4 semanas en julio y agosto. Hemos repartido el tiempo entre la unión y siargao para surfear y Palawan. Queremos ver tortugas. Es fácil verlas en alguno de estos sitios? No teníamos pensado ir a Apo island en principio. Gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-21736' data-commentid="21736" data-postid="7238" data-belowelement="comment-21736" data-respondelement="respond" data-replyto="Responder a Patricia" aria-label='Responder a Patricia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-21745">
+		<article id="comment-21745" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 29/04/2023 a las 08:21				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Patricia, ¡no hay de qué y bienvenida! En Port Barton (Palawan) a veces se ven&#8230; Si queréis ir a un sitio con seguridad de 100% verlas, más cómodo para llegar es Balicasag (Bohol) o Moalboal (Cebú). ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21324">
+		<article id="comment-21324" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Natalia y Juanma</span>				<span class="comment_date">
+					el 10/04/2023 a las 19:15				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Sii, perdonad por no responder!! Vamos mirando tantas cosas que se nos pasó!! Muchísimas gracias por toda la info que nos estais dando!! Nos está sirviendo mucho!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-21324' data-commentid="21324" data-postid="7238" data-belowelement="comment-21324" data-respondelement="respond" data-replyto="Responder a Natalia y Juanma" aria-label='Responder a Natalia y Juanma'>Responder</a></span>				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21187">
+		<article id="comment-21187" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Natalia y Juanma</span>				<span class="comment_date">
+					el 06/04/2023 a las 12:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Nos gustaría la excursión desde Siquijor a Apo Island para bucear con tortugas pero no localizamos el hotel que comentas, nos podríais pasar algún contacto?</p>
+<p>Gracias!!</p>
+<p>Natalia y Juanma</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-21187' data-commentid="21187" data-postid="7238" data-belowelement="comment-21187" data-respondelement="respond" data-replyto="Responder a Natalia y Juanma" aria-label='Responder a Natalia y Juanma'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-21188">
+		<article id="comment-21188" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/04/2023 a las 13:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, no tenemos contactos, pero el hotel está <a href="https://goo.gl/maps/dR4f2Crw6Saajzgw9" target="_blank" rel="noopener nofollow ugc">aquí</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-21219">
+		<article id="comment-21219" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Natalia y Juanma</span>				<span class="comment_date">
+					el 07/04/2023 a las 11:44				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Perfecto muchas gracias!! Otra cosita, para alquilar una moto en Siquijor tenéis algún contacto?</p>
+<p>Gracias!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-21250">
+		<article id="comment-21250" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/04/2023 a las 08:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Juanma, ¿te llegó el correo que te pasamos en marzo sobre el tiburón ballena? Por favor, de ser así, respóndenos y te seguimos pasando info. Nos gusta sentir que hay alguien al otro lado. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-apo-island/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='7238' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b3f7555ef4" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="93"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"7238","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

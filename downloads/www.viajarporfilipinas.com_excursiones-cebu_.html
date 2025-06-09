@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Las mejores excursiones en Cebú City - 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Si tienes varios días en la ciudad, no te pierdas estas excursiones en Cebú City. Desde cascadas hasta recorridos culturales y gastronómicos." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/excursiones-cebu/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Las mejores excursiones en Cebú City - 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Si tienes varios días en la ciudad, no te pierdas estas excursiones en Cebú City. Desde cascadas hasta recorridos culturales y gastronómicos." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/excursiones-cebu/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2020-06-29T11:35:20+00:00" />
+	<meta property="article:modified_time" content="2024-05-03T15:30:07+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="14 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Las mejores excursiones en Cebú City","datePublished":"2020-06-29T11:35:20+00:00","dateModified":"2024-05-03T15:30:07+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/"},"wordCount":2976,"commentCount":20,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu.jpg","articleSection":["Cebu"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/excursiones-cebu/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/excursiones-cebu/","url":"https://www.viajarporfilipinas.com/excursiones-cebu/","name":"▷ Las mejores excursiones en Cebú City - 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu.jpg","datePublished":"2020-06-29T11:35:20+00:00","dateModified":"2024-05-03T15:30:07+00:00","description":"Si tienes varios días en la ciudad, no te pierdas estas excursiones en Cebú City. Desde cascadas hasta recorridos culturales y gastronómicos.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/excursiones-cebu/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu.jpg","width":1200,"height":630,"caption":"excursiones desde Cebú"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/excursiones-cebu/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Las mejores excursiones en Cebú City"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/excursiones-cebu/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Las mejores excursiones en Cebú City del feed" href="https://www.viajarporfilipinas.com/excursiones-cebu/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/7714" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=7714' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fexcursiones-cebu%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fexcursiones-cebu%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-7714-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/7714/et-core-unified-7714.min.css?ver=1745603955" /><link rel="stylesheet" id="et-core-unified-deferred-7714-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/7714/et-core-unified-deferred-7714.min.css?ver=1745603955" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-7714 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-7714" class="et_pb_post post-7714 post type-post status-publish format-standard has-post-thumbnail hentry category-cebu">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Las mejores excursiones en Cebú City</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/cebu/" rel="category tag">Cebu</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="excursiones desde Cebú" class="" width="1080" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-480x252.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-1080x630.jpg" alt="excursiones desde Cebú" class="" width="1080" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-1080x630.jpg 1080w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-980x515.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-desde-cebu-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Cebú City es la puerta de entrada a un montón de destinos dentro de la región de Bisayas que seguro que incluyes en tu <a title="Itinerarios de viaje a Filipinas por libre" href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/" target="_blank" rel="noopener noreferrer">itinerario por Filipinas</a>, pero, además, la ciudad ofrece mucho. En <a href="https://www.viajarporfilipinas.com/que-hacer-cebu-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Cebú</strong></a> ya te dimos algunos planes interesantes si tienes uno o dos días. En el caso de que tengas aún más tiempo para descubrir, vas a ver que hay un montón de <strong>excursiones en Cebu City</strong> y sus alrededores. Desde tours guiados para conocer a fondo la ciudad o su gastronomía hasta excursiones desde Cebú a <strong>islas vecinas</strong> como Bohol, pasando por cascadas y montañas espectaculares.</p>
+<p style="text-align: justify;">Aquí vamos a contarte cuáles son <strong>las mejores excursiones de un día desde Cebu City</strong>. Si vives aquí y tienes coche, no tienes que preocuparte demasiado. Si no es así, puedes estar tranquilo porque podrás hacer casi todas en <a href="http://skyscanner.pxf.io/c/1436363/1027991/13416?associateid=AFF_TRA_19354_00001&amp;u=https%3A%2F%2Fwww.skyscanner.es%2Falquiler-de-coches" target="_blank" rel="nofollow noopener noreferrer"><strong>coche de alquiler</strong></a>, transporte público o en un tour organizado por agencia. Con respecto a estos últimos, las 2 empresas que nosotros te aconsejamos son <a href="http://www.civitatis.com/?aid=2773" target="_blank" rel="nofollow noopener noreferrer"><strong>Civitatis</strong></a> y <a href="https://affiliate.klook.com/jump?adid=152624&amp;aid=4209" target="_blank" rel="nofollow noopener noreferrer"><strong>KLOOK</strong></a>. La 2ª quizás no la conozcas porque no es tan famosa fuera de Asia, pero es la más importante de Filipinas y es 100% de fiar. Además, aunque nos duela decirlo, suele ser mucho más barata que Civitatis. Ambas te permitirán ver las reseñas de otros viajeros que han hecho esas excursiones desde Cebú con anterioridad.</p>
+<p style="text-align: justify;">En caso de que estés pensando en hacer estos tours desde Cebú por libre, te recomendamos que <strong>madrugues</strong> muchísimo, ya que el tráfico de salida de Cebú puede llegar a ser bastante malo y puedes tirarte 1 o 2 horas atascado.</p>
+<p style="text-align: justify;">Sigue leyendo y descubre con nosotros <strong>las mejores excursiones en Cebú City</strong>.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">1. Tour guiado por Cebú</span></h2>
+<p style="text-align: justify;">Las ciudades filipinas no destacan por su belleza, pero Cebú City tiene varios lugares interesantes que visitar, sobre todo si quieres aprender un poco sobre la <a title="Historia de Filipinas: Breve resumen" href="https://www.viajarporfilipinas.com/historia-filipinas-resumen/" target="_blank" rel="noopener noreferrer"><strong>historia</strong> de Filipinas</a>. Casi todas las excursiones guiadas incluyen las casas ancestrales, la Cruz de Magallanes, la Basílica del Santo Niño y uno de nuestros lugares favoritos: el <a title="Visitar el Templo Taoísta de Cebu" href="https://www.viajarporfilipinas.com/templo-taoista-cebu/" target="_blank" rel="noopener noreferrer"><strong>Templo Taoísta de Cebú</strong></a>. Además, algunas incluyen puntos de interés en la isla de <strong>Mactán</strong>.</p>
+<p style="text-align: justify;">Por desgracia, en Filipinas los <em>free tours</em> no se llevan, así que puedes optar por hacer un <strong>tour privado en inglés o en español</strong> (más caro) o unirte a algún tour existente (bastante más barato). Aquí te dejamos las opciones existentes:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/cebu/tour-privado-cebu/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Tour privado por Cebú en español con Civitatis</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/cebu/visita-guiada-cebu-mactan/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Tour privado por Cebú y Mactán en español con Civitatis</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/cebu/visita-guiada-cebu/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Tour compartido por Cebú en inglés con Civitatis</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=851741&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F8014-private-twin-city-tour-mactan-cebu" target="_blank" rel="nofollow noopener noreferrer">Tour privado por Cebú y Mactán en inglés con Klook</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/en-US/activity/8013-private-rediscovery-tour-cebu?adid=183789&amp;aid=4209" target="_blank" rel="nofollow noopener noreferrer">Tour privado por Cebú con KLOOK </a></p>
+<p style="text-align: justify;">Por supuesto, también puedes visitar estos lugares por tu cuenta en taxi o usando los coches de Grab, pero en una excursión recibirás más datos históricos y curiosidades.</p>
+<p style="text-align: justify;">Si, por otro lado, te tira más el lado glotón, tienes <strong>excursiones gastronómicas en Cebú</strong> que te harán conocer los platos más tradicionales. Uno de ellos es el <em>tuslob-buwa</em>, una especie de estofado contundente de cerebro de cerdo… ¡Solo para valientes! El tour suele incluir la degustación de 5 platos y bebidas típicas y está genial de precio:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/jump/en-US/activity/27994-cebu-street-food-half-day-tour?adid=181835&amp;aid=4209" target="_blank" rel="nofollow noopener noreferrer">Tour gastronómico por Cebú con KLOOK</a></p>
+<p style="text-align: justify;"><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-7716" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="casa gorordo cebu" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-7716" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1.jpg" alt="casa gorordo cebu" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-1-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">2. Sirao Pictorial Garden and Camping Site (PGSC) y el templo de Leah</span></h2>
+<p style="text-align: justify;">En el Sirao Flower Garden se hacen una de las <a href="https://www.viajarporfilipinas.com/filipinas-instagram-localizaciones/" target="_blank" rel="noopener noreferrer"><strong>fotos de Filipinas más famosas en Instagram</strong></a>. Así que, si buscas tomas despampanantes, este es tu sitio.</p>
+<p style="text-align: justify;">Se trata de un jardín ubicado en las colinas del norte de Cebú, en el que podrás encontrar bonitos campos de flores y distintos sitios para hacer fotos como un molino al más puro estilo holandés y la joya de la corona: una <strong>enorme mano</strong> que te sujeta. No lo puedes confundir con el “Sirao Flower Garden” a secas, que ese no tiene la mano. La entrada son 120 pesos.</p>
+<p style="text-align: justify;">Esta excursión desde Cebú la puedes complementar con la del <strong>Temple of Leah</strong>, que es el resultado de la devoción de un señor a su difunta esposa. Conocido como el “Taj Mahal de Cebú”, es una especie de templo romano pero aún más pomposo. La entrada también cuesta 150 pesos.</p>
+<p style="text-align: justify;"><strong><em>¿Cómo llegar al Sirao Garden?</em></strong> Lo más cómodo es negociar con un taxi, pero no será raro que te cobren 1.500 pesos o más, ya que te suelen esperar. Si quieres ir por tu cuenta, puedes ir a la Ayala Cebu PUV Terminal y ahí coger una furgoneta a Sirao (50 pesos). Diles a dónde vas y te dejarán en un punto donde coger un habal-habal (30 pesos). Desde el JY Square Mall también salen habal-habal que cobran unos 400 pesos por 2 personas ida y vuelta.</p>
+<p style="text-align: justify;"><strong><em>¿Cómo llegar al Temple of Leah?</em></strong> Desde el JY Square Mall salen habal-habal por 150 pesos (2 personas).</p>
+<p style="text-align: justify;">Si quieres despreocuparte, puedes combinar estos 2 sitios en una <strong>excursión desde Cebú</strong>:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/cebu/excursion-templo-leah-jardin-sirao/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Excursión al Templo de Leah y al Jardín de Sirao con Civitatis</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://www.civitatis.com/es/cebu/cebu-templo-leah-jardin-sirao/?aid=2773" target="_blank" rel="nofollow noopener noreferrer">Excursión por Cebú City, Sirao Garden y Templo de Leah con Civitatis</a></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">3. Simala Shrine, una curiosa excursión en Cebú</span></h2>
+<p style="text-align: justify;">¿Gótico? ¿Indio? No sabrás muy bien de dónde sacó el arquitecto la inspiración para crear este <strong>monasterio/castillo </strong>que alberga a la “milagrosa” Virgen de Simala. Se dice que esta virgen lloró sangre un día 8 de septiembre y que quien va a visitarla cumplirá sus deseos. Aunque pueda parecerte más antiguo, este santuario fue construido en 1998.</p>
+<p style="text-align: justify;">Ten en cuenta que no podrás entrar con pantalones cortos o falda corta. También necesitarás algo que cubra los hombros. Puedes alquilar allí un <em>sarong</em> para cubrirte por 20 pesos.</p>
+<p style="text-align: justify;"><strong><em>¿Cómo llegar al Simala Shrine?</em></strong> Puedes coger un bus desde la South Bus Terminal. Cualquiera que vaya a Oslob o Liloan/Santander te sirve. Dile al conductor que quieres ir a la Simala Church. El precio ronda los 100 pesos pesos. También puedes optar por las furgonetas, que son más rápidas y cobran 120 pesos. Una vez ahí, tendrás que coger un habal-habal hasta la iglesia. Suelen cobrar 20 pesos por persona. Será raro que esto te lleve menos de 2 horas.</p>
+<div class='et_post_video'><iframe loading="lazy" title="Simala Church - Simala Shrine Parish  - Sibonga Cebu HD" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/ZC5dy4AjK0c?feature=oembed"></iframe><noscript><iframe title="Simala Church - Simala Shrine Parish  - Sibonga Cebu HD" width="1080" height="608" src="https://www.youtube.com/embed/ZC5dy4AjK0c?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript></div>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">4. Playas de Mactán</span></h2>
+<p style="text-align: justify;">Mactán no tiene las <a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer"><strong>mejores playas de Filipinas</strong></a>, pero sí que tiene alguna bonita que te puede cuadrar si estás buscando un poco de <strong>relax sin alejarte del aeropuerto</strong>. ¿El problema? Que todas las interesantes están <strong>dentro de los resorts</strong>, así que tendrás que ser huésped para alojarte en ellas. Las mejores las tienes en:</p>
+<ul style="text-align: justify;">
+<li><a href="https://www.booking.com/hotel/ph/shangri-la-s-mactan-resort-spa.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Shangri-La’s Mactan Resort &amp; Spa</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/crimson-resort-spa-mactan.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Crimson Resort &amp; Spa</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/movenpick-resort-spa-cebu.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Mövenpick Hotel Mactan Island</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/maribago-bluewater-beach-resort.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Maribago Bluewater Beach Resort</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/tambuli-seaside-resort-and-spa.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Tambuli Seaside Resort &amp; Spa</strong></a></li>
+<li><a href="https://www.booking.com/hotel/ph/cebu-white-sands-resort-and-spa.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>White Sands Resort &amp; Spa</strong></a></li>
+</ul>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">5. Miradores de Cebú</span></h2>
+<p style="text-align: justify;">Si, como a nosotros, te gusta ver las ciudades desde las alturas, puedes apuntarte estos miradores para ver Cebú:</p>
+<ul style="text-align: justify;">
+<li><strong>TOPS:</strong> es el más conocido porque también es el mejor. Ubicado a unos 600 metros de altura, las vistas son las mejores y, además, podrás disfrutarlas en un coqueto restaurante. Puedes ir por tu cuenta negociando un taxi (procura que te espere). La entrada son 200 pesos.</li>
+<li><strong>Mountain View Nature’s Park:</strong> también ubicado en las Busay Hills, como el anterior, es un resort, pero que permite entrar a, simplemente, disfrutar de las vistas por 50 pesos por persona. También podrás hacer uso de las piscinas por 100 pesos.</li>
+<li><strong>Templo Taoísta:</strong> no cuenta demasiado como excursión porque está en Cebú City, pero desde él también se ven unas vistas bonitas y la entrada es gratuita.</li>
+</ul>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7719" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20673'%3E%3C/svg%3E" alt="vistas desde el templo taoísta de cebu" width="1000" height="673" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3-980x660.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3-480x323.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7719" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3.jpg" alt="vistas desde el templo taoísta de cebu" width="1000" height="673" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3-980x660.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-3-480x323.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">6. Island hopping desde Cebu: Hilutungan, Nalusuan y Pandanon</span></h2>
+<p style="text-align: justify;">Cerca de la isla de Mactán hay varias islas poco o nada conocidas que se pueden visitar haciendo <em>island hopping</em>, es decir, en una <strong>excursión desde Cebú en <em>bangka</em></strong>, los barcos tradicionales. Es una buena manera de olvidarse del tráfico de Cebú y disfrutar de la naturaleza cercana.</p>
+<p style="text-align: justify;">Esta consiste en 2 paradas de <strong>esnórquel</strong>, una en la Reserva Marina de Hilutungan y otra en la Reserva Marina de Nalusuan Island, y una para comer una rica barbacoa y disfrutar de las <strong>playas de Pandanon</strong>, de arena blanca y fina.</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=851741&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F17116-island-hopping-trip-mactan-cebu%2F" target="_blank" rel="nofollow noopener noreferrer">Tour de island hopping desde Cebú</a></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">7. Kawasan Falls y esnórquel en Moalboal</span></h2>
+<p style="text-align: justify;">Las Kawasan Falls son, sin dudarlo un instante, <strong>las <a title="Las mejores cascadas de Filipinas" href="https://www.viajarporfilipinas.com/cascadas-filipinas/" target="_blank" rel="noopener noreferrer">cascadas de Filipinas</a> más famosas</strong>. Ubicadas al sur de la isla de Cebú, su intenso color azul ha hecho que muchos filipinos las conozcan como “Gatorade Falls”. En nuestra opinión, la cascada final, la más conocida, no es ni mucho menos la más espectacular de Filipinas, sino que lo que las hace especiales es el recorrido haciendo barranquismo por el río Badian.</p>
+<p style="text-align: justify;">Como te contamos en <strong><a href="https://www.viajarporfilipinas.com/canyoneering-kawasan-falls-cebu/" target="_blank" rel="noopener noreferrer">Canyoneering en las Kawasan Falls</a></strong>, esta actividad no es nada peligrosa y es apta para casi todos los públicos. Por ello, te aconsejamos que, si estás pensando en hacer una excursión desde Cebú, te decantes por ella.</p>
+<p style="text-align: justify;">Si tienes coche, puedes ir a las Kawasan Falls por tu cuenta. También podrías hacer esta actividad en transporte público, pero ten en cuenta que tardarás bastante más. Tendrás que coger un bus desde la South Bus Terminal y será raro que el recorrido te lleve menos de 4 horas. Otra alternativa es contratar una de las <strong>excursiones desde Cebú</strong> que ofrece KLOOK, que te llevan en sus propios transportes. Puedes ver las reseñas de otros viajeros y reservar aquí:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=851741&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F3874-canyoning-kawasan-falls-adventure-cebu%2F" target="_blank" rel="nofollow noopener noreferrer">Excursión privada de canyoneering en las Kawasan Falls desde Cebú (clica en join-in para unirte a otros viajeros)</a></p>
+<p style="text-align: justify;">Además, las Kawasan Falls están a apenas 30 minutos de nuestro querido <strong>Moalboal</strong>, un sitio que nos encanta porque tendrás la suerte de poder nadar con un enorme banco de sardinas y tortugas. Existe un tour combinado que te permitirá hacer <strong>ambas actividades</strong> sin volverte loco:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=851741&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F15401-moalboal-island-hopping-canyoneering-cebu" target="_blank" rel="nofollow noopener noreferrer">Canyoneering en Kawasan Falls + Island hopping en Moalboal desde Cebú</a></p>
+<div class='et_post_video'><iframe loading="lazy" title="Canyoneering en Kawasan Falls, Cebu" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/tP-ebmvCbIQ?feature=oembed"></iframe><noscript><iframe title="Canyoneering en Kawasan Falls, Cebu" width="1080" height="608" src="https://www.youtube.com/embed/tP-ebmvCbIQ?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript></div>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">8. Moalboal y Pescador Island</span></h2>
+<p style="text-align: justify;">Si eso del barranquismo no te suena demasiado bien y no tienes tiempo para pasar varios días en Moalboal, otra de las excursiones desde Cebú que puedes hacer es la que te lleva a Moalboal y Pescador Island. Ambos son dos de nuestros destinos favoritos para hacer buceo y <strong><a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer">snorkel en Filipinas</a></strong>, así que ya imaginas por dónde van los tiros.</p>
+<p style="text-align: justify;">Como te contamos antes, en Moalboal podrás nadar junto al majestuoso banco de sardinas y Pescador Island, a tan solo 20 minutos en barco de la costa, también te brindará unos <strong>arrecifes marinos llenos de vida</strong>. Puedes combinar ambas actividades cómodamente en este tour desde Cebú:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=851752&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F3848-pescador-island-hopping-private-tour-boat-charter-moalboal-cebu" target="_blank" rel="nofollow noopener noreferrer">Excursión de esnórquel en Pescador Island y Moalboal desde Cebú</a></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">9. Osmeña Peak</span></h2>
+<p style="text-align: justify;">Podríamos decir que la excursión de Osmeña Peak es comparable a la de las Chocolate Hills de Bohol, pero con un poco más de aventura.</p>
+<p style="text-align: justify;">El pico, con tan solo <strong>1.013 metros</strong> sobre el nivel del mar, es el más alto de Cebu, pero <strong>las vistas son gloriosas</strong>. Además de ver las picudas montañas vecinas, podrás apreciar los volcanes de Negros.</p>
+<p style="text-align: justify;"><strong><em>¿Cómo llegar?</em></strong> En la South Bus Terminal puedes coger un bus hacia Santander/Liloan o Argao. Avisa al conductor de que te vas a bajar en Dalaguete para ir a Osmeña Peak. El recorrido dura unas 3 horas y cuesta algo más de 120 pesos. Una vez allí, coge un habal-habal. Estos cobran 100 pesos por persona y el trayecto dura unos 50 minutos.</p>
+<p style="text-align: justify;">Tendrás que pagar 50 pesos para entrar y pagar 100 pesos por el guía. No te preocupes, el ascenso es relativamente sencillo. El sendero tiene una longitud de 1,3 kilómetros y no suele llevar más de 30 minutos a un paso normal. Tiene algunas rocas, pero está bien definido y será muy difícil que te pierdas.</p>
+<p style="text-align: justify;">Si quieres más montaña, apunta estos nombres: Casino Peak y Kandungaw Peak.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7718" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="excursión desde cebu a osmeña peak" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7718" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2.jpg" alt="excursión desde cebu a osmeña peak" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-2-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">10. Danasan Eco Adventure Park</span></h2>
+<p style="text-align: justify;">Si tienes ganas de aventurilla, otra de las excursiones desde Cebú que puedes hacer es visitar el Danasan Eco Adventure Park. Ubicado en las afueras de Cebú, aquí podrás hacer <strong>un montón de actividades </strong>como tirolina, escalada, <em>rappel</em>, <em>karting</em>, <em>surfboarding</em>, <em>quad</em> y, la atracción estrella, el <strong>Twin Tower Adventure</strong>. En este último, caminarás por una cuerda suspendida entre 2 torres como si fueras un funambulista. No te preocupes, irás atado a un arnés y no correrás ningún peligro.</p>
+<p style="text-align: justify;">Los precios comienzan en 300 pesos, pero varían según la actividad. Ten en cuenta que está lejitos, así que tendrás que negociar un taxi o alquilar moto.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">11. Cascadas desde Cebú</span></h2>
+<p style="text-align: justify;">Ya te hemos hablado de las Kawasan Falls, pero, si te gustan las cascadas, también puedes hacer varias excursiones desde Cebú para ver otras mucho menos conocidas. Buenos ejemplos son:</p>
+<ul style="text-align: justify;">
+<li><strong>Budlaan Falls: </strong>un poco más al norte del Temple of Leah, estas cascadas parece que pasan desapercibidas entre los extranjeros, pero son extremadamente fotogénicas. Ojo porque intentan cobrarte 500 pesos por persona por un guía, pero no es necesario.</li>
+<li><strong>Mantayupan Falls:</strong> una de las más altas y más bonitas de Cebú. Están en Barili, a medio camino entre Cebú y Moalboal. Las cascadas tienen 2 niveles: el primero con unos 14 metros de altura y el segundo de 98 metros, ¡impresionante! Cobran 100 pesos por entrada.</li>
+<li><strong>Himbabawud Falls:</strong> aunque llegar no es fácil (bus de más o menos 1 hora y caminata de unos 45 minutos), estas preciosas cascadas están rodeadas de una vegetación brutal.</li>
+</ul>
+<p style="text-align: justify;">Mucho más al sur de la isla (sobre todo por la zona de Samboan) vas a encontrar muchísimas cascadas más, pero consideramos que están tan lejos que es bastante paliza visitarlas en una excursión desde Cebú. Lo mejor es que hagas base en Moalboal, así que no dudes en echarle un vistazo a nuestro artículo <strong><a href="https://www.viajarporfilipinas.com/donde-dormir-moalboal/" target="_blank" rel="noopener noreferrer">Dónde dormir en Moalboal</a></strong>.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">12. Excursión a Bohol</span></h2>
+<p style="text-align: justify;">Si bien a nosotros nos parece un pecado pasar menos de 3 días en Bohol (ya puedes hacerte una idea echando un vistazo a nuestra <a href="https://www.viajarporfilipinas.com/guia-de-bohol/" target="_blank" rel="noopener noreferrer"><strong>Guía de Bohol</strong></a>), si te hace muchísima ilusión ver las <a href="https://www.viajarporfilipinas.com/chocolate-hills-bohol-como-llegar/" target="_blank" rel="noopener noreferrer"><strong>Chocolate Hills</strong></a> y no tienes mucho tiempo, puedes hacer una <strong>excursión desde Cebú a Bohol</strong> de un día.</p>
+<p style="text-align: justify;">Aunque sin recrearte mucho en cada parada, vas a poder ver los tarseros, dar un paseo en barco por el río Loboc, contemplar el famoso Bilar Man-made forest y, por supuesto, estar cerca de las famosas Colinas de Chocolate.</p>
+<p style="text-align: justify;">Puedes hacerla de <strong>2 maneras</strong>:</p>
+<ul style="text-align: justify;">
+<li><strong>Tour con KLOOK:</strong> esta es la más cómoda porque no te tienes que preocupar de nada. Puedes <a href="https://affiliate.klook.com/jump/en-US/activity/3645-sightsee-bohol-tour-cebu/?adid=181835&amp;aid=4209" target="_blank" rel="nofollow noopener noreferrer"><strong>reservar</strong> <strong>aquí</strong></a>. O esta otra que empieza a las 8h en Bohol y para la que tendías que coger el ferry de las 6:00h en Cebu: <a href="https://www.civitatis.com/es/bohol/tour-privado-bohol/?aid=2773" target="_blank" rel="nofollow noopener">Tour privado en español por Bohol de 8 horas</a>.</li>
+<li><strong>Por tu cuenta:</strong> para ello, tienes que salir en el primer barco de Oceanjet, que suele ser a las 6:00. Puedes <a href="https://12go.asia/es/travel/cebu/tagbilaran-pier/?z=1864900" target="_blank" rel="nofollow noopener noreferrer"><strong>reservar tus billetes aquí</strong></a>. Llegarás sobre las 8:00. Una vez en el puerto de Tagbilaran (Bohol), puedes contratar un coche o una furgoneta que te haga un recorrido a medida. Esto suele costar unos 3.000 pesos, según el número de personas que seáis y el tiempo que vayáis a estar. Tendrás que estar de vuelta en el puerto sobre las 17:30, para coger el último barco a Cebú. Te aconsejamos <a href="https://12go.asia/es/travel/tagbilaran/cebu/?z=1864900" target="_blank" rel="nofollow noopener noreferrer"><strong>reservar tu billete Tagbilaran-Cebu</strong></a> para no quedarte tirado.</li>
+</ul>
+<p style="text-align: justify;">Si tienes más tiempo, te aconsejamos dedicar tiempo suficiente a explorar Bohol y su vecina isla Panglao. Consulta <a href="https://www.viajarporfilipinas.com/que-hacer-bohol/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Bohol</strong></a>, <a href="https://www.viajarporfilipinas.com/que-hacer-panglao-bohol/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Panglao</strong></a>, <a href="https://www.viajarporfilipinas.com/que-hacer-loboc/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Loboc</strong></a>, <a href="https://www.viajarporfilipinas.com/que-ver-anda-bohol/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Anda</strong></a> y <a href="https://www.viajarporfilipinas.com/guia-de-bohol/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de Bohol y Panglao</strong></a> para hacerte una idea de lo completas que son ambas.</p>
+<p style="text-align: justify;"><img decoding="async" class="aligncenter size-full wp-image-7721" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="excursiones desde cebu a bohol" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-7721" src="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5.jpg" alt="excursiones desde cebu a bohol" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2020/06/excursiones-cebu-5-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<p style="text-align: justify;">⚠️ Por favor, ten en cuenta que todas las agencias de tours desde Cebú te van a ofrecer la excursión para ver al tiburón ballena en Oslob. Te hablamos en profundidad sobre los perjuicios que tiene esta actividad en nuestro artículo <a href="https://www.viajarporfilipinas.com/tiburon-ballena-oslob-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Tiburón ballena en Oslob</strong></a>. Si te hace mucha ilusión, puedes nadar con ellos en otros lugares éticos y donde no se les maltrata. Lee <a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Dónde nadar con el tiburón ballena en Filipinas</strong></a> y descubre dónde, según el momento en el que viajes.</p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">Dónde dormir para hacer estas excursiones desde Cebú</span></h2>
+<p style="text-align: justify;">Si estás planificando alguna de estas excursiones desde Cebú, lo más cómodo es que te quedes a dormir en los alrededores de la <strong>estación sur de Cebú</strong> <strong>o ya en Mactán</strong>, porque hay muchas agencias que hacen recogidas por allí en caso de hacer un tour organizado y también tienes el aeropuerto al lado.</p>
+<ul style="text-align: justify;">
+<li>Recomendaciones cerca de la South Bus Terminal: <a href="https://www.booking.com/hotel/ph/cebu-plus.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer"><strong>Cebu Hotel Plus</strong></a> (le dedicamos un artículo completo <a href="https://www.viajarporfilipinas.com/cebu-plus-hotel-dormir/" target="_blank" rel="noopener noreferrer">aquí</a>), <a href="https://www.booking.com/hotel/ph/one-central.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>One Central Hotel &amp; Suites</strong></a> y <b><a href="https://www.booking.com/hotel/ph/shejoje-poshtel-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener">Shejoje Poshtel Hostel</a></b>.</li>
+<li>Recomendaciones en Mactan: <a href="https://www.booking.com/hotel/ph/amaris-bed-and-breakfast.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer"><strong>Amaris Bed and Breakfast</strong></a> y <a href="https://www.booking.com/hotel/ph/plantation-bay-resort-and-spa.en.html?aid=1542173&amp;no_rooms=1&amp;group_adults=2" target="_blank" rel="nofollow noopener noreferrer"><strong>Plantation Bay Resort &amp; Spa</strong></a>.</li>
+</ul>
+<p style="text-align: center;">Puedes leer mucho más en <a href="https://www.viajarporfilipinas.com/dormir-en-cebu/" target="_blank" rel="noopener noreferrer"><strong>Dónde dormir en Cebú</strong></a>.</p>
+<p style="text-align: justify;"><ins class="bookingaff" data-aid="2044110" data-target_aid="2044110" data-prod="map" data-width="100%" data-height="590" data-lang="ualng" data-dest_id="0" data-dest_type="landmark" data-latitude="10.3156992" data-longitude="123.8854366" data-landmark_name="Cebu City" data-mwhsb="0" data-address="Cebu City, Cebu, Philippines"><br />
+<!-- Anything inside will go away once widget is loaded. --><br />
+<a href="//www.booking.com?aid=2044110" target="_blank" rel="nofollow noopener noreferrer">Booking.com</a><br />
+</ins><br />
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script></p>
+<p style="text-align: justify;">Este artículo forma parte de una exhaustiva <a href="https://www.viajarporfilipinas.com/guia-de-cebu/" target="_blank" rel="noopener noreferrer"><strong>Guía de Cebú</strong></a>, en la que te contamos cómo llegar, qué hacer, dónde alojarte y muchos consejos más para disfrutar de tu estancia.</p>
+<p style="text-align: center;"><em>Si tienes cualquier duda sobre estas excursiones en Cebú City u otras, estaremos encantados de responderte en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">20 Comentarios</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-55573">
+		<article id="comment-55573" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ana</span>				<span class="comment_date">
+					el 10/04/2025 a las 20:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola vamos en julio a filipinas teníamos pensado hacer coron el nido y siargiao pero estoy pensando en cambiar coron por cebú que me recomiendas muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-55573' data-commentid="55573" data-postid="7714" data-belowelement="comment-55573" data-respondelement="respond" data-replyto="Responder a Ana" aria-label='Responder a Ana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-55581">
+		<article id="comment-55581" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 11/04/2025 a las 02:19				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ana, personalmente, nunca cambiaríamos Coron por Cebú, la verdad. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-52984">
+		<article id="comment-52984" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Jesús</span>				<span class="comment_date">
+					el 20/02/2025 a las 09:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas, estamos preparando un viaje de unos 18 días, por el entorno de Cebú, y en principio habíamos pensado dedicar 5 días a Bohol, otros 5 a Siquijor, 5 a la Isla de Cebú (1 noche en Maboal) y como 3 días para bucear en Malapascua. Que os parece? Algunas recomendaciones? Gracias. (Iríamos en Julio)</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52984' data-commentid="52984" data-postid="7714" data-belowelement="comment-52984" data-respondelement="respond" data-replyto="Responder a Jesús" aria-label='Responder a Jesús'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52987">
+		<article id="comment-52987" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/02/2025 a las 10:28				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Jesús, qué bien que vengáis por aquí. Pues nosotros cambiaríamos Moalboal y Cebú por Coron sin la más mínima duda. Si quieres, cuando tengas la ruta definida día por día, nos la puedes enviar a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a> y le echamos un vistazo. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-39619">
+		<article id="comment-39619" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Marina</span>				<span class="comment_date">
+					el 28/06/2024 a las 10:35				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Estamos en Cebú y nos gustaría ir mañana a visitar Bohol con el tour de Klook. No nos queda claro porque pone que no incluye guía, entonces, cómo sería el tour sin guía? No nos debería acompañar alguien que nos lleve a los distintos sitios del itinerario? O iríamos por nuestra cuenta? Gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39619' data-commentid="39619" data-postid="7714" data-belowelement="comment-39619" data-respondelement="respond" data-replyto="Responder a Marina" aria-label='Responder a Marina'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-39632">
+		<article id="comment-39632" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 28/06/2024 a las 13:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Marina. No hay un guía como tal que te vaya a hablar de cada lugar que visitas, pero hay una personas que te lleva a los diferentes puntos. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-26943">
+		<article id="comment-26943" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">JOSHUA DELWEL TORRES</span>				<span class="comment_date">
+					el 11/10/2023 a las 21:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas noches!! Viajo en noviembre a filipinas. En Cebu City, nos podrías recomendar un lugar para contratar estas excursiones, alguna oficina por ejemplo que este bien.<br />
+Muchas gracias !!!! una pasada como explicáis todo!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-26943' data-commentid="26943" data-postid="7714" data-belowelement="comment-26943" data-respondelement="respond" data-replyto="Responder a JOSHUA DELWEL TORRES" aria-label='Responder a JOSHUA DELWEL TORRES'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-26950">
+		<article id="comment-26950" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 12/10/2023 a las 07:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Joshua, qué va, siempre hemos utilizado agencias online que enlazamos en este mismo artículo que comentas. ¡Saludos y buen viaje!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-24156">
+		<article id="comment-24156" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Raquel</span>				<span class="comment_date">
+					el 27/07/2023 a las 03:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenas!!! Podríais enviarme información de cómo llegar a las cascadas Mantayupan Falls desde cebú?? Muchas gracias!! La guía es fantástica!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-24156' data-commentid="24156" data-postid="7714" data-belowelement="comment-24156" data-respondelement="respond" data-replyto="Responder a Raquel" aria-label='Responder a Raquel'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-24164">
+		<article id="comment-24164" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/07/2023 a las 08:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Raquel, ¡Muchas gracias! pues vas a tardar unas 2,5-3 horas en transporte público, así que es algo pesado, pero quizás te vale la pena. Tienes que coger un bus que vaya hacia Barili desde la South Bus Terminal. Allí puedes coger un habal-habal (taxi-moto) a las cascadas por unos 150 pesos, son menos de 4km. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-23360">
+		<article id="comment-23360" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">SUSANA</span>				<span class="comment_date">
+					el 06/07/2023 a las 19:46				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Qué maravilla de página, está todo súper bien explicado, muchas gracias por compartir la info!<br />
+Vamos a estar en Cebú 5 días y no sabemos muy bien la zona a elegir para dormir. Nos gustaría ir a Malapascua y a Moalboal (merece la pena dormir por esa zona?) pero están muy lejos la una de la otra ¿es factible? Si es así, ¿Cuál sería la mejor forma de hacerlo? Cebú City también tiene buena pinta. </p>
+<p>Todo consejo es bienvenido! Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-23360' data-commentid="23360" data-postid="7714" data-belowelement="comment-23360" data-respondelement="respond" data-replyto="Responder a SUSANA" aria-label='Responder a SUSANA'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-23407">
+		<article id="comment-23407" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/07/2023 a las 09:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Susana, ¡muchas gracias! Pues nosotros con 5 días, considerando que de Cebu a Malapascua tienes que invertir casi 1 día completo en ir y otro en volver, nos quedaríamos todos los días en Malapascua, la verdad. Cebu City la evitaríamos en lo posible. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21185">
+		<article id="comment-21185" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ana</span>				<span class="comment_date">
+					el 06/04/2023 a las 12:08				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Estamos de viaje por filipinas y debido a un cambio de vuelo pasamos un día en Cebu hasta las 17h que nos sale el vuelo desde Cebu.<br />
+Estamos un poco perdidos en que podríamos hacer, si nos recomendarías hacer alguna excursión o ir a alguna cascada que nos diera suficientemente tiempo te lo agradeceríamos. Vuestra página es increíble y de gran ayuda!<br />
+Muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-21185' data-commentid="21185" data-postid="7714" data-belowelement="comment-21185" data-respondelement="respond" data-replyto="Responder a Ana" aria-label='Responder a Ana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-21202">
+		<article id="comment-21202" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/04/2023 a las 18:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ana, a ver, con solo una mañana la verdad es que nosotros no nos aventuraríamos a ir a Moalboal, que es lo que más nos gusta. Quizás aprovecharíamos para ver Cebu, el templo taoísta o los miradores. Sabemos que hay unas cascadas relativamente cerca de la ciudad llamadas Budlaan Falls, pero nunca hemos ido, así que no te podemos concretar, sorry! Nos alegramos de haber sido de ayuda : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-20876">
+		<article id="comment-20876" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alex</span>				<span class="comment_date">
+					el 26/03/2023 a las 16:33				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, muchas gracias por todo lo que hacéis en la página para ayudarnos! </p>
+<p>Tenemos un día libre en Cebú y estamos mirando para hacer el Canyoneering en las Kawasan Falls, pero no encontramos ninguna excursión disponible a un precio asequible, el que hemos visto para dos personas es por 180 dolares dos personas&#8230; hay alguna forma de apuntarse a alguna excursión con más personas y que salga mas económico? </p>
+<p>muchas gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-20876' data-commentid="20876" data-postid="7714" data-belowelement="comment-20876" data-respondelement="respond" data-replyto="Responder a Alex" aria-label='Responder a Alex'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-20877">
+		<article id="comment-20877" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/03/2023 a las 17:13				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alex, no conocemos empresas que hagan eso desde Cebu más que las de KLOOK. Si queréis, podéis ir por vuestra cuenta negociando con un taxista y luego buscando allí mismo en la entrada una para el canyoneering. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-14039">
+		<article id="comment-14039" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Miriam</span>				<span class="comment_date">
+					el 01/07/2022 a las 11:13				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, cuál es el precio para entrar en Simala<br />
+ shrine?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-14039' data-commentid="14039" data-postid="7714" data-belowelement="comment-14039" data-respondelement="respond" data-replyto="Responder a Miriam" aria-label='Responder a Miriam'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-14044">
+		<article id="comment-14044" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 01/07/2022 a las 11:53				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Miriam. No tenemos el dato, pero raro será que cueste más de un euro. Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-13195">
+		<article id="comment-13195" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Eva</span>				<span class="comment_date">
+					el 05/05/2022 a las 22:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas noches! tenéis contactos para realizar tour desde Cebú a bohol??  Tenemos el tiempo justo y sólo podemos ir un día.<br />
+Para final de mes!<br />
+Gracias, la Web es una pasada!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-13195' data-commentid="13195" data-postid="7714" data-belowelement="comment-13195" data-respondelement="respond" data-replyto="Responder a Eva" aria-label='Responder a Eva'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-13200">
+		<article id="comment-13200" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/05/2022 a las 09:03				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Eva, nos encanta poder serte de ayuda. Los contacto que tenemos para ello son las excursiones organizadas que enlazamos desde este mismo artículo. Lo que ocurre es que muchas pausaron su actividad tras el covid y aun no han reanudado, por ello aparecen temporalmente no disponibles.</p>
+<p>Acabamos de ver que han añadido ahora este nuevo tour. Empieza a las 8 en Tagbilaran (donde te deja el barco en Bohol), así que podrías coger el ferry de las 6 en Cebu y aprovechar todo el día en Bohol con guía en Español. Lo puedes ver aquí: <a href="https://www.civitatis.com/es/bohol/tour-privado-bohol/?aid=2773" target="_blank" rel="noopener nofollow ugc">Tour privado en Bohol en español</a>.</p>
+<p>¡un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/excursiones-cebu/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='7714' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="af40fa1b91" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="181"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"7714","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

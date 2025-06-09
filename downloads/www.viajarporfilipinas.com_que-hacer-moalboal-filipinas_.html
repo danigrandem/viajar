@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Qué ver y qué hacer en Moalboal - Guía 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="Seguro que ya sabes lo mejor que hacer en Moalboal: snorkel o buceo. Sin embargo, ¡hay más que ver! Descubre lo que te ofrece este destino en Filipinas." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Qué ver y qué hacer en Moalboal - Guía 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="Seguro que ya sabes lo mejor que hacer en Moalboal: snorkel o buceo. Sin embargo, ¡hay más que ver! Descubre lo que te ofrece este destino en Filipinas." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-09-27T09:16:29+00:00" />
+	<meta property="article:modified_time" content="2024-10-21T11:35:06+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="17 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Qué ver y qué hacer en Moalboal: el paraíso del snorkel en Cebú","datePublished":"2018-09-27T09:16:29+00:00","dateModified":"2024-10-21T11:35:06+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/"},"wordCount":3338,"commentCount":85,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg","articleSection":["Cebu","Moalboal"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/","url":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/","name":"▷ Qué ver y qué hacer en Moalboal - Guía 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg","datePublished":"2018-09-27T09:16:29+00:00","dateModified":"2024-10-21T11:35:06+00:00","description":"Seguro que ya sabes lo mejor que hacer en Moalboal: snorkel o buceo. Sin embargo, ¡hay más que ver! Descubre lo que te ofrece este destino en Filipinas.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg","width":1000,"height":667,"caption":"Qué hacer Moalboal"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Qué ver y qué hacer en Moalboal: el paraíso del snorkel en Cebú"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Qué ver y qué hacer en Moalboal: el paraíso del snorkel en Cebú del feed" href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/2273" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=2273' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-moalboal-filipinas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fque-hacer-moalboal-filipinas%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-2273-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2273/et-core-unified-2273.min.css?ver=1745577375" /><link rel="stylesheet" id="et-core-unified-deferred-2273-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2273/et-core-unified-deferred-2273.min.css?ver=1745577375" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-2273 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-2273" class="et_pb_post post-2273 post type-post status-publish format-standard has-post-thumbnail hentry category-cebu category-moalboal">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Qué ver y qué hacer en Moalboal: el paraíso del snorkel en Cebú</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/cebu/" rel="category tag">Cebu</a>, <a href="https://www.viajarporfilipinas.com/category/cebu/moalboal/" rel="category tag">Moalboal</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Qué hacer Moalboal" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg" alt="Qué hacer Moalboal" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Si estás buscando qué hacer en Moalboal, ¡has venido al lugar adecuado! Aquí te vamos a contar todo lo necesario para que disfrutes de este destino al sur de la isla de Cebú.</p>
+<p style="text-align: justify;">Dicen algunos que en la isla de <a href="https://www.viajarporfilipinas.com/guia-de-cebu/" target="_blank" rel="noopener noreferrer">Cebú</a> no hay mucho que hacer. Si bien es cierto que Cebú City no es la ciudad más bonita del Sudeste Asiático, sí que tiene algún que otro atractivo para pasar algunas horas recorriéndola. Sin embargo, hoy queremos hablarte de otro rincón ubicado en la isla del mismo nombre que nos encanta: Moalboal. Esta pequeña ciudad costera es conocida por ser un estupendo <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">lugar para bucear en Filipinas</a> y, sobre todo, para hacer <a href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer"><strong>snorkel en Filipinas</strong></a>, aun así, hay mucho más <strong>que ver y que hacer en Moalboal </strong>y nosotros vamos a contarte todos sus secretillos.</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<p class="ez-toc-title">Contenido del art&iacute;culo</p>
+<label for="ez-toc-cssicon-toggle-item-68258927c61e5" class="ez-toc-cssicon-toggle-label"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></label><input type="checkbox"  id="ez-toc-cssicon-toggle-item-68258927c61e5"  aria-label="Toggle" /><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Cuantos_dias_necesitas_en_Moalboal" title="Cuántos días necesitas en Moalboal">Cuántos días necesitas en Moalboal</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Que_hacer_en_Moalboal" title="Qué hacer en Moalboal">Qué hacer en Moalboal</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#1_Hacer_buceo_en_Pescador_Island" title="1. Hacer buceo en Pescador Island">1. Hacer buceo en Pescador Island</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#2_Flipar_con_el_banco_de_sardinas_de_Moalboal_y_otros_puntos_de_esnorquel" title="2. Flipar con el banco de sardinas de Moalboal y otros puntos de esnórquel">2. Flipar con el banco de sardinas de Moalboal y otros puntos de esnórquel</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#3_Relajarte_en_Panagsama_Beach" title="3. Relajarte en Panagsama Beach">3. Relajarte en Panagsama Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#4_Descubrir_la_White_Beach" title="4. Descubrir la White Beach ">4. Descubrir la White Beach </a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#5_Brindar_por_el_atardecer_en_el_Chili_Bar_y_conocer_la_noche_de_Moalboal" title="5. Brindar por el atardecer en el Chili Bar y conocer la noche de Moalboal">5. Brindar por el atardecer en el Chili Bar y conocer la noche de Moalboal</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#6_Subir_la_adrenalina_en_el_canyoneering_de_Kawasan_Falls" title="6. Subir la adrenalina en el canyoneering de Kawasan Falls">6. Subir la adrenalina en el canyoneering de Kawasan Falls</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#7_Explorar_otras_playas_como_Lambug_Beach" title="7. Explorar otras playas como Lambug Beach">7. Explorar otras playas como Lambug Beach</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#8_Island_hopping_en_Moalboal" title="8. Island hopping en Moalboal">8. Island hopping en Moalboal</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#9_Cascadas_que_visitar_desde_Moalboal" title="9. Cascadas que visitar desde Moalboal">9. Cascadas que visitar desde Moalboal</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-12" href="#Informacion_util_de_Moalboal" title="Información útil de Moalboal">Información útil de Moalboal</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#1_Donde_dormir_en_Moalboal" title="1. Dónde dormir en Moalboal">1. Dónde dormir en Moalboal</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#2_Como_llegar_a_Moalboal" title="2. Cómo llegar a Moalboal">2. Cómo llegar a Moalboal</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#3_Donde_comer" title="3. Dónde comer">3. Dónde comer</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-16" href="#4_Algunos_consejos_de_nuestra_cosecha_para_disfrutar_de_Moalboal" title="4. Algunos consejos de nuestra cosecha para disfrutar de Moalboal">4. Algunos consejos de nuestra cosecha para disfrutar de Moalboal</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-17" href="#Mapa_de_Moalboal" title="Mapa de Moalboal">Mapa de Moalboal</a></li></ul></nav></div>
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Cuantos_dias_necesitas_en_Moalboal"></span><span style="color: #33cccc;">Cuántos días necesitas en Moalboal</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Moalboal es un destino pequeño que, para ver lo principal, no requiere más de un par de días. Con <strong>2 días enteros</strong> podrás disfrutar de algunos de los mejores puntos de buceo y snorkel del Filipinas (¿cómo te suena nadar entre literalmente MILES de sardinas y alguna que otra tortuga?) y relajarte en la playa.</p>
+<p style="text-align: justify;">Por otro lado, las famosísimas Kawasan Falls quedan cerca de Moalboal, así que puedes aprovechar una de esas 2 jornadas para verlas o, mejor aún, hacer <em>canyoneering</em>.</p>
+<p style="text-align: justify;">Así un <strong>buen plan</strong> para aprovechar todo lo que puedes ver y hacer en Moalboal es:</p>
+<ol style="text-align: justify;">
+<li>Día de buceo y snorkel por Pescador Island y banco de sardinas + White Beach o relax en Panagsama</li>
+<li>Kawasan Falls + Lambug Beach en moto</li>
+</ol>
+<p style="text-align: justify;">Además, desde Moalboal se pueden acceder a un montón de cascadas ubicadas al sur de la isla de Cebu. Si te gustan este tipo de aventurillas, no lo dudes, dale más tiempo a este rincón de Filipinas porque hay mucho que ver en Moalboal de este estilo.</p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Que_hacer_en_Moalboal"></span><span style="color: #33cccc;">Qué hacer en Moalboal</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Si bien es cierto que todo el mundo viene a Moalboal a hacer snorkel o buceo, ahora vamos a darte poderosas razones para incluir este destino en tu viaje por Filipinas. Sigue leyendo y descubre <strong>qué hacer en Moalboal</strong>:</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Hacer_buceo_en_Pescador_Island"></span><span style="color: #33cccc;">1. Hacer buceo en Pescador Island</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">¿Es el buceo una de tus prioridades en el <a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/" target="_blank" rel="noopener noreferrer">viaje a Filipinas</a>? ¡Pues estás de suerte! Uno de los imprescindibles que hacer en Moalboal es el <strong>buceo en Pescador Island</strong>. Este pequeño islote se ubica a unos 15-20 minutos en <em>bangka</em> de la costa y ofrece al menos un par de inmersiones fabulosas.</p>
+<p style="text-align: justify;">Se tratan de buceos en <strong>pared de coral</strong> donde puedes encontrar tanto vida macro, como peces tan chulos como los <em>frog fishes</em> y algún que otro tiburón o tortuga verde. Es, además, relativamente barato si lo comparamos con otros destinos de buceo. Puedes echar un vistazo y, si quieres, reservar por <a href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=829684&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F105738-pescador-island-dive-trip-cebu-padi-5-star-idc" target="_blank" rel="nofollow noopener">aquí</a>.</p>
+<p style="text-align: justify;">En el caso de que no seas buceador certificado, existen empresas que hacen un <em>island hopping</em> que te permite hacer snorkel en Pescador Island. Abajo te contamos más.</p>
+<p style="text-align: justify;">Por supuesto, también te puedes <strong>sacar el título de buceo</strong> allí mismo, que es un sitio perfecto porque verás cositas desde el minuto uno. Se requieren 3/4 días, pero se puede acortar un poco en caso de que hagas parte de la teoría online con anterioridad, es lo que se conoce como e-learning. En la zona hay instructores españoles, lo cual te hará estar más tranquilo cuando se trata de primeras veces. Aquí tienes varias opciones para echar un vistazo, siendo el Open Water el curso que te permitirá después bucear por todo el mundo y el bautismo una inmersión para probar:</p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=829684&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F104055-padi-open-water-diver-elearning-cebu-padi-5-star-dive-center%2F" target="_blank" rel="nofollow noopener noreferrer">Curso de Open Water Diver con e-learning en español</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=829684&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F104056-padi-advanced-open-water-diver-e-learning-cebu-padi-5-star-dive-center%2F" target="_blank" rel="nofollow noopener noreferrer">Curso de ADVANCED Open Water Diver con e-learning en español</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=829684&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F96633-padi-open-water-diver-moalboal-padi-5-star-cdc%2F" target="_blank" rel="nofollow noopener noreferrer">Curso de Open Water Diver SIN e-learning en español</a></p>
+<p style="text-align: center;"><a class="custom-button et_pb_button et_pb_more_button" href="https://affiliate.klook.com/redirect?aid=4209&amp;aff_adid=829684&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fes%2Factivity%2F102049-padi-try-scuba-diving-cebu-padi-5-star-dive-resort%2F" target="_blank" rel="nofollow noopener noreferrer">Bautismo de buceo en español</a></p>
+<blockquote>
+<p style="text-align: justify;"><strong>Ojo:</strong> por desgracia, Pescador quedó muy dañada tras un tifón en diciembre de 2021 y hay partes que no lucen tan bonitas como antes. Aun así, creemos que sigue mereciendo mucho la pena.</p>
+</blockquote>
+<h3><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-2277" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Hacer buceo en Pescador Island, Moalboal" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-2277" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7.jpg" alt="Hacer buceo en Pescador Island, Moalboal" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-7-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></h3>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Flipar_con_el_banco_de_sardinas_de_Moalboal_y_otros_puntos_de_esnorquel"></span><span style="color: #33cccc;">2. Flipar con el banco de sardinas de Moalboal y otros puntos de esnórquel</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Créenos: <strong>Moalboal es tu destino en Filipinas si te encanta ver vida marina</strong> y te lo contamos todo en <a title="Dónde hacer snorkel en Moalboal: mejores sitios y consejos" href="https://www.viajarporfilipinas.com/snorkel-moalboal/" target="_blank" rel="noopener noreferrer"><strong>Dónde hacer snorkel en Moalboal</strong></a>.</p>
+<p style="text-align: justify;">No hace falta irse lejos, en la mismísima costa donde se encuentran todos los restaurantes y hoteles (cerca del Saavedra Dive Centre), a un par de metros, podrás ver la <strong>enorme masa del banco de sardinas </strong>o <em>sardine run</em> de Moalboal. Miles y miles de estos peces se mueven como una masa homogénea casi en la superficie, así que es muy sencillo verlas con tu propia máscara de snorkel y alucinar.</p>
+<p style="text-align: justify;">Nuestro consejo es que vayas <strong>a primera hora de la mañana o a última de la tarde</strong>, cuando los tours grandes se han ido. Si te coincide con la marea alta, muchísimo mejor. Aunque siempre suele haber gente, siempre que hemos ido por la tarde vimos al menos un par de tortugas que comían tranquilamente las algas que había a apenas unos metros de la orilla.</p>
+<p style="text-align: justify;">Si puedes, ponte una <strong>camiseta</strong> para hacer esnórquel. Además de evitar quemarte y no dañar con la crema solar a la fauna marina y los corales, no sentirás los pequeños roces (que no suelen ser picaduras grandes) de las medusillas que suele haber por la zona. Por favor, <strong>no toques a las tortugas ni las acoses</strong>. Por desgracia, hemos visto a mucha gente en Moalboal haciendo esto. Si puedes, diles educadamente que no es la manera.</p>
+<p style="text-align: justify;">En casi cualquier tiendecita o centro de buceo de la calle que hay junto a Moalboal te alquilan gafas y tubo por unos 100 pesos. También alquilan aletas, aunque, como no tendrás que nadar demasiado, no son imprescindibles. Si no tienes GoPro.y te apetece hacer vídeos o fotos, también se pueden alquilar por unos 500 pesos el día.</p>
+<p style="text-align: justify;">Por otro lado, si te apetece y cuentas con el título de <strong>buceo</strong>, puedes hacer una inmersión en el <strong>House Reef</strong>, que es el punto de buceo en el que tiene lugar este fenómeno natural que ver en Moalboal. Aunque irás recorriendo el arrecife paralelo a la costa, seguro que si miras hacia el cielo podrás disfrutar de esa inmensa nube de sardinas, que no deja ni ver la luz del sol. Sin duda, una de <a title="Las mejores inmersiones de Filipinas" href="https://www.viajarporfilipinas.com/mejores-inmersiones-filipinas/" target="_blank" rel="noopener noreferrer"><strong>las mejores inmersiones de Filipinas</strong></a>. ¡Es una maravilla!</p>
+<p style="text-align: justify;"><strong>Si las puedo ver haciendo esnórquel, ¿hago buceo con las sardinas o no?</strong> Teniendo en cuenta que los precios de la inmersión son realmente económicos, nosotros no lo dudaríamos y lo incluiríamos en nuestra lista de cosas que hacer en Moalboal. De verdad, la sensación es preciosa. Puedes contratar una excursión de un día con 3 inmersiones con uno de los centros de referencia de la zona desde <a href="https://www.civitatis.com/es/moalboal/buceo-moalboal/?aid=2773" target="_blank" rel="nofollow noopener"><strong>este enlace</strong></a>. Si nunca has buceado, también puedes <a href="https://www.civitatis.com/es/moalboal/bautismo-buceo-moalboal/?aid=2773" target="_blank" rel="nofollow noopener"><strong>hacer un bautismo</strong></a> o hasta <a href="https://www.civitatis.com/es/moalboal/curso-buceo-padi-open-water/?aid=2773" target="_blank" rel="nofollow noopener"><strong>sacarte el curso de Open Water Diver</strong></a> para bucear donde quieras en el mundo a partir de este momento.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2276" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Banco de sardinas que ver en Moalboal" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2276" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg" alt="Banco de sardinas que ver en Moalboal" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-4-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Relajarte_en_Panagsama_Beach"></span><span style="color: #33cccc;">3. Relajarte en Panagsama Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;"><strong>Panagsama Beach</strong> es como se conoce a la zona de Moalboal donde se ubican la mayoría de hoteles y restaurantes. Si bien no se puede catalogar de un pueblo bonito y la mayoría de la costa es rocosa, con restaurantes literalmente en el mar, si caminas hacia el norte del pueblo hay algunos tramos de playa en los que encontrarás arena, agua limpia y, sobre todo, tranquilidad.</p>
+<p style="text-align: justify;">La zona que está por el Chili Bar tiene algunos pedacitos de arena como los de la foto siguiente. Puedes dejar tus cosas ahí tranquilamente y lanzarte a nadar con las miles de sardinas y tortugas que tienes enfrente.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5642" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="playa de panagsama en moalboal" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5642" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1.jpg" alt="playa de panagsama en moalboal" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-8-1-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Descubrir_la_White_Beach"></span><span style="color: #33cccc;">4. Descubrir la White Beach </span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aunque una de las actividades que aparece en todas las listas de cosas <strong>que hacer en Moalboal</strong> es visitar la White Beach, te recomendamos que no albergues unas esperanzas muy altas en ella.</p>
+<p style="text-align: justify;">En White Beach encontrarás aguas claras, arena coralina y alguna que otra palmera, pero tampoco es una de <strong><a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" target="_blank" rel="noopener noreferrer">las mejores playas de Filipinas</a></strong>. Los <strong>fines de semana</strong> se llena hasta arriba de familias que incluso hacen acampada en la playa. Pero, si estás visitando Moalboal de lunes a jueves, el ambiente es mucho más relajado.</p>
+<p style="text-align: justify;">White Beach está ubicada a 7 kilómetros de Panagsama, así que tendrás que ir en <em>tricycle</em> o alquilar una moto. Los tricycles suelen cobrar unos 100-120 pesos por recorrido. Una vez allí, tendrás que dejar la moto en el parking (20 pesos) y pagar una tasa de 10 pesos por persona.</p>
+<p style="text-align: justify;">¡No olvides la máscara y el tubo! En White Beach hay <strong>puntos estupendos para descubrir con tu máscara y tubo</strong>. Camina hacia Belgian Resort Divers, donde se suelen ver tortugas nadando junto a la costa.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5645" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Snorkelear en White Beach, una de las mejores cosas que hacer en Moalboal" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5645" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9.jpg" alt="Snorkelear en White Beach, una de las mejores cosas que hacer en Moalboal" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-9-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="5_Brindar_por_el_atardecer_en_el_Chili_Bar_y_conocer_la_noche_de_Moalboal"></span><span style="color: #33cccc;">5. Brindar por el atardecer en el Chili Bar y conocer la noche de Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Tras un día de playeo y snorkel, lo mejor que puedes hacer en Moalboal es relajarte y disfrutar de la <strong>puesta de sol</strong>. El bar que suele tener más ambientillo es el Chili Bar, que tiene unas <strong>vistas al mar</strong> increíbles. ¡Pide un <em>mango shake</em> o una San Miguel Pilsen fría y disfruta del espectáculo!</p>
+<p style="text-align: justify;">El ambiente en Moalboal es bastante relajado, pero, aun así, conforme va pasando la noche la música sube un poquitín. Además, cada vez son más los <strong>mochileros</strong> que visitan esta parte de Filipinas, así que suele haber un ambiente bastante juvenil.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2280" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Puesta de sol desde Moalboal" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2280" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1.jpg" alt="Puesta de sol desde Moalboal" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-1-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="6_Subir_la_adrenalina_en_el_canyoneering_de_Kawasan_Falls"></span><span style="color: #33cccc;">6. Subir la adrenalina en el <em>canyoneering</em> de Kawasan Falls</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Seguro que mientras investigabas qué hacer en Filipinas te has dado de bruces con una foto de una cascada épica. Una piscina de aguas turquesas que es alimentada por un enorme manto rodeado por una espesa vegetación… ¡Son las cascadas Kawasan o <strong>Kawasan Falls</strong>!</p>
+<p style="text-align: justify;">La imagen es idílica, aun así, necesitamos avisarte: las Kawasan Falls son uno de los lugares más turísticos de Filipinas y suele <strong>estar bastante lleno de gente</strong>. Además, han construido un restaurante horroroso que afea mucho el entorno. Aun así, te damos <strong>dos consejos</strong> para que las disfrutes al máximo:</p>
+<ol style="text-align: justify;">
+<li>Procura ir temprano (antes de las 10:00, abren a las 8:00) y evita los fines de semana y festivos.</li>
+<li>No te quedes solo en el primer nivel, hay unos cuantos niveles más a los que puedes acceder caminando que son mucho más tranquilos.</li>
+</ol>
+<p style="text-align: justify;">Por otro lado, para muchos viajeros, uno de los <em>highlights</em> de su viaje por Filipinas es el <strong>barranquismo o canyoneering en las Kawasan Falls</strong>. La excursión, que suele durar unas 3 horas, te lleva a recorrer varias piscinas desde Alegria hasta Kawasan Falls mientras vas dando saltos (algunos de ellos de hasta 15 metros). Es una actividad regulada y debe hacerse protegido con casco y chaleco salvavidas. Los precios rondan los 2.100 (incluyendo traslados y comida) y podrás contratarla fácilmente desde <a href="https://www.civitatis.com/es/moalboal/barranquismo-moalboal/?aid=2773" target="_blank" rel="nofollow noopener"><strong>este enlace</strong></a>, en casi cualquier hotel o en la carretera que va hacia las cascadas.</p>
+<p>Conoce toda nuestra experiencia haciendo esta actividad en <a title="Canyoneering en Kawasan Falls, Cebu: Guía completa" href="https://www.viajarporfilipinas.com/canyoneering-kawasan-falls-cebu/" target="_blank" rel="noopener noreferrer"><strong>Canyoneering en Kawasan Falls, Cebu: Guía completa</strong></a>.</p>
+<p style="text-align: justify;"><strong>¿Cómo llegar a las Kawasan Falls?</strong> Si no quieres practicar barranquismo, podrás llegar fácilmente a las Kawasan Falls desde Moalboal si tomas un bus en dirección a Bato. El billete cuesta apenas 22 pesos (30 con aire acondicionado) y el recorrido lleva más o menos 30 minutos. Por supuesto, también puedes ir en moto (350-400 pesos al día) o en tricycle (900 pesos ida y vuelta con tiempo de espera o 150 pesos por recorrido si no te esperan).</p>
+<p style="text-align: justify;">La entrada a las Kawasan Falls cuesta 200 pesos. El parking cuesta 45 pesos por moto. No es necesario contratar ningún guía, pero ten en cuenta que <strong>solo se puede visitar el primer nivel</strong>. Antes se podía seguir caminando, pero desde hace poquito solo se puede ver una parte de esta manera. En caso de que quieras conocerlas más a fondo, tendrás que hacer la actividad de barraquismo.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5646" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Visitar Kawasan Falls desde Moalboal" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5646" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10.jpg" alt="Visitar Kawasan Falls desde Moalboal" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-10-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="7_Explorar_otras_playas_como_Lambug_Beach"></span><span style="color: #33cccc;">7. Explorar otras playas como Lambug Beach</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Ya te habrás dado cuenta de que uno de los puntos fuertes de Moalboal no son sus playas; sin embargo, tu impresión puede cambiar si visitas Lambug Beach.</p>
+<p style="text-align: justify;">Aunque la incluimos entre las cosas que hacer en Moalboal, Lambug Beach se encuentra en el municipio de <strong>Badian</strong>, es decir, cerca de las Kawasan Falls, por lo que es posible combinar ambos destinos.</p>
+<p style="text-align: justify;">La que llaman <strong>la Boracay de Cebú</strong> es una playa mucho más bonita que otras de las que te hemos hablado en Moalboal. Los fines de semana se suele de llenar de filipinos que pasan el día, pero si la visitas de lunes a jueves es muy probable que la tengas para ti solo. Desde 2020 se cobran 65 pesos a los extranjeros (45 a filipinos) para entrar.</p>
+<p style="text-align: justify;"><span style="color: #33cccc;"><em><strong>Consejo de Viajar por Filipinas:</strong></em></span> aunque la playa es pública, vas a ver que la única manera de aparcar la moto es dentro un resort, por lo que tendrás que pagar. Nosotros, por curiosidad, bajamos con la moto hasta <a href="https://goo.gl/maps/wg7hz6kGyffSQQL3A" target="_blank" rel="nofollow noopener noreferrer"><strong>este punto</strong></a>. Allí encontramos 2 cosas: 1) un santuario marino increíble en el que no había nadie, ¡lleva la máscara y tubo!; y 2) una entrada gratuita caminando a Lambug Beach. Así que, ¡ya sabes!</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5647" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20450%20675'%3E%3C/svg%3E" alt="Lambug Beach, playa cercana a Moalboal" width="450" height="675" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11.jpg 450w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11-200x300.jpg 200w" data-lazy-sizes="(max-width: 450px) 100vw, 450px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5647" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11.jpg" alt="Lambug Beach, playa cercana a Moalboal" width="450" height="675" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11.jpg 450w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-11-200x300.jpg 200w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="8_Island_hopping_en_Moalboal"></span><span style="color: #33cccc;">8. Island hopping en Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Aquellos viajeros que no hacen buceo, les puede interesar hacer un <em>island hopping</em> en Moalboal que incluya alguno de los <strong>puntos de snorkel más famosos</strong> de la zona. Estas excursiones suelen incluir un rato nadando por Pescador Island, la zona del Sardine Run y Turtle Point.</p>
+<p style="text-align: justify;">Como has visto, puedes ir a los dos últimos lugares por tu cuenta. Así que, si te apetece, también puedes negociar algún barco solo para ir a Pescador.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="9_Cascadas_que_visitar_desde_Moalboal"></span><span style="color: #33cccc;">9. Cascadas que visitar desde Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">En la zona sur de Moalboal hay un montón de <strong>cascadas que apenas nadie visita</strong>. Pronto haremos un artículo detallado hablando de cada una de ellas, pero apunta estos nombres: <a title="Cambais Falls, una de las cascadas más bonitas de Cebú" href="https://www.viajarporfilipinas.com/cambais-falls-cebu/" target="_blank" rel="noopener noreferrer">Cambais Falls</a>, Kabutongan Waterfalls, Inambakan Waterfalls, Dao Waterfalls, Binalayan Hidden Waterfalls y Aguinid Falls.</p>
+<p style="text-align: justify;">Si no te quieres pegar una paliza muy grande con la moto, nosotros te recomendamos que vayas a las 2 más cercanas (tras las Kawasan Falls): <strong>Cambais Falls</strong> (las de la foto) y <strong>Cangkalanog Falls</strong>. Si te levantas temprano, también puedes ir a Montpellier Falls. Por cierto, para ir a las 2 primeras, no le hagas ni caso a Googlemaps porque te va a mandar por el camino más chungo (por experiencia). Ve por una carretera llamada Alegria Barangay Rd y no por Brgy Valencia Road, que es horrible.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5648" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="visitar Cambais Falls desde Moalboal" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5648" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12.jpg" alt="visitar Cambais Falls desde Moalboal" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/que-hacer-moalboal-12-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Informacion_util_de_Moalboal"></span><span style="color: #33cccc;">Información útil de Moalboal</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Tras contarte las mejores cosas que hacer en Moalboal, aquí tienes toda la información práctica que necesitas para planificar tu visita.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="1_Donde_dormir_en_Moalboal"></span><span style="color: #33cccc;">1. Dónde dormir en Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Nuestro consejo es que busques alojamiento en Moalboal en la zona de <strong>Panagsama</strong>. Aquí te damos unas <strong>opciones</strong> que nos tienen enamorados:</p>
+<ul>
+<li style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/maayong-hostel.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Maayong Hostel</strong></a><strong>: </strong>¡el mejor hostel de Moalboal! Instalaciones muy chulas, camas cómodas, limpio, personal agradable, taquillas seguras&#8230; Si buscas ambiente mochilero, ¡este es tu sitio! Las camas en dormitorio compartido empiezan en 13€.</li>
+<li style="text-align: justify;"><strong style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/home-sweetie-homestay-amp-bunkbeds.es.html?aid=1542173" target="_blank" rel="nofollow noopener noreferrer">Home Sweetie Homestay and Bunkbeds</a>:</strong><span style="text-align: justify;"> ¿viajas solo o buscas algo económico? Este hostel súper cuqui es muy acogedor para pasar un par de noches. Las camas en dormitorio compartido cuestan 7€.</span></li>
+<li style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/beyond-island.es.html?aid=1542173" target="_blank" rel="nofollow noopener"><strong>Beyond Island</strong></a>: aquí fue donde nos quedamos durante nuestra última visita a Moalboal y lo recomendamos encarecidamente. Modernas habitaciones, personal majo, motos para alquilar y una ubicación cómoda. Por unos 20-25€ la noche no se puede pedir mucho más.</li>
+<li style="text-align: justify;"><strong style="text-align: justify;"><a href="https://www.booking.com/hotel/ph/quo-vadis-dive-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Quo Vadis Dive Resort</a>:</strong><span style="text-align: justify;"> si has venido a Moalboal a hacer buceo, esta es una opción genial, pues la tienda de buceo del resort es una de las más profesionales de la zona. Cuentan con bungalós con vistas al jardín o al mar. Desde 50€.</span></li>
+</ul>
+<p style="text-align: justify;">¿Necesitas más inspiración o buscas una cabañita de bambú épica? Echa un vistazo a estos hoteles <a href="https://www.viajarporfilipinas.com/donde-dormir-moalboal/" target="_blank" rel="noopener noreferrer"><strong>donde dormir en Moalboal</strong></a>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="2_Como_llegar_a_Moalboal"></span><span style="color: #33cccc;">2. Cómo llegar a Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">¿Decidido a visitar Moalboal? En <a href="https://www.viajarporfilipinas.com/llegar-moalboal-filipinas/"><strong>Cómo llegar a Moalboal</strong></a> te contamos cómo acceder a este rinconcito de Filipinas desde Cebú, Dumaguete, Bohol, Malapascua… Para hacerte <em>spoiler</em>, en caso de venir desde Cebú, solo tienes que coger un bus desde la South Bus Terminal, que te llevará unas 3,5 horas.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="3_Donde_comer"></span><span style="color: #33cccc;">3. Dónde comer</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Con el aumento del turismo, la selección de restaurantes de Moalboal es cada vez mayor. Para que no te pierdas lo mejorcito, hemos escrito un artículo sobre el tema: <a title="Dónde comer en Moalboal: restaurantes recomendados" href="https://www.viajarporfilipinas.com/donde-comer-moalboal/" target="_blank" rel="noopener noreferrer"><strong>Dónde comer en Moalboal</strong></a>.</p>
+<h3 style="text-align: justify;"><span class="ez-toc-section" id="4_Algunos_consejos_de_nuestra_cosecha_para_disfrutar_de_Moalboal"></span><span style="color: #33cccc;">4. Algunos consejos de nuestra cosecha para disfrutar de Moalboal</span><span class="ez-toc-section-end"></span></h3>
+<p style="text-align: justify;">Como te habrás dado cuenta, Moalboal nos gusta un montón y ya hemos ido varias veces. Aquí van los consejos que nos hubiese gustado saber a nosotros antes de ir la primera vez:</p>
+<ul>
+<li style="text-align: justify;">Procura visitar las playas y Kawasan Falls <strong>de lunes a viernes</strong>, cuando hay menos gente.</li>
+<li style="text-align: justify;">La <strong>mejor época para ir a Moalboal</strong> es de diciembre a mayo, cuando es época seca. Aun así, las cascadas estarán con más caudal y, por tanto, más bonitas en los meses de agosto-octubre.</li>
+<li style="text-align: justify;">Si te alojas en Panagsama, podrás ir caminando a cualquier lado. Si tienes pereza, siempre puedes recurrir a los <strong>tricycles</strong>. Dentro de lo que es Panagsama, no deberían cobrarte más de 50 pesos. Si quieres ir a Moalboal pueblo, lo habitual es que cobren 100 pesos (que nos parece más que suficiente).</li>
+<li style="text-align: justify;">El <strong>alquiler de moto</strong> en Moalboal ronda los 350 pesos por una moto de 125 cc de las pequeñas. Lo normal es que los alojamientos te lo ofrezcan y en la carretera principal tienes varios sitios de alquiler de motos. Comprueba siempre el estado de las ruedas y los rasguños que pueda tener.</li>
+<li style="text-align: justify;">Aunque están poniendo <strong>cajeros automáticos</strong> de Euronet por todos lados, ten mucho ojo si quieres sacar dinero de ahí porque intentan hacerte el lío y aplicarte un tipo de cambio horrible. Nosotros te recomendamos sacar del cajero que hay en el 7-ELEVEN de Moalboal o en el de PNB que tienes al lado del Nelson&#8217;s Dive Center (lo verás en el mapa de abajo) y quitarte de problemas.</li>
+<li style="text-align: justify;">Cada vez son más los viajeros que teletrabajan en Filipinas y Moalboal, a estar en una isla principal, es un destino que siempre aconsejamos por tener una <strong>conexión a internet bastante decente</strong>. Tanto las red wifi de los hoteles como las de 4G de Smart y Globe tiran bastante bien hasta para hacer videollamadas. Puedes leer más sobre este tema en <a title="Internet en Filipinas: qué tarjeta SIM filipina escoger" href="https://www.viajarporfilipinas.com/internet-en-filipinas-tarjeta-sim/" target="_blank" rel="noopener"><strong>Internet en Filipinas</strong></a>.</li>
+<li style="text-align: justify;">Recuerda que viajar a Filipinas sin <strong>seguro médico</strong> es muy peligroso debido a las precarias instalaciones médicas y en Moalboal solo tienes un hospital rural muy básico. En caso de que te pase algo importante, es mejor que acudas a Cebú, donde te recomendamos los dos hospitales que hay de Chong Hua. Nosotros hace 9 años que viajamos con el de IATI y te lo recomendamos al 100%. Aquí tienes un <a href="https://www.iatiseguros.com/contrato_agencia.phtml?id=1071&amp;r=2655703123870" target="_blank" rel="nofollow noopener noreferrer"><strong>5% de descuento</strong></a> por venir de nuestra parte.</li>
+<li style="text-align: justify;">Cuando quieras volver a Cebú o bajar hacia Siquijor o Dumaguete, diles a los conductores de tricycle que te dejen en la «bus stop». Son solo unas cuantas sillas en la carretera principal, pero todos los buses paran allí.</li>
+</ul>
+<hr />
+<h2 style="text-align: justify;"><span class="ez-toc-section" id="Mapa_de_Moalboal"></span><span style="color: #33cccc;">Mapa de Moalboal</span><span class="ez-toc-section-end"></span></h2>
+<p style="text-align: justify;">Para que te orientes un poquito mejor, hemos creado este mapa de Moalboal con los sitios de los que te hemos hablado:</p>
+<p><iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1JDwqg6xEFOHigv_Kz-vXdZoKeTyorVxX"></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1JDwqg6xEFOHigv_Kz-vXdZoKeTyorVxX" width="1000" height="480"></iframe></noscript></p>
+<p style="text-align: center;"><em>¿Tienes algo que aportar a este listado de cosas que hacer en Moalboal? ¿Alguna duda? Nos encantará responderte en los comentarios.</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">85 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/comment-page-3/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-56107">
+		<article id="comment-56107" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Irene</span>				<span class="comment_date">
+					el 21/04/2025 a las 18:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Como podemos ir desde Cebú (Quartel Beach) hasta MOALBOAL?<br />
+Justos llegamos a Cebú desde Panglao y no sabemos cómo hacerlo.<br />
+He estado mirando y pueden cobrarnos 54€ si lo contratamos desde 12Go.</p>
+<p>Crees que es mejor contratarlo allí directamente o mejor llevar ya el taxi contratado previamente desde aquí?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-56107' data-commentid="56107" data-postid="2273" data-belowelement="comment-56107" data-respondelement="respond" data-replyto="Responder a Irene" aria-label='Responder a Irene'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-56110">
+		<article id="comment-56110" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 21/04/2025 a las 19:02				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Irene, puedes llegar enlazando buses o negociando un transporte. No calculamos que esto segundo cueste menos de 2.000 pesos, pero nunca hemos hecho esta ruta, así que no podemos decirte. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54915">
+		<article id="comment-54915" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Christian Delgado</span>				<span class="comment_date">
+					el 27/03/2025 a las 10:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos!</p>
+<p>¿Algún island hopping que sepáis que está bien para ir a Pescador?</p>
+<p>Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-54915' data-commentid="54915" data-postid="2273" data-belowelement="comment-54915" data-respondelement="respond" data-replyto="Responder a Christian Delgado" aria-label='Responder a Christian Delgado'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-54916">
+		<article id="comment-54916" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 27/03/2025 a las 10:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Christian, más que un island hopping, eso es que te llevan, haces snorkel y vuelves, puedes ir con cualquiera que te lo ofrezca porque no tiene más dificultad. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-51966">
+		<article id="comment-51966" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lucía</span>				<span class="comment_date">
+					el 02/02/2025 a las 20:41				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!<br />
+Estamos pensando en ir a Moalboal o Panglao para hacer buceo/snorkel, pero no sabemos por cuál decidirnos ya que a las dos no nos da tiempo. Cual nos recomendáis?<br />
+Muchas gracias por toda la info 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-51966' data-commentid="51966" data-postid="2273" data-belowelement="comment-51966" data-respondelement="respond" data-replyto="Responder a Lucía" aria-label='Responder a Lucía'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-51987">
+		<article id="comment-51987" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/02/2025 a las 01:56				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía. Es algo muy personal, pero te diría Panglao. Más cosas que hacer por ahí y tienes tortugas, sardinas, etc&#8230; Saludos.</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-52007">
+		<article id="comment-52007" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 03/02/2025 a las 09:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía, para nosotros es un rotundo sí Panglao, la verdad&#8230; Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-49590">
+		<article id="comment-49590" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Laura Macía</span>				<span class="comment_date">
+					el 26/12/2024 a las 12:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Algún sitio respetuoso para ver tiburones ballena en Moalboal? Gracias! Veo que en enero solo nos queda la opción de ir a Dohol&#8230;</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-49590' data-commentid="49590" data-postid="2273" data-belowelement="comment-49590" data-respondelement="respond" data-replyto="Responder a Laura Macía" aria-label='Responder a Laura Macía'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-49593">
+		<article id="comment-49593" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 26/12/2024 a las 13:00				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Laura, no, desgraciadamente ninguno. En enero también puedes ir a Pintuyan. Lo tienes explicado en <a href="https://www.viajarporfilipinas.com/tiburon-ballena-filipinas/" title="Dónde nadar con el tiburón ballena en Filipinas" target="_blank" rel="noopener ugc">Dónde nadar con el tiburón ballena en Filipinas</a>. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-47565">
+		<article id="comment-47565" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Jon Labat</span>				<span class="comment_date">
+					el 15/11/2024 a las 12:10				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola buenas, estamos pensando en hacer el canyoneering en las Kawasan Falls, nos recomiendas cogerlo con antelacion o coger la actividad alli cuando hayamos llegado. Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-47565' data-commentid="47565" data-postid="2273" data-belowelement="comment-47565" data-respondelement="respond" data-replyto="Responder a Jon Labat" aria-label='Responder a Jon Labat'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-47582">
+		<article id="comment-47582" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 15/11/2024 a las 12:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Jon, puedes hacerlo directamente allí si te apetece, ambas opciones son válidas. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-46501">
+		<article id="comment-46501" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Ana</span>				<span class="comment_date">
+					el 25/10/2024 a las 01:52				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Claudia! Me podrias recomendar algun centro de buceo? Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-46501' data-commentid="46501" data-postid="2273" data-belowelement="comment-46501" data-respondelement="respond" data-replyto="Responder a Ana" aria-label='Responder a Ana'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-46509">
+		<article id="comment-46509" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/10/2024 a las 06:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Ana, por desgracia, no tenemos ningún centro recomendado porque con el que fuimos cerró. Sorry!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-43540">
+		<article id="comment-43540" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Paula</span>				<span class="comment_date">
+					el 23/08/2024 a las 10:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Buenass,</p>
+<p>Vamos a Moalboal a principios de septiembre (del 31 al 3 de septiembre ). Nos gustaría hacer buceo pero no tenemos el título, ¿donde nos recomendáis hacer el bautismo? Hemos pensado hacer un bautismo para ver el banco de sardinas, ¿sabéis de alguna empresa que ofrezca esta actividad? Y otro bautismo para pescador island, ¿merece la pena?</p>
+<p>Muchas gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43540' data-commentid="43540" data-postid="2273" data-belowelement="comment-43540" data-respondelement="respond" data-replyto="Responder a Paula" aria-label='Responder a Paula'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-43542">
+		<article id="comment-43542" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 23/08/2024 a las 10:42				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Paula, por lo que veréis, nosotros aconsejamos bautismo para el banco de sardinas, pero a día de hoy no tenemos ninguna empresa recomendada. Os aconsejamos dar un paseo y ver diferentes opciones allí mismo en Panagsama. ¡Un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-43368">
+		<article id="comment-43368" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Duncan</span>				<span class="comment_date">
+					el 20/08/2024 a las 11:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas!</p>
+<p>Llego a finales de Septiembre a Manila (MNL) a las 16:00 y por precio de vuelos creo que me conviene ir directo a Bohol (TAG). Hay un vuelo a las 19:10 MNL-TAG, me da tiempo a hacer la escala?</p>
+<p>Gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-43368' data-commentid="43368" data-postid="2273" data-belowelement="comment-43368" data-respondelement="respond" data-replyto="Responder a Duncan" aria-label='Responder a Duncan'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-43388">
+		<article id="comment-43388" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/08/2024 a las 19:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Duncan, pensamos que sí, 3 horas suele ser suficiente. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-39871">
+		<article id="comment-39871" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Gloria Ramis</span>				<span class="comment_date">
+					el 02/07/2024 a las 11:48				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Otro comentario por aquí también, saben algún buen centro de buceo en Moalboal? Gracias otra vez!!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-39871' data-commentid="39871" data-postid="2273" data-belowelement="comment-39871" data-respondelement="respond" data-replyto="Responder a Gloria Ramis" aria-label='Responder a Gloria Ramis'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-39875">
+		<article id="comment-39875" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 02/07/2024 a las 11:57				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Gloria, por desgracia, no, ya que el centro con el que buceamos la última vez cerró : (</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35797">
+		<article id="comment-35797" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Raquel</span>				<span class="comment_date">
+					el 05/04/2024 a las 17:14				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola!! Aunque no tenga el titulo de buceo está bien visitar Moalboal y hacer snorkel?? Mil gracias!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-35797' data-commentid="35797" data-postid="2273" data-belowelement="comment-35797" data-respondelement="respond" data-replyto="Responder a Raquel" aria-label='Responder a Raquel'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-35798">
+		<article id="comment-35798" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 05/04/2024 a las 17:24				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Por supuesto que sí, no es necesario bucear para disfrutarlo : ) ¡un abrazo!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/que-hacer-moalboal-filipinas/comment-page-3/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/que-hacer-moalboal-filipinas/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='2273' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1dc00899b4" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="90"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2273","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

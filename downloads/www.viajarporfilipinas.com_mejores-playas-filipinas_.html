@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.viajarporfilipinas.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYA.ttf) format('truetype');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiYw.woff) format('woff');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYw.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Oswald';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUhiZQ.woff2) format('woff2');}@font-face {font-family: 'Oswald';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiZQ.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>▷ Las mejores playas de Filipinas TOP 2025 - Viajar por Filipinas</title>
+	<meta name="description" content="En Filipinas están las mejores playas del Sudeste Asiático, ¿quieres saber a cuáles ir? Descubre nuestra lista de las mejores playas de Filipinas." />
+	<link rel="canonical" href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="▷ Las mejores playas de Filipinas TOP 2025 - Viajar por Filipinas" />
+	<meta property="og:description" content="En Filipinas están las mejores playas del Sudeste Asiático, ¿quieres saber a cuáles ir? Descubre nuestra lista de las mejores playas de Filipinas." />
+	<meta property="og:url" content="https://www.viajarporfilipinas.com/mejores-playas-filipinas/" />
+	<meta property="og:site_name" content="Viajar por Filipinas" />
+	<meta property="article:published_time" content="2018-09-24T08:24:03+00:00" />
+	<meta property="article:modified_time" content="2022-02-10T00:23:07+00:00" />
+	<meta property="og:image" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Viajar por Filipinas" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Viajar por Filipinas" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="19 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#article","isPartOf":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/"},"author":{"name":"Viajar por Filipinas","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf"},"headline":"Las mejores playas de Filipinas","datePublished":"2018-09-24T08:24:03+00:00","dateModified":"2022-02-10T00:23:07+00:00","mainEntityOfPage":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/"},"wordCount":3861,"commentCount":145,"publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"image":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb.jpg","articleSection":["Islas y playas de Filipinas"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.viajarporfilipinas.com/mejores-playas-filipinas/#respond"]}]},{"@type":"WebPage","@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/","url":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/","name":"▷ Las mejores playas de Filipinas TOP 2025 - Viajar por Filipinas","isPartOf":{"@id":"https://www.viajarporfilipinas.com/#website"},"primaryImageOfPage":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#primaryimage"},"image":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#primaryimage"},"thumbnailUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb.jpg","datePublished":"2018-09-24T08:24:03+00:00","dateModified":"2022-02-10T00:23:07+00:00","description":"En Filipinas están las mejores playas del Sudeste Asiático, ¿quieres saber a cuáles ir? Descubre nuestra lista de las mejores playas de Filipinas.","breadcrumb":{"@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.viajarporfilipinas.com/mejores-playas-filipinas/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#primaryimage","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb.jpg","width":1200,"height":630,"caption":"Mejores playas de Filipinas"},{"@type":"BreadcrumbList","@id":"https://www.viajarporfilipinas.com/mejores-playas-filipinas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.viajarporfilipinas.com/"},{"@type":"ListItem","position":2,"name":"Blog de viajes a Filipinas","item":"https://www.viajarporfilipinas.com/blog/"},{"@type":"ListItem","position":3,"name":"Las mejores playas de Filipinas"}]},{"@type":"WebSite","@id":"https://www.viajarporfilipinas.com/#website","url":"https://www.viajarporfilipinas.com/","name":"Viajar por Filipinas","description":"Tu gu&iacute;a de Filipinas","publisher":{"@id":"https://www.viajarporfilipinas.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.viajarporfilipinas.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.viajarporfilipinas.com/#organization","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/","url":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","contentUrl":"https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg","width":1000,"height":628,"caption":"Viajar por Filipinas"},"image":{"@id":"https://www.viajarporfilipinas.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.viajarporfilipinas.com/#/schema/person/66d3e46056c39f1803f5b734bc8e52cf","name":"Viajar por Filipinas","url":"https://www.viajarporfilipinas.com/author/admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/amp/" /><meta name="generator" content="AMP for WP 1.0.77.54.1"/><link rel='dns-prefetch' href='//youtube.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed" href="https://www.viajarporfilipinas.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Feed de los comentarios" href="https://www.viajarporfilipinas.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Viajar por Filipinas &raquo; Comentario Las mejores playas de Filipinas del feed" href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/feed/" />
+<meta content="Divi v.4.24.2" name="generator"/><link rel='stylesheet' id='wp-block-library-css' href='https://www.viajarporfilipinas.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css' type='text/css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.viajarporfilipinas.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.viajarporfilipinas.com/wp-content/themes/Divi/style-static.min.css?ver=4.24.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.viajarporfilipinas.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.viajarporfilipinas.com/wp-json/wp/v2/posts/2209" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.viajarporfilipinas.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel='shortlink' href='https://www.viajarporfilipinas.com/?p=2209' />
+<link rel="alternate" type="application/json+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fmejores-playas-filipinas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.viajarporfilipinas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.viajarporfilipinas.com%2Fmejores-playas-filipinas%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="ir-site-verification-token" value="1436363">
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/cropped-sol-filipino-png-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1745575415" /><link rel="stylesheet" id="et-core-unified-2209-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2209/et-core-unified-2209.min.css?ver=1745575808" /><link rel="stylesheet" id="et-core-unified-deferred-2209-cached-inline-styles" href="https://www.viajarporfilipinas.com/wp-content/et-cache/2209/et-core-unified-deferred-2209.min.css?ver=1745575808" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-2209 single-format-standard cookies-not-set et_button_no_icon et_button_custom_icon et_pb_button_helper_class et_vertical_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns1 et_cover_background windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.viajarporfilipinas.com/">
+						<img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/logo-viajar-filipinas-1.jpg" width="1000" height="628" alt="Viajar por Filipinas" id="logo" data-height-percentage="100" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1905"><a href="https://www.viajarporfilipinas.com/preparativos-viaje-a-filipinas/"><b>EMPIEZA AQUÍ</b></a></li>
+<li id="menu-item-10764" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10764"><a href="https://www.viajarporfilipinas.com/requisitos-viajar-filipinas-documentos/">Requisitos viajar Filipinas</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1973"><a>Palawan</a>
+<ul class="sub-menu">
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/">El Nido</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://www.viajarporfilipinas.com/guia-de-coron/">Corón</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="https://www.viajarporfilipinas.com/guia-de-port-barton/">Port Barton</a></li>
+	<li id="menu-item-12564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12564"><a href="https://www.viajarporfilipinas.com/balabac-island-hopping/">Balabac</a></li>
+	<li id="menu-item-12644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12644"><a href="https://www.viajarporfilipinas.com/que-hacer-darocotan-palawan/">Darocotan</a></li>
+	<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.viajarporfilipinas.com/puerto-princesa-filipinas/">Puerto Princesa</a></li>
+	<li id="menu-item-12643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12643"><a href="https://www.viajarporfilipinas.com/que-hacer-sibaltan/">Sibaltan</a></li>
+	<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="https://www.viajarporfilipinas.com/que-hacer-sabang/">Sabang</a></li>
+	<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10014"><a href="https://www.viajarporfilipinas.com/que-ver-palawan-filipinas/">Guía de Palawan</a></li>
+</ul>
+</li>
+<li id="menu-item-1974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1974"><a>Bisayas</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/">Bohol</a></li>
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/">Malapascua</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.viajarporfilipinas.com/guia-de-siquijor/">Siquijor</a></li>
+	<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.viajarporfilipinas.com/guia-boracay/">Boracay</a></li>
+	<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3744"><a href="https://www.viajarporfilipinas.com/guia-de-cebu/">Cebu</a></li>
+	<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7405"><a href="https://www.viajarporfilipinas.com/guia-apo-island/">Apo Island</a></li>
+	<li id="menu-item-2365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2365"><a href="https://www.viajarporfilipinas.com/moalboal-filipinas/">Moalboal</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="https://www.viajarporfilipinas.com/bantayan/">Bantayan</a></li>
+	<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12646"><a href="https://www.viajarporfilipinas.com/que-hacer-camotes-islas/">Camotes</a></li>
+	<li id="menu-item-12645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12645"><a href="https://www.viajarporfilipinas.com/que-hacer-carabao-island/">Carabao</a></li>
+	<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="https://www.viajarporfilipinas.com/guia-de-romblon/">Romblon</a></li>
+	<li id="menu-item-3790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3790"><a href="https://www.viajarporfilipinas.com/sibuyan-guia/">Sibuyan</a></li>
+	<li id="menu-item-9820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9820"><a href="https://www.viajarporfilipinas.com/guia-de-dumaguete/">Dumaguete</a></li>
+	<li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9631"><a href="https://www.viajarporfilipinas.com/que-hacer-guimaras/">Guimaras</a></li>
+	<li id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7003"><a href="https://www.viajarporfilipinas.com/que-hacer-kinatarcan/">Kinatarcan</a></li>
+	<li id="menu-item-7004" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7004"><a href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/">Cuatro Islas &#8211; Leyte</a></li>
+	<li id="menu-item-7005" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7005"><a href="https://www.viajarporfilipinas.com/nadar-tiburon-ballena-pintuyan/">Pintuyan</a></li>
+	<li id="menu-item-10012" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10012"><a href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/">Puerto Galera</a></li>
+	<li id="menu-item-10013" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10013"><a href="https://www.viajarporfilipinas.com/que-hacer-dauin/">Dauin</a></li>
+</ul>
+</li>
+<li id="menu-item-1975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1975"><a>Mindanao</a>
+<ul class="sub-menu">
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/">Siargao</a></li>
+	<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://www.viajarporfilipinas.com/guia-de-camiguin/">Camiguín</a></li>
+</ul>
+</li>
+<li id="menu-item-1976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1976"><a>Luzón</a>
+<ul class="sub-menu">
+	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.viajarporfilipinas.com/manila-turismo/">Manila</a></li>
+	<li id="menu-item-12875" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12875"><a href="https://www.viajarporfilipinas.com/que-hacer-banaue/">Banaue</a></li>
+	<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="https://www.viajarporfilipinas.com/que-hacer-caramoan/">Caramoan</a></li>
+	<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12648"><a href="https://www.viajarporfilipinas.com/que-hacer-legazpi-filipinas/">Legazpi</a></li>
+	<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://www.viajarporfilipinas.com/guia-de-batad/">Batad</a></li>
+	<li id="menu-item-12606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12606"><a href="https://www.viajarporfilipinas.com/que-hacer-sagada/">Sagada</a></li>
+	<li id="menu-item-6907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6907"><a href="https://www.viajarporfilipinas.com/guia-la-union-filipinas/">La Unión</a></li>
+	<li id="menu-item-10011" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10011"><a href="https://www.viajarporfilipinas.com/que-hacer-donsol/">Donsol</a></li>
+</ul>
+</li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137"><a href="https://www.viajarporfilipinas.com/informacion-para-viajar-a-filipinas/">Info práctica</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11815"><a href="https://www.viajarporfilipinas.com/polizas/">Viajar Seguro</a></li>
+</ul>
+</li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/">ITINERARIOS</a></li>
+<li id="menu-item-1906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1906"><a>NOSOTROS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="https://www.viajarporfilipinas.com/quienes-somos/">Quiénes somos</a></li>
+	<li id="menu-item-1908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><a href="https://www.viajarporfilipinas.com/contacto/">Contacto</a></li>
+	<li id="menu-item-12876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12876"><a href="https://www.viajarporfilipinas.com/apoyo-vxf/">¿Quieres apoyar Viajar por Filipinas?</a></li>
+</ul>
+</li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleccionar página</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.viajarporfilipinas.com/">
+					<input type="search" class="et-search-field" placeholder="Búsqueda &hellip;" value="" name="s" title="Buscar:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-2209" class="et_pb_post post-2209 post type-post status-publish format-standard has-post-thumbnail hentry category-islas-y-playas-de-filipinas">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Las mejores playas de Filipinas</h1>
+
+						<p class="post-meta"> por <span class="author vcard"><a href="https://www.viajarporfilipinas.com/author/admin/" title="Mensajes de Viajar por Filipinas" rel="author">Viajar por Filipinas</a></span> | <span class="published"></span> | <a href="https://www.viajarporfilipinas.com/category/islas-y-playas-de-filipinas/" rel="category tag">Islas y playas de Filipinas</a></p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%20675'%3E%3C/svg%3E" alt="Mejores playas de Filipinas" class="" width="1080" height="675" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb-1080x630.jpg" /><noscript><img src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-fb-1080x630.jpg" alt="Mejores playas de Filipinas" class="" width="1080" height="675" /></noscript>
+												</div>
+				
+					<div class="entry-content">
+					<p style="text-align: justify;">Que Filipinas tiene las <strong>mejores playas del Sudeste Asiático</strong> no hay ninguna duda. Después de conocer todos los países de la zona y <a href="https://www.viajarporfilipinas.com/filipinas-guia-viaje/">viajar a Filipinas</a> tantísimas veces, no nos cabe más remedio que hacer esta afirmación.</p>
+<p style="text-align: justify;">La mayoría de las playas de Filipinas tienen todos los ingredientes para catalogarlas como <strong>paradisíacas</strong>:</p>
+<ul style="text-align: justify;">
+<li>La <strong>arena</strong> suele ser coralina, así que el color de esta tiende a ser blanco de este que refleja hasta la luz del sol.</li>
+<li>El <strong>agua</strong> que las baña suele ser súuuuuuuuuper transparente, tanto que el Caribe se queda en pañales. Además, suele ser súper tranquilita, así que no será raro que te tires horas y horas en remojo.</li>
+<li>Estilizadísimas <strong>palmeras</strong> te brindan sombra. No somos imparciales, pero, para nosotros, las palmeras de Filipinas son las más bonitas del mundo.</li>
+<li>Si buscas bien, ¡las tendrás para ti solo! En serio, hay muy pocas playas <strong>masificadas</strong> en Filipinas. Con más de 7.000 islas siempre puedes tener una playa en la que no haya nadie, solo hay que saber buscar.</li>
+</ul>
+<p style="text-align: justify;">Muchos viajeros nos preguntan <strong>dónde están las mejores playas de Filipinas </strong>y nos cuesta trabajo responder. Aunque las playas más conocidas y fotografiadas son las de Palawan, creemos que no se puede hablar de ninguna región en concreto. En esta enorme selección de playas filipinas vas a poder ver que a lo largo de todo el país hay lugares paradisíacos que visitar.</p>
+<p style="text-align: justify;">Obviamente, no hemos estado en todas las del país, pero nos consideramos expertos catadores en estas lides como para hacer una buena selección de las <strong>mejores playas de Filipinas</strong>.</p>
+<blockquote>
+<p style="text-align: justify;"><em>Disclaimer</em>: en un país con clima tan cambiante y en un mundo en el que “para gustos colores”, tu percepción de la playa puede cambiar mucho según el momento en el que vayas.</p>
+</blockquote>
+<h2><span style="color: #33cccc;">¿Dónde están las mejores playas de Filipinas?</span></h2>
+<p style="text-align: justify;">Aquí te dejamos un mapa para que te hagas una idea de dónde se encuentran las mejores playas de Filipinas ubicadas en el mapa. Así puedes ver en qué regiones están y cómo montar el rompecabezas de tu <strong><a href="https://www.viajarporfilipinas.com/itinerarios-viaje-filipinas/" target="_blank" rel="noopener noreferrer">itinerario de viaje por Filipinas</a></strong>. Si pinchas en cada una de ellas, te llevaremos al artículo de nuestra web correspondiente en el que encontrarás toda la información para disfrutarla.<br />
+<iframe loading="lazy" src="about:blank" width="1000" height="480" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/d/u/1/embed?mid=1qwO_rwHLo9xBXHHOLlIEXrhxWTjgKynD"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><noscript><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1qwO_rwHLo9xBXHHOLlIEXrhxWTjgKynD" width="1000" height="480"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></noscript><br />
+<span style="color: #33cccc;"> </span></p>
+<h2><span style="color: #33cccc;">Mejores playas Filipinas:</span></h2>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">1. White Beach (<a href="https://www.viajarporfilipinas.com/guia-de-port-barton/" target="_blank" rel="noopener noreferrer">Port Barton</a>)</span></h2>
+<p style="text-align: justify;">Si bien la playa principal del pueblo de Port Barton es bonita, la que se lleva todos los aplausos es la <strong>White Beach</strong>. Aunque cada vez es más popular, es un lugar tranquilo, de aguas clarísimas y cocoteros que dan sombrita. Si te entra sed, hay un pequeño resort en el que puedes comprar bebidas.</p>
+<p style="text-align: justify;">Tendrás que caminar unos 30 minutillos para llegar a ella o puedes contratar un barco, como te contamos en <strong><a href="https://www.viajarporfilipinas.com/que-hacer-port-barton/" target="_blank" rel="noopener noreferrer">Qué hacer en Port Barton</a></strong>. Si te apetece andar, no lo dudes, el camino es fabuloso y podrás aprovechar para disfrutar de otra de las mejores playas de Filipinas, la Coconut Beach.</p>
+<p>? Puedes leer más sobre esta playa y otras similares en<a title="Las mejores playas de Port Barton" href="https://www.viajarporfilipinas.com/mejores-playas-port-barton/" target="_blank" rel="noopener noreferrer"><strong> Las mejores playas de Port Barton</strong></a>.</p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-2216" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="White Beach en Port Barton" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7.jpg" /><noscript><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-2216" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7.jpg" alt="White Beach en Port Barton" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-7-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">2. Cresta de Gallo (Romblon)</span></h2>
+<p style="text-align: justify;"><strong>¡Nuestra isla/playa favorita!</strong></p>
+<p style="text-align: justify;">Te prometemos que todo lo que te habrá costado llegar hasta aquí (no es fácil, créenos) habrá merecido la pena en cuanto la divises desde la <em>bangka</em>. Esta isla inhabitada es un paraíso de arena blanca, aguas en todos los colores posibles de azul, cocoteros y, sobre todo, mucha paz. Además, desde ella se puede contemplar la silueta del Mt. Guiting-Guiting, el rey de <strong>Sibuyan</strong>. Cresta de Gallo pertenece al grupo de islas de <a href="https://www.viajarporfilipinas.com/guia-de-romblon/" target="_blank" rel="noopener noreferrer">Romblon</a> y tienes toda la información sobre cómo llegar en nuestro artículo sobre <a href="https://www.viajarporfilipinas.com/cresta-de-gallo-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Cresta de Gallo</strong></a>.</p>
+<p style="text-align: justify;">? No solo eso, Cresta de Gallo tiene, nada más y nada menos que 3 sandbars. Es, por ello, que también la hemos incluido en <a title="Las mejores lenguas de arena de Filipinas" href="https://www.viajarporfilipinas.com/mejores-lenguas-arena-filipinas/" target="_blank" rel="noopener noreferrer"><strong>Mejores lenguas de arena en Filipinas</strong></a>.</p>
+<p>¿No nos crees? ¡Echa un vistazo a este epiquísimo lugar en el vídeo! ¿No te parece una de las <strong>mejores playas de Filipinas</strong>?</p>
+<div class='et_post_video'><iframe loading="lazy" title="Cresta de Gallo, una joya de Filipinas" width="1080" height="608" src="about:blank"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/LKiPEiiw7oc?feature=oembed"></iframe><noscript><iframe title="Cresta de Gallo, una joya de Filipinas" width="1080" height="608" src="https://www.youtube.com/embed/LKiPEiiw7oc?feature=oembed"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></noscript></div>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">3. Alegría Beach (<a href="https://www.viajarporfilipinas.com/guia-de-siargao/" target="_blank" rel="nofollow noopener noreferrer">Siargao</a>)</span></h2>
+<p style="text-align: justify;">Aunque entre las cosas <a href="https://www.viajarporfilipinas.com/que-hacer-siargao/" target="_blank" rel="nofollow noopener noreferrer">que ver y que hacer en Siargao</a> no figuran muchas playas, nuestra queridísima isla puede presumir de tener una de las <strong>mejores playas de Filipinas</strong>: Alegría Beach.</p>
+<p style="text-align: justify;">Esta se encuentra en la punta noreste de la isla, en un pequeño pueblo en el que no hay ni un solo hotel. Los pocos visitantes que esta maravilla suele recibir son gente local que va a hacer un pic-nic durante los fines de semana.</p>
+<p style="text-align: justify;">Además, al contrario que ocurre con el resto de playas de la isla, esta tiene una barrera coralina, pero <strong>no se ve afectada por la marea baja</strong>, por lo que siempre es ideal para pegarse un chapuzón en sus calmadas aguas. ¡Nos encanta!</p>
+<p style="text-align: justify;">?️ Puedes conocerlo todo sobre ella y otras más en nuestro artículo <a title="Las mejores playas de Siargao" href="https://www.viajarporfilipinas.com/playas-siargao/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de Siargao</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2230" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Alegría Beach en Siargao" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2230" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19.jpg" alt="Alegría Beach en Siargao" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-19-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">4. Hidden Beach (El Nido)</span></h2>
+<p style="text-align: justify;">En los <strong><a href="https://www.viajarporfilipinas.com/que-hacer-el-nido-filipinas/" target="_blank" rel="noopener noreferrer"><em>island hopping</em> de El Nido</a> </strong>verás, además de los preciosos <em>lagoons</em>, unas playazas de infarto. Es difícil escoger entre todas, pero quizás es Hidden Beach la que merece ser incluida en esta lista de las mejores playas.</p>
+<p style="text-align: justify;">La “playa Escondida” recibe su nombre porque no es posible verla desde el mar, puesto que tienes que pasar por un <strong>estrecho pasadizo</strong> en la roca para maravillarte con la visión. ¿Te imaginas una franja de arena blanca, bañada por aguas hiper-mega-transparantes y recluida por paredes de roca caliza?</p>
+<blockquote>
+<p style="text-align: justify;">Podrás visitar esta maravillosa playa filipina si haces el tour C.</p>
+</blockquote>
+<p>?️ Si vas a visitar El Nido, no te pierdas nuestro artículo con las <a title="Las mejores playas de El Nido (sin hacer island hopping)" href="https://www.viajarporfilipinas.com/mejores-playas-el-nido/" target="_blank" rel="noopener noreferrer"><strong>Mejores playas de El Nido</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2213" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20785'%3E%3C/svg%3E" alt="Hidden Beach en El Nido" width="1000" height="785" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2-300x236.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2-768x603.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2213" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2.jpg" alt="Hidden Beach en El Nido" width="1000" height="785" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2-300x236.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-2-768x603.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">5. Kalanggaman Island</span></h2>
+<p style="text-align: justify;">La <strong>épica lengua de arena</strong> de Kalanggaman bien le merece el título de una de las mejores playas de Filipinas. Además, en esta isla próxima a <strong><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/" target="_blank" rel="noopener noreferrer">Malapascua</a></strong>, desde la que podrás acceder, también encontrarás preciosas playas en su extremo norte, donde hay un pequeño hotelito de cabañas (muy básicas) en el que pasar una noche y olvidarte del resto del mundo.</p>
+<p>?️ Descubre más sobre este paraíso en el artículo: <strong><a href="https://www.viajarporfilipinas.com/kalanggaman-island-filipinas-como-llegar/" target="_blank" rel="noopener noreferrer">Kalanggaman Island: excursión a la épica lengua de arena</a></strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2229" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Kalanggaman Island" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2229" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18.jpg" alt="Kalanggaman Island" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-18-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">6. Paradise Beach (<a href="https://www.viajarporfilipinas.com/bantayan/" target="_blank" rel="noopener noreferrer">Bantayan</a>)</span></h2>
+<p style="text-align: justify;"><strong><a href="https://www.viajarporfilipinas.com/bantayan/" target="_blank" rel="noopener noreferrer">Bantayan</a> </strong>es una de las islas que reúne algunas de las playas más bonitas de Filipinas sin necesidad de hacer ningún tour. Aunque <strong>Kota Beach</strong> es una verdadera maravilla, si tenemos que elegir una, nos quedamos con Paradise Beach. De ella nos gusta no solo su entorno paradisíaco y su agüita tranquila, sino su paz, ya que no suele estar para nada concurrida.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-6188" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Paradise Beach Bantayan" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-6188" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500.jpg" alt="Paradise Beach Bantayan" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-500-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">7. Langob Beach (<a href="https://www.viajarporfilipinas.com/guia-de-malapascua/" target="_blank" rel="noopener noreferrer">Malapascua</a>)</span></h2>
+<p style="text-align: justify;">“A Malapascua solo te recomendamos ir si buceas”… ¡Anda ya! En Malapascua hay <strong>playacas de postal</strong> como Langob Beach, al norte de la isla.</p>
+<p style="text-align: justify;">Desde hace unos años hay un proyecto de hotel que nunca llega a concretarse, pero un hotel de la costa de Cebú es propietario del terreno y hay instalado un par de sombrillas para llevar a sus clientes a esta maravilla playera de Bisayas.</p>
+<p style="text-align: justify;">El mar suele ser un plato, la playa está bien cuidada y limpia y los niños de Malapascua suelen estar amenizando el ambiente. Además, hay un par de puestecillos para comprar un <em>buko</em> o una cervecita fría.</p>
+<p style="text-align: justify;">Por cierto, tampoco le hacemos ascos a <strong>Bounty Beach</strong>. En nuestros artículos sobre <strong><a href="https://www.viajarporfilipinas.com/que-hacer-en-malapascua/" target="_blank" rel="noopener noreferrer">qué hacer en Malapascua</a> y las <a title="Las mejores playas de Malapacua" href="https://www.viajarporfilipinas.com/playas-malapascua/" target="_blank" rel="noopener noreferrer">mejores playas de Malapascua </a></strong>te damos algunos consejillos sobre las mejores zonas de esta enorme playa.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2231" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20768'%3E%3C/svg%3E" alt="Langob Beach en Malapascua" width="512" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20.jpg 512w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20-200x300.jpg 200w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2231" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20.jpg" alt="Langob Beach en Malapascua" width="512" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20.jpg 512w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-20-200x300.jpg 200w" sizes="(max-width: 512px) 100vw, 512px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">8. Las Cabañas (<a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="noopener noreferrer">El Nido</a>)</span></h2>
+<p style="text-align: justify;">Aunque cada vez hay más hotelitos y chiringuitos que le roban su tranquilidad, Las Cabañas es una de las mejores playas de Filipinas. Situada a apenas 15 minutos de <a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="noopener noreferrer">El Nido</a> Town, lo mejor de esta playa son las <strong>vistas que tiene del archipiélago de Bacuit</strong>.</p>
+<p style="text-align: justify;">Las Cabañas es un sitio ideal para ver la puesta de sol, pero también para las emociones fuertes, porque hay una <strong>tirolina</strong> muy cañera.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Atardecer en Las Cabañas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2225" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13.jpg" alt="Atardecer en Las Cabañas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-13-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">9. Banul Beach (<a href="https://www.viajarporfilipinas.com/guia-de-coron/" target="_blank" rel="noopener noreferrer">Coron</a>)</span></h2>
+<p style="text-align: justify;">Si vas a visitar <strong><a href="https://www.viajarporfilipinas.com/que-hacer-coron/" target="_blank" rel="noopener noreferrer">Coron</a> </strong>–algo que te recomendamos encarecidamente- tienes que hacer el <em><strong>island hopping</strong></em> alrededor de Coron Island. Aunque son los <em>lagoons</em> y los lagos sus puntos fuertes, en la isla hay también playas espectaculares. Una de nuestras favoritas es Banul Beach.</p>
+<p style="text-align: justify;">Lo que te enamorará de ella será el contraste del blanco de la arena coralina con el negro de la roca caliza, ¡brutal! Además, tiene algunas <strong>cabañitas</strong> para comer encaramadas en la pared, que la hacen de lo más fotogénico.</p>
+<blockquote>
+<p style="text-align: justify;"><span style="color: #33cccc;"><strong>De viajero a viajero</strong>:</span> procura visitarla fuera de las horas de comida para disfrutarla sin otros barcos. Para ello, lo mejor es que contrates un barco privado, como te contamos en <a href="https://www.viajarporfilipinas.com/island-hopping-coron/" target="_blank" rel="noopener noreferrer"><strong>Island hopping en Coron</strong></a>.</p>
+</blockquote>
+<p><img decoding="async" class="aligncenter size-full wp-image-2232" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20768'%3E%3C/svg%3E" alt="Banul Beach en Coron" width="576" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23-225x300.jpg 225w" data-lazy-sizes="(max-width: 576px) 100vw, 576px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2232" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23.jpg" alt="Banul Beach en Coron" width="576" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-23-225x300.jpg 225w" sizes="(max-width: 576px) 100vw, 576px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">10. White Beach (Boracay)</span></h2>
+<p style="text-align: justify;">Sería raro que en una lista de las <strong>mejores playas de Filipinas</strong> no apareciese la famosísima y catalogada en varias ocasiones como una de las mejores del mundo: White Beach de Boracay.</p>
+<p style="text-align: justify;">Es cierto, esta playa es <strong>un 10 de 10</strong>. Posiblemente es la que tenga la mejor calidad de la arena (es arena tipo polvo, blanca, suave…) y el agua más calmada de todas (cuando es temporada de <em>Amihan</em>, es decir, de diciembre a mayo), pero hay que ser realista: el <strong>ambiente</strong> no convence a todos.</p>
+<p style="text-align: justify;">La Punta Cana de Filipinas ahora cuenta con un montón de resorts y bares, sobre todo en las Station 1 y 2, por lo que no es un sitio adecuado si lo que buscas es tranquilidad absoluta. En <a href="https://www.viajarporfilipinas.com/que-hacer-boracay/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Boracay</strong></a> te contamos mucho más.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2226" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Station 3 de la White Beach de Boracay" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2226" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14.jpg" alt="Station 3 de la White Beach de Boracay" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-14-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">11. Guyam Island (<a href="https://www.viajarporfilipinas.com/guia-de-siargao/" target="_blank" rel="noopener noreferrer">Siargao</a>)</span></h2>
+<p style="text-align: justify;">¿Quieres estar en la <strong>típica isla de las películas</strong>? Un pequeño trozo de arena redondo con palmeras y arena blanca, ¡la encontrarás cerca de Siargao!</p>
+<p style="text-align: justify;">Esta es una de las islas del <em>island hopping</em> típico <strong><a href="https://www.viajarporfilipinas.com/que-hacer-siargao/" target="_blank" rel="noopener noreferrer">que hacer en Siargao</a></strong> y, aunque cada vez recibe más turismo, es un lugar paradisíaco que visitar al menos una vez en la vida.</p>
+<p style="text-align: justify;">⭐ Por cierto, si vas a <a href="https://www.viajarporfilipinas.com/viajar-filipinas-julio/" target="_blank" rel="noopener noreferrer">viajar a Filipinas en julio</a> o en <a href="https://www.viajarporfilipinas.com/viajar-filipinas-agosto/" target="_blank" rel="noopener noreferrer">agosto</a>, tienes que saber que Siargao es un sitio ideal para incluir en tu itinerario, ya que allí es época seca.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2233" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20768'%3E%3C/svg%3E" alt="Guyam Island Siargao" width="576" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21-225x300.jpg 225w" data-lazy-sizes="(max-width: 576px) 100vw, 576px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2233" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21.jpg" alt="Guyam Island Siargao" width="576" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-21-225x300.jpg 225w" sizes="(max-width: 576px) 100vw, 576px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">12. Bonbon Beach (<a href="https://www.viajarporfilipinas.com/guia-de-romblon/" target="_blank" rel="noopener noreferrer">Romblon</a>)</span></h2>
+<p style="text-align: justify;">Romblon es nuestro último gran descubrimiento y no podemos dejar de mencionarla por todos lados. Además de la atmósfera de una isla sin apenas turismo, en ella podemos decirte que están algunas de las <strong>mejores playas de Filipinas</strong>.</p>
+<p style="text-align: justify;">Para playa ESPECTACULAR está Bonbon Beach, una de las más bonitas <a title="Las mejores lenguas de arena de Filipinas" href="https://www.viajarporfilipinas.com/mejores-lenguas-arena-filipinas/" target="_blank" rel="noopener noreferrer">lenguas de arena de Filipinas</a> y menos visitadas. Imagina una lengua de arena que te conecta con un islote deshabitado en marea baja, ¡no puede haber nada más paradisíaco que esto!</p>
+<p style="text-align: justify;">Además, no menosprecies otras playas <a href="https://www.viajarporfilipinas.com/que-hacer-romblon/" target="_blank" rel="noopener noreferrer">que ver en Romblon</a> como la vecina <strong>Tiamban Beach</strong> o la perdidísima <strong>Lintian Beach</strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2217" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20487%20650'%3E%3C/svg%3E" alt="Bonbon Beach en Romblon" width="487" height="650" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9-225x300.jpg 225w" data-lazy-sizes="(max-width: 487px) 100vw, 487px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2217" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9.jpg" alt="Bonbon Beach en Romblon" width="487" height="650" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9.jpg 487w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-9-225x300.jpg 225w" sizes="(max-width: 487px) 100vw, 487px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">13. Paliton Beach (<a href="https://www.viajarporfilipinas.com/guia-de-siquijor/" target="_blank" rel="noopener noreferrer">Siquijor</a>)</span></h2>
+<p style="text-align: justify;">Muchos dicen que las playas de Siquijor no merecen la pena. Si bien es cierto que no son las más increíbles de Filipinas, sí que creemos que estas (junto a otras actividades) bien justifican un salto hasta la isla.</p>
+<p style="text-align: justify;">La de Paliton es la más conocida. Su arena polvo blanca enamora, así como las preciosas palmeras que te darán sombra. Eso sí, procura visitarla con la marea alta, ya que cuando está baja se imposibilita un poco el baño. Otro momentazo para verla es durante la puesta de sol. En serio, desde Paliton hemos visto algunos de los mejores <strong>atardeceres</strong> de nuestra vida.</p>
+<p style="text-align: justify;">?️ Además, ¿sabías que en Siquijor hay alguna que otra playa secreta? En nuestro artículo sobre <b>las <a title="Las mejores playas de Siquijor" href="https://www.viajarporfilipinas.com/mejores-playas-siquijor/" target="_blank" rel="noopener noreferrer">mejores playas de Siquijor</a></b> las descubrirás.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2218" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20666'%3E%3C/svg%3E" alt="Paliton Beach en Siquijor" width="1000" height="666" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10-768x511.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2218" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10.jpg" alt="Paliton Beach en Siquijor" width="1000" height="666" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-10-768x511.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">14. Quinale Beach (Anda, <a href="https://www.viajarporfilipinas.com/guia-de-bohol/" target="_blank" rel="noopener noreferrer">Bohol</a>)</span></h2>
+<p style="text-align: justify;">La fama se la lleva <strong>Alona</strong> Beach y muchos solo se quedan en la preciosa <strong>Dumaluan</strong>, pero una de las mejores playas de Filipinas está en la zona de <a href="https://www.viajarporfilipinas.com/que-ver-anda-bohol/" target="_blank" rel="noopener noreferrer">Anda, en Bohol</a>.</p>
+<p style="text-align: justify;">Con un turismo más bien local que la visita solo durante los fines de semana, de lunes a viernes podrás disfrutar de esta enorme franja de arena blanca en total paz. En el centro de <strong>Quinale Beach</strong> hay un pequeño chiringuito del gobierno con unas cabañitas muy fotogénicas que podrás utilizar. Además de ser súper económico, por la noche puedes comer con los pinreles casi en el agua.</p>
+<p>⛱️ Si vas a incluir Bohol en tu recorrido por Filipinas, no dudes en echarle un vistazo a nuestro artículo sobre <a title="Las mejores playas de Panglao y Bohol" href="https://www.viajarporfilipinas.com/mejores-playas-panglao-bohol/" target="_blank" rel="noopener noreferrer"><strong>Las mejores playas de Bohol y Panglao</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2219" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Anda en Bohol" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2219" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6.jpg" alt="Anda en Bohol" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-6-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">15. Cabugao Gamay Island (Islas de Gigantes)</span></h2>
+<p style="text-align: justify;">Islas de Gigantes es un destino cada vez más conocido entre los viajeros filipinos, pero son pocos los extranjeros que se animan a conocer este grupo de islas al norte de Panay. Aunque las playas de Gigantes Norte o Sur, donde se suele hacer base, no son las mejores, este <em>island hopping</em> <strong>nada masificado</strong> te llevará a conocer la preciosa Cabugao Gamay Island, donde podrás disfrutar de esta maravillosa playa filipina.</p>
+<p>⭐ Lee más sobre este rincón tan interesante en nuestra <a title="Guía de Islas de Gigantes: qué hacer, cómo llegar y dónde dormir" href="https://www.viajarporfilipinas.com/islas-de-gigantes-que-hacer/" target="_blank" rel="noopener noreferrer"><strong>Guía de Islas de Gigantes</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2223" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20529'%3E%3C/svg%3E" alt="Cabugao Gamay Island, Islas de Gigantes" width="1000" height="529" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11-300x159.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11-768x406.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2223" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11.jpg" alt="Cabugao Gamay Island, Islas de Gigantes" width="1000" height="529" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11-300x159.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-11-768x406.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">16. Nacpan Beach (El Nido)</span></h2>
+<p style="text-align: justify;">Son muchos los viajeros que incluirán Nacpan Beach dentro de la lista de las mejores playas de Filipinas. Normal, estamos ante una de las <strong>franjas de arena más vírgenes</strong> de la famosa Palawan.</p>
+<p style="text-align: justify;">Situada a unos 40 minutos del centro de El Nido Town, lo que te enamorará de Nacpan es su enorme tamaño, sus palmeras y su ambiente relajado. Aunque cada vez hay más bares y han construido algún hotel que otro, si caminas hacia el extremo norte es muy probable que no veas ni un alma.</p>
+<p style="text-align: justify;">⭐ Por cierto, recuerda subir al <strong>mirador</strong> para disfrutar de las vistazas de esta enorme playa palaweña.</p>
+<p style="text-align: justify;">¿Quieres aún más soledad? En nuestro artículo sobre <a href="https://www.viajarporfilipinas.com/que-hacer-el-nido-filipinas/" target="_blank" rel="noopener noreferrer"><strong>qué ver y qué hacer en El Nido</strong></a> encontrarás más playas paradisíacas en El Nido. Además, si tienes días de sobra en Palawan, puede ser una buena idea quedarte a dormir en alguno de los hoteles de Nacpan, los mejores son: <strong><a href="https://www.booking.com/hotel/ph/nacpan-glamping.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Nacpan Beach Glamping</a> </strong>y <strong><a href="https://www.booking.com/hotel/ph/seaside-hue-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Seaside Hue Resort</a></strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2220" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Nacpan Beach en Palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2220" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5.jpg" alt="Nacpan Beach en Palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-5-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2><span style="color: #33cccc;">17. White Island (Camiguin)</span></h2>
+<p style="text-align: justify;">Aunque las playas de la propia isla de <strong><a title="Camiguín" href="https://www.viajarporfilipinas.com/guia-de-camiguin/" target="_blank" rel="noopener noreferrer">Camiguin</a></strong>, al ser el lugar de la tierra con más volcanes por metro cuadrado del mundo, son en su mayoría de arena negra volcánica, junto a ella hay dos islas espectaculares que no te puedes perder si te gustan las playas. La de White Island es, sin dudarlo un instante, una de las mejores playas de Filipinas.</p>
+<p style="text-align: justify;">Se trata de una lengua de arena desnuda a apenas 5 minutos en barco del pueblo de Yumbing. Ya de por sí es preciosa, pues tiene arena fina y blanca y está bañada por el agua más transparente que puedas imaginar, pero es que, además, desde ella se ven unas vistas espectaculares de Camiguin y sus volcanes. El <a title="Trekking al Hibok-Hibok: la estrella del senderismo en Camiguin" href="https://www.viajarporfilipinas.com/trekking-hibok-hibok/" target="_blank" rel="noopener noreferrer"><strong>Hibok-Hibok</strong></a> luce aún más bonito desde este pedacito de paraíso.</p>
+<p style="text-align: justify;">⭐ Tienes toda la info para preparar tu visita a White Island en<a title="Island hopping en Camiguin: la guía definitiva" href="https://www.viajarporfilipinas.com/island-hopping-camiguin/" target="_blank" rel="noopener noreferrer"><strong> Island hopping en Camiguin</strong></a> y, además, puedes ver <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQzNjMyMzgxODA1MTYy?igshid=1vs95ckgikf2x&amp;story_media_id=2177573092099216231" target="_blank" rel="nofollow noopener noreferrer"><strong>nuestros Stories sobre esta visita en Instagram</strong></a>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5586" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="white island mejores playas filipinas" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50-480x320.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5586" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50.jpg" alt="white island mejores playas filipinas" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50-980x654.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-50-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">18. Pandan Island (Mindoro)</span></h2>
+<p style="text-align: justify;">Cuando fuimos a bucear a <a title="Guía de Apo Reef" href="https://www.viajarporfilipinas.com/buceo-apo-reef-filipinas/" target="_blank" rel="noopener"><strong>Apo Reef</strong></a> (uno de nuestros sitios favoritos para <a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">bucear en Filipinas</a>) nos alojamos en el poco turístico pueblo de Sablayan. Poco nos hacía imaginar que a apenas 10 minutos en <em>bangka</em> nos encontraríamos con una de las mejores playas de Filipinas, la de Pandan Island.</p>
+<p style="text-align: justify;">Allí se encuentra el Pandan Island Resort, un pequeño hotel con cabañitas que casi siempre suele estar lleno, pero que permite recibir turistas para pasar el día (por una pequeña tasa), disfrutar de la paz de una playa paradisíaca y hacer <strong>snorkel con tortugas</strong>. Sí, ¡has oído bien!</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2212" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20664'%3E%3C/svg%3E" alt="Pandan Island en Mindoro" width="1000" height="664" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1-300x199.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1-768x510.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2212" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1.jpg" alt="Pandan Island en Mindoro" width="1000" height="664" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1-300x199.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-1-768x510.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">19. Kawhagan Island (Siargao)</span></h2>
+<p style="text-align: justify;">Aunque en <a href="https://www.viajarporfilipinas.com/guia-de-siargao/" target="_blank" rel="noopener noreferrer">Siargao </a>nos gustan muchas playas (la de Alegría y la de Malinao nos encantan), sí tenemos que confesar que la mayoría no son dignas de ser consideradas las mejores del país. Aun así, hay una <strong>JOYA</strong> en la isla vecina de Kawhagan.</p>
+<p style="text-align: justify;">Esta isla se suele visita junto al <strong>Sugba Lagoon</strong>, tomando uno de los barcos desde Del Carmen, y muchos viajeros son los que caen rendidos ante ella. Se trata de una isla con una enorme <em>sandbar</em> blanca y aguas transparentes a ambos lados. ¡Arrebatadora!</p>
+<p style="text-align: justify;">Por cierto, justo enfrente de Kawhagan hay una playa también espectacular llamada Pamomoan Beach. ¡No duces en incluirla en tu <a href="https://www.viajarporfilipinas.com/island-hopping-siargao/" target="_blank" rel="noopener noreferrer"><strong>island hopping en Siargao</strong></a>!</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2235" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20768'%3E%3C/svg%3E" alt="Kawhagan Island Siargao" width="576" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1-225x300.jpg 225w" data-lazy-sizes="(max-width: 576px) 100vw, 576px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2235" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1.jpg" alt="Kawhagan Island Siargao" width="576" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1.jpg 576w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-22-1-225x300.jpg 225w" sizes="(max-width: 576px) 100vw, 576px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">20. Cobrador Island (Romblon)</span></h2>
+<p style="text-align: justify;">Dentro del grupo de islas de <a href="https://www.viajarporfilipinas.com/guia-de-romblon/" target="_blank" rel="noopener noreferrer">Romblon</a>, nos conquistaron 2 islas (Cresta de Gallo) y de la que te vamos a hablar ahora: Cobrador.</p>
+<p style="text-align: justify;">A esta pequeña isla paradisíaca fuimos <strong>desde Romblon Island</strong>, combinándola con otras como Alad y Lugbung. Sabíamos que podía estar bien, pero no nos imaginábamos que nos encontraríamos con una de las playas que más nos han gustado de nuestros viajes a Filipinas.</p>
+<p style="text-align: justify;">En serio, no hay ni un restaurante ni un hotel, NADA, pero estas playas de arena blanca, aguas transparentes y con vistas a las montañas de Tablas nos han obligado a incluirla sí o sí de nuevo en nuestras próximas visitas.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2221" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20768'%3E%3C/svg%3E" alt="Cobrador Island en Romblon" width="512" height="768" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8.jpg 512w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8-200x300.jpg 200w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2221" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8.jpg" alt="Cobrador Island en Romblon" width="512" height="768" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8.jpg 512w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-8-200x300.jpg 200w" sizes="(max-width: 512px) 100vw, 512px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">21. Saud Beach (Pagudpud)</span></h2>
+<p style="text-align: justify;">Cuando visitamos esta playa hace unos años se decía que sería la próxima Boracay, <strong>la Boracay del norte</strong> de Filipinas. Sin embargo, aunque ya se pueden ver algunos hotelitos y bares, es muy probable que si decides salirte de los itinerarios típicos te encuentres solo en esta maravillosa playa. Ubicada al norte más norte de Luzón, son pocos los que llegan hasta esta estupenda playa filipina</p>
+<p style="text-align: justify;">Por cierto, te queda muy cerca <strong>Blue Lagoon Beach</strong>, ¡no te la pierdas!</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2214" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20648'%3E%3C/svg%3E" alt="Saud Beach en Pagudpud, Luzón" width="1000" height="648" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3-300x194.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3-768x498.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2214" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3.jpg" alt="Saud Beach en Pagudpud, Luzón" width="1000" height="648" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3-300x194.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-3-768x498.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2><span style="color: #33cccc;">22. Mantigue Island (Camiguin)</span></h2>
+<p style="text-align: justify;">Unas líneas más arriba te hablábamos de los encantos de la preciosa White Island en Camiguin, pues no hemos podido resistirnos a incluir en esta lista de las mejores playas de Filipinas a su hermana, Mantigue Island. La playa ininterrumpida que rodea a esta minúscula isla frente a las costas de la «Isla nacida del Fuego» es una de las más bonitas que hemos visto en nuestra vida.</p>
+<p style="text-align: justify;">Además de ser de muy fácil acceso, en su santuario marino se pueden encontrar un montón de tortugas marinas y, por ello, es uno de los mejores sitios tanto para <strong><a title="Los mejores sitios para hacer snorkel en Filipinas" href="https://www.viajarporfilipinas.com/snorkel-filipinas/" target="_blank" rel="noopener noreferrer">hacer esnórquel en Filipinas</a></strong> como para <strong><a title="Los mejores lugares de buceo en Filipinas" href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">bucear</a></strong>.</p>
+<p style="text-align: justify;">?️ Descubre cómo llegar y qué hacer en nuestra <a title="Island hopping en Camiguin: la guía definitiva" href="https://www.viajarporfilipinas.com/island-hopping-camiguin/" target="_blank" rel="noopener noreferrer"><strong>guía sobre el Island hopping en Camiguin</strong></a>.</p>
+<p><img decoding="async" class="wp-image-5587 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="mantigue mejor playa de filipinas" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51.jpg" /><noscript><img decoding="async" class="wp-image-5587 size-full" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51.jpg" alt="mantigue mejor playa de filipinas" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-51-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">23. Pinagbuyutan Island (El Nido)</span></h2>
+<p style="text-align: justify;">Cuando uno ve la peculiar <strong>cabaña</strong> ubicada en Pinagbuyutan Island piensa que se quedaría toda la vida a vivir allí. Es normal, esta pequeña playa que se visita durante el <strong>tour B</strong> de <a href="https://www.viajarporfilipinas.com/guia-de-el-nido/" target="_blank" rel="nofollow noopener noreferrer">El Nido</a> es un lugar paradisíaco. Aunque no es muy grande, el sentirte en un lugar único en el planeta, bajo esas enormes pareces de piedra caliza con formaciones del proceso kárstico es simplemente una pasada.</p>
+<p>¿Sabías que este es, además, uno de los <a title="Filipinas en Instagram: las mejores localizaciones para tus fotos" href="https://www.viajarporfilipinas.com/filipinas-instagram-localizaciones/" target="_blank" rel="noopener noreferrer"><strong>rincones más famosos de Filipinas en Instagram</strong></a>?</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2222" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Pignabutuyan Island en El Nido" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2222" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12.jpg" alt="Pignabutuyan Island en El Nido" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-12-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">24. Nagtabon Beach (Puerto Princesa, Palawan)</span></h2>
+<p style="text-align: justify;">Puerto Princesa, la capital de Palawan, no es la ciudad más bonita del país, pero sí que te espera con alguna que otra sorpresa. Si te quedas un día por allí, no dejes de visitas la bonita playa filipina de <strong>Nagtabon</strong>, ubicada a unos kilómetros de la ciudad. Echa un ojo a <a href="https://www.viajarporfilipinas.com/que-hacer-puerto-princesa-palawan/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Puerto Princesa</strong></a> y descubre cómo llegar.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2227" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20667'%3E%3C/svg%3E" alt="Nagtabon Beach en Palawan" width="1000" height="667" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17-768x512.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2227" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17.jpg" alt="Nagtabon Beach en Palawan" width="1000" height="667" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17-300x200.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-17-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">25. Puka Beach (Boracay)</span></h2>
+<p style="text-align: justify;">En Boracay hay mucho más que hacer que tumbarse en alguna de las <em>stations</em> de White Island. Un buen ejemplo es la estupendísima Puka Beach, que no podía dejar de aparecer en esta lista de las mejores playas de Filipinas. Mucho más <strong>salvaje</strong>, en ella también podrás disfrutar de aguas turquesas, arena blanca y cocoteros.</p>
+<p style="text-align: justify;">Aunque los planes urbanísticos ya incluyen hasta un casino cercano (lloramos fuerte), la última vez que la visitamos solo tenía un <strong>par de chiringuitos</strong> de estilo rastafari con algunas sombrillas. Esperamos que continúe así durante mucho tiempo.</p>
+<p>En <a href="https://www.viajarporfilipinas.com/que-hacer-boracay/" target="_blank" rel="noopener noreferrer"><strong>Qué hacer en Boracay</strong></a> encontrarás aún más playas que visitar en la isla más famosa de Filipinas.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2228" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Puka Beach en Boracay " width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2228" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15.jpg" alt="Puka Beach en Boracay " width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-15-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">26. Malcapuya Island (Coron)</span></h2>
+<p style="text-align: justify;">Malcapuya es una de las islas que se visita durante el <strong>Escapade Tour </strong>de Coron, del que te hablamos en la lista de cosas <a href="https://www.viajarporfilipinas.com/que-hacer-coron/" target="_blank" rel="noopener noreferrer">que hacer en Coron</a>. Este recorrido también te llevará a recorrer otros playazos como los de Bulog Dos o Banana Island, pero la playa de Malcapuya se quedó con nuestro corazón.</p>
+<p style="text-align: justify;">Además, hay un par de cabañas en los que pasar la noche. ¿Quién se imagina al más puro estilo Robinson Crusoe durante unas horas?</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2236" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="Malcapuya Island Coron" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-510x382.jpg 510w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2236" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24.jpg" alt="Malcapuya Island Coron" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-300x225.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-768x576.jpg 768w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-24-510x382.jpg 510w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">27. Cuatro Islas (Leyte)</span></h2>
+<p style="text-align: justify;">Aunque no se habla casi nada de Leyte, esta isla filipina también tiene unas playas brutales. Nosotros nos animamos a salirnos de la ruta habitual y visitar las llamadas Cuatro Islas, un conjunto de islas situado al suroeste de la costa de Leyte. ¿Qué te espera aquí? ¡Un<em> island hopping</em> con preciosas playas en las que n<strong>o vas a encontrar a casi nadie</strong>!</p>
+<p style="text-align: justify;">Nuestras 2 preferidas son Mahaba Island y Digyo, pero puedes encontrar toda la información sobre ellas en nuestro artículo sobre el <a title="Tour de las Cuatro Islas: island hopping en Leyte" href="https://www.viajarporfilipinas.com/tour-cuatro-islas-leyte/" target="_blank" rel="noopener noreferrer"><strong>Tour de las Cuatro Islas: island hopping en Leyte</strong></a>.</p>
+<p>? También puedes ver los <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTk5MjQxODI2MjcyNDQz?igshid=34ihigr9jpem" target="_blank" rel="nofollow noopener noreferrer"><strong>Stories de Instagram</strong></a> de este día mágico. ¡Síguenos para más contenido como este!</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-5589" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20750'%3E%3C/svg%3E" alt="mejores playas filipinas digyo island leyte" width="1000" height="750" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53-480x360.jpg 480w" data-lazy-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-5589" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53.jpg" alt="mejores playas filipinas digyo island leyte" width="1000" height="750" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53-980x735.jpg 980w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejores-playas-filipinas-53-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1000px, 100vw" /></noscript></p>
+<h2 style="text-align: justify;"><span style="color: #33cccc;">28. Talipanan Beach (Puerto Galera, Mindoro)</span></h2>
+<p style="text-align: justify;">Cerramos la lista de las mejores playas de Filipinas con, Puerto Galera, <strong>“la playa de Manila”</strong>. Aunque queda a unas 4 horas del centro de la capital, es el sitio al que los manileños suelen ir a pasar el fin de semana. En esta zona de Mindoro, encontrarás varias playas bonitas, pero la que te recomendamos es Talipanan Beach.</p>
+<p style="text-align: justify;">Si te animas a visitar esta parte de Filipinas que los extranjeros no frecuentan demasiado, vas a encontrarte una enorme <strong>franja de arena rubia y limpia</strong> donde reina la tranquilidad absoluta, sobre todo de lunes a viernes. Hay pequeños resorts, como el <a href="https://www.booking.com/hotel/ph/ara-beach-resort.es.html?aid=1542173&amp;no_rooms=1&amp;group_adults=1" target="_blank" rel="nofollow noopener noreferrer">Ara Beach Resort</a>, que están justo a pie de playa en los que los días pasarán rapidísimo. Por cierto, en Puerto Galera encontrarás interesantes inmersiones y, por ello, lo hemos incluido como uno de <strong><a href="https://www.viajarporfilipinas.com/buceo-filipinas/" target="_blank" rel="noopener noreferrer">los mejores lugares de buceo en Filipinas</a></strong>.</p>
+<p style="text-align: center;">En nuestra <a title="Guía de Puerto Galera: qué hacer, dónde dormir y consejos" href="https://www.viajarporfilipinas.com/puerto-galera-que-hacer/" target="_blank" rel="noopener noreferrer"><strong>Guía de Puerto Galera</strong></a> encontrarás toda la información sobre este destino.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-2240" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20664'%3E%3C/svg%3E" alt="Puerto Galera en Filipinas" width="1000" height="664" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24-300x199.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24-768x510.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-2240" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24.jpg" alt="Puerto Galera en Filipinas" width="1000" height="664" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24.jpg 1000w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24-300x199.jpg 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/09/mejor-playa-filipinas-24-768x510.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript></p>
+<p style="text-align: center;">Se nos ocurren otras 28 más, pero hemos tenido que elegir y dejar margen para una segunda entrega&#8230;</p>
+<p style="text-align: center;"><em>¿Nos recomendarías alguna que otra playa de Filipinas para nuestra próxima aventura? ¡Te esperamos en los comentarios!</em></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+					
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">145 Comentarios</h1>
+						<div class="comment_navigation_top clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/comment-page-6/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-53205">
+		<article id="comment-53205" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Alba</span>				<span class="comment_date">
+					el 24/02/2025 a las 23:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas qué tal!! No dejo de leer el blog. Tenemos un vuelo para mayo que llega a cebu y solo tenemos 6 días . Qué ruta nos recomendáis más. Buscamos buenas playas y aventura. Mil gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-53205' data-commentid="53205" data-postid="2209" data-belowelement="comment-53205" data-respondelement="respond" data-replyto="Responder a Alba" aria-label='Responder a Alba'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-53240">
+		<article id="comment-53240" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 25/02/2025 a las 13:58				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Alba, pues quizás haríamos un combinado de Bohol y Siquijor : )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-52985">
+		<article id="comment-52985" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Victor</span>				<span class="comment_date">
+					el 20/02/2025 a las 10:16				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola. Es increible lo que haceis. Estamos planificando nuestro viaje de 22 días por Filipinas con vuestra web. Tenemos pensado realizar esta ruta, El Nido, Coron, Puerto Princesa (tiburón ballena) , Mala Pascua (buceo tiburón zorro), Camiguin y Siargao, destinando más volumen de días a Coron, Camiguin y Siargao. </p>
+<p>Iremos durante todo el agosto, veis acertada la ruta por el clima? A veces leo contradicciones de donde es mejor ir por tema lluvias, tifones. Realmente, no nos preocupa el clima, sabemos lo que es viajar por Asia en verano, pero queremos aprovechar los maximos días de cielos claros y soleados.</p>
+<p>Si recomendais algun contacto para tours privados en las zonas indicadas, os lo agradeceriamos. </p>
+<p>Gracias por la ayuda 🙂</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52985' data-commentid="52985" data-postid="2209" data-belowelement="comment-52985" data-respondelement="respond" data-replyto="Responder a Victor" aria-label='Responder a Victor'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52988">
+		<article id="comment-52988" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/02/2025 a las 10:29				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Víctor, ¡muchas gracias! Lo mejor es que lo pongas día por día para ver cómo se os quedaría porque a priori así nos parece demasiado y, si queréis, nos lo podéis enviar a <a href="mailto:info@viajarporfilipinas.com">info@viajarporfilipinas.com</a> y le echamos un vistazo. En cuanto a la climatología, nosotros realmente no le daríamos mucha vuelta a eso por lo que señalas. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-52545">
+		<article id="comment-52545" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lucia</span>				<span class="comment_date">
+					el 12/02/2025 a las 18:47				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola! Cómo andan? Estamos planeando nuestra luna de miel, y luego de dos grandes ciudades del mundo, queremos un destino con playas paradisiacas. Estamos pensando en filipinas, pero contamos solamente con 6 7 días para esta última parte del viaje. Estuvimos viendo el Island hopping de el nido, pero no sabemos si es la mejor opción. En caso de elegir este lugar, en que zona nos recomiendan hospedarnos?</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-52545' data-commentid="52545" data-postid="2209" data-belowelement="comment-52545" data-respondelement="respond" data-replyto="Responder a Lucia" aria-label='Responder a Lucia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-52583">
+		<article id="comment-52583" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 13/02/2025 a las 01:13				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lucía, ¡muchas felicidades por vuestra boda y qué bien que vengáis por Filipinas! Pues pensamos que El Nido puede estar genial. Si el presupuesto no es problema, tenéis resorts increíbles para una luna de miel, los puedes ver en <a href="https://www.viajarporfilipinas.com/mejores-resorts-el-nido/" title="Los mejores resorts de El Nido: 11 posibilidades estupendas para todo tipo de viajeros" rel="ugc">Resorts en El Nido</a>. Si quieres algo más moderado, podríais quedaros unas noches en El Nido Town haciendo tours y luego relajaros un par de noches en un sitio tan espectacular como <a href="https://www.booking.com/hotel/ph/eco-sanctuaries-el-nido-el-nido-palawan.es.html?aid=1542173" rel="nofollow ugc">este</a>, desde donde te escribimos en este mismo momento. Un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-50918">
+		<article id="comment-50918" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Julia</span>				<span class="comment_date">
+					el 19/01/2025 a las 18:07				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola y felicidades por el maravilloso blog tan informativo iy inspirador-<br />
+Tengo entendido que en Julio y agosto hay menos lluvia en el este que en el oeste, por lo tanto si voy 24 dias me aconsejais la zona de palawan o me mantengo más por la zona de Visayas y más al sur?<br />
+Muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-50918' data-commentid="50918" data-postid="2209" data-belowelement="comment-50918" data-respondelement="respond" data-replyto="Responder a Julia" aria-label='Responder a Julia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-50933">
+		<article id="comment-50933" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 20/01/2025 a las 00:20				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Julia, muchas gracias : ) Hay menos lluvias en el sureste, por eso en sitios como Siargao o Camiguin es época de lluvias. Lo que hay menos posibilidades es de que pasen tifones por Palawan, pero época de lluvias es igualmente. Con todo esto no queremos decir que evites Palawan ni mucho menos (nosotros no lo hacemos), pero sí podrías visitar Siargao y Camiguin al inicio y luego ir viendo qué tal el clima en los demás sitios y decidir in situ. un abrazo</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-35936">
+		<article id="comment-35936" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Eneko</span>				<span class="comment_date">
+					el 08/04/2024 a las 13:59				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenas tardes,<br />
+Estoy preparando el viaje para hacerlo en junio, me gustaría saber vuestra opinión.<br />
+Recomendáis mas el tour por Balabac de 4D o por Coron 4D?<br />
+Muchas gracias.</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-35936' data-commentid="35936" data-postid="2209" data-belowelement="comment-35936" data-respondelement="respond" data-replyto="Responder a Eneko" aria-label='Responder a Eneko'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-35939">
+		<article id="comment-35939" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/04/2024 a las 15:25				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Enero, para nosotros el básico sería Coron y la <a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" title="Expedición Coron El Nido: la aventura definitiva" target="_blank" rel="noopener ugc">Expedición Coron-El Nido</a>, después Balabac, pero es cuestión de opiniones. Saludos</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-32081">
+		<article id="comment-32081" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Mario</span>				<span class="comment_date">
+					el 07/02/2024 a las 20:43				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola chicos, enhorabuena por el blog.<br />
+Viajamos a filipinas 15 días en Marzo.<br />
+Cuáles son las mejores islas para recorrer en moto si lo que buscamos principalmente es playa, snorkel y cascadas?<br />
+Muchas gracias!!</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-32081' data-commentid="32081" data-postid="2209" data-belowelement="comment-32081" data-respondelement="respond" data-replyto="Responder a Mario" aria-label='Responder a Mario'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-32097">
+		<article id="comment-32097" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 08/02/2024 a las 09:34				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mario, ¡gracias y bienvenido! Pues diríamos que no te deberías perder Siquijor, Bohol y Camiguin. Moalboal también te puede cuadrar. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-32197">
+		<article id="comment-32197" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Mario</span>				<span class="comment_date">
+					el 09/02/2024 a las 21:40				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Muchas gracias por el consejo, llevo 5 días leyendo y releyendo vuestro blog y las posibilidades son infinitas.<br />
+No queremos perder mas tiempo del necesario en los transportes así que la idea que tenemos es ir directamente a El Nido desde Manila en avión, 5 días allí. Después volar directamente a Bohol.<br />
+La duda aquí es si estar los 5 o 6 días en Loboc/Panglao o dividirlo en dos partes y ir unos días a Anda. Que opináis?<br />
+La última parada sería Siquijor otros 5 días.<br />
+Creo que este itinerario optimiza bastante los desplazamientos. Alguna sugerencia?<br />
+Un saludo y gracias!!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-32208">
+		<article id="comment-32208" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 10/02/2024 a las 10:04				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Mario, con respecto a Bohol, sí, nosotros iríamos a Anda y perfecto todo lo demás ; )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-30730">
+		<article id="comment-30730" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Lydia</span>				<span class="comment_date">
+					el 17/01/2024 a las 02:50				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Buenos días chicos!!! Me encanta vuestro blog ????está genial y ayuda mucho además del cariño q se ve q le habéis puesto ????<br />
+Estoy en siquijor y me gustaría ir a ver un curandero , perdón es que no se como se llaman aquí, los q estan en la montaña y utilizan sus hierbas curativas. Me podríais facilitar el contacto? Muchísimas gracias espero q lo leáis ????????. Un saludo y gracias de nuevo ????</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-30730' data-commentid="30730" data-postid="2209" data-belowelement="comment-30730" data-respondelement="respond" data-replyto="Responder a Lydia" aria-label='Responder a Lydia'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-30778">
+		<article id="comment-30778" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 17/01/2024 a las 19:06				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Lydia, ¡muchísimas gracias! Te lo acabamos de pasar, se llaman hilots ; )</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-26747">
+		<article id="comment-26747" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Duilio</span>				<span class="comment_date">
+					el 05/10/2023 a las 20:22				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola, muy muy buena la web. Estaremos por primera vez en Filipinas en marzo o abril durante 12 dias, que destinos me recomiendas, 3 lugares como para disfrutarlos y no estar corriendo. muchas gracias</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-26747' data-commentid="26747" data-postid="2209" data-belowelement="comment-26747" data-respondelement="respond" data-replyto="Responder a Duilio" aria-label='Responder a Duilio'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-26753">
+		<article id="comment-26753" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 06/10/2023 a las 08:17				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Duilio, échale un vistazo a estas 2 rutas: <a href="https://www.viajarporfilipinas.com/itinerario-viaje-filipinas-10-dias/" title="Itinerario de viaje a Filipinas de 10 días por libre: Palawan" rel="noopener" target="_blank">10 días en Filipinas</a> y <a href="https://www.viajarporfilipinas.com/ruta-viaje-filipinas-12-dias/" title="Ruta de viaje a Filipinas en 12 días por libre" rel="noopener" target="_blank">12 días en Filipinas</a>. ¡Saludos!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-21531">
+		<article id="comment-21531" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Agustina Grippaldi</span>				<span class="comment_date">
+					el 19/04/2023 a las 17:55				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>hola! excelente pagina!<br />
+estaremos en noviembre en filipinas. La idea es ir al Nido y combinarlo con otra zona de playa donde veamos algo diferente a lo que se ve ahi, que nos recomendarias? tenemos 4 dias en el nido y 3 libres a definir..</p>
+<span class="reply-container"><a rel='nofollow' class='comment-reply-link' href='#comment-21531' data-commentid="21531" data-postid="2209" data-belowelement="comment-21531" data-respondelement="respond" data-replyto="Responder a Agustina Grippaldi" aria-label='Responder a Agustina Grippaldi'>Responder</a></span>				</div>
+			</div>
+		</article>
+		<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-21533">
+		<article id="comment-21533" class="comment-body clearfix">
+			<div class="comment_avatar">
+								</div>
+
+			<div class="comment_postinfo">
+					<span class="fn">Viajar por Filipinas</span>				<span class="comment_date">
+					el 19/04/2023 a las 18:39				</span>
+												</div>
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Hola Agustina, pues nosotros lo conectaríamos con Port Barton o, si quieres invertir más tiempo pero que sea más diverso, con Bohol. ¡Muchas gracias!</p>
+				</div>
+			</div>
+		</article>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+		
+					<div class="comment_navigation_bottom clearfix">
+				<div class="nav-previous"><a href="https://www.viajarporfilipinas.com/mejores-playas-filipinas/comment-page-6/#comments" ><span class="meta-nav">&larr;</span> Comentarios antiguos</a></div>
+				<div class="nav-next"></div>
+			</div>
+		
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/mejores-playas-filipinas/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.viajarporfilipinas.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="pprivacy"><label for="pprivacy"><input type="checkbox" style="width:30px" name="privacy" value="Privacidad Aceptada" class="privacyBox" aria-req="true">He leido y acepto <a target="blank" href="https://www.viajarporfilipinas.com/aviso-legal/">la política de privacidad</a></label><p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Enviar comentario" /> <input type='hidden' name='comment_post_ID' value='2209' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c8ea1a83b9" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="193"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		</section>					</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Busca más información&#8230;</h4><form role="search" method="get" id="searchform" class="searchform" action="https://www.viajarporfilipinas.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></div><div id="text-2" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/02_facebook-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.twitter.com/viajarfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/01_twitter-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a> <a href="https://www.instagram.com/viajarporfilipinas" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2042%200'%3E%3C/svg%3E" alt="Facebook Filipinas" width="42px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/08/10_instagram-0.png" alt="Facebook Filipinas" width="42px" /></noscript></a></p>
+</div>
+		</div><div id="media_image-9" class="et_pb_widget widget_media_image"><div style="width: 310px" class="wp-caption alignnone"><img width="300" height="279" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20279'%3E%3C/svg%3E" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" /><noscript><img width="300" height="279" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png" class="image wp-image-5555  attachment-medium size-medium" alt="Jairo Claudia Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar-300x279.png 300w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/12/filipinas-jairo-claudia-viajar.png 384w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><p class="wp-caption-text">¡Hola! Somos Claudia y Jairo, 2 viajeros que se enamoraron de Filipinas allá por 2010. Viajamos a tiempo completo desde hace 8 años y dedicamos gran parte de nuestro tiempo a descubrir las más de 7.000 islas del archipiélago para que tengas información cercana, veraz y actualizada de sus paraísos.</p></div></div><div id="media_image-6" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/alojamiento-en-filipinas/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg" class="image wp-image-3462  attachment-full size-full" alt="alojamiento en Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/03/alojamiento-filipinas-banner-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-3" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-siargao/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg" class="image wp-image-254  attachment-full size-full" alt="guía de Siargao" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-siargao-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-8" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-coron/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg" class="image wp-image-2907  attachment-full size-full" alt="guía de Coron Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2019/01/guia-coron-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-4" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-el-nido/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg" class="image wp-image-256  attachment-full size-full" alt="El Nido Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-el-nido-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-2" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-malapascua/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg" class="image wp-image-255  attachment-full size-full" alt="Malapascua" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-malapascua-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="media_image-5" class="et_pb_widget widget_media_image"><a href="https://www.viajarporfilipinas.com/guia-de-bohol/"><img width="350" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20120'%3E%3C/svg%3E" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" /><noscript><img width="350" height="120" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg" class="image wp-image-257  attachment-full size-full" alt="Bohol Filipinas" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2018/06/guia-de-bohol-bn-300x103.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></div><div id="text-4" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.facebook.com/groups/viajar.filipinas/" target="”_blank”" rel="nofollow noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2018/12/grupo-facebook-filipinas.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-6" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/expedicion-coron-el-nido/" target="”_blank”" rel="noopener"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%200'%3E%3C/svg%3E" alt="Grupo de Facebook sobre Filipinas" width="350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" /><noscript><img decoding="async" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/10/expedicion-filipinas-bnlateral.jpg" alt="Grupo de Facebook sobre Filipinas" width="350px" /></noscript></a></p>
+</div>
+		</div><div id="text-3" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="http://www.iatiseguros.com/?r=2655703123870&amp;cmp=bnnlateral" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter size-full wp-image-11007" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20500'%3E%3C/svg%3E" alt="DESCUENTO SEGURO" width="350" height="500" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-11007" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg" alt="DESCUENTO SEGURO" width="350" height="500" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-5-210x300.jpg 210w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div><div id="text-5" class="et_pb_widget widget_text">			<div class="textwidget"><p><a href="https://www.viajarporfilipinas.com/seguro-viaje-filipinas/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter size-full wp-image-10998" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20236'%3E%3C/svg%3E" alt="MEJOR SEGURO" width="350" height="236" data-lazy-srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" /><noscript><img decoding="async" class="aligncenter size-full wp-image-10998" src="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg" alt="MEJOR SEGURO" width="350" height="236" srcset="https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4.jpg 350w, https://www.viajarporfilipinas.com/wp-content/uploads/2022/04/bn-filipinas-seguro-viaje-4-300x202.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" /></noscript></a></p>
+</div>
+		</div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© Viajar por Filipinas 2024 . Información y guías para viajar a Filipinas por libre. Todos los derechos reservados. <a href="https://www.viajarporfilipinas.com/aviso-legal/" target="_blank" rel="noopener">Aviso legal, privacidad y cookies.</a> - <a href="https://www.viajarporfilipinas.com/descuento-iati-seguro-viajes/" target="_blank" rel="noopener">Descuento IATI Seguros de viaje</a></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260250-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120260250-1');
+</script><script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.viajarporfilipinas.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f74ba62cbc","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"0e752fb84d","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"2209","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.viajarporfilipinas.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#2cead7","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.24.2" id="fitvids-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.24.2" id="jquery-mobile-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.24.2" id="magnific-popup-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.24.2" id="easypiechart-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.24.2" id="salvattore-js" defer></script>
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"#mainfooter","screen_max_width":0,"screen_max_height":0,"widgets":["#text-3","#text-5"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3" id="q2w3_fixed_widget-js" defer></script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.24.2" id="et-core-common-js" defer></script>
+<script defer type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1747043309" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.24.2" id="et-builder-modules-script-motion-js" defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.viajarporfilipinas.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.24.2" id="et-builder-modules-script-sticky-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.viajarporfilipinas.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
