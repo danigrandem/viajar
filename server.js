@@ -16,7 +16,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, 'frontend/build/client')));
 
 // Rate limiting
 const limiter = rateLimit(config.rateLimit);
@@ -97,10 +98,10 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok' });
 });
 
-// Serve the main page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
-});
+
+app.get('/*all', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/build/client', 'index.html'));
+  });
 
 app.listen(config.port, () => {
     logger.info(`Server running at http://localhost:${config.port}`);
