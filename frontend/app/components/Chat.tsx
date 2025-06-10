@@ -95,19 +95,21 @@ export default function Chat({ onSendMessage }: ChatProps) {
                 <div ref={messagesEndRef} />
             </div>
 
-            <form onSubmit={handleSubmit} className="flex gap-2">
-                <input
-                    type="text"
-                    value={inputMessage}
-                    onChange={(e) => setInputMessage(e.target.value)}
-                    placeholder="Escribe tu pregunta sobre Filipinas..."
-                    className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    disabled={isLoading}
-                />
+            <form onSubmit={handleSubmit} className="flex gap-2 min-w-0">
+                <div className="flex-1 min-w-0">
+                    <input
+                        type="text"
+                        value={inputMessage}
+                        onChange={(e) => setInputMessage(e.target.value)}
+                        placeholder="Escribe tu pregunta sobre Filipinas..."
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        disabled={isLoading}
+                    />
+                </div>
                 <button
                     type="submit"
                     disabled={isLoading || !inputMessage.trim()}
-                    className="bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                    className="bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shrink-0"
                 >
                     <PaperAirplaneIcon className="h-5 w-5" />
                 </button>
