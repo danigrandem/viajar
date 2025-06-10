@@ -11,6 +11,17 @@ const config = require('./config');
 // Almacenamiento en memoria para el contexto de las conversaciones
 const conversationContexts = new Map();
 
+// Función para limpiar contextos antiguos (cada 24 horas)
+setInterval(() => {
+    const now = Date.now();
+    for (const [sessionId, context] of conversationContexts.entries()) {
+        if (now - context.lastUpdate > 24 * 60 * 60 * 1000) {
+            conversationContexts.delete(sessionId);
+            logger.info(`Contexto eliminado para sesión ${sessionId} por inactividad`);
+        }
+    }
+}, 60 * 60 * 1000); // Ejecutar cada hora
+
 const app = express();
 
 // Middleware
@@ -74,7 +85,7 @@ app.get('/api/chat', async (req, res) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
 
         // Obtener o crear el contexto de la conversación
-        let context = conversationContexts.get(sessionId) || [];
+        let context = conversationContexts.get(sessionId) || { messages: [], lastUpdate: Date.now() };
         
         // Función para enviar chunks de texto
         const sendChunk = (chunk) => {
@@ -88,18 +99,21 @@ app.get('/api/chat', async (req, res) => {
         };
 
         try {
-            const response = await chatWithGemini(message, context, sendChunk);
+            const response = await chatWithGemini(message, context.messages, sendChunk);
             
             // Actualizar el contexto con el nuevo mensaje y respuesta
-            context.push(
+            context.messages.push(
                 { role: "user", parts: [{ text: message }] },
                 { role: "model", parts: [{ text: response }] }
             );
             
             // Limitar el tamaño del contexto a los últimos 10 mensajes
-            if (context.length > 20) {
-                context = context.slice(-20);
+            if (context.messages.length > 20) {
+                context.messages = context.messages.slice(-20);
             }
+            
+            // Actualizar timestamp
+            context.lastUpdate = Date.now();
             
             // Guardar el contexto actualizado
             conversationContexts.set(sessionId, context);
