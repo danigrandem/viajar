@@ -42,10 +42,9 @@ export default function Home() {
     }
   };
 
-  const handleChatMessage = async (message: string, sessionId: string) => {
+  const handleChatMessage = async (message: string, sessionId: string, onChunk: (chunk: string) => void): Promise<void> => {
     try {
-      const response = await sendChatMessage(message, sessionId);
-      return response;
+      await sendChatMessage(message, sessionId, onChunk);
     } catch (err) {
       console.error('Chat error:', err);
       throw err;

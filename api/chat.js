@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY);
 
-async function chatWithGemini(message, context = []) {
+async function chatWithGemini(message, context = [], onChunk) {
     try {
         // Buscar contenido relevante usando embeddings
         logger.info('Buscando contenido relevante...');
@@ -77,11 +77,19 @@ Responde de manera natural y conversacional, como si estuvieras compartiendo tu 
 
         // Enviar el mensaje con el contexto
         logger.info('Enviando mensaje a Gemini...');
-        const result = await chat.sendMessage(contextPrompt);
-        const response = await result.response;
-        
+        const result = await chat.sendMessageStream(contextPrompt);
+        let fullResponse = '';
+
+        for await (const chunk of result.stream) {
+            const chunkText = chunk.text();
+            fullResponse += chunkText;
+            if (onChunk) {
+                onChunk(chunkText);
+            }
+        }
+
         logger.info('Respuesta recibida de Gemini');
-        return response.text();
+        return fullResponse;
     } catch (error) {
         logger.error('Error en chat:', error);
         throw error;

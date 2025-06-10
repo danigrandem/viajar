@@ -7,7 +7,7 @@ interface Message {
 }
 
 interface ChatProps {
-    onSendMessage: (message: string, sessionId: string) => Promise<string>;
+    onSendMessage: (message: string, sessionId: string, onChunk: (chunk: string) => void) => Promise<void>;
 }
 
 export default function Chat({ onSendMessage }: ChatProps) {
@@ -40,8 +40,18 @@ export default function Chat({ onSendMessage }: ChatProps) {
         setIsLoading(true);
 
         try {
-            const response = await onSendMessage(userMessage, sessionId);
-            setMessages(prev => [...prev, { role: 'assistant', content: response }]);
+            setMessages(prev => [...prev, { role: 'assistant', content: '' }]);
+
+            await onSendMessage(userMessage, sessionId, (chunk) => {
+                setMessages(prev => {
+                    const newMessages = [...prev];
+                    const lastMessage = newMessages[newMessages.length - 1];
+                    if (lastMessage.role === 'assistant') {
+                        lastMessage.content += chunk;
+                    }
+                    return newMessages;
+                });
+            });
         } catch (error) {
             console.error('Error sending message:', error);
             setMessages(prev => [...prev, {
@@ -52,12 +62,12 @@ export default function Chat({ onSendMessage }: ChatProps) {
             setIsLoading(false);
         }
     };
-
     return (
         <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="h-96 overflow-y-auto mb-4 space-y-4">
-                {messages.map((message, index) => (
-                    <div
+                {messages.map((message, index) => {
+                    console.log("message", message)
+                    return message.content && <div
                         key={index}
                         className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
                     >
@@ -70,7 +80,7 @@ export default function Chat({ onSendMessage }: ChatProps) {
                             <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                         </div>
                     </div>
-                ))}
+                })}
                 {isLoading && (
                     <div className="flex justify-start">
                         <div className="bg-gray-100 rounded-lg p-4">

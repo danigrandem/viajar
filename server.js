@@ -59,34 +59,57 @@ app.post('/api/search', async (req, res) => {
     }
 });
 
-// Chat API endpoint
-app.post('/api/chat', async (req, res) => {
+// Chat API endpoint with streaming
+app.get('/api/chat', async (req, res) => {
     try {
-        const { message, sessionId } = req.body;
+        const { message, sessionId } = req.query;
         if (!message) {
             return res.status(400).json({ error: 'Message is required' });
         }
 
+        // Configurar headers para SSE
+        res.setHeader('Content-Type', 'text/event-stream');
+        res.setHeader('Cache-Control', 'no-cache');
+        res.setHeader('Connection', 'keep-alive');
+        res.setHeader('Access-Control-Allow-Origin', '*');
+
         // Obtener o crear el contexto de la conversación
         let context = conversationContexts.get(sessionId) || [];
         
-        const response = await chatWithGemini(message, context);
-        
-        // Actualizar el contexto con el nuevo mensaje y respuesta
-        context.push(
-            { role: "user", parts: [{ text: message }] },
-            { role: "model", parts: [{ text: response }] }
-        );
-        
-        // Limitar el tamaño del contexto a los últimos 10 mensajes
-        if (context.length > 20) {
-            context = context.slice(-20);
-        }
-        
-        // Guardar el contexto actualizado
-        conversationContexts.set(sessionId, context);
+        // Función para enviar chunks de texto
+        const sendChunk = (chunk) => {
+            res.write(`data: ${JSON.stringify({ chunk })}\n\n`);
+        };
 
-        res.json({ response });
+        // Función para enviar el mensaje final
+        const sendEnd = (response) => {
+            res.write(`data: ${JSON.stringify({ done: true, response })}\n\n`);
+            res.end();
+        };
+
+        try {
+            const response = await chatWithGemini(message, context, sendChunk);
+            
+            // Actualizar el contexto con el nuevo mensaje y respuesta
+            context.push(
+                { role: "user", parts: [{ text: message }] },
+                { role: "model", parts: [{ text: response }] }
+            );
+            
+            // Limitar el tamaño del contexto a los últimos 10 mensajes
+            if (context.length > 20) {
+                context = context.slice(-20);
+            }
+            
+            // Guardar el contexto actualizado
+            conversationContexts.set(sessionId, context);
+
+            sendEnd(response);
+        } catch (error) {
+            logger.error('Streaming error:', error);
+            res.write(`data: ${JSON.stringify({ error: 'Error en el streaming' })}\n\n`);
+            res.end();
+        }
     } catch (error) {
         logger.error('Chat error:', error);
         res.status(500).json({ error: 'Internal server error' });
@@ -98,10 +121,9 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok' });
 });
 
-
 app.get('/*all', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend/build/client', 'index.html'));
-  });
+});
 
 app.listen(config.port, () => {
     logger.info(`Server running at http://localhost:${config.port}`);
