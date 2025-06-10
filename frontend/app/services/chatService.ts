@@ -4,11 +4,9 @@ interface ChatResponse {
     response: string;
 }
 
-const API_URL = 'http://localhost:3000';
-
 export async function sendChatMessage(message: string, sessionId: string): Promise<string> {
     try {
-        const { data } = await axios.post<ChatResponse>(`${API_URL}/api/chat`, {
+        const { data } = await axios.post<ChatResponse>(`/api/chat`, {
             message,
             sessionId
         }, {
