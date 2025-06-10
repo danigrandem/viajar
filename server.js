@@ -8,6 +8,9 @@ const { getCachedResponse, setCachedResponse } = require('./api/cache');
 const logger = require('./utils/logger');
 const config = require('./config');
 
+// Almacenamiento en memoria para el contexto de las conversaciones
+const conversationContexts = new Map();
+
 const app = express();
 
 // Middleware
@@ -27,7 +30,6 @@ app.use((err, req, res, next) => {
 
 // Search API endpoint with caching
 app.post('/api/search', async (req, res) => {
-  console.log("pasa por aki")
     try {
         const { query } = req.body;
         if (!query) {
@@ -58,14 +60,31 @@ app.post('/api/search', async (req, res) => {
 
 // Chat API endpoint
 app.post('/api/chat', async (req, res) => {
-  console.log("pasa por aki22")
     try {
-        const { message, context } = req.body;
+        const { message, sessionId } = req.body;
         if (!message) {
             return res.status(400).json({ error: 'Message is required' });
         }
 
+        // Obtener o crear el contexto de la conversación
+        let context = conversationContexts.get(sessionId) || [];
+        
         const response = await chatWithGemini(message, context);
+        
+        // Actualizar el contexto con el nuevo mensaje y respuesta
+        context.push(
+            { role: "user", parts: [{ text: message }] },
+            { role: "model", parts: [{ text: response }] }
+        );
+        
+        // Limitar el tamaño del contexto a los últimos 10 mensajes
+        if (context.length > 20) {
+            context = context.slice(-20);
+        }
+        
+        // Guardar el contexto actualizado
+        conversationContexts.set(sessionId, context);
+
         res.json({ response });
     } catch (error) {
         logger.error('Chat error:', error);
@@ -80,7 +99,7 @@ app.get('/health', (req, res) => {
 
 // Serve the main page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
+    res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
 });
 
 app.listen(config.port, () => {

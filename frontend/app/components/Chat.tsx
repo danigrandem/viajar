@@ -7,10 +7,11 @@ interface Message {
 }
 
 interface ChatProps {
-    onSendMessage: (message: string) => Promise<string>;
+    onSendMessage: (message: string, sessionId: string) => Promise<string>;
 }
 
 export default function Chat({ onSendMessage }: ChatProps) {
+    const [sessionId] = useState(() => crypto.randomUUID());
     const [messages, setMessages] = useState<Message[]>([
         {
             role: 'assistant',
@@ -39,7 +40,7 @@ export default function Chat({ onSendMessage }: ChatProps) {
         setIsLoading(true);
 
         try {
-            const response = await onSendMessage(userMessage);
+            const response = await onSendMessage(userMessage, sessionId);
             setMessages(prev => [...prev, { role: 'assistant', content: response }]);
         } catch (error) {
             console.error('Error sending message:', error);

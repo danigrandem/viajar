@@ -42,9 +42,9 @@ export default function Home() {
     }
   };
 
-  const handleChatMessage = async (message: string) => {
+  const handleChatMessage = async (message: string, sessionId: string) => {
     try {
-      const response = await sendChatMessage(message);
+      const response = await sendChatMessage(message, sessionId);
       return response;
     } catch (err) {
       console.error('Chat error:', err);
