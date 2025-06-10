@@ -25,7 +25,7 @@ export default function Home() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'search' | 'chat'>('search');
+  const [activeTab, setActiveTab] = useState<'search' | 'chat'>('chat');
 
   const handleSearch = async (query: string) => {
     setIsLoading(true);
@@ -72,7 +72,7 @@ export default function Home() {
 
         <div className="max-w-4xl mx-auto">
           {/* Tabs */}
-          <div className="flex border-b border-gray-200 mb-8">
+          <div className="hidden flex border-b border-gray-200 mb-8">
             <button
               className={`px-4 py-2 font-medium text-sm ${activeTab === 'search'
                 ? 'text-blue-600 border-b-2 border-blue-600'
